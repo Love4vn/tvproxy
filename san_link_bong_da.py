@@ -13,7 +13,7 @@ PROXY = {
 MAX_RETRIES = 3
 
 # ==========================================
-# DANH SÁCH SERVER (đã lược bớt 4 server)
+# DANH SÁCH SERVER
 # ==========================================
 TAT_CA_SERVER = [
     ("Socolive", "https://bit.ly/socolive",  "/room/",       "socolive"),
@@ -21,9 +21,11 @@ TAT_CA_SERVER = [
     ("Gavang",   "https://gavanglink.co",    "/truc-tiep/",  "gavang"),
 ]
 
-# Domain dự phòng (thử lần lượt)
+# Domain dự phòng
 XOILAC_DOMAINS = [
     "https://xoilacz.io",
+    "https://xoilaczzf.cc",       # Mới thêm
+    "https://xoilacxth.tv",       # Mới thêm
     "https://xoilac.cfd",
     "https://xoilactv.pro",
     "https://xoilac7.tv",
@@ -39,43 +41,50 @@ SOCOLIVE_DOMAINS = [
 ]
 
 # ==========================================
-# LỌC MÔN THỂ THAO (chỉ bóng đá + tennis)
+# LỌC GIẢI ĐẤU
 # ==========================================
-ALLOWED_SPORTS = {"football", "tennis"}
-ALLOWED_TABS_VN = {"Bóng đá", "Tennis"}
-
-SPORT_NORMALIZE = {
-    "football": "football", "bóng đá": "football", "bong da": "football",
-    "tennis": "tennis",
+# Chỉ lấy các giải đấu hàng đầu
+ALLOWED_LEAGUES = {
+    "premier league", "ngoại hạng anh",
+    "bundesliga", "đức",
+    "serie a", "ý",
+    "ligue 1", "pháp",
+    "la liga", "tây ban nha",
 }
 
-SPORT_MAP = {
-    "football": "Bóng đá",
-    "tennis": "Tennis",
+# Từ khóa để nhận diện môn thể thao
+SPORT_KEYWORDS = {
+    "football": ["bóng đá", "football", "soccer"],
+    "tennis": ["tennis", "quần vợt"],
 }
 
 
-def normalize_sport(s):
-    if not s:
+def is_allowed_league(text):
+    """Kiểm tra xem văn bản có chứa tên giải đấu được phép không."""
+    if not text:
+        return False
+    text_lower = text.lower()
+    return any(league in text_lower for league in ALLOWED_LEAGUES)
+
+
+def get_sport_type(text):
+    """Xác định môn thể thao từ văn bản."""
+    if not text:
         return ""
-    return SPORT_NORMALIZE.get(s.lower().strip(), "")
-
-
-def is_allowed_sport(sport):
-    """True nếu sport trống (mặc định coi là bóng đá) hoặc thuộc football/tennis."""
-    n = normalize_sport(sport)
-    if not n:
-        return True
-    return n in ALLOWED_SPORTS
+    text_lower = text.lower()
+    for sport, keywords in SPORT_KEYWORDS.items():
+        if any(kw in text_lower for kw in keywords):
+            return sport
+    return ""
 
 
 # ==========================================
 # HÀM LÕI
 # ==========================================
 def san_full_server_qua_proxy():
-    print("🚀 KHỞI ĐỘNG CHIẾN DỊCH QUÉT (Socolive / Xoilac / Gavang – chỉ Bóng đá + Tennis)...", flush=True)
+    print("🚀 BẮT ĐẦU QUÉT (Socolive / Xoilac / Gavang – chỉ Ngoại hạng Anh, Bundesliga, Serie A, Ligue 1, La Liga)...", flush=True)
 
-    danh_sach_phat = []           # Tích lũy xuyên vòng
+    danh_sach_phat = []
     server_da_thanh_cong = set()
 
     for lan_thu in range(1, MAX_RETRIES + 1):
@@ -117,7 +126,7 @@ def san_full_server_qua_proxy():
                 context.route("**/*", chan_tai_nguyen_thua)
 
                 # ==========================================
-                # TRÍCH XUẤT DANH SÁCH PHÒNG THEO SERVER
+                # TRÍCH XUẤT DANH SÁCH PHÒNG
                 # ==========================================
                 def _loc_trung(danh_sach_raw, url_goc):
                     result = {}
@@ -126,9 +135,11 @@ def san_full_server_qua_proxy():
                         ten = item.get('ten', '').strip()
                         sport = item.get('sport', '')
 
-                        if not is_allowed_sport(sport):
-                            continue
                         if not url or url == url_goc or url == url_goc + "/":
+                            continue
+
+                        # Lọc theo giải đấu
+                        if not is_allowed_league(ten):
                             continue
 
                         if url not in result or len(ten) > len(result.get(url, {}).get('ten', '')):
@@ -136,7 +147,7 @@ def san_full_server_qua_proxy():
                                 'ten': ten if ten else "Trận đấu đang chờ cập nhật",
                                 'thumb': item.get('thumb',
                                                   'https://img.icons8.com/color/512/football2.png'),
-                                'sport': normalize_sport(sport) or sport,
+                                'sport': get_sport_type(ten) or sport,
                             }
                     return result
 
@@ -253,7 +264,7 @@ def san_full_server_qua_proxy():
                                 for el in page.query_selector_all('.live-type-item'):
                                     if el.inner_text().strip() == tab_name:
                                         el.click(); break
-                                page.wait_for_timeout(1500)  # giảm từ 2500 -> 1500
+                                page.wait_for_timeout(1500)
                                 rooms = _get_rooms_in_visible_container()
                                 print(f"   → {tab_name}: {len(rooms)} phòng", flush=True)
                                 for room in rooms:
@@ -267,7 +278,6 @@ def san_full_server_qua_proxy():
                             except Exception as e:
                                 print(f"   ⚠️ Lỗi tab {tab_name}: {e}", flush=True)
                     else:
-                        # Fallback: chưa xác định được tab -> coi tất cả là bóng đá
                         print("   ℹ️ Không có tab Bóng đá/Tennis, lấy toàn bộ phòng...", flush=True)
                         rooms = page.evaluate("""
                             Array.from(document.querySelectorAll('a[href*="/room/"]')).map(a => {
@@ -302,7 +312,7 @@ def san_full_server_qua_proxy():
                     try:
                         page.goto(link_phong, timeout=25000, wait_until="domcontentloaded")
 
-                        # Poll nhanh: tối đa ~6s, check mỗi 250ms
+                        # Poll nhanh: tối đa ~6s
                         for _ in range(24):
                             if stream_link[0]:
                                 break
@@ -372,7 +382,7 @@ def san_full_server_qua_proxy():
                             raise Exception("Tất cả domain đều chết!")
 
                         # === 2. Trích xuất danh sách phòng ===
-                        page.wait_for_timeout(1500)  # giảm từ 5s -> 1.5s
+                        page.wait_for_timeout(1500)
 
                         if kieu_quet == "xoilac":
                             danh_sach_phong = lay_phong_xoilac(page, url_dung, keyword_link)
@@ -383,7 +393,7 @@ def san_full_server_qua_proxy():
                         else:
                             danh_sach_phong = {}
 
-                        print(f"🎯 {ten_nhom}: {len(danh_sach_phong)} phòng (đã lọc bóng đá/tennis)",
+                        print(f"🎯 {ten_nhom}: {len(danh_sach_phong)} phòng (đã lọc giải đấu)",
                               flush=True)
 
                         # === 3. Bắt stream từng phòng ===
