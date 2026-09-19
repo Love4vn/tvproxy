@@ -41,7 +41,7 @@ def san_full_server_qua_proxy():
     # ==========================================
     tat_ca_server = [
         ("Socolive", "https://bit.ly/socolive", "/room/", "socolive"),
-        ("Xoilac", "https://xoilaccg.tv", "/truc-tiep/", "xoilac"),
+        ("Xoilac", "https://xoilacxth.tv", "/truc-tiep/", "xoilac"),
         ("Gavang", "https://gavanglink.co", "/truc-tiep/", "gavang"),
         ("Quechoa", "https://quechoa11.live", "/truc-tiep/", ""),
         ("ThienDinh", "https://sv2.thiendinh3.live/trang-chu", "", "thiendinh"),
@@ -51,8 +51,8 @@ def san_full_server_qua_proxy():
 
     # Domain dự phòng cho Xoilac (thử lần lượt)
     XOILAC_DOMAINS = [
-        "https://xoilaccg.tv",
-        "https://xoilac.cfd",
+        "https://xoilacxth.tv",
+        "https://xoilacz.io",
         "https://xoilactv.pro",
         "https://xoilac7.tv",
     ]
