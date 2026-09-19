@@ -1,61 +1,107 @@
 #EXTM3U
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Tottenham vs Aston Villa lúc 18:30 ngày 19/09/2026 [ROY]
-https://live2.zundrixmediapipeline.com/live/channel1.flv
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Tottenham vs Aston Villa lúc 18:30 ngày 19/09/2026 [HD ROY]
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001789809975-0-0-9bf7850027a5641d26fdea7fec49fd4a
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Tottenham vs Aston Villa lúc 18:30 ngày 19/09/2026 [FABIO]
-https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=0bc560d0e0b2c307846dd211f89266d8&wsABSTime=1789853176
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Tottenham vs Aston Villa lúc 18:30 ngày 19/09/2026 [HD FABIO]
-https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001789809977-0-0-004b631202f55c882e2b8230e3141c3a
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Tottenham vs Aston Villa lúc 18:30 ngày 19/09/2026 [FELIX]
-https://live2.zundrixmediapipeline.com/live/channel24.flv
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Tottenham vs Aston Villa lúc 18:30 ngày 19/09/2026 [HD FELIX]
-https://live1.quickscoreboardz.com/live/channel24.flv?wsSecret=d4101b33e867762c9656e52411e5a72a&wsABSTime=1789853179
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Newcastle United vs Hull City lúc 21:00 ngày 19/09/2026 [MAX]
+https://live2.zundrixmediapipeline.com/live/channel6.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Newcastle United vs Hull City lúc 21:00 ngày 19/09/2026 [RIO]
+https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001789826361-0-0-af884101ed205aa9ee1ed4a8d7cc953e
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Newcastle United vs Hull City lúc 21:00 ngày 19/09/2026 [RIO]
+https://live1.quickscoreboardz.com/live/channel16.flv?wsSecret=a5f1a081bf9be73eeaf90aaf92a26697&wsABSTime=1789869562
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Newcastle United vs Hull City lúc 21:00 ngày 19/09/2026 [FULL HD MAX]
+https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001789826363-0-0-1888e0b26408aacd7df7f80a901b6a76
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Everton vs Ipswich Town lúc 21:00 ngày 19/09/2026 [FABIO]
+https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001789826388-0-0-b5e8faf9d17d1bf247af5fc5d1b96693
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Everton vs Ipswich Town lúc 21:00 ngày 19/09/2026 [FABIO]
+https://live2.zundrixmediapipeline.com/live/channel2.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Everton vs Ipswich Town lúc 21:00 ngày 19/09/2026 [FULL HD BRADY]
+https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001789826390-0-0-58d1957b1b6b0240c985bc193666d501
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Brighton vs Arsenal lúc 21:00 ngày 19/09/2026 [HD ROY]
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001789809986-0-0-ff05e2606f078ce465fd258cc73b3e82
+https://live2.zundrixmediapipeline.com/live/channel1.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Brighton vs Arsenal lúc 21:00 ngày 19/09/2026 [ASTRA]
-https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=84897e61b55b6e679fd143baa565ff46&wsABSTime=1789853187
+https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001789826416-0-0-0fb5f79852a154afb970169dea3df15e
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Brighton vs Arsenal lúc 21:00 ngày 19/09/2026 [HD ASTRA]
-https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001789809988-0-0-f22cb885c99d67348df32a23bf5e3234
+https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=36c042b22610323af30da357b4a0d01a&wsABSTime=1789869618
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Brighton vs Arsenal lúc 21:00 ngày 19/09/2026 [NICK]
-https://live2.zundrixmediapipeline.com/live/channel5.flv
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=edf81f5c7c0905ad5ba4bc51a218cc20&wsABSTime=1789869619
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Brighton vs Arsenal lúc 21:00 ngày 19/09/2026 [HD NICK]
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=a7a5a6f337e5efdc532606dbf2a269a0&wsABSTime=1789853190
+https://live2.zundrixmediapipeline.com/live/channel5.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/4zp5rzghp5q82w1/image/small", ⚽ AS Roma vs Inter Milan lúc 23:00 ngày 19/09/2026 [FILIP]
+https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001789826444-0-0-60e1f0498d70a16249567e29cf22c88b
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/4zp5rzghp5q82w1/image/small", ⚽ AS Roma vs Inter Milan lúc 23:00 ngày 19/09/2026 [FILIP]
+https://live2.zundrixmediapipeline.com/live/channel19.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/4zp5rzghp5q82w1/image/small", ⚽ AS Roma vs Inter Milan lúc 23:00 ngày 19/09/2026 [FULL HD JOHAN]
+https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001789826446-0-0-d9b88db0bafc892e680e29ac1983ffc7
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/vl7oqdehlyr510j/image/small", ⚽ Osasuna vs Rayo Vallecano lúc 19:00 ngày 19/09/2026 [HD KEN]
+https://live2.domaincdn.cc/livecdn/channel-18.flv?auth_key=3000001789826471-0-0-f3773717759e39aec9632526bd4137e2
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/4zp5rzghp5q82w1/image/small", ⚽ Bologna vs Torino lúc 20:00 ngày 19/09/2026 [HD JOHAN]
+https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001789826496-0-0-42727ac63bb7c6904ce7f0d399e65e2b
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/4zp5rzghp5q82w1/image/small", ⚽ Udinese vs Cagliari lúc 20:00 ngày 19/09/2026 [HD TOM]
+https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001789826520-0-0-73165588e657f937d43017b9f79fbc27
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/basketball/competition/0l965mk8tom1ge4/image/small", ⚽ Rostock Seawolves vs Phoenix Hagen lúc 23:30 ngày 19/09/2026 [ALAN]
 https://live2.zundrixmediapipeline.com/live/channel25.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/basketball/competition/0l965mk8tom1ge4/image/small", ⚽ Rostock Seawolves vs Phoenix Hagen lúc 23:30 ngày 19/09/2026 [HD ALAN]
-https://live2.domaincdn.cc/livecdn/channel-25.flv?auth_key=3000001789809999-0-0-d34e92873d586e14ebe8b8cd061720de
+https://live2.domaincdn.cc/livecdn/channel-25.flv?auth_key=3000001789826586-0-0-e7f64f3ba5aa0e323744bf249ccc31cd
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/basketball/competition/0l965mk8tom1ge4/image/small", ⚽ Telekom Baskets Bonn vs Hamburg lúc 01:00 ngày 20/09/2026 [HD 1]
-https://live1.quickscoreboardz.com/live/channel40.flv?wsSecret=c48c6ee7efcc1d04857c454ca206f0b6&wsABSTime=1789853202
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Alexander Zverev vs Matej Dodig lúc 19:00 ngày 19/09/2026 [HD 1]
-https://live1.quickscoreboardz.com/live/channel55.flv?wsSecret=26ec38792ac627f25d1c81972fdf3419&wsABSTime=1789853364
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Adam Pavlasek/Patrik Rikl vs Harrison C / Krajicek A lúc 19:00 ngày 19/09/2026 [VIC]
-https://live2.zundrixmediapipeline.com/live/channel32.flv
+https://live1.quickscoreboardz.com/live/channel40.flv?wsSecret=d3ca8c84b1bae840fabbe5d11ae4fceb&wsABSTime=1789869793
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/basketball/competition/0l965mk8tom1ge4/image/small", ⚽ Ratiopharm Ulm vs EnBW Ludwigsburg lúc 21:30 ngày 20/09/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel40.flv?wsSecret=eac3818509be81c3ccdad4623364f5da&wsABSTime=1789869813
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/basketball/competition/0l965mk8tom1ge4/image/small", ⚽ Bayern Munchen vs Brose Bamberg lúc 23:00 ngày 20/09/2026 [HD TOMMY]
+https://live2.domaincdn.cc/livecdn/channel-29.flv?auth_key=3000001789826651-0-0-669a1b263ea23bfdcb46c919316e1274
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Adam Pavlasek/Patrik Rikl vs Harrison C / Krajicek A lúc 19:00 ngày 19/09/2026 [HD VIC]
-https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001789810193-0-0-4143a0d0c86cb3ba678e6b5c57ea35ee
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Arthur Fery vs Alvaro Guillen Meza lúc 20:10 ngày 19/09/2026 [HD 1]
-https://live1.quickscoreboardz.com/live/channel56.flv?wsSecret=85e09b41915793c7d681a1669f037a4b&wsABSTime=1789853396
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001789826676-0-0-0bbff38e8dc303697503276f45869d03
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Jakub Mensik vs Ben Shelton lúc 20:10 ngày 19/09/2026 [HD VIC]
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001789826749-0-0-4afb6527cbd3d7892b2f1bce30bb6bb0
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Casper Ruud vs Cui Jie lúc 21:40 ngày 19/09/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel57.flv?wsSecret=f1e56e3e430a594b5be9f50d2caaf5ed&wsABSTime=1789869980
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/23xmvvf3zl6mg8n/image/small", ⚽ Kaitlin Quevedo vs Anna Blinkova lúc 23:00 ngày 19/09/2026 [HD LUCAS]
+https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001789826819-0-0-7a3b98e73f9ef29fbacafab783e6ed3d
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Cristian Garin vs Rafael Jodar lúc 00:10 ngày 20/09/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel58.flv?wsSecret=32c358b317a2b9f0446045a73860b231&wsABSTime=1789870025
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Felix Auger Aliassime vs Arthur Rinderknech lúc 02:10 ngày 20/09/2026 [HD 1]
-https://live1.quickscoreboardz.com/live/channel59.flv?wsSecret=d39bdb6955772b4bfea61b2f6030208c&wsABSTime=1789853472
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/volleyball/competition/gx7lm75ho73q2wd/image/small", ⚽ Đức vs Bulgaria lúc 23:00 ngày 19/09/2026 [TYSON]
-https://live2.zundrixmediapipeline.com/live/channel33.flv
+https://live1.quickscoreboardz.com/live/channel59.flv?wsSecret=9221dc98793c9102b93940a72cfefa04&wsABSTime=1789870046
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Liam Draxl vs Quentin Halys lúc 03:20 ngày 20/09/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel50.flv?wsSecret=20499503767f7b6f077e512fd33aa197&wsABSTime=1789870067
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Joaquin Aguilar Cardozo vs Oliver Ojakaar lúc 03:20 ngày 20/09/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel51.flv?wsSecret=a381515e9190940c9639e0eade448d23&wsABSTime=1789870088
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Juan Pablo Varillas vs Hernando Jose Escurra Isnardi lúc 04:20 ngày 20/09/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel52.flv?wsSecret=de1d07853a5c07d18a4abf40f1726759&wsABSTime=1789870109
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/ednm9efk9l8ryox/image/small", ⚽ Peyton Stearns vs Iva Jovic lúc 06:00 ngày 20/09/2026 [HD VIC]
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001789826947-0-0-2f1922047b5a00f201e7c02cb0f01655
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/volleyball/competition/gx7lm75ho73q2wd/image/small", ⚽ Đức vs Bulgaria lúc 23:00 ngày 19/09/2026 [HD TYSON]
-https://live2.domaincdn.cc/livecdn/channel-33.flv?auth_key=3000001789810357-0-0-c6ef10a910c0a7104192492fd157d6c1
-#EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/1fbbb4be3b47d9465c5badecc3122e07.png", ⚽ Osasuna vs Vallecano luc 19:00 ngay 19/09/2026
-https://playback.livetl002.com/live/6a5df755b89dded67b39b8bc.m3u8
+https://live2.domaincdn.cc/livecdn/channel-33.flv?auth_key=3000001789826972-0-0-ba281eaf16fffcf65cb89492eb06293a
+#EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/3549f192c75cbc737a05fd51ecad383e.png", ⚽ Everton vs Ipswich luc 21:00 ngay 19/09/2026
+https://playyyz1.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6a5b13ceb36a14387baeddaa.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6a5b13ceb36a14387baeddaa.flv&cdn=tencent&b=gavanglinkn.tv&sport=football&t=streamer&o=https%3A%2F%2Fgavanglinkn.tv&match=y0or5jh8dk34qwz&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fgavanglinkn.tv%2Fapp%2Fthemes%2Fba-theme%2Fresources%2Fimages%2Ffront%2F8xbet-promo-banner-chelsea.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956
+#EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/3549f192c75cbc737a05fd51ecad383e.png", ⚽ Brighton vs Arsenal luc 21:00 ngay 19/09/2026
+https://playyyz1.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69aa9525f5ec459ae275b43f.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69aa9525f5ec459ae275b43f.flv&cdn=tencent&b=gavanglinkn.tv&sport=football&t=streamer&o=https%3A%2F%2Fgavanglinkn.tv&match=vjxm8gheo68vr6o&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fgavanglinkn.tv%2Fapp%2Fthemes%2Fba-theme%2Fresources%2Fimages%2Ffront%2F8xbet-promo-banner-chelsea.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956
+#EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/3549f192c75cbc737a05fd51ecad383e.png", ⚽ Newcastle vs Hull City luc 21:00 ngay 19/09/2026
+https://playyyz1.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6a9a5525864ea536c2577392.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6a9a5525864ea536c2577392.flv&cdn=tencent&b=gavanglinkn.tv&sport=football&t=streamer&o=https%3A%2F%2Fgavanglinkn.tv&match=l5ergph4j6edr8k&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fgavanglinkn.tv%2Fapp%2Fthemes%2Fba-theme%2Fresources%2Fimages%2Ffront%2F8xbet-promo-banner-chelsea.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956
+#EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/3549f192c75cbc737a05fd51ecad383e.png", ⚽ Nott'm Forest vs Coventry City luc 23:30 ngay 19/09/2026
+https://playyyz1.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69aa9525f5ec459ae275b43f.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69aa9525f5ec459ae275b43f.flv&cdn=tencent&b=gavanglinkn.tv&sport=football&t=streamer&o=https%3A%2F%2Fgavanglinkn.tv&match=jw2r09hkdvjgrz8&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fgavanglinkn.tv%2Fapp%2Fthemes%2Fba-theme%2Fresources%2Fimages%2Ffront%2F8xbet-promo-banner-chelsea.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956
 #EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/6b38f4015a6b3309ad9462e6ce27ae99.png", ⚽ Udinese vs Cagliari luc 20:00 ngay 19/09/2026
-https://playback.livetl002.com/live/6a704ad865997681f18c2160.m3u8
+https://playyyz1.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6a704ad865997681f18c2160.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6a704ad865997681f18c2160.flv&cdn=tencent&b=gavanglinkn.tv&sport=football&t=streamer&o=https%3A%2F%2Fgavanglinkn.tv&match=y39mp1h683elmoj&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fgavanglinkn.tv%2Fapp%2Fthemes%2Fba-theme%2Fresources%2Fimages%2Ffront%2F8xbet-promo-banner-chelsea.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956
 #EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/6b38f4015a6b3309ad9462e6ce27ae99.png", ⚽ Bologna vs Torino luc 20:00 ngay 19/09/2026
-https://playback.livetl002.com/live/69cf6331585c5992182f4160.m3u8
+https://playyyz1.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69cf6331585c5992182f4160.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69cf6331585c5992182f4160.flv&cdn=tencent&b=gavanglinkn.tv&sport=football&t=streamer&o=https%3A%2F%2Fgavanglinkn.tv&match=l7oqdehgznk4r51&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fgavanglinkn.tv%2Fapp%2Fthemes%2Fba-theme%2Fresources%2Fimages%2Ffront%2F8xbet-promo-banner-chelsea.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956
 #EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/0c6a25cd746e802296d9064b4504179d.png", ⚽ Eintracht Frankfurt vs Freiburg luc 20:30 ngay 19/09/2026
-https://playback.livetl002.com/live/69b8e6f43bcf2231c35d5144.m3u8
+https://playyyz1.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69b8e6f43bcf2231c35d5144.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69b8e6f43bcf2231c35d5144.flv&cdn=tencent&b=gavanglinkn.tv&sport=football&t=streamer&o=https%3A%2F%2Fgavanglinkn.tv&match=vjxm8ghe62l1r6o&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fgavanglinkn.tv%2Fapp%2Fthemes%2Fba-theme%2Fresources%2Fimages%2Ffront%2F8xbet-promo-banner-chelsea.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956
 #EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/0c6a25cd746e802296d9064b4504179d.png", ⚽ Werder Bremen vs Augsburg luc 20:30 ngay 19/09/2026
-https://playback.livetl002.com/live/6a7c0d8f65997681f18cacc4.m3u8
+https://playyyz1.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6a7c0d8f65997681f18cacc4.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6a7c0d8f65997681f18cacc4.flv&cdn=tencent&b=gavanglinkn.tv&sport=football&t=streamer&o=https%3A%2F%2Fgavanglinkn.tv&match=1l4rjnh90391m7v&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fgavanglinkn.tv%2Fapp%2Fthemes%2Fba-theme%2Fresources%2Fimages%2Ffront%2F8xbet-promo-banner-chelsea.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956
 #EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/0c6a25cd746e802296d9064b4504179d.png", ⚽ Hamburger SV vs FC Köln luc 20:30 ngay 19/09/2026
-https://playback.livetl002.com/live/6a01a2511e8555d7a3685f5c.m3u8
+https://playyyz1.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6a01a2511e8555d7a3685f5c.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6a01a2511e8555d7a3685f5c.flv&cdn=tencent&b=gavanglinkn.tv&sport=football&t=streamer&o=https%3A%2F%2Fgavanglinkn.tv&match=23xmvkh6jg6vqg8&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fgavanglinkn.tv%2Fapp%2Fthemes%2Fba-theme%2Fresources%2Fimages%2Ffront%2F8xbet-promo-banner-chelsea.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956
 #EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/0c6a25cd746e802296d9064b4504179d.png", ⚽ Borussia M’gladbach vs Mainz luc 20:30 ngay 19/09/2026
-https://playback.livetl002.com/live/6a439a7fb89dded67b208b87.m3u8
+https://playyyz1.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6a439a7fb89dded67b208b87.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F6a439a7fb89dded67b208b87.flv&cdn=tencent&b=gavanglinkn.tv&sport=football&t=streamer&o=https%3A%2F%2Fgavanglinkn.tv&match=965mkyhkxgpvr1g&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fgavanglinkn.tv%2Fapp%2Fthemes%2Fba-theme%2Fresources%2Fimages%2Ffront%2F8xbet-promo-banner-chelsea.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956
 #EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/1fbbb4be3b47d9465c5badecc3122e07.png", ⚽ Ath Bilbao vs Alavés luc 21:15 ngay 19/09/2026
+https://playback.livetl002.com/live/6a439a7fb89dded67b208b87.m3u8
+#EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/6e13222836235b121c1af3bc3055e76b.png", ⚽ Paris FC vs Strasbourg luc 22:15 ngay 19/09/2026
 https://playback.livetl002.com/live/69ef10b47146e04fbe6d4363.m3u8
+#EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/6b38f4015a6b3309ad9462e6ce27ae99.png", ⚽ AS Roma vs Inter luc 23:00 ngay 19/09/2026
+https://playback.livetl002.com/live/6a5df755b89dded67b39b8bc.m3u8
 #EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/1fbbb4be3b47d9465c5badecc3122e07.png", ⚽ Celta vs Racing Santander luc 23:30 ngay 19/09/2026
-https://playback.livetl002.com/live/6a9776215126529dede9bf51.m3u8
+https://playback.livetl002.com/live/69b8e6f43bcf2231c35d5144.m3u8
+#EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/0c6a25cd746e802296d9064b4504179d.png", ⚽ Stuttgart vs Dortmund luc 23:30 ngay 19/09/2026
+https://playyyz1.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69f42e961f739deff81510c0.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69f42e961f739deff81510c0.flv&cdn=tencent&b=gavanglinkn.tv&sport=football&t=streamer&o=https%3A%2F%2Fgavanglinkn.tv&match=2y8m4zh59467ql0&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fgavanglinkn.tv%2Fapp%2Fthemes%2Fba-theme%2Fresources%2Fimages%2Ffront%2F8xbet-promo-banner-chelsea.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956
+#EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/0c6a25cd746e802296d9064b4504179d.png", ⚽ Bayern Munich vs Union Berlin luc 01:30 ngay 19/09/2026
+https://playyyz1.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69a1aaa7230584579e2d5ce1.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69a1aaa7230584579e2d5ce1.flv&cdn=tencent&b=gavanglinkn.tv&sport=football&t=streamer&o=https%3A%2F%2Fgavanglinkn.tv&match=dj2ryohl0d17q1z&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fgavanglinkn.tv%2Fapp%2Fthemes%2Fba-theme%2Fresources%2Fimages%2Ffront%2F8xbet-promo-banner-chelsea.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956
+#EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/3549f192c75cbc737a05fd51ecad383e.png", ⚽ Brentford vs Chelsea luc 02:00 ngay 19/09/2026
+https://playback.livetl002.com/live/69a1aaa7230584579e2d5ce1.m3u8
+#EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/1fbbb4be3b47d9465c5badecc3122e07.png", ⚽ Espanyol vs Elche CF luc 02:00 ngay 19/09/2026
+https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.m3u8
+#EXTINF:-1 group-title="Gavang - Bóng đá" tvg-logo="https://img.thesports.com/football/competition/3549f192c75cbc737a05fd51ecad383e.png", ⚽ Spurs vs Aston Villa luc 18:30 ngay 19/09/2026
+https://playyyz1.cc/e?hls=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69aa9525f5ec459ae275b43f.m3u8&flv=https%3A%2F%2Fplayback.livetl002.com%2Flive%2F69aa9525f5ec459ae275b43f.flv&cdn=tencent&b=gavanglinkn.tv&sport=football&t=streamer&o=https%3A%2F%2Fgavanglinkn.tv&match=l7oqdehgzk0zr51&ingest=https%3A%2F%2Ffeatured-admin.antlive.pro%2Fapi%2Fingest%2Fclient-events&bottom=https%3A%2F%2Fgavanglinkn.tv%2Fapp%2Fthemes%2Fba-theme%2Fresources%2Fimages%2Ffront%2F8xbet-promo-banner-chelsea.gif&cta=https%3A%2F%2F192.132.28.37%2F8xx&ctaText=C%C6%AF%E1%BB%A2C+8XBET&accent=%230CC956
