@@ -1,5 +1,5 @@
 """
-🎯 SĂN LINK BÓNG ĐÁ - Xoilac + Gavang
+🎯 SĂN LINK BÓNG ĐÁ - Xoilac + Gavang + ColaTV
 - Lấy TẤT CẢ server con (ROY/HD ROY/FABIO/CRIS/Giàng A Dân...)
 - Chỉ lấy Bóng đá (top 5 giải) + Tennis
 - Tự động thêm #EXTVLCOPT cho M3U
@@ -31,6 +31,7 @@ REQUIRE_TOP_LEAGUE_ONLY = True
 TAT_CA_SERVER = [
     ("Xoilac", "https://xoilacz.io",    "/truc-tiep/", "xoilac"),
     ("Gavang", "https://gavanglink.co", "/truc-tiep/", "gavang"),
+    ("ColaTV", "https://colatv77.live", "",            "colatv"),
 ]
 
 XOILAC_DOMAINS = [
@@ -40,6 +41,13 @@ XOILAC_DOMAINS = [
     "https://xoilac.cfd",
     "https://xoilactv.pro",
     "https://xoilac7.tv",
+]
+
+COLATV_DOMAINS = [
+    "https://colatv77.live",
+    # Thêm domain dự phòng nếu bạn biết
+    # "https://colatv.tv",
+    # "https://colatv.live",
 ]
 
 # ==========================================
@@ -75,7 +83,7 @@ REFERER_MAP = {
     "zundrixmediapipeline.com": "https://live2.zundrixmediapipeline.com/",
     "domainkqt.cc":             "https://xl365.domainkqt.cc/",
     "api-score.com":            "https://animation.api-score.com/",
-    "edgenextcdn.net":          None,   # tự sinh từ domain
+    "edgenextcdn.net":          None,
 }
 
 DEFAULT_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -143,7 +151,7 @@ def build_extvlc_headers(stream_url: str) -> str:
 # HÀM LÕI
 # ==========================================
 def san_full_server_qua_proxy():
-    print("🚀 BẮT ĐẦU QUÉT (Xoilac + Gavang)", flush=True)
+    print("🚀 BẮT ĐẦU QUÉT (Xoilac + Gavang + ColaTV)", flush=True)
     print(f"   → Chỉ lấy: Bóng đá (top 5 giải) + Tennis", flush=True)
     print(f"   → Lấy TẤT CẢ server con (ROY/HD ROY/CRIS/Giàng A Dân...)", flush=True)
 
@@ -294,8 +302,91 @@ def san_full_server_qua_proxy():
                     """)
                     return _loc_trung(raw, url_goc)
 
+                def lay_phong_colatv(page, url_goc):
+                    """
+                    ColaTV: React SPA - phải chờ render xong mới có DOM.
+                    Quét mọi internal link có dấu hiệu tên trận.
+                    """
+                    # Chờ React render
+                    page.wait_for_timeout(6000)
+
+                    raw = page.evaluate("""
+                        (() => {
+                            const results = [];
+                            const seen = new Set();
+                            const NAV_PATTERN = /^(trang chủ|home|đăng nhập|đăng ký|login|register|menu|tìm kiếm|search|lịch thi đấu|kết quả|bảng xếp hạng|tin tức|liên hệ|giới thiệu|highlight|xem lại|video|live|trực tiếp)$/i;
+                            const URL_BLACKLIST = /\\.(png|jpg|jpeg|gif|svg|ico|css|js|woff|woff2|ttf)$/i;
+
+                            document.querySelectorAll('a[href]').forEach(a => {
+                                const href = a.href || '';
+                                if (!href) return;
+                                if (href.startsWith('javascript:')) return;
+                                if (href.startsWith('mailto:')) return;
+                                if (href.startsWith('tel:')) return;
+                                if (URL_BLACKLIST.test(href)) return;
+                                if (href === location.href) return;
+                                if (href === location.origin + '/' || href === location.origin) return;
+                                if (!href.includes(location.hostname)) return;
+
+                                const text = (a.innerText || a.textContent || '')
+                                    .trim().replace(/\\s+/g, ' ');
+                                if (!text || text.length < 5 || text.length > 200) return;
+                                if (NAV_PATTERN.test(text)) return;
+
+                                // Phải có dấu hiệu tên trận (vs, gặp, hoặc ít nhất 3 từ)
+                                const hasVsMark = /\\bvs\\b|\\bgặp\\b|\\s-\\s/i.test(text);
+                                const wordCount = text.split(' ').length;
+                                if (!hasVsMark && wordCount < 3) return;
+
+                                if (seen.has(href)) return;
+                                seen.add(href);
+
+                                const img = a.querySelector('img');
+                                let thumb = '';
+                                if (img) {
+                                    thumb = img.getAttribute('src')
+                                         || img.getAttribute('data-src')
+                                         || img.getAttribute('data-lazy-src') || '';
+                                }
+
+                                let sport = 'football';
+                                if (/tennis|quần vợt/i.test(text)) sport = 'tennis';
+
+                                // Container text = cha gần nhất
+                                const parent = a.closest(
+                                    'li, article, .card, .item, [class*="match"], [class*="Match"], [class*="card"], [class*="item"]'
+                                ) || a.parentElement;
+                                const containerText = parent ? (parent.innerText || '') : text;
+
+                                results.push({
+                                    url: href,
+                                    ten: text,
+                                    thumb: thumb,
+                                    sport: sport,
+                                    container: containerText
+                                });
+                            });
+
+                            return results;
+                        })()
+                    """)
+
+                    # Debug nếu 0 kết quả
+                    if not raw:
+                        all_links = page.evaluate("""
+                            Array.from(document.querySelectorAll('a[href]'))
+                                .map(a => a.href)
+                                .filter(h => h.includes(location.hostname))
+                                .slice(0, 30)
+                        """)
+                        print(f"     🔍 Debug: {len(all_links)} internal links "
+                              f"(chưa khớp filter). Mẫu: "
+                              f"{all_links[:5]}", flush=True)
+
+                    return _loc_trung(raw, url_goc)
+
                 # ==========================================
-                # DÒ NÚT SERVER (generic cho Xoilac + Gavang)
+                # DÒ NÚT SERVER (generic)
                 # ==========================================
                 def detect_server_buttons(page):
                     return page.evaluate("""
@@ -303,7 +394,7 @@ def san_full_server_qua_proxy():
                             const btns = [];
                             const seen = new Set();
 
-                            // 1) Xoilac style: #tv_links a.player-link
+                            // 1) Xoilac style
                             document.querySelectorAll('#tv_links a.player-link').forEach(a => {
                                 const label = (a.innerText || '').trim().split('\\n').pop().trim();
                                 const key = 'tv-' + (a.getAttribute('data-link') || '');
@@ -323,7 +414,8 @@ def san_full_server_qua_proxy():
                                 '.list-server, .tab-server, .tv-links, #tv_links, ' +
                                 '[class*="server"], [class*="Server"], ' +
                                 '[class*="player-link"], [class*="PlayerLink"], ' +
-                                '[class*="list-link"], [class*="link-server"]'
+                                '[class*="list-link"], [class*="link-server"], ' +
+                                '[class*="btn-link"], [class*="btnLink"]'
                             );
 
                             let scanRoot = null;
@@ -346,7 +438,6 @@ def san_full_server_qua_proxy():
                                 if (!label || label.length > 40) return;
                                 if (/trang chủ|đăng nhập|đăng ký|menu|tìm kiếm|search|home|logo/i.test(label))
                                     return;
-                                // Loại bỏ nút điều khiển
                                 if (/^(play|pause|mute|volume|fullscreen|\\d+)$/i.test(label)) return;
 
                                 const key = 'gen-' + label + '-' + i;
@@ -375,7 +466,10 @@ def san_full_server_qua_proxy():
                     try:
                         page.goto(link_phong, timeout=20000, wait_until="domcontentloaded")
 
-                        # Đóng popup nếu có
+                        # ColaTV là SPA -> chờ React render
+                        page.wait_for_timeout(3000)
+
+                        # Đóng popup
                         try:
                             page.keyboard.press("Escape")
                             page.wait_for_timeout(300)
@@ -390,12 +484,12 @@ def san_full_server_qua_proxy():
 
                         try:
                             page.wait_for_selector(
-                                'iframe, #tv_links, .tv-servers, [class*="server"]',
+                                'iframe, video, xg-player, #tv_links, .tv-servers, [class*="server"]',
                                 timeout=8000
                             )
                         except Exception:
                             pass
-                        page.wait_for_timeout(3000)
+                        page.wait_for_timeout(2000)
 
                         buttons = detect_server_buttons(page)
                         if not buttons:
@@ -411,7 +505,7 @@ def san_full_server_qua_proxy():
                                 if target_url[0]:
                                     return
                                 u = req.url.lower()
-                                if ".m3u8" in u or ".flv" in u:
+                                if ".m3u8" in u or ".flv" in u or ".mpd" in u:
                                     target_url[0] = req.url
 
                             page.on("request", handle)
@@ -425,13 +519,12 @@ def san_full_server_qua_proxy():
                                     except Exception:
                                         pass
 
-                                # Poll
                                 for _ in range(STREAM_WAIT_TRIES):
                                     if target_url[0]:
                                         break
                                     page.wait_for_timeout(STREAM_WAIT_STEP_MS)
 
-                                # Nếu chưa có, click player
+                                # Nếu chưa có -> click giữa player (XGPlayer thường cần click)
                                 if not target_url[0]:
                                     try:
                                         page.mouse.click(960, 500)
@@ -472,7 +565,12 @@ def san_full_server_qua_proxy():
                     ket_qua_tram = []
 
                     try:
-                        domains = XOILAC_DOMAINS if kieu_quet == "xoilac" else [url_trang_chu]
+                        if kieu_quet == "xoilac":
+                            domains = XOILAC_DOMAINS
+                        elif kieu_quet == "colatv":
+                            domains = COLATV_DOMAINS
+                        else:
+                            domains = [url_trang_chu]
 
                         url_dung = None
                         for domain in domains:
@@ -489,6 +587,12 @@ def san_full_server_qua_proxy():
                                     page.wait_for_function(
                                         "document.querySelectorAll('.match-card').length > 0",
                                         timeout=DOMAIN_TIMEOUT)
+                                elif kieu_quet == "colatv":
+                                    # SPA: chờ React render + có ít nhất vài link
+                                    page.wait_for_function(
+                                        "document.querySelectorAll('a[href]').length > 5",
+                                        timeout=DOMAIN_TIMEOUT)
+                                    page.wait_for_timeout(4000)  # Đợi API match list
                                 else:
                                     page.wait_for_function(
                                         f"document.querySelectorAll('a[href*=\"{keyword_link}\"]').length > 0",
@@ -509,6 +613,8 @@ def san_full_server_qua_proxy():
                             danh_sach_phong = lay_phong_xoilac(page, url_dung, keyword_link)
                         elif kieu_quet == "gavang":
                             danh_sach_phong = lay_phong_gavang(page, url_dung)
+                        elif kieu_quet == "colatv":
+                            danh_sach_phong = lay_phong_colatv(page, url_dung)
                         else:
                             danh_sach_phong = {}
 
@@ -602,29 +708,24 @@ def san_full_server_qua_proxy():
         with open("tong_hop_bong_da.m3u", "w", encoding="utf-8") as file:
             file.write("#EXTM3U\n")
             for luong in danh_sach_sach:
-                # EXTINF
                 file.write(f'#EXTINF:-1 group-title="{luong["nhom"]}" '
                            f'tvg-logo="{luong["thumb"]}", '
                            f'⚽ {luong["ten"]}\n')
 
-                # EXTVLCOPT (tự động)
                 ext_headers = build_extvlc_headers(luong['link'])
                 if ext_headers:
                     file.write(ext_headers + "\n")
 
-                # Link
                 file.write(f'{luong["link"]}\n')
 
         print(f"🎉 TỔNG CỘNG {len(danh_sach_sach)} TRẬN/LUỒNG!", flush=True)
 
-        # Thống kê theo nhóm (server + môn)
         nhom_count = {}
         for l in danh_sach_sach:
             nhom_count[l['nhom']] = nhom_count.get(l['nhom'], 0) + 1
         print(f"📊 Chi tiết: {', '.join(f'{k}: {v}' for k, v in nhom_count.items())}",
               flush=True)
 
-        # Thống kê server con
         server_count = {}
         for l in danh_sach_sach:
             srv = l.get('server', '') or '(mặc định)'
