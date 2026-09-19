@@ -3,7 +3,7 @@ name: Tự Động Săn Link Bóng Đá Hằng Ngày
 on:
   schedule:
     # Chạy tự động 3 tiếng 1 lần
-    - cron: '0 */2 * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch: # Nút bấm chạy bằng tay
 
 jobs:
