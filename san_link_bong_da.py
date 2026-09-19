@@ -11,6 +11,10 @@ PROXY = {
 }
 
 MAX_RETRIES = 3
+DOMAIN_TIMEOUT = 12000          # Giảm từ 25s → 12s để fail nhanh
+
+# Chỉ lấy bóng đá top 5 giải. Đặt False nếu muốn lấy tất cả bóng đá.
+REQUIRE_TOP_LEAGUE_ONLY = True
 
 # ==========================================
 # DANH SÁCH SERVER
@@ -21,11 +25,10 @@ TAT_CA_SERVER = [
     ("Gavang",   "https://gavanglink.co",    "/truc-tiep/",  "gavang"),
 ]
 
-# Domain dự phòng
 XOILAC_DOMAINS = [
     "https://xoilacz.io",
-    "https://xoilaczzf.cc",       # Mới thêm
-    "https://xoilacxth.tv",       # Mới thêm
+    "https://xoilaczzf.cc",
+    "https://xoilacxth.tv",
     "https://xoilac.cfd",
     "https://xoilactv.pro",
     "https://xoilac7.tv",
@@ -41,48 +44,91 @@ SOCOLIVE_DOMAINS = [
 ]
 
 # ==========================================
-# LỌC GIẢI ĐẤU
+# MAP MÔN THỂ THAO
 # ==========================================
-# Chỉ lấy các giải đấu hàng đầu
+SPORT_MAP = {
+    "football": "Bóng đá",
+    "tennis": "Tennis",
+    "bóng đá": "Bóng đá",
+    "tennis ": "Tennis",
+    "quần vợt": "Tennis",
+}
+
+SPORT_NORMALIZE = {
+    "football": "football", "bóng đá": "football", "bong da": "football",
+    "tennis": "tennis", "quần vợt": "tennis", "quan vot": "tennis",
+}
+
+TENNIS_KEYWORDS = ["tennis", "quần vợt", "atp", "wta", "grand slam"]
+
+# Các giải bóng đá hàng đầu được phép (chỉ áp dụng cho bóng đá)
 ALLOWED_LEAGUES = {
-    "premier league", "ngoại hạng anh",
+    "premier league", "ngoại hạng anh", "epl",
     "bundesliga", "đức",
-    "serie a", "ý",
-    "ligue 1", "pháp",
-    "la liga", "tây ban nha",
-}
-
-# Từ khóa để nhận diện môn thể thao
-SPORT_KEYWORDS = {
-    "football": ["bóng đá", "football", "soccer"],
-    "tennis": ["tennis", "quần vợt"],
+    "serie a", "seria a", "ý",
+    "ligue 1", "ligue1", "pháp",
+    "la liga", "laliga", "tây ban nha",
 }
 
 
-def is_allowed_league(text):
-    """Kiểm tra xem văn bản có chứa tên giải đấu được phép không."""
+def normalize_sport(s):
+    if not s:
+        return ""
+    return SPORT_NORMALIZE.get(s.lower().strip(), "")
+
+
+def detect_sport(name="", sport_hint=""):
+    """Trả về 'football', 'tennis', hoặc '' nếu không xác định."""
+    hint = (sport_hint or "").lower().strip()
+    if hint in ("football", "bóng đá", "soccer"):
+        return "football"
+    if hint in ("tennis", "quần vợt"):
+        return "tennis"
+
+    name_lower = (name or "").lower()
+    for kw in TENNIS_KEYWORDS:
+        if kw in name_lower:
+            return "tennis"
+    return ""
+
+
+def contains_top_league(text):
+    """Kiểm tra text có chứa tên 1 trong 5 giải hàng đầu không."""
     if not text:
         return False
-    text_lower = text.lower()
-    return any(league in text_lower for league in ALLOWED_LEAGUES)
+    t = text.lower()
+    return any(league in t for league in ALLOWED_LEAGUES)
 
 
-def get_sport_type(text):
-    """Xác định môn thể thao từ văn bản."""
-    if not text:
-        return ""
-    text_lower = text.lower()
-    for sport, keywords in SPORT_KEYWORDS.items():
-        if any(kw in text_lower for kw in keywords):
-            return sport
-    return ""
+def should_keep(name, sport_hint="", container_text=""):
+    """
+    Quyết định giữ lại item:
+    - Tennis: LUÔN giữ
+    - Bóng đá: chỉ giữ nếu tên/container có chứa tên top 5 giải
+    - Không xác định: chỉ giữ nếu có top league (chắc chắn là bóng đá top)
+    """
+    sport = detect_sport(name, sport_hint)
+
+    # Tennis: luôn giữ
+    if sport == "tennis":
+        return True
+
+    # Bóng đá / chưa rõ: check top league
+    if not REQUIRE_TOP_LEAGUE_ONLY:
+        # Cho phép lấy mọi bóng đá
+        return sport in ("football", "")
+
+    combined = f"{name} {container_text}"
+    return contains_top_league(combined)
 
 
 # ==========================================
 # HÀM LÕI
 # ==========================================
 def san_full_server_qua_proxy():
-    print("🚀 BẮT ĐẦU QUÉT (Socolive / Xoilac / Gavang – chỉ Ngoại hạng Anh, Bundesliga, Serie A, Ligue 1, La Liga)...", flush=True)
+    print("🚀 BẮT ĐẦU QUÉT (Socolive / Xoilac / Gavang)", flush=True)
+    print(f"   → Chỉ lấy: Bóng đá (top 5 giải) + Tennis", flush=True)
+    print(f"   → REQUIRE_TOP_LEAGUE_ONLY = {REQUIRE_TOP_LEAGUE_ONLY}", flush=True)
 
     danh_sach_phat = []
     server_da_thanh_cong = set()
@@ -106,16 +152,36 @@ def san_full_server_qua_proxy():
                 browser = p.chromium.launch(
                     headless=True,
                     proxy=PROXY,
-                    args=["--disable-blink-features=AutomationControlled"],
+                    args=[
+                        "--disable-blink-features=AutomationControlled",
+                        "--disable-dev-shm-usage",
+                        "--no-sandbox",
+                        "--disable-setuid-sandbox",
+                    ],
                 )
                 context = browser.new_context(
                     viewport={"width": 1920, "height": 1080},
                     user_agent=("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                                 "AppleWebKit/537.36 (KHTML, like Gecko) "
                                 "Chrome/120.0.0.0 Safari/537.36"),
+                    locale="vi-VN",
                 )
-                context.set_default_timeout(20000)
-                context.set_default_navigation_timeout(30000)
+                context.set_default_timeout(15000)
+                context.set_default_navigation_timeout(DOMAIN_TIMEOUT)
+
+                # ==== Stealth: giảm dấu hiệu bot ====
+                context.add_init_script("""
+                    Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+                    window.chrome = { runtime: {} };
+                    Object.defineProperty(navigator, 'plugins', {get: () => [1,2,3,4,5]});
+                    Object.defineProperty(navigator, 'languages', {get: () => ['vi-VN','vi','en-US','en']});
+                    const origQuery = window.navigator.permissions.query;
+                    window.navigator.permissions.query = (p) => (
+                        p.name === 'notifications'
+                            ? Promise.resolve({state: Notification.permission})
+                            : origQuery(p)
+                    );
+                """)
 
                 # Chặn ảnh/media cho nhẹ proxy
                 def chan_tai_nguyen_thua(route):
@@ -126,7 +192,7 @@ def san_full_server_qua_proxy():
                 context.route("**/*", chan_tai_nguyen_thua)
 
                 # ==========================================
-                # TRÍCH XUẤT DANH SÁCH PHÒNG
+                # LỌC TRÙNG + LỌC MÔN/GIẢI
                 # ==========================================
                 def _loc_trung(danh_sach_raw, url_goc):
                     result = {}
@@ -134,12 +200,12 @@ def san_full_server_qua_proxy():
                         url = item.get('url', '')
                         ten = item.get('ten', '').strip()
                         sport = item.get('sport', '')
+                        container_text = item.get('container', '')
 
                         if not url or url == url_goc or url == url_goc + "/":
                             continue
 
-                        # Lọc theo giải đấu
-                        if not is_allowed_league(ten):
+                        if not should_keep(ten, sport, container_text):
                             continue
 
                         if url not in result or len(ten) > len(result.get(url, {}).get('ten', '')):
@@ -147,12 +213,14 @@ def san_full_server_qua_proxy():
                                 'ten': ten if ten else "Trận đấu đang chờ cập nhật",
                                 'thumb': item.get('thumb',
                                                   'https://img.icons8.com/color/512/football2.png'),
-                                'sport': get_sport_type(ten) or sport,
+                                'sport': detect_sport(ten, sport) or sport,
                             }
                     return result
 
+                # ==========================================
+                # TRÍCH XUẤT THEO SERVER
+                # ==========================================
                 def lay_phong_xoilac(page, url_goc, keyword_link):
-                    """Xoilac: .grid-matches__item có data-sport"""
                     raw = page.evaluate(f"""
                         (() => {{
                             const results = [];
@@ -165,7 +233,8 @@ def san_full_server_qua_proxy():
                                     url: linkEl.href,
                                     ten: linkEl.getAttribute('title') || linkEl.innerText.trim().replace(/\\n/g, ' - '),
                                     thumb: img ? img.src : "",
-                                    sport: sport
+                                    sport: sport,
+                                    container: item.innerText || ""
                                 }});
                             }});
                             document.querySelectorAll('.match-horizontals-item[href*="{keyword_link}"]').forEach(a => {{
@@ -175,7 +244,8 @@ def san_full_server_qua_proxy():
                                     url: a.href,
                                     ten: a.innerText.trim().replace(/\\n/g, ' - '),
                                     thumb: img ? img.src : "",
-                                    sport: 'football'
+                                    sport: 'football',
+                                    container: (a.closest('.match-horizontals') || a.parentElement || a).innerText || ""
                                 }});
                             }});
                             return results;
@@ -184,7 +254,6 @@ def san_full_server_qua_proxy():
                     return _loc_trung(raw, url_goc)
 
                 def lay_phong_gavang(page, url_goc):
-                    """Gavang: .match-card có data-sport"""
                     raw = page.evaluate("""
                         (() => {
                             const results = [];
@@ -208,7 +277,8 @@ def san_full_server_qua_proxy():
                                     url: linkEl.href,
                                     ten: title || linkEl.innerText.trim().replace(/\\n/g, ' - '),
                                     thumb: thumb,
-                                    sport: sport
+                                    sport: sport,
+                                    container: card.innerText || ""
                                 });
                             });
                             return results;
@@ -217,7 +287,6 @@ def san_full_server_qua_proxy():
                     return _loc_trung(raw, url_goc)
 
                 def lay_phong_socolive(page, url_goc):
-                    """Socolive: click tab chỉ Bóng đá + Tennis"""
                     all_rooms = {}
 
                     sport_tabs = page.evaluate("""
@@ -247,7 +316,12 @@ def san_full_server_qua_proxy():
                                             thumb = src; break;
                                         }
                                     }
-                                    return { url: a.href, ten: cleanText(a.innerText), thumb: thumb };
+                                    return {
+                                        url: a.href,
+                                        ten: cleanText(a.innerText),
+                                        thumb: thumb,
+                                        container: parent.innerText || ""
+                                    };
                                 };
                                 if (!activeContainer) {
                                     document.querySelectorAll('.hot-content:not([hidden]) li a[href*="/room/"]').forEach(a => results.push(parseItem(a)));
@@ -273,12 +347,13 @@ def san_full_server_qua_proxy():
                                             'ten': room['ten'] or "Phòng BLV",
                                             'thumb': room['thumb'] or
                                                      'https://img.icons8.com/color/512/football2.png',
-                                            'sport': tab_name,
+                                            'sport': 'tennis' if tab_name == 'Tennis' else 'football',
+                                            'container': room.get('container', ''),
                                         }
                             except Exception as e:
                                 print(f"   ⚠️ Lỗi tab {tab_name}: {e}", flush=True)
                     else:
-                        print("   ℹ️ Không có tab Bóng đá/Tennis, lấy toàn bộ phòng...", flush=True)
+                        print("   ℹ️ Không có tab, lấy toàn bộ phòng...", flush=True)
                         rooms = page.evaluate("""
                             Array.from(document.querySelectorAll('a[href*="/room/"]')).map(a => {
                                 const parent = a.closest('li') || a;
@@ -288,15 +363,25 @@ def san_full_server_qua_proxy():
                                     const src = img.getAttribute('data-src') || img.src || '';
                                     if (src && !src.includes('avatar') && !src.includes('icon')) { thumb = src; break; }
                                 }
-                                return { url: a.href, ten: a.innerText.trim().split('\\n').join(' - '), thumb: thumb };
+                                return {
+                                    url: a.href,
+                                    ten: a.innerText.trim().split('\\n').join(' - '),
+                                    thumb: thumb,
+                                    sport: '',
+                                    container: parent.innerText || ""
+                                };
                             })
                         """)
-                        return _loc_trung([{**r, 'sport': 'football'} for r in rooms], url_goc)
+                        raw_ok = [r for r in rooms if should_keep(r['ten'], r['sport'], r.get('container',''))]
+                        return _loc_trung(raw_ok, url_goc)
 
-                    return all_rooms
+                    # Lọc lại lần cuối
+                    filtered = {u: d for u, d in all_rooms.items()
+                                if should_keep(d['ten'], d['sport'], d.get('container',''))}
+                    return filtered
 
                 # ==========================================
-                # BẮT STREAM (event-driven, thoát sớm)
+                # BẮT STREAM
                 # ==========================================
                 def bat_stream_tu_phong(page, link_phong):
                     stream_link = [None]
@@ -310,15 +395,12 @@ def san_full_server_qua_proxy():
 
                     page.on("request", handle_request)
                     try:
-                        page.goto(link_phong, timeout=25000, wait_until="domcontentloaded")
+                        page.goto(link_phong, timeout=20000, wait_until="domcontentloaded")
 
-                        # Poll nhanh: tối đa ~6s
                         for _ in range(24):
-                            if stream_link[0]:
-                                break
+                            if stream_link[0]: break
                             page.wait_for_timeout(250)
 
-                        # Nếu chưa có, click play rồi chờ thêm ~5s
                         if not stream_link[0]:
                             try:
                                 page.mouse.click(960, 300)
@@ -327,8 +409,7 @@ def san_full_server_qua_proxy():
                             except Exception:
                                 pass
                             for _ in range(20):
-                                if stream_link[0]:
-                                    break
+                                if stream_link[0]: break
                                 page.wait_for_timeout(250)
                     except Exception:
                         pass
@@ -338,7 +419,7 @@ def san_full_server_qua_proxy():
                     return stream_link[0]
 
                 # ==========================================
-                # QUÉT TỔNG: DISPATCH THEO SERVER
+                # QUÉT 1 SERVER
                 # ==========================================
                 def quet_trang(ten_nhom, url_trang_chu, keyword_link, kieu_quet=""):
                     nonlocal so_tram_loi_vong_nay, so_tram_ok_vong_nay
@@ -347,7 +428,6 @@ def san_full_server_qua_proxy():
                     ket_qua_tram = []
 
                     try:
-                        # === 1. Mở trang chủ (có fallback domain) ===
                         if kieu_quet == "xoilac":
                             domains = XOILAC_DOMAINS
                         elif kieu_quet == "socolive":
@@ -358,30 +438,36 @@ def san_full_server_qua_proxy():
                         url_dung = None
                         for domain in domains:
                             try:
-                                print(f"   🔗 Thử domain: {domain}", flush=True)
-                                page.goto(domain, timeout=25000, wait_until="domcontentloaded")
+                                print(f"   🔗 Thử: {domain}", flush=True)
+                                page.goto(domain, timeout=DOMAIN_TIMEOUT, wait_until="domcontentloaded")
+
+                                # Fail-fast nếu gặp CF challenge
+                                title = (page.title() or "").lower()
+                                if "just a moment" in title or "checking your browser" in title:
+                                    print(f"   🛡️ Cloudflare challenge", flush=True)
+                                    continue
 
                                 if kieu_quet == "gavang":
                                     page.wait_for_function(
                                         "document.querySelectorAll('.match-card').length > 0",
-                                        timeout=25000,
+                                        timeout=DOMAIN_TIMEOUT,
                                     )
                                 else:
                                     page.wait_for_function(
                                         f"document.querySelectorAll('a[href*=\"{keyword_link}\"]').length > 0",
-                                        timeout=25000,
+                                        timeout=DOMAIN_TIMEOUT,
                                     )
                                 url_dung = domain
                                 print(f"   ✅ Sống: {domain}", flush=True)
                                 break
                             except Exception as e:
-                                print(f"   ❌ Chết: {domain}", flush=True)
+                                err_short = str(e)[:90].replace("\n", " ")
+                                print(f"   ❌ Chết: {domain} | {err_short}", flush=True)
                                 continue
 
                         if not url_dung:
                             raise Exception("Tất cả domain đều chết!")
 
-                        # === 2. Trích xuất danh sách phòng ===
                         page.wait_for_timeout(1500)
 
                         if kieu_quet == "xoilac":
@@ -393,10 +479,8 @@ def san_full_server_qua_proxy():
                         else:
                             danh_sach_phong = {}
 
-                        print(f"🎯 {ten_nhom}: {len(danh_sach_phong)} phòng (đã lọc giải đấu)",
-                              flush=True)
+                        print(f"🎯 {ten_nhom}: {len(danh_sach_phong)} phòng (đã lọc)", flush=True)
 
-                        # === 3. Bắt stream từng phòng ===
                         for stt, (link_phong, data_phong) in enumerate(danh_sach_phong.items(), 1):
                             ten_tran = data_phong['ten']
                             anh_thumb = data_phong['thumb']
@@ -424,10 +508,11 @@ def san_full_server_qua_proxy():
 
                     except Exception as e:
                         error_msg = str(e)
-                        print(f"⚠️ Lỗi {ten_nhom}: {error_msg}", flush=True)
+                        print(f"⚠️ Lỗi {ten_nhom}: {error_msg[:120]}", flush=True)
                         so_tram_loi_vong_nay += 1
                         if any(x in error_msg for x in
-                               ("ERR_CONNECTION_RESET", "ERR_PROXY_CONNECTION_FAILED", "ERR_TIMED_OUT")):
+                               ("ERR_CONNECTION_RESET", "ERR_PROXY_CONNECTION_FAILED",
+                                "ERR_TIMED_OUT", "ERR_TUNNEL_CONNECTION_FAILED")):
                             return "PROXY_DEAD"
                     finally:
                         page.close()
@@ -491,7 +576,7 @@ def san_full_server_qua_proxy():
             nhom_count[l['nhom']] = nhom_count.get(l['nhom'], 0) + 1
         print(f"📊 Chi tiết: {', '.join(f'{k}: {v}' for k, v in nhom_count.items())}", flush=True)
     else:
-        print(f"❌ Thất bại sau {MAX_RETRIES} lần!", flush=True)
+        print(f"❌ Không có luồng nào sau {MAX_RETRIES} lần thử!", flush=True)
         with open("tong_hop_bong_da.m3u", "w", encoding="utf-8") as file:
             file.write("#EXTM3U\n")
 
