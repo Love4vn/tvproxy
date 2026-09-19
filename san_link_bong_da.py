@@ -1,15 +1,8 @@
-"""
-🎯 SĂN LINK BÓNG ĐÁ - Xoilac + Gavang + ColaTV
-- Lấy TẤT CẢ server con (ROY/HD ROY/FABIO/CRIS/Giàng A Dân...)
-- Chỉ lấy Bóng đá (top 5 giải) + Tennis
-- Tự động thêm #EXTVLCOPT cho M3U
-"""
 import time
-from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright
 
 # ==========================================
-# CẤU HÌNH CHUNG
+# CẤU HÌNH
 # ==========================================
 PROXY = {
     "server": "http://14.241.72.139:10906",
@@ -19,19 +12,17 @@ PROXY = {
 
 MAX_RETRIES = 3
 DOMAIN_TIMEOUT = 12000
-STREAM_WAIT_TRIES = 40          # ~10s chờ stream cho mỗi nút
-STREAM_WAIT_STEP_MS = 250
 
-# Chỉ lấy bóng đá top 5 giải. Đặt False để lấy mọi bóng đá.
+# Chỉ lấy bóng đá top 5 giải. False = lấy mọi bóng đá.
 REQUIRE_TOP_LEAGUE_ONLY = True
 
 # ==========================================
-# DANH SÁCH SERVER
+# SERVER (Socolive đã tắt)
 # ==========================================
 TAT_CA_SERVER = [
-    ("Xoilac", "https://xoilacz.io",    "/truc-tiep/", "xoilac"),
-    ("Gavang", "https://gavanglink.co", "/truc-tiep/", "gavang"),
-    ("ColaTV", "https://colatv77.live", "",            "colatv"),
+    # ("Socolive", "https://bit.ly/socolive",  "/room/",       "socolive"),  # TẮT
+    ("Xoilac",   "https://xoilacz.io",       "/truc-tiep/",  "xoilac"),
+    ("Gavang",   "https://gavanglink.co",    "/truc-tiep/",  "gavang"),
 ]
 
 XOILAC_DOMAINS = [
@@ -41,13 +32,6 @@ XOILAC_DOMAINS = [
     "https://xoilac.cfd",
     "https://xoilactv.pro",
     "https://xoilac7.tv",
-]
-
-COLATV_DOMAINS = [
-    "https://colatv77.live",
-    # Thêm domain dự phòng nếu bạn biết
-    # "https://colatv.tv",
-    # "https://colatv.live",
 ]
 
 # ==========================================
@@ -75,25 +59,7 @@ ALLOWED_LEAGUES = {
     "la liga", "laliga", "tây ban nha",
 }
 
-# ==========================================
-# HEADER TỰ ĐỘNG CHO M3U
-# ==========================================
-REFERER_MAP = {
-    "quickscoreboardz.com":     "https://live1.quickscoreboardz.com/",
-    "zundrixmediapipeline.com": "https://live2.zundrixmediapipeline.com/",
-    "domainkqt.cc":             "https://xl365.domainkqt.cc/",
-    "api-score.com":            "https://animation.api-score.com/",
-    "edgenextcdn.net":          None,
-}
 
-DEFAULT_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-              "AppleWebKit/537.36 (KHTML, like Gecko) "
-              "Chrome/120.0.0.0 Safari/537.36")
-
-
-# ==========================================
-# HELPERS
-# ==========================================
 def normalize_sport(s):
     if not s:
         return ""
@@ -129,31 +95,13 @@ def should_keep(name, sport_hint="", container_text=""):
     return contains_top_league(f"{name} {container_text}")
 
 
-def build_extvlc_headers(stream_url: str) -> str:
-    """Sinh #EXTVLCOPT phù hợp dựa vào domain CDN."""
-    if not stream_url:
-        return ""
-    domain = urlparse(stream_url).netloc.lower()
-    headers = []
-
-    for key, ref in REFERER_MAP.items():
-        if key in domain:
-            referer = ref or f"https://{domain}/"
-            headers.append(f"#EXTVLCOPT:http-referrer={referer}")
-            headers.append(f"#EXTVLCOPT:http-origin={referer}")
-            break
-
-    headers.append(f"#EXTVLCOPT:http-user-agent={DEFAULT_UA}")
-    return "\n".join(headers)
-
-
 # ==========================================
 # HÀM LÕI
 # ==========================================
 def san_full_server_qua_proxy():
-    print("🚀 BẮT ĐẦU QUÉT (Xoilac + Gavang + ColaTV)", flush=True)
+    print("🚀 BẮT ĐẦU QUÉT (Xoilac + Gavang)", flush=True)
     print(f"   → Chỉ lấy: Bóng đá (top 5 giải) + Tennis", flush=True)
-    print(f"   → Lấy TẤT CẢ server con (ROY/HD ROY/CRIS/Giàng A Dân...)", flush=True)
+    print(f"   → Lấy TẤT CẢ server con (ROY/HD ROY/FABIO/...)", flush=True)
 
     danh_sach_phat = []
     server_da_thanh_cong = set()
@@ -186,7 +134,9 @@ def san_full_server_qua_proxy():
                 )
                 context = browser.new_context(
                     viewport={"width": 1920, "height": 1080},
-                    user_agent=DEFAULT_UA,
+                    user_agent=("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                                "Chrome/120.0.0.0 Safari/537.36"),
                     locale="vi-VN",
                 )
                 context.set_default_timeout(15000)
@@ -197,8 +147,7 @@ def san_full_server_qua_proxy():
                     Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
                     window.chrome = { runtime: {} };
                     Object.defineProperty(navigator, 'plugins', {get: () => [1,2,3,4,5]});
-                    Object.defineProperty(navigator, 'languages',
-                        {get: () => ['vi-VN','vi','en-US','en']});
+                    Object.defineProperty(navigator, 'languages', {get: () => ['vi-VN','vi','en-US','en']});
                 """)
 
                 def chan_tai_nguyen_thua(route):
@@ -272,23 +221,18 @@ def san_full_server_qua_proxy():
                             const results = [];
                             document.querySelectorAll('.match-card').forEach(card => {
                                 const sport = card.getAttribute('data-sport') || 'football';
-                                const linkEl = card.querySelector('a[class*="absolute"]')
-                                              || card.querySelector('a');
+                                const linkEl = card.querySelector('a[class*="absolute"]') || card.querySelector('a');
                                 if (!linkEl) return;
                                 const href = linkEl.getAttribute('href') || '';
                                 if (!href || href === '/' || href === '#') return;
-                                const title = linkEl.getAttribute('data-title')
-                                            || linkEl.getAttribute('data-tooltip') || '';
+                                const title = linkEl.getAttribute('data-title') || linkEl.getAttribute('data-tooltip') || '';
                                 const imgs = card.querySelectorAll('img');
                                 let thumb = '';
                                 for (const img of imgs) {
-                                    const src = img.getAttribute('src')
-                                              || img.getAttribute('data-src') || '';
-                                    if (src && !src.includes('flag')
-                                        && src.includes('thesports')) { thumb = src; break; }
+                                    const src = img.getAttribute('src') || img.getAttribute('data-src') || '';
+                                    if (src && !src.includes('flag') && src.includes('thesports')) { thumb = src; break; }
                                 }
-                                if (!thumb && imgs.length > 0)
-                                    thumb = imgs[0].getAttribute('src') || '';
+                                if (!thumb && imgs.length > 0) thumb = imgs[0].getAttribute('src') || '';
                                 results.push({
                                     url: linkEl.href,
                                     ten: title || linkEl.innerText.trim().replace(/\\n/g, ' - '),
@@ -302,201 +246,40 @@ def san_full_server_qua_proxy():
                     """)
                     return _loc_trung(raw, url_goc)
 
-                def lay_phong_colatv(page, url_goc):
-                    """
-                    ColaTV: React SPA - phải chờ render xong mới có DOM.
-                    Quét mọi internal link có dấu hiệu tên trận.
-                    """
-                    # Chờ React render
-                    page.wait_for_timeout(6000)
-
-                    raw = page.evaluate("""
-                        (() => {
-                            const results = [];
-                            const seen = new Set();
-                            const NAV_PATTERN = /^(trang chủ|home|đăng nhập|đăng ký|login|register|menu|tìm kiếm|search|lịch thi đấu|kết quả|bảng xếp hạng|tin tức|liên hệ|giới thiệu|highlight|xem lại|video|live|trực tiếp)$/i;
-                            const URL_BLACKLIST = /\\.(png|jpg|jpeg|gif|svg|ico|css|js|woff|woff2|ttf)$/i;
-
-                            document.querySelectorAll('a[href]').forEach(a => {
-                                const href = a.href || '';
-                                if (!href) return;
-                                if (href.startsWith('javascript:')) return;
-                                if (href.startsWith('mailto:')) return;
-                                if (href.startsWith('tel:')) return;
-                                if (URL_BLACKLIST.test(href)) return;
-                                if (href === location.href) return;
-                                if (href === location.origin + '/' || href === location.origin) return;
-                                if (!href.includes(location.hostname)) return;
-
-                                const text = (a.innerText || a.textContent || '')
-                                    .trim().replace(/\\s+/g, ' ');
-                                if (!text || text.length < 5 || text.length > 200) return;
-                                if (NAV_PATTERN.test(text)) return;
-
-                                // Phải có dấu hiệu tên trận (vs, gặp, hoặc ít nhất 3 từ)
-                                const hasVsMark = /\\bvs\\b|\\bgặp\\b|\\s-\\s/i.test(text);
-                                const wordCount = text.split(' ').length;
-                                if (!hasVsMark && wordCount < 3) return;
-
-                                if (seen.has(href)) return;
-                                seen.add(href);
-
-                                const img = a.querySelector('img');
-                                let thumb = '';
-                                if (img) {
-                                    thumb = img.getAttribute('src')
-                                         || img.getAttribute('data-src')
-                                         || img.getAttribute('data-lazy-src') || '';
-                                }
-
-                                let sport = 'football';
-                                if (/tennis|quần vợt/i.test(text)) sport = 'tennis';
-
-                                // Container text = cha gần nhất
-                                const parent = a.closest(
-                                    'li, article, .card, .item, [class*="match"], [class*="Match"], [class*="card"], [class*="item"]'
-                                ) || a.parentElement;
-                                const containerText = parent ? (parent.innerText || '') : text;
-
-                                results.push({
-                                    url: href,
-                                    ten: text,
-                                    thumb: thumb,
-                                    sport: sport,
-                                    container: containerText
-                                });
-                            });
-
-                            return results;
-                        })()
-                    """)
-
-                    # Debug nếu 0 kết quả
-                    if not raw:
-                        all_links = page.evaluate("""
-                            Array.from(document.querySelectorAll('a[href]'))
-                                .map(a => a.href)
-                                .filter(h => h.includes(location.hostname))
-                                .slice(0, 30)
-                        """)
-                        print(f"     🔍 Debug: {len(all_links)} internal links "
-                              f"(chưa khớp filter). Mẫu: "
-                              f"{all_links[:5]}", flush=True)
-
-                    return _loc_trung(raw, url_goc)
-
                 # ==========================================
-                # DÒ NÚT SERVER (generic)
-                # ==========================================
-                def detect_server_buttons(page):
-                    return page.evaluate("""
-                        () => {
-                            const btns = [];
-                            const seen = new Set();
-
-                            // 1) Xoilac style
-                            document.querySelectorAll('#tv_links a.player-link').forEach(a => {
-                                const label = (a.innerText || '').trim().split('\\n').pop().trim();
-                                const key = 'tv-' + (a.getAttribute('data-link') || '');
-                                if (seen.has(key)) return;
-                                seen.add(key);
-                                btns.push({
-                                    idx: a.getAttribute('data-link') || '0',
-                                    label: label || ('Server ' + btns.length),
-                                    selector: '#tv_link_' + (a.getAttribute('data-link') || '0')
-                                });
-                            });
-                            if (btns.length > 0) return btns;
-
-                            // 2) Fallback: quét trong vùng player
-                            const zones = document.querySelectorAll(
-                                '.tv-servers, .player-servers, .server-list, ' +
-                                '.list-server, .tab-server, .tv-links, #tv_links, ' +
-                                '[class*="server"], [class*="Server"], ' +
-                                '[class*="player-link"], [class*="PlayerLink"], ' +
-                                '[class*="list-link"], [class*="link-server"], ' +
-                                '[class*="btn-link"], [class*="btnLink"]'
-                            );
-
-                            let scanRoot = null;
-                            for (const z of zones) {
-                                if (z.querySelectorAll('a, button, div[role="button"], li').length > 0) {
-                                    scanRoot = z;
-                                    break;
-                                }
-                            }
-                            const root = scanRoot || document;
-
-                            const elements = root.querySelectorAll(
-                                'a, button, div[role="button"], li[role="button"], li a, li button'
-                            );
-
-                            elements.forEach((el, i) => {
-                                if (el.querySelector('iframe, video')) return;
-                                const label = (el.innerText || el.textContent || '')
-                                              .trim().split('\\n')[0].trim();
-                                if (!label || label.length > 40) return;
-                                if (/trang chủ|đăng nhập|đăng ký|menu|tìm kiếm|search|home|logo/i.test(label))
-                                    return;
-                                if (/^(play|pause|mute|volume|fullscreen|\\d+)$/i.test(label)) return;
-
-                                const key = 'gen-' + label + '-' + i;
-                                if (seen.has(key)) return;
-                                seen.add(key);
-
-                                el.setAttribute('data-ext-btn', String(i));
-                                btns.push({
-                                    idx: String(i),
-                                    label: label,
-                                    selector: `[data-ext-btn="${i}"]`
-                                });
-                            });
-
-                            return btns.slice(0, 20);
-                        }
-                    """)
-
-                # ==========================================
-                # LẤY TẤT CẢ SERVER CON
+                # LẤY TẤT CẢ SERVER CON CỦA 1 TRẬN (Xoilac)
                 # ==========================================
                 def lay_tat_ca_server_con(page, link_phong):
+                    """
+                    Vào 1 phòng, click từng button `#tv_link_N`
+                    -> hứng từng request .m3u8/.flv
+                    Trả về list: [{'label': 'ROY', 'url': 'https://...'}, ...]
+                    """
                     streams = []
                     seen_urls = set()
 
                     try:
                         page.goto(link_phong, timeout=20000, wait_until="domcontentloaded")
-
-                        # ColaTV là SPA -> chờ React render
+                        # Chờ player + buttons render
+                        try:
+                            page.wait_for_selector('#tv_links a.player-link', timeout=8000)
+                        except Exception:
+                            pass
                         page.wait_for_timeout(3000)
 
-                        # Đóng popup
-                        try:
-                            page.keyboard.press("Escape")
-                            page.wait_for_timeout(300)
-                            for sel in ['.close', '.closebtn', '[aria-label="Close"]',
-                                        '.modal-close', '.popup-close']:
-                                try:
-                                    page.locator(sel).first.click(timeout=700)
-                                except Exception:
-                                    pass
-                        except Exception:
-                            pass
+                        # Đọc danh sách buttons
+                        buttons = page.evaluate("""() => {
+                            const btns = document.querySelectorAll('#tv_links a.player-link');
+                            return Array.from(btns).map(a => ({
+                                idx: a.getAttribute('data-link') || '0',
+                                label: (a.innerText || '').trim().split('\\n').pop().trim() || ('Kênh ' + (a.getAttribute('data-link') || '0')),
+                            }));
+                        }""")
 
-                        try:
-                            page.wait_for_selector(
-                                'iframe, video, xg-player, #tv_links, .tv-servers, [class*="server"]',
-                                timeout=8000
-                            )
-                        except Exception:
-                            pass
-                        page.wait_for_timeout(2000)
-
-                        buttons = detect_server_buttons(page)
                         if not buttons:
-                            buttons = [{'idx': '0', 'label': 'Server 1', 'selector': 'body'}]
+                            buttons = [{'idx': '0', 'label': 'Server 1'}]
 
-                        print(f"     📺 {len(buttons)} server con: "
-                              f"{[b['label'] for b in buttons]}", flush=True)
+                        print(f"     📺 {len(buttons)} server con: {[b['label'] for b in buttons]}", flush=True)
 
                         for btn in buttons:
                             target_url = [None]
@@ -505,26 +288,27 @@ def san_full_server_qua_proxy():
                                 if target_url[0]:
                                     return
                                 u = req.url.lower()
-                                if ".m3u8" in u or ".flv" in u or ".mpd" in u:
+                                if ".m3u8" in u or ".flv" in u:
                                     target_url[0] = req.url
 
                             page.on("request", handle)
                             try:
+                                # Click button theo id, fallback theo text
                                 try:
-                                    page.click(btn['selector'], timeout=5000)
+                                    page.click(f'#tv_link_{btn["idx"]}', timeout=5000)
                                 except Exception:
                                     try:
-                                        page.get_by_text(btn['label'], exact=False)\
-                                            .first.click(timeout=5000)
+                                        page.get_by_role("link", name=btn["label"]).first.click(timeout=5000)
                                     except Exception:
                                         pass
 
-                                for _ in range(STREAM_WAIT_TRIES):
+                                # Chờ stream mới (tối đa ~10s)
+                                for _ in range(40):
                                     if target_url[0]:
                                         break
-                                    page.wait_for_timeout(STREAM_WAIT_STEP_MS)
+                                    page.wait_for_timeout(250)
 
-                                # Nếu chưa có -> click giữa player (XGPlayer thường cần click)
+                                # Nếu chưa có → click vào giữa player để trigger play
                                 if not target_url[0]:
                                     try:
                                         page.mouse.click(960, 500)
@@ -533,27 +317,57 @@ def san_full_server_qua_proxy():
                                     for _ in range(20):
                                         if target_url[0]:
                                             break
-                                        page.wait_for_timeout(STREAM_WAIT_STEP_MS)
+                                        page.wait_for_timeout(250)
                             except Exception as e:
-                                print(f"        ⚠️ [{btn['label']}] lỗi click: "
-                                      f"{str(e)[:60]}", flush=True)
+                                print(f"        ⚠️ [{btn['label']}] lỗi click: {str(e)[:60]}", flush=True)
                             finally:
                                 page.remove_listener("request", handle)
 
                             if target_url[0] and target_url[0] not in seen_urls:
                                 seen_urls.add(target_url[0])
-                                streams.append({"label": btn["label"],
-                                                "url": target_url[0]})
-                                print(f"        ✅ [{btn['label']}] "
-                                      f"{target_url[0][:75]}", flush=True)
+                                streams.append({"label": btn["label"], "url": target_url[0]})
+                                print(f"        ✅ [{btn['label']}] {target_url[0][:75]}", flush=True)
                             else:
-                                print(f"        ⛔ [{btn['label']}] không bắt được stream",
-                                      flush=True)
-
+                                print(f"        ⛔ [{btn['label']}] không bắt được stream", flush=True)
                     except Exception as e:
                         print(f"     ⚠️ Lỗi extract streams: {str(e)[:80]}", flush=True)
 
                     return streams
+
+                # ==========================================
+                # FALLBACK: lấy 1 stream từ phòng (Gavang)
+                # ==========================================
+                def lay_1_stream(page, link_phong):
+                    stream_link = [None]
+
+                    def handle(req):
+                        if stream_link[0]:
+                            return
+                        u = req.url.lower()
+                        if ".m3u8" in u or ".flv" in u:
+                            stream_link[0] = req.url
+
+                    page.on("request", handle)
+                    try:
+                        page.goto(link_phong, timeout=20000, wait_until="domcontentloaded")
+                        for _ in range(24):
+                            if stream_link[0]: break
+                            page.wait_for_timeout(250)
+                        if not stream_link[0]:
+                            try:
+                                page.mouse.click(960, 300)
+                                page.wait_for_timeout(300)
+                                page.mouse.click(960, 540)
+                            except Exception:
+                                pass
+                            for _ in range(20):
+                                if stream_link[0]: break
+                                page.wait_for_timeout(250)
+                    except Exception:
+                        pass
+                    finally:
+                        page.remove_listener("request", handle)
+                    return stream_link[0]
 
                 # ==========================================
                 # QUÉT 1 SERVER
@@ -567,8 +381,6 @@ def san_full_server_qua_proxy():
                     try:
                         if kieu_quet == "xoilac":
                             domains = XOILAC_DOMAINS
-                        elif kieu_quet == "colatv":
-                            domains = COLATV_DOMAINS
                         else:
                             domains = [url_trang_chu]
 
@@ -576,8 +388,7 @@ def san_full_server_qua_proxy():
                         for domain in domains:
                             try:
                                 print(f"   🔗 Thử: {domain}", flush=True)
-                                page.goto(domain, timeout=DOMAIN_TIMEOUT,
-                                          wait_until="domcontentloaded")
+                                page.goto(domain, timeout=DOMAIN_TIMEOUT, wait_until="domcontentloaded")
                                 title = (page.title() or "").lower()
                                 if "just a moment" in title or "checking your browser" in title:
                                     print(f"   🛡️ Cloudflare challenge", flush=True)
@@ -587,12 +398,6 @@ def san_full_server_qua_proxy():
                                     page.wait_for_function(
                                         "document.querySelectorAll('.match-card').length > 0",
                                         timeout=DOMAIN_TIMEOUT)
-                                elif kieu_quet == "colatv":
-                                    # SPA: chờ React render + có ít nhất vài link
-                                    page.wait_for_function(
-                                        "document.querySelectorAll('a[href]').length > 5",
-                                        timeout=DOMAIN_TIMEOUT)
-                                    page.wait_for_timeout(4000)  # Đợi API match list
                                 else:
                                     page.wait_for_function(
                                         f"document.querySelectorAll('a[href*=\"{keyword_link}\"]').length > 0",
@@ -613,13 +418,10 @@ def san_full_server_qua_proxy():
                             danh_sach_phong = lay_phong_xoilac(page, url_dung, keyword_link)
                         elif kieu_quet == "gavang":
                             danh_sach_phong = lay_phong_gavang(page, url_dung)
-                        elif kieu_quet == "colatv":
-                            danh_sach_phong = lay_phong_colatv(page, url_dung)
                         else:
                             danh_sach_phong = {}
 
-                        print(f"🎯 {ten_nhom}: {len(danh_sach_phong)} phòng (đã lọc giải)",
-                              flush=True)
+                        print(f"🎯 {ten_nhom}: {len(danh_sach_phong)} phòng (đã lọc giải)", flush=True)
 
                         for stt, (link_phong, data_phong) in enumerate(danh_sach_phong.items(), 1):
                             ten_tran = data_phong['ten']
@@ -629,19 +431,33 @@ def san_full_server_qua_proxy():
                             mon_vn = SPORT_MAP.get(normalize_sport(sport_key), "Bóng đá")
                             nhom_m3u = f"{ten_nhom} - {mon_vn}"
 
-                            print(f"\n   [{stt}/{len(danh_sach_phong)}] {ten_tran[:70]}",
-                                  flush=True)
+                            print(f"\n   [{stt}/{len(danh_sach_phong)}] {ten_tran[:70]}", flush=True)
 
-                            streams = lay_tat_ca_server_con(page, link_phong)
-                            for s in streams:
-                                ket_qua_tram.append({
-                                    'nhom': nhom_m3u,
-                                    'ten': f"{ten_tran} [{s['label']}]",
-                                    'link': s['url'],
-                                    'thumb': anh_thumb,
-                                    'server': s['label'],
-                                    'tran': ten_tran,
-                                })
+                            # Xoilac: lấy nhiều server con
+                            if kieu_quet == "xoilac":
+                                streams = lay_tat_ca_server_con(page, link_phong)
+                                for s in streams:
+                                    ket_qua_tram.append({
+                                        'nhom': nhom_m3u,
+                                        'ten': f"{ten_tran} [{s['label']}]",
+                                        'link': s['url'],
+                                        'thumb': anh_thumb,
+                                        'server': s['label'],
+                                        'tran': ten_tran,   # tên trận gốc, không có [label]
+                                    })
+                            else:
+                                # Gavang / khác: 1 stream duy nhất
+                                stream_link = lay_1_stream(page, link_phong)
+                                if stream_link:
+                                    ket_qua_tram.append({
+                                        'nhom': nhom_m3u,
+                                        'ten': ten_tran,
+                                        'link': stream_link,
+                                        'thumb': anh_thumb,
+                                        'server': '',
+                                        'tran': ten_tran,
+                                    })
+                                    print(f"        ✅ {stream_link[:80]}", flush=True)
 
                         so_tram_ok_vong_nay += 1
                         server_da_thanh_cong.add(ten_nhom)
@@ -670,8 +486,7 @@ def san_full_server_qua_proxy():
         except Exception as e:
             print(f"🔥 Lỗi hệ thống: {e}", flush=True)
 
-        print(f"\n📊 Vòng {lan_thu}: ✅ {so_tram_ok_vong_nay} OK, "
-              f"❌ {so_tram_loi_vong_nay} fail", flush=True)
+        print(f"\n📊 Vòng {lan_thu}: ✅ {so_tram_ok_vong_nay} OK, ❌ {so_tram_loi_vong_nay} fail", flush=True)
         print(f"📊 Tích lũy: {len(danh_sach_phat)} luồng "
               f"từ {len(server_da_thanh_cong)}/{len(TAT_CA_SERVER)} server", flush=True)
 
@@ -708,30 +523,25 @@ def san_full_server_qua_proxy():
         with open("tong_hop_bong_da.m3u", "w", encoding="utf-8") as file:
             file.write("#EXTM3U\n")
             for luong in danh_sach_sach:
+                # ten đã bao gồm [ROY], [HD ROY]...
                 file.write(f'#EXTINF:-1 group-title="{luong["nhom"]}" '
-                           f'tvg-logo="{luong["thumb"]}", '
-                           f'⚽ {luong["ten"]}\n')
-
-                ext_headers = build_extvlc_headers(luong['link'])
-                if ext_headers:
-                    file.write(ext_headers + "\n")
-
+                           f'tvg-logo="{luong["thumb"]}", ⚽ {luong["ten"]}\n')
                 file.write(f'{luong["link"]}\n')
 
         print(f"🎉 TỔNG CỘNG {len(danh_sach_sach)} TRẬN/LUỒNG!", flush=True)
 
+        # Thống kê theo nhóm
         nhom_count = {}
         for l in danh_sach_sach:
             nhom_count[l['nhom']] = nhom_count.get(l['nhom'], 0) + 1
-        print(f"📊 Chi tiết: {', '.join(f'{k}: {v}' for k, v in nhom_count.items())}",
-              flush=True)
+        print(f"📊 Chi tiết: {', '.join(f'{k}: {v}' for k, v in nhom_count.items())}", flush=True)
 
+        # Thống kê server label (ROY/HD ROY/...)
         server_count = {}
         for l in danh_sach_sach:
             srv = l.get('server', '') or '(mặc định)'
             server_count[srv] = server_count.get(srv, 0) + 1
-        print(f"📺 Server con: {', '.join(f'{k}: {v}' for k, v in server_count.items())}",
-              flush=True)
+        print(f"📺 Server con đã lấy: {', '.join(f'{k}: {v}' for k, v in server_count.items())}", flush=True)
     else:
         print(f"❌ Không có luồng nào sau {MAX_RETRIES} lần thử!", flush=True)
         with open("tong_hop_bong_da.m3u", "w", encoding="utf-8") as file:
