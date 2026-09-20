@@ -2,9 +2,14 @@ name: Tự Động Săn Link Bóng Đá Hằng Ngày
 
 on:
   schedule:
-    # Chạy tự động 3 tiếng 1 lần
-    - cron: '*/30 * * * *'
-  workflow_dispatch: # Nút bấm chạy bằng tay
+    # Chạy mỗi 2 tiếng để giảm tải
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+# Đảm bảo chỉ 1 workflow chạy tại 1 thời điểm
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   run-bot:
@@ -28,14 +33,24 @@ jobs:
         playwright install chromium
 
     - name: Kích hoạt Siêu Bot đi săn link
-      # Chữ -u cực kỳ quan trọng để GitHub không bị "nuốt log"
       run: python -u san_link_bong_da.py
 
     - name: Đẩy file m3u mới lên kho chứa công khai
       run: |
         git config --global user.name "actions-user"
         git config --global user.email "actions@github.com"
+        
+        # Fetch bản mới nhất từ remote
+        git fetch origin main
+        
+        # Thử merge nhanh, nếu conflict thì ưu tiên bản remote
+        if ! git merge --ff-only origin/main; then
+          echo "⚠️ Conflict detected, auto-resolving..."
+          git checkout origin/main -- tong_hop_bong_da.m3u
+          git add tong_hop_bong_da.m3u
+          git commit -m "Auto-resolve conflict" || true
+        fi
+        
         git add tong_hop_bong_da.m3u
         git commit -m "Cập nhật luồng trực tiếp mới nhất" || echo "Không có thay đổi"
-        git pull --rebase origin main
         git push origin main
