@@ -1,10 +1,11 @@
 """
-🎯 SĂN LINK XOILAC - Bản cuối
-✅ Chỉ Xoilac
+🎯 SĂN LINK XOILAC - Bản cuối cùng
+✅ Fix: Loại triệt để Hạng 2 Đức (Hạng 2 Đức, 2. Bundesliga, ...)
+✅ Fix: Xử lý redirect xoilacz.io -> domain sống
 ✅ Chỉ Bóng đá (nam) + Tennis
-✅ Lọc: top 5 châu Âu cấp 1 + C1/C2/C3 + WC/Euro/Nation League + giao hữu EU
-✅ Loại: Nữ, Trẻ, hạng 2+, quốc gia ngoài phạm vi, môn khác (bóng rổ, bóng chuyền...)
+✅ Top 5 châu Âu cấp 1 + C1/C2/C3 + WC/Euro/Nation League + giao hữu EU
 ✅ Auto click "XEM THÊM" đến 24h tới
+✅ Lấy TẤT CẢ server con (ROY/HD ROY/FABIO...)
 ✅ Tự động thêm #EXTVLCOPT cho M3U
 """
 import re
@@ -24,23 +25,31 @@ PROXY = {
 }
 
 MAX_RETRIES = 3
-DOMAIN_TIMEOUT = 12000
-STREAM_WAIT_TRIES = 40
+DOMAIN_TIMEOUT = 25000          # Đủ dài cho redirect chain
+STREAM_WAIT_TRIES = 40          # ~10s chờ stream mỗi nút
 STREAM_WAIT_STEP_MS = 250
 HOURS_AHEAD = 24
 MAX_XEM_THEM_CLICKS = 15
 
+# ==========================================
+# DANH SÁCH SERVER + DOMAIN
+# ==========================================
 TAT_CA_SERVER = [
     ("Xoilac", "https://xoilacz.io", "/truc-tiep/", "xoilac"),
 ]
 
+# Danh sách domain - sẽ thử lần lượt đến khi có 1 domain sống
+# Bao gồm cả domain đích có thể redirect tới
 XOILAC_DOMAINS = [
-    "https://xoilacz.io",
-    "https://xoilaczzf.cc",
+    "https://xoilacz.io",        # Domain chính (có thể redirect)
+    "https://xoilaczzf.cc",      # Domain đích hay gặp
+    "https://xoilaczzb.cc",      # Domain đích khác
+    "https://xoilaczzc.cc",
+    "https://xoilaczzd.cc",
     "https://xoilacxth.tv",
-    "https://xoilaczzb.cc",
-    "https://xoilac7tv.tv",
-    "https://xoilacvvr.tv",
+    "https://xoilac.cfd",
+    "https://xoilactv.pro",
+    "https://xoilac7.tv",
 ]
 
 # ==========================================
@@ -62,7 +71,6 @@ def normalize_vn(text):
 # ==========================================
 SPORT_WHITELIST = {"football", "tennis"}
 
-# Từ khóa nhận diện MÔN KHÁC → loại ngay
 OTHER_SPORT_KEYWORDS = [
     # Bóng rổ
     r"\bbasketball\b", r"\bbong\s*ro\b", r"\bnba\b", r"\beuroleague\b",
@@ -97,17 +105,49 @@ HARD_EXCLUDE_PATTERNS = [
     r"\byouth\b", r"\bjunior\b", r"\btre\b", r"\breserve\b",
     r"\bacademy\b", r"\bhoc\s*vien\b", r"\bdoi\s*b\b",
 
-    # ---- Cấp 2 trở xuống của top 5 ----
-    r"\bhang\s*2\b", r"\bhang\s*nhi\b", r"\bhang\s*hai\b",
-    r"\b2\.?\s*bundesliga\b",
+    # ==========================================
+    # ---- HẠNG 2 CỦA TOP 5 (ĐÃ FIX KỸ) ----
+    # ==========================================
+    # Hạng 2 Đức / 2. Bundesliga / Bundesliga 2
+    r"hang\s*(2|hai|nhi)\s*[^\w]*(duc|bundesliga|germany)",
+    r"hang\s*(2|hai|nhi)\s*duc",
+    r"2\.?\s*bundesliga",
+    r"bundesliga\s*2\b",
+    r"bundesliga\s*(2|zwei)",
+
+    # Hạng 2 Anh / Championship / EFL Championship
+    r"hang\s*(2|hai|nhi)\s*[^\w]*(anh|england)",
+    r"\befl\s*championship\b",
+    r"\bchampionship\b",
+    r"\bleague\s*one\b",
+    r"\bleague\s*two\b",
+    r"hang\s*(1|nhat|nh[âa]t)\s*anh",     # Hạng nhất Anh = Championship
+
+    # Hạng 2 Ý / Serie B
+    r"hang\s*(2|hai|nhi)\s*[^\w]*(y\b|italia|italy)",
     r"\bserie\s*b\b",
+    r"serie\s*b\b",
+
+    # Hạng 2 Pháp / Ligue 2
+    r"hang\s*(2|hai|nhi)\s*[^\w]*(phap|france)",
     r"\bligue\s*2\b",
+    r"ligue\s*2\b",
+
+    # Hạng 2 TBN / La Liga 2 / Segunda
+    r"hang\s*(2|hai|nhi)\s*[^\w]*(tbn|tay\s*ban\s*nha|spain)",
     r"\bla\s*liga\s*2\b", r"\blaliga\s*2\b",
     r"\bsegunda\b", r"\bsegunda\s*division\b",
-    r"\befl\s*championship\b", r"\bchampionship\b",
-    r"\bleague\s*one\b", r"\bleague\s*two\b",
-    r"\bregionalliga\b", r"\b3\.?\s*liga\b",
-    r"\bchallenger\s*pro\b", r"\bk\s*league\s*2\b",
+    r"la\s*liga\s*2\b", r"laliga\s*2\b",
+
+    # ---- Hạng 3+ của top 5 ----
+    r"\b3\.?\s*liga\b",
+    r"\bregionalliga\b",
+    r"hang\s*(3|ba)\s*(duc|anh|y|phap|tbn)",
+    r"\bleague\s*3\b",
+
+    # ---- Các giải khác có thể nhầm ----
+    r"\bchallenger\s*pro\b",
+    r"\bk\s*league\s*2\b",
 
     # ---- Châu Á ----
     r"\bbhutan\b", r"\bthai\s*land\b", r"\bthai\s*league\b",
@@ -144,7 +184,7 @@ HARD_EXCLUDE_PATTERNS = [
     # ---- Châu Đại Dương ----
     r"\baustralia\b", r"\ba-?league\b", r"\bnew\s*zealand\b",
 
-    # ---- Châu Âu NHƯNG KHÔNG PHẢI TOP 5 ----
+    # ---- Châu Âu nhưng KHÔNG PHẢI TOP 5 ----
     r"\bczech\b", r"\bsec\b", r"\bfortuna\s*liga\b", r"\bchance\s*liga\b",
     r"\baustria\b", r"\bbundesliga\s*ao\b",
     r"\bthuy\s*si\b", r"\bswitzerland\b", r"\bsuper\s*league\s*thuy\b",
@@ -180,9 +220,9 @@ TOP_LEAGUE_PATTERNS = [
     r"\bpremier\s*league\b",
     r"\bngoai\s*hang\s*anh\b",
     r"\bepl\b",
-    r"\bla\s*liga\b", r"\blaliga\b",
-    r"\bbundesliga\b",
-    r"\bserie\s*a\b",
+    r"\bla\s*liga\b(?!\s*2)", r"\blaliga\b(?!\s*2)",
+    r"\bbundesliga\b(?!\s*2)(?!\s*zwei)",
+    r"\bserie\s*a\b(?!\s*b)",
     r"\bligue\s*1\b",
 
     # ---- Cúp châu Âu ----
@@ -234,7 +274,7 @@ def is_other_sport(text):
 
 
 def is_hard_excluded(text):
-    """True nếu text chứa bất kỳ từ khóa bị cấm."""
+    """True nếu text chứa từ khóa bị cấm."""
     if not text:
         return False
     t = normalize_vn(text)
@@ -275,7 +315,6 @@ def detect_sport(name="", sport_hint=""):
     """
     hint = normalize_vn(sport_hint or "").strip()
 
-    # data-sport attribute
     if hint in ("football", "soccer", "bong da"):
         return "football"
     if hint in ("tennis", "quan vot"):
@@ -283,7 +322,6 @@ def detect_sport(name="", sport_hint=""):
     if hint:
         return "other"
 
-    # Không có hint → dò trong name
     n = normalize_vn(name or "")
     if is_other_sport(n):
         return "other"
@@ -297,10 +335,10 @@ def should_keep(name, sport_hint="", container_text=""):
     4 lớp bảo vệ:
     - LỚP 0: data-sport = môn khác → loại ngay
     - LỚP 1: từ khóa môn khác trong nội dung → loại ngay
-    - LỚP 2: hard exclude (Nữ/Trẻ/hạng 2+/quốc gia ngoài) → loại
+    - LỚP 2: hard exclude (Nữ/Trẻ/Hạng 2+) → loại
     - LỚP 3: whitelist giải → giữ
     """
-    # --- LỚP 0 ---
+    # LỚP 0
     sport = detect_sport(name, sport_hint)
     if sport == "other":
         return False
@@ -309,15 +347,15 @@ def should_keep(name, sport_hint="", container_text=""):
 
     combined = f"{name} {container_text}"
 
-    # --- LỚP 1 ---
+    # LỚP 1
     if is_other_sport(combined):
         return False
 
-    # --- LỚP 2 ---
+    # LỚP 2
     if is_hard_excluded(combined):
         return False
 
-    # --- LỚP 3 ---
+    # LỚP 3
     if contains_top_league(combined):
         return True
 
@@ -387,25 +425,32 @@ def build_extvlc_headers(stream_url: str) -> str:
 
 
 # ==========================================
-# TEST FILTER (chạy: python -c "from file import _test_filter; _test_filter()")
+# TEST FILTER (tùy chọn)
 # ==========================================
 def _test_filter():
     tests = [
         # --- Nên LOẠI ---
-        # Môn khác
         ("Bayern Munchen vs Brose Bamberg", "basketball bundesliga", "basketball", False),
         ("LA Lakers vs Boston Celtics", "nba", "basketball", False),
         ("Vietnam vs Thailand", "bong chuyen", "volleyball", False),
         ("Lee Chong Wei vs Lin Dan", "cau long", "badminton", False),
         ("T1 vs GenG", "lol lck", "esports", False),
-        # Giải khác
         ("Dep. La Guaira vs Deportivo Tachira", "venezuela primera", "", False),
         ("Tensung FC vs Drukpa FC", "bhutan premier league", "", False),
         ("FC Hradec Králové vs FK Teplice", "czech first league", "", False),
-        ("Arminia Bielefeld vs Heidenheim", "hang 2 duc", "", False),
+        # Hạng 2 Đức - các biến thể
+        ("Hannover 96 vs VfL Bochum", "Hạng 2 Đức", "", False),
+        ("Energie Cottbus vs St. Pauli", "2. Bundesliga", "", False),
+        ("Arminia Bielefeld vs Heidenheim", "Hạng nhì Đức", "", False),
+        ("Fortuna Düsseldorf vs Hamburg", "Bundesliga 2", "", False),
+        # Hạng 2 các nước khác
         ("Arezzo vs SudTirol", "hang 2 y - serie b", "", False),
+        ("Leeds vs Leicester", "EFL Championship", "", False),
+        ("Ajaccio vs Guingamp", "Ligue 2", "", False),
+        # Nữ/Trẻ
         ("Nữ AS Harima vs Nữ NGU Nagoya", "", "", False),
         ("U19 Bayern vs U19 Dortmund", "", "", False),
+        # Quốc gia ngoài
         ("Bahia vs Flamengo", "brasileirao serie a", "", False),
         ("Al Nassr vs Al Hilal", "saudi pro league", "", False),
         ("Ajax vs PSV", "eredivisie ha lan", "", False),
@@ -433,20 +478,47 @@ def _test_filter():
         status = "✅" if result == expected else "❌"
         if result == expected:
             ok += 1
-        print(f"  {status} [{result}] sport={sport:10s} | {name[:48]}")
+        print(f"  {status} [{result}] sport={sport:10s} | {name[:48]} | {container[:35]}")
     print(f"\n📊 {ok}/{len(tests)} PASS\n")
+
+
+# ==========================================
+# HÀM GOTO XỬ LÝ REDIRECT
+# ==========================================
+def goto_with_redirect(page, url, timeout=DOMAIN_TIMEOUT):
+    """
+    Truy cập URL và chờ redirect hoàn tất.
+    Trả về (final_url, success).
+    """
+    try:
+        page.goto(url, timeout=timeout, wait_until="domcontentloaded")
+
+        # Chờ JS redirect chạy xong - poll URL tối đa 8s
+        for _ in range(32):
+            page.wait_for_timeout(250)
+            # Nếu URL khác biệt và có pathname rõ ràng → OK
+            cur = page.url
+            if cur and cur != url and cur != "about:blank":
+                # Đợi thêm 1s cho trang mới ổn định
+                page.wait_for_timeout(1000)
+                return page.url, True
+
+        # Nếu URL không đổi → coi như không redirect, vẫn OK
+        return page.url, True
+    except Exception as e:
+        print(f"     ⚠️ goto fail: {str(e)[:90]}", flush=True)
+        return None, False
 
 
 # ==========================================
 # MAIN
 # ==========================================
 def san_full_server_qua_proxy():
-    # _test_filter()  # <-- Bỏ comment để chạy test filter trước
+    # _test_filter()  # <-- Bỏ comment để test filter
     print("🚀 BẮT ĐẦU QUÉT XOILAC", flush=True)
-    print(f"   → Chỉ Bóng đá (nam) + Tennis", flush=True)
+    print(f"   → Bóng đá (nam) + Tennis", flush=True)
     print(f"   → Top 5 châu Âu cấp 1 + C1/C2/C3 + WC/Euro/Nation League + giao hữu EU", flush=True)
-    print(f"   → Loại: Nữ, Trẻ, hạng 2+, môn khác, quốc gia ngoài phạm vi", flush=True)
-    print(f"   → Cửa sổ: {HOURS_AHEAD}h, click XEM THÊM max {MAX_XEM_THEM_CLICKS} lần", flush=True)
+    print(f"   → Loại: Nữ, Trẻ, Hạng 2+, môn khác", flush=True)
 
     danh_sach_phat = []
     server_da_thanh_cong = set()
@@ -517,9 +589,8 @@ def san_full_server_qua_proxy():
                             continue
 
                         combined = f"{ten} {container_text}"
-
-                        # Đếm lý do loại để log
                         sport_detected = detect_sport(ten, sport)
+
                         if sport_detected == "other":
                             stats["other_sport"] += 1
                             continue
@@ -736,33 +807,48 @@ def san_full_server_qua_proxy():
                         print(f"     ⚠️ {str(e)[:80]}", flush=True)
                     return streams
 
+                # ==========================================
+                # QUÉT 1 SERVER (đã fix redirect)
+                # ==========================================
                 def quet_trang(ten_nhom, url_trang_chu, keyword_link, kieu_quet=""):
                     nonlocal so_tram_loi_vong_nay, so_tram_ok_vong_nay
                     page = context.new_page()
                     print(f"\n📥 QUÉT: {ten_nhom.upper()}", flush=True)
                     ket_qua_tram = []
+
                     try:
                         url_dung = None
                         for domain in XOILAC_DOMAINS:
+                            print(f"   🔗 Thử: {domain}", flush=True)
+                            final_url, ok = goto_with_redirect(page, domain)
+
+                            if not ok or not final_url:
+                                continue
+
+                            # Log redirect
+                            if final_url != domain:
+                                print(f"     🔄 Redirect → {final_url}", flush=True)
+
+                            # Check Cloudflare challenge
+                            title = (page.title() or "").lower()
+                            if "just a moment" in title or "checking your browser" in title:
+                                print(f"     🛡️ Cloudflare challenge", flush=True)
+                                continue
+
+                            # Chờ selector của trang chủ
                             try:
-                                print(f"   🔗 {domain}", flush=True)
-                                page.goto(domain, timeout=DOMAIN_TIMEOUT,
-                                          wait_until="domcontentloaded")
-                                title = (page.title() or "").lower()
-                                if "just a moment" in title or "checking your browser" in title:
-                                    continue
                                 page.wait_for_function(
                                     f"document.querySelectorAll('a[href*=\"{keyword_link}\"]').length > 0",
-                                    timeout=DOMAIN_TIMEOUT)
-                                url_dung = domain
-                                print(f"   ✅ Sống", flush=True)
+                                    timeout=15000)
+                                url_dung = final_url
+                                print(f"   ✅ Sống: {final_url}", flush=True)
                                 break
-                            except Exception as e:
-                                print(f"   ❌ {str(e)[:70]}", flush=True)
+                            except Exception:
+                                print(f"     ❌ Không tìm thấy link trận đấu", flush=True)
                                 continue
 
                         if not url_dung:
-                            raise Exception("Tất cả domain chết!")
+                            raise Exception("Tất cả domain đều chết!")
 
                         page.wait_for_timeout(2000)
                         print(f"   🔽 Click XEM THÊM...", flush=True)
