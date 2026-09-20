@@ -169,7 +169,7 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bbhutan\b", r"\bthai\s*land\b", r"\bthai\s*league\b",
     r"\bmalaysia\b", r"\bindonesia\b", r"\bphilippines\b",
     r"\bsingapore\b", r"\bmyanmar\b", r"\bcambodia\b", r"\bcampuchia\b",
-    r"\btrung\s*quoc\b", r"\bchina\b", r"\bcsl\b",
+    r"\btrung\s*quoc\b", r"\bchina\b", r"\bchinese\b", r"\bcsl\b",
     r"\bnhat\b", r"\bjapan\b", r"\bj\s*league\b", r"\bj1\b", r"\bj2\b",
     r"\bhan\s*quoc\b", r"\bkorea\b", r"\bk\s*league\b",
     r"\ban\s*do\b", r"\bindia\b", r"\bisl\b",
