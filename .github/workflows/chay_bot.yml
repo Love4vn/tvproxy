@@ -3,7 +3,7 @@ name: Tự Động Săn Link Bóng Đá Hằng Ngày
 on:
   schedule:
     # Chạy mỗi 2 tiếng để giảm tải
-    - cron: '0 */2 * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 # Đảm bảo chỉ 1 workflow chạy tại 1 thời điểm
