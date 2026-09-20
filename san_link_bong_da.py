@@ -63,7 +63,24 @@ def normalize_vn(text):
     text = ''.join(c for c in text if unicodedata.category(c) != 'Mn')
     text = text.replace('đ', 'd')
     return text
-
+def format_match_name(name):
+    """
+    Đổi:  'Fulham vs Manchester United lúc 22:30 ngày 20/09/2026'
+    ->    'Fulham vs Manchester United | 22:30 | 20/09/2026'
+    Nếu không match pattern thì trả về nguyên gốc.
+    """
+    if not name:
+        return name
+    m = re.search(
+        r'\s*l[uú]c\s+(\d{1,2}:\d{2})\s+ng[aà]y\s+(\d{1,2}/\d{1,2}(?:/\d{4})?)',
+        name, re.IGNORECASE
+    )
+    if m:
+        clean = name[:m.start()].strip()
+        time_str = m.group(1)
+        date_str = m.group(2)
+        return f"{clean} | {time_str} | {date_str}"
+    return name.strip()
 
 # ==========================================
 # 🚫 SPORT WHITELIST — CHỈ CHẤP NHẬN 2 MÔN
@@ -858,7 +875,7 @@ def san_full_server_qua_proxy():
                         print(f"🎯 {ten_nhom}: {len(danh_sach_phong)} phòng", flush=True)
 
                         for stt, (link_phong, data_phong) in enumerate(danh_sach_phong.items(), 1):
-                            ten_tran = data_phong['ten']
+                            ten_tran = format_match_name(data_phong['ten'])   # <-- format tên ở đây
                             anh_thumb = data_phong['thumb']
                             sport_key = data_phong.get('sport', '')
                             mon_vn = "Tennis" if sport_key == "tennis" else "Bóng đá"
@@ -925,11 +942,8 @@ def san_full_server_qua_proxy():
     # XUẤT M3U
     # ==========================================
     seen = set()
-    danh_sach_sach = []
-    for luong in danh_sach_phat:
-        if luong['link'] not in seen:
-            seen.add(luong['link'])
-            danh_sach_sach.append(luong)
+    # KHÔNG lọc trùng theo link nữa — giữ nguyên tất cả các trận khác nhau
+    danh_sach_sach = danh_sach_phat
 
     if danh_sach_sach:
         da_loc = len(danh_sach_phat) - len(danh_sach_sach)
