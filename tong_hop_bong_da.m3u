@@ -1,12 +1,7 @@
 #EXTM3U
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/4zp5rzghp5q82w1/image/small", ⚽ Fiorentina vs Napoli lúc 17:30 ngày 20/09/2026 [ROY]
-#EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
-#EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.zundrixmediapipeline.com/live/channel1.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/4zp5rzghp5q82w1/image/small", ⚽ Fiorentina vs Napoli lúc 17:30 ngày 20/09/2026 [RAVEN]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001789866471-0-0-0aa468726307f958a17b38f6a6fb23e7
+https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001789867627-0-0-a71c9df221778c29457cf3c848e7f2f8
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/4zp5rzghp5q82w1/image/small", ⚽ Fiorentina vs Napoli lúc 17:30 ngày 20/09/2026 [RAVEN]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -14,30 +9,21 @@ https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001789866471-0-0-
 https://live2.zundrixmediapipeline.com/live/channel21.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/4zp5rzghp5q82w1/image/small", ⚽ Fiorentina vs Napoli lúc 17:30 ngày 20/09/2026 [FULL HD ROY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001789866473-0-0-b6e6771fe1908aa16dc4f2142aa69d03
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhjzqvy9d/image/small", ⚽ Arminia Bielefeld vs Heidenheim lúc 18:30 ngày 20/09/2026 [HD JEAN]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001789866503-0-0-b061651180ec4295dc5bf43cc5eb8888
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhjzqvy9d/image/small", ⚽ Hannover 96 vs VfL Bochum lúc 18:30 ngày 20/09/2026 [HD POLO]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-10.flv?auth_key=3000001789866533-0-0-cdb6f00ca7613ef3c63066b6839e5052
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhjzqvy9d/image/small", ⚽ Energie Cottbus vs St. Pauli lúc 18:30 ngày 20/09/2026 [HD LOGAN]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-23.flv?auth_key=3000001789866563-0-0-6dd947a891775b6bf27415ec969b1e48
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001789867630-0-0-b7f15ac1d71d6e262af082484ccf0b8b
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/vl7oqdehlyr510j/image/small", ⚽ Getafe vs Malaga lúc 19:00 ngày 20/09/2026 [HD MAX]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001789866592-0-0-29d37efd74747b26d76ff13707055fb4
+https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001789867658-0-0-95bfac4c16cc3f3ef9a8be1de5ee422a
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Manchester City vs Sunderland lúc 20:00 ngày 20/09/2026 [HD ROY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001789866614-0-0-5c8670f3e00d1a12d1174eb17c282b61
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001789867686-0-0-aa3211366594e7bd863024b9c1175395
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Manchester City vs Sunderland lúc 20:00 ngày 20/09/2026 [TOM]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=91b96807c4b23e82e3644eaf1da5b0a8&wsABSTime=1789909815
+https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=d5e26b80984f9c1f13335552aa01cd16&wsABSTime=1789910888
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Manchester City vs Sunderland lúc 20:00 ngày 20/09/2026 [HD TOM]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001789866616-0-0-9f8a225b39bf093ae08c9b367e2c6d97
+https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001789867688-0-0-a586c5ae1c0562d920251ad9f4f65284
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Manchester City vs Sunderland lúc 20:00 ngày 20/09/2026 [BRADY]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -47,26 +33,26 @@ https://live2.zundrixmediapipeline.com/live/channel15.flv
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=981cdf536d18177ac89849e0fe59f130&wsABSTime=1789909817
+https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=e727c1b4edee8ff3b8bf4de7f0903542&wsABSTime=1789910890
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Leeds United vs Crystal Palace lúc 20:00 ngày 20/09/2026 [HIRO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001789866646-0-0-4a3b521d43d347b7e810d738cade131a
+https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001789867718-0-0-93def3a41915a9671f044969d993a085
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Leeds United vs Crystal Palace lúc 20:00 ngày 20/09/2026 [HIRO]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel14.flv?wsSecret=c8c78b5f75b7081ba41425718d2fd819&wsABSTime=1789909847
+https://live1.quickscoreboardz.com/live/channel14.flv?wsSecret=6a7287ffc6522bd7376ac546fa5af75c&wsABSTime=1789910919
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Leeds United vs Crystal Palace lúc 20:00 ngày 20/09/2026 [FULL HD ASTRA]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001789866647-0-0-bd56728f38b9e2271a3b6f6b881be050
+https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001789867720-0-0-d7c93760ffd112374fbbcb126bb10f29
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ AFC Bournemouth  vs Liverpool lúc 20:00 ngày 20/09/2026 [NICK]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=51851cf010ffc87c8b080307ae114c5c&wsABSTime=1789909852
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=d6f38f1447ca169de510e583f0e2c3d9&wsABSTime=1789910925
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ AFC Bournemouth  vs Liverpool lúc 20:00 ngày 20/09/2026 [HD NICK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001789866667-0-0-ee656fab101b7746cf85a202e89aee10
+https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001789867739-0-0-7759ec84f520a5168c1672d794c11bca
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ AFC Bournemouth  vs Liverpool lúc 20:00 ngày 20/09/2026 [FABIO]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -74,12 +60,12 @@ https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001789866667-0-0-e
 https://live2.zundrixmediapipeline.com/live/channel2.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ AFC Bournemouth  vs Liverpool lúc 20:00 ngày 20/09/2026 [HD FABIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001789866668-0-0-3ad3d0196ceb823eac175dec96996c2f
+https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001789867741-0-0-583fefa9a6e58e644ddaeeb2f10a3273
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ AFC Bournemouth  vs Liverpool lúc 20:00 ngày 20/09/2026 [FELIX]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel24.flv?wsSecret=229ba52b6ced7d05ddc8af9ee3044502&wsABSTime=1789909869
+https://live1.quickscoreboardz.com/live/channel24.flv?wsSecret=1dd844456c9d6ed0b9c93f6cb614bd9e&wsABSTime=1789910942
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ AFC Bournemouth  vs Liverpool lúc 20:00 ngày 20/09/2026 [HD FELIX]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -87,10 +73,10 @@ https://live1.quickscoreboardz.com/live/channel24.flv?wsSecret=229ba52b6ced7d05d
 https://live2.zundrixmediapipeline.com/live/channel24.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/yl5ergphnzr8k0o/image/small", ⚽ AJ Auxerre vs Brest lúc 20:00 ngày 20/09/2026 [HD NEMO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001789866698-0-0-e09aaa6dd0062f9beb18996c70107a62
+https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001789867771-0-0-c24576ec6323471d29e24d19868645c5
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/4zp5rzghp5q82w1/image/small", ⚽ Frosinone vs Como lúc 20:00 ngày 20/09/2026 [HD RAVEN]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001789866713-0-0-1500a59096adf1f3f716d01557846652
+https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001789867787-0-0-7efc2b6226d8cff5ea34a147a10b32f7
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/4zp5rzghp5q82w1/image/small", ⚽ Parma vs Genoa lúc 20:00 ngày 20/09/2026 [FILIP]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -98,35 +84,21 @@ https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001789866713-0-0-
 https://live2.zundrixmediapipeline.com/live/channel19.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/4zp5rzghp5q82w1/image/small", ⚽ Parma vs Genoa lúc 20:00 ngày 20/09/2026 [HD FILIP]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001789866735-0-0-910eac2dc7b2e22c6c1290a812612c22
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/gy0or5jhg6qwzv3/image/small", ⚽ Bayer Leverkusen vs RB Leipzig lúc 20:30 ngày 20/09/2026 [HD KEN]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-18.flv?auth_key=3000001789866765-0-0-f198fda8ca647755c08e5630ea9af0db
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/vl7oqdehlyr510j/image/small", ⚽ Atletico Madrid vs Real Madrid lúc 21:15 ngày 20/09/2026 [JOHAN]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001789866795-0-0-372d67945907038a47bc77f94294f67c
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/vl7oqdehlyr510j/image/small", ⚽ Atletico Madrid vs Real Madrid lúc 21:15 ngày 20/09/2026 [JOHAN]
-#EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
-#EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel12.flv?wsSecret=74e816a039294c91f0288a40746f379c&wsABSTime=1789909996
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/vl7oqdehlyr510j/image/small", ⚽ Atletico Madrid vs Real Madrid lúc 21:15 ngày 20/09/2026 [FULL HD MAX]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001789866797-0-0-b414dbb07777581912c12da870a3046d
+https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001789867804-0-0-ee5b49c27ec63f54ef9349af99980538
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/yl5ergphnzr8k0o/image/small", ⚽ OGC Nice vs LOSC Lille lúc 22:15 ngày 20/09/2026 [HD FELIX]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001789866826-0-0-cfeb5f258135eb8b7a11363081a0ec3b
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001789867833-0-0-107eb8799c4cf2f6ffc2550c1c84aedd
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Fulham vs Manchester United lúc 22:30 ngày 20/09/2026 [HD ROY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001789866845-0-0-63913e17d7ae8ca90a8048b80df5d171
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001789867862-0-0-566b80ef58c6886592d4181248bf8b4c
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Fulham vs Manchester United lúc 22:30 ngày 20/09/2026 [RIO]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel16.flv?wsSecret=6a4942323fc18500d3d77ab0e17776ad&wsABSTime=1789910046
+https://live1.quickscoreboardz.com/live/channel16.flv?wsSecret=1d4d6a3565f8450b4b1de8d20634aca0&wsABSTime=1789911063
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Fulham vs Manchester United lúc 22:30 ngày 20/09/2026 [HD RIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001789866847-0-0-6d0a3b6de0a116fb3f9b530cb61638e6
+https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001789867864-0-0-77b1440d37fe49239d9f78d04d5ffa31
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whz0ryox8/image/small", ⚽ Fulham vs Manchester United lúc 22:30 ngày 20/09/2026 [NICK]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -136,19 +108,10 @@ https://live2.zundrixmediapipeline.com/live/channel5.flv
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=299181339f6076821f33a9f0148a3009&wsABSTime=1789910049
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/gy0or5jhg6qwzv3/image/small", ⚽ Schalke 04 vs SV 07 Elversberg lúc 22:30 ngày 20/09/2026 [HD ASTRA]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001789866877-0-0-451b48fba8f1d54cb3b74aaf5fa6f4d7
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=c99dbd47249fe7fb5ddc329315629748&wsABSTime=1789911066
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/4zp5rzghp5q82w1/image/small", ⚽ Juventus vs Atalanta lúc 23:00 ngày 20/09/2026 [HD BRADY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001789866893-0-0-f8c2c184c5b86080c4c41e7622f58758
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/vl7oqdehlyr510j/image/small", ⚽ Dep. La Coruna vs Real Betis lúc 23:30 ngày 20/09/2026 [HD FILIP]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001789866913-0-0-ff46bbed7729e3d9628b1946368ef197
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/vl7oqdehlyr510j/image/small", ⚽ Villarreal vs Levante lúc 23:30 ngày 20/09/2026 [HD FABIO]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001789866928-0-0-be679f95cb8bcefb357e69cbe84911c4
+https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001789867889-0-0-597b5da5dca9ebb2fdfc2218ba43b3df
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/gy0or5jhg6qwzv3/image/small", ⚽ Paderborn 07 vs TSG Hoffenheim lúc 00:30 ngày 21/09/2026 [TOM]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -156,36 +119,36 @@ https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001789866928-0-0-b
 https://live2.zundrixmediapipeline.com/live/channel4.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/gy0or5jhg6qwzv3/image/small", ⚽ Paderborn 07 vs TSG Hoffenheim lúc 00:30 ngày 21/09/2026 [HD TOM]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001789866945-0-0-2fe6ef2522a8f8c93b1156d80aefdd53
+https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001789867908-0-0-c182adb9eb2dee58df835543b95a4456
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/yl5ergphnzr8k0o/image/small", ⚽ Marseille vs PSG lúc 01:45 ngày 21/09/2026 [HD NICK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001789866961-0-0-308cac6fc59fa030bc8f7b94ee6a413e
+https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001789867929-0-0-b5be80c96b34d0b766f6fbb4d6879144
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/4zp5rzghp5q82w1/image/small", ⚽ AC Milan vs Lecce lúc 01:45 ngày 21/09/2026 [HD BRADY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001789866976-0-0-6d0380d12ab55bc3ddfd6b03565a50eb
+https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001789867946-0-0-025ecf21a928de53abeb4ad3ea285d56
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/vl7oqdehlyr510j/image/small", ⚽ Valencia CF vs Real Sociedad lúc 02:00 ngày 21/09/2026 [HD FABIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001789866992-0-0-7d7ee5e796a1ccddf25ad13ea4ba4d9a
+https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001789867963-0-0-da980f808b2f2097b594d18cc4ef29f9
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Tseng Chun-hsin vs Olle Wallin lúc 11:10 ngày 20/09/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel58.flv?wsSecret=2ba97a988db3cdf933ce8c85c984bad3&wsABSTime=1789910343
+https://live1.quickscoreboardz.com/live/channel58.flv?wsSecret=989d600ac262f79b906461a9f673c701&wsABSTime=1789911312
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Alex de Minaur vs Kamil Majchrzak lúc 11:10 ngày 20/09/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel59.flv?wsSecret=ce842252566a02b4f6fdde065894339d&wsABSTime=1789910364
+https://live1.quickscoreboardz.com/live/channel59.flv?wsSecret=993f7811562e36fd096de85a8a532dfe&wsABSTime=1789911330
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ James Duckworth vs Maks Kasnikowski lúc 12:20 ngày 20/09/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel50.flv?wsSecret=c591f73926a7b271a78a6dc2cee2f2f6&wsABSTime=1789910383
+https://live1.quickscoreboardz.com/live/channel50.flv?wsSecret=fb2b168a646d6e00951e3da8e04f2fc5&wsABSTime=1789911348
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Hsu Yu-hsiou vs Karl Friberg lúc 12:20 ngày 20/09/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel51.flv?wsSecret=bde93f7fd19bdda1da6b15ca84c48012&wsABSTime=1789910402
+https://live1.quickscoreboardz.com/live/channel51.flv?wsSecret=fb5f2104111f88b46ac57d114c68d06f&wsABSTime=1789911365
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Kevin Krawietz/Tim Puetz vs Nikola Mektic/Mate Pavic lúc 17:00 ngày 20/09/2026 [VIC]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -193,7 +156,7 @@ https://live1.quickscoreboardz.com/live/channel51.flv?wsSecret=bde93f7fd19bdda1d
 https://live2.zundrixmediapipeline.com/live/channel32.flv
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Kevin Krawietz/Tim Puetz vs Nikola Mektic/Mate Pavic lúc 17:00 ngày 20/09/2026 [HD VIC]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001789867240-0-0-801940849eb522f5f8e4ba689015c316
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001789868192-0-0-eabbedf8ed2d2242479549d8c33818a8
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/d23xmvvfdwdmg8n/image/small", ⚽ Alexander Zverev vs Dino Prizmic lúc 18:10 ngày 20/09/2026 [HD VIC]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001789867257-0-0-cbdb2a56e6ca2ad6ba4e220783e98e05
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001789868211-0-0-1892a72c7f5f031fa6b770dd306f6ab6
