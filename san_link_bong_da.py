@@ -47,9 +47,8 @@ XOILAC_DOMAINS = [
     "https://xoilaczzc.cc",
     "https://xoilaczzd.cc",
     "https://xoilacxth.tv",
-    "https://xoilac.cfd",
-    "https://xoilactv.pro",
-    "https://xoilac7.tv",
+    "https://xoilac7tv.tv",
+    "https://xoilacvvr.tv",
 ]
 
 # ==========================================
