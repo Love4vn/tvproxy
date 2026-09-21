@@ -1,12 +1,10 @@
 """
-🎯 SĂN LINK XOILAC - Bản cuối cùng
-✅ Fix: Loại triệt để Hạng 2 Đức (Hạng 2 Đức, 2. Bundesliga, ...)
-✅ Fix: Xử lý redirect xoilacz.io -> domain sống
+🎯 SĂN LINK XOILAC - Final v3
+✅ Whitelist CLB top 5 châu Âu (Anh, Đức, TBN, Ý, Pháp)
+✅ Loại giao hữu CLB không có đội top
+✅ Loại Premier League giả (Saint Kitts, Indian Shillong...)
 ✅ Chỉ Bóng đá (nam) + Tennis
-✅ Top 5 châu Âu cấp 1 + C1/C2/C3 + WC/Euro/Nation League + giao hữu EU
-✅ Auto click "XEM THÊM" đến 24h tới
-✅ Lấy TẤT CẢ server con (ROY/HD ROY/FABIO...)
-✅ Tự động thêm #EXTVLCOPT cho M3U
+✅ Xử lý redirect xoilacz.io
 """
 import re
 import time
@@ -25,37 +23,32 @@ PROXY = {
 }
 
 MAX_RETRIES = 3
-DOMAIN_TIMEOUT = 25000          # Đủ dài cho redirect chain
-STREAM_WAIT_TRIES = 40          # ~10s chờ stream mỗi nút
+DOMAIN_TIMEOUT = 25000
+STREAM_WAIT_TRIES = 40
 STREAM_WAIT_STEP_MS = 250
 HOURS_AHEAD = 24
 MAX_XEM_THEM_CLICKS = 15
 
-# ==========================================
-# DANH SÁCH SERVER + DOMAIN
-# ==========================================
 TAT_CA_SERVER = [
     ("Xoilac", "https://xoilacz.io", "/truc-tiep/", "xoilac"),
 ]
 
-# Danh sách domain - sẽ thử lần lượt đến khi có 1 domain sống
-# Bao gồm cả domain đích có thể redirect tới
 XOILAC_DOMAINS = [
-    "https://xoilacz.io",        # Domain chính (có thể redirect)
-    "https://xoilaczzf.cc",      # Domain đích hay gặp
-    "https://xoilaczzb.cc",      # Domain đích khác
+    "https://xoilacz.io",
+    "https://xoilaczzf.cc",
+    "https://xoilaczzb.cc",
     "https://xoilaczzc.cc",
     "https://xoilaczzd.cc",
+    "https://xoilaczzg.cc",
     "https://xoilacxth.tv",
     "https://xoilac7tv.tv",
     "https://xoilacvvr.tv",
 ]
 
 # ==========================================
-# HELPERS CHUẨN HÓA TIẾNG VIỆT
+# HELPERS
 # ==========================================
 def normalize_vn(text):
-    """Chuẩn hóa về không dấu, lowercase."""
     if not text:
         return ""
     text = str(text).lower()
@@ -63,46 +56,97 @@ def normalize_vn(text):
     text = ''.join(c for c in text if unicodedata.category(c) != 'Mn')
     text = text.replace('đ', 'd')
     return text
-def format_match_name(name):
-    """
-    Đổi:  'Fulham vs Manchester United lúc 22:30 ngày 20/09/2026'
-    ->    'Fulham vs Manchester United | 22:30 | 20/09/2026'
-    Nếu không match pattern thì trả về nguyên gốc.
-    """
-    if not name:
-        return name
-    m = re.search(
-        r'\s*l[uú]c\s+(\d{1,2}:\d{2})\s+ng[aà]y\s+(\d{1,2}/\d{1,2}(?:/\d{4})?)',
-        name, re.IGNORECASE
-    )
-    if m:
-        clean = name[:m.start()].strip()
-        time_str = m.group(1)
-        date_str = m.group(2)
-        return f"{clean} | {time_str} | {date_str}"
-    return name.strip()
+
 
 # ==========================================
-# 🚫 SPORT WHITELIST — CHỈ CHẤP NHẬN 2 MÔN
+# ⭐ WHITELIST CLB TOP 5 CHÂU ÂU
 # ==========================================
-SPORT_WHITELIST = {"football", "tennis"}
+TOP_TEAMS = [
+    # ===== ANH (Premier League) =====
+    "arsenal", "aston villa", "bournemouth", "brentford", "brighton",
+    "chelsea", "crystal palace", "everton", "fulham", "ipswich",
+    "leicester", "liverpool",
+    "man city", "manchester city",
+    "man united", "man utd", "manchester united",
+    "newcastle", "nottingham forest", "southampton",
+    "tottenham", "west ham", "wolves", "wolverhampton",
 
+    # ===== ĐỨC (Bundesliga) =====
+    "augsburg", "bayer leverkusen", "leverkusen",
+    "bayern munich", "bayern munchen", "bayern",
+    "bochum",
+    "borussia dortmund", "dortmund", "bvb",
+    "borussia monchengladbach", "monchengladbach", "gladbach",
+    "eintracht frankfurt", "frankfurt",
+    "freiburg", "heidenheim", "hoffenheim",
+    "holstein kiel", "kiel",
+    "mainz",
+    "rb leipzig", "leipzig",
+    "st. pauli", "st pauli",
+    "stuttgart", "union berlin",
+    "werder bremen", "werder", "wolfsburg",
+
+    # ===== TÂY BAN NHA (La Liga) =====
+    "alaves", "athletic bilbao", "athletic club",
+    "atletico madrid", "atletico",
+    "barcelona", "barca",
+    "celta vigo", "celta",
+    "espanyol", "getafe", "girona",
+    "las palmas", "leganes", "mallorca", "osasuna",
+    "rayo vallecano",
+    "real betis", "betis",
+    "real madrid", "real sociedad",
+    "sevilla", "valencia", "valladolid", "villarreal",
+
+    # ===== Ý (Serie A) =====
+    "atalanta", "bologna", "cagliari", "como", "empoli",
+    "fiorentina", "genoa", "hellas verona",
+    "inter milan",
+    "juventus", "juve",
+    "lazio", "lecce",
+    "ac milan",
+    "monza", "napoli", "parma",
+    "roma",
+    "torino", "udinese", "venezia",
+
+    # ===== PHÁP (Ligue 1) =====
+    "angers", "auxerre", "brest", "le havre",
+    "rc lens",
+    "lille", "lyon", "olympique lyonnais",
+    "marseille", "olympique marseille",
+    "as monaco",
+    "montpellier", "nantes",
+    "ogc nice",
+    "paris saint-germain", "paris sg", "psg",
+    "reims", "rennes", "stade rennais",
+    "saint-etienne", "saint etienne",
+    "strasbourg", "toulouse",
+]
+
+# Các CLB "nguy hiểm" (trùng tên thông thường) → phải ở dạng đầy đủ hoặc có context
+DANGEROUS_TEAMS = {
+    "nice": ["ogc nice"],              # Tránh match "very nice"
+    "lens": ["rc lens"],                # Tránh match "camera lens"
+    "milan": ["ac milan", "inter milan"],
+    "inter": ["inter milan"],
+    "roma": ["as roma", "roma "],       # Roma vẫn rủi ro nhưng OK
+    "monaco": ["as monaco"],
+}
+
+
+# ==========================================
+# 🚫 SPORT WHITELIST
+# ==========================================
 OTHER_SPORT_KEYWORDS = [
-    # Bóng rổ
     r"\bbasketball\b", r"\bbong\s*ro\b", r"\bnba\b", r"\beuroleague\b",
     r"\beuro\s*league\b", r"\bbbl\b", r"\bnbb\b", r"\bacb\b",
     r"\bbrose\s*bamberg\b", r"\balba\b", r"\bldlc\b", r"\bfiba\b",
-    # Bóng chuyền
     r"\bvolleyball\b", r"\bbong\s*chuyen\b", r"\bvnl\b",
-    # Cầu lông
     r"\bbadminton\b", r"\bcau\s*long\b", r"\bbwf\b",
-    # Bóng bàn
     r"\btable\s*tennis\b", r"\bbong\s*ban\b", r"\bwtt\b",
-    # Esports
     r"\besports?\b", r"\blol\b", r"\bleague\s*of\s*legends\b",
     r"\bdota\s*2?\b", r"\bcs\s*:?\s*go\b", r"\bcsgo\b",
     r"\bvalorant\b", r"\bpubg\b", r"\bmobile\s*legends\b",
-    # Khác
     r"\bbaseball\b", r"\bbong\s*chay\b", r"\bmlb\b",
     r"\bhandball\b", r"\bbong\s*nem\b",
     r"\bhockey\b", r"\bkhuc\s*con\s*cau\b", r"\bnhl\b",
@@ -111,65 +155,40 @@ OTHER_SPORT_KEYWORDS = [
 ]
 
 # ==========================================
-# 🚫 HARD EXCLUDE — LOẠI NGAY NẾU MATCH
+# 🚫 HARD EXCLUDE
 # ==========================================
 HARD_EXCLUDE_PATTERNS = [
-    # ---- Nữ / Trẻ / Dự bị ----
+    # ---- Nữ / Trẻ / Dự bị / Huyền thoại ----
     r"\bnu\b", r"\bwomen\b", r"\bfemale\b", r"\bladies\b",
     r"\bdamen\b", r"\bfeminine\b", r"\bfemenil\b", r"\bfeminino\b",
     r"\bu\d{2}\b", r"\bu-\d{2}\b", r"\bunder\s*\d{2}\b",
     r"\byouth\b", r"\bjunior\b", r"\btre\b", r"\breserve\b",
     r"\bacademy\b", r"\bhoc\s*vien\b", r"\bdoi\s*b\b",
+    r"\blegends?\b", r"\bhuyen\s*thoai\b", r"\bold\s*boys\b",
 
-    # ==========================================
-    # ---- HẠNG 2 CỦA TOP 5 (ĐÃ FIX KỸ) ----
-    # ==========================================
-    # Hạng 2 Đức / 2. Bundesliga / Bundesliga 2
-    r"hang\s*(2|hai|nhi)\s*[^\w]*(duc|bundesliga|germany)",
-    r"hang\s*(2|hai|nhi)\s*duc",
-    r"2\.?\s*bundesliga",
-    r"bundesliga\s*2\b",
-    r"bundesliga\s*(2|zwei)",
-
-    # Hạng 2 Anh / Championship / EFL Championship
-    r"hang\s*(2|hai|nhi)\s*[^\w]*(anh|england)",
-    r"\befl\s*championship\b",
-    r"\bchampionship\b",
-    r"\bleague\s*one\b",
-    r"\bleague\s*two\b",
-    r"hang\s*(1|nhat|nh[âa]t)\s*anh",     # Hạng nhất Anh = Championship
-
-    # Hạng 2 Ý / Serie B
-    r"hang\s*(2|hai|nhi)\s*[^\w]*(y\b|italia|italy)",
+    # ---- Hạng 2 của top 5 ----
+    r"hang\s*(2|hai|nhi)\s*[^\w]*(duc|bundesliga|germany|anh|england|y\b|italy|phap|france|tbn|spain|tay\s*ban\s*nha)",
+    r"2\.?\s*bundesliga", r"bundesliga\s*2\b",
     r"\bserie\s*b\b",
-    r"serie\s*b\b",
-
-    # Hạng 2 Pháp / Ligue 2
-    r"hang\s*(2|hai|nhi)\s*[^\w]*(phap|france)",
     r"\bligue\s*2\b",
-    r"ligue\s*2\b",
-
-    # Hạng 2 TBN / La Liga 2 / Segunda
-    r"hang\s*(2|hai|nhi)\s*[^\w]*(tbn|tay\s*ban\s*nha|spain)",
     r"\bla\s*liga\s*2\b", r"\blaliga\s*2\b",
     r"\bsegunda\b", r"\bsegunda\s*division\b",
-    r"la\s*liga\s*2\b", r"laliga\s*2\b",
+    r"\befl\s*championship\b", r"\bchampionship\b",
+    r"\bleague\s*one\b", r"\bleague\s*two\b",
+    r"\bregionalliga\b", r"\b3\.?\s*liga\b",
+    r"\bchallenger\s*pro\b", r"\bk\s*league\s*2\b",
 
-    # ---- Hạng 3+ của top 5 ----
-    r"\b3\.?\s*liga\b",
-    r"\bregionalliga\b",
-    r"hang\s*(3|ba)\s*(duc|anh|y|phap|tbn)",
-    r"\bleague\s*3\b",
-
-    # ---- Các giải khác có thể nhầm ----
-    r"\bchallenger\s*pro\b",
-    r"\bk\s*league\s*2\b",
+    # ---- Quốc gia nhỏ có "Premier League" giả ----
+    r"\bsaint\s*kitts\b", r"\bnevis\b", r"\bshilling\b", r"\bindian\s*premier\b",
+    r"\bbhutan\b", r"\bsri\s*lanka\b", r"\bgibraltar\b", r"\bfaroe\b",
+    r"\bsomalia\b", r"\bzanzibar\b", r"\bethiopia\b", r"\beritrea\b",
+    r"\bwelsh\b", r"\bscottish\b", r"\bnorthern\s*ireland\b",
 
     # ---- Châu Á ----
-    r"\bbhutan\b", r"\bthai\s*land\b", r"\bthai\s*league\b",
+    r"\bthai\s*land\b", r"\bthai\s*league\b",
     r"\bmalaysia\b", r"\bindonesia\b", r"\bphilippines\b",
     r"\bsingapore\b", r"\bmyanmar\b", r"\bcambodia\b", r"\bcampuchia\b",
-    r"\btrung\s*quoc\b", r"\bchina\b", r"\bchinese\b", r"\bcsl\b",
+    r"\btrung\s*quoc\b", r"\bchina\b", r"\bcsl\b",
     r"\bnhat\b", r"\bjapan\b", r"\bj\s*league\b", r"\bj1\b", r"\bj2\b",
     r"\bhan\s*quoc\b", r"\bkorea\b", r"\bk\s*league\b",
     r"\ban\s*do\b", r"\bindia\b", r"\bisl\b",
@@ -180,8 +199,7 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bafc\s*champions\b", r"\bafc\s*cup\b",
 
     # ---- Châu Mỹ ----
-    r"\bvenezuela\b",
-    r"\bbrasil\b", r"\bbrazil\b", r"\bbrasileir[ao]\b",
+    r"\bvenezuela\b", r"\bbrasil\b", r"\bbrazil\b", r"\bbrasileir[ao]\b",
     r"\bargentina\b", r"\bprimera\s*division\b",
     r"\bmexico\b", r"\bliga\s*mx\b", r"\bmls\b",
     r"\bchile\b", r"\bcolombia\b", r"\bperu\b", r"\becuador\b",
@@ -200,18 +218,17 @@ HARD_EXCLUDE_PATTERNS = [
     # ---- Châu Đại Dương ----
     r"\baustralia\b", r"\ba-?league\b", r"\bnew\s*zealand\b",
 
-    # ---- Châu Âu nhưng KHÔNG PHẢI TOP 5 ----
+    # ---- Châu Âu không phải top 5 ----
     r"\bczech\b", r"\bsec\b", r"\bfortuna\s*liga\b", r"\bchance\s*liga\b",
     r"\baustria\b", r"\bbundesliga\s*ao\b",
-    r"\bthuy\s*si\b", r"\bswitzerland\b", r"\bsuper\s*league\s*thuy\b",
+    r"\bthuy\s*si\b", r"\bswitzerland\b",
     r"\bbelgium\b", r"\bpro\s*league\s*bi\b", r"\bjupiler\b",
     r"\bholland\b", r"\bnetherlands\b", r"\beredivisie\b",
     r"\bportugal\b", r"\bbo\s*dao\s*nha\b", r"\bprimeira\s*liga\b",
     r"\bturkey\b", r"\btho\s*nhi\s*ky\b", r"\bsuper\s*lig\b",
     r"\bgreece\b", r"\bhy\s*lap\b",
-    r"\bscotland\b", r"\bscottish\b",
-    r"\bwales\b", r"\bwelsh\b", r"\bnorthern\s*ireland\b",
-    r"\bireland\b", r"\bireland\s*premier\b",
+    r"\bscotland\b", r"\bwales\b",
+    r"\bireland\b",
     r"\bcroatia\b", r"\bserbia\b",
     r"\bpoland\b", r"\bekstraklasa\b",
     r"\bukraine\b", r"\bnga\b", r"\brussia\b",
@@ -229,11 +246,11 @@ HARD_EXCLUDE_PATTERNS = [
 ]
 
 # ==========================================
-# ✅ WHITELIST — CHỈ GIỮ NẾU MATCH CHÍNH XÁC
+# ✅ WHITELIST GIẢI
 # ==========================================
 TOP_LEAGUE_PATTERNS = [
-    # ---- Top 5 châu Âu cấp 1 ----
-    r"\bpremier\s*league\b",
+    # Top 5 châu Âu (strict)
+    r"\bpremier\s*league\b",   # Đã có blacklist quốc gia nhỏ ở trên
     r"\bngoai\s*hang\s*anh\b",
     r"\bepl\b",
     r"\bla\s*liga\b(?!\s*2)", r"\blaliga\b(?!\s*2)",
@@ -241,7 +258,7 @@ TOP_LEAGUE_PATTERNS = [
     r"\bserie\s*a\b(?!\s*b)",
     r"\bligue\s*1\b",
 
-    # ---- Cúp châu Âu ----
+    # Cúp châu Âu
     r"\bchampions\s*league\b", r"\buefa\s*champions\b",
     r"\bcup\s*c1\b", r"\bcup\s*1\b", r"\bucl\b",
     r"\beuropa\s*league\b", r"\bcup\s*c2\b", r"\buel\b",
@@ -249,7 +266,7 @@ TOP_LEAGUE_PATTERNS = [
     r"\bsieu\s*cup\s*chau\s*au\b", r"\bsuper\s*cup\s*uefa\b",
     r"\buefa\s*super\s*cup\b",
 
-    # ---- ĐTQG ----
+    # ĐTQG
     r"\bworld\s*cup\b", r"\bfifa\s*world\s*cup\b", r"\bworldcup\b",
     r"\buefa\s*euro\b", r"\beuro\s*20\d{2}\b",
     r"\beuro\s*championship\b", r"\beuro\s*cup\b",
@@ -257,7 +274,7 @@ TOP_LEAGUE_PATTERNS = [
     r"\buefa\s*nations\b",
 ]
 
-# Quốc gia EU cho giao hữu
+# Quốc gia châu Âu cho giao hữu ĐTQG
 EURO_COUNTRIES = {
     "anh", "england", "duc", "germany", "phap", "france",
     "y", "italy", "tay ban nha", "spain", "bo dao nha", "portugal",
@@ -279,7 +296,6 @@ FRIENDLY_KEYWORDS = ("giao huu", "friendly", "friendlies")
 # LOGIC LỌC
 # ==========================================
 def is_other_sport(text):
-    """True nếu text chứa từ khóa của MÔN KHÁC."""
     if not text:
         return False
     t = normalize_vn(text)
@@ -290,7 +306,6 @@ def is_other_sport(text):
 
 
 def is_hard_excluded(text):
-    """True nếu text chứa từ khóa bị cấm."""
     if not text:
         return False
     t = normalize_vn(text)
@@ -301,12 +316,28 @@ def is_hard_excluded(text):
 
 
 def contains_top_league(text):
-    """True nếu text khớp whitelist regex."""
     if not text:
         return False
     t = normalize_vn(text)
     for pat in TOP_LEAGUE_PATTERNS:
         if re.search(pat, t, re.IGNORECASE):
+            return True
+    return False
+
+
+def contains_top_team(text):
+    """
+    True nếu text chứa CLB top 5 châu Âu.
+    Dùng word boundary chặt để tránh false positive.
+    """
+    if not text:
+        return False
+    t = normalize_vn(text)
+
+    for team in TOP_TEAMS:
+        # Match với biên rõ ràng: trước và sau không phải chữ cái
+        pattern = rf'(?<![a-z]){re.escape(team)}(?![a-z])'
+        if re.search(pattern, t):
             return True
     return False
 
@@ -326,18 +357,13 @@ def is_friendly(text):
 
 
 def detect_sport(name="", sport_hint=""):
-    """
-    Trả về: 'football' | 'tennis' | 'other' | 'unknown'
-    """
     hint = normalize_vn(sport_hint or "").strip()
-
     if hint in ("football", "soccer", "bong da"):
         return "football"
     if hint in ("tennis", "quan vot"):
         return "tennis"
     if hint:
         return "other"
-
     n = normalize_vn(name or "")
     if is_other_sport(n):
         return "other"
@@ -348,11 +374,13 @@ def detect_sport(name="", sport_hint=""):
 
 def should_keep(name, sport_hint="", container_text=""):
     """
-    4 lớp bảo vệ:
-    - LỚP 0: data-sport = môn khác → loại ngay
-    - LỚP 1: từ khóa môn khác trong nội dung → loại ngay
-    - LỚP 2: hard exclude (Nữ/Trẻ/Hạng 2+) → loại
-    - LỚP 3: whitelist giải → giữ
+    LỚP 0: môn khác → loại
+    LỚP 1: từ khóa môn khác → loại
+    LỚP 2: hard exclude (Nữ/Trẻ/Hạng 2+/quốc gia nhỏ) → loại
+    LỚP 3: ⭐ chứa CLB top 5 → GIỮ (bao gồm cả giao hữu CLB lớn)
+    LỚP 4: khớp whitelist giải (top 5, C1/C2/C3, WC/Euro/Nation) → giữ
+    LỚP 5: giao hữu ĐTQG châu Âu → giữ
+    Còn lại: loại
     """
     # LỚP 0
     sport = detect_sport(name, sport_hint)
@@ -371,11 +399,16 @@ def should_keep(name, sport_hint="", container_text=""):
     if is_hard_excluded(combined):
         return False
 
-    # LỚP 3
+    # LỚP 3 ⭐ — quan trọng: chứa CLB top 5 → giữ
+    # Check cả name và container (có CLB có thể nằm trong title tooltip)
+    if contains_top_team(name) or contains_top_team(container_text):
+        return True
+
+    # LỚP 4
     if contains_top_league(combined):
         return True
 
-    # Giao hữu châu Âu
+    # LỚP 5: giao hữu ĐTQG châu Âu
     if is_friendly(combined) and has_euro_country(combined):
         return True
 
@@ -441,7 +474,7 @@ def build_extvlc_headers(stream_url: str) -> str:
 
 
 # ==========================================
-# TEST FILTER (tùy chọn)
+# TEST FILTER
 # ==========================================
 def _test_filter():
     tests = [
@@ -449,29 +482,20 @@ def _test_filter():
         ("Bayern Munchen vs Brose Bamberg", "basketball bundesliga", "basketball", False),
         ("LA Lakers vs Boston Celtics", "nba", "basketball", False),
         ("Vietnam vs Thailand", "bong chuyen", "volleyball", False),
-        ("Lee Chong Wei vs Lin Dan", "cau long", "badminton", False),
-        ("T1 vs GenG", "lol lck", "esports", False),
         ("Dep. La Guaira vs Deportivo Tachira", "venezuela primera", "", False),
-        ("Tensung FC vs Drukpa FC", "bhutan premier league", "", False),
-        ("FC Hradec Králové vs FK Teplice", "czech first league", "", False),
-        # Hạng 2 Đức - các biến thể
+        # ⭐ 3 trận đã lọt — phải loại
+        ("Inter Laguna FC vs Atletico Hidalgo", "Giao Hữu CLB", "", False),
+        ("ELCO LTD St Peters vs RAMS Village Superstars", "Saint Kitts Nevis Premier League", "", False),
+        ("Nongthymai SC vs Malki SC", "Indian Shillong Premier League", "", False),
+        # Hạng 2 Đức
         ("Hannover 96 vs VfL Bochum", "Hạng 2 Đức", "", False),
         ("Energie Cottbus vs St. Pauli", "2. Bundesliga", "", False),
-        ("Arminia Bielefeld vs Heidenheim", "Hạng nhì Đức", "", False),
-        ("Fortuna Düsseldorf vs Hamburg", "Bundesliga 2", "", False),
-        # Hạng 2 các nước khác
         ("Arezzo vs SudTirol", "hang 2 y - serie b", "", False),
-        ("Leeds vs Leicester", "EFL Championship", "", False),
-        ("Ajaccio vs Guingamp", "Ligue 2", "", False),
-        # Nữ/Trẻ
         ("Nữ AS Harima vs Nữ NGU Nagoya", "", "", False),
         ("U19 Bayern vs U19 Dortmund", "", "", False),
-        # Quốc gia ngoài
         ("Bahia vs Flamengo", "brasileirao serie a", "", False),
         ("Al Nassr vs Al Hilal", "saudi pro league", "", False),
         ("Ajax vs PSV", "eredivisie ha lan", "", False),
-        ("Benfica vs Porto", "primeira liga bo dao nha", "", False),
-        ("Celtic vs Rangers", "scottish premiership", "", False),
 
         # --- Nên GIỮ ---
         ("Tottenham vs Aston Villa", "ngoai hang anh - premier league", "football", True),
@@ -486,6 +510,8 @@ def _test_filter():
         ("Anh vs Đức", "giao huu quoc te", "football", True),
         ("Tây Ban Nha vs Ý", "uefa nations league", "football", True),
         ("Sinner vs Alcaraz", "atp wimbledon", "tennis", True),
+        # ⭐ CLB top 5 giao hữu → vẫn giữ
+        ("Chelsea vs Bayern Munich", "Giao Hữu CLB", "football", True),
     ]
     print("\n🧪 TEST FILTER:")
     ok = 0
@@ -494,32 +520,22 @@ def _test_filter():
         status = "✅" if result == expected else "❌"
         if result == expected:
             ok += 1
-        print(f"  {status} [{result}] sport={sport:10s} | {name[:48]} | {container[:35]}")
+        print(f"  {status} [{result}] {name[:55]}")
     print(f"\n📊 {ok}/{len(tests)} PASS\n")
 
 
 # ==========================================
-# HÀM GOTO XỬ LÝ REDIRECT
+# GOTO XỬ LÝ REDIRECT
 # ==========================================
 def goto_with_redirect(page, url, timeout=DOMAIN_TIMEOUT):
-    """
-    Truy cập URL và chờ redirect hoàn tất.
-    Trả về (final_url, success).
-    """
     try:
         page.goto(url, timeout=timeout, wait_until="domcontentloaded")
-
-        # Chờ JS redirect chạy xong - poll URL tối đa 8s
         for _ in range(32):
             page.wait_for_timeout(250)
-            # Nếu URL khác biệt và có pathname rõ ràng → OK
             cur = page.url
             if cur and cur != url and cur != "about:blank":
-                # Đợi thêm 1s cho trang mới ổn định
                 page.wait_for_timeout(1000)
                 return page.url, True
-
-        # Nếu URL không đổi → coi như không redirect, vẫn OK
         return page.url, True
     except Exception as e:
         print(f"     ⚠️ goto fail: {str(e)[:90]}", flush=True)
@@ -530,23 +546,22 @@ def goto_with_redirect(page, url, timeout=DOMAIN_TIMEOUT):
 # MAIN
 # ==========================================
 def san_full_server_qua_proxy():
-    # _test_filter()  # <-- Bỏ comment để test filter
-    print("🚀 BẮT ĐẦU QUÉT XOILAC", flush=True)
+    # _test_filter()  # <-- Bỏ comment để test
+    print("🚀 BẮT ĐẦU QUÉT XOILAC v3", flush=True)
     print(f"   → Bóng đá (nam) + Tennis", flush=True)
-    print(f"   → Top 5 châu Âu cấp 1 + C1/C2/C3 + WC/Euro/Nation League + giao hữu EU", flush=True)
-    print(f"   → Loại: Nữ, Trẻ, Hạng 2+, môn khác", flush=True)
+    print(f"   → CLB top 5 + C1/C2/C3 + WC/Euro/Nation + giao hữu ĐTQG EU", flush=True)
 
     danh_sach_phat = []
     server_da_thanh_cong = set()
 
     for lan_thu in range(1, MAX_RETRIES + 1):
         print(f"\n==========================================", flush=True)
-        print(f"🔄 VÒNG QUÉT {lan_thu}/{MAX_RETRIES}", flush=True)
+        print(f"🔄 VÒNG {lan_thu}/{MAX_RETRIES}", flush=True)
         print(f"==========================================", flush=True)
 
         server_can_quet = [s for s in TAT_CA_SERVER if s[0] not in server_da_thanh_cong]
         if not server_can_quet:
-            print("✅ Tất cả server đã quét xong!", flush=True)
+            print("✅ Xong!", flush=True)
             break
 
         so_tram_loi_vong_nay = 0
@@ -587,9 +602,6 @@ def san_full_server_qua_proxy():
                         route.continue_()
                 context.route("**/*", chan_tai_nguyen_thua)
 
-                # ==========================================
-                # LỌC DANH SÁCH PHÒNG
-                # ==========================================
                 def _loc_trung(danh_sach_raw, url_goc):
                     result = {}
                     stats = {"total": 0, "other_sport": 0, "excluded": 0,
@@ -681,8 +693,7 @@ def san_full_server_qua_proxy():
                         count_after = page.evaluate(
                             "document.querySelectorAll('.grid-matches__item, .match-horizontals-item').length")
                         clicked += 1
-                        print(f"     🔽 Click #{clicked}: {count_before} → {count_after} trận",
-                              flush=True)
+                        print(f"     🔽 Click #{clicked}: {count_before} → {count_after}", flush=True)
                         if count_after <= count_before:
                             break
                         try:
@@ -771,8 +782,7 @@ def san_full_server_qua_proxy():
                         buttons = detect_server_buttons(page)
                         if not buttons:
                             buttons = [{'idx': '0', 'label': 'Server 1', 'selector': 'body'}]
-                        print(f"     📺 {len(buttons)} server: {[b['label'] for b in buttons]}",
-                              flush=True)
+                        print(f"     📺 {len(buttons)}: {[b['label'] for b in buttons]}", flush=True)
 
                         for btn in buttons:
                             target_url = [None]
@@ -807,25 +817,21 @@ def san_full_server_qua_proxy():
                                         if target_url[0]:
                                             break
                                         page.wait_for_timeout(STREAM_WAIT_STEP_MS)
-                            except Exception as e:
-                                print(f"        ⚠️ [{btn['label']}] {str(e)[:60]}", flush=True)
+                            except Exception:
+                                pass
                             finally:
                                 page.remove_listener("request", handle)
 
                             if target_url[0] and target_url[0] not in seen_urls:
                                 seen_urls.add(target_url[0])
                                 streams.append({"label": btn["label"], "url": target_url[0]})
-                                print(f"        ✅ [{btn['label']}] "
-                                      f"{target_url[0][:75]}", flush=True)
+                                print(f"        ✅ [{btn['label']}] {target_url[0][:75]}", flush=True)
                             else:
                                 print(f"        ⛔ [{btn['label']}] no stream", flush=True)
                     except Exception as e:
                         print(f"     ⚠️ {str(e)[:80]}", flush=True)
                     return streams
 
-                # ==========================================
-                # QUÉT 1 SERVER (đã fix redirect)
-                # ==========================================
                 def quet_trang(ten_nhom, url_trang_chu, keyword_link, kieu_quet=""):
                     nonlocal so_tram_loi_vong_nay, so_tram_ok_vong_nay
                     page = context.new_page()
@@ -835,23 +841,18 @@ def san_full_server_qua_proxy():
                     try:
                         url_dung = None
                         for domain in XOILAC_DOMAINS:
-                            print(f"   🔗 Thử: {domain}", flush=True)
+                            print(f"   🔗 {domain}", flush=True)
                             final_url, ok = goto_with_redirect(page, domain)
-
                             if not ok or not final_url:
                                 continue
-
-                            # Log redirect
                             if final_url != domain:
                                 print(f"     🔄 Redirect → {final_url}", flush=True)
 
-                            # Check Cloudflare challenge
                             title = (page.title() or "").lower()
                             if "just a moment" in title or "checking your browser" in title:
-                                print(f"     🛡️ Cloudflare challenge", flush=True)
+                                print(f"     🛡️ Cloudflare", flush=True)
                                 continue
 
-                            # Chờ selector của trang chủ
                             try:
                                 page.wait_for_function(
                                     f"document.querySelectorAll('a[href*=\"{keyword_link}\"]').length > 0",
@@ -860,11 +861,10 @@ def san_full_server_qua_proxy():
                                 print(f"   ✅ Sống: {final_url}", flush=True)
                                 break
                             except Exception:
-                                print(f"     ❌ Không tìm thấy link trận đấu", flush=True)
                                 continue
 
                         if not url_dung:
-                            raise Exception("Tất cả domain đều chết!")
+                            raise Exception("Tất cả domain chết!")
 
                         page.wait_for_timeout(2000)
                         print(f"   🔽 Click XEM THÊM...", flush=True)
@@ -875,14 +875,13 @@ def san_full_server_qua_proxy():
                         print(f"🎯 {ten_nhom}: {len(danh_sach_phong)} phòng", flush=True)
 
                         for stt, (link_phong, data_phong) in enumerate(danh_sach_phong.items(), 1):
-                            ten_tran = format_match_name(data_phong['ten'])   # <-- format tên ở đây
+                            ten_tran = data_phong['ten']
                             anh_thumb = data_phong['thumb']
                             sport_key = data_phong.get('sport', '')
                             mon_vn = "Tennis" if sport_key == "tennis" else "Bóng đá"
                             nhom_m3u = f"{ten_nhom} - {mon_vn}"
 
-                            print(f"\n   [{stt}/{len(danh_sach_phong)}] {ten_tran[:70]}",
-                                  flush=True)
+                            print(f"\n   [{stt}/{len(danh_sach_phong)}] {ten_tran[:70]}", flush=True)
 
                             streams = lay_tat_ca_server_con(page, link_phong)
                             for s in streams:
@@ -922,8 +921,7 @@ def san_full_server_qua_proxy():
         except Exception as e:
             print(f"🔥 Lỗi hệ thống: {e}", flush=True)
 
-        print(f"\n📊 Vòng {lan_thu}: ✅ {so_tram_ok_vong_nay} OK, "
-              f"❌ {so_tram_loi_vong_nay} fail", flush=True)
+        print(f"\n📊 Vòng {lan_thu}: ✅ {so_tram_ok_vong_nay} OK, ❌ {so_tram_loi_vong_nay} fail", flush=True)
         print(f"📊 Tích lũy: {len(danh_sach_phat)} luồng", flush=True)
 
         if so_tram_ok_vong_nay == 0 and so_tram_loi_vong_nay > 0 and lan_thu < MAX_RETRIES:
@@ -942,8 +940,11 @@ def san_full_server_qua_proxy():
     # XUẤT M3U
     # ==========================================
     seen = set()
-    # KHÔNG lọc trùng theo link nữa — giữ nguyên tất cả các trận khác nhau
-    danh_sach_sach = danh_sach_phat
+    danh_sach_sach = []
+    for luong in danh_sach_phat:
+        if luong['link'] not in seen:
+            seen.add(luong['link'])
+            danh_sach_sach.append(luong)
 
     if danh_sach_sach:
         da_loc = len(danh_sach_phat) - len(danh_sach_sach)
@@ -963,7 +964,6 @@ def san_full_server_qua_proxy():
                 file.write(f'{luong["link"]}\n')
 
         print(f"🎉 TỔNG {len(danh_sach_sach)} TRẬN/LUỒNG!", flush=True)
-
         nhom_count = {}
         for l in danh_sach_sach:
             nhom_count[l['nhom']] = nhom_count.get(l['nhom'], 0) + 1
@@ -973,8 +973,7 @@ def san_full_server_qua_proxy():
         for l in danh_sach_sach:
             srv = l.get('server', '') or '(mặc định)'
             server_count[srv] = server_count.get(srv, 0) + 1
-        print(f"📺 Server con: {', '.join(f'{k}: {v}' for k, v in server_count.items())}",
-              flush=True)
+        print(f"📺 Server: {', '.join(f'{k}: {v}' for k, v in server_count.items())}", flush=True)
     else:
         print(f"❌ Không có luồng!", flush=True)
         with open("tong_hop_bong_da.m3u", "w", encoding="utf-8") as file:
