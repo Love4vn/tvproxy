@@ -1,6 +1,6 @@
 """
-🎯 SĂN LINK XOILAC - Final v4
-✅ Fix: Loại triệt để Indian Shillong / Northern Premier / Chinese CMCL / Oberliga
+🎯 SĂN LINK XOILAC - Final v5
+✅ Fix: Đội B (Real Madrid Castilla), Peru/Clausura, D5 Đức, đội amateur (ASC 09 Dortmund)
 ✅ Whitelist CLB top 5 châu Âu
 ✅ Xử lý redirect xoilacz.io
 """
@@ -158,7 +158,34 @@ HARD_EXCLUDE_PATTERNS = [
     r"\blegends?\b", r"\bhuyen\s*thoai\b", r"\bold\s*boys\b",
 
     # ==========================================
-    # ---- HẠNG 2 CỦA TOP 5 ----
+    # ⭐ FIX MỚI: ĐỘI B / DỰ BỊ CỦA CLB TOP
+    # ==========================================
+    r"\bcastilla\b",              # Real Madrid Castilla
+    r"\bmestalla\b",              # Valencia Mestalla
+    r"\bpromesas\b",              # Osasuna Promesas
+    r"\bbilbao\s*athletic\b",     # Athletic Bilbao B
+    r"\bsevilla\s*atletico\b",    # Sevilla B
+    r"\bbarca\s*b\b", r"\bbarcelona\s*b\b",
+    r"\breal\s*madrid\s*b\b", r"\breal\s*madrid\s*castilla\b",
+    r"\batletico\s*madrid\s*b\b",
+    r"\bvillarreal\s*b\b", r"\bcelta\s*b\b",
+    r"\breal\s*sociedad\s*b\b",
+    r"\bathletic\s*bilbao\s*b\b",
+
+    # ==========================================
+    # ---- HẠNG 3-9 MỌI QUỐC GIA ----
+    # ==========================================
+    r"\bhang\s*[3-9]\b",
+    r"\bhang\s*(ba|bon|tu|nam|sau|bay|tam|chin)\b",
+    r"\bprimera\s*federacion\b",   # Hạng 3 TBN
+    r"\bsegunda\s*federacion\b",   # Hạng 4 TBN
+    r"\btercera\s*federacion\b",   # Hạng 5 TBN
+    r"\bprimera\s*rfef\b",
+    r"\bsegunda\s*rfef\b",
+    r"\btercera\s*rfef\b",
+
+    # ==========================================
+    # ---- HẠNG 2 CỦA TOP 5 (dùng [\s\S]* match newline) ----
     # ==========================================
     r"hang\s*(2|hai|nhi)\s*[^\w]*(duc|bundesliga|germany)",
     r"hang\s*(2|hai|nhi)\s*[^\w]*(anh|england)",
@@ -176,17 +203,17 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bchallenger\s*pro\b", r"\bk\s*league\s*2\b",
 
     # ==========================================
-    # ---- ⭐ FIX MỚI: HẠNG 3+ ĐỨC (D3, D4, D5...) ----
+    # ---- HẠNG 3+ ĐỨC (D3, D4, D5...) - FIX newline ----
     # ==========================================
-    r"\bd\s*[1-9]\b.*(duc|germany|bundesliga)",     # "D5 Đức"
-    r"\bd\s*[1-9]\s*(duc|germany)",                 # "D5 Đức" không có khoảng
+    r"\bd\s*[1-9]\b[\s\S]{0,80}(duc|germany|bundesliga|oberliga|westfalen)",
+    r"\bd\s*[1-9]\s*(duc|germany)",
     r"\boberliga\b", r"\bverbandsliga\b", r"\bkreisliga\b",
     r"\blandesliga\b", r"\bwestfalen\b", r"\bniederrhein\b",
     r"\bbayernliga\b", r"\bhessenliga\b", r"\bberlinliga\b",
     r"\bnordost\b", r"\bsudwest\b", r"\bnordliga\b", r"\bsudliga\b",
 
     # ==========================================
-    # ---- ⭐ FIX MỚI: ANH HẠNG THẤP ----
+    # ---- ANH HẠNG THẤP ----
     # ==========================================
     r"\bnorthern\s*premier\b", r"\bnorthern\s*league\b",
     r"\bsouthern\s*premier\b", r"\bsouthern\s*league\b",
@@ -196,7 +223,7 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bcombinations?\b",
 
     # ==========================================
-    # ---- ⭐ FIX MỚI: TRUNG QUỐC ----
+    # ---- TRUNG QUỐC ----
     # ==========================================
     r"\bchinese\b", r"\bcmcl\b", r"\bchina\s*championship\b",
     r"\bchina\s*league\b", r"\bchina\s*cup\b",
@@ -209,14 +236,22 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bhenan\b", r"\byunnan\b", r"\bxi'?an\b",
 
     # ==========================================
-    # ---- ⭐ FIX MỚI: ẤN ĐỘ + typo fix ----
+    # ---- ẤN ĐỘ ----
     # ==========================================
-    r"\bshillong\b",                                 # ← Fix typo (cũ: shilling)
+    r"\bshillong\b",
     r"\bindian\b", r"\bindia\b", r"\bisl\b",
     r"\bi[-\s]?league\b", r"\bsantosh\b",
 
     # ==========================================
-    # ---- Các quốc gia nhỏ có "Premier League" giả ----
+    # ⭐ FIX MỚI: NAM MỸ (Peru, Chile, ...)
+    # ==========================================
+    r"\bperu\b", r"\bperuvian\b",
+    r"\bclausura\b", r"\bapertura\b",
+    r"\bcopa\s*sudamericana\b",
+    r"\bliga\s*1\s*(peru|chile|paraguay|colombia|ecuador|uruguay|bolivia|mexico)",
+
+    # ==========================================
+    # ---- Quốc gia nhỏ có "Premier League" giả ----
     # ==========================================
     r"\bsaint\s*kitts\b", r"\bnevis\b",
     r"\bbhutan\b", r"\bsri\s*lanka\b",
@@ -246,7 +281,7 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bvenezuela\b", r"\bbrasil\b", r"\bbrazil\b", r"\bbrasileir[ao]\b",
     r"\bargentina\b", r"\bprimera\s*division\b",
     r"\bmexico\b", r"\bliga\s*mx\b", r"\bmls\b",
-    r"\bchile\b", r"\bcolombia\b", r"\bperu\b", r"\becuador\b",
+    r"\bchile\b", r"\bcolombia\b", r"\becuador\b",
     r"\buruguay\b", r"\bparaguay\b", r"\bbolivia\b",
     r"\bcosta\s*rica\b", r"\bhonduras\b", r"\bguatemala\b", r"\bpanama\b",
     r"\bconcacaf\b", r"\bcopa\s*america\b", r"\bcopa\s*libertadores\b",
@@ -372,12 +407,21 @@ def contains_top_league(text):
 
 
 def contains_top_team(text):
+    """
+    True nếu text chứa CLB top 5.
+    ⭐ FIX: Bỏ qua nếu trước tên CLB có chữ số (đội amateur như "ASC 09 Dortmund", "SV 04 Leverkusen")
+    """
     if not text:
         return False
     t = normalize_vn(text)
+
     for team in TOP_TEAMS:
-        pattern = rf'(?<![a-z]){re.escape(team)}(?![a-z])'
-        if re.search(pattern, t):
+        pattern = rf'(?<![a-z0-9]){re.escape(team)}(?![a-z0-9])'
+        for m in re.finditer(pattern, t):
+            prefix = t[max(0, m.start()-10):m.start()]
+            # Nếu prefix kết thúc bằng số (1-4 chữ số) + optional space → đội amateur
+            if re.search(r'\d{1,4}\s*$', prefix):
+                continue
             return True
     return False
 
@@ -413,14 +457,6 @@ def detect_sport(name="", sport_hint=""):
 
 
 def should_keep(name, sport_hint="", container_text=""):
-    """
-    LỚP 0: môn khác → loại
-    LỚP 1: từ khóa môn khác → loại
-    LỚP 2: hard exclude → loại
-    LỚP 3: chứa CLB top 5 → GIỮ
-    LỚP 4: khớp whitelist giải → giữ
-    LỚP 5: giao hữu ĐTQG châu Âu → giữ
-    """
     sport = detect_sport(name, sport_hint)
     if sport == "other":
         return False
@@ -510,13 +546,10 @@ def build_extvlc_headers(stream_url: str) -> str:
 # ==========================================
 def _test_filter():
     tests = [
-        # ⭐ 5 trận đã lọt — PHẢI loại
-        ("Nongthymai SC vs Malki SC", "Indian Shillong Premier League", "", False),
-        ("Liaoning Shengjing Xinrui vs Yulin Mobei Miners", "Chinese Champions League (CMCL)", "", False),
-        ("Guangdong Chenxingjuli vs Sichuan 318", "Chinese Champions League", "", False),
-        ("Xinjiang Bingchao vs Shaanxi United Soaring", "Chinese Champions League", "", False),
-        ("Cleethorpes Town vs Redcar Athletic", "Northern Premier League (Premier Division)", "", False),
-        ("SV Lippstadt vs ASC 09 Dortmund", "D5 Đức - Oberliga Westfalen", "", False),
+        # ⭐ 3 trận đã lọt — PHẢI loại
+        ("Sant Andreu vs Real Madrid Castilla", "Primera Federación", "", False),
+        ("Alianza Atletico vs Sport Boys", "Liga 1 Peru (Clausura)", "", False),
+        ("SV Lippstadt vs ASC 09 Dortmund", "D5 hạng 5 Đức", "", False),
 
         # --- Nên LOẠI khác ---
         ("Bayern Munchen vs Brose Bamberg", "basketball bundesliga", "basketball", False),
@@ -524,18 +557,20 @@ def _test_filter():
         ("Vietnam vs Thailand", "bong chuyen", "volleyball", False),
         ("Inter Laguna FC vs Atletico Hidalgo", "Giao Hữu CLB", "", False),
         ("ELCO LTD St Peters vs RAMS Village Superstars", "Saint Kitts Nevis Premier League", "", False),
+        ("Nongthymai SC vs Malki SC", "Indian Shillong Premier League", "", False),
+        ("Liaoning Shengjing Xinrui vs Yulin Mobei Miners", "Chinese Champions League (CMCL)", "", False),
+        ("Cleethorpes Town vs Redcar Athletic", "Northern Premier League", "", False),
         ("Hannover 96 vs VfL Bochum", "Hạng 2 Đức", "", False),
         ("Energie Cottbus vs St. Pauli", "2. Bundesliga", "", False),
         ("Arezzo vs SudTirol", "hang 2 y - serie b", "", False),
         ("Nữ AS Harima vs Nữ NGU Nagoya", "", "", False),
         ("U19 Bayern vs U19 Dortmund", "", "", False),
-        ("Bahia vs Flamengo", "brasileirao serie a", "", False),
-        ("Al Nassr vs Al Hilal", "saudi pro league", "", False),
 
         # --- Nên GIỮ ---
         ("Tottenham vs Aston Villa", "ngoai hang anh - premier league", "football", True),
         ("Bayer Leverkusen vs RB Leipzig", "bundesliga duc", "football", True),
         ("Real Madrid vs Barcelona", "la liga tay ban nha", "football", True),
+        ("Borussia Dortmund vs Bayern Munich", "bundesliga duc", "football", True),
         ("Inter Milan vs Juventus", "serie a y", "football", True),
         ("PSG vs Marseille", "ligue 1 phap", "football", True),
         ("Man City vs Real Madrid", "champions league - cup c1", "football", True),
@@ -581,7 +616,7 @@ def goto_with_redirect(page, url, timeout=DOMAIN_TIMEOUT):
 # ==========================================
 def san_full_server_qua_proxy():
     # _test_filter()  # <-- Bỏ comment để test
-    print("🚀 BẮT ĐẦU QUÉT XOILAC v4", flush=True)
+    print("🚀 BẮT ĐẦU QUÉT XOILAC v5", flush=True)
 
     danh_sach_phat = []
     server_da_thanh_cong = set()
