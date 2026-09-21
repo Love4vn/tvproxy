@@ -1,31 +1,31 @@
 #EXTM3U
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whk0ryox8/image/small", ⚽ Dominica vs Anguilla lúc 22:00 ngày 21/09/2026 [TONI]
-#EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
-#EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.zundrixmediapipeline.com/live/channel9.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whk0ryox8/image/small", ⚽ Dominica vs Anguilla lúc 22:00 ngày 21/09/2026 [HD TONI]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001789975077-0-0-604f1da2b391d24bf90dbf307cf0740b
+https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001790000643-0-0-c08bef9207479fb29efaebb31e032824
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Hà Lan vs Đức lúc 01:45 ngày 25/09/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001789975082-0-0-23e5e99e114ad7a0bd511e3ae9a269d6
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790000650-0-0-9ea08d3bb346686828331f505a3ae81e
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Áo vs Israel lúc 01:45 ngày 25/09/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001789975098-0-0-4c129e3a9acd373b0334cc764a6b28e9
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/ednm9efkn3pryox/image/small", ⚽ Javier Barranco Cosano vs John Sperle lúc 17:00 ngày 21/09/2026 [HD 1]
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790000664-0-0-51eaf3cb9b621ab9e2add9b21b6b5386
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/9dn1m1ghln4moep/image/small", ⚽ Sporting Cristal vs AD Tarma lúc 03:00 ngày 24/09/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel53.flv?wsSecret=a771b779219f3ac390899ec13c492663&wsABSTime=1790018371
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/kn54ql4fy16rvy9/image/small", ⚽ Thiago Cigarran vs Tomás Martinez lúc 21:40 ngày 21/09/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=77932302ec536df65089bb5a0ede6c06&wsABSTime=1790043906
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/l7oqdwfn5l1r510/image/small", ⚽ Jack Kennedy vs Liam Draxl lúc 01:00 ngày 22/09/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel58.flv?wsSecret=7a2ffb2b0bea7ecd0f136c59303c0918&wsABSTime=1790018391
+https://live1.quickscoreboardz.com/live/channel52.flv?wsSecret=5621ed4ee7779d1caf17f8ecb5ff4e20&wsABSTime=1790043979
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/ednm9efkn3pryox/image/small", ⚽ Juan Cruz Martin Manzano vs Samuele Pieri lúc 01:30 ngày 22/09/2026 [HD 1]
+#EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel53.flv?wsSecret=6643d4c6bf7ea61bf400fb447db7c0b0&wsABSTime=1790043999
