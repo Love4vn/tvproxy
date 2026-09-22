@@ -1,9 +1,8 @@
 """
-🎯 SĂN LINK XOILAC - Final v8
-✅ Fix: Bỏ ancestor text cho match-horizontals → không dính context hàng xóm
-✅ Fix: Blacklist Ấn Độ mở rộng (Mohammedan, Bengal, IFA Shield...)
-✅ Fix: Check hard-exclude trên name riêng
-✅ Debug: In container của CẢ item bị loại VÀ item được giữ
+🎯 SĂN LINK XOILAC - Final v9
+✅ Fix: Tennis (nam/nữ) LUÔN giữ, bypass mọi filter
+✅ Fix: detect_sport nhận container → nhận diện WTA/ATP chính xác
+✅ Log gọn gàng
 """
 import re
 import time
@@ -28,11 +27,11 @@ STREAM_WAIT_STEP_MS = 250
 HOURS_AHEAD = 24
 MAX_XEM_THEM_CLICKS = 15
 
-# ⭐ DEBUG
+# Debug
 DEBUG_SHOW_REJECTED = True
-DEBUG_REJECTED_LIMIT = 20
-DEBUG_SHOW_KEPT = True          # ← MỚI: in cả item được giữ
-DEBUG_KEPT_LIMIT = 15
+DEBUG_REJECTED_LIMIT = 15
+DEBUG_SHOW_KEPT = True
+DEBUG_KEPT_LIMIT = 10
 
 TAT_CA_SERVER = [
     ("Xoilac", "https://xoilacz.io", "/truc-tiep/", "xoilac"),
@@ -65,7 +64,7 @@ def normalize_vn(text):
 
 
 # ==========================================
-# ⭐ WHITELIST CLB TOP 5 CHÂU ÂU
+# ⭐ WHITELIST CLB TOP 5
 # ==========================================
 TOP_TEAMS = [
     # ANH
@@ -126,7 +125,17 @@ TOP_TEAMS = [
 ]
 
 # ==========================================
-# 🚫 SPORT WHITELIST
+# 🎾 TENNIS KEYWORDS (dùng để bypass)
+# ==========================================
+TENNIS_KEYWORDS = [
+    "tennis", "quan vot", "atp", "wta",
+    "grand slam", "wimbledon", "roland garros",
+    "us open", "australian open", "atp tour", "wta tour",
+    "davis cup", "billie jean king cup", "fed cup",
+]
+
+# ==========================================
+# 🚫 SPORT KHÁC
 # ==========================================
 OTHER_SPORT_KEYWORDS = [
     r"\bbasketball\b", r"\bbong\s*ro\b", r"\bnba\b", r"\beuroleague\b",
@@ -157,7 +166,7 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bacademy\b", r"\bhoc\s*vien\b", r"\bdoi\s*b\b",
     r"\blegends?\b", r"\bhuyen\s*thoai\b", r"\bold\s*boys\b",
 
-    # ĐỘI B / DỰ BỊ
+    # ĐỘI B
     r"\bcastilla\b", r"\bmestalla\b", r"\bpromesas\b",
     r"\bbilbao\s*athletic\b", r"\bsevilla\s*atletico\b",
     r"\bbarca\s*b\b", r"\bbarcelona\s*b\b",
@@ -167,19 +176,18 @@ HARD_EXCLUDE_PATTERNS = [
     r"\breal\s*sociedad\s*b\b",
     r"\bathletic\s*bilbao\s*b\b",
 
-    # ⭐ CLB NƯỚC NGOÀI ĐÃ LỌT (v7 + v8)
+    # CLB nước ngoài đã lọt
     r"\balianza\b", r"\bsport\s*boys\b",
     r"\blippstadt\b", r"\bsant\s*andreu\b",
     r"\btembetary\b", r"\biteno\b", r"\bsportivo\b",
     r"\bsporting\s*cristal\b", r"\bcristal\b",
     r"\bad\s*tarma\b", r"\btarma\b",
-    # v8: Ấn Độ mở rộng
     r"\bmohammedan\b", r"\beast\s*bengal\b", r"\bbengal\b",
     r"\bbombay\b", r"\bmumbai\b", r"\bnavanagar\b",
     r"\bgymkhana\b", r"\bifa\s*shield\b",
     r"\bsuper\s*division\b", r"\bindia\s*super\b",
 
-    # AMATEUR CLUB PREFIX
+    # Amateur prefix
     r"\basc\s*\d{1,3}\b",
     r"\btsv\s*\d{1,3}\b",
     r"\bfsv\s*\d{1,3}\b",
@@ -187,23 +195,21 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bsc\s*\d{1,3}\b",
     r"\bfc\s*\d{1,3}\b",
 
-    # HẠNG 3-9
+    # Hạng 3-9
     r"\bhang\s*[3-9]\b",
     r"\bhang\s*(ba|bon|tu|nam|sau|bay|tam|chin)\b",
-    r"\bprimera\s*federacion\b",
-    r"\bsegunda\s*federacion\b",
+    r"\bprimera\s*federacion\b", r"\bsegunda\s*federacion\b",
     r"\btercera\s*federacion\b",
     r"\bprimera\s*rfef\b", r"\bsegunda\s*rfef\b", r"\btercera\s*rfef\b",
 
-    # HẠNG 2 CỦA TOP 5
+    # Hạng 2 top 5
     r"hang\s*(2|hai|nhi)\s*[^\w]*(duc|bundesliga|germany)",
     r"hang\s*(2|hai|nhi)\s*[^\w]*(anh|england)",
     r"hang\s*(2|hai|nhi)\s*[^\w]*(y\b|italia|italy)",
     r"hang\s*(2|hai|nhi)\s*[^\w]*(phap|france)",
     r"hang\s*(2|hai|nhi)\s*[^\w]*(tbn|tay\s*ban\s*nha|spain)",
     r"2\.?\s*bundesliga", r"bundesliga\s*2\b", r"bundesliga\s*zwei",
-    r"\bserie\s*b\b",
-    r"\bligue\s*2\b",
+    r"\bserie\s*b\b", r"\bligue\s*2\b",
     r"\bla\s*liga\s*2\b", r"\blaliga\s*2\b",
     r"\bsegunda\b", r"\bsegunda\s*division\b",
     r"\befl\s*championship\b", r"\bchampionship\b",
@@ -211,7 +217,7 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bregionalliga\b", r"\b3\.?\s*liga\b",
     r"\bchallenger\s*pro\b", r"\bk\s*league\s*2\b",
 
-    # HẠNG 3+ ĐỨC
+    # Hạng 3+ Đức
     r"\bd\s*[1-9]\b[\s\S]{0,80}(duc|germany|bundesliga|oberliga|westfalen)",
     r"\bd\s*[1-9]\s*(duc|germany|hang)",
     r"\boberliga\b", r"\bverbandsliga\b", r"\bkreisliga\b",
@@ -219,7 +225,7 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bbayernliga\b", r"\bhessenliga\b", r"\bberlinliga\b",
     r"\bnordost\b", r"\bsudwest\b", r"\bnordliga\b", r"\bsudliga\b",
 
-    # ANH HẠNG THẤP
+    # Anh hạng thấp
     r"\bnorthern\s*premier\b", r"\bnorthern\s*league\b",
     r"\bsouthern\s*premier\b", r"\bsouthern\s*league\b",
     r"\bisthmian\b", r"\bnpl\b", r"\bspl\b",
@@ -227,7 +233,7 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bcounty\s*league\b", r"\bnon[-\s]?league\b",
     r"\bcombinations?\b",
 
-    # TRUNG QUỐC
+    # Trung Quốc
     r"\bchinese\b", r"\bcmcl\b", r"\bchina\s*championship\b",
     r"\bchina\s*league\b", r"\bchina\s*cup\b",
     r"\bliaoning\b", r"\bxinjiang\b", r"\bguangdong\b",
@@ -238,11 +244,11 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bhebei\b", r"\bshandong\b", r"\bzhejiang\b",
     r"\bhenan\b", r"\byunnan\b", r"\bxi'?an\b",
 
-    # ẤN ĐỘ
+    # Ấn Độ
     r"\bshillong\b", r"\bindian\b", r"\bindia\b", r"\bisl\b",
     r"\bi[-\s]?league\b", r"\bsantosh\b",
 
-    # NAM MỸ
+    # Nam Mỹ
     r"\bperu\b", r"\bperuvian\b",
     r"\bparaguay\b", r"\bparaguayan\b",
     r"\bclausura\b", r"\bapertura\b",
@@ -254,14 +260,14 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bdivision\s*profesional\b",
     r"\bcup\s*quoc\s*gia\s*(paraguay|peru|chile|colombia|ecuador|uruguay|bolivia|venezuela|brazil|argentina|mexico|nhat|han|trung)",
 
-    # Quốc gia nhỏ có "Premier League" giả
+    # Quốc gia nhỏ
     r"\bsaint\s*kitts\b", r"\bnevis\b",
     r"\bbhutan\b", r"\bsri\s*lanka\b",
     r"\bgibraltar\b", r"\bfaroe\b",
     r"\bsomalia\b", r"\bzanzibar\b", r"\bethiopia\b", r"\beritrea\b",
     r"\bwelsh\b", r"\bscottish\b", r"\bnorthern\s*ireland\b",
 
-    # Châu Á còn lại
+    # Châu Á
     r"\bthai\s*land\b", r"\bthai\s*league\b",
     r"\bmalaysia\b", r"\bindonesia\b", r"\bphilippines\b",
     r"\bsingapore\b", r"\bmyanmar\b", r"\bcambodia\b", r"\bcampuchia\b",
@@ -326,9 +332,7 @@ HARD_EXCLUDE_PATTERNS = [
 # ✅ WHITELIST GIẢI
 # ==========================================
 TOP_LEAGUE_PATTERNS = [
-    r"\bpremier\s*league\b",
-    r"\bngoai\s*hang\s*anh\b",
-    r"\bepl\b",
+    r"\bpremier\s*league\b", r"\bngoai\s*hang\s*anh\b", r"\bepl\b",
     r"\bla\s*liga\b(?!\s*2)", r"\blaliga\b(?!\s*2)",
     r"\bbundesliga\b(?!\s*2)(?!\s*zwei)",
     r"\bserie\s*a\b(?!\s*b)",
@@ -365,28 +369,32 @@ FRIENDLY_KEYWORDS = ("giao huu", "friendly", "friendlies")
 
 
 # ==========================================
-# LOGIC LỌC
+# LOGIC
 # ==========================================
 def is_other_sport(text):
-    if not text: return False
+    if not text:
+        return False
     t = normalize_vn(text)
     return any(re.search(p, t, re.IGNORECASE) for p in OTHER_SPORT_KEYWORDS)
 
 
 def is_hard_excluded(text):
-    if not text: return False
+    if not text:
+        return False
     t = normalize_vn(text)
     return any(re.search(p, t, re.IGNORECASE) for p in HARD_EXCLUDE_PATTERNS)
 
 
 def contains_top_league(text):
-    if not text: return False
+    if not text:
+        return False
     t = normalize_vn(text)
     return any(re.search(p, t, re.IGNORECASE) for p in TOP_LEAGUE_PATTERNS)
 
 
 def contains_top_team(text):
-    if not text: return False
+    if not text:
+        return False
     t = normalize_vn(text)
     for team in TOP_TEAMS:
         pattern = rf'(?<![a-z0-9]){re.escape(team)}(?![a-z0-9])'
@@ -399,58 +407,91 @@ def contains_top_team(text):
 
 
 def has_euro_country(text):
-    if not text: return False
+    if not text:
+        return False
     t = normalize_vn(text)
     return any(c in t for c in EURO_COUNTRIES)
 
 
 def is_friendly(text):
-    if not text: return False
+    if not text:
+        return False
     t = normalize_vn(text)
     return any(kw in t for kw in FRIENDLY_KEYWORDS)
 
 
-def detect_sport(name="", sport_hint=""):
+def is_tennis_text(text):
+    """Check nếu text chứa keyword tennis."""
+    if not text:
+        return False
+    t = normalize_vn(text)
+    return any(kw in t for kw in TENNIS_KEYWORDS)
+
+
+def detect_sport(name="", sport_hint="", container=""):
+    """
+    Trả về: 'football' | 'tennis' | 'other' | 'unknown'
+    Ưu tiên tennis trước để bypass khỏi hard-exclude.
+    """
     hint = normalize_vn(sport_hint or "").strip()
-    if hint in ("football", "soccer", "bong da"): return "football"
-    if hint in ("tennis", "quan vot"): return "tennis"
-    if hint: return "other"
-    n = normalize_vn(name or "")
-    if is_other_sport(n): return "other"
-    if any(kw in n for kw in ("tennis", "quan vot", "atp", "wta")):
+    if hint in ("football", "soccer", "bong da"):
+        return "football"
+    if hint in ("tennis", "quan vot"):
         return "tennis"
+    if hint and hint not in ("unknown", ""):
+        return "other"
+
+    # ⭐ Check tennis TRƯỚC trong name + container
+    combined = f"{name} {container}"
+    if is_tennis_text(combined):
+        return "tennis"
+
+    if is_other_sport(combined):
+        return "other"
+
     return "unknown"
 
 
 def should_keep(name, sport_hint="", container_text=""):
-    sport = detect_sport(name, sport_hint)
-    if sport == "other": return False
-    if sport == "tennis": return True
+    # ⭐ Truyền container vào detect_sport
+    sport = detect_sport(name, sport_hint, container_text)
 
-    # ⭐ v8: check hard-exclude trên NAME riêng (không chỉ combined)
-    if is_hard_excluded(name): return False
-    if is_other_sport(name): return False
+    if sport == "other":
+        return False
+    if sport == "tennis":
+        return True   # Tennis luôn pass
+
+    # Football
+    if is_hard_excluded(name):
+        return False
+    if is_other_sport(name):
+        return False
 
     combined = f"{name} {container_text}"
-    if is_other_sport(combined): return False
-    if is_hard_excluded(combined): return False
+    if is_other_sport(combined):
+        return False
+    if is_hard_excluded(combined):
+        return False
 
     if contains_top_team(name) or contains_top_team(container_text):
         return True
-
-    if contains_top_league(combined): return True
-    if is_friendly(combined) and has_euro_country(combined): return True
+    if contains_top_league(combined):
+        return True
+    if is_friendly(combined) and has_euro_country(combined):
+        return True
 
     return False
 
 
 # ==========================================
-# TIME FILTER
+# TIME
 # ==========================================
 def parse_match_datetime(text):
-    if not text: return None
+    if not text:
+        return None
     m = re.search(r'(\d{1,2}):(\d{2})\s*[-–]\s*(\d{1,2})/(\d{1,2})', text)
-    if not m: return None
+    if not m:
+        return None
     hh, mm, dd, mo = map(int, m.groups())
     now = datetime.now()
     try:
@@ -464,12 +505,13 @@ def parse_match_datetime(text):
 
 def is_within_24h(text):
     dt = parse_match_datetime(text)
-    if dt is None: return True
+    if dt is None:
+        return True
     return dt <= datetime.now() + timedelta(hours=HOURS_AHEAD)
 
 
 # ==========================================
-# HEADER M3U
+# M3U HEADER
 # ==========================================
 REFERER_MAP = {
     "quickscoreboardz.com":     "https://live1.quickscoreboardz.com/",
@@ -486,7 +528,8 @@ DEFAULT_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
 
 
 def build_extvlc_headers(stream_url: str) -> str:
-    if not stream_url: return ""
+    if not stream_url:
+        return ""
     domain = urlparse(stream_url).netloc.lower()
     headers = []
     for key, ref in REFERER_MAP.items():
@@ -500,7 +543,7 @@ def build_extvlc_headers(stream_url: str) -> str:
 
 
 # ==========================================
-# GOTO REDIRECT
+# GOTO
 # ==========================================
 def goto_with_redirect(page, url, timeout=DOMAIN_TIMEOUT):
     try:
@@ -513,7 +556,7 @@ def goto_with_redirect(page, url, timeout=DOMAIN_TIMEOUT):
                 return page.url, True
         return page.url, True
     except Exception as e:
-        print(f"     ⚠️ goto fail: {str(e)[:90]}", flush=True)
+        print(f"     ⚠️ goto fail: {str(e)[:80]}", flush=True)
         return None, False
 
 
@@ -521,7 +564,7 @@ def goto_with_redirect(page, url, timeout=DOMAIN_TIMEOUT):
 # MAIN
 # ==========================================
 def san_full_server_qua_proxy():
-    print("🚀 BẮT ĐẦU QUÉT XOILAC v8", flush=True)
+    print("🚀 BẮT ĐẦU QUÉT XOILAC v9", flush=True)
 
     danh_sach_phat = []
     server_da_thanh_cong = set()
@@ -574,7 +617,87 @@ def san_full_server_qua_proxy():
                         route.continue_()
                 context.route("**/*", chan_tai_nguyen_thua)
 
-                # ⭐ CAPTURE
+                # ==========================================
+                # LỌC
+                # ==========================================
+                def _loc_trung(danh_sach_raw, url_goc):
+                    result = {}
+                    stats = {"total": 0, "other_sport": 0, "excluded": 0,
+                             "not_whitelisted": 0, "time_out": 0,
+                             "kept": 0, "tennis": 0}
+                    rej_shown = 0
+                    kept_shown = 0
+
+                    for item in danh_sach_raw:
+                        stats["total"] += 1
+                        url = item.get('url', '')
+                        ten = item.get('ten', '').strip()
+                        sport = item.get('sport', '')
+                        container_text = item.get('container', '')
+
+                        if not url or url == url_goc or url == url_goc + "/":
+                            continue
+
+                        combined = f"{ten} {container_text}"
+                        sport_detected = detect_sport(ten, sport, container_text)
+
+                        # ⭐⭐ TENNIS: LUÔN GIỮ - BYPASS MỌI FILTER ⭐⭐
+                        if sport_detected == "tennis":
+                            stats["tennis"] += 1
+                            stats["kept"] += 1
+                            if url not in result or len(ten) > len(result.get(url, {}).get('ten', '')):
+                                result[url] = {
+                                    'ten': ten if ten else "Trận tennis",
+                                    'thumb': item.get('thumb',
+                                                      'https://img.icons8.com/color/512/tennis.png'),
+                                    'sport': 'tennis',
+                                }
+                                if DEBUG_SHOW_KEPT and kept_shown < DEBUG_KEPT_LIMIT:
+                                    kept_shown += 1
+                                    print(f"     🎾 [TENNIS] {ten[:60]}", flush=True)
+                            continue
+
+                        # ⭐ OTHER SPORT: loại
+                        if sport_detected == "other" or is_other_sport(combined):
+                            stats["other_sport"] += 1
+                            continue
+
+                        # ⭐ FOOTBALL: apply filter
+                        reason = None
+                        if is_hard_excluded(combined) or is_hard_excluded(ten):
+                            reason = "excluded"; stats["excluded"] += 1
+                        elif not should_keep(ten, sport, container_text):
+                            reason = "not_whitelisted"; stats["not_whitelisted"] += 1
+                        elif not is_within_24h(container_text):
+                            reason = "time_out"; stats["time_out"] += 1
+
+                        if reason is None:
+                            stats["kept"] += 1
+                            if url not in result or len(ten) > len(result.get(url, {}).get('ten', '')):
+                                result[url] = {
+                                    'ten': ten if ten else "Trận đấu",
+                                    'thumb': item.get('thumb',
+                                                      'https://img.icons8.com/color/512/football2.png'),
+                                    'sport': 'football',
+                                }
+                                if DEBUG_SHOW_KEPT and kept_shown < DEBUG_KEPT_LIMIT:
+                                    kept_shown += 1
+                                    print(f"     ⚽ [KEPT] {ten[:60]}", flush=True)
+                        elif DEBUG_SHOW_REJECTED and rej_shown < DEBUG_REJECTED_LIMIT:
+                            rej_shown += 1
+                            print(f"     ❌ [{reason}] {ten[:55]}", flush=True)
+
+                    print(f"     🔎 Lọc: {stats['total']} → "
+                          f"môn khác={stats['other_sport']} | "
+                          f"cấm={stats['excluded']} | "
+                          f"ko-white={stats['not_whitelisted']} | "
+                          f"quá 24h={stats['time_out']} | "
+                          f"**giữ={stats['kept']}** (🎾 {stats['tennis']})", flush=True)
+                    return result
+
+                # ==========================================
+                # CAPTURE ITEMS
+                # ==========================================
                 def lay_phong_xoilac(page, url_goc, keyword_link):
                     raw = page.evaluate(f"""
                         (() => {{
@@ -629,7 +752,6 @@ def san_full_server_qua_proxy():
                                 }});
                             }});
 
-                            // ⭐ v8: CHỈ lấy text của chính item, KHÔNG lấy ancestor
                             document.querySelectorAll('.match-horizontals-item[href*="{keyword_link}"]').forEach(a => {{
                                 if (results.some(r => r.url === a.href)) return;
                                 const img = a.querySelector('img');
@@ -652,64 +774,9 @@ def san_full_server_qua_proxy():
                     """)
                     return _loc_trung(raw, url_goc)
 
-                def _loc_trung(danh_sach_raw, url_goc):
-                    result = {}
-                    stats = {"total": 0, "other_sport": 0, "excluded": 0,
-                             "not_whitelisted": 0, "time_out": 0, "kept": 0}
-                    rej_shown = 0
-                    kept_shown = 0
-                    for item in danh_sach_raw:
-                        stats["total"] += 1
-                        url = item.get('url', '')
-                        ten = item.get('ten', '').strip()
-                        sport = item.get('sport', '')
-                        container_text = item.get('container', '')
-
-                        if not url or url == url_goc or url == url_goc + "/":
-                            continue
-
-                        combined = f"{ten} {container_text}"
-                        sport_detected = detect_sport(ten, sport)
-
-                        reason = None
-                        if sport_detected == "other":
-                            reason = "other_sport"; stats["other_sport"] += 1
-                        elif is_other_sport(combined):
-                            reason = "other_sport"; stats["other_sport"] += 1
-                        elif is_hard_excluded(combined) or is_hard_excluded(ten):
-                            reason = "excluded"; stats["excluded"] += 1
-                        elif not should_keep(ten, sport, container_text):
-                            reason = "not_whitelisted"; stats["not_whitelisted"] += 1
-                        elif not is_within_24h(container_text):
-                            reason = "time_out"; stats["time_out"] += 1
-
-                        if reason is None:
-                            stats["kept"] += 1
-                            if url not in result or len(ten) > len(result.get(url, {}).get('ten', '')):
-                                result[url] = {
-                                    'ten': ten if ten else "Trận đấu",
-                                    'thumb': item.get('thumb',
-                                                      'https://img.icons8.com/color/512/football2.png'),
-                                    'sport': sport_detected if sport_detected != "unknown" else "football",
-                                }
-                            # ⭐ DEBUG item KEPT
-                            if DEBUG_SHOW_KEPT and kept_shown < DEBUG_KEPT_LIMIT:
-                                kept_shown += 1
-                                print(f"     ✅ [KEPT] {ten[:55]}", flush=True)
-                                print(f"        └─ container: {container_text[:200]}", flush=True)
-                        elif DEBUG_SHOW_REJECTED and rej_shown < DEBUG_REJECTED_LIMIT:
-                            rej_shown += 1
-                            print(f"     ❌ [{reason}] {ten[:50]}", flush=True)
-                            print(f"        └─ container: {container_text[:200]}", flush=True)
-
-                    print(f"     🔎 Lọc: tổng {stats['total']} → "
-                          f"môn khác={stats['other_sport']} | "
-                          f"cấm={stats['excluded']} | "
-                          f"không whitelist={stats['not_whitelisted']} | "
-                          f"quá 24h={stats['time_out']} | "
-                          f"**giữ={stats['kept']}**", flush=True)
-                    return result
-
+                # ==========================================
+                # CLICK XEM THÊM
+                # ==========================================
                 def click_xem_them_loop(page, max_clicks=MAX_XEM_THEM_CLICKS):
                     clicked = 0
                     for i in range(max_clicks):
@@ -733,7 +800,8 @@ def san_full_server_qua_proxy():
                                 return false;
                             }
                         """)
-                        if not btn_found: break
+                        if not btn_found:
+                            break
                         try:
                             page.click('[data-ext-xemthem="1"]', timeout=5000)
                         except Exception:
@@ -751,7 +819,8 @@ def san_full_server_qua_proxy():
                             "document.querySelectorAll('.grid-matches__item, .match-horizontals-item').length")
                         clicked += 1
                         print(f"     🔽 Click #{clicked}: {count_before} → {count_after}", flush=True)
-                        if count_after <= count_before: break
+                        if count_after <= count_before:
+                            break
                         try:
                             page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                             page.wait_for_timeout(500)
@@ -759,6 +828,9 @@ def san_full_server_qua_proxy():
                             pass
                     return clicked
 
+                # ==========================================
+                # SERVER CON
+                # ==========================================
                 def detect_server_buttons(page):
                     return page.evaluate("""
                         () => {
@@ -852,6 +924,9 @@ def san_full_server_qua_proxy():
                         print(f"     ⚠️ {str(e)[:80]}", flush=True)
                     return streams
 
+                # ==========================================
+                # QUÉT
+                # ==========================================
                 def quet_trang(ten_nhom, url_trang_chu, keyword_link, kieu_quet=""):
                     nonlocal so_tram_loi_vong_nay, so_tram_ok_vong_nay
                     page = context.new_page()
@@ -863,7 +938,8 @@ def san_full_server_qua_proxy():
                         for domain in XOILAC_DOMAINS:
                             print(f"   🔗 {domain}", flush=True)
                             final_url, ok = goto_with_redirect(page, domain)
-                            if not ok or not final_url: continue
+                            if not ok or not final_url:
+                                continue
                             if final_url != domain:
                                 print(f"     🔄 Redirect → {final_url}", flush=True)
 
@@ -877,7 +953,7 @@ def san_full_server_qua_proxy():
                                     f"document.querySelectorAll('a[href*=\"{keyword_link}\"]').length > 0",
                                     timeout=15000)
                                 url_dung = final_url
-                                print(f"   ✅ Sống: {final_url}", flush=True)
+                                print(f"   ✅ Sống", flush=True)
                                 break
                             except Exception:
                                 continue
