@@ -280,6 +280,7 @@ HARD_EXCLUDE_PATTERNS = [
     r"\buzbekistan\b", r"\bkazakhstan\b", r"\bkyrgyz\b", r"\btajikistan\b",
     r"\bviet\s*nam\b", r"\bv\.?\s*league\b", r"\bvleague\b",
     r"\bafc\s*champions\b", r"\bafc\s*cup\b",
+    r"\bangladesh\b",
 
     # Châu Mỹ
     r"\bvenezuela\b", r"\bbrasil\b", r"\bbrazil\b", r"\bbrasileir[ao]\b",
