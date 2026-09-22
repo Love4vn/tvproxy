@@ -3,14 +3,19 @@
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790049728-0-0-42ecf79dc8cd253e3645395abc94fabf
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790058240-0-0-7c5dfe6186905b2fc9c102b0dcb0a6aa
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Áo vs Israel lúc 01:45 ngày 25/09/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790049741-0-0-fb9e1d6e7cda266d4e57933966a77cde
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790058253-0-0-ae7f1108a1f185fe5d0be919231207a7
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/gx7lm7ph9k4m2wd/image/small", ⚽ Atlético Tembetary vs Sportivo Iteno lúc 02:00 ngày 25/09/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=a9a93bf706a320d8439487526af14654&wsABSTime=1790092955
+https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=e336397f537306d15f8327983d2c1b77&wsABSTime=1790101470
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/9dn1m1ghln4moep/image/small", ⚽ Sporting Cristal vs AD Tarma lúc 03:00 ngày 24/09/2026 [HD 1]
+#EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=31e7ec00a847fde090c9d13bb73fa2cd&wsABSTime=1790101491
