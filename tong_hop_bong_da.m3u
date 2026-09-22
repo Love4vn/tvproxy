@@ -3,9 +3,29 @@
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790063559-0-0-5194f799b3fd0f794d71f039783fdf79
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790064785-0-0-baf90a366888c0b23a248c28c5a82a91
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Áo vs Israel lúc 01:45 ngày 25/09/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790063570-0-0-5a89f3dabccb1b4cd9128749ffad3b55
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790064797-0-0-f2f7cd731dab1d2c18594897f35dacd0
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/8yomojf76k9q0j6/image/small", ⚽ Donna Vekic vs Wang Xinyu lúc 12:40 ngày 22/09/2026 [HD VIC]
+#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
+#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001790064861-0-0-5952010305e8b6d00277a79ccdc0c04d
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/8yomojf76k9q0j6/image/small", ⚽ Barbora Krejcikova vs Anna-Lena Friedsam lúc 17:30 ngày 22/09/2026 [LUCAS]
+#EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
+#EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live2.zundrixmediapipeline.com/live/channel31.flv
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/8yomojf76k9q0j6/image/small", ⚽ Barbora Krejcikova vs Anna-Lena Friedsam lúc 17:30 ngày 22/09/2026 [HD LUCAS]
+#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
+#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001790064906-0-0-d61fa501537ff85c3b5c34c6bb6df5d4
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/8yomojf76k9q0j6/image/small", ⚽ Maria Sakkari vs Linda Fruhvirtova lúc 18:40 ngày 22/09/2026 [HD LUCAS]
+#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
+#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001790064930-0-0-c32905e5f60c25e17f1ae69bda0b47bb
