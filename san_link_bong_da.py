@@ -1,9 +1,8 @@
 """
-🎯 SĂN LINK XOILAC - Final v6
-✅ Fix: Capture parent.innerText + textContent → bắt được mọi tên giải
-✅ Blacklist cứng CLB đã lọt
-✅ Cập nhật TOP_TEAMS: Coventry, Hull City thay West Ham, Wolves
-✅ Xử lý redirect xoilacz.io
+🎯 SĂN LINK XOILAC - Final v7
+✅ Fix: Capture ancestor/header text → bắt được tên giải ở section header
+✅ Blacklist Paraguay + Copa de la Liga
+✅ Debug mode: in container text của item bị loại
 """
 import re
 import time
@@ -28,6 +27,10 @@ STREAM_WAIT_STEP_MS = 250
 HOURS_AHEAD = 24
 MAX_XEM_THEM_CLICKS = 15
 
+# ⭐ DEBUG: in container text của các item bị loại (giúp fix filter)
+DEBUG_SHOW_REJECTED = True
+DEBUG_LIMIT = 30
+
 TAT_CA_SERVER = [
     ("Xoilac", "https://xoilacz.io", "/truc-tiep/", "xoilac"),
 ]
@@ -38,7 +41,6 @@ XOILAC_DOMAINS = [
     "https://xoilaczzb.cc",
     "https://xoilaczzc.cc",
     "https://xoilaczzd.cc",
-    "https://xoilaczzg.cc",
     "https://xoilacxth.tv",
     "https://xoilacxbi.tv",
     "https://xoilac7tv.tv",
@@ -60,16 +62,15 @@ def normalize_vn(text):
 
 # ==========================================
 # ⭐ WHITELIST CLB TOP 5 CHÂU ÂU
-# (Cập nhật: bỏ West Ham, Wolves; thêm Coventry, Hull City)
 # ==========================================
 TOP_TEAMS = [
     # ===== ANH =====
     "arsenal", "aston villa", "bournemouth", "brentford", "brighton",
     "chelsea", "coventry", "crystal palace", "everton", "fulham",
-    "hull city", "hull", "ipswich", "sunderland", "liverpool",
+    "hull city", "ipswich", "leicester", "liverpool",
     "man city", "manchester city",
     "man united", "man utd", "manchester united",
-    "newcastle", "nottingham forest", "leeds united", "leeds",
+    "newcastle", "nottingham forest", "southampton",
     "tottenham",
 
     # ===== ĐỨC =====
@@ -149,9 +150,7 @@ OTHER_SPORT_KEYWORDS = [
 # 🚫 HARD EXCLUDE
 # ==========================================
 HARD_EXCLUDE_PATTERNS = [
-    # ==========================================
-    # ---- Nữ / Trẻ / Dự bị / Huyền thoại ----
-    # ==========================================
+    # Nữ / Trẻ / Dự bị / Huyền thoại
     r"\bnu\b", r"\bwomen\b", r"\bfemale\b", r"\bladies\b",
     r"\bdamen\b", r"\bfeminine\b", r"\bfemenil\b", r"\bfeminino\b",
     r"\bu\d{2}\b", r"\bu-\d{2}\b", r"\bunder\s*\d{2}\b",
@@ -159,9 +158,7 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bacademy\b", r"\bhoc\s*vien\b", r"\bdoi\s*b\b",
     r"\blegends?\b", r"\bhuyen\s*thoai\b", r"\bold\s*boys\b",
 
-    # ==========================================
-    # ⭐ ĐỘI B / DỰ BỊ CỦA CLB TOP
-    # ==========================================
+    # ⭐ ĐỘI B / DỰ BỊ
     r"\bcastilla\b", r"\bmestalla\b", r"\bpromesas\b",
     r"\bbilbao\s*athletic\b", r"\bsevilla\s*atletico\b",
     r"\bbarca\s*b\b", r"\bbarcelona\s*b\b",
@@ -171,26 +168,22 @@ HARD_EXCLUDE_PATTERNS = [
     r"\breal\s*sociedad\s*b\b",
     r"\bathletic\s*bilbao\s*b\b",
 
-    # ==========================================
-    # ⭐ CLB NƯỚC NGOÀI ĐÃ LỌT (blacklist cứng)
-    # ==========================================
+    # ⭐ CLB NƯỚC NGOÀI ĐÃ LỌT
     r"\balianza\b", r"\bsport\s*boys\b",
-    r"\blippstadt\b",
-    r"\bsant\s*andreu\b",
+    r"\blippstadt\b", r"\bsant\s*andreu\b",
+    r"\btembetary\b", r"\biteno\b", r"\bsportivo\b",
+    r"\bsporting\s*cristal\b", r"\bcristal\b",
+    r"\bad\s*tarma\b", r"\btarma\b",
 
-    # ==========================================
-    # ⭐ AMATEUR CLUB PREFIX (số sau chữ viết tắt)
-    # ==========================================
-    r"\basc\s*\d{1,3}\b",         # ASC 09, ASC 05
-    r"\btsv\s*\d{1,3}\b",         # TSV 1860
+    # ⭐ AMATEUR CLUB PREFIX
+    r"\basc\s*\d{1,3}\b",
+    r"\btsv\s*\d{1,3}\b",
     r"\bfsv\s*\d{1,3}\b",
     r"\bspvgg\s*\d{1,3}\b",
-    r"\bsc\s*\d{1,3}\b",           # SC 04 (cẩn thận, nhưng an toàn)
+    r"\bsc\s*\d{1,3}\b",
     r"\bfc\s*\d{1,3}\b",
 
-    # ==========================================
-    # ---- HẠNG 3-9 MỌI QUỐC GIA ----
-    # ==========================================
+    # HẠNG 3-9
     r"\bhang\s*[3-9]\b",
     r"\bhang\s*(ba|bon|tu|nam|sau|bay|tam|chin)\b",
     r"\bprimera\s*federacion\b",
@@ -198,9 +191,7 @@ HARD_EXCLUDE_PATTERNS = [
     r"\btercera\s*federacion\b",
     r"\bprimera\s*rfef\b", r"\bsegunda\s*rfef\b", r"\btercera\s*rfef\b",
 
-    # ==========================================
-    # ---- HẠNG 2 CỦA TOP 5 ----
-    # ==========================================
+    # HẠNG 2 CỦA TOP 5
     r"hang\s*(2|hai|nhi)\s*[^\w]*(duc|bundesliga|germany)",
     r"hang\s*(2|hai|nhi)\s*[^\w]*(anh|england)",
     r"hang\s*(2|hai|nhi)\s*[^\w]*(y\b|italia|italy)",
@@ -216,19 +207,15 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bregionalliga\b", r"\b3\.?\s*liga\b",
     r"\bchallenger\s*pro\b", r"\bk\s*league\s*2\b",
 
-    # ==========================================
-    # ⭐ HẠNG 3+ ĐỨC (D3-D9, Oberliga, ...)
-    # ==========================================
+    # HẠNG 3+ ĐỨC
     r"\bd\s*[1-9]\b[\s\S]{0,80}(duc|germany|bundesliga|oberliga|westfalen)",
-    r"\bd\s*[1-9]\s*(duc|germany|hang)",   # "D5 Đức", "D5 hạng"
+    r"\bd\s*[1-9]\s*(duc|germany|hang)",
     r"\boberliga\b", r"\bverbandsliga\b", r"\bkreisliga\b",
     r"\blandesliga\b", r"\bwestfalen\b", r"\bniederrhein\b",
     r"\bbayernliga\b", r"\bhessenliga\b", r"\bberlinliga\b",
     r"\bnordost\b", r"\bsudwest\b", r"\bnordliga\b", r"\bsudliga\b",
 
-    # ==========================================
-    # ---- ANH HẠNG THẤP ----
-    # ==========================================
+    # ANH HẠNG THẤP
     r"\bnorthern\s*premier\b", r"\bnorthern\s*league\b",
     r"\bsouthern\s*premier\b", r"\bsouthern\s*league\b",
     r"\bisthmian\b", r"\bnpl\b", r"\bspl\b",
@@ -236,9 +223,7 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bcounty\s*league\b", r"\bnon[-\s]?league\b",
     r"\bcombinations?\b",
 
-    # ==========================================
-    # ---- TRUNG QUỐC ----
-    # ==========================================
+    # TRUNG QUỐC
     r"\bchinese\b", r"\bcmcl\b", r"\bchina\s*championship\b",
     r"\bchina\s*league\b", r"\bchina\s*cup\b",
     r"\bliaoning\b", r"\bxinjiang\b", r"\bguangdong\b",
@@ -249,32 +234,30 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bhebei\b", r"\bshandong\b", r"\bzhejiang\b",
     r"\bhenan\b", r"\byunnan\b", r"\bxi'?an\b",
 
-    # ==========================================
-    # ---- ẤN ĐỘ ----
-    # ==========================================
+    # ẤN ĐỘ
     r"\bshillong\b", r"\bindian\b", r"\bindia\b", r"\bisl\b",
     r"\bi[-\s]?league\b", r"\bsantosh\b",
 
-    # ==========================================
-    # ---- NAM MỸ ----
-    # ==========================================
+    # ⭐ NAM MỸ - BỔ SUNG PARAGUAY
     r"\bperu\b", r"\bperuvian\b",
+    r"\bparaguay\b", r"\bparaguayan\b",
     r"\bclausura\b", r"\bapertura\b",
     r"\bcopa\s*sudamericana\b",
+    r"\bcopa\s*de\s*la\s*liga\b",     # ← Peru (và các nước khác)
+    r"\bcopa\s*paraguay\b",
+    r"\bprimera\s*division\s*(peru|paraguay|chile|colombia|ecuador|uruguay|bolivia|venezuela)",
     r"\bliga\s*1\s*(peru|chile|paraguay|colombia|ecuador|uruguay|bolivia|mexico)",
+    r"\bdivision\s*profesional\b",
+    r"\bcup\s*quoc\s*gia\s*(paraguay|peru|chile|colombia|ecuador|uruguay|bolivia|venezuela|brazil|argentina|mexico|nhat|han|trung)",
 
-    # ==========================================
-    # ---- Quốc gia nhỏ có "Premier League" giả ----
-    # ==========================================
+    # Quốc gia nhỏ có "Premier League" giả
     r"\bsaint\s*kitts\b", r"\bnevis\b",
     r"\bbhutan\b", r"\bsri\s*lanka\b",
     r"\bgibraltar\b", r"\bfaroe\b",
     r"\bsomalia\b", r"\bzanzibar\b", r"\bethiopia\b", r"\beritrea\b",
     r"\bwelsh\b", r"\bscottish\b", r"\bnorthern\s*ireland\b",
 
-    # ==========================================
-    # ---- Châu Á (còn lại) ----
-    # ==========================================
+    # Châu Á (còn lại)
     r"\bthai\s*land\b", r"\bthai\s*league\b",
     r"\bmalaysia\b", r"\bindonesia\b", r"\bphilippines\b",
     r"\bsingapore\b", r"\bmyanmar\b", r"\bcambodia\b", r"\bcampuchia\b",
@@ -288,35 +271,27 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bviet\s*nam\b", r"\bv\.?\s*league\b", r"\bvleague\b",
     r"\bafc\s*champions\b", r"\bafc\s*cup\b",
 
-    # ==========================================
-    # ---- Châu Mỹ ----
-    # ==========================================
+    # Châu Mỹ
     r"\bvenezuela\b", r"\bbrasil\b", r"\bbrazil\b", r"\bbrasileir[ao]\b",
     r"\bargentina\b", r"\bprimera\s*division\b",
     r"\bmexico\b", r"\bliga\s*mx\b", r"\bmls\b",
     r"\bchile\b", r"\bcolombia\b", r"\becuador\b",
-    r"\buruguay\b", r"\bparaguay\b", r"\bbolivia\b",
+    r"\buruguay\b", r"\bbolivia\b",
     r"\bcosta\s*rica\b", r"\bhonduras\b", r"\bguatemala\b", r"\bpanama\b",
     r"\bconcacaf\b", r"\bcopa\s*america\b", r"\bcopa\s*libertadores\b",
     r"\bconcacaf\s*champions\b", r"\bleagues\s*cup\b", r"\bcanada\b",
     r"\bcanadian\s*premier\b",
 
-    # ==========================================
-    # ---- Châu Phi ----
-    # ==========================================
+    # Châu Phi
     r"\begypt\b", r"\bai\s*cap\b", r"\bmaroc\b", r"\bmorocco\b",
     r"\btunisia\b", r"\balgeria\b", r"\bnam\s*phi\b", r"\bsouth\s*africa\b",
     r"\bnigeria\b", r"\bghana\b", r"\bcaf\b", r"\bafcon\b",
     r"\bcaf\s*champions\b",
 
-    # ==========================================
-    # ---- Châu Đại Dương ----
-    # ==========================================
+    # Châu Đại Dương
     r"\baustralia\b", r"\ba[-\s]?league\b", r"\bnew\s*zealand\b",
 
-    # ==========================================
-    # ---- Châu Âu KHÔNG PHẢI top 5 ----
-    # ==========================================
+    # Châu Âu KHÔNG PHẢI top 5
     r"\bczech\b", r"\bsec\b", r"\bfortuna\s*liga\b", r"\bchance\s*liga\b",
     r"\baustria\b", r"\bbundesliga\s*ao\b",
     r"\bthuy\s*si\b", r"\bswitzerland\b",
@@ -420,10 +395,6 @@ def contains_top_league(text):
 
 
 def contains_top_team(text):
-    """
-    True nếu text chứa CLB top 5.
-    Bỏ qua khi trước tên CLB có chữ số (đội amateur).
-    """
     if not text:
         return False
     t = normalize_vn(text)
@@ -554,58 +525,7 @@ def build_extvlc_headers(stream_url: str) -> str:
 
 
 # ==========================================
-# TEST FILTER
-# ==========================================
-def _test_filter():
-    tests = [
-        # ⭐ Trận đã lọt — PHẢI loại
-        ("Alianza Atletico vs Sport Boys", "Liga 1 Peru (Clausura)", "", False),
-        ("SV Lippstadt vs ASC 09 Dortmund", "D5 hạng 5 Đức", "", False),
-        ("Sant Andreu vs Real Madrid Castilla", "Primera Federación", "", False),
-        ("Nongthymai SC vs Malki SC", "Indian Shillong Premier League", "", False),
-        ("Liaoning Shengjing Xinrui vs Yulin Mobei Miners", "Chinese Champions League", "", False),
-        ("Cleethorpes Town vs Redcar Athletic", "Northern Premier League", "", False),
-
-        # Container rỗng — vẫn phải lọc được
-        ("Alianza Atletico vs Sport Boys", "", "", False),
-        ("SV Lippstadt vs ASC 09 Dortmund", "", "", False),
-
-        # --- Nên LOẠI khác ---
-        ("Bayern Munchen vs Brose Bamberg", "basketball bundesliga", "basketball", False),
-        ("Inter Laguna FC vs Atletico Hidalgo", "Giao Hữu CLB", "", False),
-        ("Hannover 96 vs VfL Bochum", "Hạng 2 Đức", "", False),
-        ("Arezzo vs SudTirol", "hang 2 y - serie b", "", False),
-        ("Nữ AS Harima vs Nữ NGU Nagoya", "", "", False),
-        ("U19 Bayern vs U19 Dortmund", "", "", False),
-
-        # --- Nên GIỮ ---
-        ("Tottenham vs Aston Villa", "ngoai hang anh - premier league", "football", True),
-        ("Bayer Leverkusen vs RB Leipzig", "bundesliga duc", "football", True),
-        ("Real Madrid vs Barcelona", "la liga tay ban nha", "football", True),
-        ("Borussia Dortmund vs Bayern Munich", "bundesliga duc", "football", True),
-        ("Inter Milan vs Juventus", "serie a y", "football", True),
-        ("PSG vs Marseille", "ligue 1 phap", "football", True),
-        ("Coventry City vs Liverpool", "ngoai hang anh", "football", True),
-        ("Hull City vs Chelsea", "ngoai hang anh", "football", True),
-        ("Man City vs Real Madrid", "champions league", "football", True),
-        ("Roma vs Sevilla", "europa league", "football", True),
-        ("Argentina vs France", "fifa world cup", "football", True),
-        ("Sinner vs Alcaraz", "atp wimbledon", "tennis", True),
-        ("Chelsea vs Bayern Munich", "Giao Hữu CLB", "football", True),
-    ]
-    print("\n🧪 TEST FILTER:")
-    ok = 0
-    for name, container, sport, expected in tests:
-        result = should_keep(name, sport, container)
-        status = "✅" if result == expected else "❌"
-        if result == expected:
-            ok += 1
-        print(f"  {status} [{result}] {name[:48]} | {container[:35]}")
-    print(f"\n📊 {ok}/{len(tests)} PASS\n")
-
-
-# ==========================================
-# GOTO XỬ LÝ REDIRECT
+# GOTO REDIRECT
 # ==========================================
 def goto_with_redirect(page, url, timeout=DOMAIN_TIMEOUT):
     try:
@@ -626,8 +546,7 @@ def goto_with_redirect(page, url, timeout=DOMAIN_TIMEOUT):
 # MAIN
 # ==========================================
 def san_full_server_qua_proxy():
-    # _test_filter()  # <-- Bỏ comment để test
-    print("🚀 BẮT ĐẦU QUÉT XOILAC v6", flush=True)
+    print("🚀 BẮT ĐẦU QUÉT XOILAC v7", flush=True)
 
     danh_sach_phat = []
     server_da_thanh_cong = set()
@@ -680,10 +599,96 @@ def san_full_server_qua_proxy():
                         route.continue_()
                 context.route("**/*", chan_tai_nguyen_thua)
 
+                # ⭐⭐⭐ CAPTURE NGỮ CẢNH RỘNG ⭐⭐⭐
+                def lay_phong_xoilac(page, url_goc, keyword_link):
+                    raw = page.evaluate(f"""
+                        (() => {{
+                            const results = [];
+
+                            // Helper: đi lên ancestor lấy tên giải
+                            const getLeagueContext = (item) => {{
+                                const parts = [];
+
+                                // 1. Item's own text
+                                parts.push(item.innerText || '');
+                                parts.push(item.textContent || '');
+
+                                // 2. League element trong item
+                                const leagueEl = item.querySelector(
+                                    '.grid-match__league, .grid-matches__league, ' +
+                                    '[class*="league-name"], [class*="League__"], ' +
+                                    '[class*="tournament"]');
+                                if (leagueEl && leagueEl.innerText) {{
+                                    parts.push(leagueEl.innerText);
+                                }}
+
+                                // 3. Ancestor + header
+                                let cur = item.parentElement;
+                                let depth = 0;
+                                while (cur && depth < 6) {{
+                                    // Header riêng trong ancestor
+                                    const header = cur.querySelector(
+                                        '.grid-matches__header, .matches__header, ' +
+                                        '.matches-header, .matches__group-title, ' +
+                                        '.grid-matches__title, .grid-matches__group-title, ' +
+                                        '[class*="group-title"], [class*="league-header"], ' +
+                                        '[class*="LeagueHeader"], [class*="tournament-header"]'
+                                    );
+                                    if (header && header.innerText) {{
+                                        const t = header.innerText.trim();
+                                        if (t.length < 250) parts.push(t);
+                                    }}
+
+                                    // Nếu ancestor có class chứa 'group'/'league'/'section'
+                                    const cls = (typeof cur.className === 'string') ? cur.className : '';
+                                    if (/group|league|tournament|section/i.test(cls)) {{
+                                        const t = cur.innerText || '';
+                                        if (t.length < 2500) parts.push(t);
+                                    }}
+
+                                    cur = cur.parentElement;
+                                    depth++;
+                                }}
+
+                                return parts.join(' | ');
+                            }};
+
+                            document.querySelectorAll('.grid-matches__item').forEach(item => {{
+                                const sport = item.getAttribute('data-sport') || 'football';
+                                const linkEl = item.querySelector('a[href*="{keyword_link}"]');
+                                if (!linkEl) return;
+                                const img = item.querySelector('img');
+                                results.push({{
+                                    url: linkEl.href,
+                                    ten: linkEl.getAttribute('title') || linkEl.innerText.trim().replace(/\\n/g, ' - '),
+                                    thumb: img ? img.src : "",
+                                    sport: sport,
+                                    container: getLeagueContext(item)
+                                }});
+                            }});
+
+                            document.querySelectorAll('.match-horizontals-item[href*="{keyword_link}"]').forEach(a => {{
+                                if (results.some(r => r.url === a.href)) return;
+                                const img = a.querySelector('img');
+                                const parent = a.closest('.match-horizontals') || a.parentElement || a;
+                                results.push({{
+                                    url: a.href,
+                                    ten: a.innerText.trim().replace(/\\n/g, ' - '),
+                                    thumb: img ? img.src : "",
+                                    sport: 'football',
+                                    container: (parent.innerText || '') + ' | ' + (parent.textContent || '')
+                                }});
+                            }});
+                            return results;
+                        }})()
+                    """)
+                    return _loc_trung(raw, url_goc)
+
                 def _loc_trung(danh_sach_raw, url_goc):
                     result = {}
                     stats = {"total": 0, "other_sport": 0, "excluded": 0,
                              "not_whitelisted": 0, "time_out": 0, "kept": 0}
+                    debug_shown = 0
                     for item in danh_sach_raw:
                         stats["total"] += 1
                         url = item.get('url', '')
@@ -697,30 +702,31 @@ def san_full_server_qua_proxy():
                         combined = f"{ten} {container_text}"
                         sport_detected = detect_sport(ten, sport)
 
+                        reason = None
                         if sport_detected == "other":
-                            stats["other_sport"] += 1
-                            continue
-                        if is_other_sport(combined):
-                            stats["other_sport"] += 1
-                            continue
-                        if is_hard_excluded(combined):
-                            stats["excluded"] += 1
-                            continue
-                        if not should_keep(ten, sport, container_text):
-                            stats["not_whitelisted"] += 1
-                            continue
-                        if not is_within_24h(container_text):
-                            stats["time_out"] += 1
-                            continue
+                            reason = "other_sport"; stats["other_sport"] += 1
+                        elif is_other_sport(combined):
+                            reason = "other_sport"; stats["other_sport"] += 1
+                        elif is_hard_excluded(combined):
+                            reason = "excluded"; stats["excluded"] += 1
+                        elif not should_keep(ten, sport, container_text):
+                            reason = "not_whitelisted"; stats["not_whitelisted"] += 1
+                        elif not is_within_24h(container_text):
+                            reason = "time_out"; stats["time_out"] += 1
 
-                        if url not in result or len(ten) > len(result.get(url, {}).get('ten', '')):
+                        if reason is None:
                             stats["kept"] += 1
-                            result[url] = {
-                                'ten': ten if ten else "Trận đấu",
-                                'thumb': item.get('thumb',
-                                                  'https://img.icons8.com/color/512/football2.png'),
-                                'sport': sport_detected if sport_detected != "unknown" else "football",
-                            }
+                            if url not in result or len(ten) > len(result.get(url, {}).get('ten', '')):
+                                result[url] = {
+                                    'ten': ten if ten else "Trận đấu",
+                                    'thumb': item.get('thumb',
+                                                      'https://img.icons8.com/color/512/football2.png'),
+                                    'sport': sport_detected if sport_detected != "unknown" else "football",
+                                }
+                        elif DEBUG_SHOW_REJECTED and debug_shown < DEBUG_LIMIT:
+                            debug_shown += 1
+                            print(f"     ❌ [{reason}] {ten[:50]}", flush=True)
+                            print(f"        └─ container: {container_text[:220]}", flush=True)
 
                     print(f"     🔎 Lọc: tổng {stats['total']} → "
                           f"môn khác={stats['other_sport']} | "
@@ -780,60 +786,6 @@ def san_full_server_qua_proxy():
                         except Exception:
                             pass
                     return clicked
-
-                # ⭐⭐⭐ QUAN TRỌNG: capture NHIỀU ngữ cảnh ⭐⭐⭐
-                def lay_phong_xoilac(page, url_goc, keyword_link):
-                    raw = page.evaluate(f"""
-                        (() => {{
-                            const results = [];
-                            document.querySelectorAll('.grid-matches__item').forEach(item => {{
-                                const sport = item.getAttribute('data-sport') || 'football';
-                                const linkEl = item.querySelector('a[href*="{keyword_link}"]');
-                                if (!linkEl) return;
-                                const img = item.querySelector('img');
-
-                                // ⭐ Capture nhiều nguồn text để chắc có tên giải
-                                const leagueEl = item.querySelector(
-                                    '.grid-match__league, .league, [class*="league"], [class*="League"], [class*="tournament"]');
-                                const leagueText = leagueEl ? leagueEl.innerText : '';
-
-                                const containerText = [
-                                    item.innerText || '',
-                                    item.textContent || '',
-                                    leagueText || '',
-                                    item.getAttribute('data-league') || '',
-                                    item.getAttribute('data-tournament') || '',
-                                    item.getAttribute('title') || ''
-                                ].join(' | ');
-
-                                results.push({{
-                                    url: linkEl.href,
-                                    ten: linkEl.getAttribute('title') || linkEl.innerText.trim().replace(/\\n/g, ' - '),
-                                    thumb: img ? img.src : "",
-                                    sport: sport,
-                                    container: containerText
-                                }});
-                            }});
-                            document.querySelectorAll('.match-horizontals-item[href*="{keyword_link}"]').forEach(a => {{
-                                if (results.some(r => r.url === a.href)) return;
-                                const img = a.querySelector('img');
-                                const parent = a.closest('.match-horizontals') || a.parentElement || a;
-                                const containerText = [
-                                    parent.innerText || '',
-                                    parent.textContent || '',
-                                ].join(' | ');
-                                results.push({{
-                                    url: a.href,
-                                    ten: a.innerText.trim().replace(/\\n/g, ' - '),
-                                    thumb: img ? img.src : "",
-                                    sport: 'football',
-                                    container: containerText
-                                }});
-                            }});
-                            return results;
-                        }})()
-                    """)
-                    return _loc_trung(raw, url_goc)
 
                 def detect_server_buttons(page):
                     return page.evaluate("""
