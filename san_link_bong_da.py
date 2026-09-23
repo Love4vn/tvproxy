@@ -62,6 +62,19 @@ def normalize_vn(text):
     text = text.replace('đ', 'd')
     return text
 
+def format_match_name(name):
+    """
+    'Hà Lan vs Đức lúc 01:45 ngày 25/09/2026'
+    → 'Hà Lan vs Đức | 01:45 | 25/09/2026'
+    """
+    if not name:
+        return name
+    m = re.match(
+        r'^(.*?)\s+lúc\s+(\d{1,2}:\d{2})\s+ngày\s+(\d{1,2}/\d{1,2}(?:/\d{4})?)$',
+        name, re.IGNORECASE)
+    if m:
+        return f"{m.group(1).strip()} | {m.group(2)} | {m.group(3)}"
+    return name
 
 # ==========================================
 # ⭐ WHITELIST CLB TOP 5
@@ -280,7 +293,12 @@ HARD_EXCLUDE_PATTERNS = [
     r"\buzbekistan\b", r"\bkazakhstan\b", r"\bkyrgyz\b", r"\btajikistan\b",
     r"\bviet\s*nam\b", r"\bv\.?\s*league\b", r"\bvleague\b",
     r"\bafc\s*champions\b", r"\bafc\s*cup\b",
-    r"\bangladesh\b",
+    
+    # ⭐ v10: Bangladesh + Nam Á
+    r"\bbangladesh\b", r"\bchattogram\b", r"\bdhaka\b",
+    r"\bcomilla\b", r"\bsylhet\b", r"\brajshahi\b", r"\bkhulna\b",
+    r"\bbashundhara\b", r"\bmohammedan\s*dhaka\b",
+    r"\bafghanistan\b", r"\bnepal\b", r"\bpakistan\b", r"\bmyanmar\b",
 
     # Châu Mỹ
     r"\bvenezuela\b", r"\bbrasil\b", r"\bbrazil\b", r"\bbrasileir[ao]\b",
@@ -402,6 +420,10 @@ def contains_top_team(text):
         for m in re.finditer(pattern, t):
             prefix = t[max(0, m.start()-10):m.start()]
             if re.search(r'\d{1,4}\s*$', prefix):
+                continue
+            # ⭐ v10: Bỏ qua đội B/C — "Las Palmas C", "Barcelona B", "Real Madrid C"
+            suffix = t[m.end():m.end()+4]
+            if re.match(r'\s+[bc]\b', suffix):
                 continue
             return True
     return False
@@ -648,7 +670,7 @@ def san_full_server_qua_proxy():
                             stats["kept"] += 1
                             if url not in result or len(ten) > len(result.get(url, {}).get('ten', '')):
                                 result[url] = {
-                                    'ten': ten if ten else "Trận tennis",
+                                    'ten': format_match_name(ten) if ten else "Trận tennis",
                                     'thumb': item.get('thumb',
                                                       'https://img.icons8.com/color/512/tennis.png'),
                                     'sport': 'tennis',
@@ -676,7 +698,7 @@ def san_full_server_qua_proxy():
                             stats["kept"] += 1
                             if url not in result or len(ten) > len(result.get(url, {}).get('ten', '')):
                                 result[url] = {
-                                    'ten': ten if ten else "Trận đấu",
+                                    'ten': format_match_name(ten) if ten else "Trận đấu",
                                     'thumb': item.get('thumb',
                                                       'https://img.icons8.com/color/512/football2.png'),
                                     'sport': 'football',
