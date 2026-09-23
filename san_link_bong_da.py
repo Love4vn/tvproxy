@@ -1054,11 +1054,8 @@ def san_full_server_qua_proxy():
     # XUẤT M3U
     # ==========================================
     seen = set()
-    danh_sach_sach = []
-    for luong in danh_sach_phat:
-        if luong['link'] not in seen:
-            seen.add(luong['link'])
-            danh_sach_sach.append(luong)
+    # KHÔNG lọc trùng theo link nữa — giữ nguyên tất cả các trận khác nhau
+    danh_sach_sach = danh_sach_phat
 
     if danh_sach_sach:
         da_loc = len(danh_sach_phat) - len(danh_sach_sach)
