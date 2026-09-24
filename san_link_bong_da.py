@@ -257,9 +257,17 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bhebei\b", r"\bshandong\b", r"\bzhejiang\b",
     r"\bhenan\b", r"\byunnan\b", r"\bxi'?an\b",
 
-    # Ấn Độ
-    r"\bshillong\b", r"\bindian\b", r"\bindia\b", r"\bisl\b",
-    r"\bi[-\s]?league\b", r"\bsantosh\b",
+    # ⭐ v10.2: Ấn Độ - CLB cụ thể
+    r"\bsreenidi\b", r"\bdeccan\b",
+    r"\bnortheast\s*united\b", r"\bnortheast\b",
+    r"\bkerala\b", r"\bbengaluru\b", r"\bchennaiyin\b",
+    r"\bgoa\b", r"\bhyderabad\b", r"\bodisha\b",
+    r"\bjamshedpur\b", r"\bmumbai\s*city\b", r"\bpunjab\s*fc\b",
+    r"\bsc\s*east\s*bengal\b", r"\batk\b", r"\bmohun\s*bagan\b",
+    r"\bmohunbagan\b", r"\bgokulam\b", r"\bchurchill\b",
+    r"\bdempo\b", r"\bsalgaocar\b", r"\bsporting\s*goa\b",
+    r"\bshree\b", r"\bminerva\b", r"\baizawl\b", r"\bneroca\b",
+    r"\biff\b", r"\brajasthan\b", r"\btRAU\b",
 
     # Nam Mỹ
     r"\bperu\b", r"\bperuvian\b",
