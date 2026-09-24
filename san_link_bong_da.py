@@ -390,6 +390,31 @@ EURO_COUNTRIES = {
     "hy lap", "greece", "tho nhi ky", "turkey",
     "ukraine", "nga", "russia",
     "israel",
+    # ⭐ v10.3: bổ sung
+    "xu wales", "wales",
+    "liechtenstein",
+    "lithuania", "litva",
+    "latvia", "lativia",
+    "estonia",
+    "kosovo",
+    "montenegro",
+    "albania",
+    "macedonia", "bac macedonia",
+    "bosnia", "bosnia and herzegovina",
+    "iceland", "ai len",
+    "malta",
+    "luxembourg",
+    "cyprus", "sec",
+    "moldova",
+    "belarus", "belarus",
+    "georgia",
+    "armenia",
+    "azerbaijan",
+    "andorra",
+    "san marino",
+    "faroe", "quan dao faroe",
+    "gibraltar",
+    "liechtenstein",
 }
 
 FRIENDLY_KEYWORDS = ("giao huu", "friendly", "friendlies")
@@ -450,6 +475,29 @@ def is_friendly(text):
     t = normalize_vn(text)
     return any(kw in t for kw in FRIENDLY_KEYWORDS)
 
+def is_euro_international_container(text):
+    """True nếu container chứa dấu hiệu ĐTQG châu Âu (Nations League, Euro, WC, Friendly)."""
+    if not text:
+        return False
+    t = normalize_vn(text)
+    patterns = [
+        r"\buefa\s*nl\b", r"\buefa\s*nations\b", r"\bnations\s*league\b",
+        r"\buefa\s*euro\b", r"\beuro\s*20\d{2}\b", r"\beuro\s*championship\b",
+        r"\bworld\s*cup\b", r"\bfifa\s*world\b",
+        r"\bfriendly\b", r"\bgiao\s*huu\b", r"\bfriendlies\b",
+        r"\bwc\s*qualif", r"\beuro\s*qualif",
+    ]
+    return any(re.search(p, t, re.IGNORECASE) for p in patterns)
+
+
+def is_youth_or_women(name):
+    """True nếu là U/Trẻ/Nữ (để loại khỏi ĐTQG)."""
+    if not name:
+        return False
+    t = normalize_vn(name)
+    patterns = [r"\bu\s*\d{2}\b", r"\bnu\b", r"\bwomen\b", r"\bfemale\b",
+                r"\byouth\b", r"\bjunior\b", r"\btre\b", r"\bu\d{2}\b"]
+    return any(re.search(p, t, re.IGNORECASE) for p in patterns)
 
 def is_tennis_text(text):
     """Check nếu text chứa keyword tennis."""
@@ -484,7 +532,6 @@ def detect_sport(name="", sport_hint="", container=""):
 
 
 def should_keep(name, sport_hint="", container_text=""):
-    # ⭐ Truyền container vào detect_sport
     sport = detect_sport(name, sport_hint, container_text)
 
     if sport == "other":
@@ -492,13 +539,19 @@ def should_keep(name, sport_hint="", container_text=""):
     if sport == "tennis":
         return True   # Tennis luôn pass
 
-    # Football
+    combined = f"{name} {container_text}"
+
+    # ⭐ v10.3: ƯU TIÊN ĐTQG châu Âu — check TRƯỚC hard-exclude
+    if is_euro_international_container(container_text):
+        if has_euro_country(name) and not is_youth_or_women(name):
+            return True
+
+    # --- Các check cũ giữ nguyên ---
     if is_hard_excluded(name):
         return False
     if is_other_sport(name):
         return False
 
-    combined = f"{name} {container_text}"
     if is_other_sport(combined):
         return False
     if is_hard_excluded(combined):
@@ -512,7 +565,6 @@ def should_keep(name, sport_hint="", container_text=""):
         return True
 
     return False
-
 
 # ==========================================
 # TIME
