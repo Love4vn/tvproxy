@@ -1,12 +1,12 @@
-name: Sportsonline Scraper (M3U)
+name: Sportsonline Scraper (M3U for TiviMate & Kodi)
 
 on:
   schedule:
-    - cron: '30 */3 * * *'   # Chạy mỗi 3 giờ
-  workflow_dispatch:          # Cho phép chạy thủ công
+    - cron: '30 */3 * * *'
+  workflow_dispatch:
 
 permissions:
-  contents: write             # Cho phép bot ghi file vào Repo
+  contents: write
 
 jobs:
   build:
@@ -30,10 +30,10 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add sportsonline.m3u
+          git add sportsonline_tivimate.m3u sportsonline_kodi.m3u
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update Sportsonline M3U [skip ci]"
+            git commit -m "Update Sportsonline M3U (TiviMate + Kodi) [skip ci]"
             git push
           fi
