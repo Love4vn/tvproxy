@@ -7,14 +7,11 @@ import sys
 # ============================================================
 # Cấu hình
 # ============================================================
-# URL mặc định nếu biến môi trường SPORTSONLINE trống
 DEFAULT_URL = "https://sportsonline.gl/prog.txt"
-
-# Số giờ tối đa cho phép trận đã bắt đầu (nếu vượt quá → bỏ qua)
-MAX_HOURS_PAST = 4
+MAX_HOURS_PAST = 4  # Số giờ tối đa cho phép trận đã bắt đầu
 
 # ============================================================
-# Ánh xạ ngôn ngữ tĩnh cho các mã kênh không có trong file gốc
+# Ánh xạ ngôn ngữ tĩnh (dự phòng cho kênh không có trong file gốc)
 # ============================================================
 STATIC_LANG_MAP = {
     "SPORTTV1": "PT",
@@ -97,10 +94,7 @@ def build_m3u_entry(
     """
     Tạo một mục M3U hoàn chỉnh với đầy đủ header EXTVLCOPT.
     """
-    # Đổi " x " thành " vs "
     display_title = title.replace(" x ", " vs ").replace(" X ", " vs ")
-
-    # Tên hiển thị cuối: "Italy vs Belgium | 01:45 | 26/09/2026 [EN]"
     display_name = f"{display_title} | {time_str} | {date_str} [{lang}]"
 
     lines = []
@@ -121,7 +115,6 @@ def build_m3u_entry(
         "#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     )
-
     lines.append(stream_url)
 
     return "\n".join(lines)
@@ -129,7 +122,7 @@ def build_m3u_entry(
 
 def main():
     # ============================================================
-    # Lấy URL: ưu tiên biến môi trường, nếu trống dùng mặc định
+    # Lấy URL
     # ============================================================
     url = os.getenv("SPORTSONLINE")
     if not url or not url.strip():
@@ -154,26 +147,59 @@ def main():
     lines = [line.strip() for line in html.splitlines() if line.strip()]
 
     # ============================================================
-    # Bước 1: Xây dựng bảng ánh xạ kênh -> ngôn ngữ
+    # Bước 1: Xây dựng bảng ánh xạ kênh -> ngôn ngữ THEO TỪNG NGÀY
+    #         (vì cùng 1 kênh có thể khác ngôn ngữ giữa các ngày)
     # ============================================================
-    channel_lang_map = {}
+    # Cấu trúc: { "THURSDAY": {"HD2": "EN", "HD11": "ES"}, "FRIDAY": {...} }
+    channel_lang_by_day = {}
+    current_day_for_lang = None
+
     for line in lines:
-        if re.match(r"^[A-Z]+DAY$", line.upper()):
+        # Phát hiện dòng ngày trong tuần
+        day_match = re.match(r"^([A-Z]+DAY)$", line.upper().strip())
+        if day_match:
+            current_day_for_lang = day_match.group(1)
+            if current_day_for_lang not in channel_lang_by_day:
+                channel_lang_by_day[current_day_for_lang] = {}
             continue
+
+        # Chỉ phân tích dòng định nghĩa ngôn ngữ khi đang trong 1 ngày
+        if current_day_for_lang is None:
+            continue
+
         result = parse_language_line(line)
         if result:
             ch_code, lang_tag = result
-            if ch_code not in channel_lang_map:
-                channel_lang_map[ch_code] = lang_tag
+            # Ưu tiên định nghĩa đầu tiên trong ngày (tránh ghi đè)
+            if ch_code not in channel_lang_by_day[current_day_for_lang]:
+                channel_lang_by_day[current_day_for_lang][ch_code] = lang_tag
 
-    for ch, lang in STATIC_LANG_MAP.items():
-        if ch not in channel_lang_map:
-            channel_lang_map[ch] = lang
+    print("📡 Bảng ánh xạ kênh-ngôn ngữ theo ngày:")
+    for day, m in channel_lang_by_day.items():
+        print(f"   {day}: {m}")
 
-    print(f"📡 Bảng ánh xạ kênh-ngôn ngữ: {channel_lang_map}")
+    def lookup_lang(day_name: str, channel_code: str) -> str:
+        """
+        Tra cứu ngôn ngữ của kênh:
+        1. Ưu tiên mapping của chính ngày đó
+        2. Fallback sang bất kỳ ngày nào có định nghĩa kênh này
+        3. Cuối cùng dùng STATIC_LANG_MAP
+        4. Mặc định: EN
+        """
+        if day_name in channel_lang_by_day:
+            day_map = channel_lang_by_day[day_name]
+            if channel_code in day_map:
+                return day_map[channel_code]
+
+        # Fallback: tìm trong các ngày khác
+        for d_map in channel_lang_by_day.values():
+            if channel_code in d_map:
+                return d_map[channel_code]
+
+        return STATIC_LANG_MAP.get(channel_code, "EN")
 
     # ============================================================
-    # Bước 2: Xây dựng bảng ánh xạ ngày (logic gốc)
+    # Bước 2: Xây dựng bảng ánh xạ ngày trong tuần -> ngày dương lịch
     # ============================================================
     file_days = [
         line.upper() for line in lines if re.match(r"^[A-Z]+DAY$", line.upper())
@@ -194,13 +220,10 @@ def main():
         day_dates_map[fd] = calc_date.strftime("%d-%m-%Y")
 
     # ============================================================
-    # Bước 3: Xác định mốc thời gian Việt Nam hiện tại và ngưỡng bỏ qua
+    # Bước 3: Xác định mốc thời gian Việt Nam hiện tại
     # ============================================================
-    # GitHub Actions chạy UTC, Việt Nam là UTC+7
     now_utc = datetime.datetime.utcnow()
-    now_vn = now_utc + datetime.timedelta(hours=7)
-
-    # Ngưỡng: trận đã bắt đầu trước mốc này → bỏ
+    now_vn = now_utc + datetime.timedelta(hours=7)  # VN = UTC+7
     cutoff_vn = now_vn - datetime.timedelta(hours=MAX_HOURS_PAST)
 
     print(f"🕒 Giờ Việt Nam hiện tại: {now_vn.strftime('%d/%m/%Y %H:%M')}")
@@ -278,12 +301,11 @@ def main():
             dt_obj = datetime.datetime.strptime(
                 raw_datetime_str, "%d-%m-%Y %H:%M"
             )
-            # Giờ gốc + 6 = giờ Việt Nam
+            # Giờ gốc + 6 = giờ Việt Nam (theo logic file gốc)
             dt_th = dt_obj + datetime.timedelta(hours=6)
-            th_date = dt_th.strftime("%Y-%m-%d")          # key sắp xếp
+            th_date = dt_th.strftime("%Y-%m-%d")
             th_time = dt_th.strftime("%H:%M")
-            th_date_display = dt_th.strftime("%d/%m/%Y")  # hiển thị
-            # group-title mới: "Sport Events D/M/YYYY" (không có 0 đứng đầu)
+            th_date_display = dt_th.strftime("%d/%m/%Y")
             group_title = (
                 f"Sport Events {dt_th.day}/{dt_th.month}/{dt_th.year}"
             )
@@ -296,9 +318,7 @@ def main():
             )
             dt_th = base_dt
 
-        # ============================================================
         # Lọc trận đã bắt đầu quá MAX_HOURS_PAST tiếng
-        # ============================================================
         if dt_th < cutoff_vn:
             skipped_past += 1
             continue
@@ -319,7 +339,8 @@ def main():
 
         if station_url:
             channel_code = extract_channel_code(station_url)
-            lang = channel_lang_map.get(channel_code, "EN")
+            # Tra cứu ngôn ngữ theo ngày hiện tại
+            lang = lookup_lang(current_day_name, channel_code)
 
             existing_urls = [
                 s[0] for s in grouped_by_date[th_date][match_key]["streams"]
@@ -354,10 +375,19 @@ def main():
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(m3u_lines))
 
-    total = sum(len(v["streams"]) for v in grouped_by_date.values())
+    # ✅ SỬA LỖI: lặp 2 cấp vì grouped_by_date có cấu trúc
+    #    { date: { match_key: {..., "streams": [...] } } }
+    total = sum(
+        len(match["streams"])
+        for day_matches in grouped_by_date.values()
+        for match in day_matches.values()
+    )
+
     print(f"✅ Đã lưu file M3U thành công! Tổng số kênh: {total}")
-    print(f"🚫 Đã bỏ qua {skipped_past} kênh của các trận đã bắt đầu quá "
-          f"{MAX_HOURS_PAST} tiếng")
+    print(
+        f"🚫 Đã bỏ qua {skipped_past} kênh của các trận đã bắt đầu quá "
+        f"{MAX_HOURS_PAST} tiếng"
+    )
     print(f"📁 File: {output_path}")
 
 
