@@ -1,6 +1,7 @@
 import datetime
 import re
 import urllib.request
+import urllib.parse
 import os
 import sys
 
@@ -10,9 +11,15 @@ import sys
 DEFAULT_URL = "https://sportsonline.gl/prog.txt"
 MAX_HOURS_PAST = 4  # Số giờ tối đa cho phép trận đã bắt đầu
 
-# ============================================================
+# Header HTTP cần thiết để stream hoạt động (đã kiểm chứng)
+REFERRER = "https://live2.zundrixmediapipeline.com/"
+ORIGIN = "https://live2.zundrixmediapipeline.com/"
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+)
+
 # Ánh xạ ngôn ngữ tĩnh (dự phòng cho kênh không có trong file gốc)
-# ============================================================
 STATIC_LANG_MAP = {
     "SPORTTV1": "PT",
     "SPORTTV2": "PT",
@@ -22,13 +29,14 @@ STATIC_LANG_MAP = {
 }
 
 
+# ============================================================
+# Các hàm tiện ích
+# ============================================================
 def extract_channel_code(url: str) -> str:
     """
     Trích xuất mã kênh từ URL stream.
-    Ví dụ:
-        .../channels/hd/hd2.php       -> HD2
-        .../channels/bra/br5.php      -> BR5
-        .../channels/pt/sporttv2.php  -> SPORTTV2
+    Ví dụ: .../channels/hd/hd2.php -> HD2
+           .../channels/pt/sporttv2.php -> SPORTTV2
     """
     match = re.search(
         r"/channels/(?:hd|bra|pt)/([^/.]+)\.php", url, re.IGNORECASE
@@ -49,8 +57,6 @@ def parse_language_line(line: str):
 
     channel_code = match.group(1).upper()
     lang_desc = match.group(2).strip().upper()
-
-    # Lấy ngôn ngữ đầu tiên (trước dấu &)
     primary = lang_desc.split("&")[0].strip()
 
     lang_map = {
@@ -79,51 +85,63 @@ def parse_language_line(line: str):
     return (channel_code, "EN")
 
 
-def build_m3u_header() -> str:
-    return "#EXTM3U\n"
+# ============================================================
+# Định dạng stream URL cho từng ứng dụng IPTV
+# ============================================================
+def build_stream_url_tivimate(stream_url: str) -> str:
+    """
+    Định dạng link stream cho TiviMate.
+    Cấu trúc: url|User-Agent=...|Referer=...|Origin=...
+    (giá trị KHÔNG cần URL-encode)
+    """
+    return (
+        f"{stream_url}"
+        f"|User-Agent={USER_AGENT}"
+        f"|Referer={REFERRER}"
+        f"|Origin={ORIGIN}"
+    )
 
 
-def build_m3u_entry(
-    title: str,
-    time_str: str,
-    date_str: str,
-    lang: str,
-    group_title: str,
-    stream_url: str,
+def build_stream_url_kodi(stream_url: str) -> str:
+    """
+    Định dạng link stream cho Kodi.
+    Cấu trúc: url|Referer=...&User-Agent=...&Origin=...
+    (giá trị CẦN URL-encode)
+    """
+    encoded_ua = urllib.parse.quote(USER_AGENT, safe="")
+    encoded_ref = urllib.parse.quote(REFERRER, safe="")
+    encoded_org = urllib.parse.quote(ORIGIN, safe="")
+    return (
+        f"{stream_url}"
+        f"|Referer={encoded_ref}"
+        f"&User-Agent={encoded_ua}"
+        f"&Origin={encoded_org}"
+    )
+
+
+# ============================================================
+# Xây dựng các dòng M3U
+# ============================================================
+def build_extinf_line(
+    title: str, time_str: str, date_str: str, lang: str, group_title: str
 ) -> str:
-    """
-    Tạo một mục M3U hoàn chỉnh với đầy đủ header EXTVLCOPT.
-    """
+    """Tạo dòng #EXTINF chuẩn."""
     display_title = title.replace(" x ", " vs ").replace(" X ", " vs ")
     display_name = f"{display_title} | {time_str} | {date_str} [{lang}]"
-
-    lines = []
-    extinf = (
+    return (
         f'#EXTINF:-1 tvg-name="{display_title}" '
         f'tvg-language="{lang}" '
         f'group-title="{group_title}",{display_name}'
     )
-    lines.append(extinf)
-
-    lines.append(
-        "#EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/"
-    )
-    lines.append(
-        "#EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/"
-    )
-    lines.append(
-        "#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    )
-    lines.append(stream_url)
-
-    return "\n".join(lines)
 
 
+# ============================================================
+# Hàm chính
+# ============================================================
 def main():
-    # ============================================================
-    # Lấy URL
-    # ============================================================
+    # --------------------------------------------------------
+    # 1. Lấy URL nguồn
+    # --------------------------------------------------------
     url = os.getenv("SPORTSONLINE")
     if not url or not url.strip():
         print(f"⚠️  Biến SPORTSONLINE trống, dùng URL mặc định: {DEFAULT_URL}")
@@ -132,8 +150,11 @@ def main():
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/128.0.0.0 Safari/537.36"
+            )
         },
     )
 
@@ -146,16 +167,13 @@ def main():
 
     lines = [line.strip() for line in html.splitlines() if line.strip()]
 
-    # ============================================================
-    # Bước 1: Xây dựng bảng ánh xạ kênh -> ngôn ngữ THEO TỪNG NGÀY
-    #         (vì cùng 1 kênh có thể khác ngôn ngữ giữa các ngày)
-    # ============================================================
-    # Cấu trúc: { "THURSDAY": {"HD2": "EN", "HD11": "ES"}, "FRIDAY": {...} }
+    # --------------------------------------------------------
+    # 2. Xây dựng bảng ánh xạ kênh -> ngôn ngữ THEO TỪNG NGÀY
+    # --------------------------------------------------------
     channel_lang_by_day = {}
     current_day_for_lang = None
 
     for line in lines:
-        # Phát hiện dòng ngày trong tuần
         day_match = re.match(r"^([A-Z]+DAY)$", line.upper().strip())
         if day_match:
             current_day_for_lang = day_match.group(1)
@@ -163,14 +181,12 @@ def main():
                 channel_lang_by_day[current_day_for_lang] = {}
             continue
 
-        # Chỉ phân tích dòng định nghĩa ngôn ngữ khi đang trong 1 ngày
         if current_day_for_lang is None:
             continue
 
         result = parse_language_line(line)
         if result:
             ch_code, lang_tag = result
-            # Ưu tiên định nghĩa đầu tiên trong ngày (tránh ghi đè)
             if ch_code not in channel_lang_by_day[current_day_for_lang]:
                 channel_lang_by_day[current_day_for_lang][ch_code] = lang_tag
 
@@ -179,30 +195,22 @@ def main():
         print(f"   {day}: {m}")
 
     def lookup_lang(day_name: str, channel_code: str) -> str:
-        """
-        Tra cứu ngôn ngữ của kênh:
-        1. Ưu tiên mapping của chính ngày đó
-        2. Fallback sang bất kỳ ngày nào có định nghĩa kênh này
-        3. Cuối cùng dùng STATIC_LANG_MAP
-        4. Mặc định: EN
-        """
+        """Tra cứu ngôn ngữ: ưu tiên ngày hiện tại -> ngày khác -> static -> EN."""
         if day_name in channel_lang_by_day:
-            day_map = channel_lang_by_day[day_name]
-            if channel_code in day_map:
-                return day_map[channel_code]
-
-        # Fallback: tìm trong các ngày khác
+            if channel_code in channel_lang_by_day[day_name]:
+                return channel_lang_by_day[day_name][channel_code]
         for d_map in channel_lang_by_day.values():
             if channel_code in d_map:
                 return d_map[channel_code]
-
         return STATIC_LANG_MAP.get(channel_code, "EN")
 
-    # ============================================================
-    # Bước 2: Xây dựng bảng ánh xạ ngày trong tuần -> ngày dương lịch
-    # ============================================================
+    # --------------------------------------------------------
+    # 3. Ánh xạ ngày trong tuần -> ngày dương lịch
+    # --------------------------------------------------------
     file_days = [
-        line.upper() for line in lines if re.match(r"^[A-Z]+DAY$", line.upper())
+        line.upper()
+        for line in lines
+        if re.match(r"^[A-Z]+DAY$", line.upper())
     ]
 
     today_name = datetime.datetime.now().strftime("%A").upper()
@@ -219,9 +227,9 @@ def main():
         calc_date = today_date + datetime.timedelta(days=offset)
         day_dates_map[fd] = calc_date.strftime("%d-%m-%Y")
 
-    # ============================================================
-    # Bước 3: Xác định mốc thời gian Việt Nam hiện tại
-    # ============================================================
+    # --------------------------------------------------------
+    # 4. Mốc thời gian Việt Nam hiện tại
+    # --------------------------------------------------------
     now_utc = datetime.datetime.utcnow()
     now_vn = now_utc + datetime.timedelta(hours=7)  # VN = UTC+7
     cutoff_vn = now_vn - datetime.timedelta(hours=MAX_HOURS_PAST)
@@ -232,9 +240,9 @@ def main():
         f"{cutoff_vn.strftime('%d/%m/%Y %H:%M')}"
     )
 
-    # ============================================================
-    # Bước 4: Phân tích từng dòng sự kiện
-    # ============================================================
+    # --------------------------------------------------------
+    # 5. Phân tích từng dòng sự kiện
+    # --------------------------------------------------------
     current_day_name = None
     grouped_by_date = {}
     last_hour = -1
@@ -274,6 +282,7 @@ def main():
         raw_title = match.group(2).strip()
         station_url = match.group(3).strip() if match.group(3) else ""
 
+        # Bỏ qua dòng chỉ có mã kênh (không có URL)
         if (
             re.match(
                 r"^(HD\d+|BR\d+|SPORTS|ENGLISH|SPANISH|GERMAN)",
@@ -301,7 +310,6 @@ def main():
             dt_obj = datetime.datetime.strptime(
                 raw_datetime_str, "%d-%m-%Y %H:%M"
             )
-            # Giờ gốc + 6 = giờ Việt Nam (theo logic file gốc)
             dt_th = dt_obj + datetime.timedelta(hours=6)
             th_date = dt_th.strftime("%Y-%m-%d")
             th_time = dt_th.strftime("%H:%M")
@@ -339,21 +347,22 @@ def main():
 
         if station_url:
             channel_code = extract_channel_code(station_url)
-            # Tra cứu ngôn ngữ theo ngày hiện tại
             lang = lookup_lang(current_day_name, channel_code)
 
             existing_urls = [
-                s[0] for s in grouped_by_date[th_date][match_key]["streams"]
+                s[0]
+                for s in grouped_by_date[th_date][match_key]["streams"]
             ]
             if station_url not in existing_urls:
                 grouped_by_date[th_date][match_key]["streams"].append(
                     (station_url, lang)
                 )
 
-    # ============================================================
-    # Bước 5: Tạo file M3U
-    # ============================================================
-    m3u_lines = [build_m3u_header()]
+    # --------------------------------------------------------
+    # 6. Tạo 2 file M3U: TiviMate và Kodi
+    # --------------------------------------------------------
+    tivimate_lines = ["#EXTM3U\n"]
+    kodi_lines = ["#EXTM3U\n"]
 
     for date_key in sorted(grouped_by_date.keys()):
         matches = list(grouped_by_date[date_key].values())
@@ -361,34 +370,44 @@ def main():
 
         for m in matches:
             for stream_url, lang in m["streams"]:
-                entry = build_m3u_entry(
+                # Dòng EXTINF dùng chung cho cả 2
+                extinf = build_extinf_line(
                     title=m["title"],
                     time_str=m["time"],
                     date_str=m["date_display"],
                     lang=lang,
                     group_title=m["group_title"],
-                    stream_url=stream_url,
                 )
-                m3u_lines.append(entry)
 
-    output_path = "sportsonline.m3u"
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write("\n".join(m3u_lines))
+                # --- TiviMate: pipe separator, không URL-encode ---
+                tivimate_url = build_stream_url_tivimate(stream_url)
+                tivimate_lines.append(extinf)
+                tivimate_lines.append(tivimate_url)
 
-    # ✅ SỬA LỖI: lặp 2 cấp vì grouped_by_date có cấu trúc
-    #    { date: { match_key: {..., "streams": [...] } } }
+                # --- Kodi: pipe + URL-encode các tham số ---
+                kodi_url = build_stream_url_kodi(stream_url)
+                kodi_lines.append(extinf)
+                kodi_lines.append(kodi_url)
+
+    # Ghi file TiviMate
+    with open("sportsonline_tivimate.m3u", "w", encoding="utf-8") as f:
+        f.write("\n".join(tivimate_lines))
+
+    # Ghi file Kodi
+    with open("sportsonline_kodi.m3u", "w", encoding="utf-8") as f:
+        f.write("\n".join(kodi_lines))
+
     total = sum(
         len(match["streams"])
         for day_matches in grouped_by_date.values()
         for match in day_matches.values()
     )
 
-    print(f"✅ Đã lưu file M3U thành công! Tổng số kênh: {total}")
-    print(
-        f"🚫 Đã bỏ qua {skipped_past} kênh của các trận đã bắt đầu quá "
-        f"{MAX_HOURS_PAST} tiếng"
-    )
-    print(f"📁 File: {output_path}")
+    print(f"\n✅ Đã tạo xong 2 file M3U! Tổng số kênh: {total}")
+    print(f"🚫 Đã bỏ qua {skipped_past} kênh của các trận đã bắt đầu quá "
+          f"{MAX_HOURS_PAST} tiếng")
+    print("📁 File 1 (TiviMate): sportsonline_tivimate.m3u")
+    print("📁 File 2 (Kodi):     sportsonline_kodi.m3u")
 
 
 if __name__ == "__main__":
