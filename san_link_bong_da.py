@@ -393,6 +393,11 @@ TOP_LEAGUE_PATTERNS = [
     r"\beuro\s*championship\b", r"\beuro\s*cup\b",
     r"\buefa\s*nations\s*league\b", r"\bnations\s*league\b",
     r"\buefa\s*nations\b", r"\buefa\s*nl\b",
+    # ⭐ v12: ASEAN Cup backup
+    r"\basean\s*cup\b", r"\basean\s*championship\b",
+    r"\baff\s*cup\b", r"\baff\s*championship\b",
+    r"\baff\s*suzuki\b", r"\bsuzuki\s*cup\b",
+    r"\bfifa\s*asean\b",
 ]
 
 # ⭐ v10.3: Mở rộng EURO_COUNTRIES
@@ -516,6 +521,41 @@ def is_euro_international_container(text):
     ]
     return any(re.search(p, t, re.IGNORECASE) for p in patterns)
 
+def is_asean_cup_container(text):
+    """⭐ v12: Container có dấu hiệu ASEAN Cup / AFF Cup / Suzuki Cup."""
+    if not text:
+        return False
+    t = normalize_vn(text)
+    patterns = [
+        r"\basean\s*cup\b", r"\basean\s*championship\b",
+        r"\baff\s*cup\b", r"\baff\s*championship\b",
+        r"\baff\s*suzuki\b", r"\bsuzuki\s*cup\b",
+        r"\bfifa\s*asean\b",
+        r"\baff\s*mitsubishi\b", r"\bmitsubishi\s*electric\s*cup\b",
+        r"\bgiai\s*asean\b", r"\bgiai\s*bong\s*da\s*dong\s*nam\s*a\b",
+    ]
+    return any(re.search(p, t, re.IGNORECASE) for p in patterns)
+
+
+def is_asean_team(text):
+    """⭐ v12: Check nếu tên trận có đội ĐTQG Đông Nam Á."""
+    if not text:
+        return False
+    t = normalize_vn(text)
+    asean_teams = [
+        "viet nam", "vietnam",
+        "thai lan", "thailand",
+        "indonesia",
+        "malaysia",
+        "singapore",
+        "philippines", "phi luat tan",
+        "myanmar", "mi an ma",
+        "campuchia", "cambodia",
+        "lao", "laos",
+        "brunei",
+        "timor", "dong timor",
+    ]
+    return any(team in t for team in asean_teams)
 
 def is_youth_or_women(name):
     """⭐ v10.3: Check U/Trẻ/Nữ"""
@@ -586,6 +626,11 @@ def should_keep(name, sport_hint="", container_text=""):
         if has_euro_country(name) and not is_youth_or_women(name):
             return True
 
+    # ⭐ v12: ASEAN Cup / AFF Cup
+    if is_asean_cup_container(container_text):
+        if is_asean_team(name) and not is_youth_or_women(name):
+            return True
+
     combined = f"{name} {container_text}"
 
     # --- Các check cũ ---
@@ -606,7 +651,6 @@ def should_keep(name, sport_hint="", container_text=""):
         return True
 
     return False
-
 
 # ==========================================
 # TIME
