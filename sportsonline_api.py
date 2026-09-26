@@ -69,63 +69,162 @@ def decode_expiry(stream_url: str) -> str:
 # ============================================================
 # Playwright Engine - Trích xuất link Stream gốc từ trang PHP
 # ============================================================
-def extract_real_stream_url(php_url: str) -> str:
+def extract_real_stream_url(php_url: str, debug: bool = False) -> str:
+    """
+    Điều khiển trình duyệt ảo truy cập trang PHP, sau đó:
+      1. Bắt mọi request .m3u8/.flv từ iframe con
+      2. Nếu không có, tự đi vào iframe (traitaunt.net)
+      3. Thử click player để trigger autoplay
+      4. Dump toàn bộ request nếu debug=True
+    """
     print(f"   🔍 Đang phân tích kênh: {php_url} ...", flush=True)
-    
-    # Biến để lưu trữ kết quả
-    found_stream_url = [None]
-    captured_headers = [None]  # Sẽ lưu headers của request thành công
+
+    found_m3u8 = []
+    found_other = []
+    all_requests = []   # dùng cho debug
 
     try:
         with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
+            browser = p.chromium.launch(
+                headless=True,
+                args=[
+                    "--disable-blink-features=AutomationControlled",
+                    "--no-sandbox",
+                    "--disable-dev-shm-usage",
+                    "--disable-gpu",
+                ],
+            )
             context = browser.new_context(
                 user_agent=USER_AGENT,
                 viewport={"width": 1280, "height": 720},
-                # Thêm các header giả lập trình duyệt thật
-                extra_http_headers={
-                    "Accept-Language": "en-US,en;q=0.9",
-                    "Sec-Fetch-Dest": "iframe",
-                    "Sec-Fetch-Mode": "navigate",
-                }
+                locale="en-US",
+                timezone_id="Asia/Ho_Chi_Minh",
             )
+
+            # Ẩn dấu hiệu headless
+            context.add_init_script("""
+                Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+                Object.defineProperty(navigator, 'plugins', {get: () => [1,2,3,4,5]});
+                Object.defineProperty(navigator, 'languages', {get: () => ['en-US','en']});
+                window.chrome = { runtime: {} };
+            """)
+
             page = context.new_page()
 
-            # Hàm xử lý request, giờ sẽ lưu cả headers
-            def handle_request(request):
+            def on_request(request):
                 url = request.url
-                if any(ext in url.lower() for ext in [".m3u8", ".ts", ".flv"]):
-                    if found_stream_url[0] is None:
-                        found_stream_url[0] = url
-                        # Lưu lại toàn bộ headers của request này
-                        captured_headers[0] = request.headers
-                        print(f"      ✅ Bắt được luồng: {url[:80]}...", flush=True)
-                        # In ra các header quan trọng để debug
-                        print(f"         Referer: {request.headers.get('referer')}")
-                        print(f"         User-Agent: {request.headers.get('user-agent')[:50]}...")
-                        print(f"         Cookie: {request.headers.get('cookie', 'Không có')[:80]}...")
+                if debug:
+                    all_requests.append(url)
+                lower = url.lower()
+                if ".m3u8" in lower:
+                    if url not in found_m3u8:
+                        found_m3u8.append(url)
+                        print(f"      🎯 m3u8: {url[:100]}", flush=True)
+                elif ".flv" in lower or ".ts" in lower:
+                    if url not in found_other:
+                        found_other.append(url)
+                        print(f"      🎯 ts/flv: {url[:100]}", flush=True)
 
-            page.on("request", handle_request)
+            page.on("request", on_request)
 
-            # Truy cập trang và đợi mạng tải xong hoàn toàn
+            # --- Bước 1: load trang PHP ---
             try:
-                page.goto(php_url, timeout=30000, wait_until="networkidle")
+                page.goto(php_url, timeout=30000, wait_until="domcontentloaded")
             except Exception as e:
-                print(f"      ⚠️ Lỗi khi tải trang: {str(e)[:100]}", flush=True)
+                print(f"      ⚠️ goto PHP: {str(e)[:80]}", flush=True)
 
-            # Đợi thêm một chút để iframe bên trong có thời gian khởi tạo player
-            # Đôi khi cần tương tác (click) để player bắt đầu tải
-            time.sleep(5)
-            
-            # Thử tương tác với iframe nếu cần (ví dụ, click vào vùng player)
-            # page.frame_locator("iframe").first.click() # Bỏ comment nếu cần
+            # Chờ tối đa 8 giây cho iframe tự load player
+            for _ in range(32):
+                if found_m3u8:
+                    break
+                time.sleep(0.25)
 
-            browser.close()
+            # --- Bước 2: nếu chưa có, tìm iframe và đi vào ---
+            iframe_src = None
+            if not found_m3u8:
+                try:
+                    page.wait_for_selector("iframe", timeout=5000)
+                    iframe_src = page.eval_on_selector(
+                        "iframe", "el => el.src"
+                    )
+                    print(f"      📌 Phát hiện iframe: {iframe_src[:90]}", flush=True)
+                except Exception:
+                    print(f"      ⚠️ Không tìm thấy iframe.", flush=True)
+
+            if not found_m3u8 and iframe_src:
+                try:
+                    page.goto(iframe_src, timeout=30000, wait_until="domcontentloaded")
+                except Exception as e:
+                    print(f"      ⚠️ goto iframe: {str(e)[:80]}", flush=True)
+
+                for _ in range(40):   # ~10 giây
+                    if found_m3u8:
+                        break
+                    time.sleep(0.25)
+
+            # --- Bước 3: nếu vẫn chưa có, thử click vào giữa màn hình để trigger autoplay ---
+            if not found_m3u8:
+                try:
+                    page.mouse.click(640, 360)
+                    print(f"      🖱️ Đã click vào player, chờ thêm...", flush=True)
+                except Exception:
+                    pass
+                for _ in range(40):
+                    if found_m3u8:
+                        break
+                    time.sleep(0.25)
+
+            # --- Bước 4: nếu vẫn chưa, thử lấy tất cả iframe bên trong (nested iframe) ---
+            if not found_m3u8:
+                try:
+                    frames = page.frames
+                    for fr in frames:
+                        try:
+                            src = fr.url
+                            if src and src.startswith("http") and src not in (
+                                php_url, iframe_src, "about:blank"
+                            ):
+                                print(f"      🌐 Thử frame con: {src[:80]}", flush=True)
+                                fr.evaluate(
+                                    "() => { const v = document.querySelector('video'); "
+                                    "if (v) { v.muted = true; v.play().catch(()=>{}); } }"
+                                )
+                        except Exception:
+                            pass
+                    for _ in range(40):
+                        if found_m3u8:
+                            break
+                        time.sleep(0.25)
+                except Exception:
+                    pass
+
+            # --- DEBUG: in toàn bộ request nếu bật debug ---
+            if debug and not found_m3u8:
+                print(f"      ---- TOÀN BỘ REQUEST ({len(all_requests)}) ----", flush=True)
+                for u in all_requests[:30]:
+                    print(f"        • {u[:120]}", flush=True)
+                # Lưu screenshot để xem trang hiển thị gì
+                try:
+                    page.screenshot(path="/tmp/debug_player.png", full_page=True)
+                    print(f"      📸 Đã lưu screenshot: /tmp/debug_player.png", flush=True)
+                except Exception:
+                    pass
+
+            try:
+                browser.close()
+            except Exception:
+                pass
+
     except Exception as e:
-        print(f"      ⚠️ Lỗi Playwright: {str(e)[:100]}", flush=True)
+        print(f"      ⚠️ Playwright lỗi: {str(e)[:100]}", flush=True)
 
-    return found_stream_url[0] or ""
+    final = found_m3u8[0] if found_m3u8 else (found_other[0] if found_other else "")
+    if final:
+        print(f"      ✅ Link: {final[:90]}...  (hết hạn: {decode_expiry(final)})", flush=True)
+        return final
 
+    print(f"      ❌ Không tìm thấy luồng.", flush=True)
+    return ""
 # ============================================================
 # Các hàm tiện ích parse HTML
 # ============================================================
