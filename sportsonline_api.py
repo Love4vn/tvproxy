@@ -69,24 +69,20 @@ def decode_expiry(stream_url: str) -> str:
 # ============================================================
 # Playwright Engine - Trích xuất link Stream gốc từ trang PHP
 # ============================================================
-def extract_real_stream_url(php_url: str, debug: bool = False) -> str:
+def extract_real_stream_url(php_url: str) -> tuple[str, dict]:
     """
-    Điều khiển trình duyệt ảo truy cập trang PHP, sau đó:
-      1. Bắt mọi request .m3u8/.flv từ iframe con
-      2. Nếu không có, tự đi vào iframe (traitaunt.net)
-      3. Thử click player để trigger autoplay
-      4. Dump toàn bộ request nếu debug=True
+    Trả về (stream_url, headers) - headers là các header thật mà trình duyệt đã dùng.
     """
     print(f"   🔍 Đang phân tích kênh: {php_url} ...", flush=True)
 
     found_m3u8 = []
     found_other = []
-    all_requests = []   # dùng cho debug
+    captured_headers = {}  # Lưu headers của request thành công
 
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(
-                headless=True,
+                headless=True,  # Vẫn chạy ẩn trên GitHub Actions
                 args=[
                     "--disable-blink-features=AutomationControlled",
                     "--no-sandbox",
@@ -101,7 +97,7 @@ def extract_real_stream_url(php_url: str, debug: bool = False) -> str:
                 timezone_id="Asia/Ho_Chi_Minh",
             )
 
-            # Ẩn dấu hiệu headless
+            # Ẩn dấu hiệu headless (rất quan trọng để vượt qua chống bot)
             context.add_init_script("""
                 Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
                 Object.defineProperty(navigator, 'plugins', {get: () => [1,2,3,4,5]});
@@ -113,56 +109,49 @@ def extract_real_stream_url(php_url: str, debug: bool = False) -> str:
 
             def on_request(request):
                 url = request.url
-                if debug:
-                    all_requests.append(url)
                 lower = url.lower()
-                if ".m3u8" in lower:
-                    if url not in found_m3u8:
-                        found_m3u8.append(url)
-                        print(f"      🎯 m3u8: {url[:100]}", flush=True)
-                elif ".flv" in lower or ".ts" in lower:
-                    if url not in found_other:
-                        found_other.append(url)
-                        print(f"      🎯 ts/flv: {url[:100]}", flush=True)
+                if ".m3u8" in lower and not found_m3u8:
+                    found_m3u8.append(url)
+                    # Lấy headers thật từ request này!
+                    captured_headers['referer'] = request.headers.get('referer', '')
+                    captured_headers['origin'] = request.headers.get('origin', '')
+                    captured_headers['user-agent'] = request.headers.get('user-agent', USER_AGENT)
+                    print(f"      🎯 m3u8: {url[:100]}", flush=True)
+                    print(f"      📋 Referer thật: {captured_headers['referer']}", flush=True)
+                    print(f"      📋 Origin thật: {captured_headers['origin']}", flush=True)
+                elif (".flv" in lower or ".ts" in lower) and not found_other:
+                    found_other.append(url)
 
             page.on("request", on_request)
 
-            # --- Bước 1: load trang PHP ---
+            # Load trang PHP
             try:
                 page.goto(php_url, timeout=30000, wait_until="domcontentloaded")
             except Exception as e:
                 print(f"      ⚠️ goto PHP: {str(e)[:80]}", flush=True)
 
-            # Chờ tối đa 8 giây cho iframe tự load player
-            for _ in range(32):
+            # Chờ tối đa 10 giây cho player tự load
+            for _ in range(40):
                 if found_m3u8:
                     break
                 time.sleep(0.25)
 
-            # --- Bước 2: nếu chưa có, tìm iframe và đi vào ---
-            iframe_src = None
+            # Nếu chưa có, tìm iframe và đi vào
             if not found_m3u8:
                 try:
                     page.wait_for_selector("iframe", timeout=5000)
-                    iframe_src = page.eval_on_selector(
-                        "iframe", "el => el.src"
-                    )
-                    print(f"      📌 Phát hiện iframe: {iframe_src[:90]}", flush=True)
+                    iframe_src = page.eval_on_selector("iframe", "el => el.src")
+                    if iframe_src:
+                        print(f"      📌 Đi vào iframe: {iframe_src[:90]}", flush=True)
+                        page.goto(iframe_src, timeout=30000, wait_until="domcontentloaded")
+                        for _ in range(40):
+                            if found_m3u8:
+                                break
+                            time.sleep(0.25)
                 except Exception:
-                    print(f"      ⚠️ Không tìm thấy iframe.", flush=True)
+                    pass
 
-            if not found_m3u8 and iframe_src:
-                try:
-                    page.goto(iframe_src, timeout=30000, wait_until="domcontentloaded")
-                except Exception as e:
-                    print(f"      ⚠️ goto iframe: {str(e)[:80]}", flush=True)
-
-                for _ in range(40):   # ~10 giây
-                    if found_m3u8:
-                        break
-                    time.sleep(0.25)
-
-            # --- Bước 3: nếu vẫn chưa có, thử click vào giữa màn hình để trigger autoplay ---
+            # Thử click vào giữa màn hình nếu vẫn chưa có
             if not found_m3u8:
                 try:
                     page.mouse.click(640, 360)
@@ -174,39 +163,11 @@ def extract_real_stream_url(php_url: str, debug: bool = False) -> str:
                         break
                     time.sleep(0.25)
 
-            # --- Bước 4: nếu vẫn chưa, thử lấy tất cả iframe bên trong (nested iframe) ---
+            # Chụp ảnh debug nếu vẫn thất bại
             if not found_m3u8:
                 try:
-                    frames = page.frames
-                    for fr in frames:
-                        try:
-                            src = fr.url
-                            if src and src.startswith("http") and src not in (
-                                php_url, iframe_src, "about:blank"
-                            ):
-                                print(f"      🌐 Thử frame con: {src[:80]}", flush=True)
-                                fr.evaluate(
-                                    "() => { const v = document.querySelector('video'); "
-                                    "if (v) { v.muted = true; v.play().catch(()=>{}); } }"
-                                )
-                        except Exception:
-                            pass
-                    for _ in range(40):
-                        if found_m3u8:
-                            break
-                        time.sleep(0.25)
-                except Exception:
-                    pass
-
-            # --- DEBUG: in toàn bộ request nếu bật debug ---
-            if debug and not found_m3u8:
-                print(f"      ---- TOÀN BỘ REQUEST ({len(all_requests)}) ----", flush=True)
-                for u in all_requests[:30]:
-                    print(f"        • {u[:120]}", flush=True)
-                # Lưu screenshot để xem trang hiển thị gì
-                try:
                     page.screenshot(path="/tmp/debug_player.png", full_page=True)
-                    print(f"      📸 Đã lưu screenshot: /tmp/debug_player.png", flush=True)
+                    print(f"      📸 Đã lưu screenshot debug: /tmp/debug_player.png", flush=True)
                 except Exception:
                     pass
 
@@ -220,11 +181,11 @@ def extract_real_stream_url(php_url: str, debug: bool = False) -> str:
 
     final = found_m3u8[0] if found_m3u8 else (found_other[0] if found_other else "")
     if final:
-        print(f"      ✅ Link: {final[:90]}...  (hết hạn: {decode_expiry(final)})", flush=True)
-        return final
+        print(f"      ✅ Link: {final[:90]}...", flush=True)
+        return final, captured_headers
 
     print(f"      ❌ Không tìm thấy luồng.", flush=True)
-    return ""
+    return "", {}
 # ============================================================
 # Các hàm tiện ích parse HTML
 # ============================================================
@@ -264,15 +225,11 @@ def parse_language_line(line: str):
 # Sinh block M3U (chuẩn #EXTVLCOPT)
 # ============================================================
 def build_stream_block(title: str, time_str: str, date_str: str,
-                       lang: str, group_title: str, stream_url: str):
+                       lang: str, group_title: str, stream_url: str,
+                       captured_headers: dict):
     """
-    Trả về list các dòng M3U cho 1 stream:
-      #EXTINF...
-      #EXTVLCOPT:http-user-agent=...
-      #EXTVLCOPT:http-referrer=...
-      #EXTVLCOPT:http-origin=...
-      <url>
-    Chuẩn này được VLC, TiviMate, OTT Navigator, Kodi hiểu.
+    Sử dụng headers thật đã bắt được từ trình duyệt.
+    Nếu không có, fallback về hằng số mặc định.
     """
     display_title = title.replace(" x ", " vs ").replace(" X ", " vs ")
     display_name = f"{display_title} | {time_str} | {date_str} [{lang}]"
@@ -283,17 +240,18 @@ def build_stream_block(title: str, time_str: str, date_str: str,
         f'group-title="{group_title}",{display_name}'
     )
 
-    ref = REFERRER.rstrip("/") + "/"
-    org = ORIGIN.rstrip("/")
+    # Ưu tiên headers thật, fallback về mặc định
+    ref = captured_headers.get('referer') or (REFERRER.rstrip("/") + "/")
+    org = captured_headers.get('origin') or ORIGIN.rstrip("/")
+    ua = captured_headers.get('user-agent') or USER_AGENT
 
     return [
         extinf,
-        f"#EXTVLCOPT:http-user-agent={USER_AGENT}",
+        f"#EXTVLCOPT:http-user-agent={ua}",
         f"#EXTVLCOPT:http-referrer={ref}",
         f"#EXTVLCOPT:http-origin={org}",
         stream_url,
     ]
-
 
 # ============================================================
 # Hàm chạy chính
@@ -489,7 +447,7 @@ def main():
 
         for m in matches:
             for php_url, lang in m["streams"]:
-                real_video_url = extract_real_stream_url(php_url)
+                real_video_url, captured_headers = extract_real_stream_url(php_url)
                 if not real_video_url:
                     continue
 
@@ -500,6 +458,7 @@ def main():
                     lang=lang,
                     group_title=m["group_title"],
                     stream_url=real_video_url,
+                    captured_headers=captured_headers,  # Truyền headers vào
                 )
                 final_iptv_m3u_lines.extend(block)
                 valid_stream_count += 1
