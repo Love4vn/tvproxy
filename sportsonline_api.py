@@ -218,8 +218,9 @@ def main():
         day_dates_map[fd] = calc_date.strftime("%d-%m-%Y")
 
     # ---------- Cấu hình mốc thời gian lọc ----------
-    now_utc = datetime.datetime.now(datetime.timezone.utc)
-    now_vn = now_utc + datetime.timedelta(hours=7)
+    # ---------- Cấu hình mốc thời gian lọc (naive, giờ VN) ----------
+    now_utc_naive = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
+    now_vn = now_utc_naive + datetime.timedelta(hours=7)
     cutoff_vn = now_vn - datetime.timedelta(hours=MAX_HOURS_PAST)
 
     print(f"🕒 Giờ Việt Nam hiện tại: {now_vn.strftime('%d/%m/%Y %H:%M')}")
