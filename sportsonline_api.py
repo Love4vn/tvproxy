@@ -224,12 +224,11 @@ def parse_language_line(line: str):
 # ============================================================
 # Sinh block M3U (chuẩn #EXTVLCOPT)
 # ============================================================
-def build_stream_block(title: str, time_str: str, date_str: str,
-                       lang: str, group_title: str, stream_url: str,
-                       captured_headers: dict):
+def build_stream_block(title, time_str, date_str, lang, group_title,
+                       stream_url, captured_headers):
     """
-    Sử dụng headers thật đã bắt được từ trình duyệt.
-    Nếu không có, fallback về hằng số mặc định.
+    Xuất M3U với cú pháp `|Header=Value` — tương thích TiviMate,
+    OTT Navigator, Perfect Player. Không cần cookie.
     """
     display_title = title.replace(" x ", " vs ").replace(" X ", " vs ")
     display_name = f"{display_title} | {time_str} | {date_str} [{lang}]"
@@ -240,19 +239,14 @@ def build_stream_block(title: str, time_str: str, date_str: str,
         f'group-title="{group_title}",{display_name}'
     )
 
-    # Ưu tiên headers thật, fallback về mặc định
-    ref = captured_headers.get('referer') or (REFERRER.rstrip("/") + "/")
-    org = captured_headers.get('origin') or ORIGIN.rstrip("/")
-    ua = captured_headers.get('user-agent') or USER_AGENT
+    # Ưu tiên header thật bắt được, fallback về mặc định
+    ua = captured_headers.get("user-agent") or USER_AGENT
+    ref = captured_headers.get("referer") or "https://traitaunt.net/"
 
-    return [
-        extinf,
-        f"#EXTVLCOPT:http-user-agent={ua}",
-        f"#EXTVLCOPT:http-referrer={ref}",
-        f"#EXTVLCOPT:http-origin={org}",
-        stream_url,
-    ]
+    # Cú pháp pipe — ngắn gọn, nhiều player Android hiểu
+    stream_with_headers = f"{stream_url}|User-Agent={ua}|Referer={ref}"
 
+    return [extinf, stream_with_headers]
 # ============================================================
 # Hàm chạy chính
 # ============================================================
