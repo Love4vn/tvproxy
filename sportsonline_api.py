@@ -5,16 +5,21 @@ import urllib.parse
 import os
 import sys
 import time
+import pathlib
 from playwright.sync_api import sync_playwright
 
 # ============================================================
 # Cấu hình
 # ============================================================
 DEFAULT_URL = "https://sportsonline.gl"
-MAX_HOURS_PAST = 4
+MAX_HOURS_PAST = 4  # Số giờ tối đa cho phép trận đã bắt đầu
 
+# ⚠️ QUAN TRỌNG: Referer / Origin phải khớp với server CDN chấp nhận.
+# Nếu stream bị 403, thử đổi sang domain trang gốc, ví dụ:
+#   REFERRER = "https://w6.sportsonliine.click"
 REFERRER = "https://zundrixmediapipeline.com"
 ORIGIN = "https://zundrixmediapipeline.com"
+
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -25,19 +30,55 @@ STATIC_LANG_MAP = {
     "SPORTTV4": "PT", "SPORTTV5": "PT",
 }
 
+# Đường dẫn tuyệt đối tới thư mục chứa file script này
+BASE_DIR = pathlib.Path(__file__).resolve().parent
+OUTPUT_FILENAME = BASE_DIR / "sportsonline_live_streams.m3u"
+
+
+# ============================================================
+# Tiện ích thời gian
+# ============================================================
+def now_vn_naive() -> datetime.datetime:
+    """Giờ Việt Nam (UTC+7) dạng naive để so sánh với datetime đọc từ text."""
+    return (
+        datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
+        + datetime.timedelta(hours=7)
+    )
+
+
+def decode_expiry(stream_url: str) -> str:
+    """
+    Đọc tham số `e=` (Unix timestamp) trong URL để biết stream hết hạn khi nào.
+    Trả về chuỗi giờ VN, hoặc '?' nếu không tìm thấy.
+    """
+    try:
+        q = urllib.parse.urlparse(stream_url).query
+        params = urllib.parse.parse_qs(q)
+        if "e" in params:
+            ts = int(params["e"][0])
+            dt_utc_naive = datetime.datetime.fromtimestamp(
+                ts, tz=datetime.timezone.utc
+            ).replace(tzinfo=None)
+            dt_vn = dt_utc_naive + datetime.timedelta(hours=7)
+            return dt_vn.strftime("%d/%m/%Y %H:%M")
+    except Exception:
+        pass
+    return "?"
+
 
 # ============================================================
 # Playwright Engine - Trích xuất link Stream gốc từ trang PHP
 # ============================================================
 def extract_real_stream_url(php_url: str) -> str:
     """
-    Truy cập ngầm vào trang PHP bằng Playwright, lắng nghe network
-    để tóm lấy link stream (.m3u8 ưu tiên, fallback .flv/.ts) thực sự đang phát.
+    Truy cập ngầm trang PHP bằng Playwright, lắng nghe network
+    để bắt link stream thực sự đang phát.
+    Ưu tiên .m3u8 (playlist HLS), fallback .flv / .ts.
     """
     print(f"   🔍 Đang quét mã nguồn kênh: {php_url} ...", flush=True)
 
-    m3u8_url = [None]   # ưu tiên playlist
-    other_url = [None]  # fallback segment / flv
+    m3u8_url = [None]   # ưu tiên số 1
+    other_url = [None]  # fallback
 
     try:
         with sync_playwright() as p:
@@ -64,7 +105,7 @@ def extract_real_stream_url(php_url: str) -> str:
             except Exception as e:
                 print(f"      ⚠️ goto cảnh báo: {str(e)[:80]}", flush=True)
 
-            # Chờ tối đa ~6 giây, thoát ngay khi có m3u8
+            # Chờ tối đa ~6s, thoát ngay khi có m3u8
             for _ in range(24):
                 if m3u8_url[0]:
                     break
@@ -79,7 +120,12 @@ def extract_real_stream_url(php_url: str) -> str:
 
     final_url = m3u8_url[0] or other_url[0]
     if final_url:
-        print(f"      ✅ Phát hiện link trực tiếp: {final_url[:70]}...", flush=True)
+        expiry = decode_expiry(final_url)
+        print(
+            f"      ✅ Link: {final_url[:70]}...  "
+            f"(hết hạn: {expiry})",
+            flush=True,
+        )
         return final_url
 
     print("      ❌ Không tìm thấy luồng video trực tiếp.", flush=True)
@@ -87,7 +133,7 @@ def extract_real_stream_url(php_url: str) -> str:
 
 
 # ============================================================
-# Các hàm tiện ích
+# Các hàm tiện ích parse HTML
 # ============================================================
 def extract_channel_code(url: str) -> str:
     match = re.search(r"/channels/(?:hd|bra|pt)/([^/.]+)\.php", url, re.IGNORECASE)
@@ -121,33 +167,39 @@ def parse_language_line(line: str):
     return (channel_code, "EN")
 
 
-def build_stream_url_tivimate(stream_url: str) -> str:
-    """Định dạng link hoàn chỉnh đính kèm header bypass cho IPTV Player."""
-    try:
-        domain = urllib.parse.urlparse(stream_url).netloc.lower()
-        if not domain:
-            raise ValueError("no domain")
-        ref_header = f"https://{domain}/"
-    except Exception:
-        ref_header = REFERRER + "/"
-
-    return (
-        f"{stream_url}"
-        f"|User-Agent={USER_AGENT}"
-        f"|Referer={ref_header}"
-        f"|Origin={ref_header}"
-    )
-
-
-def build_extinf_line(title: str, time_str: str, date_str: str,
-                      lang: str, group_title: str) -> str:
+# ============================================================
+# Sinh block M3U (chuẩn #EXTVLCOPT)
+# ============================================================
+def build_stream_block(title: str, time_str: str, date_str: str,
+                       lang: str, group_title: str, stream_url: str):
+    """
+    Trả về list các dòng M3U cho 1 stream:
+      #EXTINF...
+      #EXTVLCOPT:http-user-agent=...
+      #EXTVLCOPT:http-referrer=...
+      #EXTVLCOPT:http-origin=...
+      <url>
+    Chuẩn này được VLC, TiviMate, OTT Navigator, Kodi hiểu.
+    """
     display_title = title.replace(" x ", " vs ").replace(" X ", " vs ")
     display_name = f"{display_title} | {time_str} | {date_str} [{lang}]"
-    return (
+
+    extinf = (
         f'#EXTINF:-1 tvg-name="{display_title}" '
         f'tvg-language="{lang}" '
         f'group-title="{group_title}",{display_name}'
     )
+
+    ref = REFERRER.rstrip("/") + "/"
+    org = ORIGIN.rstrip("/")
+
+    return [
+        extinf,
+        f"#EXTVLCOPT:http-user-agent={USER_AGENT}",
+        f"#EXTVLCOPT:http-referrer={ref}",
+        f"#EXTVLCOPT:http-origin={org}",
+        stream_url,
+    ]
 
 
 # ============================================================
@@ -173,7 +225,7 @@ def main():
 
     lines = [line.strip() for line in html.splitlines() if line.strip()]
 
-    # ---------- Xây dựng bảng ánh xạ ngôn ngữ ----------
+    # ---------- Bảng ánh xạ ngôn ngữ theo ngày ----------
     channel_lang_by_day = {}
     current_day_for_lang = None
 
@@ -201,8 +253,11 @@ def main():
                 return d_map[channel_code]
         return STATIC_LANG_MAP.get(channel_code, "EN")
 
-    # ---------- Tính toán ngày dương lịch tương ứng ----------
-    file_days = [line.upper() for line in lines if re.match(r"^[A-Z]+DAY$", line.upper())]
+    # ---------- Tính ngày dương lịch cho từng thứ ----------
+    file_days = [
+        line.upper() for line in lines
+        if re.match(r"^[A-Z]+DAY$", line.upper())
+    ]
     today_name = datetime.datetime.now().strftime("%A").upper()
     today_date = datetime.datetime.now()
 
@@ -217,12 +272,9 @@ def main():
         calc_date = today_date + datetime.timedelta(days=offset)
         day_dates_map[fd] = calc_date.strftime("%d-%m-%Y")
 
-    # ---------- Cấu hình mốc thời gian lọc ----------
-    # ---------- Cấu hình mốc thời gian lọc (naive, giờ VN) ----------
-    now_utc_naive = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
-    now_vn = now_utc_naive + datetime.timedelta(hours=7)
+    # ---------- Mốc thời gian lọc (naive, giờ VN) ----------
+    now_vn = now_vn_naive()
     cutoff_vn = now_vn - datetime.timedelta(hours=MAX_HOURS_PAST)
-
     print(f"🕒 Giờ Việt Nam hiện tại: {now_vn.strftime('%d/%m/%Y %H:%M')}")
 
     # ---------- Duyệt lịch phát sóng ----------
@@ -232,8 +284,10 @@ def main():
     day_offset = 0
     skipped_past = 0
 
-    skip_keywords = ["NEW DOMAIN", "IMPORTANT!", "READ!", "24/7 CHANNELS",
-                     "INFO:", "EMAIL:"]
+    skip_keywords = [
+        "NEW DOMAIN", "IMPORTANT!", "READ!", "24/7 CHANNELS",
+        "INFO:", "EMAIL:",
+    ]
 
     for line in lines:
         if re.match(r"^[A-Z]+DAY$", line.upper()):
@@ -259,7 +313,7 @@ def main():
         raw_title = match.group(2).strip()
         station_url = match.group(3).strip() if match.group(3) else ""
 
-        # Bỏ dòng tiêu đề ngôn ngữ / channel code lạc
+        # Bỏ dòng header ngôn ngữ / channel code bị lạc
         if re.match(
             r"^(HD\d+|BR\d+|SPORTS|ENGLISH|SPANISH|GERMAN)",
             raw_title, re.IGNORECASE,
@@ -279,7 +333,7 @@ def main():
 
         try:
             dt_obj = datetime.datetime.strptime(raw_datetime_str, "%d-%m-%Y %H:%M")
-            dt_th = dt_obj + datetime.timedelta(hours=6)
+            dt_th = dt_obj + datetime.timedelta(hours=6)  # giờ Thái (UTC+7 so với gốc)
             th_date = dt_th.strftime("%Y-%m-%d")
             th_time = dt_th.strftime("%H:%M")
             th_date_display = dt_th.strftime("%d/%m/%Y")
@@ -310,16 +364,28 @@ def main():
         if station_url:
             channel_code = extract_channel_code(station_url)
             lang = lookup_lang(current_day_name, channel_code)
-            existing_urls = [s[0] for s in grouped_by_date[th_date][match_key]["streams"]]
+            existing_urls = [
+                s[0] for s in grouped_by_date[th_date][match_key]["streams"]
+            ]
             if station_url not in existing_urls:
-                grouped_by_date[th_date][match_key]["streams"].append((station_url, lang))
+                grouped_by_date[th_date][match_key]["streams"].append(
+                    (station_url, lang)
+                )
 
     print(f"⏭️  Đã bỏ qua {skipped_past} trận đã kết thúc trước đó {MAX_HOURS_PAST}h.")
 
-    # --------------------------------------------------------
-    # Vòng lặp chuyển đổi link .php thành link stream trực tiếp
-    # --------------------------------------------------------
-    print("\n🚀 BẮT ĐẦU CHUYỂN ĐỔI LINK .PHP THÀNH FILE LUỒNG IPTV...")
+    # ---------- Đếm tổng số link cần quét ----------
+    total_php_links = sum(
+        len(m["streams"])
+        for date_map in grouped_by_date.values()
+        for m in date_map.values()
+    )
+    if total_php_links == 0:
+        print("⚠️ Không có trận nào cần xử lý. Bỏ qua ghi file.")
+        sys.exit(0)
+
+    # ---------- Chuyển đổi .php → link stream trực tiếp ----------
+    print(f"\n🚀 BẮT ĐẦU CHUYỂN ĐỔI {total_php_links} LINK .PHP THÀNH IPTV...\n")
 
     final_iptv_m3u_lines = ["#EXTM3U"]
     valid_stream_count = 0
@@ -334,27 +400,29 @@ def main():
                 if not real_video_url:
                     continue
 
-                extinf = build_extinf_line(
+                block = build_stream_block(
                     title=m["title"],
                     time_str=m["time"],
                     date_str=m["date_display"],
                     lang=lang,
                     group_title=m["group_title"],
+                    stream_url=real_video_url,
                 )
-                formatted_stream = build_stream_url_tivimate(real_video_url)
-
-                final_iptv_m3u_lines.append(extinf)
-                final_iptv_m3u_lines.append(formatted_stream)
+                final_iptv_m3u_lines.extend(block)
                 valid_stream_count += 1
 
-    # ---------- Xuất file ----------
-    output_filename = "sportsonline_live_streams.m3u"
-    with open(output_filename, "w", encoding="utf-8") as f:
+    # ---------- Ghi file ----------
+    if valid_stream_count == 0:
+        print("⚠️ Không lấy được stream nào. Bỏ qua ghi file.")
+        sys.exit(0)
+
+    with open(OUTPUT_FILENAME, "w", encoding="utf-8") as f:
         f.write("\n".join(final_iptv_m3u_lines) + "\n")
 
-    print("\n🎉 HOÀN THÀNH XUẤT FILE M3U!")
+    file_size_kb = OUTPUT_FILENAME.stat().st_size / 1024
+    print(f"\n🎉 HOÀN THÀNH XUẤT FILE M3U!")
     print(f"📊 Tổng số link stream đã ghi: {valid_stream_count}")
-    print(f"📁 Tên file đầu ra: {output_filename}")
+    print(f"📁 File: {OUTPUT_FILENAME}  ({file_size_kb:.1f} KB)")
 
 
 if __name__ == "__main__":
