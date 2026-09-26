@@ -28,6 +28,7 @@ jobs:
         env:
           SPORTSONLINE: ${{ secrets.SPORTSONLINE }}
         run: |
+          rm -f sportsonline_live_streams.m3u
           python sportsonline_api.py
           echo "----- Kiểm tra file -----"
           ls -la sportsonline_live_streams.m3u || echo "FILE KHÔNG TỒN TẠI"
