@@ -70,67 +70,61 @@ def decode_expiry(stream_url: str) -> str:
 # Playwright Engine - Trích xuất link Stream gốc từ trang PHP
 # ============================================================
 def extract_real_stream_url(php_url: str) -> str:
-    """
-    Truy cập ngầm trang PHP bằng Playwright, lắng nghe network
-    để bắt link stream thực sự đang phát.
-    Ưu tiên .m3u8 (playlist HLS), fallback .flv / .ts.
-    """
-    print(f"   🔍 Đang quét mã nguồn kênh: {php_url} ...", flush=True)
-
-    m3u8_url = [None]   # ưu tiên số 1
-    other_url = [None]  # fallback
+    print(f"   🔍 Đang phân tích kênh: {php_url} ...", flush=True)
+    
+    # Biến để lưu trữ kết quả
+    found_stream_url = [None]
+    captured_headers = [None]  # Sẽ lưu headers của request thành công
 
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             context = browser.new_context(
-                viewport={"width": 1024, "height": 768},
                 user_agent=USER_AGENT,
+                viewport={"width": 1280, "height": 720},
+                # Thêm các header giả lập trình duyệt thật
+                extra_http_headers={
+                    "Accept-Language": "en-US,en;q=0.9",
+                    "Sec-Fetch-Dest": "iframe",
+                    "Sec-Fetch-Mode": "navigate",
+                }
             )
             page = context.new_page()
 
+            # Hàm xử lý request, giờ sẽ lưu cả headers
             def handle_request(request):
-                url_lower = request.url.lower()
-                if ".m3u8" in url_lower:
-                    if m3u8_url[0] is None:
-                        m3u8_url[0] = request.url
-                elif ".flv" in url_lower or ".ts" in url_lower:
-                    if other_url[0] is None:
-                        other_url[0] = request.url
+                url = request.url
+                if any(ext in url.lower() for ext in [".m3u8", ".ts", ".flv"]):
+                    if found_stream_url[0] is None:
+                        found_stream_url[0] = url
+                        # Lưu lại toàn bộ headers của request này
+                        captured_headers[0] = request.headers
+                        print(f"      ✅ Bắt được luồng: {url[:80]}...", flush=True)
+                        # In ra các header quan trọng để debug
+                        print(f"         Referer: {request.headers.get('referer')}")
+                        print(f"         User-Agent: {request.headers.get('user-agent')[:50]}...")
+                        print(f"         Cookie: {request.headers.get('cookie', 'Không có')[:80]}...")
 
             page.on("request", handle_request)
 
+            # Truy cập trang và đợi mạng tải xong hoàn toàn
             try:
-                page.goto(php_url, timeout=20000, wait_until="domcontentloaded")
+                page.goto(php_url, timeout=30000, wait_until="networkidle")
             except Exception as e:
-                print(f"      ⚠️ goto cảnh báo: {str(e)[:80]}", flush=True)
+                print(f"      ⚠️ Lỗi khi tải trang: {str(e)[:100]}", flush=True)
 
-            # Chờ tối đa ~6s, thoát ngay khi có m3u8
-            for _ in range(24):
-                if m3u8_url[0]:
-                    break
-                time.sleep(0.25)
+            # Đợi thêm một chút để iframe bên trong có thời gian khởi tạo player
+            # Đôi khi cần tương tác (click) để player bắt đầu tải
+            time.sleep(5)
+            
+            # Thử tương tác với iframe nếu cần (ví dụ, click vào vùng player)
+            # page.frame_locator("iframe").first.click() # Bỏ comment nếu cần
 
-            try:
-                browser.close()
-            except Exception:
-                pass
+            browser.close()
     except Exception as e:
-        print(f"      ⚠️ Lỗi Playwright: {str(e)[:80]}", flush=True)
+        print(f"      ⚠️ Lỗi Playwright: {str(e)[:100]}", flush=True)
 
-    final_url = m3u8_url[0] or other_url[0]
-    if final_url:
-        expiry = decode_expiry(final_url)
-        print(
-            f"      ✅ Link: {final_url[:70]}...  "
-            f"(hết hạn: {expiry})",
-            flush=True,
-        )
-        return final_url
-
-    print("      ❌ Không tìm thấy luồng video trực tiếp.", flush=True)
-    return ""
-
+    return found_stream_url[0] or ""
 
 # ============================================================
 # Các hàm tiện ích parse HTML
