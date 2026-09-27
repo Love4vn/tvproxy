@@ -370,6 +370,30 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bluxembourg\b", r"\bestonia\b", r"\blatvia\b", r"\blithuania\b",
     r"\bbelarus\b", r"\bmoldova\b", r"\bgeorgia\b", r"\barmenia\b",
     r"\bazerbaijan\b",
+    # ⭐ v14: Nga + giải Nga
+    r"\brus\s*d[1-9]", r"\brus\s*[abc]\b",
+    r"\brussia\b", r"\brussian\b", r"\bnga\b",
+    r"\bfnl\b", r"\bfnl\s*2\b",
+    r"\bpremier\s*liga\b",
+    r"\btula\b", r"\bmetallurg\b", r"\blipetsk\b",
+    r"\bzenit\b", r"\bspartak\s*moscow\b", r"\bcska\s*moscow\b",
+    r"\bdynamo\s*moscow\b", r"\blokomotiv\s*moscow\b",
+    r"\brubin\s*kazan\b", r"\bkrasnodar\b", r"\brostov\b",
+    # ⭐ v14: CONCACAF + Caribe
+    r"\bconcacaf\s*nations\b", r"\bconcacaf\s*gold\b",
+    r"\bconcacaf\s*champions\b", r"\bconcacaf\b",
+    r"\bcaribbean\b", r"\bcaribe\b",
+    r"\bmontserrat\b", r"\bbritish\s*virgin\b", r"\bus\s*virgin\b",
+    r"\bvirgin\s*islands?\b",
+    r"\btrinidad\b", r"\btobago\b", r"\bbarbados\b",
+    r"\bjamaica\b", r"\bhaiti\b", r"\bcuba\b",
+    r"\bdominican\b", r"\bdominica\b",
+    r"\bantigua\b", r"\bbarbuda\b",
+    r"\bgrenada\b", r"\bsaint\s*lucia\b", r"\bst\.?\s*vincent\b",
+    r"\bbahamas\b", r"\bbelize\b", r"\bbermuda\b",
+    r"\bguyana\b", r"\bsuriname\b",
+    r"\bsint\s*maarten\b", r"\bsaint\s*maarten\b",
+    r"\banguilla\b", r"\bcayman\b", r"\bturks\b",
 ]
 
 # ==========================================
@@ -391,7 +415,7 @@ TOP_LEAGUE_PATTERNS = [
     r"\bworld\s*cup\b", r"\bfifa\s*world\s*cup\b", r"\bworldcup\b",
     r"\buefa\s*euro\b", r"\beuro\s*20\d{2}\b",
     r"\beuro\s*championship\b", r"\beuro\s*cup\b",
-    r"\buefa\s*nations\s*league\b", r"\bnations\s*league\b",
+    r"\buefa\s*nations\s*league\b",
     r"\buefa\s*nations\b", r"\buefa\s*nl\b",
     # ⭐ v12: ASEAN Cup backup
     r"\basean\s*cup\b", r"\basean\s*championship\b",
@@ -467,7 +491,7 @@ def contains_top_league(text):
 
 
 def contains_top_team(text):
-    """⭐ v10: Bỏ qua đội B/C và đội amateur (có số trước)"""
+    """⭐ v14: Bỏ qua đội B/C/2/II/III."""
     if not text:
         return False
     t = normalize_vn(text)
@@ -475,23 +499,31 @@ def contains_top_team(text):
         pattern = rf'(?<![a-z0-9]){re.escape(team)}(?![a-z0-9])'
         for m in re.finditer(pattern, t):
             prefix = t[max(0, m.start()-10):m.start()]
-            # Bỏ qua đội amateur có số trước (ASC 09 Dortmund)
             if re.search(r'\d{1,4}\s*$', prefix):
                 continue
-            # ⭐ v10: Bỏ qua đội B/C (Las Palmas C, Barcelona B)
-            suffix = t[m.end():m.end()+4]
+            suffix = t[m.end():m.end()+6]
+            # Đội B/C
             if re.match(r'\s+[bc]\b', suffix):
+                continue
+            # ⭐ v14: Đội 2/II/III (Arsenal-2, Arsenal II, Arsenal-2Tula)
+            if re.match(r'[-\s]+(2|ii|iii)\b', suffix):
+                continue
+            if re.match(r'-\d', suffix):
                 continue
             return True
     return False
 
 
 def has_euro_country(text):
+    """⭐ v14: Dùng word boundary - không match substring."""
     if not text:
         return False
     t = normalize_vn(text)
-    return any(c in t for c in EURO_COUNTRIES)
-
+    for c in EURO_COUNTRIES:
+        pattern = rf'\b{re.escape(c)}\b'
+        if re.search(pattern, t):
+            return True
+    return False
 
 def is_friendly(text):
     if not text:
@@ -508,12 +540,22 @@ def is_tennis_text(text):
 
 
 def is_euro_international_container(text):
-    """⭐ v10.3: Container có dấu hiệu ĐTQG châu Âu"""
+    """⭐ v14: Container châu Âu - KHÔNG match CONCACAF/AFC/CAF."""
     if not text:
         return False
     t = normalize_vn(text)
+
+    # ⭐ v14: Loại châu lục KHÁC
+    if any(re.search(p, t, re.IGNORECASE) for p in [
+        r"\bconcacaf\b", r"\bafc\b", r"\bcaf\b",
+        r"\bconmebol\b", r"\bofc\b",
+        r"\bnorth\s*america\b", r"\bcentral\s*america\b",
+        r"\bcaribbean\b", r"\bcaribe\b",
+    ]):
+        return False
+
     patterns = [
-        r"\buefa\s*nl\b", r"\buefa\s*nations\b", r"\bnations\s*league\b",
+        r"\buefa\s*nl\b", r"\buefa\s*nations\b",
         r"\buefa\s*euro\b", r"\beuro\s*20\d{2}\b", r"\beuro\s*championship\b",
         r"\bworld\s*cup\b", r"\bfifa\s*world\b",
         r"\bfriendly\b", r"\bgiao\s*huu\b", r"\bfriendlies\b",
