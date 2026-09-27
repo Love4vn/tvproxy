@@ -2,7 +2,7 @@ name: Tự Động Săn Link Bóng Đá Hằng Ngày
 
 on:
   schedule:
-    - cron: '* */2 * * *'
+    - cron: '* */4 * * *'
   workflow_dispatch:
   repository_dispatch:
     types: [trigger-football-bot]
