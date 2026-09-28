@@ -1,11 +1,6 @@
 #!/usr/bin/env python3
 """
-SoccerSurge -> IPTV playlist generator (v4)
-
-Điểm khác v3:
-- BLOCK ad/tracker domains ngay từ network (route abort) → ads không load.
-- Score mỗi m3u8 bắt được dựa trên domain/path → chỉ lấy cái "thật".
-- Loại m3u8 quảng cáo (VAST, preroll, adserver).
+SoccerSurge -> IPTV playlist generator (v4.1 — anti-ads, fixed route handler)
 """
 
 import asyncio
@@ -36,63 +31,42 @@ DEFAULT_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
               "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36")
 
 # ============================================================
-# BLOCK ad/tracker — abort request luôn, không cho load
+# BLOCK ad/tracker
 # ============================================================
 AD_BLOCK_RE = re.compile(
     r"("
-    # ad networks phổ biến
     r"doubleclick\.net|googlesyndication|googleadservices|googletagmanager|"
     r"google-analytics|adservice\.google|adnxs\.com|adsrvr\.org|"
     r"taboola|outbrain|criteo|pubmatic|rubiconproject|openx\.net|"
     r"smartadserver|adform\.net|casalemedia|sharethrough|yieldmo|"
-    # popup/popunder networks thấy trong source bạn gửi
     r"highperformanceformat\.com|effectivecpmnetwork\.com|"
     r"violentlinedexploit\.com|recollectsideway\.com|"
     r"nudgebelonged\.com|reliedhounder\.com|lauansaltire\.com|"
     r"driverhugoverblown\.com|pschenttidier\.com|acscdn\.com|"
     r"jnbhi\.com|jads\.co|exoclick|exosrv|trafficjunky|"
     r"popcash|popads|propellerads|onclickads|mgid\.com|"
-    # tracker/analytics
     r"histats\.com|amung\.us|waust\.at|livelog\.site|"
     r"cloudflareinsights\.com|beacon\.min\.js|steast\.io|"
-    r"static\.cloudflareinsights|challenges\.cloudflare|"
-    # ad paths
+    r"static\.cloudflareinsights|"
     r"/(ads?|adserver|adframe|popunder|preroll|vast|vpaid)/|"
     r"invoke\.js|/tag\.min\.js|/s\.js|/d\.js|/classic\.js|"
-    # page quảng cáo con
     r"ads\.htm|/ads\.|/ad\.html"
     r")",
     re.IGNORECASE,
 )
 
-# URL thật sự là HLS
-STREAM_RE = re.compile(r"(\.m3u8(\?|$)|/playlist\.m3u8|/master\.m3u8|manifest\.mpd)", re.IGNORECASE)
+STREAM_RE  = re.compile(r"(\.m3u8(\?|$)|/playlist\.m3u8|/master\.m3u8|manifest\.mpd)", re.IGNORECASE)
 VARIANT_RE = re.compile(r"(chunklist|_x\.m3u8|_[0-9]+\.m3u8|/sub/|/level|/stream_\d+\.m3u8)", re.IGNORECASE)
 TS_SEGMENT = re.compile(r"\.ts(\?|$)", re.IGNORECASE)
 
-# m3u8 của ad — bỏ dù đã capture
 AD_STREAM_RE = re.compile(
     r"(/ads?/|/adserver|/preroll|/vast|/vpaid|doubleclick|imasdk|"
     r"pubads|securepubads|/ad[-_]?break|midroll|postroll)",
     re.IGNORECASE,
 )
 
-JUNK_IFRAME_RE = re.compile(
-    r"(youtube|youtu\.be|facebook|twitter|google|doubleclick|googlesyndication"
-    r"|analytics|histats|discord|telegram|whatsapp|recaptcha|cloudflare"
-    r"|fonts\.googleapis|gstatic|jquery|bootstrap|banner|ad[-_]?tag|/ads?/"
-    r"|chatango|amung\.us|waust\.at|effectivecpmnetwork|highperformanceformat"
-    r"|violentlinedexploit|jnbhi\.com|recollectsideway|kofi)",
-    re.IGNORECASE,
-)
 
-# ============================================================
-# Score m3u8 để chọn cái "thật"
-# ============================================================
 def score_stream(url):
-    """
-    Trả về điểm 0-100. Càng cao càng đáng tin là stream thật.
-    """
     s = 50
     ul = url.lower()
     try:
@@ -101,41 +75,64 @@ def score_stream(url):
     except Exception:
         return 0
 
-    # + domain CDN stream đã biết
-    if any(h in host for h in (
-        "strmd.st", "hockey.do", "tvply.me", "akamaized", "cloudfront",
-        "fastly", "cdnstream", "streamcdn", "edge.", "live.",
-    )):
+    if any(h in host for h in ("strmd.st", "hockey.do", "tvply.me",
+                                "akamaized", "cloudfront", "fastly",
+                                "cdnstream", "streamcdn", "edge.", "live.")):
         s += 30
-
-    # + có token session (dấu hiệu stream thật)
     if re.search(r"/secure/|/ingest/|/stream/\w{20,}|/live/", path):
         s += 15
-
-    # + master playlist có tên chuẩn
     if re.search(r"(playlist|master|index)\.m3u8", path):
         s += 10
-
-    # − có path giống ad
     if AD_STREAM_RE.search(ul):
         s -= 80
-
-    # − domain ad
     if AD_BLOCK_RE.search(ul):
         s -= 100
-
-    # − path ngắn, nghi tracker
     if len(path) < 10:
         s -= 20
-
     return s
 
 
-# ============================================================
-# Helpers
-# ============================================================
 def log(msg=""):
     print(msg, file=sys.stderr, flush=True)
+
+
+# ============================================================
+# ROUTE HANDLER — đã fix
+# ============================================================
+async def block_ads_route(route):
+    try:
+        req = route.request
+        url = req.url
+
+        # Cho phép top-level navigation
+        try:
+            frame = req.frame
+            if req.resource_type == "document" and frame is not None:
+                if frame == frame.page.main_frame:
+                    await route.continue_()
+                    return
+        except Exception:
+            await route.continue_()
+            return
+
+        # Block ad/tracker
+        if AD_BLOCK_RE.search(url):
+            try:
+                await route.abort()
+            except Exception:
+                pass
+            return
+
+        try:
+            await route.continue_()
+        except Exception:
+            pass
+
+    except Exception:
+        try:
+            await route.continue_()
+        except Exception:
+            pass
 
 
 async def cf_pass(page, timeout=CF_TIMEOUT):
@@ -150,29 +147,7 @@ async def cf_pass(page, timeout=CF_TIMEOUT):
     return False
 
 
-# ============================================================
-# Route blocker: chặn ads trước khi chúng load
-# ============================================================
-async def block_ads_route(route):
-    req = route.request
-    # Luôn cho phép document chính (top-level navigation)
-    if req.resource_type == "document" and req.frame == route.request.page.main_frame:
-        return await route.continue_()
-
-    if AD_BLOCK_RE.search(req.url):
-        try:
-            await route.abort()
-        except Exception:
-            pass
-        return
-
-    try:
-        await route.continue_()
-    except Exception:
-        pass
-
-
-# ---------- Tầng 1: games ----------
+# ---------- Tầng 1 ----------
 async def get_games(page):
     await page.goto(BASE_URL, wait_until="domcontentloaded", timeout=60000)
     if not await cf_pass(page):
@@ -203,7 +178,7 @@ async def get_games(page):
     return out
 
 
-# ---------- Tầng 2: stream sites ----------
+# ---------- Tầng 2 ----------
 async def get_stream_sites(page, game_url):
     try:
         await page.goto(game_url, wait_until="domcontentloaded", timeout=30000)
@@ -212,7 +187,7 @@ async def get_stream_sites(page, game_url):
         log(f"    [err game page] {e}")
         return []
 
-    return await page.evaluate("""
+    raw = await page.evaluate("""
         Array.from(document.querySelectorAll('.stream-item[data-href]')).map(el => {
             const name    = (el.querySelector('.stream-row-site-name')     || {}).textContent || '';
             const quality = (el.querySelector('.stream-row-spec')          || {}).textContent || '';
@@ -224,28 +199,20 @@ async def get_stream_sites(page, game_url):
                 url    : el.getAttribute('data-href'),
             };
         }).filter(s => s.url && s.url.startsWith('http'))
-    """)[:MAX_SITES] if False else (await page.evaluate("""
-        Array.from(document.querySelectorAll('.stream-item[data-href]')).map(el => {
-            const name    = (el.querySelector('.stream-row-site-name')     || {}).textContent || '';
-            const quality = (el.querySelector('.stream-row-spec')          || {}).textContent || '';
-            const tier    = (el.querySelector('.stream-tier-badge')        || {}).textContent || '';
-            return {
-                site   : name.trim(),
-                quality: quality.trim(),
-                tier   : tier.trim(),
-                url    : el.getAttribute('data-href'),
-            };
-        }).filter(s => s.url && s.url.startsWith('http'))
-    """))[:MAX_SITES]
+    """)
+    return raw[:MAX_SITES]
 
 
-# ---------- Tầng 3: capture có scoring ----------
+# ---------- Tầng 3 ----------
 async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
     context = await browser.new_context()
-    # Block ads ngay từ context level — áp dụng cho cả main page + iframe
-    await context.route("**/*", block_ads_route)
+    # Context-level ad block
+    try:
+        await context.route("**/*", block_ads_route)
+    except Exception as e:
+        log(f"        [warn] route attach: {e}")
 
-    captured = []   # list[{"url","headers","score"}]
+    captured = []
     got_master = asyncio.Event()
 
     async def on_response(response):
@@ -253,14 +220,15 @@ async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
             u = response.url
         except Exception:
             return
-        if not STREAM_RE.search(u):    return
-        if TS_SEGMENT.search(u):       return
-        if VARIANT_RE.search(u):       return
-        if AD_STREAM_RE.search(u):     return   # m3u8 của ad
+        if not STREAM_RE.search(u):  return
+        if TS_SEGMENT.search(u):     return
+        if VARIANT_RE.search(u):     return
+        if AD_STREAM_RE.search(u):   return
         if any(c["url"] == u for c in captured): return
 
         sc = score_stream(u)
-        if sc < 40:                    return   # quá nghi ad, bỏ luôn
+        if sc < 40:
+            return
 
         try:
             headers = await response.request.all_headers()
@@ -274,6 +242,7 @@ async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
     page = await context.new_page()
     page.on("response", on_response)
 
+    cookie_str = ""
     try:
         try:
             await page.goto(site_url, wait_until="domcontentloaded", timeout=30000)
@@ -292,13 +261,14 @@ async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
             cookies = []
         cookie_str = "; ".join(f"{c['name']}={c['value']}" for c in cookies)
     finally:
-        try: await context.close()
-        except Exception: pass
+        try:
+            await context.close()
+        except Exception:
+            pass
 
     for c in captured:
         c["cookie"] = cookie_str
 
-    # Sắp xếp theo score giảm dần → giữ MAX_STREAMS cái cao nhất
     captured.sort(key=lambda c: c["score"], reverse=True)
     return captured
 
@@ -353,7 +323,7 @@ def write_playlist(entries, path=OUTPUT):
 
 # ---------- Main ----------
 async def main():
-    log("SoccerSurge playlist generator (v4 — anti-ads)")
+    log("SoccerSurge playlist generator (v4.1)")
     log(f"OS       : {platform.system()} ({_CAMOUFOX_OS})")
     log(f"Headless : {HEADLESS}")
     log(f"Output   : {OUTPUT.resolve()}")
@@ -370,8 +340,11 @@ async def main():
     async with AsyncCamoufox(headless=HEADLESS, os=_CAMOUFOX_OS,
                              firefox_user_prefs=prefs) as browser:
         ctx = await browser.new_context()
-        # block ads cả trên context duyệt homepage
-        await ctx.route("**/*", block_ads_route)
+        try:
+            await ctx.route("**/*", block_ads_route)
+        except Exception as e:
+            log(f"[warn] ctx route attach: {e}")
+
         page = await ctx.new_page()
 
         log("\n[1/3] Loading homepage ...")
@@ -379,7 +352,8 @@ async def main():
         log(f"      {len(games)} game(s) found")
         for g in games[:10]:
             log(f"      [{'LIVE' if g['live'] else '    '}] {g['title']} ({g['category']})")
-        if MAX_GAMES: games = games[:MAX_GAMES]
+        if MAX_GAMES:
+            games = games[:MAX_GAMES]
 
         entries = []
         for i, game in enumerate(games, 1):
