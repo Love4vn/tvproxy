@@ -142,6 +142,16 @@ TOP_TEAMS = [
     "strasbourg", "toulouse",
 ]
 
+# ⭐ v15.1: ĐTQG Nhật/Hàn (KHÔNG bao gồm CLB)
+JP_KR_NATIONAL = [
+    # Nhật Bản
+    "nhat ban", "nhat",
+    "japan", "jp national", "japan national",
+    # Hàn Quốc
+    "han quoc", "han",
+    "korea republic", "south korea", "korea nat",
+    "kr national",
+]
 # ==========================================
 # 🎾 TENNIS
 # ==========================================
@@ -310,8 +320,11 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bmalaysia\b", r"\bindonesia\b", r"\bphilippines\b",
     r"\bsingapore\b", r"\bmyanmar\b", r"\bcambodia\b", r"\bcampuchia\b",
     r"\btrung\s*quoc\b",
+    # Châu Á (còn lại) - vẫn loại CLB Nhật/Hàn
     r"\bnhat\b", r"\bjapan\b", r"\bj\s*league\b", r"\bj1\b", r"\bj2\b",
     r"\bhan\s*quoc\b", r"\bkorea\b", r"\bk\s*league\b",
+    r"\bkashima\b", r"\burawa\b", r"\byokohama\b", r"\bkawasaki\b",
+    r"\bulsan\b", r"\bjeonbuk\b", r"\bpohang\b", r"\bseoul\b",
     r"\ban\s*do\b",
     r"\biran\b", r"\biraq\b", r"\bsaudi\b", r"\barab\b", r"\ba\s*rap\b",
     r"\buae\b", r"\bqatar\b", r"\bkuwait\b", r"\bbahrain\b", r"\boman\b",
@@ -578,6 +591,45 @@ def is_asean_cup_container(text):
     ]
     return any(re.search(p, t, re.IGNORECASE) for p in patterns)
 
+def is_jp_kr_national(name):
+    """
+    ⭐ v15.1: CHỈ giữ ĐTQG Nhật/Hàn, KHÔNG giữ CLB J/K League.
+    Chỉ check `name` (tên trận), không check container.
+    """
+    if not name:
+        return False
+    t = normalize_vn(name)
+
+    # Loại trường hợp rõ ràng là CLB (nếu tên chứa "fc"/"club" ngay trước ĐTQG...)
+    # (Hiếm gặp, nhưng an toàn)
+    # VD: "FC Tokyo" không chứa "nhat ban" nên OK
+
+    for team in JP_KR_NATIONAL:
+        pattern = rf'(?<![a-z0-9]){re.escape(team)}(?![a-z0-9])'
+        if re.search(pattern, t):
+            return True
+    return False
+
+
+def is_jp_kr_league(text):
+    """⭐ v15: True nếu container là giải Nhật/Hàn."""
+    if not text:
+        return False
+    t = normalize_vn(text)
+    patterns = [
+        r"\bj\s*1\s*league\b", r"\bj1\b",
+        r"\bj\s*2\s*league\b", r"\bj2\b",
+        r"\bj\s*3\s*league\b", r"\bj3\b",
+        r"\bj\s*league\b", r"\bj\.?\s*league\b",
+        r"\bk\s*league\s*1\b", r"\bk\s*league\s*2\b",
+        r"\bk\s*league\b", r"\bk1\b", r"\bk2\b",
+        r"\bnhat\s*ban\b", r"\bjapan\b",
+        r"\bhan\s*quoc\b", r"\bkorea\s*republic\b",
+        r"\bafc\s*champions\b",       # AFC Champions League (có J/K teams)
+        r"\bafc\s*cup\b",
+        r"\beast\s*asia\b",
+    ]
+    return any(re.search(p, t, re.IGNORECASE) for p in patterns)
 
 def is_asean_team(text):
     """⭐ v12: Check nếu tên trận có đội ĐTQG Đông Nam Á."""
@@ -659,19 +711,23 @@ def should_keep(name, sport_hint="", container_text=""):
     if sport == "tennis":
         return True
 
-    # ⭐ v10.5: ĐTQG châu Âu (cả 2 đội đều châu Âu)
+    # ⭐ v10.5: ĐTQG châu Âu
     if both_are_euro_countries(name) and not is_youth_or_women(name):
         return True
 
-    # ⭐ v10.3: Container có dấu hiệu ĐTQG châu Âu
+    # ⭐ v10.3: Container ĐTQG châu Âu
     if is_euro_international_container(container_text):
         if has_euro_country(name) and not is_youth_or_women(name):
             return True
 
-    # ⭐ v12: ASEAN Cup / AFF Cup
+    # ⭐ v12: ASEAN Cup
     if is_asean_cup_container(container_text):
         if is_asean_team(name) and not is_youth_or_women(name):
             return True
+
+    # ⭐ v15.1: Nhật/Hàn - CHỈ ĐTQG, KHÔNG check container
+    if is_jp_kr_national(name) and not is_youth_or_women(name):
+        return True
 
     combined = f"{name} {container_text}"
 
