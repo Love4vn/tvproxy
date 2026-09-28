@@ -1,7 +1,10 @@
-flask
-requests
-gunicorn[gevent]
-python-dotenv
-cachetools
-PySocks
-psutil
+camoufox>=0.4.0
+flask>=3.0.0
+requests>=2.31.0
+#flask
+#requests
+#gunicorn[gevent]
+#python-dotenv
+#cachetools
+#PySocks
+#psutil
