@@ -1,4 +1,60 @@
 #EXTM3U
-# playlist : sportsurge live streams
-# generated: 2026-09-28 01:39 UTC
-# streams  : 0
+# playlist : soccersurge live soccer
+# generated: 2026-09-28 02:25 UTC
+# streams  : 8
+
+#EXTINF:-1 tvg-name="León vs FC Juarez [Odyssney]" tvg-logo="" group-title="Liga MX",León vs FC Juarez [Odyssney]
+#EXTVLCOPT:http-referrer=https://odyssney.cfd/9467/0/z/28
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://odyssney.cfd/9467/0/z/28
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+https://lb17.strmd.st/secure/JqgOtTRiPnqGfsNztXFcycgjcTIhwZou/ingest/stream/es32/1/playlist.m3u8
+
+#EXTINF:-1 tvg-name="León vs FC Juarez [Paini]" tvg-logo="" group-title="Liga MX",León vs FC Juarez [Paini]
+#EXTVLCOPT:http-referrer=https://paini.cfd/s/704634/s-27/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://paini.cfd/s/704634/s-27/
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+https://lb13.strmd.st/secure/DAZWLgsimaWxBwaBhbBYjWWCsYqdbkvj/ingest/stream/es32/1/playlist.m3u8
+
+#EXTINF:-1 tvg-name="León vs FC Juarez [Tawar]" tvg-logo="" group-title="Liga MX",León vs FC Juarez [Tawar]
+#EXTVLCOPT:http-referrer=https://tawar.cfd/z/896007/z-28/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://tawar.cfd/z/896007/z-28/
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+https://lb10.strmd.st/secure/wybZjzEJCgNgELIbykzoDSyJCxdKVGLA/rtmp/stream/_xXRoMKniFpjriYxEGs6qtVK7uSKY9_32Di6Lvfl7uDEltd_10MZ0qAIpRq9DmYyCVZtX_2dmvI/1/playlist.m3u8
+
+#EXTINF:-1 tvg-name="León vs FC Juarez [Tophdstreams]" tvg-logo="" group-title="Liga MX",León vs FC Juarez [Tophdstreams]
+#EXTVLCOPT:http-referrer=https://live.tophdstreams.com/2554/0/soccer%20ss/11
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://live.tophdstreams.com/2554/0/soccer%20ss/11
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+https://lb10.strmd.st/secure/QQjPFNlAwBGNksKrDpHYWhRACqbRqNiE/ingest/stream/es32/1/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Necaxa vs América [Odyssney]" tvg-logo="" group-title="Liga MX",Necaxa vs América [Odyssney]
+#EXTVLCOPT:http-referrer=https://odyssney.cfd/9468/0/z/29
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://odyssney.cfd/9468/0/z/29
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+https://lb3.strmd.st/secure/EOFlAKYEChuvxmGumNImOTRvbmCDdjni/ingest/stream/es33/1/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Necaxa vs América [Paini]" tvg-logo="" group-title="Liga MX",Necaxa vs América [Paini]
+#EXTVLCOPT:http-referrer=https://paini.cfd/s/2060/s-28/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://paini.cfd/s/2060/s-28/
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+https://lb5.strmd.st/secure/kiDpsgzSNiRhmDtMYFrwhQfbxiEiKLBR/ingest/stream/es33/1/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Necaxa vs América [Tawar]" tvg-logo="" group-title="Liga MX",Necaxa vs América [Tawar]
+#EXTVLCOPT:http-referrer=https://tawar.cfd/z/527910/z-29/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://tawar.cfd/z/527910/z-29/
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+https://lb13.strmd.st/secure/VlcxTSRCqQwUdIDZBplGzQMjpwXSVyLy/rtmp/stream/LfSicqUOsaZcSwhe6yp2kpYlpC6QeHw5t3EHr4NJcI-btQOD6k-hRlGRDvbzr3HBOd1FKqQcq1U/1/playlist.m3u8
+
+#EXTINF:-1 tvg-name="Necaxa vs América [Tophdstreams]" tvg-logo="" group-title="Liga MX",Necaxa vs América [Tophdstreams]
+#EXTVLCOPT:http-referrer=https://live.tophdstreams.com/2555/0/soccer%20ss/12
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://live.tophdstreams.com/2555/0/soccer%20ss/12
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+https://lb9.strmd.st/secure/KbbEzhOgKPHZtIKBcNhvfVxOhTMQzsEW/ingest/stream/es33/1/playlist.m3u8
