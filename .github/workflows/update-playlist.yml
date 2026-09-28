@@ -1,0 +1,97 @@
+name: Update Sportsurge playlist
+
+on:
+  # Chạy mỗi 30 phút. Chỉnh lại tuỳ nhu cầu (tối thiểu 5 phút).
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    inputs:
+      max_games:
+        description: 'Max số trận scrape (bỏ trống = tất cả)'
+        required: false
+        default: '20'
+
+# Cần quyền ghi để push playlist.m3u
+permissions:
+  contents: write
+
+# Không cho 2 job chạy chồng nhau
+concurrency:
+  group: playlist-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      # xvfb = display ảo, để camoufox chạy "headful" => khó bị Cloudflare phát hiện
+      - name: Install system deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            xvfb \
+            libgtk-3-0 libdbus-glib-1-2 libxt6 libx11-xcb1 \
+            libasound2t64 libxcomposite1 libxdamage1 libxrandr2 \
+            libgbm1 libpango-1.0-0 libcairo2 libatk1.0-0 \
+            libatk-bridge2.0-0 libnss3 libxss1 || \
+          sudo apt-get install -y --no-install-recommends \
+            xvfb libgtk-3-0 libdbus-glib-1-2 libxt6 libx11-xcb1 \
+            libasound2 libxcomposite1 libxdamage1 libxrandr2 \
+            libgbm1 libpango-1.0-0 libcairo2 libatk1.0-0 \
+            libatk-bridge2.0-0 libnss3 libxss1
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Cache camoufox browser (~300 MB)
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/camoufox
+          key: camoufox-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            camoufox-${{ runner.os }}-
+
+      - name: Fetch camoufox
+        run: python -m camoufox fetch
+
+      - name: Generate playlist
+        env:
+          MAX_GAMES: ${{ github.event.inputs.max_games || '20' }}
+          OUTPUT: playlist.m3u
+        run: |
+          xvfb-run -a --server-args="-screen 0 1280x800x24" \
+            python generate_playlist.py
+
+      - name: Inspect result
+        run: |
+          echo "----- playlist.m3u (head) -----"
+          head -40 playlist.m3u
+          echo "----- summary -----"
+          echo "Streams: $(grep -c '^#EXTINF' playlist.m3u || true)"
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add playlist.m3u
+          if git diff --staged --quiet; then
+            echo "No change — skip commit"
+          else
+            git commit -m "chore: update playlist ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git push
+          fi
