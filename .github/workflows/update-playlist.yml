@@ -2,8 +2,8 @@ name: Update Sportsurge playlist
 
 on:
   # Chạy mỗi 30 phút. Chỉnh lại tuỳ nhu cầu (tối thiểu 5 phút).
-  schedule:
-    - cron: '*/30 * * * *'
+  #schedule:
+  #  - cron: '*/30 * * * *'
   workflow_dispatch:
     inputs:
       max_games:
