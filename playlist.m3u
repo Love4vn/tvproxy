@@ -1,84 +1,38 @@
 #EXTM3U
 # playlist : soccersurge live soccer
-# generated: 2026-09-28 02:50 UTC
-# streams  : 10
-
-#EXTINF:-1 tvg-name="León vs FC Juarez [Odyssney]" tvg-logo="" group-title="Liga MX",León vs FC Juarez [Odyssney]
-#EXTVLCOPT:http-referrer=https://embed.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://embed.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st
-#EXTHTTP:Referer: https://embed.st/|Origin: https://embed.st
-https://lb1.strmd.st/secure/cGMkusuJDQEEYKuVyusjGRCpjHWNVtzE/ingest/stream/es32/1/playlist.m3u8
-
-#EXTINF:-1 tvg-name="León vs FC Juarez [Paini]" tvg-logo="" group-title="Liga MX",León vs FC Juarez [Paini]
-#EXTVLCOPT:http-referrer=https://embed.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://embed.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st
-#EXTHTTP:Referer: https://embed.st/|Origin: https://embed.st
-https://lb9.strmd.st/secure/rbZGHbykZOywGnNkhmkAYfxUDARwbgTJ/ingest/stream/es32/1/playlist.m3u8
-
-#EXTINF:-1 tvg-name="León vs FC Juarez [Tawar]" tvg-logo="" group-title="Liga MX",León vs FC Juarez [Tawar]
-#EXTVLCOPT:http-referrer=https://embed.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://embed.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st
-#EXTHTTP:Referer: https://embed.st/|Origin: https://embed.st
-https://lb14.strmd.st/secure/NUwfAscHwikYxzlYgPachyvExrnKLeKR/rtmp/stream/n-_Deo4iOLpwmp1pP2jGWeZVD6K4P9K87pFqAjv8QSgZlvRcl6ULtgLK_6C975oOH0JY7ZUlPds/1/playlist.m3u8
-
-#EXTINF:-1 tvg-name="León vs FC Juarez [Tnt-usa]" tvg-logo="" group-title="Liga MX",León vs FC Juarez [Tnt-usa]
-#EXTVLCOPT:http-referrer=https://play.matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://play.matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://play.matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://play.matchli.st
-#EXTHTTP:Referer: https://play.matchli.st/|Origin: https://play.matchli.st
-https://hls.hockey.do/secure_hls.php?path=f7f64d8fee34a109d4926c9fedc01dec%2Findex.m3u8&e=1790565469&sig=Pv5huePY6M4WmMj2R9RpsKp76QOeixnZhxytaHhMu10&v=1790563669-3030
-
-#EXTINF:-1 tvg-name="León vs FC Juarez [Tophdstreams]" tvg-logo="" group-title="Liga MX",León vs FC Juarez [Tophdstreams]
-#EXTVLCOPT:http-referrer=https://embed.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://embed.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st
-#EXTHTTP:Referer: https://embed.st/|Origin: https://embed.st
-https://lb12.strmd.st/secure/uJlrlSzrAiLfkBVjRxJmpceVVdaEfOSh/ingest/stream/es32/1/playlist.m3u8
+# generated: 2026-09-28 03:30 UTC
+# streams  : 4
 
 #EXTINF:-1 tvg-name="Necaxa vs América [Odyssney]" tvg-logo="" group-title="Liga MX",Necaxa vs América [Odyssney]
 #EXTVLCOPT:http-referrer=https://embed.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
 #EXTVLCOPT:http-origin=https://embed.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st
-#EXTHTTP:Referer: https://embed.st/|Origin: https://embed.st
-https://lb12.strmd.st/secure/FNgEwlUxDjeOApNsRyYxqJAsbTbZMSbA/ingest/stream/es33/1/playlist.m3u8
+#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6Im45ZCt2U042bTc0MXVNVUplbmw2WlE9PSIsInZhbHVlIjoiSWtoV3BJNWdmbTF0QlB1ZHY5OCtvbTdiV3FVVklzYnFWK281SVp1NGdhQ0d1TXFmUFJFUCtsQ2F0cWZLSE15T2dyZ0ZqNStBWmx0NitaV1lKdVpoSHd0bUUvek1Wb1FtYVJEMmVTb3dXbllNY0o1dFcvaldDVDJhM0pidDc3TkoiLCJtYWMiOiIyZDU5MTUxMDg1YmNiY2JjMDdhZGEzMDgyMGNhNjQ0YTgxMjc4MWI4MDk3ZmQ3MjMyM2U1Y2I1ZDZlOWUyYjA5IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IkJVeDZCbFNoR2VjZ0x6VG1xSklGN1E9PSIsInZhbHVlIjoiREJNcWdub2tkUEpHaHZIa20zaFFnREJsbU1lSUhIWVg1NVdOQ2dhNHRSVVBqWTJqL0V5T3dQb2hrUUJkeWJJRlA0ZVdoYlhYVUwvWnlkUlFGeXJOVlQ3ejBXUUl6TGdaTEsvRXM3TXlHSE9LZ09YelFtYkozQ09JQXU4NXd5dWciLCJtYWMiOiJhOTQxYzljYTBlN2VlYjBmYWU5NmNhZDVhYWFhNjY4NDMyMDdhYjMxZDgzOWMyMjRmNTRlNDQ4ZmIxOWI3OWJlIiwidGFnIjoiIn0%3D
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st&Cookie=XSRF-TOKEN=eyJpdiI6Im45ZCt2U042bTc0MXVNVUplbmw2WlE9PSIsInZhbHVlIjoiSWtoV3BJNWdmbTF0QlB1ZHY5OCtvbTdiV3FVVklzYnFWK281SVp1NGdhQ0d1TXFmUFJFUCtsQ2F0cWZLSE15T2dyZ0ZqNStBWmx0NitaV1lKdVpoSHd0bUUvek1Wb1FtYVJEMmVTb3dXbllNY0o1dFcvaldDVDJhM0pidDc3TkoiLCJtYWMiOiIyZDU5MTUxMDg1YmNiY2JjMDdhZGEzMDgyMGNhNjQ0YTgxMjc4MWI4MDk3ZmQ3MjMyM2U1Y2I1ZDZlOWUyYjA5IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IkJVeDZCbFNoR2VjZ0x6VG1xSklGN1E9PSIsInZhbHVlIjoiREJNcWdub2tkUEpHaHZIa20zaFFnREJsbU1lSUhIWVg1NVdOQ2dhNHRSVVBqWTJqL0V5T3dQb2hrUUJkeWJJRlA0ZVdoYlhYVUwvWnlkUlFGeXJOVlQ3ejBXUUl6TGdaTEsvRXM3TXlHSE9LZ09YelFtYkozQ09JQXU4NXd5dWciLCJtYWMiOiJhOTQxYzljYTBlN2VlYjBmYWU5NmNhZDVhYWFhNjY4NDMyMDdhYjMxZDgzOWMyMjRmNTRlNDQ4ZmIxOWI3OWJlIiwidGFnIjoiIn0%3D
+#EXTHTTP:Referer: https://embed.st/|Origin: https://embed.st|Cookie: XSRF-TOKEN=eyJpdiI6Im45ZCt2U042bTc0MXVNVUplbmw2WlE9PSIsInZhbHVlIjoiSWtoV3BJNWdmbTF0QlB1ZHY5OCtvbTdiV3FVVklzYnFWK281SVp1NGdhQ0d1TXFmUFJFUCtsQ2F0cWZLSE15T2dyZ0ZqNStBWmx0NitaV1lKdVpoSHd0bUUvek1Wb1FtYVJEMmVTb3dXbllNY0o1dFcvaldDVDJhM0pidDc3TkoiLCJtYWMiOiIyZDU5MTUxMDg1YmNiY2JjMDdhZGEzMDgyMGNhNjQ0YTgxMjc4MWI4MDk3ZmQ3MjMyM2U1Y2I1ZDZlOWUyYjA5IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IkJVeDZCbFNoR2VjZ0x6VG1xSklGN1E9PSIsInZhbHVlIjoiREJNcWdub2tkUEpHaHZIa20zaFFnREJsbU1lSUhIWVg1NVdOQ2dhNHRSVVBqWTJqL0V5T3dQb2hrUUJkeWJJRlA0ZVdoYlhYVUwvWnlkUlFGeXJOVlQ3ejBXUUl6TGdaTEsvRXM3TXlHSE9LZ09YelFtYkozQ09JQXU4NXd5dWciLCJtYWMiOiJhOTQxYzljYTBlN2VlYjBmYWU5NmNhZDVhYWFhNjY4NDMyMDdhYjMxZDgzOWMyMjRmNTRlNDQ4ZmIxOWI3OWJlIiwidGFnIjoiIn0%3D
+https://lb16.strmd.st/secure/MrgFpWERCfniIWgOIOwokAzgHdXCleIw/ingest/stream/es33/1/playlist.m3u8
 
 #EXTINF:-1 tvg-name="Necaxa vs América [Paini]" tvg-logo="" group-title="Liga MX",Necaxa vs América [Paini]
 #EXTVLCOPT:http-referrer=https://embed.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
 #EXTVLCOPT:http-origin=https://embed.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st
 #EXTHTTP:Referer: https://embed.st/|Origin: https://embed.st
-https://lb6.strmd.st/secure/DagYYQlTBgiWCYCJYDvgoAZYZyYOugZi/ingest/stream/es33/1/playlist.m3u8
+https://lb11.strmd.st/secure/RbJTZVnWHwDrkifuBvQyvlDeQvNbCDak/ingest/stream/es33/1/playlist.m3u8
 
 #EXTINF:-1 tvg-name="Necaxa vs América [Tawar]" tvg-logo="" group-title="Liga MX",Necaxa vs América [Tawar]
 #EXTVLCOPT:http-referrer=https://embed.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
 #EXTVLCOPT:http-origin=https://embed.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st
 #EXTHTTP:Referer: https://embed.st/|Origin: https://embed.st
-https://lb8.strmd.st/secure/DQpeEuzuLpalhqDipdSOytzvbXSMapfu/rtmp/stream/LrkFwpOZk43oTG7MRp3kHsaUYwfByoqObBHcEGgw6qxFuofgjhdutcOpgHxydRdn50fluHCLEYU/1/playlist.m3u8
-
-#EXTINF:-1 tvg-name="Necaxa vs América [Tnt-usa]" tvg-logo="" group-title="Liga MX",Necaxa vs América [Tnt-usa]
-#EXTVLCOPT:http-referrer=https://play.matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://play.matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://play.matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://play.matchli.st
-#EXTHTTP:Referer: https://play.matchli.st/|Origin: https://play.matchli.st
-https://hls.hockey.do/secure_hls.php?path=e3a100f30ce36b0ac1bd02ad7bbb4677%2Findex.m3u8&e=1790565561&sig=1U5Xu9BhAiKgJjSMwDBLZiF-_RvXpxyQ2MoRQJSPmc0&v=1790563761-1745
+https://lb3.strmd.st/secure/TBDpjZUxZvHwCbbtHUGISKCTsNnjFeqH/rtmp/stream/5VXlSXQ01Ql1WSrejVWdmm7rErszks480qhLfuwsACEpX-QTWWRS3Z3sChQG-Xh0qn5gW2CCmuQ/1/playlist.m3u8
 
 #EXTINF:-1 tvg-name="Necaxa vs América [Tophdstreams]" tvg-logo="" group-title="Liga MX",Necaxa vs América [Tophdstreams]
 #EXTVLCOPT:http-referrer=https://embed.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
 #EXTVLCOPT:http-origin=https://embed.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st
-#EXTHTTP:Referer: https://embed.st/|Origin: https://embed.st
-https://lb19.strmd.st/secure/puBxeWptLorupaEqAcCHMymUUgsFxWda/ingest/stream/es33/1/playlist.m3u8
+#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6IlJLYmtqSXhrNVJkYnA2a1hHeVpTR2c9PSIsInZhbHVlIjoiQUkzTnFmUDQrbDR6bzJYejhBc2dDejJNQlc2S1hlWWtEd01NR3N5TytUaGhic1ptWGtiNzlYZmRKMzNBV2R5RmlLK0psSlBYdkNjbEJtM2xCSklNT0ZwMXNXV2ZEYWlqSVlzVjhRVHpWandIU2J4b2NwQ1hsZ3NrL1o4RXNjVHIiLCJtYWMiOiI2Yjg1Nzg1M2E1ZGExMGJjYmVhYTY3YzRlZDQwZjJiZTIyNmM4OGVjMDFkNDRiNjljYjE4MjRhMDA3M2Y1ZDlmIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImpBQ0tpMFZNY1NLaUNHQm5JS05BU3c9PSIsInZhbHVlIjoiaVhqSDVmYjQyOWFsczlua1ZzSmQvdTNkM3dFUk9ReE5PSUNQdUltRSt6dU5xK2tTZzdTQ2w1R1dGUHJjQWU2Z3EyMWlic3diZDJiakVrc1h1WS9ubVhwTUNlNFJSMXRLckFuVHRjaGZQMHY0dE9QRXBuMGF5UHlLamxUOS9CSFoiLCJtYWMiOiIxOWEyNDlkZWM0MDM2MmU5NTFmMWY5ZmNiMGNlMzdjZTFiODgyYzczZmQxNzljNzQwY2NhNjQwOGU3MzE2NjYxIiwidGFnIjoiIn0%3D
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st&Cookie=XSRF-TOKEN=eyJpdiI6IlJLYmtqSXhrNVJkYnA2a1hHeVpTR2c9PSIsInZhbHVlIjoiQUkzTnFmUDQrbDR6bzJYejhBc2dDejJNQlc2S1hlWWtEd01NR3N5TytUaGhic1ptWGtiNzlYZmRKMzNBV2R5RmlLK0psSlBYdkNjbEJtM2xCSklNT0ZwMXNXV2ZEYWlqSVlzVjhRVHpWandIU2J4b2NwQ1hsZ3NrL1o4RXNjVHIiLCJtYWMiOiI2Yjg1Nzg1M2E1ZGExMGJjYmVhYTY3YzRlZDQwZjJiZTIyNmM4OGVjMDFkNDRiNjljYjE4MjRhMDA3M2Y1ZDlmIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImpBQ0tpMFZNY1NLaUNHQm5JS05BU3c9PSIsInZhbHVlIjoiaVhqSDVmYjQyOWFsczlua1ZzSmQvdTNkM3dFUk9ReE5PSUNQdUltRSt6dU5xK2tTZzdTQ2w1R1dGUHJjQWU2Z3EyMWlic3diZDJiakVrc1h1WS9ubVhwTUNlNFJSMXRLckFuVHRjaGZQMHY0dE9QRXBuMGF5UHlLamxUOS9CSFoiLCJtYWMiOiIxOWEyNDlkZWM0MDM2MmU5NTFmMWY5ZmNiMGNlMzdjZTFiODgyYzczZmQxNzljNzQwY2NhNjQwOGU3MzE2NjYxIiwidGFnIjoiIn0%3D
+#EXTHTTP:Referer: https://embed.st/|Origin: https://embed.st|Cookie: XSRF-TOKEN=eyJpdiI6IlJLYmtqSXhrNVJkYnA2a1hHeVpTR2c9PSIsInZhbHVlIjoiQUkzTnFmUDQrbDR6bzJYejhBc2dDejJNQlc2S1hlWWtEd01NR3N5TytUaGhic1ptWGtiNzlYZmRKMzNBV2R5RmlLK0psSlBYdkNjbEJtM2xCSklNT0ZwMXNXV2ZEYWlqSVlzVjhRVHpWandIU2J4b2NwQ1hsZ3NrL1o4RXNjVHIiLCJtYWMiOiI2Yjg1Nzg1M2E1ZGExMGJjYmVhYTY3YzRlZDQwZjJiZTIyNmM4OGVjMDFkNDRiNjljYjE4MjRhMDA3M2Y1ZDlmIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImpBQ0tpMFZNY1NLaUNHQm5JS05BU3c9PSIsInZhbHVlIjoiaVhqSDVmYjQyOWFsczlua1ZzSmQvdTNkM3dFUk9ReE5PSUNQdUltRSt6dU5xK2tTZzdTQ2w1R1dGUHJjQWU2Z3EyMWlic3diZDJiakVrc1h1WS9ubVhwTUNlNFJSMXRLckFuVHRjaGZQMHY0dE9QRXBuMGF5UHlLamxUOS9CSFoiLCJtYWMiOiIxOWEyNDlkZWM0MDM2MmU5NTFmMWY5ZmNiMGNlMzdjZTFiODgyYzczZmQxNzljNzQwY2NhNjQwOGU3MzE2NjYxIiwidGFnIjoiIn0%3D
+https://lb19.strmd.st/secure/cRiZNacyKMHpQMvDrTiAyArqPkCGbbXj/ingest/stream/es33/1/playlist.m3u8
