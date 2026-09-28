@@ -104,7 +104,7 @@ async def block_ads_route(route):
         req = route.request
         url = req.url
 
-        # Cho phép top-level navigation
+        # 1. Luôn cho phép tài liệu chính (top-level document) đi qua
         try:
             frame = req.frame
             if req.resource_type == "document" and frame is not None:
@@ -115,7 +115,7 @@ async def block_ads_route(route):
             await route.continue_()
             return
 
-        # Block ad/tracker
+        # 2. Chặn các request khớp với mẫu quảng cáo (không phải document)
         if AD_BLOCK_RE.search(url):
             try:
                 await route.abort()
@@ -123,6 +123,7 @@ async def block_ads_route(route):
                 pass
             return
 
+        # 3. Cho phép tất cả các request khác (bao gồm cả iframe player)
         try:
             await route.continue_()
         except Exception:
@@ -133,7 +134,6 @@ async def block_ads_route(route):
             await route.continue_()
         except Exception:
             pass
-
 
 async def cf_pass(page, timeout=CF_TIMEOUT):
     for _ in range(timeout):
