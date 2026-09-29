@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """
-SoccerSurge -> IPTV playlist generator (v4.1 — anti-ads, fixed route handler)
+SoccerSurge -> IPTV playlist generator (v5 — auto-proxy + verify)
+
+Mới:
+- Tự nhận diện link nào cần proxy (strmd.st, dudestream1...) và link nào không (hockey.do).
+- Verify từng link qua proxy: chỉ ghi vào m3u nếu trả về #EXTM3U.
+- Đánh dấu [OK] / [??] trong tên kênh để biết trạng thái.
 """
 
 import asyncio
@@ -10,7 +15,7 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, quote
 
 from camoufox.async_api import AsyncCamoufox
 
@@ -23,6 +28,10 @@ MAX_STREAMS = int(os.environ.get("MAX_STREAMS", "3"))
 CF_TIMEOUT  = int(os.environ.get("CF_TIMEOUT", "90"))
 WAIT_MASTER = int(os.environ.get("WAIT_MASTER", "30"))
 
+# === Proxy của bạn ===
+PROXY_URL   = os.environ.get("PROXY_URL", "https://sportsurge-proxy.love4vn.workers.dev")
+VERIFY_LINKS= os.environ.get("VERIFY_LINKS", "1") == "1"
+
 _CAMOUFOX_OS = {"Darwin": "macos", "Windows": "windows", "Linux": "linux"} \
     .get(platform.system(), "linux")
 HEADLESS = not bool(os.environ.get("DISPLAY"))
@@ -30,9 +39,34 @@ HEADLESS = not bool(os.environ.get("DISPLAY"))
 DEFAULT_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
               "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36")
 
-# ============================================================
-# BLOCK ad/tracker
-# ============================================================
+# ------------------------- Domain rules -------------------------
+# Domain này KHÔNG cần proxy — signed URL portable
+NO_PROXY_DOMAINS = ("hockey.do", "hls.hockey")
+
+# Domain này CẦN proxy — session-bound, cần Origin/Referer
+NEED_PROXY_DOMAINS = (
+    "strmd.st", "dudestream1.com", "resports.cfd",
+    "tophdstreams.com", "paini.cfd", "tawar.cfd", "odyssney.cfd",
+    "embed.st", "sportspatrika.com", "edgestream6.pro", "edgestream5.pro",
+)
+
+
+def should_proxy(url):
+    host = urlparse(url).netloc.lower()
+    # Ưu tiên no-proxy nếu có signed URL
+    if any(d in host for d in NO_PROXY_DOMAINS) and "sig=" in url:
+        return False
+    if any(d in host for d in NEED_PROXY_DOMAINS):
+        return True
+    # Mặc định: proxy (an toàn hơn)
+    return True
+
+
+def wrap_with_proxy(url):
+    return f"{PROXY_URL}/?url={quote(url, safe='')}"
+
+
+# ------------------------- Regex -------------------------
 AD_BLOCK_RE = re.compile(
     r"("
     r"doubleclick\.net|googlesyndication|googleadservices|googletagmanager|"
@@ -58,7 +92,6 @@ AD_BLOCK_RE = re.compile(
 STREAM_RE  = re.compile(r"(\.m3u8(\?|$)|/playlist\.m3u8|/master\.m3u8|manifest\.mpd)", re.IGNORECASE)
 VARIANT_RE = re.compile(r"(chunklist|_x\.m3u8|_[0-9]+\.m3u8|/sub/|/level|/stream_\d+\.m3u8)", re.IGNORECASE)
 TS_SEGMENT = re.compile(r"\.ts(\?|$)", re.IGNORECASE)
-
 AD_STREAM_RE = re.compile(
     r"(/ads?/|/adserver|/preroll|/vast|/vpaid|doubleclick|imasdk|"
     r"pubads|securepubads|/ad[-_]?break|midroll|postroll)",
@@ -89,6 +122,8 @@ def score_stream(url):
         s -= 100
     if len(path) < 10:
         s -= 20
+    if "hockey.do" in host and "sig=" in url:
+        s += 50
     return s
 
 
@@ -97,14 +132,12 @@ def log(msg=""):
 
 
 # ============================================================
-# ROUTE HANDLER — đã fix
+# Route handler
 # ============================================================
 async def block_ads_route(route):
     try:
         req = route.request
         url = req.url
-
-        # 1. Luôn cho phép tài liệu chính (top-level document) đi qua
         try:
             frame = req.frame
             if req.resource_type == "document" and frame is not None:
@@ -114,26 +147,16 @@ async def block_ads_route(route):
         except Exception:
             await route.continue_()
             return
-
-        # 2. Chặn các request khớp với mẫu quảng cáo (không phải document)
         if AD_BLOCK_RE.search(url):
-            try:
-                await route.abort()
-            except Exception:
-                pass
+            try:    await route.abort()
+            except: pass
             return
-
-        # 3. Cho phép tất cả các request khác (bao gồm cả iframe player)
-        try:
-            await route.continue_()
-        except Exception:
-            pass
-
+        try:    await route.continue_()
+        except: pass
     except Exception:
-        try:
-            await route.continue_()
-        except Exception:
-            pass
+        try:    await route.continue_()
+        except: pass
+
 
 async def cf_pass(page, timeout=CF_TIMEOUT):
     for _ in range(timeout):
@@ -186,16 +209,13 @@ async def get_stream_sites(page, game_url):
     except Exception as e:
         log(f"    [err game page] {e}")
         return []
-
     raw = await page.evaluate("""
         Array.from(document.querySelectorAll('.stream-item[data-href]')).map(el => {
             const name    = (el.querySelector('.stream-row-site-name')     || {}).textContent || '';
             const quality = (el.querySelector('.stream-row-spec')          || {}).textContent || '';
-            const tier    = (el.querySelector('.stream-tier-badge')        || {}).textContent || '';
             return {
                 site   : name.trim(),
                 quality: quality.trim(),
-                tier   : tier.trim(),
                 url    : el.getAttribute('data-href'),
             };
         }).filter(s => s.url && s.url.startsWith('http'))
@@ -203,10 +223,9 @@ async def get_stream_sites(page, game_url):
     return raw[:MAX_SITES]
 
 
-# ---------- Tầng 3 ----------
+# ---------- Tầng 3: capture ----------
 async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
     context = await browser.new_context()
-    # Context-level ad block
     try:
         await context.route("**/*", block_ads_route)
     except Exception as e:
@@ -225,16 +244,12 @@ async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
         if VARIANT_RE.search(u):     return
         if AD_STREAM_RE.search(u):   return
         if any(c["url"] == u for c in captured): return
-
         sc = score_stream(u)
-        if sc < 40:
-            return
-
+        if sc < 40: return
         try:
             headers = await response.request.all_headers()
         except Exception:
             headers = {}
-
         captured.append({"url": u, "headers": headers, "score": sc})
         log(f"        ✓ [{sc}] {u[:100]}")
         got_master.set()
@@ -248,12 +263,10 @@ async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
             await page.goto(site_url, wait_until="domcontentloaded", timeout=30000)
         except Exception as e:
             log(f"        [nav err] {e}")
-
         try:
             await asyncio.wait_for(got_master.wait(), timeout=wait_master)
         except asyncio.TimeoutError:
             log(f"        [timeout] không thấy m3u8 sau {wait_master}s")
-
         await asyncio.sleep(2)
         try:
             cookies = await context.cookies()
@@ -261,16 +274,55 @@ async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
             cookies = []
         cookie_str = "; ".join(f"{c['name']}={c['value']}" for c in cookies)
     finally:
-        try:
-            await context.close()
-        except Exception:
-            pass
+        try: await context.close()
+        except: pass
 
     for c in captured:
         c["cookie"] = cookie_str
-
     captured.sort(key=lambda c: c["score"], reverse=True)
     return captured
+
+
+# ---------- Verify qua proxy ----------
+async def verify_one(ctx, url, timeout_ms=10000):
+    """Test 1 link qua proxy. Trả về True/False."""
+    test_url = wrap_with_proxy(url) if should_proxy(url) else url
+    try:
+        resp = await ctx.request.get(test_url, timeout=timeout_ms)
+        if resp.status != 200:
+            return False, f"HTTP {resp.status}"
+        text = await resp.text()
+        if "#EXTM3U" in text[:1000]:
+            return True, "OK"
+        return False, "no #EXTM3U"
+    except Exception as e:
+        return False, str(e)[:60]
+
+
+async def verify_all(browser, entries):
+    """Verify toàn bộ link trong entries. Đánh dấu e['verified']."""
+    if not VERIFY_LINKS:
+        for e in entries: e["verified"] = None
+        return
+
+    log(f"\n[verify] Đang test {len(entries)} link qua proxy...")
+    ctx = await browser.new_context()
+    try:
+        # Chạy song song tối đa 5 cái
+        sem = asyncio.Semaphore(5)
+
+        async def check(e):
+            async with sem:
+                ok, reason = await verify_one(ctx, e["url"])
+                e["verified"] = ok
+                e["verify_reason"] = reason
+                mark = "✅" if ok else "❌"
+                log(f"  {mark} {e['title'][:50]} → {reason}")
+
+        await asyncio.gather(*(check(e) for e in entries))
+    finally:
+        try: await ctx.close()
+        except: pass
 
 
 # ---------- M3U ----------
@@ -294,10 +346,18 @@ def write_playlist(entries, path=OUTPUT):
         "",
     ]
     for e in entries:
-        title = e["title"].replace('"', "'")[:100]
+        # Title có thêm ✅ / ❌
+        prefix = ""
+        if e.get("verified") is True:  prefix = "[✅] "
+        elif e.get("verified") is False: prefix = "[❌] "
+
+        title = (prefix + e["title"]).replace('"', "'")[:100]
         group = e.get("group", "Soccer")
         h = pick_headers(e.get("headers"), e.get("referer"))
         cookie = h["cookie"] or e.get("cookie", "")
+
+        # Quyết định URL cuối cùng
+        final_url = wrap_with_proxy(e["url"]) if should_proxy(e["url"]) else e["url"]
 
         lines.append(f'#EXTINF:-1 tvg-name="{title}" tvg-logo="" group-title="{group}",{title}')
         lines.append(f"#EXTVLCOPT:http-referrer={h['referer']}")
@@ -315,7 +375,7 @@ def write_playlist(entries, path=OUTPUT):
         if cookie:      exth.append(f"Cookie: {cookie}")
         lines.append("#EXTHTTP:" + "|".join(exth))
 
-        lines.append(e["url"])
+        lines.append(final_url)
         lines.append("")
 
     path.write_text("\n".join(lines), encoding="utf-8")
@@ -323,9 +383,11 @@ def write_playlist(entries, path=OUTPUT):
 
 # ---------- Main ----------
 async def main():
-    log("SoccerSurge playlist generator (v4.1)")
+    log("SoccerSurge playlist generator (v5 — auto-proxy)")
     log(f"OS       : {platform.system()} ({_CAMOUFOX_OS})")
     log(f"Headless : {HEADLESS}")
+    log(f"Proxy    : {PROXY_URL}")
+    log(f"Verify   : {VERIFY_LINKS}")
     log(f"Output   : {OUTPUT.resolve()}")
 
     prefs = {
@@ -340,27 +402,23 @@ async def main():
     async with AsyncCamoufox(headless=HEADLESS, os=_CAMOUFOX_OS,
                              firefox_user_prefs=prefs) as browser:
         ctx = await browser.new_context()
-        try:
-            await ctx.route("**/*", block_ads_route)
-        except Exception as e:
-            log(f"[warn] ctx route attach: {e}")
-
+        try: await ctx.route("**/*", block_ads_route)
+        except: pass
         page = await ctx.new_page()
 
-        log("\n[1/3] Loading homepage ...")
+        log("\n[1/4] Loading homepage ...")
         games = await get_games(page)
         log(f"      {len(games)} game(s) found")
         for g in games[:10]:
             log(f"      [{'LIVE' if g['live'] else '    '}] {g['title']} ({g['category']})")
-        if MAX_GAMES:
-            games = games[:MAX_GAMES]
+        if MAX_GAMES: games = games[:MAX_GAMES]
 
+        # 2+3. Capture
         entries = []
         for i, game in enumerate(games, 1):
             log(f"\n[{i}/{len(games)}] {game['title']} — {game['category']}")
             sites = await get_stream_sites(page, game["href"])
             log(f"    {len(sites)} stream site(s)")
-
             for j, site in enumerate(sites, 1):
                 label = site["site"] or urlparse(site["url"]).netloc
                 log(f"    [{j}/{len(sites)}] {label} ({site['quality']}) -> {site['url'][:80]}")
@@ -371,7 +429,6 @@ async def main():
                     results = []
                 if not results:
                     log(f"        ✗ no stream")
-
                 for k, item in enumerate(results[:MAX_STREAMS]):
                     suffix = "" if k == 0 else f" #{k+1}"
                     entries.append({
@@ -383,14 +440,32 @@ async def main():
                         "group": game["category"] or "Soccer",
                     })
 
+        # Dedupe
         seen, unique = set(), []
         for e in entries:
             if e["url"] in seen: continue
             seen.add(e["url"]); unique.append(e)
-        unique.sort(key=lambda e: (e["group"].lower(), e["title"].lower()))
+
+        # 4. Verify
+        await verify_all(browser, unique)
+
+        # Sắp xếp: verified OK lên đầu
+        def sort_key(e):
+            v = 0 if e.get("verified") is True else (2 if e.get("verified") is False else 1)
+            return (v, e["group"].lower(), e["title"].lower())
+        unique.sort(key=sort_key)
 
         write_playlist(unique)
-        log(f"\n[3/3] DONE — wrote {len(unique)} stream(s) to {OUTPUT}")
+
+        # Thống kê
+        ok = sum(1 for e in unique if e.get("verified") is True)
+        fail = sum(1 for e in unique if e.get("verified") is False)
+        unk = len(unique) - ok - fail
+        log(f"\n[4/4] DONE")
+        log(f"      ✅ verified: {ok}")
+        log(f"      ❌ failed  : {fail}")
+        log(f"      ?  unknown : {unk}")
+        log(f"      Total     : {len(unique)} streams → {OUTPUT}")
 
 
 if __name__ == "__main__":
