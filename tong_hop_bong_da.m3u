@@ -1,14 +1,9 @@
 #EXTM3U
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhn80qvy9/image/small", ⚽ Philippines vs Pakistan | 16:00 | 29/09/2026 [ROY]
-#EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
-#EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.zundrixmediapipeline.com/live/channel1.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhn80qvy9/image/small", ⚽ Philippines vs Pakistan | 16:00 | 29/09/2026 [RIO]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001790660192-0-0-31f906ad01f51343cb8a97919f8816c6
+https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001790676180-0-0-c070a2e17b7a99b0ec19c50a1c324731
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhn80qvy9/image/small", ⚽ Philippines vs Pakistan | 16:00 | 29/09/2026 [RIO]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -18,27 +13,22 @@ https://live2.zundrixmediapipeline.com/live/channel16.flv
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660195-0-0-e6031b0d373bd67d6654a037aac916b4
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhn80qvy9/image/small", ⚽ Thái Lan vs Việt Nam | 19:30 | 29/09/2026 [ROY]
-#EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
-#EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.zundrixmediapipeline.com/live/channel1.flv
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790676181-0-0-99602eae1a4164e83b1ea953835d20c2
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhn80qvy9/image/small", ⚽ Thái Lan vs Việt Nam | 19:30 | 29/09/2026 [HD ROY]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660214-0-0-fe1a90137ce563ddbc263f3e44ebafcb
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790676207-0-0-276ee07bc87b207612ef32aaf7dd7c5f
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhn80qvy9/image/small", ⚽ Thái Lan vs Việt Nam | 19:30 | 29/09/2026 [NICK]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=e690c2cd62094391880da9cae15bf428&wsABSTime=1790703415
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=ccd028233375b7bf43e0e81d823853d0&wsABSTime=1790719408
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhn80qvy9/image/small", ⚽ Thái Lan vs Việt Nam | 19:30 | 29/09/2026 [HD NICK]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001790660216-0-0-719e98574c8447d64b4fb48c371edb23
+https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001790676209-0-0-85e4831f6a32ab2466aa308fffd7f78b
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhn80qvy9/image/small", ⚽ Thái Lan vs Việt Nam | 19:30 | 29/09/2026 [BRADY]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -48,17 +38,17 @@ https://live2.zundrixmediapipeline.com/live/channel15.flv
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001790660219-0-0-dbdc2fa777e49c206f59d3e8792a731e
+https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001790676211-0-0-be34e038627b6f8341f88e2ccf43ce62
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhn80qvy9/image/small", ⚽ Thái Lan vs Việt Nam | 19:30 | 29/09/2026 [ASTRA]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=283b44ee17918d96889ad27b9b364791&wsABSTime=1790703420
+https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=c3d02ffbb908b05d64f420beb79032d2&wsABSTime=1790719411
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhn80qvy9/image/small", ⚽ Thái Lan vs Việt Nam | 19:30 | 29/09/2026 [HD ASTRA]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001790660221-0-0-ba693e7bd215ecd9d07a8e6b28ad26f4
+https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001790676212-0-0-6f0a7463102729ec44b7f16466713342
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhn80qvy9/image/small", ⚽ Thái Lan vs Việt Nam | 19:30 | 29/09/2026 [MAX]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -68,7 +58,7 @@ https://live2.zundrixmediapipeline.com/live/channel6.flv
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=c858e18932fe771c305591dd89bb7fb6&wsABSTime=1790703423
+https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=652494bd2471bbdaf6fc3b5cdc09733f&wsABSTime=1790719414
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Phần Lan vs Belarus | 23:00 | 29/09/2026 [BRADY]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -78,7 +68,7 @@ https://live2.zundrixmediapipeline.com/live/channel15.flv
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001790660241-0-0-1e36926387d4ab77e95aeb8202da35ce
+https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001790676228-0-0-77a52d800f29528613704a188438a551
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Phần Lan vs Belarus | 23:00 | 29/09/2026 [FABIO]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -88,7 +78,7 @@ https://live2.zundrixmediapipeline.com/live/channel2.flv
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001790660243-0-0-56e93c9e20c211bf15931fbd55c25ea5
+https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001790676229-0-0-9cef45e59db81da4a88cc17f032ffbef
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Moldova vs Faroe Islands | 23:00 | 29/09/2026 [MAX]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -98,7 +88,7 @@ https://live2.zundrixmediapipeline.com/live/channel6.flv
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001790660257-0-0-a8c9a29074c134c840592ac224f8c826
+https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001790676250-0-0-c1be55d2c21b0e7ae215df4b90c23ac1
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Moldova vs Faroe Islands | 23:00 | 29/09/2026 [RAVEN]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -108,22 +98,22 @@ https://live2.zundrixmediapipeline.com/live/channel21.flv
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001790660260-0-0-853c45fd8150eecfcbc2750468fc5489
+https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001790676251-0-0-aa1e502f7ac1fd39097cdd73c963be7a
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/jednm9whk0ryox8/image/small", ⚽ Nga vs Iran | 23:00 | 29/09/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel36.flv?wsSecret=276cb2e2ad7e1439119bef6a427e251f&wsABSTime=1790703465
+https://live1.quickscoreboardz.com/live/channel36.flv?wsSecret=43e3ac406120c61008e46bb83194fbef&wsABSTime=1790719455
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ CH Séc vs Anh | 01:45 | 30/09/2026 [NICK]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=9aac8a6b7358a74417459bb549845fbc&wsABSTime=1790703484
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=32a385e14630613c410dc8b8f06d5051&wsABSTime=1790719472
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ CH Séc vs Anh | 01:45 | 30/09/2026 [HD NICK]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001790660298-0-0-6d71e3f8c86d32f8ebee96d3c44f84ed
+https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001790676287-0-0-a3d085b93d7bf3932dc7ca854d37d6f9
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ CH Séc vs Anh | 01:45 | 30/09/2026 [TONI]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -133,7 +123,7 @@ https://live2.zundrixmediapipeline.com/live/channel9.flv
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001790660301-0-0-5f85ac6af9ddb8b06bd771b872cd2cb4
+https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001790676288-0-0-91ec62eaecdf5532225518b620b48187
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ CH Séc vs Anh | 01:45 | 30/09/2026 [RIO]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -143,17 +133,17 @@ https://live2.zundrixmediapipeline.com/live/channel16.flv
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel16.flv?wsSecret=6d9699fa162768de588410c25fd5752e&wsABSTime=1790703503
+https://live1.quickscoreboardz.com/live/channel16.flv?wsSecret=d420a46313709589b46d9ea9d96ccf01&wsABSTime=1790719490
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Scotland vs Thụy Sĩ | 01:45 | 30/09/2026 [BRADY]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=d888e7fc156b92c5d9732b32c06a5a2c&wsABSTime=1790703509
+https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=a0fa86f0cf06de2fbf4356cf5ce88f3d&wsABSTime=1790719494
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Scotland vs Thụy Sĩ | 01:45 | 30/09/2026 [JOHAN]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001790660323-0-0-d8e63874ad701be7e54853e3eca8c3f5
+https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001790676308-0-0-c0b21b2572a93560ea13eef8d4580ba3
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Scotland vs Thụy Sĩ | 01:45 | 30/09/2026 [JOHAN]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -163,7 +153,7 @@ https://live2.zundrixmediapipeline.com/live/channel12.flv
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001790660325-0-0-1da1fb14b985fc4a467c45cb8b76652d
+https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001790676310-0-0-cc5146fc91d05ee49c6f76bac3a3242b
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Bulgaria vs Estonia | 01:45 | 30/09/2026 [MAX]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -173,27 +163,22 @@ https://live2.zundrixmediapipeline.com/live/channel6.flv
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001790660340-0-0-a25f6f9a8033c7732e00b181f325c9fd
+https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001790676327-0-0-d97040f1231119f310c99cc80f3f4998
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Bulgaria vs Estonia | 01:45 | 30/09/2026 [HIRO]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel14.flv?wsSecret=61ab7a6b41b648d1924a90096ff0724c&wsABSTime=1790703541
+https://live1.quickscoreboardz.com/live/channel14.flv?wsSecret=2ba2590e1ded4ff3d4e9c3c415479886&wsABSTime=1790719528
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Bulgaria vs Estonia | 01:45 | 30/09/2026 [FULL HD MAX]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001790660342-0-0-aecb249667d6cc3b45d32b6b99b97be2
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ San Marino vs Albania | 01:45 | 30/09/2026 [KEN]
-#EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
-#EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel18.flv?wsSecret=b5f5443a8239b07f795b8198dba26405&wsABSTime=1790703548
+https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001790676328-0-0-fd12849e55d3ea6b1a4468588aa43e3f
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ San Marino vs Albania | 01:45 | 30/09/2026 [XMEN]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-13.flv?auth_key=3000001790660362-0-0-61ef4d8a0eed423098cd6f5b6f369d92
+https://live2.domaincdn.cc/livecdn/channel-13.flv?auth_key=3000001790676355-0-0-c5921276d5d985191266fa688c7a4ddc
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ San Marino vs Albania | 01:45 | 30/09/2026 [XMEN]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -203,32 +188,27 @@ https://live2.zundrixmediapipeline.com/live/channel13.flv
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-18.flv?auth_key=3000001790660365-0-0-392e08a4be17cea43a927b209b717a9d
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Slovakia vs Kazakhstan | 01:45 | 30/09/2026 [FILIP]
-#EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
-#EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.zundrixmediapipeline.com/live/channel19.flv
+https://live2.domaincdn.cc/livecdn/channel-18.flv?auth_key=3000001790676356-0-0-0ea105febcf306e77bb26f244c68cc24
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Slovakia vs Kazakhstan | 01:45 | 30/09/2026 [NEMO]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001790660382-0-0-6e92852a0da8dc6dc6828c1324b1043e
+https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001790676382-0-0-ab96037757f1a3e14e22dc8a54cd3d98
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Slovakia vs Kazakhstan | 01:45 | 30/09/2026 [NEMO]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=c6c40a7144648b6cce66061250647ae1&wsABSTime=1790703583
+https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=a52ce3ffef0cf21fdb99a5a04fd221eb&wsABSTime=1790719583
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Slovakia vs Kazakhstan | 01:45 | 30/09/2026 [FULL HD FILIP]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001790660384-0-0-8435f699262849085f3b2858d2d39be6
+https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001790676384-0-0-5bb41481b92c5f3a66ef4e08cd0b34bb
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Luxembourg vs Iceland | 01:45 | 30/09/2026 [SILVA]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001790660414-0-0-8d487be8942a556f8b2023d5a4e56c2f
+https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001790676410-0-0-0b2d2089e9bfafb4169cd3f7bf77c925
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Luxembourg vs Iceland | 01:45 | 30/09/2026 [SILVA]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -238,47 +218,37 @@ https://live2.zundrixmediapipeline.com/live/channel20.flv
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001790660416-0-0-b6ff86c3db8838c5f17495f2eba721ee
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Slovenia vs Bắc Macedonia | 01:45 | 30/09/2026 [TOM]
-#EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
-#EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.zundrixmediapipeline.com/live/channel4.flv
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001790676412-0-0-941f6bb818415cf804dfc229a4240289
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Slovenia vs Bắc Macedonia | 01:45 | 30/09/2026 [ZANE]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-22.flv?auth_key=3000001790660436-0-0-f57d4cd18698b0db0aefb68292dd27cd
+https://live2.domaincdn.cc/livecdn/channel-22.flv?auth_key=3000001790676437-0-0-0b5a623e98abfe9a7fb8b54a0599ae93
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Slovenia vs Bắc Macedonia | 01:45 | 30/09/2026 [ZANE]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel22.flv?wsSecret=70f0ac3e0d83a5c833baf0547745b4c6&wsABSTime=1790703638
+https://live1.quickscoreboardz.com/live/channel22.flv?wsSecret=e8f4f206a278f4d3e784ea3b8b6e023d&wsABSTime=1790719638
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Slovenia vs Bắc Macedonia | 01:45 | 30/09/2026 [FULL HD TOM]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001790660439-0-0-70affcf210ac47f81a2d7ad7eb471a15
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Tây Ban Nha vs Croatia | 01:45 | 30/09/2026 [ROY]
-#EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
-#EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.zundrixmediapipeline.com/live/channel1.flv
+https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001790676439-0-0-2117922d1fba940d70e44415903feb66
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Tây Ban Nha vs Croatia | 01:45 | 30/09/2026 [HD ROY]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660456-0-0-bdc3162257fee81c15e6eb02c3e5cd54
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790676465-0-0-c1f136087c9f25bc2c4f73aeb1e41a7d
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Tây Ban Nha vs Croatia | 01:45 | 30/09/2026 [FABIO]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=04aff9df83c5af44263bcb4b64ad26d7&wsABSTime=1790703658
+https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=ea74faa66a513d370d380e49e2a46e99&wsABSTime=1790719667
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Tây Ban Nha vs Croatia | 01:45 | 30/09/2026 [HD FABIO]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001790660459-0-0-4dc9fa605e964372040d9d83b2286312
+https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001790676468-0-0-daf8ab19bbd47f0876aa2d6eaf63bae4
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Tây Ban Nha vs Croatia | 01:45 | 30/09/2026 [ASTRA]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -288,82 +258,12 @@ https://live2.zundrixmediapipeline.com/live/channel11.flv
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=f1c5b943aefe8d98dd70aabaaf92a008&wsABSTime=1790703661
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhn80qvy9/image/small", ⚽ Timor Leste vs Campuchia | 16:00 | 30/09/2026 [HD 1]
-#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660467-0-0-009e149846ce9f51b82aa3e812a6000b
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhn80qvy9/image/small", ⚽ Hồng Kông vs Brunei | 19:00 | 30/09/2026 [HD 1]
-#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660484-0-0-fb5bc380f1be711818f003a123588df9
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/p3glrw7h8vqdyjv/image/small", ⚽ Nhật Bản vs Ecuador | 17:10 | 01/10/2026 [HD 1]
-#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660529-0-0-b237396751c330bc07554157a4b0c018
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhn80qvy9/image/small", ⚽ Indonesia vs Bangladesh | 19:30 | 01/10/2026 [HD 1]
-#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660544-0-0-08180b5e2716996d2ad8e478cc830252
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/kn54qllhn80qvy9/image/small", ⚽ Malaysia vs Singapore | 19:30 | 01/10/2026 [HD 1]
-#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660560-0-0-6fe8a89d7ca4240e16f59879007f0052
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/gpxwrxlhgpryk0j/image/small", ⚽ VfB Stuttgart vs Greuther Fürth | 22:30 | 01/10/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=ea541bfbb6cb26d080bf7b07e6615c33&wsABSTime=1790719669
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/gy0or5ofekzmwzv/image/small", ⚽ Cui Jie/Te Rigele vs Maximo Gonzalez/Andres Molteni | 13:30 | 29/09/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=386451d38df201760df920215382db91&wsABSTime=1790703776
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Azerbaijan vs Liechtenstein | 23:00 | 01/10/2026 [HD 1]
-#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660595-0-0-d430ae34e8b1c934cfe61c7177b224ad
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Đan Mạch vs Bồ Đào Nha | 01:45 | 02/10/2026 [HD 1]
-#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660610-0-0-5fc7c756e35d940ca6669bc735e210fc
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Đức vs Serbia | 01:45 | 02/10/2026 [HD 1]
-#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660626-0-0-ad77f8e4dfd345e49c48a97b647b15ef
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Xứ Wales vs Na Uy | 01:45 | 02/10/2026 [HD 1]
-#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660641-0-0-f4c9a183cfc33c53394ec3e7edf38a80
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Hy Lạp vs Hà Lan | 01:45 | 02/10/2026 [HD 1]
-#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660656-0-0-abdaee013ee93f75b7c19db1337c6f78
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Ireland vs Áo | 01:45 | 02/10/2026 [HD 1]
-#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660671-0-0-4c7ab2ddedf9614d143b2ba4fb68654f
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Malta vs Gibraltar | 01:45 | 02/10/2026 [HD 1]
-#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660685-0-0-4db2fcba264630c8acd6835dcbfb0b4f
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/d23xmvkh43oqg8n/image/small", ⚽ Israel vs Kosovo | 01:45 | 02/10/2026 [HD 1]
-#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790660699-0-0-3e7c1ae086494aadef26733794202e1c
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/e4wyrnjf0pzq86p/image/small", ⚽ Marina Bassols Ribera vs You Xiaodi | 11:10 | 29/09/2026 [HD LUCAS]
-#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001790660736-0-0-59b307f740fe18483782840b607ff61b
+https://live1.quickscoreboardz.com/live/channel56.flv?wsSecret=4985295e7117dfb7c844b1b47463193b&wsABSTime=1790720068
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/k82re9fveo5mepz/image/small", ⚽ Daniil Medvedev vs Andrey Rublev | 18:30 | 29/09/2026 [VIC]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
@@ -373,4 +273,29 @@ https://live2.zundrixmediapipeline.com/live/channel32.flv
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001790660914-0-0-63a12ad688fd14592a0cc9562d462701
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001790676998-0-0-765fee3eb25e120780b97e72a2bca72e
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/vjxm85f40g5m6od/image/small", ⚽ Hugo Grenier vs Carl Emil Overbeck | 20:00 | 29/09/2026 [HD 1]
+#EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel56.flv?wsSecret=a8d33c61264af8e6b3855d55a756d1d0&wsABSTime=1790720251
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/gy0or5ofn1zmwzv/image/small", ⚽ Abedallah Shelbayh vs Li Tu | 21:00 | 29/09/2026 [HD 1]
+#EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel57.flv?wsSecret=f7c9c75369ac2d2ebb3c5209302b313b&wsABSTime=1790720267
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/vjxm85f40g5m6od/image/small", ⚽ Moez Echargui vs Damir Dzumhur | 21:20 | 29/09/2026 [HD 1]
+#EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel58.flv?wsSecret=9a8cb73925d394b62b65c62034077df3&wsABSTime=1790720284
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/gy0or5ofn1zmwzv/image/small", ⚽ Darwin Blanch vs Patrick Maloney | 22:10 | 29/09/2026 [HD 1]
+#EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel59.flv?wsSecret=afa659d751e6697b2a997695c0a01650&wsABSTime=1790720300
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/9vjxm85fep0m6od/image/small", ⚽ Jose Pereira vs Mateus Alves | 22:20 | 29/09/2026 [HD 1]
+#EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel60.flv?wsSecret=9f50ad7de95b26de384a411eb5293b1e&wsABSTime=1790720316
