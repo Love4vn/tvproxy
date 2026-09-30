@@ -72,9 +72,9 @@ jobs:
       - name: Generate playlist
         env:
           MAX_GAMES: "0"           # 0 = chạy hết
-          MAX_SITES: "10"           # top 5 site tốt nhất
+          MAX_SITES: "15"           # top 5 site tốt nhất
           WAIT_PLAYER: "10"
-          IFRAME_DEPTH: "2"
+          IFRAME_DEPTH: "3"
           VERIFY_TIME: "12"
           OUTPUT: playlist.m3u
           PROXY_URL: https://sportsurge-proxy.love4vn.workers.dev
