@@ -1,0 +1,68 @@
+name: Test scraper (debug)
+
+on:
+  workflow_dispatch:   # chỉ chạy khi bấm nút, không tự động
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install system deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            xvfb libgtk-3-0 libdbus-glib-1-2 libxt6 libx11-xcb1 \
+            libasound2t64 libxcomposite1 libxdamage1 libxrandr2 \
+            libgbm1 libpango-1.0-0 libcairo2 libatk1.0-0 \
+            libatk-bridge2.0-0 libnss3 libxss1 || \
+          sudo apt-get install -y --no-install-recommends \
+            xvfb libgtk-3-0 libdbus-glib-1-2 libxt6 libx11-xcb1 \
+            libasound2 libxcomposite1 libxdamage1 libxrandr2 \
+            libgbm1 libpango-1.0-0 libcairo2 libatk1.0-0 \
+            libatk-bridge2.0-0 libnss3 libxss1
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Cache camoufox
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/camoufox
+          key: camoufox-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+
+      - name: Fetch camoufox
+        run: python -m camoufox fetch
+
+      - name: Run test (debug mode)
+        env:
+          MAX_GAMES: "1"        # chỉ test 1 trận
+          MAX_SITES: "3"        # chỉ 3 site đầu
+          DEBUG_ROUTES: "1"     # log URL bị block
+          WAIT_MASTER: "40"
+          VERIFY_LINKS: "1"
+          VERIFY_TIME: "15"
+          OUTPUT: test-playlist.m3u
+          PROXY_URL: https://sportsurge-proxy.love4vn.workers.dev
+        run: |
+          xvfb-run -a --server-args="-screen 0 1280x800x24" \
+            python generate_playlist.py
+
+      - name: Upload log + playlist
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-output
+          path: |
+            test-playlist.m3u
+          if-no-files-found: ignore
