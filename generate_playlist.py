@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 """
-SoccerSurge -> IPTV playlist generator (v6)
-
-- Verify NGAY sau mỗi lần capture (token còn tươi).
-- Scraper truyền Referer/Origin/Cookie/UA vào proxy.
-- Title: Teams | HH:MM | DD/MM/YYYY [Site] (VN time).
+SoccerSurge -> IPTV playlist generator (v7)
+Fix: verify dùng APIRequestContext, AD_BLOCK_RE gọn hơn, WAIT_MASTER=40.
 """
 
 import asyncio
@@ -26,17 +23,14 @@ MAX_GAMES   = int(os.environ.get("MAX_GAMES", "0")) or None
 MAX_SITES   = int(os.environ.get("MAX_SITES", "8"))
 MAX_STREAMS = int(os.environ.get("MAX_STREAMS", "3"))
 CF_TIMEOUT  = int(os.environ.get("CF_TIMEOUT", "90"))
-WAIT_MASTER = int(os.environ.get("WAIT_MASTER", "25"))
+WAIT_MASTER = int(os.environ.get("WAIT_MASTER", "40"))     # tăng lên 40s
 VERIFY_TIME = int(os.environ.get("VERIFY_TIME", "15"))
 
 PROXY_URL    = os.environ.get("PROXY_URL", "https://sportsurge-proxy.love4vn.workers.dev")
 VERIFY_LINKS = os.environ.get("VERIFY_LINKS", "1") == "1"
+DEBUG_ROUTES = os.environ.get("DEBUG_ROUTES", "0") == "1"  # log request bị chặn
 
-# Site luôn timeout — bỏ qua để tiết kiệm thời gian
-SKIP_SITES = {
-    "tvsportslive.fr",
-    "shd247.world",
-}
+SKIP_SITES = {"tvsportslive.fr", "shd247.world"}
 
 VN_TZ = ZoneInfo("Asia/Ho_Chi_Minh")
 
@@ -48,26 +42,22 @@ DEFAULT_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
               "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36")
 
 # ------------------------- Domain rules -------------------------
-NO_PROXY_DOMAINS = ("hockey.do",)
+NO_PROXY_DOMAINS   = ("hockey.do",)
 NEED_PROXY_DOMAINS = (
     "strmd.st", "dudestream1.com", "resports.cfd",
     "tophdstreams.com", "paini.cfd", "tawar.cfd", "odyssney.cfd",
-    "embed.st", "sportspatrika.com", "edgestream4.pro",
-    "edgestream5.pro", "edgestream6.pro", "edgestream7.pro",
+    "embed.st", "sportspatrika.com", "edgestream",
 )
 
 
 def should_proxy(url):
     host = urlparse(url).netloc.lower()
-    if any(d in host for d in NO_PROXY_DOMAINS):
-        return False
-    if any(d in host for d in NEED_PROXY_DOMAINS):
-        return True
+    if any(d in host for d in NO_PROXY_DOMAINS):   return False
+    if any(d in host for d in NEED_PROXY_DOMAINS): return True
     return True
 
 
 def wrap_with_proxy(url, headers=None, cookie=""):
-    """Đóng gói URL qua proxy, kèm ref/origin/cookie/ua nếu có."""
     headers = headers or {}
     parts = [f"url={quote(url, safe='')}"]
     if headers.get("referer"):
@@ -82,8 +72,11 @@ def wrap_with_proxy(url, headers=None, cookie=""):
     return f"{PROXY_URL}/?{'&'.join(parts)}"
 
 
-# ------------------------- Regex -------------------------
-AD_BLOCK_RE = re.compile(
+# ============================================================
+# AD_BLOCK_RE — CHỈ block domain ad + path đặc trưng
+# Không dùng pattern rộng như /s.js, /invoke.js
+# ============================================================
+AD_DOMAINS_RE = re.compile(
     r"("
     r"doubleclick\.net|googlesyndication|googleadservices|googletagmanager|"
     r"google-analytics|adservice\.google|adnxs\.com|adsrvr\.org|"
@@ -96,14 +89,18 @@ AD_BLOCK_RE = re.compile(
     r"jnbhi\.com|jads\.co|exoclick|exosrv|trafficjunky|"
     r"popcash|popads|propellerads|onclickads|mgid\.com|"
     r"histats\.com|amung\.us|waust\.at|livelog\.site|"
-    r"cloudflareinsights\.com|beacon\.min\.js|steast\.io|"
-    r"static\.cloudflareinsights|"
-    r"/(ads?|adserver|adframe|popunder|preroll|vast|vpaid)/|"
-    r"invoke\.js|/tag\.min\.js|/s\.js|/d\.js|/classic\.js|"
-    r"ads\.htm|/ads\.|/ad\.html"
+    r"cloudflareinsights\.com|steast\.io|"
     r")",
     re.IGNORECASE,
 )
+
+# Path chỉ block khi đi kèm domain ad ở trên
+AD_PATH_RE = re.compile(
+    r"(/(ads?|adserver|adframe|popunder|preroll|vast|vpaid)/|"
+    r"ads\.htm|/ad\.html)",
+    re.IGNORECASE,
+)
+
 STREAM_RE  = re.compile(r"(\.m3u8(\?|$)|/playlist\.m3u8|/master\.m3u8|manifest\.mpd)", re.IGNORECASE)
 VARIANT_RE = re.compile(r"(chunklist|_x\.m3u8|_[0-9]+\.m3u8|/sub/|/level|/stream_\d+\.m3u8)", re.IGNORECASE)
 TS_SEGMENT = re.compile(r"\.ts(\?|$)", re.IGNORECASE)
@@ -130,8 +127,8 @@ def score_stream(url):
     if re.search(r"(playlist|master|index)\.m3u8", path):
         s += 10
     if AD_STREAM_RE.search(ul): s -= 80
-    if AD_BLOCK_RE.search(ul):  s -= 100
-    if len(path) < 10:          s -= 20
+    if AD_DOMAINS_RE.search(ul): s -= 100
+    if len(path) < 10: s -= 20
     if "hockey.do" in host and "sig=" in url: s += 50
     return s
 
@@ -141,14 +138,16 @@ def log(msg=""):
 
 
 def format_vn_time(ts_seconds, live=False):
-    """ts_seconds là epoch giây. Trả 'HH:MM | DD/MM/YYYY'."""
     if live and not ts_seconds:
         now = datetime.now(VN_TZ)
         return f"LIVE | {now.strftime('%d/%m/%Y')}"
     if not ts_seconds:
         return ""
-    dt = datetime.fromtimestamp(int(ts_seconds), tz=timezone.utc).astimezone(VN_TZ)
-    return f"{dt.strftime('%H:%M')} | {dt.strftime('%d/%m/%Y')}"
+    try:
+        dt = datetime.fromtimestamp(int(ts_seconds), tz=timezone.utc).astimezone(VN_TZ)
+        return f"{dt.strftime('%H:%M')} | {dt.strftime('%d/%m/%Y')}"
+    except Exception:
+        return ""
 
 
 # ============================================================
@@ -158,6 +157,8 @@ async def block_ads_route(route):
     try:
         req = route.request
         url = req.url
+
+        # Cho phép top-level document
         try:
             frame = req.frame
             if req.resource_type == "document" and frame is not None:
@@ -167,10 +168,16 @@ async def block_ads_route(route):
         except Exception:
             await route.continue_()
             return
-        if AD_BLOCK_RE.search(url):
+
+        # CHỈ block nếu domain khớp HOẶC path khớp
+        blocked = AD_DOMAINS_RE.search(url) or AD_PATH_RE.search(url)
+        if blocked:
+            if DEBUG_ROUTES:
+                log(f"        [BLOCK] {url[:110]}")
             try:    await route.abort()
             except: pass
             return
+
         try:    await route.continue_()
         except: pass
     except Exception:
@@ -228,7 +235,7 @@ async def get_stream_sites(page, game_url):
         await page.goto(game_url, wait_until="domcontentloaded", timeout=30000)
         await asyncio.sleep(3)
     except Exception as e:
-        log(f"    [err game page] {e}")
+        log(f"    [err game page] {str(e)[:80]}")
         return []
     raw = await page.evaluate("""
         Array.from(document.querySelectorAll('.stream-item[data-href]')).map(el => {
@@ -241,7 +248,6 @@ async def get_stream_sites(page, game_url):
             };
         }).filter(s => s.url && s.url.startsWith('http'))
     """)
-    # Bỏ site trong skip list
     return [s for s in raw if not any(sk in s["url"] for sk in SKIP_SITES)][:MAX_SITES]
 
 
@@ -303,9 +309,11 @@ async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
     return captured
 
 
-# ---------- Verify ngay ----------
-async def verify_one(request_ctx, url, headers, cookie):
-    """Test 1 link (qua proxy nếu cần). Trả về (bool, reason)."""
+# ---------- Verify: DÙNG APIRequestContext ----------
+async def verify_one(api_ctx, url, headers, cookie):
+    """
+    api_ctx PHẢI là APIRequestContext, ví dụ context.request
+    """
     try:
         req_headers = {}
         if headers.get("user-agent"): req_headers["User-Agent"] = headers["user-agent"]
@@ -314,12 +322,9 @@ async def verify_one(request_ctx, url, headers, cookie):
         ck = cookie or headers.get("cookie")
         if ck:                        req_headers["Cookie"]     = ck
 
-        if should_proxy(url):
-            test_url = wrap_with_proxy(url, headers, cookie)
-        else:
-            test_url = url
+        test_url = wrap_with_proxy(url, headers, cookie) if should_proxy(url) else url
 
-        resp = await request_ctx.get(test_url, headers=req_headers, timeout=VERIFY_TIME * 1000)
+        resp = await api_ctx.get(test_url, headers=req_headers, timeout=VERIFY_TIME * 1000)
         if resp.status != 200:
             return False, f"HTTP {resp.status}"
         text = await resp.text()
@@ -327,7 +332,7 @@ async def verify_one(request_ctx, url, headers, cookie):
             return True, "OK"
         return False, "no #EXTM3U"
     except Exception as e:
-        return False, str(e)[:60]
+        return False, str(e)[:80]
 
 
 # ---------- M3U ----------
@@ -356,7 +361,6 @@ def write_playlist(entries, path=OUTPUT):
         h = pick_headers(e.get("headers"), e.get("referer"))
         cookie = h["cookie"] or e.get("cookie", "")
 
-        # URL cuối cùng (proxy hoặc không)
         final_url = wrap_with_proxy(e["url"], h, cookie) if should_proxy(e["url"]) else e["url"]
 
         lines.append(f'#EXTINF:-1 tvg-name="{title}" tvg-logo="" group-title="{group}",{title}')
@@ -383,11 +387,13 @@ def write_playlist(entries, path=OUTPUT):
 
 # ---------- Main ----------
 async def main():
-    log("SoccerSurge playlist generator (v6)")
+    log("SoccerSurge playlist generator (v7)")
     log(f"OS       : {platform.system()} ({_CAMOUFOX_OS})")
     log(f"Headless : {HEADLESS}")
     log(f"Proxy    : {PROXY_URL}")
     log(f"Verify   : {VERIFY_LINKS}")
+    log(f"Wait     : {WAIT_MASTER}s")
+    log(f"Debug    : {DEBUG_ROUTES}")
     log(f"Output   : {OUTPUT.resolve()}")
 
     prefs = {
@@ -406,8 +412,8 @@ async def main():
         except: pass
         page = await ctx.new_page()
 
-        # Context riêng cho verify
-        verify_ctx = await browser.new_context()
+        # Verify dùng APIRequestContext của browser (không route, không ad-block)
+        api_ctx = ctx.request
 
         log("\n[1/4] Loading homepage ...")
         games = await get_games(page)
@@ -440,17 +446,16 @@ async def main():
                 if not results:
                     log(f"        ✗ no stream")
 
-                # Verify NGAY trong vòng lặp
                 for k, item in enumerate(results[:MAX_STREAMS]):
-                    ok, reason = await verify_one(
-                        verify_ctx, item["url"], item["headers"], item.get("cookie", "")
-                    )
-                    mark = "✅" if ok else "❌"
-                    log(f"        {mark} verify: {reason}")
-                    if not ok:
-                        fail_cnt += 1
-                        continue
-
+                    if VERIFY_LINKS:
+                        ok, reason = await verify_one(
+                            api_ctx, item["url"], item["headers"], item.get("cookie", "")
+                        )
+                        mark = "✅" if ok else "❌"
+                        log(f"        {mark} verify: {reason}")
+                        if not ok:
+                            fail_cnt += 1
+                            continue
                     ok_cnt += 1
                     suffix = "" if k == 0 else f" #{k+1}"
                     title = f"{game['title']} | {time_str} [{label}]{suffix}"
@@ -463,10 +468,6 @@ async def main():
                         "group": game["category"] or "Soccer",
                     })
 
-        try: await verify_ctx.close()
-        except: pass
-
-        # Dedupe
         seen, unique = set(), []
         for e in entries:
             if e["url"] in seen: continue
