@@ -28,11 +28,11 @@ from camoufox.async_api import AsyncCamoufox
 BASE_URL     = "https://soccersurge.io/"
 OUTPUT       = Path(os.environ.get("OUTPUT", "playlist.m3u"))
 MAX_GAMES    = int(os.environ.get("MAX_GAMES", "0")) or None
-MAX_SITES    = int(os.environ.get("MAX_SITES", "10"))     # 5 site tốt nhất (priority)
+MAX_SITES    = int(os.environ.get("MAX_SITES", "15"))     # 5 site tốt nhất (priority)
 MAX_STREAMS  = int(os.environ.get("MAX_STREAMS", "5"))
 CF_TIMEOUT   = int(os.environ.get("CF_TIMEOUT", "90"))
 WAIT_PLAYER  = int(os.environ.get("WAIT_PLAYER", "10"))
-IFRAME_DEPTH = int(os.environ.get("IFRAME_DEPTH", "2"))
+IFRAME_DEPTH = int(os.environ.get("IFRAME_DEPTH", "3"))
 VERIFY_TIME  = int(os.environ.get("VERIFY_TIME", "12"))
 
 PROXY_URL    = os.environ.get("PROXY_URL", "https://sportsurge-proxy.love4vn.workers.dev")
