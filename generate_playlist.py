@@ -89,7 +89,7 @@ AD_DOMAINS_RE = re.compile(
     r"jnbhi\.com|jads\.co|exoclick|exosrv|trafficjunky|"
     r"popcash|popads|propellerads|onclickads|mgid\.com|"
     r"histats\.com|amung\.us|waust\.at|livelog\.site|"
-    r"cloudflareinsights\.com|steast\.io|"
+    r"cloudflareinsights\.com|steast\.io"       # ← KHÔNG có | ở cuối
     r")",
     re.IGNORECASE,
 )
