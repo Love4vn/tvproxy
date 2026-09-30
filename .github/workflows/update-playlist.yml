@@ -76,6 +76,8 @@ jobs:
           PROXY_URL: https://sportsurge-proxy.love4vn.workers.dev
           VERIFY_LINKS: "1"
           VERIFY_TIME: "15"
+          WAIT_MASTER: "40"
+          DEBUG_ROUTES: "0"
         run: |
           xvfb-run -a --server-args="-screen 0 1280x800x24" \
             python generate_playlist.py
