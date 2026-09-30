@@ -1,38 +1,4 @@
 #EXTM3U
-# playlist : soccersurge live soccer
-# generated: 2026-09-29 21:25 UTC
-# streams  : 4
-
-#EXTINF:-1 tvg-name="[❌] Mexico vs Peru [Embedca]" tvg-logo="" group-title="International Friendly",[❌] Mexico vs Peru [Embedca]
-#EXTVLCOPT:http-referrer=https://live.embedca.st/live.php?ch=es9
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://embed.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://live.embedca.st/live.php?ch=es9&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st
-#EXTHTTP:Referer: https://live.embedca.st/live.php?ch=es9|Origin: https://embed.st
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Flb9.strmd.st%2Fsecure%2FNUQXsBGNTmTyeceXfFcSyQyOrKIwdnNe%2Fdelta%2Fstream%2Flive_int-friendly-games_mexico-peru-live-streaming-664101936%2F1%2Fplaylist.m3u8
-
-#EXTINF:-1 tvg-name="[❌] Mexico vs Peru [Resports]" tvg-logo="" group-title="International Friendly",[❌] Mexico vs Peru [Resports]
-#EXTVLCOPT:http-referrer=https://resports.cfd/16373/0/all%20matches/27
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://embed.st
-#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6Ild6VGsrd1JCUlA3ZGVxYkVFSUdVNWc9PSIsInZhbHVlIjoiRFRCTHBwM2ZyYXBWb2ZDdkpNejlrZmx0aXZyT29YaG5FTkRLVkRZUmZDKzRscTh5T3c2elpxKzJZQmVqa1ZIWHpFeGlLUm5QN1FJYkxHdGVqT0hMSjFrOUk4b1J6ZXN2NTZtQ1lqRWVrekVaMFZFN2krWVJubUNIZ291MWJpTHUiLCJtYWMiOiIyNTEyNWUyZWRjMzNlMmNlNmRjMjY2YmVmZmM5MThiYmVjZjI0ZjI3ZGExYzA4ZTBjYzIwYzNiYWVmMzAzMzNjIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlN0MVJNZHNRcW82VnkwTkszRTJWcnc9PSIsInZhbHVlIjoicXo2cVJPeWFpSEJESWFTTEt0SVJob1JsRGRpaEdJbjVqd2NpYUVyVFZsRlNlWGcyWDlCVG96UHJEZU0vYkRxN3VyK0R3d3p0R1Qvb0ZxelI4eFNmSzljWFhLRjFUNWFhSE1FOEZkRVdqTDBTMjQxT3daejdPWDdDUzhLdHlVNDciLCJtYWMiOiJkZDk3Zjk1OTBhMDRhNjM1Y2Q2MGY5NzAxMGI2MjdmZjllMjQ4MmUxN2NkNTMyNTBlNjVkOTkyN2JlNjk2NDEwIiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://resports.cfd/16373/0/all%20matches/27&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st&Cookie=XSRF-TOKEN=eyJpdiI6Ild6VGsrd1JCUlA3ZGVxYkVFSUdVNWc9PSIsInZhbHVlIjoiRFRCTHBwM2ZyYXBWb2ZDdkpNejlrZmx0aXZyT29YaG5FTkRLVkRZUmZDKzRscTh5T3c2elpxKzJZQmVqa1ZIWHpFeGlLUm5QN1FJYkxHdGVqT0hMSjFrOUk4b1J6ZXN2NTZtQ1lqRWVrekVaMFZFN2krWVJubUNIZ291MWJpTHUiLCJtYWMiOiIyNTEyNWUyZWRjMzNlMmNlNmRjMjY2YmVmZmM5MThiYmVjZjI0ZjI3ZGExYzA4ZTBjYzIwYzNiYWVmMzAzMzNjIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlN0MVJNZHNRcW82VnkwTkszRTJWcnc9PSIsInZhbHVlIjoicXo2cVJPeWFpSEJESWFTTEt0SVJob1JsRGRpaEdJbjVqd2NpYUVyVFZsRlNlWGcyWDlCVG96UHJEZU0vYkRxN3VyK0R3d3p0R1Qvb0ZxelI4eFNmSzljWFhLRjFUNWFhSE1FOEZkRVdqTDBTMjQxT3daejdPWDdDUzhLdHlVNDciLCJtYWMiOiJkZDk3Zjk1OTBhMDRhNjM1Y2Q2MGY5NzAxMGI2MjdmZjllMjQ4MmUxN2NkNTMyNTBlNjVkOTkyN2JlNjk2NDEwIiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://resports.cfd/16373/0/all%20matches/27|Origin: https://embed.st|Cookie: XSRF-TOKEN=eyJpdiI6Ild6VGsrd1JCUlA3ZGVxYkVFSUdVNWc9PSIsInZhbHVlIjoiRFRCTHBwM2ZyYXBWb2ZDdkpNejlrZmx0aXZyT29YaG5FTkRLVkRZUmZDKzRscTh5T3c2elpxKzJZQmVqa1ZIWHpFeGlLUm5QN1FJYkxHdGVqT0hMSjFrOUk4b1J6ZXN2NTZtQ1lqRWVrekVaMFZFN2krWVJubUNIZ291MWJpTHUiLCJtYWMiOiIyNTEyNWUyZWRjMzNlMmNlNmRjMjY2YmVmZmM5MThiYmVjZjI0ZjI3ZGExYzA4ZTBjYzIwYzNiYWVmMzAzMzNjIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlN0MVJNZHNRcW82VnkwTkszRTJWcnc9PSIsInZhbHVlIjoicXo2cVJPeWFpSEJESWFTTEt0SVJob1JsRGRpaEdJbjVqd2NpYUVyVFZsRlNlWGcyWDlCVG96UHJEZU0vYkRxN3VyK0R3d3p0R1Qvb0ZxelI4eFNmSzljWFhLRjFUNWFhSE1FOEZkRVdqTDBTMjQxT3daejdPWDdDUzhLdHlVNDciLCJtYWMiOiJkZDk3Zjk1OTBhMDRhNjM1Y2Q2MGY5NzAxMGI2MjdmZjllMjQ4MmUxN2NkNTMyNTBlNjVkOTkyN2JlNjk2NDEwIiwidGFnIjoiIn0%3D
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Flb15.strmd.st%2Fsecure%2FzXBXqlOKQCqJMAdWTkffAxYalcOazOMF%2Fdelta%2Fstream%2Flive_int-friendly-games_mexico-peru-live-streaming-664101936%2F1%2Fplaylist.m3u8
-
-#EXTINF:-1 tvg-name="[❌] United States vs Chile [Embedca]" tvg-logo="" group-title="International Friendly",[❌] United States vs Chile [Embedca]
-#EXTVLCOPT:http-referrer=https://embed.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://embed.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st
-#EXTHTTP:Referer: https://embed.st/|Origin: https://embed.st
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Flb12.strmd.st%2Fsecure%2FbxDUJEVSvYobvJRVZysJsDbuSIjFuRIv%2Fingest%2Fstream%2Fes8%2F1%2Fplaylist.m3u8
-
-#EXTINF:-1 tvg-name="[❌] United States vs Chile [Tophdstreams]" tvg-logo="" group-title="International Friendly",[❌] United States vs Chile [Tophdstreams]
-#EXTVLCOPT:http-referrer=https://embed.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://embed.st
-#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6InV0NFBtejZJZTJyN2x6VklWRjllUUE9PSIsInZhbHVlIjoidi9uMW1rMXVLZ25KOVUxWml6VitPU1Q5OWMzM2J5NEtzdWhOQ3ZPVFlUdkxvb3o0Y0FkZ0Fxb1ZEYy9hc1ROZlVGMEZHMDAvcTE4b0NqSTBnK2tQWnN0MmJ5blRKYmRpalhDTWRQc1B1MTZtam56VS92NUJmMlZsVDZqcldvQ00iLCJtYWMiOiJiZWY4YzNjNTA3MzdjNDgxMmM4MWE5NGQ5NDA2MjQxNWRjODQyMDIyOGJlZGMwNDEwYWI4OGQ1NWU2NmQ0NTc4IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IjBFUkQzK3U5Q2VGSDNmRUcyajhJeUE9PSIsInZhbHVlIjoibzEzbWpJaHRnZ0RzTERyL2V3bUZRSDYyWjRHcUp0TTU2T0MwSWd3c21mcWJRVnpJZHdsNm1kanQ3bUl6cjQ2K3ZvdHZuVTRiNjBHeVNqSDVkVk5qTnpxaGdaN2N4NGc2OFZ5ajNnV011UGMwY3ZOVlAvWHZTakMrY0sxdDFiVDkiLCJtYWMiOiI2MmYwZTY4NWFiNTdlMmFkMjM4ZDAzYTQyODY2ZjVjNGY5MGMzNDJiNTYwOTVmNTYxOTFkOTc0NThjMDdiZTQzIiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://embed.st&Cookie=XSRF-TOKEN=eyJpdiI6InV0NFBtejZJZTJyN2x6VklWRjllUUE9PSIsInZhbHVlIjoidi9uMW1rMXVLZ25KOVUxWml6VitPU1Q5OWMzM2J5NEtzdWhOQ3ZPVFlUdkxvb3o0Y0FkZ0Fxb1ZEYy9hc1ROZlVGMEZHMDAvcTE4b0NqSTBnK2tQWnN0MmJ5blRKYmRpalhDTWRQc1B1MTZtam56VS92NUJmMlZsVDZqcldvQ00iLCJtYWMiOiJiZWY4YzNjNTA3MzdjNDgxMmM4MWE5NGQ5NDA2MjQxNWRjODQyMDIyOGJlZGMwNDEwYWI4OGQ1NWU2NmQ0NTc4IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IjBFUkQzK3U5Q2VGSDNmRUcyajhJeUE9PSIsInZhbHVlIjoibzEzbWpJaHRnZ0RzTERyL2V3bUZRSDYyWjRHcUp0TTU2T0MwSWd3c21mcWJRVnpJZHdsNm1kanQ3bUl6cjQ2K3ZvdHZuVTRiNjBHeVNqSDVkVk5qTnpxaGdaN2N4NGc2OFZ5ajNnV011UGMwY3ZOVlAvWHZTakMrY0sxdDFiVDkiLCJtYWMiOiI2MmYwZTY4NWFiNTdlMmFkMjM4ZDAzYTQyODY2ZjVjNGY5MGMzNDJiNTYwOTVmNTYxOTFkOTc0NThjMDdiZTQzIiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://embed.st/|Origin: https://embed.st|Cookie: XSRF-TOKEN=eyJpdiI6InV0NFBtejZJZTJyN2x6VklWRjllUUE9PSIsInZhbHVlIjoidi9uMW1rMXVLZ25KOVUxWml6VitPU1Q5OWMzM2J5NEtzdWhOQ3ZPVFlUdkxvb3o0Y0FkZ0Fxb1ZEYy9hc1ROZlVGMEZHMDAvcTE4b0NqSTBnK2tQWnN0MmJ5blRKYmRpalhDTWRQc1B1MTZtam56VS92NUJmMlZsVDZqcldvQ00iLCJtYWMiOiJiZWY4YzNjNTA3MzdjNDgxMmM4MWE5NGQ5NDA2MjQxNWRjODQyMDIyOGJlZGMwNDEwYWI4OGQ1NWU2NmQ0NTc4IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IjBFUkQzK3U5Q2VGSDNmRUcyajhJeUE9PSIsInZhbHVlIjoibzEzbWpJaHRnZ0RzTERyL2V3bUZRSDYyWjRHcUp0TTU2T0MwSWd3c21mcWJRVnpJZHdsNm1kanQ3bUl6cjQ2K3ZvdHZuVTRiNjBHeVNqSDVkVk5qTnpxaGdaN2N4NGc2OFZ5ajNnV011UGMwY3ZOVlAvWHZTakMrY0sxdDFiVDkiLCJtYWMiOiI2MmYwZTY4NWFiNTdlMmFkMjM4ZDAzYTQyODY2ZjVjNGY5MGMzNDJiNTYwOTVmNTYxOTFkOTc0NThjMDdiZTQzIiwidGFnIjoiIn0%3D
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Flb1.strmd.st%2Fsecure%2FqZaDYloRShFREvNyOonVulObwpgOdlHj%2Fingest%2Fstream%2Fes8%2F1%2Fplaylist.m3u8
+# playlist : soccersurge live soccer (verified)
+# generated: 2026-09-30 00:50 UTC
+# streams  : 0
