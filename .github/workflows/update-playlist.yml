@@ -90,14 +90,28 @@ jobs:
           echo "----- summary -----"
           echo "Streams: $(grep -c '^#EXTINF' playlist.m3u || true)"
 
-      - name: Commit & push
+      - name: Commit and push (with retry)
         run: |
           git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add playlist.m3u
-          if git diff --staged --quiet; then
-            echo "No change — skip commit"
-          else
-            git commit -m "chore: update playlist ($(date -u +'%Y-%m-%d %H:%M UTC'))"
-            git push
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+
+          if git diff --cached --quiet; then
+            echo "⏭️ Không có thay đổi."
+            exit 0
           fi
+
+          git commit -m "chore: update playlist ($(date -u +'%Y-%m-%d %H:%M UTC')) [skip ci]"
+
+          for i in 1 2 3 4 5; do
+            if git push origin HEAD:${{ github.ref_name }}; then
+              echo "✅ Push OK (lần $i)"
+              exit 0
+            fi
+            echo "⚠️ Thử lại lần $i sau 10s..."
+            sleep 10
+            git pull --rebase --autostash origin ${{ github.ref_name }} || \
+              git pull --rebase --autostash -X theirs origin ${{ github.ref_name }}
+          done
+          echo "❌ Push thất bại sau 5 lần."
+          exit 1
