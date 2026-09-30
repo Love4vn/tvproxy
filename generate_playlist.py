@@ -25,7 +25,7 @@ from camoufox.async_api import AsyncCamoufox
 # ============================================================
 # CẤU HÌNH
 # ============================================================
-BASE_URL     = "https://soccersurge.io/"
+BASE_URL     = "https://v2.sportsurge.net/"
 OUTPUT       = Path(os.environ.get("OUTPUT", "playlist.m3u"))
 MAX_GAMES    = int(os.environ.get("MAX_GAMES", "0")) or None
 MAX_SITES    = int(os.environ.get("MAX_SITES", "5"))     # 5 site tốt nhất (priority)
