@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-SoccerSurge -> IPTV playlist generator (v11)
-
-Base: v2 (working code — KHÔNG ad-block, KHÔNG config đặc biệt)
-Add:  proxy Cloudflare, verify qua proxy, title format VN time.
+SoccerSurge -> IPTV playlist generator (v12)
+- Nhận diện signed URL (có ?sig/?st/?e/?token) → KHÔNG proxy.
+- Verify thử cả proxy lẫn direct, pick cách nào OK.
+- Bỏ link fail khỏi playlist.
 """
 
 import asyncio
@@ -20,7 +20,6 @@ from camoufox.async_api import AsyncCamoufox
 
 # ------------------------- Cấu hình -------------------------
 BASE_URL     = "https://v2.sportsurge.net/"
-#BASE_URL     = "https://soccersurge.io/"
 OUTPUT       = Path(os.environ.get("OUTPUT", "playlist.m3u"))
 MAX_GAMES    = int(os.environ.get("MAX_GAMES", "0")) or None
 MAX_SITES    = int(os.environ.get("MAX_SITES", "8"))
@@ -49,7 +48,9 @@ STREAM_RE = re.compile(
 TS_SEGMENT = re.compile(r"\.ts(\?|$)", re.IGNORECASE)
 ROUTE_RE   = re.compile(r"\.m3u8|/hls/|manifest\.mpd|/chunklist|/index\.m3u", re.IGNORECASE)
 
-# Iframe rác (chat, tracker, social) — chỉ để tránh đi vào, KHÔNG block request
+# URL có chữ ký → không cần proxy, không gắn session/IP
+SIGNED_URL_RE = re.compile(r"[?&](sig|st|e|token|signature|expires|hash)=", re.IGNORECASE)
+
 JUNK_IFRAME_RE = re.compile(
     r"(youtube|youtu\.be|facebook|twitter|google|doubleclick|googlesyndication"
     r"|analytics|histats|discord|telegram|whatsapp|recaptcha|cloudflare"
@@ -59,15 +60,24 @@ JUNK_IFRAME_RE = re.compile(
 )
 
 
-# ------------------------- Proxy -------------------------
+# ------------------------- Proxy logic -------------------------
 NO_PROXY_DOMAINS   = ("hockey.do",)
-NEED_PROXY_DOMAINS = ("strmd.st", "edgestream", "dudestream1.com", "resports.cfd")
+NEED_PROXY_DOMAINS = ("strmd.st", "dudestream1.com", "resports.cfd")
+
+
+def is_signed(url):
+    return bool(SIGNED_URL_RE.search(url))
 
 
 def should_proxy(url):
-    """hockey.do có sig portable → KHÔNG proxy. Còn lại → proxy."""
+    """Quy tắc:
+       - Domain trong NO_PROXY → không proxy.
+       - URL có chữ ký (?sig/?st/...) → không proxy (portable).
+       - Còn lại → proxy."""
     host = urlparse(url).netloc.lower()
     if any(d in host for d in NO_PROXY_DOMAINS):
+        return False
+    if is_signed(url):
         return False
     return True
 
@@ -84,7 +94,6 @@ def wrap_with_proxy(url, headers=None, cookie=""):
 
 
 def score_stream(url):
-    """Chỉ dùng để lọc ad m3u8 nếu có. Không cần thiết nếu v2 chạy ổn."""
     ul = url.lower()
     s = 50
     try:
@@ -97,8 +106,8 @@ def score_stream(url):
         s += 30
     if re.search(r"/secure/|/ingest/|/stream/\w{20,}|/live/", path):
         s += 15
-    if "hockey.do" in host and "sig=" in url:
-        s += 30
+    if is_signed(url):
+        s += 20    # có chữ ký → ưu tiên cao (portable)
     if len(path) < 10:
         s -= 30
     return s
@@ -187,12 +196,8 @@ async def get_stream_sites(page, game_url):
     return sites[:MAX_SITES]
 
 
-# ---------- Tầng 3: capture (COPY v2 chính xác) ----------
+# ---------- Tầng 3: capture ----------
 async def capture_streams(browser, url, depth=IFRAME_DEPTH):
-    """
-    Copy từ v2: dùng page.route(ROUTE_RE, handler) để INTERCEPT (không block).
-    Walk iframe bằng page.goto().
-    """
     page = await browser.new_page()
     captured = []
 
@@ -214,14 +219,12 @@ async def capture_streams(browser, url, depth=IFRAME_DEPTH):
     await page.route(ROUTE_RE, route_handler)
 
     try:
-        # Tầng chính
         try:
             await page.goto(url, wait_until="domcontentloaded", timeout=25000)
             await asyncio.sleep(WAIT_PLAYER)
         except Exception as e:
             log(f"        [nav err] {str(e)[:80]}")
 
-        # Walk iframe
         if not captured and depth > 0:
             try:
                 iframes = await page.evaluate("""
@@ -241,7 +244,6 @@ async def capture_streams(browser, url, depth=IFRAME_DEPTH):
                 except Exception as e:
                     log(f"        [iframe nav err] {str(e)[:80]}")
 
-                # Depth 2
                 if not captured and depth > 1:
                     try:
                         nested = await page.evaluate("""
@@ -260,7 +262,7 @@ async def capture_streams(browser, url, depth=IFRAME_DEPTH):
                         except Exception as e:
                             log(f"        [nested nav err] {str(e)[:80]}")
 
-        # Cookie của page
+        # Lấy cookie
         try:
             cookies = await page.context.cookies()
             cookie_str = "; ".join(f"{c['name']}={c['value']}" for c in cookies)
@@ -276,26 +278,41 @@ async def capture_streams(browser, url, depth=IFRAME_DEPTH):
     return captured
 
 
-# ---------- Verify ----------
+# ---------- Verify: thử cả proxy + direct ----------
 async def verify_one(api_ctx, url, headers, cookie):
-    try:
-        req_headers = {}
-        if headers.get("referer"):    req_headers["Referer"] = headers["referer"]
-        if headers.get("origin"):     req_headers["Origin"]  = headers["origin"]
-        if headers.get("user-agent"): req_headers["User-Agent"] = headers["user-agent"]
-        ck = cookie or headers.get("cookie")
-        if ck:                        req_headers["Cookie"]  = ck
+    """
+    Trả về (ok, reason, method) với method = 'direct' | 'proxy' | None
+    """
+    req_headers = {}
+    if headers.get("referer"):    req_headers["Referer"] = headers["referer"]
+    if headers.get("origin"):     req_headers["Origin"]  = headers["origin"]
+    if headers.get("user-agent"): req_headers["User-Agent"] = headers["user-agent"]
+    ck = cookie or headers.get("cookie")
+    if ck:                        req_headers["Cookie"]  = ck
 
-        test_url = wrap_with_proxy(url, headers, cookie) if should_proxy(url) else url
-        resp = await api_ctx.get(test_url, headers=req_headers, timeout=VERIFY_TIME * 1000)
-        if resp.status != 200:
-            return False, f"HTTP {resp.status}"
-        text = await resp.text()
-        if "#EXTM3U" in text[:2000]:
-            return True, "OK"
-        return False, "no #EXTM3U"
-    except Exception as e:
-        return False, str(e)[:80]
+    # Chọn thứ tự thử: signed URL → direct trước; session URL → proxy trước
+    if is_signed(url):
+        candidates = [("direct", url), ("proxy", wrap_with_proxy(url, headers, cookie))]
+    elif should_proxy(url):
+        candidates = [("proxy",  wrap_with_proxy(url, headers, cookie)), ("direct", url)]
+    else:
+        candidates = [("direct", url)]
+
+    last_reason = "no attempt"
+    for method, test_url in candidates:
+        try:
+            resp = await api_ctx.get(test_url, headers=req_headers, timeout=VERIFY_TIME * 1000)
+            if resp.status != 200:
+                last_reason = f"[{method}] HTTP {resp.status}"
+                continue
+            text = await resp.text()
+            if "#EXTM3U" in text[:2000]:
+                return True, f"OK via {method}", method
+            last_reason = f"[{method}] no #EXTM3U"
+        except Exception as e:
+            last_reason = f"[{method}] {str(e)[:60]}"
+
+    return False, last_reason, None
 
 
 # ---------- M3U ----------
@@ -317,10 +334,15 @@ def write_playlist(entries, path=OUTPUT):
         cookie  = e.get("cookie") or h.get("cookie", "")
         ua      = h.get("user-agent") or DEFAULT_UA
 
-        final_url = (wrap_with_proxy(e["url"],
-                                     {"referer": referer, "origin": origin, "user-agent": ua},
-                                     cookie)
-                     if should_proxy(e["url"]) else e["url"])
+        # Quyết định URL cuối: dùng cách nào đã verify OK
+        if e.get("method") == "proxy":
+            final_url = wrap_with_proxy(
+                e["url"],
+                {"referer": referer, "origin": origin, "user-agent": ua},
+                cookie,
+            )
+        else:
+            final_url = e["url"]
 
         lines.append(f'#EXTINF:-1 tvg-name="{title}" tvg-logo="" group-title="{group}",{title}')
         lines.append(f"#EXTVLCOPT:http-referrer={referer}")
@@ -346,7 +368,7 @@ def write_playlist(entries, path=OUTPUT):
 
 # ---------- Main ----------
 async def main():
-    log("SoccerSurge playlist generator (v11)")
+    log("SoccerSurge playlist generator (v12)")
     log(f"OS       : {platform.system()} ({_CAMOUFOX_OS})")
     log(f"Headless : {HEADLESS}")
     log(f"Proxy    : {PROXY_URL}")
@@ -391,7 +413,7 @@ async def main():
 
                 for k, item in enumerate(results[:MAX_STREAMS]):
                     if VERIFY_LINKS:
-                        ok, reason = await verify_one(
+                        ok, reason, method = await verify_one(
                             api_ctx, item["url"], item["headers"], item.get("cookie", "")
                         )
                         mark = "✅" if ok else "❌"
@@ -399,6 +421,9 @@ async def main():
                         if not ok:
                             fail_cnt += 1
                             continue
+                    else:
+                        method = "proxy" if should_proxy(item["url"]) else "direct"
+
                     ok_cnt += 1
                     suffix = "" if k == 0 else f" #{k+1}"
                     entries.append({
@@ -407,7 +432,8 @@ async def main():
                         "headers": item["headers"],
                         "cookie":  item.get("cookie", ""),
                         "referer": site["url"],
-                        "group":   game["category"] or "Soccer",
+                        "group":   game.get("category") or "Soccer",
+                        "method":  method,
                     })
 
         seen, unique = set(), []
