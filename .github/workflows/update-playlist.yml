@@ -71,13 +71,14 @@ jobs:
 
       - name: Generate playlist
         env:
-          MAX_GAMES: ${{ github.event.inputs.max_games || '20' }}
+          MAX_GAMES: "0"           # 0 = chạy hết
+          MAX_SITES: "5"           # top 5 site tốt nhất
+          WAIT_PLAYER: "10"
+          IFRAME_DEPTH: "2"
+          VERIFY_TIME: "12"
           OUTPUT: playlist.m3u
           PROXY_URL: https://sportsurge-proxy.love4vn.workers.dev
           VERIFY_LINKS: "1"
-          VERIFY_TIME: "15"
-          WAIT_MASTER: "40"
-          DEBUG_ROUTES: "0"
         run: |
           xvfb-run -a --server-args="-screen 0 1280x800x24" \
             python generate_playlist.py
