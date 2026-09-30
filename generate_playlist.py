@@ -19,7 +19,8 @@ from zoneinfo import ZoneInfo
 from camoufox.async_api import AsyncCamoufox
 
 # ------------------------- Cấu hình -------------------------
-BASE_URL     = "https://soccersurge.io/"
+BASE_URL     = "https://v2.sportsurge.net/"
+#BASE_URL     = "https://soccersurge.io/"
 OUTPUT       = Path(os.environ.get("OUTPUT", "playlist.m3u"))
 MAX_GAMES    = int(os.environ.get("MAX_GAMES", "0")) or None
 MAX_SITES    = int(os.environ.get("MAX_SITES", "8"))
