@@ -262,9 +262,12 @@ async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
     captured = []
     got = asyncio.Event()
 
-    async def on_response(response):
-        try: u = response.url
-        except Exception: return
+    # Hàm xử lý response chung cho mọi frame
+    async def handle_response(response):
+        try:
+            u = response.url
+        except Exception:
+            return
         if not STREAM_RE.search(u): return
         if TS_SEGMENT.search(u):    return
         if VARIANT_RE.search(u):    return
@@ -280,8 +283,10 @@ async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
         log(f"        ✓ [{sc}] {u[:110]}")
         got.set()
 
+    # Gắn listener ở cấp context để bắt mọi frame
+    context.on("response", handle_response)
+
     page = await context.new_page()
-    page.on("response", on_response)
 
     cookie_str = ""
     try:
@@ -289,10 +294,13 @@ async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
             await page.goto(site_url, wait_until="domcontentloaded", timeout=30000)
         except Exception as e:
             log(f"        [nav err] {str(e)[:80]}")
+
+        # Đợi m3u8 xuất hiện (tăng lên 60s)
         try:
-            await asyncio.wait_for(got.wait(), timeout=wait_master)
+            await asyncio.wait_for(got.wait(), timeout=60)
         except asyncio.TimeoutError:
-            log(f"        [timeout] không thấy m3u8 sau {wait_master}s")
+            log(f"        [timeout] không thấy m3u8 sau 60s")
+
         await asyncio.sleep(2)
         try:
             cookies = await context.cookies()
@@ -300,6 +308,11 @@ async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
             cookies = []
         cookie_str = "; ".join(f"{c['name']}={c['value']}" for c in cookies)
     finally:
+        # Gỡ listener để tránh leak
+        try:
+            context.remove_listener("response", handle_response)
+        except Exception:
+            pass
         try: await context.close()
         except: pass
 
@@ -307,7 +320,6 @@ async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
         c["cookie"] = cookie_str
     captured.sort(key=lambda c: c["score"], reverse=True)
     return captured
-
 
 # ---------- Verify: DÙNG APIRequestContext ----------
 async def verify_one(api_ctx, url, headers, cookie):
