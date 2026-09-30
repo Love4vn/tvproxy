@@ -46,8 +46,8 @@ jobs:
 
       - name: Run test (debug mode)
         env:
-          MAX_GAMES: "0"        # chỉ test 1 trận
-          MAX_SITES: "10"        # chỉ 3 site đầu
+          MAX_GAMES: "5"        # chỉ test 1 trận
+          MAX_SITES: "5"        # chỉ 3 site đầu
           DEBUG_ROUTES: "1"     # log URL bị block
           WAIT_MASTER: "40"
           VERIFY_LINKS: "1"
