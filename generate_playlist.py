@@ -487,6 +487,9 @@ async def main():
         headless=HEADLESS,
         os=_CAMOUFOX_OS,
         firefox_user_prefs=prefs,
+        config={
+        "enableRemoteSubframes": True,  # <-- BẬT TÍNH NĂNG NÀY
+        },
     )
     try:
         browser_cm = AsyncCamoufox(**camoufox_kwargs, enableRemoteSubframes=True)
