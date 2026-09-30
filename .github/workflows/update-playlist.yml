@@ -72,7 +72,7 @@ jobs:
       - name: Generate playlist
         env:
           MAX_GAMES: "0"           # 0 = chạy hết
-          MAX_SITES: "5"           # top 5 site tốt nhất
+          #MAX_SITES: "5"           # top 5 site tốt nhất
           WAIT_PLAYER: "10"
           IFRAME_DEPTH: "2"
           VERIFY_TIME: "12"
