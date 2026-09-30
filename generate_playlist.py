@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 """
-SoccerSurge -> IPTV playlist generator (v7)
-Fix: verify dùng APIRequestContext, AD_BLOCK_RE gọn hơn, WAIT_MASTER=40.
+SoccerSurge -> IPTV playlist generator (v8)
+
+Fixes so với v7:
+- Bật fission.autostart để iframe lồng nhau load được (bug Camoufox).
+- Reload page nếu iframe kẹt about:blank.
+- context.on("response") bắt mọi frame (không chỉ main frame).
+- Verify dùng APIRequestContext đúng (context.request).
+- AD regex không có trailing `|`.
+- Log frame để debug.
 """
 
 import asyncio
@@ -16,19 +23,23 @@ from zoneinfo import ZoneInfo
 
 from camoufox.async_api import AsyncCamoufox
 
-# ------------------------- Cấu hình -------------------------
-BASE_URL    = "https://soccersurge.io/"
-OUTPUT      = Path(os.environ.get("OUTPUT", "playlist.m3u"))
-MAX_GAMES   = int(os.environ.get("MAX_GAMES", "0")) or None
-MAX_SITES   = int(os.environ.get("MAX_SITES", "8"))
-MAX_STREAMS = int(os.environ.get("MAX_STREAMS", "3"))
-CF_TIMEOUT  = int(os.environ.get("CF_TIMEOUT", "90"))
-WAIT_MASTER = int(os.environ.get("WAIT_MASTER", "40"))     # tăng lên 40s
-VERIFY_TIME = int(os.environ.get("VERIFY_TIME", "15"))
+# ============================================================
+# CẤU HÌNH
+# ============================================================
+BASE_URL     = "https://soccersurge.io/"
+OUTPUT       = Path(os.environ.get("OUTPUT", "playlist.m3u"))
+MAX_GAMES    = int(os.environ.get("MAX_GAMES", "0")) or None
+MAX_SITES    = int(os.environ.get("MAX_SITES", "8"))
+MAX_STREAMS  = int(os.environ.get("MAX_STREAMS", "3"))
+CF_TIMEOUT   = int(os.environ.get("CF_TIMEOUT", "90"))
+WAIT_MASTER  = int(os.environ.get("WAIT_MASTER", "30"))
+WAIT_RELOAD  = int(os.environ.get("WAIT_RELOAD", "40"))
+VERIFY_TIME  = int(os.environ.get("VERIFY_TIME", "15"))
 
 PROXY_URL    = os.environ.get("PROXY_URL", "https://sportsurge-proxy.love4vn.workers.dev")
 VERIFY_LINKS = os.environ.get("VERIFY_LINKS", "1") == "1"
-DEBUG_ROUTES = os.environ.get("DEBUG_ROUTES", "0") == "1"  # log request bị chặn
+DEBUG_ROUTES = os.environ.get("DEBUG_ROUTES", "0") == "1"
+DEBUG_FRAMES = os.environ.get("DEBUG_FRAMES", "0") == "1"
 
 SKIP_SITES = {"tvsportslive.fr", "shd247.world"}
 
@@ -41,7 +52,14 @@ HEADLESS = not bool(os.environ.get("DISPLAY"))
 DEFAULT_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
               "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36")
 
-# ------------------------- Domain rules -------------------------
+
+def log(msg=""):
+    print(msg, file=sys.stderr, flush=True)
+
+
+# ============================================================
+# DOMAIN RULES
+# ============================================================
 NO_PROXY_DOMAINS   = ("hockey.do",)
 NEED_PROXY_DOMAINS = (
     "strmd.st", "dudestream1.com", "resports.cfd",
@@ -73,8 +91,7 @@ def wrap_with_proxy(url, headers=None, cookie=""):
 
 
 # ============================================================
-# AD_BLOCK_RE — CHỈ block domain ad + path đặc trưng
-# Không dùng pattern rộng như /s.js, /invoke.js
+# REGEX — chú ý KHÔNG có trailing `|`
 # ============================================================
 AD_DOMAINS_RE = re.compile(
     r"("
@@ -89,20 +106,25 @@ AD_DOMAINS_RE = re.compile(
     r"jnbhi\.com|jads\.co|exoclick|exosrv|trafficjunky|"
     r"popcash|popads|propellerads|onclickads|mgid\.com|"
     r"histats\.com|amung\.us|waust\.at|livelog\.site|"
-    r"cloudflareinsights\.com|steast\.io"       # ← KHÔNG có | ở cuối
+    r"cloudflareinsights\.com|steast\.io"
     r")",
     re.IGNORECASE,
 )
 
-# Path chỉ block khi đi kèm domain ad ở trên
 AD_PATH_RE = re.compile(
     r"(/(ads?|adserver|adframe|popunder|preroll|vast|vpaid)/|"
     r"ads\.htm|/ad\.html)",
     re.IGNORECASE,
 )
 
-STREAM_RE  = re.compile(r"(\.m3u8(\?|$)|/playlist\.m3u8|/master\.m3u8|manifest\.mpd)", re.IGNORECASE)
-VARIANT_RE = re.compile(r"(chunklist|_x\.m3u8|_[0-9]+\.m3u8|/sub/|/level|/stream_\d+\.m3u8)", re.IGNORECASE)
+STREAM_RE = re.compile(
+    r"(\.m3u8(\?|$)|/playlist\.m3u8|/master\.m3u8|manifest\.mpd)",
+    re.IGNORECASE,
+)
+VARIANT_RE = re.compile(
+    r"(chunklist|_x\.m3u8|_[0-9]+\.m3u8|/sub/|/level|/stream_\d+\.m3u8)",
+    re.IGNORECASE,
+)
 TS_SEGMENT = re.compile(r"\.ts(\?|$)", re.IGNORECASE)
 AD_STREAM_RE = re.compile(
     r"(/ads?/|/adserver|/preroll|/vast|/vpaid|doubleclick|imasdk|"
@@ -133,10 +155,6 @@ def score_stream(url):
     return s
 
 
-def log(msg=""):
-    print(msg, file=sys.stderr, flush=True)
-
-
 def format_vn_time(ts_seconds, live=False):
     if live and not ts_seconds:
         now = datetime.now(VN_TZ)
@@ -151,14 +169,13 @@ def format_vn_time(ts_seconds, live=False):
 
 
 # ============================================================
-# Route handler
+# ROUTE HANDLER
 # ============================================================
 async def block_ads_route(route):
     try:
         req = route.request
         url = req.url
 
-        # Cho phép top-level document
         try:
             frame = req.frame
             if req.resource_type == "document" and frame is not None:
@@ -169,9 +186,7 @@ async def block_ads_route(route):
             await route.continue_()
             return
 
-        # CHỈ block nếu domain khớp HOẶC path khớp
-        blocked = AD_DOMAINS_RE.search(url) or AD_PATH_RE.search(url)
-        if blocked:
+        if AD_DOMAINS_RE.search(url) or AD_PATH_RE.search(url):
             if DEBUG_ROUTES:
                 log(f"        [BLOCK] {url[:110]}")
             try:    await route.abort()
@@ -197,7 +212,9 @@ async def cf_pass(page, timeout=CF_TIMEOUT):
     return False
 
 
-# ---------- Tầng 1 ----------
+# ============================================================
+# TẦNG 1 — HOMEPAGE
+# ============================================================
 async def get_games(page):
     await page.goto(BASE_URL, wait_until="domcontentloaded", timeout=60000)
     if not await cf_pass(page):
@@ -213,11 +230,11 @@ async def get_games(page):
             const ts     = timeEl ? timeEl.getAttribute('data-timestamp') : null;
             const live   = !!a.querySelector('.live-badge');
             return {
-                title  : teams.length ? teams.join(' vs ') : (a.getAttribute('title') || ''),
-                href   : a.href,
+                title   : teams.length ? teams.join(' vs ') : (a.getAttribute('title') || ''),
+                href    : a.href,
                 category: cat.trim(),
-                ts     : ts,
-                live   : live,
+                ts      : ts,
+                live    : live,
             };
         }).filter(g => g.href && g.title && g.href.includes('/watch-'))
     """)
@@ -229,7 +246,9 @@ async def get_games(page):
     return out
 
 
-# ---------- Tầng 2 ----------
+# ============================================================
+# TẦNG 2 — STREAM SITES
+# ============================================================
 async def get_stream_sites(page, game_url):
     try:
         await page.goto(game_url, wait_until="domcontentloaded", timeout=30000)
@@ -237,10 +256,11 @@ async def get_stream_sites(page, game_url):
     except Exception as e:
         log(f"    [err game page] {str(e)[:80]}")
         return []
+
     raw = await page.evaluate("""
         Array.from(document.querySelectorAll('.stream-item[data-href]')).map(el => {
-            const name    = (el.querySelector('.stream-row-site-name')     || {}).textContent || '';
-            const quality = (el.querySelector('.stream-row-spec')          || {}).textContent || '';
+            const name    = (el.querySelector('.stream-row-site-name') || {}).textContent || '';
+            const quality = (el.querySelector('.stream-row-spec')      || {}).textContent || '';
             return {
                 site   : name.trim(),
                 quality: quality.trim(),
@@ -251,8 +271,10 @@ async def get_stream_sites(page, game_url):
     return [s for s in raw if not any(sk in s["url"] for sk in SKIP_SITES)][:MAX_SITES]
 
 
-# ---------- Tầng 3: capture ----------
-async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
+# ============================================================
+# TẦNG 3 — CAPTURE m3u8 (context-level listener + reload fallback)
+# ============================================================
+async def capture_from_site(browser, site_url):
     context = await browser.new_context()
     try:
         await context.route("**/*", block_ads_route)
@@ -262,16 +284,15 @@ async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
     captured = []
     got = asyncio.Event()
 
-    # Hàm xử lý response chung cho mọi frame
-    async def handle_response(response):
+    async def on_response(response):
         try:
             u = response.url
         except Exception:
             return
-        if not STREAM_RE.search(u): return
-        if TS_SEGMENT.search(u):    return
-        if VARIANT_RE.search(u):    return
-        if AD_STREAM_RE.search(u):  return
+        if not STREAM_RE.search(u):  return
+        if TS_SEGMENT.search(u):     return
+        if VARIANT_RE.search(u):     return
+        if AD_STREAM_RE.search(u):   return
         if any(c["url"] == u for c in captured): return
         sc = score_stream(u)
         if sc < 40: return
@@ -283,24 +304,58 @@ async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
         log(f"        ✓ [{sc}] {u[:110]}")
         got.set()
 
-    # Gắn listener ở cấp context để bắt mọi frame
-    context.on("response", handle_response)
+    # Listen ở context level → bắt mọi frame
+    context.on("response", on_response)
 
     page = await context.new_page()
-
     cookie_str = ""
+
     try:
+        # 1) Navigate lần đầu
         try:
             await page.goto(site_url, wait_until="domcontentloaded", timeout=30000)
         except Exception as e:
             log(f"        [nav err] {str(e)[:80]}")
 
-        # Đợi m3u8 xuất hiện (tăng lên 60s)
+        # 2) Chờ m3u8 tối đa WAIT_MASTER
         try:
-            await asyncio.wait_for(got.wait(), timeout=60)
+            await asyncio.wait_for(got.wait(), timeout=WAIT_MASTER)
         except asyncio.TimeoutError:
-            log(f"        [timeout] không thấy m3u8 sau 60s")
+            # Kiểm tra iframe kẹt
+            try:
+                frames = page.frames
+            except Exception:
+                frames = []
+            if DEBUG_FRAMES:
+                log(f"        [debug] {len(frames)} frames loaded")
+                for f in frames:
+                    try:
+                        log(f"        [frame] {f.url[:100]}")
+                    except Exception:
+                        pass
 
+            stuck = []
+            for f in frames:
+                try:
+                    if f.url in ("about:blank", "") and f.parent_frame is not None:
+                        stuck.append(f)
+                except Exception:
+                    pass
+
+            if stuck:
+                log(f"        [reload] {len(stuck)} iframe kẹt → reload...")
+                try:
+                    await page.reload(wait_until="domcontentloaded", timeout=30000)
+                except Exception:
+                    pass
+                try:
+                    await asyncio.wait_for(got.wait(), timeout=WAIT_RELOAD)
+                except asyncio.TimeoutError:
+                    log(f"        [timeout] vẫn không có m3u8 sau reload {WAIT_RELOAD}s")
+            else:
+                log(f"        [timeout] không thấy m3u8 sau {WAIT_MASTER}s")
+
+        # 3) Đợi ổn định + lấy cookie
         await asyncio.sleep(2)
         try:
             cookies = await context.cookies()
@@ -308,23 +363,27 @@ async def capture_from_site(browser, site_url, wait_master=WAIT_MASTER):
             cookies = []
         cookie_str = "; ".join(f"{c['name']}={c['value']}" for c in cookies)
     finally:
-        # Gỡ listener để tránh leak
         try:
-            context.remove_listener("response", handle_response)
+            context.remove_listener("response", on_response)
         except Exception:
             pass
-        try: await context.close()
-        except: pass
+        try:
+            await context.close()
+        except Exception:
+            pass
 
     for c in captured:
         c["cookie"] = cookie_str
     captured.sort(key=lambda c: c["score"], reverse=True)
     return captured
 
-# ---------- Verify: DÙNG APIRequestContext ----------
+
+# ============================================================
+# VERIFY (dùng APIRequestContext đúng)
+# ============================================================
 async def verify_one(api_ctx, url, headers, cookie):
     """
-    api_ctx PHẢI là APIRequestContext, ví dụ context.request
+    api_ctx PHẢI là APIRequestContext (context.request), KHÔNG phải BrowserContext.
     """
     try:
         req_headers = {}
@@ -347,7 +406,9 @@ async def verify_one(api_ctx, url, headers, cookie):
         return False, str(e)[:80]
 
 
-# ---------- M3U ----------
+# ============================================================
+# M3U OUTPUT
+# ============================================================
 def pick_headers(headers, fallback_referer):
     h = {k.lower(): v for k, v in (headers or {}).items()}
     return {
@@ -397,43 +458,71 @@ def write_playlist(entries, path=OUTPUT):
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
-# ---------- Main ----------
+# ============================================================
+# MAIN
+# ============================================================
 async def main():
-    log("SoccerSurge playlist generator (v7)")
+    log("SoccerSurge playlist generator (v8)")
     log(f"OS       : {platform.system()} ({_CAMOUFOX_OS})")
     log(f"Headless : {HEADLESS}")
     log(f"Proxy    : {PROXY_URL}")
     log(f"Verify   : {VERIFY_LINKS}")
-    log(f"Wait     : {WAIT_MASTER}s")
-    log(f"Debug    : {DEBUG_ROUTES}")
+    log(f"Wait     : {WAIT_MASTER}s / reload {WAIT_RELOAD}s")
+    log(f"Debug    : routes={DEBUG_ROUTES} frames={DEBUG_FRAMES}")
     log(f"Output   : {OUTPUT.resolve()}")
 
+    # Fission bật để iframe lồng nhau load được (fix bug Camoufox)
     prefs = {
+        "fission.autostart": True,
+        "fission.webContentIsolationStrategy": 0,
         "network.http.referer.XOriginPolicy": 0,
         "network.http.referer.XOriginTrimmingPolicy": 0,
         "network.http.referer.trimmingPolicy": 0,
         "network.http.sendRefererHeader": 2,
         "privacy.trackingprotection.enabled": False,
-        "browser.cache.disk.enable": False,
     }
 
-    async with AsyncCamoufox(headless=HEADLESS, os=_CAMOUFOX_OS,
-                             firefox_user_prefs=prefs) as browser:
-        ctx = await browser.new_context()
-        try: await ctx.route("**/*", block_ads_route)
-        except: pass
-        page = await ctx.new_page()
+    # Thử bật enableRemoteSubframes (nếu phiên bản Camoufox hỗ trợ)
+    camoufox_kwargs = dict(
+        headless=HEADLESS,
+        os=_CAMOUFOX_OS,
+        firefox_user_prefs=prefs,
+    )
+    try:
+        browser_cm = AsyncCamoufox(**camoufox_kwargs, enableRemoteSubframes=True)
+        browser = await browser_cm.__aenter__()
+        cm_in_use = browser_cm
+    except TypeError:
+        log("[warn] enableRemoteSubframes không được hỗ trợ, dùng fission prefs")
+        browser_cm = AsyncCamoufox(**camoufox_kwargs)
+        browser = await browser_cm.__aenter__()
+        cm_in_use = browser_cm
+    except Exception as e:
+        log(f"[warn] fallback khởi tạo: {e}")
+        browser_cm = AsyncCamoufox(**camoufox_kwargs)
+        browser = await browser_cm.__aenter__()
+        cm_in_use = browser_cm
 
-        # Verify dùng APIRequestContext của browser (không route, không ad-block)
-        api_ctx = ctx.request
+    try:
+        # Context cho navigation (có ad-block)
+        nav_ctx = await browser.new_context()
+        try:
+            await nav_ctx.route("**/*", block_ads_route)
+        except Exception:
+            pass
+        nav_page = await nav_ctx.new_page()
+
+        # API request context để verify (KHÔNG ad-block, KHÔNG route)
+        api_ctx = nav_ctx.request
 
         log("\n[1/4] Loading homepage ...")
-        games = await get_games(page)
+        games = await get_games(nav_page)
         log(f"      {len(games)} game(s) found")
         for g in games[:10]:
             tstr = format_vn_time(g.get("ts"), g["live"])
             log(f"      [{'LIVE' if g['live'] else '    '}] {g['title']} | {tstr}")
-        if MAX_GAMES: games = games[:MAX_GAMES]
+        if MAX_GAMES:
+            games = games[:MAX_GAMES]
 
         entries = []
         ok_cnt = fail_cnt = 0
@@ -442,7 +531,7 @@ async def main():
             time_str = format_vn_time(game.get("ts"), game["live"])
             log(f"\n[{i}/{len(games)}] {game['title']} | {time_str}")
 
-            sites = await get_stream_sites(page, game["href"])
+            sites = await get_stream_sites(nav_page, game["href"])
             log(f"    {len(sites)} stream site(s)")
 
             for j, site in enumerate(sites, 1):
@@ -452,7 +541,7 @@ async def main():
                 try:
                     results = await capture_from_site(browser, site["url"])
                 except Exception as e:
-                    log(f"        [err] {e}")
+                    log(f"        [err] {str(e)[:80]}")
                     results = []
 
                 if not results:
@@ -468,18 +557,20 @@ async def main():
                         if not ok:
                             fail_cnt += 1
                             continue
+
                     ok_cnt += 1
                     suffix = "" if k == 0 else f" #{k+1}"
                     title = f"{game['title']} | {time_str} [{label}]{suffix}"
                     entries.append({
-                        "title": title,
-                        "url": item["url"],
+                        "title":   title,
+                        "url":     item["url"],
                         "headers": item["headers"],
-                        "cookie": item.get("cookie", ""),
+                        "cookie":  item.get("cookie", ""),
                         "referer": site["url"],
-                        "group": game["category"] or "Soccer",
+                        "group":   game["category"] or "Soccer",
                     })
 
+        # Dedupe
         seen, unique = set(), []
         for e in entries:
             if e["url"] in seen: continue
@@ -491,6 +582,12 @@ async def main():
         log(f"      ❌ verify fail : {fail_cnt}")
         log(f"      Total in m3u   : {len(unique)}")
         log(f"      Output         : {OUTPUT}")
+
+    finally:
+        try:
+            await cm_in_use.__aexit__(None, None, None)
+        except Exception:
+            pass
 
 
 if __name__ == "__main__":
