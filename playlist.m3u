@@ -1,481 +1,144 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-01 21:14 UTC
-# streams  : 63
+# generated: 2026-10-01 23:58 UTC
+# streams  : 20
 
-#EXTINF:-1 tvg-name="Denmark vs Portugal | LIVE | 02/10/2026 [Tnt-usa]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Denmark vs Portugal | LIVE | 02/10/2026 [Tnt-usa]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
-https://edgestream1.pro/hls/griogoehvn2.m3u8?st=oquxu4pc6ln233P9nO0aSVq9frzX4RV2utB0djubAy8&e=1790897169
+#EXTINF:-1 tvg-name="Pittsburgh Steelers vs Cleveland Browns | 07:15 | 02/10/2026 [XYZ]" tvg-logo="https://images.fancy-shark151.workers.dev/?logo1=https://a.espncdn.com/i/teamlogos/nfl/500/pit.png&logo2=https://a.espncdn.com/i/teamlogos/nfl/500/cle.png&logo3=https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png&color1=FFB612&color2=311D00&q=65&w=100" tvg-id="Soccer.Dummy.us" group-title="Football",Pittsburgh Steelers vs Cleveland Browns | 07:15 | 02/10/2026 [XYZ]
+#EXTVLCOPT:http-referrer=https://xyzstreams.st/nfl-1.html
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xyzstreams.st/nfl-1.html&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xyzstreams.st/nfl-1.html
+https://hlss2.b-cdn.net/tnf/mono.ts.m3u8?token=ee0b36cac7a27b36d99c3f8e96cf92a3
 
-#EXTINF:-1 tvg-name="Denmark vs Portugal | LIVE | 02/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Denmark vs Portugal | LIVE | 02/10/2026 [Topsurge]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.hockey.do/secure_hls.php?path=f653d03c61441af6c609634af849e9ea%2Findex.m3u8&e=1790888182&sig=ImXQAGZ8boGtYC196bxWeI46vUIUgEsJyI7GS3WeKIc&v=1790886382-4736
-
-#EXTINF:-1 tvg-name="Denmark vs Portugal | LIVE | 02/10/2026 [Resports]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Denmark vs Portugal | LIVE | 02/10/2026 [Resports]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6IjhrK2pIbkZNS1gxU005ZVJiYm55RXc9PSIsInZhbHVlIjoiWkFqRWt3ZUQ3ZW41dC83MDFiTlhiLzZlb29BOTRxZ0x3cVRaNGM3emd1d2VvNVR2Z2hVRDdRVXNrd1hkZHRpVldyRVBTZk9mKzM2UllEanlyWHQyaFVuMmZvUFh5Q01pTGsxdFNjTThpZXpGZ09rbUkzbzIvbjM1dGxGSlE0MjciLCJtYWMiOiI0Y2M4Y2ZkODg3ZDZmYmExYzEzNTE4OWY2MDUxODhlYTU1MzYwNjM5ODVmZDcwZWE0ODNhNGVlOGQ2NDRhZDZmIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlhsakdxSHpQVXBqejBadEZrZHFEbmc9PSIsInZhbHVlIjoiTUxhRk1Oek0vQVZIbXUvOUx4M0dWb0M3djN6eUs0dXVMRE9JWTdrYXNDZzFuazhuQnNob1UyWWpMMWFQeTlzRmx3SEV4TW41MncwTzRZZzlYdUI2eFRHRXVjVHdML2tobHhsZTZ5MlRiNncwL0dlaFJDaXJEMlJaZjhqTlpWZ1QiLCJtYWMiOiJlZjBlZDdjMDBjMjBiM2RhODZmOTU3OWZjYWVjNTExZTdmZTAxOTRkMzFiNDk0NjZkY2ZhNTNhODkyODRlYjMxIiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center&Cookie=XSRF-TOKEN=eyJpdiI6IjhrK2pIbkZNS1gxU005ZVJiYm55RXc9PSIsInZhbHVlIjoiWkFqRWt3ZUQ3ZW41dC83MDFiTlhiLzZlb29BOTRxZ0x3cVRaNGM3emd1d2VvNVR2Z2hVRDdRVXNrd1hkZHRpVldyRVBTZk9mKzM2UllEanlyWHQyaFVuMmZvUFh5Q01pTGsxdFNjTThpZXpGZ09rbUkzbzIvbjM1dGxGSlE0MjciLCJtYWMiOiI0Y2M4Y2ZkODg3ZDZmYmExYzEzNTE4OWY2MDUxODhlYTU1MzYwNjM5ODVmZDcwZWE0ODNhNGVlOGQ2NDRhZDZmIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlhsakdxSHpQVXBqejBadEZrZHFEbmc9PSIsInZhbHVlIjoiTUxhRk1Oek0vQVZIbXUvOUx4M0dWb0M3djN6eUs0dXVMRE9JWTdrYXNDZzFuazhuQnNob1UyWWpMMWFQeTlzRmx3SEV4TW41MncwTzRZZzlYdUI2eFRHRXVjVHdML2tobHhsZTZ5MlRiNncwL0dlaFJDaXJEMlJaZjhqTlpWZ1QiLCJtYWMiOiJlZjBlZDdjMDBjMjBiM2RhODZmOTU3OWZjYWVjNTExZTdmZTAxOTRkMzFiNDk0NjZkY2ZhNTNhODkyODRlYjMxIiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center|Cookie: XSRF-TOKEN=eyJpdiI6IjhrK2pIbkZNS1gxU005ZVJiYm55RXc9PSIsInZhbHVlIjoiWkFqRWt3ZUQ3ZW41dC83MDFiTlhiLzZlb29BOTRxZ0x3cVRaNGM3emd1d2VvNVR2Z2hVRDdRVXNrd1hkZHRpVldyRVBTZk9mKzM2UllEanlyWHQyaFVuMmZvUFh5Q01pTGsxdFNjTThpZXpGZ09rbUkzbzIvbjM1dGxGSlE0MjciLCJtYWMiOiI0Y2M4Y2ZkODg3ZDZmYmExYzEzNTE4OWY2MDUxODhlYTU1MzYwNjM5ODVmZDcwZWE0ODNhNGVlOGQ2NDRhZDZmIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlhsakdxSHpQVXBqejBadEZrZHFEbmc9PSIsInZhbHVlIjoiTUxhRk1Oek0vQVZIbXUvOUx4M0dWb0M3djN6eUs0dXVMRE9JWTdrYXNDZzFuazhuQnNob1UyWWpMMWFQeTlzRmx3SEV4TW41MncwTzRZZzlYdUI2eFRHRXVjVHdML2tobHhsZTZ5MlRiNncwL0dlaFJDaXJEMlJaZjhqTlpWZ1QiLCJtYWMiOiJlZjBlZDdjMDBjMjBiM2RhODZmOTU3OWZjYWVjNTExZTdmZTAxOTRkMzFiNDk0NjZkY2ZhNTNhODkyODRlYjMxIiwidGFnIjoiIn0%3D
-https://edgestream5.pro/hls/griogoehvn2.m3u8?st=2n7ufYZp7tuMYdRPBcCtSg5_sXEbOhz0yAXvBq4blNI&e=1790897403
-
-#EXTINF:-1 tvg-name="Denmark vs Portugal | LIVE | 02/10/2026 [Nonstopservice]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Denmark vs Portugal | LIVE | 02/10/2026 [Nonstopservice]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
-https://edgestream1.pro/hls/griogoehvn2.m3u8?st=rPMtOFtt5sRgx_JddrTeaqibqjBTib9nKWq3C4_Z_v8&e=1790897427
-
-#EXTINF:-1 tvg-name="Germany vs Serbia | LIVE | 02/10/2026 [Tnt-usa]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Germany vs Serbia | LIVE | 02/10/2026 [Tnt-usa]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
-https://edgestream3.pro/hls/sqdahach1ax.m3u8?st=XK-KxpmB9aXwPUvvPJ84YxiLS2C384vlE1fj08Bd3Gc&e=1790897519
-
-#EXTINF:-1 tvg-name="Germany vs Serbia | LIVE | 02/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Germany vs Serbia | LIVE | 02/10/2026 [Topsurge]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.hockey.do/secure_hls.php?path=209527d5bb3e2c593f2d56e979d3b0da%2Findex.m3u8&e=1790888532&sig=TR1Vh4m1jCd5aWEp3oWVmqe7SZyq424K_KSAnFmdYLk&v=1790886732-7556
-
-#EXTINF:-1 tvg-name="Germany vs Serbia | LIVE | 02/10/2026 [Resports]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Germany vs Serbia | LIVE | 02/10/2026 [Resports]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6IklFR2tHT2t4ZEhsUzgxNVRJRE0ya1E9PSIsInZhbHVlIjoiVm9xd0cxa1pvNm1QcVh6ZVVidXYyd1dtcTFBcWJsQkFvU0N5b0FFUC82Z1BEK3BJb3Q4bCtucXZUS1RpQXIrb1V2Q2lkV1NsMm1wQ0FNQ0NDWi9JSjBpQ1RiQjE0YnZxb0Z1RkF5K1JzSGN0VjBCV0lrSEpKajJISUt0OHlkYXoiLCJtYWMiOiIxNTIyMDk0NTZkYjY3ZmJlOTFlMDUwYTYwYzc5YjJhN2MwNWNhYTA4YTA0YjA2NjM3ZTZlOTcyYTdmNmU2MjU0IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6Im56VnlLYUR3eTNibjQycWtERlNkQXc9PSIsInZhbHVlIjoiQnV2VC8ranpQWlFuRU1oTkRocFIvdmNOTDhXRkRkYmg0aXEya2oxZlRxbFV6YXZCZ0t3WlAybjZqcHptaTNxVUtSZGJKS0tEMlFuUDdoT05CSnRlRTY0SURLeFlqR1ZsMXNtQUovM1gydzJ2dWhBWVV0Z1JKZmNDdExzcFM1TEwiLCJtYWMiOiI1OWY2ZWVlMWU5ODFmNDQzZjA5NjQwZjZkMzRjOGUyNzViNzgxZjAyNmMyNWU0Y2Y0MWQ1ODhjNTBlZjU5ZWQ3IiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center&Cookie=XSRF-TOKEN=eyJpdiI6IklFR2tHT2t4ZEhsUzgxNVRJRE0ya1E9PSIsInZhbHVlIjoiVm9xd0cxa1pvNm1QcVh6ZVVidXYyd1dtcTFBcWJsQkFvU0N5b0FFUC82Z1BEK3BJb3Q4bCtucXZUS1RpQXIrb1V2Q2lkV1NsMm1wQ0FNQ0NDWi9JSjBpQ1RiQjE0YnZxb0Z1RkF5K1JzSGN0VjBCV0lrSEpKajJISUt0OHlkYXoiLCJtYWMiOiIxNTIyMDk0NTZkYjY3ZmJlOTFlMDUwYTYwYzc5YjJhN2MwNWNhYTA4YTA0YjA2NjM3ZTZlOTcyYTdmNmU2MjU0IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6Im56VnlLYUR3eTNibjQycWtERlNkQXc9PSIsInZhbHVlIjoiQnV2VC8ranpQWlFuRU1oTkRocFIvdmNOTDhXRkRkYmg0aXEya2oxZlRxbFV6YXZCZ0t3WlAybjZqcHptaTNxVUtSZGJKS0tEMlFuUDdoT05CSnRlRTY0SURLeFlqR1ZsMXNtQUovM1gydzJ2dWhBWVV0Z1JKZmNDdExzcFM1TEwiLCJtYWMiOiI1OWY2ZWVlMWU5ODFmNDQzZjA5NjQwZjZkMzRjOGUyNzViNzgxZjAyNmMyNWU0Y2Y0MWQ1ODhjNTBlZjU5ZWQ3IiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center|Cookie: XSRF-TOKEN=eyJpdiI6IklFR2tHT2t4ZEhsUzgxNVRJRE0ya1E9PSIsInZhbHVlIjoiVm9xd0cxa1pvNm1QcVh6ZVVidXYyd1dtcTFBcWJsQkFvU0N5b0FFUC82Z1BEK3BJb3Q4bCtucXZUS1RpQXIrb1V2Q2lkV1NsMm1wQ0FNQ0NDWi9JSjBpQ1RiQjE0YnZxb0Z1RkF5K1JzSGN0VjBCV0lrSEpKajJISUt0OHlkYXoiLCJtYWMiOiIxNTIyMDk0NTZkYjY3ZmJlOTFlMDUwYTYwYzc5YjJhN2MwNWNhYTA4YTA0YjA2NjM3ZTZlOTcyYTdmNmU2MjU0IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6Im56VnlLYUR3eTNibjQycWtERlNkQXc9PSIsInZhbHVlIjoiQnV2VC8ranpQWlFuRU1oTkRocFIvdmNOTDhXRkRkYmg0aXEya2oxZlRxbFV6YXZCZ0t3WlAybjZqcHptaTNxVUtSZGJKS0tEMlFuUDdoT05CSnRlRTY0SURLeFlqR1ZsMXNtQUovM1gydzJ2dWhBWVV0Z1JKZmNDdExzcFM1TEwiLCJtYWMiOiI1OWY2ZWVlMWU5ODFmNDQzZjA5NjQwZjZkMzRjOGUyNzViNzgxZjAyNmMyNWU0Y2Y0MWQ1ODhjNTBlZjU5ZWQ3IiwidGFnIjoiIn0%3D
-https://edgestream3.pro/hls/sqdahach1ax.m3u8?st=OroXBXK-A92eMVS3vAMY90D68j2uRqGN_ZvvMOkswZs&e=1790897752
-
-#EXTINF:-1 tvg-name="Germany vs Serbia | LIVE | 02/10/2026 [Nonstopservice]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Germany vs Serbia | LIVE | 02/10/2026 [Nonstopservice]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
-https://edgestream4.pro/hls/sqdahach1ax.m3u8?st=DAiQSbx1kyURx2hRS391XYfUBsTr9gSmZImqDJE_YTI&e=1790897775
-
-#EXTINF:-1 tvg-name="Greece vs Netherlands | LIVE | 02/10/2026 [Tnt-usa]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Greece vs Netherlands | LIVE | 02/10/2026 [Tnt-usa]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
-https://edgestream1.pro/hls/24SDAZFcsqnj24.m3u8?st=IO5cRRspGCBCClEgRsI0luZwHQax6SmIGmFdVop9I1I&e=1790897868
-
-#EXTINF:-1 tvg-name="Greece vs Netherlands | LIVE | 02/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Greece vs Netherlands | LIVE | 02/10/2026 [Topsurge]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.hockey.do/secure_hls.php?path=07ae5785d9f5ce3acbd1e831e4c023ec%2Findex.m3u8&e=1790888881&sig=5q0XnZKZaJFF5duF9fmNOy1f_Tq82dNdM6T2oy4sJJM&v=1790887081-1234
-
-#EXTINF:-1 tvg-name="Greece vs Netherlands | LIVE | 02/10/2026 [Resports]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Greece vs Netherlands | LIVE | 02/10/2026 [Resports]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6ImhOYkkzbzczSytMejF6SE1kdFJyNlE9PSIsInZhbHVlIjoiVUdIajNCOFYvOUQ3aXUzeHIvT0d6QVhIbnBobkNJVGFXYjhnRUVUcHhHc1FVTk51dEFkWXoxVXFIa2toeTBUbmFWd28zamtKRVNzUG9TN2I5RXgvcXNvTDA4NUM4aHBlQ1h0NFJ4eWVJNHZ4aCthQjZpc0cwMFZTY3BEaWYxcEUiLCJtYWMiOiI4NjI4NjE3ZjBmODkzNDNlNzFhOGRkYzE4OTg0MGE1YTA3NjdjYjQ4NzUyNWUyNjcwOTY5NjhjOWFjOTA4MzkxIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlF0WVVBT1FJbDF2R1o1UlVQMDNjRVE9PSIsInZhbHVlIjoiQmcveVBrZVlOczJmMmxIU1pPY0VxczU3YmVoeXRCa3hmQ1hWc3Zrbm90N0N0S0JTSUpXcEF6UExrdGszTGE3NlNNNGlIeUg3cHZaWjNBZFdZN2RhcWlockhRaVdpSExXK1RHRkN4RXVvYzZ4UllyYVlpb2xkY3YxS1dNM1FCdTciLCJtYWMiOiI3MGUwMzk1YmI4MTA2OTA1NmY3MjIzYTE3YTEwNWY2NDZmZDM0MjcxYzU0YjhhZjE0M2ZhNzE1MTFlZGZlOWZjIiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center&Cookie=XSRF-TOKEN=eyJpdiI6ImhOYkkzbzczSytMejF6SE1kdFJyNlE9PSIsInZhbHVlIjoiVUdIajNCOFYvOUQ3aXUzeHIvT0d6QVhIbnBobkNJVGFXYjhnRUVUcHhHc1FVTk51dEFkWXoxVXFIa2toeTBUbmFWd28zamtKRVNzUG9TN2I5RXgvcXNvTDA4NUM4aHBlQ1h0NFJ4eWVJNHZ4aCthQjZpc0cwMFZTY3BEaWYxcEUiLCJtYWMiOiI4NjI4NjE3ZjBmODkzNDNlNzFhOGRkYzE4OTg0MGE1YTA3NjdjYjQ4NzUyNWUyNjcwOTY5NjhjOWFjOTA4MzkxIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlF0WVVBT1FJbDF2R1o1UlVQMDNjRVE9PSIsInZhbHVlIjoiQmcveVBrZVlOczJmMmxIU1pPY0VxczU3YmVoeXRCa3hmQ1hWc3Zrbm90N0N0S0JTSUpXcEF6UExrdGszTGE3NlNNNGlIeUg3cHZaWjNBZFdZN2RhcWlockhRaVdpSExXK1RHRkN4RXVvYzZ4UllyYVlpb2xkY3YxS1dNM1FCdTciLCJtYWMiOiI3MGUwMzk1YmI4MTA2OTA1NmY3MjIzYTE3YTEwNWY2NDZmZDM0MjcxYzU0YjhhZjE0M2ZhNzE1MTFlZGZlOWZjIiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center|Cookie: XSRF-TOKEN=eyJpdiI6ImhOYkkzbzczSytMejF6SE1kdFJyNlE9PSIsInZhbHVlIjoiVUdIajNCOFYvOUQ3aXUzeHIvT0d6QVhIbnBobkNJVGFXYjhnRUVUcHhHc1FVTk51dEFkWXoxVXFIa2toeTBUbmFWd28zamtKRVNzUG9TN2I5RXgvcXNvTDA4NUM4aHBlQ1h0NFJ4eWVJNHZ4aCthQjZpc0cwMFZTY3BEaWYxcEUiLCJtYWMiOiI4NjI4NjE3ZjBmODkzNDNlNzFhOGRkYzE4OTg0MGE1YTA3NjdjYjQ4NzUyNWUyNjcwOTY5NjhjOWFjOTA4MzkxIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlF0WVVBT1FJbDF2R1o1UlVQMDNjRVE9PSIsInZhbHVlIjoiQmcveVBrZVlOczJmMmxIU1pPY0VxczU3YmVoeXRCa3hmQ1hWc3Zrbm90N0N0S0JTSUpXcEF6UExrdGszTGE3NlNNNGlIeUg3cHZaWjNBZFdZN2RhcWlockhRaVdpSExXK1RHRkN4RXVvYzZ4UllyYVlpb2xkY3YxS1dNM1FCdTciLCJtYWMiOiI3MGUwMzk1YmI4MTA2OTA1NmY3MjIzYTE3YTEwNWY2NDZmZDM0MjcxYzU0YjhhZjE0M2ZhNzE1MTFlZGZlOWZjIiwidGFnIjoiIn0%3D
-https://edgestream4.pro/hls/24SDAZFcsqnj24.m3u8?st=O5uo1Pj9akVpAvtNolEAh5vVVHMtO3CkXaGFiVvSm-Y&e=1790898103
-
-#EXTINF:-1 tvg-name="Greece vs Netherlands | LIVE | 02/10/2026 [Nonstopservice]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Greece vs Netherlands | LIVE | 02/10/2026 [Nonstopservice]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
-https://edgestream4.pro/hls/24SDAZFcsqnj24.m3u8?st=0uYt9GYHInKRuR-HBpm-Sglj8dsr4WdF63_ipH0rQM4&e=1790898127
-
-#EXTINF:-1 tvg-name="Israel vs Kosovo | LIVE | 02/10/2026 [Tnt-usa]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Israel vs Kosovo | LIVE | 02/10/2026 [Tnt-usa]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.hockey.do/secure_hls.php?path=58c61f4546642149cd5f3f5b0c508dff%2Findex.m3u8&e=1790889220&sig=RzmjN0qluxCIu6wKgn9KnnglU0wtHBrlGd-8ow8zFtQ&v=1790887420-5930
-
-#EXTINF:-1 tvg-name="Israel vs Kosovo | LIVE | 02/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Israel vs Kosovo | LIVE | 02/10/2026 [Topsurge]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.hockey.do/secure_hls.php?path=58c61f4546642149cd5f3f5b0c508dff%2Findex.m3u8&e=1790889233&sig=4SMqCFdu4vzJbft09oirUeEzUg5r3n3vrD3YnoUfuxE&v=1790887433-1324
-
-#EXTINF:-1 tvg-name="Israel vs Kosovo | LIVE | 02/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Israel vs Kosovo | LIVE | 02/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.hockey.do/secure_hls.php?path=58c61f4546642149cd5f3f5b0c508dff%2Findex.m3u8&e=1790889409&sig=GiYC1yUBu5jzgSCNagaehojoaCICrJV6PSqZLOT-VlI&v=1790887609-6720
-
-#EXTINF:-1 tvg-name="Malta vs Gibraltar | LIVE | 02/10/2026 [Tnt-usa]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Malta vs Gibraltar | LIVE | 02/10/2026 [Tnt-usa]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.hockey.do/secure_hls.php?path=efcf0daf38c7d00d886c3002cea356e1%2Findex.m3u8&e=1790889600&sig=SIl_hBKmNL56NaCanMU7h-zeNcnS1F1tEJNZ-iT8fnI&v=1790887800-9060
-
-#EXTINF:-1 tvg-name="Malta vs Gibraltar | LIVE | 02/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Malta vs Gibraltar | LIVE | 02/10/2026 [Topsurge]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.hockey.do/secure_hls.php?path=efcf0daf38c7d00d886c3002cea356e1%2Findex.m3u8&e=1790889612&sig=PEHxpkfm4WiwU5DeuT1imhGdigaA1Y-RG0QdnScG_xg&v=1790887812-5776
-
-#EXTINF:-1 tvg-name="Malta vs Gibraltar | LIVE | 02/10/2026 [Resports]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Malta vs Gibraltar | LIVE | 02/10/2026 [Resports]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6IlVhQlE2TFJWVVRkUngxNlJFTWlleVE9PSIsInZhbHVlIjoiTVdRSG0wTkFYS2Vvbm4vVHhTYmdWdzlKeGpJZWx4RU1TdWRLNElXcnBBU3BsU1ZuYndIdytKZmJ2NjF2M2tIK0JTNGhMU2l2cFluUFVobHpPNVZDVmhrcE96Z25JeGZlR281VENOMW03bkNUZmZ4QmRNNUMzakIvZXNTTVRMdXAiLCJtYWMiOiI0NDQyOTZlODEwMTYxNTEzMjNkNjFhMzgwZDdkYjgwYWNiMDVlZDZjY2I2NWUyNTdkYWU4NWQ2N2Y4YWMyNDYyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6Im12cWxGRi9oK2RyMVBIRlZveGNubVE9PSIsInZhbHVlIjoiWjFFSUpNQmt6YnQ3c2lWWm5VVGFGbnlZV2F6TGF1VDAzQURxUmdER29qUU1Pc1ZFeWVjYUIwZCtUNUJtaUpGSSt4WURqN1RsNzF3OSt6Y09CSk1KZ3dub0hnWjYyanFKYnRGckE1N3VCSk5iV1JpaC9nTkY4cjlmRU00TmRrSEQiLCJtYWMiOiJmZTczMTcwZGM4ODcwNjdiMjIzM2E1NmExMjUwOTJkZDQ5MDY0MmU1MmViMjk2ZTJmZDA1OTQ1YzYwYjEyN2VlIiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center&Cookie=XSRF-TOKEN=eyJpdiI6IlVhQlE2TFJWVVRkUngxNlJFTWlleVE9PSIsInZhbHVlIjoiTVdRSG0wTkFYS2Vvbm4vVHhTYmdWdzlKeGpJZWx4RU1TdWRLNElXcnBBU3BsU1ZuYndIdytKZmJ2NjF2M2tIK0JTNGhMU2l2cFluUFVobHpPNVZDVmhrcE96Z25JeGZlR281VENOMW03bkNUZmZ4QmRNNUMzakIvZXNTTVRMdXAiLCJtYWMiOiI0NDQyOTZlODEwMTYxNTEzMjNkNjFhMzgwZDdkYjgwYWNiMDVlZDZjY2I2NWUyNTdkYWU4NWQ2N2Y4YWMyNDYyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6Im12cWxGRi9oK2RyMVBIRlZveGNubVE9PSIsInZhbHVlIjoiWjFFSUpNQmt6YnQ3c2lWWm5VVGFGbnlZV2F6TGF1VDAzQURxUmdER29qUU1Pc1ZFeWVjYUIwZCtUNUJtaUpGSSt4WURqN1RsNzF3OSt6Y09CSk1KZ3dub0hnWjYyanFKYnRGckE1N3VCSk5iV1JpaC9nTkY4cjlmRU00TmRrSEQiLCJtYWMiOiJmZTczMTcwZGM4ODcwNjdiMjIzM2E1NmExMjUwOTJkZDQ5MDY0MmU1MmViMjk2ZTJmZDA1OTQ1YzYwYjEyN2VlIiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center|Cookie: XSRF-TOKEN=eyJpdiI6IlVhQlE2TFJWVVRkUngxNlJFTWlleVE9PSIsInZhbHVlIjoiTVdRSG0wTkFYS2Vvbm4vVHhTYmdWdzlKeGpJZWx4RU1TdWRLNElXcnBBU3BsU1ZuYndIdytKZmJ2NjF2M2tIK0JTNGhMU2l2cFluUFVobHpPNVZDVmhrcE96Z25JeGZlR281VENOMW03bkNUZmZ4QmRNNUMzakIvZXNTTVRMdXAiLCJtYWMiOiI0NDQyOTZlODEwMTYxNTEzMjNkNjFhMzgwZDdkYjgwYWNiMDVlZDZjY2I2NWUyNTdkYWU4NWQ2N2Y4YWMyNDYyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6Im12cWxGRi9oK2RyMVBIRlZveGNubVE9PSIsInZhbHVlIjoiWjFFSUpNQmt6YnQ3c2lWWm5VVGFGbnlZV2F6TGF1VDAzQURxUmdER29qUU1Pc1ZFeWVjYUIwZCtUNUJtaUpGSSt4WURqN1RsNzF3OSt6Y09CSk1KZ3dub0hnWjYyanFKYnRGckE1N3VCSk5iV1JpaC9nTkY4cjlmRU00TmRrSEQiLCJtYWMiOiJmZTczMTcwZGM4ODcwNjdiMjIzM2E1NmExMjUwOTJkZDQ5MDY0MmU1MmViMjk2ZTJmZDA1OTQ1YzYwYjEyN2VlIiwidGFnIjoiIn0%3D
-https://edgestream4.pro/hls/b0h5fNwDKH.m3u8?st=NeYn9XPRKHY9f4wU8WuS8qDcj5m5Fv3aKTOh_TOcgsU&e=1790898810
-
-#EXTINF:-1 tvg-name="Malta vs Gibraltar | LIVE | 02/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Malta vs Gibraltar | LIVE | 02/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.hockey.do/secure_hls.php?path=efcf0daf38c7d00d886c3002cea356e1%2Findex.m3u8&e=1790889823&sig=-DMlo34rYawTHJ1o8xAcmJCAguJxDf1Rzl9VUoXcnNE&v=1790888023-9355
-
-#EXTINF:-1 tvg-name="Malta vs Gibraltar | LIVE | 02/10/2026 [Nonstopservice]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Malta vs Gibraltar | LIVE | 02/10/2026 [Nonstopservice]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
-https://edgestream3.pro/hls/b0h5fNwDKH.m3u8?st=HaBJL7DSGuGItjQ06isNs1wIbxY8vrzWV870GJX63tY&e=1790898835
-
-#EXTINF:-1 tvg-name="Malta vs Gibraltar | LIVE | 02/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Malta vs Gibraltar | LIVE | 02/10/2026 [Wildgames]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
-https://edgestream7.pro/hls/b0h5fNwDKH.m3u8?st=4Coewh4u47SXuCoD17jcOoDYng-uLz2-bRpHVQki8do&e=1790898891
-
-#EXTINF:-1 tvg-name="Republic of Ireland vs Austria | LIVE | 02/10/2026 [Tnt-usa]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Republic of Ireland vs Austria | LIVE | 02/10/2026 [Tnt-usa]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
-https://edgestream4.pro/hls/377qj1h2727.m3u8?st=NnD3oCo6ys5CLf76ijdNuQRVe2BhjIvZWm-prwemM5E&e=1790898940
-
-#EXTINF:-1 tvg-name="Republic of Ireland vs Austria | LIVE | 02/10/2026 [Resports]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Republic of Ireland vs Austria | LIVE | 02/10/2026 [Resports]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6IkQzV05TbDM1WHd1N3JuSmhNYWN1NXc9PSIsInZhbHVlIjoibkpNOTNGeGlmWW9taC9jU2JBS3JlMmlINGpaQmF6V3prU2ZXUDhFUjUxMFB0WUZZNTZ1RmpGYlZjaXgwa290N3A2Wm5OWFYzWTVyQ0lhL0lxQXhVYnBaZFFhKzhMbEdRZkZxZTAwRzI1aDMzWDIwd2ptb3pSd1Y0UzRHNnFuemUiLCJtYWMiOiI4NTgxODYzMDQzNGJjODZlYWUwMWVjZmViN2ViNjEzOTdjYWIxNzA5ZGMwZmFkMTM3ZjkxNzNhMmI5NDhhNjczIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IkRDbjZOWi9KNXNQRnA0Qjg1eHgzN2c9PSIsInZhbHVlIjoibU1tVTNJMEMrY1JXRmg2UUszc3RvWk1PVk85a1ZTenVOQmpUTUlsaFRwM2dFQ0t6UitFTk55bzV4L1gvWWM3K3FPekNHTXFjWHc4OVBOUkRlWGthNW1LNk9mMHIxRWw1MnlzeFp4MWtlc3lObWNUSnJYRTdUQkhFeTN0S29DT0YiLCJtYWMiOiJhOGI0NzU0NWRjYjI4ZmVmNTdhYWYxYmFjNDkwOTNjOThmNDQ2NTY3NDVkNjFhMzI2ZjgyODA1ZWMwYTMwMzliIiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center&Cookie=XSRF-TOKEN=eyJpdiI6IkQzV05TbDM1WHd1N3JuSmhNYWN1NXc9PSIsInZhbHVlIjoibkpNOTNGeGlmWW9taC9jU2JBS3JlMmlINGpaQmF6V3prU2ZXUDhFUjUxMFB0WUZZNTZ1RmpGYlZjaXgwa290N3A2Wm5OWFYzWTVyQ0lhL0lxQXhVYnBaZFFhKzhMbEdRZkZxZTAwRzI1aDMzWDIwd2ptb3pSd1Y0UzRHNnFuemUiLCJtYWMiOiI4NTgxODYzMDQzNGJjODZlYWUwMWVjZmViN2ViNjEzOTdjYWIxNzA5ZGMwZmFkMTM3ZjkxNzNhMmI5NDhhNjczIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IkRDbjZOWi9KNXNQRnA0Qjg1eHgzN2c9PSIsInZhbHVlIjoibU1tVTNJMEMrY1JXRmg2UUszc3RvWk1PVk85a1ZTenVOQmpUTUlsaFRwM2dFQ0t6UitFTk55bzV4L1gvWWM3K3FPekNHTXFjWHc4OVBOUkRlWGthNW1LNk9mMHIxRWw1MnlzeFp4MWtlc3lObWNUSnJYRTdUQkhFeTN0S29DT0YiLCJtYWMiOiJhOGI0NzU0NWRjYjI4ZmVmNTdhYWYxYmFjNDkwOTNjOThmNDQ2NTY3NDVkNjFhMzI2ZjgyODA1ZWMwYTMwMzliIiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center|Cookie: XSRF-TOKEN=eyJpdiI6IkQzV05TbDM1WHd1N3JuSmhNYWN1NXc9PSIsInZhbHVlIjoibkpNOTNGeGlmWW9taC9jU2JBS3JlMmlINGpaQmF6V3prU2ZXUDhFUjUxMFB0WUZZNTZ1RmpGYlZjaXgwa290N3A2Wm5OWFYzWTVyQ0lhL0lxQXhVYnBaZFFhKzhMbEdRZkZxZTAwRzI1aDMzWDIwd2ptb3pSd1Y0UzRHNnFuemUiLCJtYWMiOiI4NTgxODYzMDQzNGJjODZlYWUwMWVjZmViN2ViNjEzOTdjYWIxNzA5ZGMwZmFkMTM3ZjkxNzNhMmI5NDhhNjczIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IkRDbjZOWi9KNXNQRnA0Qjg1eHgzN2c9PSIsInZhbHVlIjoibU1tVTNJMEMrY1JXRmg2UUszc3RvWk1PVk85a1ZTenVOQmpUTUlsaFRwM2dFQ0t6UitFTk55bzV4L1gvWWM3K3FPekNHTXFjWHc4OVBOUkRlWGthNW1LNk9mMHIxRWw1MnlzeFp4MWtlc3lObWNUSnJYRTdUQkhFeTN0S29DT0YiLCJtYWMiOiJhOGI0NzU0NWRjYjI4ZmVmNTdhYWYxYmFjNDkwOTNjOThmNDQ2NTY3NDVkNjFhMzI2ZjgyODA1ZWMwYTMwMzliIiwidGFnIjoiIn0%3D
-https://edgestream4.pro/hls/377qj1h2727.m3u8?st=3H5hhUOD1xbqzrK75Q4JP4F0BQP9N8w13TI4aUT4N2Y&e=1790899152
-
-#EXTINF:-1 tvg-name="Republic of Ireland vs Austria | LIVE | 02/10/2026 [Nonstopservice]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Republic of Ireland vs Austria | LIVE | 02/10/2026 [Nonstopservice]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
-https://edgestream3.pro/hls/377qj1h2727.m3u8?st=OMyyg9Py15Qae5JFGUdpW9U0ihQFriyuaStgZr1AbaI&e=1790899176
-
-#EXTINF:-1 tvg-name="Republic of Ireland vs Austria | LIVE | 02/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Republic of Ireland vs Austria | LIVE | 02/10/2026 [Wildgames]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
-https://edgestream4.pro/hls/377qj1h2727.m3u8?st=4WWXXlP0wwU5ow6OnJ058i0YjrjlY8H7cb7KieaXVpU&e=1790899265
-
-#EXTINF:-1 tvg-name="Wales vs Norway | LIVE | 02/10/2026 [Tnt-usa]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Wales vs Norway | LIVE | 02/10/2026 [Tnt-usa]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
-https://edgestream7.pro/hls/eJmauBDCIf.m3u8?st=gFYHfcln7Kza2t5kMXykQyxUWhc8kQQ7djgwon5x5AE&e=1790899280
-
-#EXTINF:-1 tvg-name="Wales vs Norway | LIVE | 02/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Wales vs Norway | LIVE | 02/10/2026 [Topsurge]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.hockey.do/secure_hls.php?path=c0848baa0fff7dcc32acb6e770f6cfc4%2Findex.m3u8&e=1790890294&sig=yatJT5G9pxDN5l_QAWncQKbY4SF-WxSa1N-e72_2X_U&v=1790888494-2138
-
-#EXTINF:-1 tvg-name="Wales vs Norway | LIVE | 02/10/2026 [Resports]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Wales vs Norway | LIVE | 02/10/2026 [Resports]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6ImFPYzIzYU9FNUZHTGNuOEdWbTRZRnc9PSIsInZhbHVlIjoiRXh6aUxNS1ZXZ1hEOTdoeW84OE5hZGJtOEd5bGVZTEQvbU9pb0RvbGJ4RHJyM1ZEcHN5SDk5V25Wb1N4T0FuS1N3TkhUb3VCbytsa3llRkhyRHYyZTRGbStyTDNGeG5ncUFqamhhREZ5emYwYVRiWkJva00rUjUvSXV3U2JtNkkiLCJtYWMiOiI3M2MyZDNmOWNmMjgyYjc5NTdkNGI4ZWJhMDlmYTE1OTJmOTZhZDM4ZWNiNTNkMWQzNmNiNmEyZGE0ZTE2ODEyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InhLRURwdGhaSzQwTlV0WG9nejZOYUE9PSIsInZhbHVlIjoiRkhDQXNUMC9rTWFpWHFhVGFReW96djlDOVVaYTRMSHZJamw3enFmZ2x6WFBkSFZkZlhSQm5mQzhvM0dNTmRhMkQyTDRKNXM2WDc3VVQzSDlBQ2JaZ1ZMY0dJUDZtblUwUzRJV2VMeHlRNjhBNlZSRCtMK2xreTM5ejQ1ZHAzSG8iLCJtYWMiOiI4NTczZThhYzJkOGFmNTZlZjQ3NzhlOGYyYTRlN2QxOWIwMmE5MmJhMjBlYjZhMDBkMmNkODljMzZhOTI2NmFlIiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center&Cookie=XSRF-TOKEN=eyJpdiI6ImFPYzIzYU9FNUZHTGNuOEdWbTRZRnc9PSIsInZhbHVlIjoiRXh6aUxNS1ZXZ1hEOTdoeW84OE5hZGJtOEd5bGVZTEQvbU9pb0RvbGJ4RHJyM1ZEcHN5SDk5V25Wb1N4T0FuS1N3TkhUb3VCbytsa3llRkhyRHYyZTRGbStyTDNGeG5ncUFqamhhREZ5emYwYVRiWkJva00rUjUvSXV3U2JtNkkiLCJtYWMiOiI3M2MyZDNmOWNmMjgyYjc5NTdkNGI4ZWJhMDlmYTE1OTJmOTZhZDM4ZWNiNTNkMWQzNmNiNmEyZGE0ZTE2ODEyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InhLRURwdGhaSzQwTlV0WG9nejZOYUE9PSIsInZhbHVlIjoiRkhDQXNUMC9rTWFpWHFhVGFReW96djlDOVVaYTRMSHZJamw3enFmZ2x6WFBkSFZkZlhSQm5mQzhvM0dNTmRhMkQyTDRKNXM2WDc3VVQzSDlBQ2JaZ1ZMY0dJUDZtblUwUzRJV2VMeHlRNjhBNlZSRCtMK2xreTM5ejQ1ZHAzSG8iLCJtYWMiOiI4NTczZThhYzJkOGFmNTZlZjQ3NzhlOGYyYTRlN2QxOWIwMmE5MmJhMjBlYjZhMDBkMmNkODljMzZhOTI2NmFlIiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center|Cookie: XSRF-TOKEN=eyJpdiI6ImFPYzIzYU9FNUZHTGNuOEdWbTRZRnc9PSIsInZhbHVlIjoiRXh6aUxNS1ZXZ1hEOTdoeW84OE5hZGJtOEd5bGVZTEQvbU9pb0RvbGJ4RHJyM1ZEcHN5SDk5V25Wb1N4T0FuS1N3TkhUb3VCbytsa3llRkhyRHYyZTRGbStyTDNGeG5ncUFqamhhREZ5emYwYVRiWkJva00rUjUvSXV3U2JtNkkiLCJtYWMiOiI3M2MyZDNmOWNmMjgyYjc5NTdkNGI4ZWJhMDlmYTE1OTJmOTZhZDM4ZWNiNTNkMWQzNmNiNmEyZGE0ZTE2ODEyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InhLRURwdGhaSzQwTlV0WG9nejZOYUE9PSIsInZhbHVlIjoiRkhDQXNUMC9rTWFpWHFhVGFReW96djlDOVVaYTRMSHZJamw3enFmZ2x6WFBkSFZkZlhSQm5mQzhvM0dNTmRhMkQyTDRKNXM2WDc3VVQzSDlBQ2JaZ1ZMY0dJUDZtblUwUzRJV2VMeHlRNjhBNlZSRCtMK2xreTM5ejQ1ZHAzSG8iLCJtYWMiOiI4NTczZThhYzJkOGFmNTZlZjQ3NzhlOGYyYTRlN2QxOWIwMmE5MmJhMjBlYjZhMDBkMmNkODljMzZhOTI2NmFlIiwidGFnIjoiIn0%3D
-https://edgestream3.pro/hls/eJmauBDCIf.m3u8?st=vkoy_B9m5fLywDQ2UWPB2bYNIErAvNAev5Wrq1i1OF8&e=1790899492
-
-#EXTINF:-1 tvg-name="Wales vs Norway | LIVE | 02/10/2026 [Nonstopservice]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Wales vs Norway | LIVE | 02/10/2026 [Nonstopservice]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
-https://edgestream4.pro/hls/eJmauBDCIf.m3u8?st=HiJ2stBKx-vJyqbAKOY51mL2SmvwuXicnEOqWAe8QlI&e=1790899517
-
-#EXTINF:-1 tvg-name="Wales vs Norway | LIVE | 02/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Wales vs Norway | LIVE | 02/10/2026 [Wildgames]
-#EXTVLCOPT:http-referrer=https://streame.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://streame.center
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
-https://edgestream7.pro/hls/eJmauBDCIf.m3u8?st=wlve9jmXFZx3lYf-pDS9knhNeR9_9yCVLoNlLcL_kWY&e=1790899606
-
-#EXTINF:-1 tvg-name="[NHL Hockey] Nashville Predators vs Minnesota Wild (FAWA)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" tvg-id="Ice.Hockey.Dummy.us" group-title="NHL Hockey",[NHL Hockey] Nashville Predators vs Minnesota Wild (FAWA)
+#EXTINF:-1 tvg-name="Cleveland Browns vs Pittsburgh Steelers 2 [FAWA]" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" tvg-id="Football.Dummy.us" group-title="NFL American Football",Cleveland Browns vs Pittsburgh Steelers 2 [FAWA]
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: http://www.fawanews.sc/
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Flive.kinescopecdn.net%2Fon-air%2F5bf2c07e-3604-42cf-959a-67ed8914ffd5%2F99e43ad8-6624-4b3d-8680-837923b8cff6%2Fmaster.m3u8&ref=http%3A%2F%2Fwww.fawanews.sc%2F&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+http://193.47.62.59/hls/QRRRQQQQR.m3u8
 
-#EXTINF:-1 tvg-name="[NHL Hockey] New York Rangers vs Tampa Bay Lightning (FAWA)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" tvg-id="Ice.Hockey.Dummy.us" group-title="NHL Hockey",[NHL Hockey] New York Rangers vs Tampa Bay Lightning (FAWA)
+#EXTINF:-1 tvg-name="Cleveland Browns vs Pittsburgh Steelers 1 [FAWA]" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" tvg-id="Football.Dummy.us" group-title="NFL American Football",Cleveland Browns vs Pittsburgh Steelers 1 [FAWA]
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: http://www.fawanews.sc/
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Flive.kinescopecdn.net%2Fon-air%2F5bf2c07e-3604-42cf-959a-67ed8914ffd5%2F8067f9f8-b666-4aab-ae55-8cf94f90c7f3%2Fmaster.m3u8&ref=http%3A%2F%2Fwww.fawanews.sc%2F&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+http://193.47.62.59/hls/QRRRQQQQ.m3u8
 
-#EXTINF:-1 tvg-name="[NHL Hockey] New Jersey Devils vs Philadelphia Flyers (FAWA)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" tvg-id="Ice.Hockey.Dummy.us" group-title="NHL Hockey",[NHL Hockey] New Jersey Devils vs Philadelphia Flyers (FAWA)
+#EXTINF:-1 tvg-name="Tulsa vs North Texas [FAWA]" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" tvg-id="Football.Dummy.us" group-title="NCAA American Football",Tulsa vs North Texas [FAWA]
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: http://www.fawanews.sc/
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Flive.kinescopecdn.net%2Fon-air%2F5bf2c07e-3604-42cf-959a-67ed8914ffd5%2F0a6d37e1-5fa7-4fc9-88bb-1e78e57f83f2%2Fmaster.m3u8&ref=http%3A%2F%2Fwww.fawanews.sc%2F&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+http://193.47.62.44/hls/USSSSAAA.m3u8
 
-#EXTINF:-1 tvg-name="[NHL Hockey] Columbus Blue Jackets vs Buffalo Sabres (FAWA)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" tvg-id="Ice.Hockey.Dummy.us" group-title="NHL Hockey",[NHL Hockey] Columbus Blue Jackets vs Buffalo Sabres (FAWA)
+#EXTINF:-1 tvg-name="New Mexico State vs Western Kentucky [FAWA]" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" tvg-id="Football.Dummy.us" group-title="NCAA American Football",New Mexico State vs Western Kentucky [FAWA]
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: http://www.fawanews.sc/
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Flive.kinescopecdn.net%2Fon-air%2F5bf2c07e-3604-42cf-959a-67ed8914ffd5%2Fbaeb94a7-3ded-42b7-8e6d-74778eb63da3%2Fmaster.m3u8&ref=http%3A%2F%2Fwww.fawanews.sc%2F&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+http://193.47.62.50/hls/QRRRQ.m3u8
 
-#EXTINF:-1 tvg-name="[CONCACAF Nations League] Dominica vs Guyana (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="CONCACAF Nations League",[CONCACAF Nations League] Dominica vs Guyana (FAWA)
+#EXTINF:-1 tvg-name="Nicaragua vs Costa Rica [FAWA]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="CONCACAF Nations League",Nicaragua vs Costa Rica [FAWA]
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: http://www.fawanews.sc/
-http://193.47.62.55/hls/BBBBAA.m3u8
+http://193.47.62.55/hls/BBBBAAAAAAAQQ.m3u8
 
-#EXTINF:-1 tvg-name="[Colombia Primera B] Envigado vs Orsomarso (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2295.png" tvg-id="Soccer.Dummy.us" group-title="Colombia Primera B",[Colombia Primera B] Envigado vs Orsomarso (FAWA)
+#EXTINF:-1 tvg-name="Inter Bogota vs Once Caldas [FAWA]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Colombia Primera A",Inter Bogota vs Once Caldas [FAWA]
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: http://www.fawanews.sc/
-http://193.47.62.55/hls/BBBBA.m3u8
+http://193.47.62.44/hls/USSSSA.m3u8
 
-#EXTINF:-1 tvg-name="[CONCACAF Nations League] United States Virgin Islands vs Saint Martin (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="CONCACAF Nations League",[CONCACAF Nations League] United States Virgin Islands vs Saint Martin (FAWA)
+#EXTINF:-1 tvg-name="Cayman Islands vs Puerto Rico [FAWA]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="CONCACAF Nations League",Cayman Islands vs Puerto Rico [FAWA]
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: http://www.fawanews.sc/
-http://193.47.62.55/hls/AIIIAAAAA.m3u8
+http://193.47.62.55/hls/QRRR.m3u8
 
-#EXTINF:-1 tvg-name="[CONCACAF Nations League] British Virgin Islands vs Montserrat (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="CONCACAF Nations League",[CONCACAF Nations League] British Virgin Islands vs Montserrat (FAWA)
+#EXTINF:-1 tvg-name="Athletic Club vs Sport Recife [FAWA]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2299.png" tvg-id="Soccer.Dummy.us" group-title="Brazil Serie B",Athletic Club vs Sport Recife [FAWA]
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: http://www.fawanews.sc/
-http://193.47.62.55/hls/AIIIAAAA.m3u8
+http://193.47.62.55/hls/BBBBAAAAAAA.m3u8
 
-#EXTINF:-1 tvg-name="[Golf PGA] Golf PGA Bank of Utah Championship (FAWA)" tvg-logo="https://files.catbox.moe/0u2n4x.png" tvg-id="Golf.Dummy.us" group-title="Golf PGA",[Golf PGA] Golf PGA Bank of Utah Championship (FAWA)
+#EXTINF:-1 tvg-name="Anguilla vs Antigua and Barbuda [FAWA]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="CONCACAF Nations League",Anguilla vs Antigua and Barbuda [FAWA]
+#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: http://www.fawanews.sc/
+http://193.47.62.55/hls/BBBBAAAAAA.m3u8
+
+#EXTINF:-1 tvg-name="Bolivar vs GV San Jose [FAWA]" tvg-logo="https://copadebolivia.com/wp-content/uploads/2025/11/Copa-de-Bolivia.png" tvg-id="Soccer.Dummy.us" group-title="Bolivia Copa",Bolivar vs GV San Jose [FAWA]
+#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: http://www.fawanews.sc/
+http://193.47.62.55/hls/BBBBAAAAA.m3u8
+
+#EXTINF:-1 tvg-name="Olimpia Asuncion vs Sp Luqueno [FAWA]" tvg-logo="https://files.tips.gg/static/image/tournaments/football-copa-paraguay-2026.png" tvg-id="Soccer.Dummy.us" group-title="Paraguay Copa",Olimpia Asuncion vs Sp Luqueno [FAWA]
+#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: http://www.fawanews.sc/
+http://193.47.62.55/hls/BBBBAAAA.m3u8
+
+#EXTINF:-1 tvg-name="Golf PGA Bank of Utah Championship [FAWA]" tvg-logo="https://files.catbox.moe/0u2n4x.png" tvg-id="Golf.Dummy.us" group-title="Golf PGA",Golf PGA Bank of Utah Championship [FAWA]
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: http://www.fawanews.sc/
 http://193.47.62.41/hls/zfffAA.m3u8
 
-#EXTINF:-1 tvg-name="[UEFA Nations League] Dinamarca vs Portugal 1 (PLIBRE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="UEFA Nations League",[UEFA Nations League] Dinamarca vs Portugal 1 (PLIBRE)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espn&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espn
-https://y2fzdgxl.fubo18.com:443/espn/mono.m3u8?token=71eec82c8d9896d88a41006bd1b491a39b36016a-8a-1790906281-1790888281
-
-#EXTINF:-1 tvg-name="[UEFA Nations League] Dinamarca vs Portugal 3 (PLIBRE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="UEFA Nations League",[UEFA Nations League] Dinamarca vs Portugal 3 (PLIBRE)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=sportv
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=sportv&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=sportv
-https://Ym9yZQ.fubo18.com:443/sportv/mono.m3u8?token=274d7aa20e4249e9339b053beaeb66e4e028fa60-49-1790906282-1790888282
-
-#EXTINF:-1 tvg-name="[UEFA Nations League] Grecia vs Países Bajos 2 (PLIBRE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="UEFA Nations League",[UEFA Nations League] Grecia vs Países Bajos 2 (PLIBRE)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=disney9
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=disney9&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=disney9
-https://YXdlc29tZQ.fubo18.com:443/disney9/mono.m3u8?token=b169b0139281423a503a838cf5ea33f2b41ed456-a8-1790906282-1790888282
-
-#EXTINF:-1 tvg-name="[UEFA Nations League] Grecia vs Países Bajos 3 (PLIBRE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="UEFA Nations League",[UEFA Nations League] Grecia vs Países Bajos 3 (PLIBRE)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
-https://bmf0aw9u.fubo18.com:443/foxsoccerplus/mono.m3u8?token=0ef1201e554b61ed3cc9b05ba020e8d332887ece-81-1790906282-1790888282
-
-#EXTINF:-1 tvg-name="[UEFA Nations League] Gales vs Noruega 2 (PLIBRE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="UEFA Nations League",[UEFA Nations League] Gales vs Noruega 2 (PLIBRE)
+#EXTINF:-1 tvg-name="República Dominicana vs Haití 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",República Dominicana vs Haití 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-https://b2ZmaWNpYWw.fubo18.com:443/foxsports2_usa/mono.m3u8?token=20cf7d41e1f6aafb9da79049061e339060a8db65-17-1790906282-1790888282
+https://eWVz.fubo18.com:443/foxsports2_usa/mono.m3u8?token=85670a9e00c3a5181b4c480fb8b0326088b9180b-2e-1790916222-1790898222
 
-#EXTINF:-1 tvg-name="[Torneo de Reserva] Vélez Sársfield vs Argentinos Juniors 1 (PLIBRE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Torneo de Reserva",[Torneo de Reserva] Vélez Sársfield vs Argentinos Juniors 1 (PLIBRE)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn4
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espn4&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espn4
-https://bmf0aw9u.fubo18.com:443/espn4/mono.m3u8?token=dc22c8910b79f571bdc3e58bd6f2d825f18cad7e-a0-1790906282-1790888282
-
-#EXTINF:-1 tvg-name="[UEFA Women's Champions League] PSG vs OH Leuven 1 (PLIBRE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="UEFA Women's Champions League",[UEFA Women's Champions League] PSG vs OH Leuven 1 (PLIBRE)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=disney11
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=disney11&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=disney11
-https://YXdlc29tZQ.fubo18.com:443/disney11/mono.m3u8?token=060ba7744ebc2126690b3f2bc409df573750c666-f0-1790906283-1790888283
-
-#EXTINF:-1 tvg-name="[UEFA Women's Champions League] Manchester City vs Real Madrid 2 (PLIBRE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="UEFA Women's Champions League",[UEFA Women's Champions League] Manchester City vs Real Madrid 2 (PLIBRE)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=disney12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=disney12&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=disney12
-https://Ym9yZQ.fubo18.com:443/disney12/mono.m3u8?token=7ffbd5fc14c2de068b56ae0823598fc85743749a-b6-1790906283-1790888283
-
-#EXTINF:-1 tvg-name="[UEFA Women's Champions League] Manchester City vs Real Madrid 3 (PLIBRE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="UEFA Women's Champions League",[UEFA Women's Champions League] Manchester City vs Real Madrid 3 (PLIBRE)
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espndeportes
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espndeportes&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espndeportes
-https://bgvnzw5k.fubo18.com:443/espndeportes/mono.m3u8?token=8bc9f139bd3b59fa2de03acffbac83fb20d7c291-f2-1790906283-1790888283
-
-#EXTINF:-1 tvg-name="[Liga de Naciones de la CONCACAF] Dominica vs Guyana 1 (PLIBRE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",[Liga de Naciones de la CONCACAF] Dominica vs Guyana 1 (PLIBRE)
+#EXTINF:-1 tvg-name="Dominica vs Guyana 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",Dominica vs Guyana 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
-https://c2f2zq.fubo18.com:443/foxsoccerplus/mono.m3u8?token=2d1d46f6afa0ed10373955cad8752c6003fb041a-b8-1790906283-1790888283
+https://c2f2zq.fubo18.com:443/foxsoccerplus/mono.m3u8?token=7d0f584a3fd268439a63fc03b195bf635cb1cacf-d5-1790916222-1790898222
 
-#EXTINF:-1 tvg-name="[Liga de Naciones de la CONCACAF] Curazao vs Trinidad y Tobago 1 (PLIBRE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",[Liga de Naciones de la CONCACAF] Curazao vs Trinidad y Tobago 1 (PLIBRE)
+#EXTINF:-1 tvg-name="Curazao vs Trinidad y Tobago 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",Curazao vs Trinidad y Tobago 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-https://y2fzdgxl.fubo18.com:443/foxsports2_usa/mono.m3u8?token=195b09c8d4f9c62b2e8622d5c0cb556390b37607-be-1790906283-1790888283
+https://Ym9yZQ.fubo18.com:443/foxsports2_usa/mono.m3u8?token=c489f6745ac75ef0a8b484698bcca584cf155ff3-77-1790916222-1790898222
 
-#EXTINF:-1 tvg-name="[Liga de Naciones de la CONCACAF] Islas Caimán vs Puerto Rico 1 (PLIBRE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",[Liga de Naciones de la CONCACAF] Islas Caimán vs Puerto Rico 1 (PLIBRE)
+#EXTINF:-1 tvg-name="Islas Caimán vs Puerto Rico 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",Islas Caimán vs Puerto Rico 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
-https://am91cm5leQ.fubo18.com:443/foxsoccerplus/mono.m3u8?token=88b4055f09d430c060a0297463cf480fdd4e0e75-39-1790906284-1790888284
+https://eWVz.fubo18.com:443/foxsoccerplus/mono.m3u8?token=6d5b6bda4e47fcd8f1ff557098cc3e56c2964f9a-39-1790916222-1790898222
 
-#EXTINF:-1 tvg-name="[Liga de Naciones de la CONCACAF] Nicaragua vs Costa Rica 1 (PLIBRE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",[Liga de Naciones de la CONCACAF] Nicaragua vs Costa Rica 1 (PLIBRE)
+#EXTINF:-1 tvg-name="Nicaragua vs Costa Rica 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",Nicaragua vs Costa Rica 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-https://bmf0aw9u.fubo18.com:443/foxsports2_usa/mono.m3u8?token=d55b4c065572b7f452a1d8bf6803c1601bffb833-55-1790906284-1790888284
+https://c2f2zq.fubo18.com:443/foxsports2_usa/mono.m3u8?token=9516bf0c1b37caf66aefade387cb1d7cb224860a-48-1790916222-1790898222
 
-#EXTINF:-1 tvg-name="[Primera A] Inter Bogotá vs Once Caldas 1 (PLIBRE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Primera A",[Primera A] Inter Bogotá vs Once Caldas 1 (PLIBRE)
+#EXTINF:-1 tvg-name="Inter Bogotá vs Once Caldas 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Primera A",Inter Bogotá vs Once Caldas 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=winplus
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=winplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=winplus
-https://a2lja3m.fubo18.com:443/winplus/mono.m3u8?token=3fb8689cdfb2f9a32631877c4af88cd228604f01-6b-1790906284-1790888284
+https://bmf0aw9u.fubo18.com:443/winplus/mono.m3u8?token=32dbdf0784c781fc52b5a31b9d891f69377314c8-4f-1790916223-1790898223
 
-#EXTINF:-1 tvg-name="[Primera A] Inter Bogotá vs Once Caldas 2 (PLIBRE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Primera A",[Primera A] Inter Bogotá vs Once Caldas 2 (PLIBRE)
+#EXTINF:-1 tvg-name="Inter Bogotá vs Once Caldas 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Primera A",Inter Bogotá vs Once Caldas 2 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=winsportsplus
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=winsportsplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=winsportsplus
-https://dglvz29s.fubo18.com:443/winsportsplus/mono.m3u8?token=99e8d2de2a240526c6d1f86aa360788869784ba6-54-1790906284-1790888284
-
-#EXTINF:-1 tvg-name="[UEFA NATIONS] Norway vs Wales | English (STRMGATE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="UEFA NATIONS",[UEFA NATIONS] Norway vs Wales | English (STRMGATE)
-#EXTVLCOPT:http-referrer=https://instream.click/livetv.php?stream=tv401861100
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://instream.click/livetv.php?stream=tv401861100&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://instream.click/livetv.php?stream=tv401861100
-https://instreams.pro/live/tv401861100/index.m3u8?st=Zz_lLFWdiDK10pfK_JxvVQ&e=1790899987
-
-#EXTINF:-1 tvg-name="[UEFA WCHAMPIONS] Real Madrid vs Manchester City | English (STRMGATE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="UEFA WCHAMPIONS",[UEFA WCHAMPIONS] Real Madrid vs Manchester City | English (STRMGATE)
-#EXTVLCOPT:http-referrer=https://instream.click/livetv.php?stream=tv401917002
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://instream.click/livetv.php?stream=tv401917002&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://instream.click/livetv.php?stream=tv401917002
-https://instreams.pro/live/tv401917002/index.m3u8?st=rEWS6s06Hj4v8VL_Z1d6QQ&e=1790899987
-
-#EXTINF:-1 tvg-name="[UEFA WCHAMPIONS] OH Leuven vs Paris Saint-Germain | English (STRMGATE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="UEFA WCHAMPIONS",[UEFA WCHAMPIONS] OH Leuven vs Paris Saint-Germain | English (STRMGATE)
-#EXTVLCOPT:http-referrer=https://instream.click/livetv.php?stream=tv401917001
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://instream.click/livetv.php?stream=tv401917001&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://instream.click/livetv.php?stream=tv401917001
-https://instreams.pro/live/tv401917001/index.m3u8?st=OgtOjPV0a0Ue7ffHEVmfuw&e=1790899988
-
-#EXTINF:-1 tvg-name="[NFL] NFL Network (DAMITV)" tvg-logo="https://static.ppvservices.st/assets/thumb/5ed7ea60fe8e3842203b0741187f0fd7-thumbnail.jpg" tvg-id="NFL.Dummy.us" group-title="NFL",[NFL] NFL Network (DAMITV)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl-network
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://ondemand.st/embed/?id=nfl-network&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://ondemand.st/embed/?id=nfl-network
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=QMs1zjJsQje-JMkmISQoGA&e=1790932381
-
-#EXTINF:-1 tvg-name="[Golf] Sky Sports Golf (DAMITV)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" tvg-id="Golf.Dummy.us" group-title="Golf",[Golf] Sky Sports Golf (DAMITV)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sky-sports-golf-29059
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://ondemand.st/embed/?id=sky-sports-golf-29059&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://ondemand.st/embed/?id=sky-sports-golf-29059
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=QMs1zjJsQje-JMkmISQoGA&e=1790932381
-
-#EXTINF:-1 tvg-name="[Formula 1] Formula 1 2026 - Bahrain GP (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" tvg-id="Racing.Dummy.us" group-title="Formula 1",[Formula 1] Formula 1 2026 - Bahrain GP (iSTRMEAST)
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57392?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57392?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57392?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57392%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57392%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="[Hockey] Buffalo Sabres vs. Columbus Blue Jackets | English (STRMCNTR)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" tvg-id="Ice.Hockey.Dummy.us" group-title="Hockey",[Hockey] Buffalo Sabres vs. Columbus Blue Jackets | English (STRMCNTR)
-#EXTVLCOPT:http-referrer=https://streame.center
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://streame.center
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fedgestream2.pro%2Fhls%2Fuyopzarf50.m3u8&ref=https%3A%2F%2Fstreame.center&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="[Hockey] Tampa Bay Lightning vs. New York Rangers | English (STRMCNTR)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" tvg-id="Ice.Hockey.Dummy.us" group-title="Hockey",[Hockey] Tampa Bay Lightning vs. New York Rangers | English (STRMCNTR)
-#EXTVLCOPT:http-referrer=https://streame.center
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://streame.center
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fedgestream2.pro%2Fhls%2Flmdsjkfgv52.m3u8&ref=https%3A%2F%2Fstreame.center&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="[NFL] Cleveland Browns vs Pittsburgh Steelers (OVO)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" tvg-id="NFL.Dummy.us" group-title="NFL",[NFL] Cleveland Browns vs Pittsburgh Steelers (OVO)
-#EXTVLCOPT:http-referrer=https://otaghera.site/updatesnfl/cleveland-browns-vs-pittsburgh-steelers/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://otaghera.site/updatesnfl/cleveland-browns-vs-pittsburgh-steelers/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://otaghera.site/updatesnfl/cleveland-browns-vs-pittsburgh-steelers/
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Ffingersoon.st%2Fscripts%2Fapplication1&ref=https%3A%2F%2Fotaghera.site%2Fupdatesnfl%2Fcleveland-browns-vs-pittsburgh-steelers%2F&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+https://bgvnzw5k.fubo18.com:443/winsportsplus/mono.m3u8?token=b2142d3f48b8cb5dd4303b7f48242d398a1bdfaf-a3-1790916223-1790898223
