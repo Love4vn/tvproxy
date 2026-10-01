@@ -508,22 +508,35 @@ async def main():
             log.info("\n[SCRAPERS] running all scrapers...")
             all_ev = await run_all_scrapers(browser=browser)
             log.info(f"[SCRAPERS] total {len(all_ev)} raw events")
-            if ONLY_TENNIS:
-                all_ev = filter_tennis(all_ev)
+            # ── Import SportFilter
+            from scrapers_all import SportFilter
+
+            # Parse key: "[SPORT] NAME (TAG)"
+            KEY_RE = re.compile(r"^\[(.*?)\]\s+(.*?)\s+\((\w+)\)$")
 
             # Verify + normalize
             page = await browser.new_page()
             api_ctx = page.context.request
+            filtered = 0
             for key, ev in all_ev.items():
+                m = KEY_RE.match(key)
+                if not m:
+                    continue
+                sport, name, tag = m.group(1).strip(), m.group(2).strip(), m.group(3)
+
+                # Lọc môn
+                if not SportFilter.is_allowed(sport, name):
+                    filtered += 1
+                    continue
+
                 src = ev.get("source")
                 if not src:
                     continue
+
                 ref = ev.get("refer") or BASE_URL
-                sport = "Soccer"
-                m = re.match(r"\[(.*?)\]", key)
-                if m:
-                    sport = m.group(1)
-                title = key
+                event_ts = ev.get("event_ts")
+                time_str = format_vn_time(int(event_ts) if event_ts else 0)
+
                 # Verify
                 if VERIFY_LINKS:
                     ok, reason, method = await verify_one(
@@ -536,6 +549,12 @@ async def main():
                 else:
                     method = "proxy" if should_proxy(src) else "direct"
 
+                # Format title: "NAME | HH:MM | DD/MM/YYYY [TAG]"
+                if time_str:
+                    title = f"{name} | {time_str} [{tag}]"
+                else:
+                    title = f"{name} [{tag}]"
+
                 entries.append({
                     "title":   title,
                     "url":     src,
@@ -547,6 +566,7 @@ async def main():
                     "logo":    ev.get("logo"),
                     "tvg-id":  ev.get("tvg-id"),
                 })
+            log.info(f"[SCRAPERS] filtered out {filtered} non-soccer/tennis events")
             await page.close()
 
     # Dedupe by URL
