@@ -1,6 +1,11 @@
-camoufox>=0.4.0
-flask>=3.0.0
-requests>=2.31.0
+#camoufox>=0.4.0
+#flask>=3.0.0
+#requests>=2.31.0
+camoufox
+playwright          # camoufox dùng Playwright API
+httpx[http2]
+selectolax
+pycryptodome
 #flask
 #requests
 #gunicorn[gevent]
