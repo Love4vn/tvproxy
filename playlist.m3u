@@ -1,12 +1,4 @@
 #EXTM3U
 # playlist : soccersurge live (verified, portable links only)
-# generated: 2026-10-01 01:32 UTC
-# streams  : 1
-
-#EXTINF:-1 tvg-name="Argentina vs Bolivia | LIVE | 01/10/2026 [Tnt-usa]" tvg-logo="" group-title="International Friendly",Argentina vs Bolivia | LIVE | 01/10/2026 [Tnt-usa]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.hockey.do/secure_hls.php?path=92c2fffbaf6e3dffc3a5f96b2da55b53%2Findex.m3u8&e=1790819887&sig=iZaigDkhTMnTY0XbrZy_6XmhIFBF6w85R3kgUxH_IEs&v=1790818087-4453
+# generated: 2026-10-01 07:53 UTC
+# streams  : 0
