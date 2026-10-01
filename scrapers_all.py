@@ -141,7 +141,54 @@ class Leagues:
 
 leagues = Leagues()
 
+class SportFilter:
+    """
+    Cho phép lọc event theo sports.json: chỉ Soccer + Tennis.
+    Dùng regex alternation để nhanh, build 1 lần.
+    """
+    _regex: re.Pattern | None = None
 
+    @classmethod
+    def _build(cls) -> re.Pattern | None:
+        data = Leagues._load()
+        if not data:
+            return None
+        keywords: set[str] = set()
+        for key in ("Soccer.Dummy.us", "Tennis.Dummy.us"):
+            for grp in data.get("leagues", {}).get(key, []):
+                for league, meta in grp.items():
+                    keywords.add(league.lower().strip())
+                    for a in meta.get("aliases", []):
+                        a = (a or "").lower().strip()
+                        if a:
+                            keywords.add(a)
+        # Thêm fallback keywords
+        keywords.update({
+            "soccer", "football", "fútbol", "futbol", "futebol",
+            "tennis", "tenis", "atp", "wta",
+            "world cup", "friendly", "amistoso", "friendly match",
+            "champions league", "europa league", "conference league",
+            "nations league", "premier league", "la liga", "serie a",
+            "bundesliga", "ligue 1", "eredivisie", "mls",
+            "copa libertadores", "copa sudamericana",
+            "afc champions", "caf champions", "concacaf",
+            "roland garros", "wimbledon", "us open", "australian open",
+        })
+        # Bỏ keyword quá ngắn (< 4 ký tự) để tránh false positive
+        keywords = {k for k in keywords if len(k) >= 4}
+        if not keywords:
+            return None
+        alts = "|".join(re.escape(k) for k in sorted(keywords, key=len, reverse=True))
+        return re.compile(rf"\b(?:{alts})\b", re.IGNORECASE)
+
+    @classmethod
+    def is_allowed(cls, sport_label: str, name: str = "") -> bool:
+        if cls._regex is None:
+            cls._regex = cls._build()
+        if cls._regex is None:
+            return True    # nếu thiếu sports.json → không lọc (an toàn)
+        text = f"{sport_label or ''} {name or ''}"
+        return bool(cls._regex.search(text))
 # ============================================================
 # NETWORK
 # ============================================================
@@ -197,13 +244,15 @@ network = Network()
 
 def _mk_entry(source: str | None, refer: str, sport: str, name: str,
               logo: str | None = None, tvg_id: str | None = None,
-              link: str | None = None) -> dict:
+              link: str | None = None,
+              event_ts: float | None = None) -> dict:
     tid, lg_logo = leagues.get_tvg_info(sport, name)
     return {
         "source": source,
         "logo": logo or lg_logo,
         "refer": refer,
         "timestamp": Time.rn().timestamp(),
+        "event_ts": event_ts,                       # ← THÊM
         "tvg-id": tvg_id or tid or "Live.Event.us",
         "link": link,
     }
@@ -283,7 +332,11 @@ async def xyzstreams_scrape() -> dict:
             if key in events:
                 continue
             src = await _xyz_process(urljoin(XYZS_BASE, href), 1)
-            events[key] = _mk_entry(src, urljoin(XYZS_BASE, href), sport, name, logo=game.get("bg"))
+            events[key] = _mk_entry(
+                src, urljoin(XYZS_BASE, href), sport, name,
+                logo=game.get("bg"),
+                event_ts=ed.timestamp(),                    # ← THÊM
+            )
         except Exception:
             continue
     XYZS_CACHE.write(events)
@@ -337,7 +390,10 @@ async def fawa_scrape() -> dict:
         if not rr:
             continue
         m = ptrn.search(rr.text)
-        events[key] = _mk_entry(m[2] if m else None, FAWA_BASE, sport, name, link=link)
+        events[key] = _mk_entry(
+            m[2] if m else None, FAWA_BASE, sport, name, link=link,
+            event_ts=None,     # FAWA không cung cấp giờ chính xác
+        )
     FAWA_CACHE.write(events)
     return events
 
@@ -386,7 +442,15 @@ async def pelotalibre_scrape() -> dict:
                 continue
             rr = await network.request(link, headers={"Referer": PLIBRE_BASE})
             m = ptrn.search(rr.text) if rr else None
-            events[key] = _mk_entry(m[1] if m else None, link, sport, name, link=link)
+            ets = ev.get("date") or ev.get("start") or None
+            try:
+                ed = Time.from_iso(ets) if ets else None
+            except Exception:
+                ed = None
+            events[key] = _mk_entry(
+                m[1] if m else None, link, sport, name, link=link,
+                event_ts=ed.timestamp() if ed else None,
+            )
         except Exception:
             continue
     PLIBRE_CACHE.write(events)
@@ -455,7 +519,10 @@ async def streamtp_scrape() -> dict:
             counter[name] += 1
             name = f"{name} {counter[name]}"
             key = f"[{sport}] {name} ({STP_TAG})"
-            events[key] = _mk_entry(src, link, sport, name, link=link)
+            events[key] = _mk_entry(
+                src, link, sport, name, link=link,
+                event_ts=Time.from_str(ev["time"], tz_name="EST").timestamp() if ev.get("time") else None,
+            )
         except Exception:
             continue
     STP_CACHE.write(events)
@@ -515,7 +582,10 @@ async def streamxhd_scrape() -> dict:
                                     src = urlunsplit(sp._replace(query=urlencode(params)))
                                 except Exception:
                                     pass
-                        events[key] = _mk_entry(src, link, sport, f"{name} | {lang}", link=link)
+                        events[key] = _mk_entry(
+                            src, link, sport, f"{name} | {lang}", link=link,
+                            event_ts=ed.timestamp(),
+                        )
                 except Exception:
                     continue
     SXHD_CACHE.write(events)
@@ -593,8 +663,11 @@ async def streamfree_scrape() -> dict:
                 continue
             info = json.loads(m[1])[q]
             src = urljoin(SFREE_BASE, f"live-{server_name}/{sk}{q}{n}/index.m3u8?{urlencode(info)}")
-            events[key] = _mk_entry(src, SFREE_BASE, sport, name,
-                                    logo=s.get("thumbnail_url"), link=SFREE_BASE)
+            events[key] = _mk_entry(
+                src, SFREE_BASE, sport, name,
+                logo=s.get("thumbnail_url"), link=SFREE_BASE,
+                event_ts=ets,
+            )
         except Exception:
             continue
     SFREE_CACHE.write(events)
@@ -674,7 +747,10 @@ async def streamgate_scrape() -> dict:
                 cap = m.group(4) if m.re is m3u_ptrn else m.group(2)
                 m3u = json.loads(f'"{cap}"')
                 if ".live" in m3u: m3u = re.sub(r"\.live\n", ".pro", m3u)
-                events[key] = _mk_entry(m3u, src, sport, f"{name} | {lang}", link=url)
+                events[key] = _mk_entry(
+                    m3u, src, sport, f"{name} | {lang}", link=url,
+                    event_ts=ed.timestamp(),
+                )
         except Exception:
             continue
     SGT_CACHE.write(events)
@@ -738,7 +814,10 @@ async def tvf90_scrape() -> dict:
                 sp = urlsplit(m[1])
                 params = [(k, v) for k, v in parse_qsl(sp.query) if k.lower() != "ip"]
                 src = urlunsplit(sp._replace(query=urlencode(params)))
-            events[key] = _mk_entry(src, real, sport, f"{name} | {label}", link=real)
+            events[key] = _mk_entry(
+                src, real, sport, f"{name} | {label}", link=real,
+                event_ts=None,     # TVF90 không có giờ cụ thể, chỉ có ngày
+            )
     TVF_CACHE.write(events)
     return events
 
@@ -922,8 +1001,11 @@ async def dami_scrape() -> dict:
                         src = data.get("hlsUrl") or data.get("sdUrl")
                 except Exception:
                     pass
-            events[key] = _mk_entry(src, urljoin(DAMI_BASE, f"embed/?id={sid}"), sport, title,
-                                    logo=ev.get("poster"))
+            events[key] = _mk_entry(
+                src, urljoin(DAMI_BASE, f"embed/?id={sid}"), sport, title,
+                logo=ev.get("poster"),
+                event_ts=ed.timestamp(),
+            )
         except Exception:
             continue
     DAMI_CACHE.write(events)
@@ -994,7 +1076,10 @@ async def flyembed_scrape() -> dict:
                             mm = m3u_ptrn.search(js)
                             if mm:
                                 src = json.loads(f'"{mm[2]}"')
-            events[key] = _mk_entry(src, link, sport, name, link=link)
+            events[key] = _mk_entry(
+                src, link, sport, name, link=link,
+                event_ts=ed.timestamp(),
+            )
         except Exception:
             continue
     FLY_CACHE.write(events)
