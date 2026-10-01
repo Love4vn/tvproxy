@@ -23,7 +23,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 60          # ← 40 → 60
 
     steps:
       - name: Checkout
@@ -37,7 +37,6 @@ jobs:
           python-version: '3.11'
           cache: pip
 
-      # xvfb = display ảo, để camoufox chạy "headful" => khó bị Cloudflare phát hiện
       - name: Install system deps
         run: |
           sudo apt-get update
@@ -58,6 +57,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # Kiểm tra file cần thiết — fail sớm nếu thiếu
+      - name: Verify project files
+        run: |
+          for f in generate_playlist.py scrapers_all.py sports.json requirements.txt; do
+            if [ ! -f "$f" ]; then echo "❌ Missing: $f"; exit 1; fi
+          done
+          echo "✅ All required files present"
+
       - name: Cache camoufox browser (~300 MB)
         uses: actions/cache@v4
         with:
@@ -71,14 +78,19 @@ jobs:
 
       - name: Generate playlist
         env:
-          MAX_GAMES: "0"           # 0 = chạy hết
-          MAX_SITES: "15"           # top 5 site tốt nhất
+          MAX_GAMES: "0"
+          MAX_SITES: "15"
           WAIT_PLAYER: "10"
           IFRAME_DEPTH: "3"
           VERIFY_TIME: "12"
           OUTPUT: playlist.m3u
           PROXY_URL: https://sportsurge-proxy.love4vn.workers.dev
           VERIFY_LINKS: "1"
+
+          # ── Điều khiển orchestrator mới ──
+          USE_SOCCERSURGE: "1"       # tắt nếu chỉ muốn scrapers (nhanh hơn)
+          USE_SCRAPERS:    "1"       # tắt nếu chỉ muốn SoccerSurge
+          ONLY_TENNIS:     "0"       # 1 = chỉ lấy tennis
         run: |
           xvfb-run -a --server-args="-screen 0 1280x800x24" \
             python generate_playlist.py
@@ -94,7 +106,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .
+          git add playlist.m3u            # ← chỉ add file output, không add lung tung
 
           if git diff --cached --quiet; then
             echo "⏭️ Không có thay đổi."
