@@ -141,54 +141,63 @@ class Leagues:
 
 leagues = Leagues()
 
+# ============================================================
+# SPORT FILTER — blacklist mọi môn KHÔNG phải soccer/tennis
+# ============================================================
+BLOCKED_SPORTS_RE = re.compile(
+    r"\b("
+    # American Football / NFL / NCAA
+    r"american\s*football|nfl|ncaa|ncaab|ncaaf|"
+    r"afl|aussie\s*rules|"
+    # Golf
+    r"golf|lpga|pga|"
+    # Snooker / Billiards
+    r"snooker|billiards|"
+    # Basketball
+    r"basketball|nba|wnba|nbl|euroleague|fiba|big3|"
+    # Baseball
+    r"baseball|mlb|milb|"
+    # Hockey
+    r"hockey|nhl|"
+    # Motorsports
+    r"world\s*rally|formula\s*[123e]|\bf1\b|\bf2\b|\bf3\b|"
+    r"motogp|nascar|motorsport|rally|"
+    # Volleyball
+    r"volleyball|"
+    # Rugby
+    r"rugby|nrl|"
+    # Cricket
+    r"cricket|"
+    # Darts
+    r"darts|"
+    # Combat
+    r"ufc|mma|boxing|wrestling|aew|wwe|"
+    # Horse Racing
+    r"horse\s*racing|"
+    # Khác
+    r"handball|badminton|esports?|"
+    r"skiing|surfing|sailing|archery"
+    r")\b",
+    re.IGNORECASE,
+)
+
+
 class SportFilter:
     """
-    Cho phép lọc event theo sports.json: chỉ Soccer + Tennis.
-    Dùng regex alternation để nhanh, build 1 lần.
+    Chỉ cho qua soccer + tennis.
+    Dùng blacklist vì tên giải soccer rất đa dạng
+    (CONCACAF Nations League, MLS League, Bolivia Copa…).
     """
-    _regex: re.Pattern | None = None
-
-    @classmethod
-    def _build(cls) -> re.Pattern | None:
-        data = Leagues._load()
-        if not data:
-            return None
-        keywords: set[str] = set()
-        for key in ("Soccer.Dummy.us", "Tennis.Dummy.us"):
-            for grp in data.get("leagues", {}).get(key, []):
-                for league, meta in grp.items():
-                    keywords.add(league.lower().strip())
-                    for a in meta.get("aliases", []):
-                        a = (a or "").lower().strip()
-                        if a:
-                            keywords.add(a)
-        # Thêm fallback keywords
-        keywords.update({
-            "soccer", "football", "fútbol", "futbol", "futebol",
-            "tennis", "tenis", "atp", "wta",
-            "world cup", "friendly", "amistoso", "friendly match",
-            "champions league", "europa league", "conference league",
-            "nations league", "premier league", "la liga", "serie a",
-            "bundesliga", "ligue 1", "eredivisie", "mls",
-            "copa libertadores", "copa sudamericana",
-            "afc champions", "caf champions", "concacaf",
-            "roland garros", "wimbledon", "us open", "australian open",
-        })
-        # Bỏ keyword quá ngắn (< 4 ký tự) để tránh false positive
-        keywords = {k for k in keywords if len(k) >= 4}
-        if not keywords:
-            return None
-        alts = "|".join(re.escape(k) for k in sorted(keywords, key=len, reverse=True))
-        return re.compile(rf"\b(?:{alts})\b", re.IGNORECASE)
 
     @classmethod
     def is_allowed(cls, sport_label: str, name: str = "") -> bool:
-        if cls._regex is None:
-            cls._regex = cls._build()
-        if cls._regex is None:
-            return True    # nếu thiếu sports.json → không lọc (an toàn)
-        text = f"{sport_label or ''} {name or ''}"
-        return bool(cls._regex.search(text))
+        text = f"{sport_label or ''} {name or ''}".strip()
+        if not text:
+            return False
+        # Nếu khớp blacklist → chặn
+        if BLOCKED_SPORTS_RE.search(text):
+            return False
+        return True
 # ============================================================
 # NETWORK
 # ============================================================
