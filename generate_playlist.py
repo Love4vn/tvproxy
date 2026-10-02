@@ -537,23 +537,22 @@ async def main():
                 event_ts = ev.get("event_ts")
                 time_str = format_vn_time(int(event_ts) if event_ts else 0)
 
-                # Verify
+                # Format title TRƯỚC khi verify để log và M3U luôn khớp
+                if time_str:
+                    title = f"{name} | {time_str} [{tag}]"
+                else:
+                    title = f"{name} [{tag}]"
+
                 if VERIFY_LINKS:
                     ok, reason, method = await verify_one(
                         api_ctx, src, {"referer": ref, "user-agent": DEFAULT_UA}, ""
                     )
                     if not ok:
-                        log.info(f"  ❌ {key[:60]}: {reason}")
-                        continue
-                    log.info(f"  ✅ {key[:60]}: {reason}")
+                        log.info(f"  ❌ {title[:70]} → {reason}")
+                    continue
+                        log.info(f"  ✅ {title[:70]}")
                 else:
                     method = "proxy" if should_proxy(src) else "direct"
-
-                # Format title: "NAME | HH:MM | DD/MM/YYYY [TAG]"
-                if time_str:
-                    title = f"{name} | {time_str} [{tag}]"
-                else:
-                    title = f"{name} [{tag}]"
 
                 entries.append({
                     "title":   title,
