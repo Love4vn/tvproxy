@@ -1,14 +1,73 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-02 00:08 UTC
-# streams  : 24
+# generated: 2026-10-02 06:41 UTC
+# streams  : 16
 
-#EXTINF:-1 tvg-name="Pittsburgh Steelers vs Cleveland Browns | 07:15 | 02/10/2026 [XYZ]" tvg-logo="https://images.fancy-shark151.workers.dev/?logo1=https://a.espncdn.com/i/teamlogos/nfl/500/pit.png&logo2=https://a.espncdn.com/i/teamlogos/nfl/500/cle.png&logo3=https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png&color1=FFB612&color2=311D00&q=65&w=100" tvg-id="Soccer.Dummy.us" group-title="Football",Pittsburgh Steelers vs Cleveland Browns | 07:15 | 02/10/2026 [XYZ]
-#EXTVLCOPT:http-referrer=https://xyzstreams.st/nfl-1.html
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xyzstreams.st/nfl-1.html&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xyzstreams.st/nfl-1.html
-https://hlss2.b-cdn.net/tnf/mono.ts.m3u8?token=ee0b36cac7a27b36d99c3f8e96cf92a3
+#EXTINF:-1 tvg-name="Kazakhstan vs Moldova | 21:00 | 02/10/2026 [Resports]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Kazakhstan vs Moldova | 21:00 | 02/10/2026 [Resports]
+#EXTVLCOPT:http-referrer=https://streame.center/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
+#EXTVLCOPT:http-origin=https://streame.center
+#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6IjN1ZEZlTTBjTDBQR3RUa1Z4YU5zbGc9PSIsInZhbHVlIjoiNFcwZ2JRV0lqbUhOZ096VWh3NWcwYThiaDRZVlBPcUd5ckoyeDQ3U3REcGVWTUh2dVZtQ0hyWDlQamJnY0s1N2czamtCSHZQSXVabTlNcjlKeDBOS01LYUxzd2xBRzk3a042THpVVSt3OG9HS2tKZERwb3ZJbDFrZjJOck5wSUgiLCJtYWMiOiI3NzljMjkwZmQ2ZjQwY2JjZDg1MzJkNjg1OTAwZjE5NmEyMTUwY2UzMTMwYjgxNWVkNDg1MjAyZGVlZmI0NzQxIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlJrczdZdm5ZS05hME1yK2JkYkZkcHc9PSIsInZhbHVlIjoiaGVZQUk0aEdaQ1BNZUxyME5xM3RTUmc5VU9nQ3pLbU9jUkpGS0gvSE1QWk1HdmIwQ2U4Rkd1WmZ6cC9WV0hjTlpHS0NwVTZkci9HL0lIS1laakpqTnMxajFrTHVWSEJ0OEFEbVZZdFAzdjBiYmh5VC9EV21uQ3EzMmNvWk9xc3AiLCJtYWMiOiIyMjZmZDkxZDg0OWYxNzJkYWU2ZWFlZTY2MDYyMTdkMzM2MjQyY2FjZWViMGY3MjQwN2NjNjA5NmFlMTE0NTdkIiwidGFnIjoiIn0%3D
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center&Cookie=XSRF-TOKEN=eyJpdiI6IjN1ZEZlTTBjTDBQR3RUa1Z4YU5zbGc9PSIsInZhbHVlIjoiNFcwZ2JRV0lqbUhOZ096VWh3NWcwYThiaDRZVlBPcUd5ckoyeDQ3U3REcGVWTUh2dVZtQ0hyWDlQamJnY0s1N2czamtCSHZQSXVabTlNcjlKeDBOS01LYUxzd2xBRzk3a042THpVVSt3OG9HS2tKZERwb3ZJbDFrZjJOck5wSUgiLCJtYWMiOiI3NzljMjkwZmQ2ZjQwY2JjZDg1MzJkNjg1OTAwZjE5NmEyMTUwY2UzMTMwYjgxNWVkNDg1MjAyZGVlZmI0NzQxIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlJrczdZdm5ZS05hME1yK2JkYkZkcHc9PSIsInZhbHVlIjoiaGVZQUk0aEdaQ1BNZUxyME5xM3RTUmc5VU9nQ3pLbU9jUkpGS0gvSE1QWk1HdmIwQ2U4Rkd1WmZ6cC9WV0hjTlpHS0NwVTZkci9HL0lIS1laakpqTnMxajFrTHVWSEJ0OEFEbVZZdFAzdjBiYmh5VC9EV21uQ3EzMmNvWk9xc3AiLCJtYWMiOiIyMjZmZDkxZDg0OWYxNzJkYWU2ZWFlZTY2MDYyMTdkMzM2MjQyY2FjZWViMGY3MjQwN2NjNjA5NmFlMTE0NTdkIiwidGFnIjoiIn0%3D
+#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center|Cookie: XSRF-TOKEN=eyJpdiI6IjN1ZEZlTTBjTDBQR3RUa1Z4YU5zbGc9PSIsInZhbHVlIjoiNFcwZ2JRV0lqbUhOZ096VWh3NWcwYThiaDRZVlBPcUd5ckoyeDQ3U3REcGVWTUh2dVZtQ0hyWDlQamJnY0s1N2czamtCSHZQSXVabTlNcjlKeDBOS01LYUxzd2xBRzk3a042THpVVSt3OG9HS2tKZERwb3ZJbDFrZjJOck5wSUgiLCJtYWMiOiI3NzljMjkwZmQ2ZjQwY2JjZDg1MzJkNjg1OTAwZjE5NmEyMTUwY2UzMTMwYjgxNWVkNDg1MjAyZGVlZmI0NzQxIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlJrczdZdm5ZS05hME1yK2JkYkZkcHc9PSIsInZhbHVlIjoiaGVZQUk0aEdaQ1BNZUxyME5xM3RTUmc5VU9nQ3pLbU9jUkpGS0gvSE1QWk1HdmIwQ2U4Rkd1WmZ6cC9WV0hjTlpHS0NwVTZkci9HL0lIS1laakpqTnMxajFrTHVWSEJ0OEFEbVZZdFAzdjBiYmh5VC9EV21uQ3EzMmNvWk9xc3AiLCJtYWMiOiIyMjZmZDkxZDg0OWYxNzJkYWU2ZWFlZTY2MDYyMTdkMzM2MjQyY2FjZWViMGY3MjQwN2NjNjA5NmFlMTE0NTdkIiwidGFnIjoiIn0%3D
+https://edgestream6.pro/hls/eJmauBDCIf.m3u8?st=PR_opMrJ64eynzUcNQBIFGHJoVrrgXi_tDIi1OyR1OE&e=1790931886
+
+#EXTINF:-1 tvg-name="Kazakhstan vs Moldova | 21:00 | 02/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Kazakhstan vs Moldova | 21:00 | 02/10/2026 [Wildgames]
+#EXTVLCOPT:http-referrer=https://streame.center/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
+#EXTVLCOPT:http-origin=https://streame.center
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
+#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
+https://edgestream6.pro/hls/eJmauBDCIf.m3u8?st=r0AM9J6zL181sreIq9bPWE9lr90XfkEmRqoAwVTWggk&e=1790931933
+
+#EXTINF:-1 tvg-name="Kazakhstan vs Moldova | 21:00 | 02/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Kazakhstan vs Moldova | 21:00 | 02/10/2026 [Buff-streams]
+#EXTVLCOPT:http-referrer=https://streame.center/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
+#EXTVLCOPT:http-origin=https://streame.center
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
+#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
+https://edgestream6.pro/hls/eJmauBDCIf.m3u8?st=-sD4ZDVd3rIgz-6zQ35JCyK4xvQXSOtHD5TzpomqKe0&e=1790931966
+
+#EXTINF:-1 tvg-name="Belgium vs Türkiye | 01:45 | 03/10/2026 [Nonstopservice]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Belgium vs Türkiye | 01:45 | 03/10/2026 [Nonstopservice]
+#EXTVLCOPT:http-referrer=https://streame.center/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
+#EXTVLCOPT:http-origin=https://streame.center
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
+#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
+https://edgestream6.pro/hls/hbfkazbkaznc49.m3u8?st=C1X5x6iVKrw2VTj1EHXp9lalPL3S561ah6T4-LjmIVU&e=1790932513
+
+#EXTINF:-1 tvg-name="France vs Italy | 01:45 | 03/10/2026 [Resports]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",France vs Italy | 01:45 | 03/10/2026 [Resports]
+#EXTVLCOPT:http-referrer=https://streame.center/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
+#EXTVLCOPT:http-origin=https://streame.center
+#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6InNHK3Z2UFBGWVRJUEk0SXh5aTY1bkE9PSIsInZhbHVlIjoiMkNCU1pxcHJ1QnBnajJWZXZLVFlReXp1T2FNaHVRcmlpQ0E5YmpWYjJnY2x6U1lkaVk4RE9rSTFzSVB0elZaV3VFa1JYcTZoOFdVd0FRME9PNW9oM2RtOVVhWGVrbW9lZHo0UGQzSGIzd2ZHREhsQVVrYjVKTU5SRzhreVJsVU4iLCJtYWMiOiI4YWU4OTcwMjlkNmVhN2I4ZDZlNDI2NDRjMzM3MjY3ODFkY2NjMTg0OTc3YTE3ZDY3NmY3YjVmNjdjZDFmZmE4IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImtSc3Q4aEFyWnhEdHhqWmV4eVVRWHc9PSIsInZhbHVlIjoiaktxK0ZqQjJTRURXczBNQ2lyVDB4L2Q1akE1aGE1MmlGb1hZQVZrQ2pramoxMzNOWjV1aTg5UWgvRG9HTmNQUldjY1RYVE4xdC9yZHV6K3BjcHdpNHFSN0hRQnlURTloS2EzdnZPT3lNNW94WFc4NjRNSHcyR2pkS1B6WHlkVnUiLCJtYWMiOiJhNDA1MjExMTM0MzE3YjA5ZTZjZTBkNzgxMzFiNGI0NzY0Mzc2YjA3NjY2YmIxZWFiOTE2MzA1MjFjOWEwYjE0IiwidGFnIjoiIn0%3D
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center&Cookie=XSRF-TOKEN=eyJpdiI6InNHK3Z2UFBGWVRJUEk0SXh5aTY1bkE9PSIsInZhbHVlIjoiMkNCU1pxcHJ1QnBnajJWZXZLVFlReXp1T2FNaHVRcmlpQ0E5YmpWYjJnY2x6U1lkaVk4RE9rSTFzSVB0elZaV3VFa1JYcTZoOFdVd0FRME9PNW9oM2RtOVVhWGVrbW9lZHo0UGQzSGIzd2ZHREhsQVVrYjVKTU5SRzhreVJsVU4iLCJtYWMiOiI4YWU4OTcwMjlkNmVhN2I4ZDZlNDI2NDRjMzM3MjY3ODFkY2NjMTg0OTc3YTE3ZDY3NmY3YjVmNjdjZDFmZmE4IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImtSc3Q4aEFyWnhEdHhqWmV4eVVRWHc9PSIsInZhbHVlIjoiaktxK0ZqQjJTRURXczBNQ2lyVDB4L2Q1akE1aGE1MmlGb1hZQVZrQ2pramoxMzNOWjV1aTg5UWgvRG9HTmNQUldjY1RYVE4xdC9yZHV6K3BjcHdpNHFSN0hRQnlURTloS2EzdnZPT3lNNW94WFc4NjRNSHcyR2pkS1B6WHlkVnUiLCJtYWMiOiJhNDA1MjExMTM0MzE3YjA5ZTZjZTBkNzgxMzFiNGI0NzY0Mzc2YjA3NjY2YmIxZWFiOTE2MzA1MjFjOWEwYjE0IiwidGFnIjoiIn0%3D
+#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center|Cookie: XSRF-TOKEN=eyJpdiI6InNHK3Z2UFBGWVRJUEk0SXh5aTY1bkE9PSIsInZhbHVlIjoiMkNCU1pxcHJ1QnBnajJWZXZLVFlReXp1T2FNaHVRcmlpQ0E5YmpWYjJnY2x6U1lkaVk4RE9rSTFzSVB0elZaV3VFa1JYcTZoOFdVd0FRME9PNW9oM2RtOVVhWGVrbW9lZHo0UGQzSGIzd2ZHREhsQVVrYjVKTU5SRzhreVJsVU4iLCJtYWMiOiI4YWU4OTcwMjlkNmVhN2I4ZDZlNDI2NDRjMzM3MjY3ODFkY2NjMTg0OTc3YTE3ZDY3NmY3YjVmNjdjZDFmZmE4IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImtSc3Q4aEFyWnhEdHhqWmV4eVVRWHc9PSIsInZhbHVlIjoiaktxK0ZqQjJTRURXczBNQ2lyVDB4L2Q1akE1aGE1MmlGb1hZQVZrQ2pramoxMzNOWjV1aTg5UWgvRG9HTmNQUldjY1RYVE4xdC9yZHV6K3BjcHdpNHFSN0hRQnlURTloS2EzdnZPT3lNNW94WFc4NjRNSHcyR2pkS1B6WHlkVnUiLCJtYWMiOiJhNDA1MjExMTM0MzE3YjA5ZTZjZTBkNzgxMzFiNGI0NzY0Mzc2YjA3NjY2YmIxZWFiOTE2MzA1MjFjOWEwYjE0IiwidGFnIjoiIn0%3D
+https://edgestream5.pro/hls/eJmauBDCIf.m3u8?st=mu_gSbFzzKjOATzMfZ2L1ocPuYjt3W7jnR2SOaufAy4&e=1790933010
+
+#EXTINF:-1 tvg-name="France vs Italy | 01:45 | 03/10/2026 [Nonstopservice]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",France vs Italy | 01:45 | 03/10/2026 [Nonstopservice]
+#EXTVLCOPT:http-referrer=https://streame.center/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
+#EXTVLCOPT:http-origin=https://streame.center
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
+#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
+https://edgestream3.pro/hls/hbfkazbkaznc49.m3u8?st=TaNQj2zmIOvQyEJdGD-YwMR8HZv9Ee8yiYxW0zd1JtE&e=1790933054
+
+#EXTINF:-1 tvg-name="France vs Italy | 01:45 | 03/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",France vs Italy | 01:45 | 03/10/2026 [Wildgames]
+#EXTVLCOPT:http-referrer=https://streame.center/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
+#EXTVLCOPT:http-origin=https://streame.center
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
+#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
+https://edgestream4.pro/hls/eJmauBDCIf.m3u8?st=9I2l40jwAxbZOV5Dfjh7zBqNGaLt2vdKUwUhDQ5Cghg&e=1790933087
+
+#EXTINF:-1 tvg-name="France vs Italy | 01:45 | 03/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",France vs Italy | 01:45 | 03/10/2026 [Buff-streams]
+#EXTVLCOPT:http-referrer=https://streame.center/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0
+#EXTVLCOPT:http-origin=https://streame.center
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0&Origin=https://streame.center
+#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
+https://edgestream5.pro/hls/eJmauBDCIf.m3u8?st=6LfXQiQR5oCptQR5gVzuia_aUrmJe1QhT6beGz69O2Y&e=1790933121
 
 #EXTINF:-1 tvg-name="Cleveland Browns vs Pittsburgh Steelers 2 [FAWA]" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" tvg-id="Football.Dummy.us" group-title="NFL American Football",Cleveland Browns vs Pittsburgh Steelers 2 [FAWA]
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
@@ -38,135 +97,30 @@ http://193.47.62.44/hls/USSSSAAA.m3u8
 #EXTHTTP:Referer: http://www.fawanews.sc/
 http://193.47.62.50/hls/QRRRQ.m3u8
 
-#EXTINF:-1 tvg-name="Nicaragua vs Costa Rica [FAWA]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="CONCACAF Nations League",Nicaragua vs Costa Rica [FAWA]
+#EXTINF:-1 tvg-name="Golf LPGA Lotte Championship [FAWA]" tvg-logo="https://files.catbox.moe/0u2n4x.png" tvg-id="Golf.Dummy.us" group-title="Golf LPGA",Golf LPGA Lotte Championship [FAWA]
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: http://www.fawanews.sc/
-http://193.47.62.55/hls/BBBBAAAAAAAQQ.m3u8
+http://193.47.62.44/hls/USSSSAAAAA.m3u8
 
-#EXTINF:-1 tvg-name="Inter Bogota vs Once Caldas [FAWA]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Colombia Primera A",Inter Bogota vs Once Caldas [FAWA]
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: http://www.fawanews.sc/
-http://193.47.62.44/hls/USSSSA.m3u8
-
-#EXTINF:-1 tvg-name="Cayman Islands vs Puerto Rico [FAWA]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="CONCACAF Nations League",Cayman Islands vs Puerto Rico [FAWA]
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: http://www.fawanews.sc/
-http://193.47.62.55/hls/QRRR.m3u8
-
-#EXTINF:-1 tvg-name="Novorizontino vs Goias [FAWA]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2299.png" tvg-id="Soccer.Dummy.us" group-title="Brazil Serie B",Novorizontino vs Goias [FAWA]
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: http://www.fawanews.sc/
-http://193.47.62.55/hls/BBBBAAAAAAAQ.m3u8
-
-#EXTINF:-1 tvg-name="Athletic Club vs Sport Recife [FAWA]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2299.png" tvg-id="Soccer.Dummy.us" group-title="Brazil Serie B",Athletic Club vs Sport Recife [FAWA]
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: http://www.fawanews.sc/
-http://193.47.62.55/hls/BBBBAAAAAAA.m3u8
-
-#EXTINF:-1 tvg-name="Anguilla vs Antigua and Barbuda [FAWA]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="CONCACAF Nations League",Anguilla vs Antigua and Barbuda [FAWA]
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: http://www.fawanews.sc/
-http://193.47.62.55/hls/BBBBAAAAAA.m3u8
-
-#EXTINF:-1 tvg-name="Bolivar vs GV San Jose [FAWA]" tvg-logo="https://copadebolivia.com/wp-content/uploads/2025/11/Copa-de-Bolivia.png" tvg-id="Soccer.Dummy.us" group-title="Bolivia Copa",Bolivar vs GV San Jose [FAWA]
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: http://www.fawanews.sc/
-http://193.47.62.55/hls/BBBBAAAAA.m3u8
-
-#EXTINF:-1 tvg-name="Olimpia Asuncion vs Sp Luqueno [FAWA]" tvg-logo="https://files.tips.gg/static/image/tournaments/football-copa-paraguay-2026.png" tvg-id="Soccer.Dummy.us" group-title="Paraguay Copa",Olimpia Asuncion vs Sp Luqueno [FAWA]
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: http://www.fawanews.sc/
-http://193.47.62.55/hls/BBBBAAAA.m3u8
-
-#EXTINF:-1 tvg-name="Golf PGA Bank of Utah Championship [FAWA]" tvg-logo="https://files.catbox.moe/0u2n4x.png" tvg-id="Golf.Dummy.us" group-title="Golf PGA",Golf PGA Bank of Utah Championship [FAWA]
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: http://www.fawanews.sc/
-http://193.47.62.41/hls/zfffAA.m3u8
-
-#EXTINF:-1 tvg-name="República Dominicana vs Haití 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",República Dominicana vs Haití 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-https://Ym9yZQ.fubo18.com:443/foxsports2_usa/mono.m3u8?token=781c0f7d1721c3e2f6839caf0cfde28f99e38a14-e3-1790916773-1790898773
-
-#EXTINF:-1 tvg-name="Dominica vs Guyana 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",Dominica vs Guyana 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
-https://bmf0aw9u.fubo18.com:443/foxsoccerplus/mono.m3u8?token=632574195baa8720b5f273aa8003c246af9ccc97-9f-1790916773-1790898773
-
-#EXTINF:-1 tvg-name="Curazao vs Trinidad y Tobago 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",Curazao vs Trinidad y Tobago 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-https://eWVz.fubo18.com:443/foxsports2_usa/mono.m3u8?token=476b4e54faaec64fce70005e6f8c3f003aec6ed3-d9-1790916773-1790898773
-
-#EXTINF:-1 tvg-name="Islas Caimán vs Puerto Rico 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",Islas Caimán vs Puerto Rico 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
-https://bgvnzw5k.fubo18.com:443/foxsoccerplus/mono.m3u8?token=4cbacdd647f315c7d7a219add12e116adebe9cbe-16-1790916773-1790898773
-
-#EXTINF:-1 tvg-name="Nicaragua vs Costa Rica 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",Nicaragua vs Costa Rica 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-https://bmf0aw9u.fubo18.com:443/foxsports2_usa/mono.m3u8?token=6d4d94dd197d2a474ae3649fac1526592d97156d-40-1790916773-1790898773
-
-#EXTINF:-1 tvg-name="Inter Bogotá vs Once Caldas 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Primera A",Inter Bogotá vs Once Caldas 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=winplus
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=winplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=winplus
-https://eWVz.fubo18.com:443/winplus/mono.m3u8?token=4a17f812599f14adc10e869b359d3ab417be88ae-59-1790916773-1790898773
-
-#EXTINF:-1 tvg-name="Inter Bogotá vs Once Caldas 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Primera A",Inter Bogotá vs Once Caldas 2 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=winsportsplus
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=winsportsplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=winsportsplus
-https://c2f2zq.fubo18.com:443/winsportsplus/mono.m3u8?token=0f98fd93b10df23406064024f8cd4551bc519c27-9f-1790916774-1790898774
-
-#EXTINF:-1 tvg-name="Western Kentucky Hilltoppers vs. New Mexico State Aggies | English [STRMCNTR]" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" tvg-id="Football.Dummy.us" group-title="American Football",Western Kentucky Hilltoppers vs. New Mexico State Aggies | English [STRMCNTR]
-#EXTVLCOPT:http-referrer=https://streame.center
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://streame.center
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fedgestream2.pro%2Fhls%2Fsfjnzabacah31.m3u8&ref=https%3A%2F%2Fstreame.center&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="Pittsburgh Steelers vs. Cleveland Browns | English [STRMCNTR]" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" tvg-id="Football.Dummy.us" group-title="American Football",Pittsburgh Steelers vs. Cleveland Browns | English [STRMCNTR]
+#EXTINF:-1 tvg-name="Pittsburgh Panthers vs. Virginia Tech Hokies | English [STRMCNTR]" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" tvg-id="Football.Dummy.us" group-title="American Football",Pittsburgh Panthers vs. Virginia Tech Hokies | English [STRMCNTR]
 #EXTVLCOPT:http-referrer=https://streame.center
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://streame.center
 https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fedgestream2.pro%2Fhls%2FJHDAJBDnjdna30.m3u8&ref=https%3A%2F%2Fstreame.center&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
 
-#EXTINF:-1 tvg-name="North Texas Mean Green vs. Tulsa Golden Hurricane | English [STRMCNTR]" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" tvg-id="Football.Dummy.us" group-title="American Football",North Texas Mean Green vs. Tulsa Golden Hurricane | English [STRMCNTR]
+#EXTINF:-1 tvg-name="Liberty Flames vs. Delaware Blue Hens | English [STRMCNTR]" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" tvg-id="Football.Dummy.us" group-title="American Football",Liberty Flames vs. Delaware Blue Hens | English [STRMCNTR]
 #EXTVLCOPT:http-referrer=https://streame.center
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://streame.center
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fedgestream2.pro%2Fhls%2Fqsdnajbq32.m3u8&ref=https%3A%2F%2Fstreame.center&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fedgestream2.pro%2Fhls%2Fsfjnzabacah31.m3u8&ref=https%3A%2F%2Fstreame.center&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-name="Kazakhstan vs. Moldova | English [STRMCNTR]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Football",Kazakhstan vs. Moldova | English [STRMCNTR]
+#EXTVLCOPT:http-referrer=https://streame.center
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://streame.center
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fedgestream2.pro%2Fhls%2FeJmauBDCIf.m3u8&ref=https%3A%2F%2Fstreame.center&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
