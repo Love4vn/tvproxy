@@ -1,7 +1,7 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-01 23:58 UTC
-# streams  : 20
+# generated: 2026-10-02 00:08 UTC
+# streams  : 24
 
 #EXTINF:-1 tvg-name="Pittsburgh Steelers vs Cleveland Browns | 07:15 | 02/10/2026 [XYZ]" tvg-logo="https://images.fancy-shark151.workers.dev/?logo1=https://a.espncdn.com/i/teamlogos/nfl/500/pit.png&logo2=https://a.espncdn.com/i/teamlogos/nfl/500/cle.png&logo3=https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png&color1=FFB612&color2=311D00&q=65&w=100" tvg-id="Soccer.Dummy.us" group-title="Football",Pittsburgh Steelers vs Cleveland Browns | 07:15 | 02/10/2026 [XYZ]
 #EXTVLCOPT:http-referrer=https://xyzstreams.st/nfl-1.html
@@ -59,6 +59,13 @@ http://193.47.62.44/hls/USSSSA.m3u8
 #EXTHTTP:Referer: http://www.fawanews.sc/
 http://193.47.62.55/hls/QRRR.m3u8
 
+#EXTINF:-1 tvg-name="Novorizontino vs Goias [FAWA]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2299.png" tvg-id="Soccer.Dummy.us" group-title="Brazil Serie B",Novorizontino vs Goias [FAWA]
+#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: http://www.fawanews.sc/
+http://193.47.62.55/hls/BBBBAAAAAAAQ.m3u8
+
 #EXTINF:-1 tvg-name="Athletic Club vs Sport Recife [FAWA]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2299.png" tvg-id="Soccer.Dummy.us" group-title="Brazil Serie B",Athletic Club vs Sport Recife [FAWA]
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
@@ -99,46 +106,67 @@ http://193.47.62.41/hls/zfffAA.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-https://eWVz.fubo18.com:443/foxsports2_usa/mono.m3u8?token=85670a9e00c3a5181b4c480fb8b0326088b9180b-2e-1790916222-1790898222
+https://Ym9yZQ.fubo18.com:443/foxsports2_usa/mono.m3u8?token=781c0f7d1721c3e2f6839caf0cfde28f99e38a14-e3-1790916773-1790898773
 
 #EXTINF:-1 tvg-name="Dominica vs Guyana 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",Dominica vs Guyana 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
-https://c2f2zq.fubo18.com:443/foxsoccerplus/mono.m3u8?token=7d0f584a3fd268439a63fc03b195bf635cb1cacf-d5-1790916222-1790898222
+https://bmf0aw9u.fubo18.com:443/foxsoccerplus/mono.m3u8?token=632574195baa8720b5f273aa8003c246af9ccc97-9f-1790916773-1790898773
 
 #EXTINF:-1 tvg-name="Curazao vs Trinidad y Tobago 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",Curazao vs Trinidad y Tobago 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-https://Ym9yZQ.fubo18.com:443/foxsports2_usa/mono.m3u8?token=c489f6745ac75ef0a8b484698bcca584cf155ff3-77-1790916222-1790898222
+https://eWVz.fubo18.com:443/foxsports2_usa/mono.m3u8?token=476b4e54faaec64fce70005e6f8c3f003aec6ed3-d9-1790916773-1790898773
 
 #EXTINF:-1 tvg-name="Islas Caimán vs Puerto Rico 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",Islas Caimán vs Puerto Rico 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
-https://eWVz.fubo18.com:443/foxsoccerplus/mono.m3u8?token=6d5b6bda4e47fcd8f1ff557098cc3e56c2964f9a-39-1790916222-1790898222
+https://bgvnzw5k.fubo18.com:443/foxsoccerplus/mono.m3u8?token=4cbacdd647f315c7d7a219add12e116adebe9cbe-16-1790916773-1790898773
 
 #EXTINF:-1 tvg-name="Nicaragua vs Costa Rica 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones de la CONCACAF",Nicaragua vs Costa Rica 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-https://c2f2zq.fubo18.com:443/foxsports2_usa/mono.m3u8?token=9516bf0c1b37caf66aefade387cb1d7cb224860a-48-1790916222-1790898222
+https://bmf0aw9u.fubo18.com:443/foxsports2_usa/mono.m3u8?token=6d4d94dd197d2a474ae3649fac1526592d97156d-40-1790916773-1790898773
 
 #EXTINF:-1 tvg-name="Inter Bogotá vs Once Caldas 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Primera A",Inter Bogotá vs Once Caldas 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=winplus
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=winplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=winplus
-https://bmf0aw9u.fubo18.com:443/winplus/mono.m3u8?token=32dbdf0784c781fc52b5a31b9d891f69377314c8-4f-1790916223-1790898223
+https://eWVz.fubo18.com:443/winplus/mono.m3u8?token=4a17f812599f14adc10e869b359d3ab417be88ae-59-1790916773-1790898773
 
 #EXTINF:-1 tvg-name="Inter Bogotá vs Once Caldas 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Primera A",Inter Bogotá vs Once Caldas 2 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=winsportsplus
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=winsportsplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=winsportsplus
-https://bgvnzw5k.fubo18.com:443/winsportsplus/mono.m3u8?token=b2142d3f48b8cb5dd4303b7f48242d398a1bdfaf-a3-1790916223-1790898223
+https://c2f2zq.fubo18.com:443/winsportsplus/mono.m3u8?token=0f98fd93b10df23406064024f8cd4551bc519c27-9f-1790916774-1790898774
+
+#EXTINF:-1 tvg-name="Western Kentucky Hilltoppers vs. New Mexico State Aggies | English [STRMCNTR]" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" tvg-id="Football.Dummy.us" group-title="American Football",Western Kentucky Hilltoppers vs. New Mexico State Aggies | English [STRMCNTR]
+#EXTVLCOPT:http-referrer=https://streame.center
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://streame.center
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fedgestream2.pro%2Fhls%2Fsfjnzabacah31.m3u8&ref=https%3A%2F%2Fstreame.center&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-name="Pittsburgh Steelers vs. Cleveland Browns | English [STRMCNTR]" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" tvg-id="Football.Dummy.us" group-title="American Football",Pittsburgh Steelers vs. Cleveland Browns | English [STRMCNTR]
+#EXTVLCOPT:http-referrer=https://streame.center
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://streame.center
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fedgestream2.pro%2Fhls%2FJHDAJBDnjdna30.m3u8&ref=https%3A%2F%2Fstreame.center&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-name="North Texas Mean Green vs. Tulsa Golden Hurricane | English [STRMCNTR]" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" tvg-id="Football.Dummy.us" group-title="American Football",North Texas Mean Green vs. Tulsa Golden Hurricane | English [STRMCNTR]
+#EXTVLCOPT:http-referrer=https://streame.center
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://streame.center
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fedgestream2.pro%2Fhls%2Fqsdnajbq32.m3u8&ref=https%3A%2F%2Fstreame.center&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
