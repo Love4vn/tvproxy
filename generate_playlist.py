@@ -549,8 +549,8 @@ async def main():
                     )
                     if not ok:
                         log.info(f"  ❌ {title[:70]} → {reason}")
-                    continue
-                        log.info(f"  ✅ {title[:70]}")
+                        continue
+                    log.info(f"  ✅ {title[:70]}")
                 else:
                     method = "proxy" if should_proxy(src) else "direct"
 
