@@ -1,56 +1,34 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-06 02:41 UTC
-# streams  : 8
+# generated: 2026-10-06 10:29 UTC
+# streams  : 4
 
-#EXTINF:-1 tvg-name="Honduras vs Jamaica [FAWA]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="CONCACAF Nations League",Honduras vs Jamaica [FAWA]
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://www.fawanews.sc/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: http://www.fawanews.sc/
-http://193.47.62.59/hls/gtgtgtaAAAAQQQ.m3u8
+#EXTINF:-1 tvg-name="Kazakhstan vs Faroe Islands | 21:00 | 06/10/2026 [Ihdstreams]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Kazakhstan vs Faroe Islands | 21:00 | 06/10/2026 [Ihdstreams]
+#EXTVLCOPT:http-referrer=https://streame.center/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://streame.center
+#EXTVLCOPT:http-cookie=cf_clearance=K6UMZt3Oq6Lud_IBD1aMc8Ti3wTjL05FkSXW5NqxiRA-1791280024-1.2.1.1-m8r1qAabEOOBb9Pcqr7Um5U4J9pKRMZkbWUg_oY1J15XHB0yWEVhHe3mfpJ.7igwCsVtbSDgErn7BIA3Do0Px0Kg6eq3euyi1zCUSNORNbMQQf5YfY8cWCu5dv5lteBYhqGcH1Da.2ZwY.5liVd6pxJFe6ljibfoFnAKgn4cLgeTJBuZJa2xqMrdxK53KPyFCUCQh8THIuuYfL2PfJBaLhRPOz4XpgaN5YcwKRAj77TDuiJG4s75ODuhsRo3w9k0DPrYWIyk_bktwMIlRwi5fXKAkTUoh9k8KXJSiqLIHEWG_SMx3CruP1m0dF1CFGMaT5Hz63PX4nBi7F1porxKROZmZ3dmG9WliotD38u07hg
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://streame.center&Cookie=cf_clearance=K6UMZt3Oq6Lud_IBD1aMc8Ti3wTjL05FkSXW5NqxiRA-1791280024-1.2.1.1-m8r1qAabEOOBb9Pcqr7Um5U4J9pKRMZkbWUg_oY1J15XHB0yWEVhHe3mfpJ.7igwCsVtbSDgErn7BIA3Do0Px0Kg6eq3euyi1zCUSNORNbMQQf5YfY8cWCu5dv5lteBYhqGcH1Da.2ZwY.5liVd6pxJFe6ljibfoFnAKgn4cLgeTJBuZJa2xqMrdxK53KPyFCUCQh8THIuuYfL2PfJBaLhRPOz4XpgaN5YcwKRAj77TDuiJG4s75ODuhsRo3w9k0DPrYWIyk_bktwMIlRwi5fXKAkTUoh9k8KXJSiqLIHEWG_SMx3CruP1m0dF1CFGMaT5Hz63PX4nBi7F1porxKROZmZ3dmG9WliotD38u07hg
+#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center|Cookie: cf_clearance=K6UMZt3Oq6Lud_IBD1aMc8Ti3wTjL05FkSXW5NqxiRA-1791280024-1.2.1.1-m8r1qAabEOOBb9Pcqr7Um5U4J9pKRMZkbWUg_oY1J15XHB0yWEVhHe3mfpJ.7igwCsVtbSDgErn7BIA3Do0Px0Kg6eq3euyi1zCUSNORNbMQQf5YfY8cWCu5dv5lteBYhqGcH1Da.2ZwY.5liVd6pxJFe6ljibfoFnAKgn4cLgeTJBuZJa2xqMrdxK53KPyFCUCQh8THIuuYfL2PfJBaLhRPOz4XpgaN5YcwKRAj77TDuiJG4s75ODuhsRo3w9k0DPrYWIyk_bktwMIlRwi5fXKAkTUoh9k8KXJSiqLIHEWG_SMx3CruP1m0dF1CFGMaT5Hz63PX4nBi7F1porxKROZmZ3dmG9WliotD38u07hg
+https://edgestream3.pro/hls/24SDAZFcsqnj24.m3u8?st=nMYnO2Va3XimuWozTdLfwbRW1ZSMihkKhReNtYwwDN0&e=1791290834
 
-#EXTINF:-1 tvg-name="Bermuda vs Barbados | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones CONCACAF",Bermuda vs Barbados | Español 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
-https://Ym9yZQ.fubo18.com:443/foxsoccerplus/mono.m3u8?token=95a9547eb45b2ffac6a7a717d773d99487c5c1d9-31-1791271552-1791253552
+#EXTINF:-1 tvg-name="England vs Czechia | 01:45 | 07/10/2026 [Ihdstreams]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",England vs Czechia | 01:45 | 07/10/2026 [Ihdstreams]
+#EXTVLCOPT:http-referrer=https://streame.center/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://streame.center
+#EXTVLCOPT:http-cookie=cf_clearance=wyI8xqEORPlOsL_KxqZltgH.AtsSh5TGV1QeaoHs4EY-1791280887-1.2.1.1-rEdTvoU.pethlvMlZdd6pbkUwQe6GHWe6zTJZN46PQmaNPbkHUyQl.7WHf4Ck5J1.4PGILRHlx3nzo0XcHRsn5Y_bgjVCGJ1cWqoBGEcGelqgw2GJ9Cu1UyapQOo7tWZTZNs1M62QsNtt3IncoF_1fD829teVOTfB4bQl66GxWjcYrMUmSOTZX3hUkXKD36RfeM_6ak78gVC1nyXmhttR19_ULOmNfEDJKd5F9O7bdAjbRZIoolg54YSZSsuztpPf8kPm7iQBZCaGQh2ZjopPWSpuwaHK6e4SYrcNhS8Na4yHr7y8oJcVOr6qG_YFREO_5UIbkFpo5woqVaIhIdH9vsBKjJHAD7WsSzcLVUrzKQ
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://streame.center&Cookie=cf_clearance=wyI8xqEORPlOsL_KxqZltgH.AtsSh5TGV1QeaoHs4EY-1791280887-1.2.1.1-rEdTvoU.pethlvMlZdd6pbkUwQe6GHWe6zTJZN46PQmaNPbkHUyQl.7WHf4Ck5J1.4PGILRHlx3nzo0XcHRsn5Y_bgjVCGJ1cWqoBGEcGelqgw2GJ9Cu1UyapQOo7tWZTZNs1M62QsNtt3IncoF_1fD829teVOTfB4bQl66GxWjcYrMUmSOTZX3hUkXKD36RfeM_6ak78gVC1nyXmhttR19_ULOmNfEDJKd5F9O7bdAjbRZIoolg54YSZSsuztpPf8kPm7iQBZCaGQh2ZjopPWSpuwaHK6e4SYrcNhS8Na4yHr7y8oJcVOr6qG_YFREO_5UIbkFpo5woqVaIhIdH9vsBKjJHAD7WsSzcLVUrzKQ
+#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center|Cookie: cf_clearance=wyI8xqEORPlOsL_KxqZltgH.AtsSh5TGV1QeaoHs4EY-1791280887-1.2.1.1-rEdTvoU.pethlvMlZdd6pbkUwQe6GHWe6zTJZN46PQmaNPbkHUyQl.7WHf4Ck5J1.4PGILRHlx3nzo0XcHRsn5Y_bgjVCGJ1cWqoBGEcGelqgw2GJ9Cu1UyapQOo7tWZTZNs1M62QsNtt3IncoF_1fD829teVOTfB4bQl66GxWjcYrMUmSOTZX3hUkXKD36RfeM_6ak78gVC1nyXmhttR19_ULOmNfEDJKd5F9O7bdAjbRZIoolg54YSZSsuztpPf8kPm7iQBZCaGQh2ZjopPWSpuwaHK6e4SYrcNhS8Na4yHr7y8oJcVOr6qG_YFREO_5UIbkFpo5woqVaIhIdH9vsBKjJHAD7WsSzcLVUrzKQ
+https://edgestream7.pro/hls/24SDAZFcsqnj24.m3u8?st=_2s11xg82QPtrqyWLOEpQ578EJMPw5x40BeBTq-p_X8&e=1791291697
 
-#EXTINF:-1 tvg-name="Guatemala vs Suriname | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones CONCACAF",Guatemala vs Suriname | Español 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-https://dglvz29s.fubo18.com:443/foxsports2_usa/mono.m3u8?token=f6d6758c13dbd48c6e9602531dca3ccf4468352c-5f-1791271552-1791253552
-
-#EXTINF:-1 tvg-name="Independiente Medellin vs Santa Fe | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga BetPlay",Independiente Medellin vs Santa Fe | Español 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=winplus
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=winplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=winplus
-https://bmf0aw9u.fubo18.com:443/winplus/mono.m3u8?token=6914dd75e9be5643deda99323c0f5d47a0c677c0-1c-1791271552-1791253552
-
-#EXTINF:-1 tvg-name="Banfield vs Rosario Central | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1944.png" tvg-id="Soccer.Dummy.us" group-title="Liga Profesional Argentina",Banfield vs Rosario Central | Español 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espnpremium
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espnpremium&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espnpremium
-https://am91cm5leQ.fubo18.com:443/espnpremium/mono.m3u8?token=f7b9f6fce818bbecba643f8371b5b24112368491-40-1791271552-1791253552
-
-#EXTINF:-1 tvg-name="Honduras vs Jamaica | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones CONCACAF",Honduras vs Jamaica | Español 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=tudn
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=tudn&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=tudn
-https://YXdlc29tZQ.fubo18.com:443/tudn/mono.m3u8?token=88c86bedf321353f9cdb1f2ba5aaec407b99bf55-62-1791271552-1791253552
-
-#EXTINF:-1 tvg-name="Honduras vs Jamaica | Español 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones CONCACAF",Honduras vs Jamaica | Español 2 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-https://am91cm5leQ.fubo18.com:443/foxsports2_usa/mono.m3u8?token=f1036735a5ff66d712a58634d1e651510a3ee6c2-a7-1791271552-1791253552
+#EXTINF:-1 tvg-name="Scotland vs Slovenia | 01:45 | 07/10/2026 [Ihdstreams]" tvg-logo="" tvg-id="Live.Event.us" group-title="UEFA Nations League",Scotland vs Slovenia | 01:45 | 07/10/2026 [Ihdstreams]
+#EXTVLCOPT:http-referrer=https://streame.center/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://streame.center
+#EXTVLCOPT:http-cookie=cf_clearance=DcbOHcBawxLcyTiyBan7jMbYB4HNzk1fsCfMiH4up1M-1791281627-1.2.1.1-rNz_UFkjwP23i0DvoDFX4fnooamB7De2VwdKDfZYDEiznLNj5kVFj2iB5MN5In7H6Rob2kZTljpPYYSqFbqaz49E5xlM3udDm2TihqS481kgkIDmbANX9WywD3PAqybUviiNemDpHyYp6xqyTn64ZqFcjl26x6WgcOZrRYHinDvdTdLGStoSGsJTf4JDbLFewyJ_mRqeZt0G.nxUfziyl2mgXTeKRZj96ZyQkie1N1lE6Le_dV.jntiU9uR6qXYOk5bBVXtPjmJFPsepeZAwUMa0yT4NA_.qNxyLHsezrMPSRKUQ53kUTBUMszs6w6jAY5vs6.LoarCu0Hp6fmV3piO6v4Wg5Yo22MqDTcNYEAk
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://streame.center&Cookie=cf_clearance=DcbOHcBawxLcyTiyBan7jMbYB4HNzk1fsCfMiH4up1M-1791281627-1.2.1.1-rNz_UFkjwP23i0DvoDFX4fnooamB7De2VwdKDfZYDEiznLNj5kVFj2iB5MN5In7H6Rob2kZTljpPYYSqFbqaz49E5xlM3udDm2TihqS481kgkIDmbANX9WywD3PAqybUviiNemDpHyYp6xqyTn64ZqFcjl26x6WgcOZrRYHinDvdTdLGStoSGsJTf4JDbLFewyJ_mRqeZt0G.nxUfziyl2mgXTeKRZj96ZyQkie1N1lE6Le_dV.jntiU9uR6qXYOk5bBVXtPjmJFPsepeZAwUMa0yT4NA_.qNxyLHsezrMPSRKUQ53kUTBUMszs6w6jAY5vs6.LoarCu0Hp6fmV3piO6v4Wg5Yo22MqDTcNYEAk
+#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center|Cookie: cf_clearance=DcbOHcBawxLcyTiyBan7jMbYB4HNzk1fsCfMiH4up1M-1791281627-1.2.1.1-rNz_UFkjwP23i0DvoDFX4fnooamB7De2VwdKDfZYDEiznLNj5kVFj2iB5MN5In7H6Rob2kZTljpPYYSqFbqaz49E5xlM3udDm2TihqS481kgkIDmbANX9WywD3PAqybUviiNemDpHyYp6xqyTn64ZqFcjl26x6WgcOZrRYHinDvdTdLGStoSGsJTf4JDbLFewyJ_mRqeZt0G.nxUfziyl2mgXTeKRZj96ZyQkie1N1lE6Le_dV.jntiU9uR6qXYOk5bBVXtPjmJFPsepeZAwUMa0yT4NA_.qNxyLHsezrMPSRKUQ53kUTBUMszs6w6jAY5vs6.LoarCu0Hp6fmV3piO6v4Wg5Yo22MqDTcNYEAk
+https://edgestream4.pro/hls/eJmauBDCIf.m3u8?st=htIOO6BSIAgBAhdZDCUGLy4PG622uZwgwyLdVdtGDmA&e=1791292438
 
 #EXTINF:-1 tvg-name="Kansas City Chiefs vs Las Vegas Raiders [OVO]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Football",Kansas City Chiefs vs Las Vegas Raiders [OVO]
 #EXTVLCOPT:http-referrer=https://otaghera.site/updatesnfl/kansas-city-chiefs-vs-las-vegas-raiders/
