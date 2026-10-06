@@ -888,6 +888,7 @@ def san_full_server_qua_proxy():
                     viewport={"width": 1920, "height": 1080},
                     user_agent=DEFAULT_UA,
                     locale="vi-VN",
+                    ignore_https_errors=True  # Thêm dòng này
                 )
                 context.set_default_timeout(15000)
                 context.set_default_navigation_timeout(DOMAIN_TIMEOUT)
@@ -1149,7 +1150,9 @@ def san_full_server_qua_proxy():
                     streams = []
                     seen_urls = set()
                     try:
-                        page.goto(link_phong, timeout=20000, wait_until="domcontentloaded")
+                        # page.goto(link_phong, timeout=20000, wait_until="domcontentloaded")
+                        # Thay đổi từ 'domcontentloaded' thành 'commit'
+                        page.goto(url, timeout=timeout, wait_until="commit")
                         page.wait_for_timeout(2500)
                         try:
                             page.keyboard.press("Escape")
