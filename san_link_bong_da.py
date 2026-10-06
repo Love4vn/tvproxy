@@ -308,7 +308,16 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bpremier\s*division\b",
     r"\bcounty\s*league\b", r"\bnon[-\s]?league\b",
     r"\bcombinations?\b",
-
+    # ⭐ v17: EFL Trophy + Cup hạng thấp Anh (giải trẻ/hạng dưới)
+    r"\bleague\s*trophy\b",
+    r"\befl\s*trophy\b",
+    r"\bcupl?\s*league\s*trophy\b",
+    r"\bbristol\s*street\s*motors\b",
+    r"\bpapa\s*john'?s\b",
+    r"\bjohnstone'?s\s*paint\b",
+    r"\bcheckatrade\s*trophy\b",
+    r"\bldv\s*vans\b",
+    r"\bvertu\s*trophy\b",
     # Trung Quốc
     r"\bchinese\b", r"\bcmcl\b", r"\bchina\s*championship\b",
     r"\bchina\s*league\b", r"\bchina\s*cup\b",
