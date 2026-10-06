@@ -951,7 +951,8 @@ def san_full_server_qua_proxy():
                                 if DEBUG_SHOW_KEPT and kept_shown < DEBUG_KEPT_LIMIT:
                                     kept_shown += 1
                                     print(f"     🎾 [TENNIS] {ten[:60]}", flush=True)
-                                    print(f"        └─ container: {container_text[:180]}", flush=True)
+                                    safe_container = container_text[:180].replace("\n", " ").replace("\r", " ")
+                                    print(f"        └─ container: {safe_container}", flush=True)
                             continue
 
                         # ⭐ OTHER SPORT
@@ -985,8 +986,7 @@ def san_full_server_qua_proxy():
                                     print(f"        └─ container: {container_text[:180]}", flush=True)
                         elif DEBUG_SHOW_REJECTED and rej_shown < DEBUG_REJECTED_LIMIT:
                             rej_shown += 1
-                            print(f"     ❌ [{reason}] {ten[:55]}", flush=True)
-
+                            print(f"     ❌ [{reason}] {ten[:55]} | {(container_text[:80]).replace(chr(10),' ')}", flush=True)
                     print(f"     🔎 Lọc: {stats['total']} → "
                           f"môn khác={stats['other_sport']} | "
                           f"cấm={stats['excluded']} | "
