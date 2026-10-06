@@ -1154,87 +1154,92 @@ def san_full_server_qua_proxy():
                 def lay_tat_ca_server_con(page, link_phong):
                     streams = []
                     seen_urls = set()
+
+                    # === Goto room page ===
                     try:
-                        page.goto(link_phong, timeout=20000, wait_until="domcontentloaded")
-                        # Thay đổi từ 'domcontentloaded' thành 'commit'
-                        # page.goto(url, timeout=timeout, wait_until="commit")
+                        page.goto(link_phong, timeout=15000, wait_until="commit")
                     except Exception as e:
                         print(f"     ⚠️ goto room fail: {str(e)[:60]}", flush=True)
                         return streams
-                        page.wait_for_timeout(2500)
+
+                    # === Chờ render + đóng popup ===
+                    page.wait_for_timeout(2500)
+                    try:
+                        page.keyboard.press("Escape")
+                        page.wait_for_timeout(300)
+                        for sel in ['.close', '.closebtn', '[aria-label="Close"]',
+                                    '.modal-close', '.popup-close']:
+                            try:
+                                page.locator(sel).first.click(timeout=700)
+                            except Exception:
+                                pass
+                    except Exception:
+                        pass
+
+                    # === Chờ buttons xuất hiện ===
+                    try:
+                        page.wait_for_selector('#tv_links a.player-link', timeout=8000)
+                    except Exception:
+                        pass
+                    page.wait_for_timeout(2000)
+
+                    # === Lấy danh sách buttons ===
+                    buttons = detect_server_buttons(page)
+                    if not buttons:
+                        buttons = [{'idx': '0', 'label': 'Server 1', 'selector': 'body'}]
+                    print(f"     📺 {len(buttons)}: {[b['label'] for b in buttons]}", flush=True)
+
+                    # === Bắt stream từng server ===
+                    for btn in buttons:
+                        target_url = [None]
+
+                        def handle(req):
+                            if target_url[0]:
+                                return
+                            u = req.url.lower()
+                            if ".m3u8" in u or ".flv" in u:
+                                target_url[0] = req.url
+
+                        page.on("request", handle)
                         try:
-                            page.keyboard.press("Escape")
-                            page.wait_for_timeout(300)
-                            for sel in ['.close', '.closebtn', '[aria-label="Close"]',
-                                        '.modal-close', '.popup-close']:
+                            try:
+                                page.click(btn['selector'], timeout=5000)
+                            except Exception:
                                 try:
-                                    page.locator(sel).first.click(timeout=700)
+                                    page.get_by_text(btn['label'], exact=False)\
+                                        .first.click(timeout=5000)
                                 except Exception:
                                     pass
-                        except Exception:
-                            pass
-                        try:
-                            page.wait_for_selector('#tv_links a.player-link', timeout=8000)
-                        except Exception:
-                            pass
-                        page.wait_for_timeout(2000)
 
-                        buttons = detect_server_buttons(page)
-                        if not buttons:
-                            buttons = [{'idx': '0', 'label': 'Server 1', 'selector': 'body'}]
-                        print(f"     📺 {len(buttons)}: {[b['label'] for b in buttons]}", flush=True)
-
-                        for btn in buttons:
-                            target_url = [None]
-
-                            def handle(req):
+                            # Poll chờ stream
+                            for _ in range(STREAM_WAIT_TRIES):
                                 if target_url[0]:
-                                    return
-                                u = req.url.lower()
-                                # Debug: in 5 request đầu để xem site gọi gì
-                                if DEBUG_SHOW_REJECTED:
-                                    print(f"          🔍 req: {req.resource_type} | {u[:90]}", flush=True)
-                                if ".m3u8" in u or ".flv" in u or "domainkqt" in u or "domaincdn" in u:
-                                    target_url[0] = req.url
+                                    break
+                                page.wait_for_timeout(STREAM_WAIT_STEP_MS)
 
-                            page.on("request", handle)
-                            try:
+                            # Fallback: click giữa player
+                            if not target_url[0]:
                                 try:
-                                    page.click(btn['selector'], timeout=5000)
+                                    page.mouse.click(960, 500)
                                 except Exception:
-                                    try:
-                                        page.get_by_text(btn['label'], exact=False)\
-                                            .first.click(timeout=5000)
-                                    except Exception:
-                                        pass
-                                for _ in range(STREAM_WAIT_TRIES):
+                                    pass
+                                for _ in range(20):
                                     if target_url[0]:
                                         break
                                     page.wait_for_timeout(STREAM_WAIT_STEP_MS)
-                                if not target_url[0]:
-                                    try:
-                                        page.mouse.click(960, 500)
-                                    except Exception:
-                                        pass
-                                    for _ in range(20):
-                                        if target_url[0]:
-                                            break
-                                        page.wait_for_timeout(STREAM_WAIT_STEP_MS)
-                            except Exception:
-                                pass
-                            finally:
-                                page.remove_listener("request", handle)
+                        except Exception:
+                            pass
+                        finally:
+                            page.remove_listener("request", handle)
 
-                            if target_url[0] and target_url[0] not in seen_urls:
-                                seen_urls.add(target_url[0])
-                                streams.append({"label": btn["label"], "url": target_url[0]})
-                                print(f"        ✅ [{btn['label']}] {target_url[0][:75]}", flush=True)
-                            else:
-                                print(f"        ⛔ [{btn['label']}] no stream", flush=True)
-                    except Exception as e:
-                        print(f"     ⚠️ {str(e)[:80]}", flush=True)
+                        if target_url[0] and target_url[0] not in seen_urls:
+                            seen_urls.add(target_url[0])
+                            streams.append({"label": btn["label"], "url": target_url[0]})
+                            print(f"        ✅ [{btn['label']}] {target_url[0][:75]}", flush=True)
+                        else:
+                            print(f"        ⛔ [{btn['label']}] no stream", flush=True)
+
                     return streams
-
                 # ==========================================
                 # QUÉT
                 # ==========================================
