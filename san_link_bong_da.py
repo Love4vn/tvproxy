@@ -907,7 +907,7 @@ def san_full_server_qua_proxy():
                 """)
 
                 def chan_tai_nguyen_thua(route):
-                    if route.request.resource_type in ["image", "media"]:
+                    if route.request.resource_type == "image":
                         route.abort()
                     else:
                         route.continue_()
@@ -1155,9 +1155,12 @@ def san_full_server_qua_proxy():
                     streams = []
                     seen_urls = set()
                     try:
-                        # page.goto(link_phong, timeout=20000, wait_until="domcontentloaded")
+                        page.goto(link_phong, timeout=20000, wait_until="domcontentloaded")
                         # Thay đổi từ 'domcontentloaded' thành 'commit'
-                        page.goto(url, timeout=timeout, wait_until="commit")
+                        # page.goto(url, timeout=timeout, wait_until="commit")
+                    except Exception as e:
+                        print(f"     ⚠️ goto room fail: {str(e)[:60]}", flush=True)
+                        return streams
                         page.wait_for_timeout(2500)
                         try:
                             page.keyboard.press("Escape")
@@ -1188,7 +1191,10 @@ def san_full_server_qua_proxy():
                                 if target_url[0]:
                                     return
                                 u = req.url.lower()
-                                if ".m3u8" in u or ".flv" in u:
+                                # Debug: in 5 request đầu để xem site gọi gì
+                                if DEBUG_SHOW_REJECTED:
+                                    print(f"          🔍 req: {req.resource_type} | {u[:90]}", flush=True)
+                                if ".m3u8" in u or ".flv" in u or "domainkqt" in u or "domaincdn" in u:
                                     target_url[0] = req.url
 
                             page.on("request", handle)
