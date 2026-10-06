@@ -1325,6 +1325,17 @@ def san_full_server_qua_proxy():
         break
 
     # ==========================================
+    # XUẤT M3U (CHỈ GHI KHI CÓ LUỒNG)
+    # ==========================================
+    # Kiểm tra nếu danh sách rỗng thì không làm gì cả
+    if not danh_sach_phat:
+        print("❌ Không có luồng nào được tìm thấy. Giữ nguyên file M3U cũ.", flush=True)
+        # Thoát khỏi hàm mà không ghi file
+        return
+
+    # Nếu có luồng, tiếp tục xử lý và ghi file như bình thường
+    print(f"\n📦 Tìm thấy {len(danh_sach_phat)} luồng. Tiến hành ghi M3U...", flush=True)
+    # ==========================================
     # XUẤT M3U — v10.1: KHÔNG lọc trùng link giữa các trận
     # ==========================================
     seen_pairs = set()
@@ -1354,7 +1365,7 @@ def san_full_server_qua_proxy():
             nhom_count[l['nhom']] = nhom_count.get(l['nhom'], 0) + 1
         print(f"📊 {', '.join(f'{k}: {v}' for k, v in nhom_count.items())}", flush=True)
     else:
-        print(f"❌ Không có luồng!", flush=True)
+        print(f"❌ Không có luồng nào hợp lệ để ghi!", flush=True)
         with open("tong_hop_bong_da.m3u", "w", encoding="utf-8") as file:
             file.write("#EXTM3U\n")
 
