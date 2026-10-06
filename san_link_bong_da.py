@@ -42,17 +42,22 @@ TAT_CA_SERVER = [
 
 XOILAC_DOMAINS = [
     "https://xoilacz.io",
+    "https://xoilaczzh.io",
     "https://xoilaczzf.cc",
     "https://xoilaczzb.cc",
     "https://xoilaczzc.cc",
     "https://xoilaczzd.cc",
     "https://xoilaczzh.cc",
+    "https://xoilacxxi.cc",
+    "https://xoilacxxe.cc",
     "https://xoilacxth.tv",
     "https://xoilacxbi.tv",
     "https://xoilac7tv.tv",
     "https://xoilacvvr.tv",
-    "https://xoilacxxi.cc",
-    "https://xoilaczzh.io",
+    "https://xoilacxbr.tv",
+    "https://xoilaczbh.tv",
+    
+    
 ]
 
 # ==========================================
