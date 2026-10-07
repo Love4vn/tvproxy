@@ -1,175 +1,283 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-06 21:25 UTC
-# streams  : 25
+# generated: 2026-10-07 01:09 UTC
+# streams  : 39
 
-#EXTINF:-1 tvg-name="St. Vincent / Grenadines vs Sint Maarten | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones CONCACAF",St. Vincent / Grenadines vs Sint Maarten | Español 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-https://bmf0aw9u.fubo18.com:443/foxsports2_usa/mono.m3u8?token=7c80ec7896a87773734164674637878fb132aa7b-9d-1791338971-1791320971
+#EXTINF:-1 tvg-name="Chicago Fire FC vs Vancouver Whitecaps | LIVE | 07/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Chicago Fire FC vs Vancouver Whitecaps | LIVE | 07/10/2026 [Powerstream]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=550c2debe1b5d60f7c00801422ff9c2e%2Findex.m3u8&e=1791336336&sig=v2g8nuodmf5Fj8c9NeuCGiU9W_feezClmol1iT0YRTw&v=1791334536-7485
 
-#EXTINF:-1 tvg-name="Colombia vs Perú | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Colombia vs Perú | Español 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=americatv
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=americatv&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=americatv
-https://y2fzdgxl.fubo18.com:443/americatv/mono.m3u8?token=efe948cd0f478fb35c5bbf7904d4e02b6480ca4e-cc-1791338971-1791320971
+#EXTINF:-1 tvg-name="United States vs Canada | LIVE | 07/10/2026 [Tnt-usa]" tvg-logo="" tvg-id="Live.Event.us" group-title="International Friendly",United States vs Canada | LIVE | 07/10/2026 [Tnt-usa]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=9ae3de4b40a6ecfdd03fc90be82c4535%2Findex.m3u8&e=1791336383&sig=h7oxnppuZurHzwbJGN7cTKMq00Vfn2o6REIVHrEL9aw&v=1791334583-6337
 
-#EXTINF:-1 tvg-name="Colombia vs Perú | Español 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Colombia vs Perú | Español 2 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=caracol
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=caracol&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=caracol
-https://bgvnzw5k.fubo18.com:443/caracol/mono.m3u8?token=dd3af97126a5290976787071233352a3b0fd43f6-f8-1791338971-1791320971
+#EXTINF:-1 tvg-name="United States vs Canada | LIVE | 07/10/2026 [Fast-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="International Friendly",United States vs Canada | LIVE | 07/10/2026 [Fast-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=9ae3de4b40a6ecfdd03fc90be82c4535%2Findex.m3u8&e=1791336536&sig=JTdaBzi-rZFGEefo6TmcONVmIEAoFIEx3KaunKQil5A&v=1791334736-3746
 
-#EXTINF:-1 tvg-name="Colombia vs Perú | Español 3 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Colombia vs Perú | Español 3 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsportspremium
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsportspremium&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsportspremium
-https://dglvz29s.fubo18.com:443/foxsportspremium/mono.m3u8?token=55f01768a7edf4b37b025253dbbc39db655a4b3d-9d-1791338971-1791320971
+#EXTINF:-1 tvg-name="United States vs Canada | LIVE | 07/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="International Friendly",United States vs Canada | LIVE | 07/10/2026 [Powerstream]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=9ae3de4b40a6ecfdd03fc90be82c4535%2Findex.m3u8&e=1791336547&sig=XrHhEZsRYIEHf-t4BUGLie1bkawZU--ihIuXhiFsFP8&v=1791334747-5168
 
-#EXTINF:-1 tvg-name="Colombia vs Perú | Español 4 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Colombia vs Perú | Español 4 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsportsmx
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsportsmx&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsportsmx
-https://dglvz29s.fubo18.com:443/foxsportsmx/mono.m3u8?token=63aa47a12fb9b1e5964f81c45fc9cfdfdb2d3cb2-a2-1791338971-1791320971
+#EXTINF:-1 tvg-name="Colombia vs Peru | LIVE | 07/10/2026 [Tnt-usa]" tvg-logo="" tvg-id="Live.Event.us" group-title="International Friendly",Colombia vs Peru | LIVE | 07/10/2026 [Tnt-usa]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=9b49004040ccf64adf108ab4e17a68a6%2Findex.m3u8&e=1791336572&sig=k3lhFwo2JMWjz7k92SmqhFLstjgRnpLm8Z7FbM-7JwU&v=1791334772-7245
+
+#EXTINF:-1 tvg-name="Colombia vs Peru | LIVE | 07/10/2026 [Fast-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="International Friendly",Colombia vs Peru | LIVE | 07/10/2026 [Fast-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=9b49004040ccf64adf108ab4e17a68a6%2Findex.m3u8&e=1791336693&sig=SHJc0YicyAgDOFI8DUoGPB3exFn-bCqaJ80-dtQqiFo&v=1791334893-1298
+
+#EXTINF:-1 tvg-name="Colombia vs Peru | LIVE | 07/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="International Friendly",Colombia vs Peru | LIVE | 07/10/2026 [Powerstream]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=9b49004040ccf64adf108ab4e17a68a6%2Findex.m3u8&e=1791336704&sig=AH5HYwYb3Y4un4taVj0UBlPeZx1yzjWd_SSH71g7Gok&v=1791334904-2320
+
+#EXTINF:-1 tvg-name="Argentina vs Benin | LIVE | 07/10/2026 [Tnt-usa]" tvg-logo="" tvg-id="Live.Event.us" group-title="International Friendly",Argentina vs Benin | LIVE | 07/10/2026 [Tnt-usa]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=452e62197617eee2172de9c2a1c7e936%2Findex.m3u8&e=1791336729&sig=BF5mz25oXPCvsWfl5HhOW5vtK6WfQ9cbh3bpQ1iqmnk&v=1791334929-2598
+
+#EXTINF:-1 tvg-name="Argentina vs Benin | LIVE | 07/10/2026 [Fast-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="International Friendly",Argentina vs Benin | LIVE | 07/10/2026 [Fast-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=452e62197617eee2172de9c2a1c7e936%2Findex.m3u8&e=1791336926&sig=d2s0bvEViAlfykpcT3aB2yyeWP1ST4OSllhUzBuZaAQ&v=1791335126-6451
+
+#EXTINF:-1 tvg-name="Argentina vs Benin | LIVE | 07/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="International Friendly",Argentina vs Benin | LIVE | 07/10/2026 [Powerstream]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=452e62197617eee2172de9c2a1c7e936%2Findex.m3u8&e=1791336938&sig=OrjtgFzZfj-U8WonYGBPXhFCsf8KlD32C-tMizDMM98&v=1791335138-6139
 
 #EXTINF:-1 tvg-name="Argentina vs Benín | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Argentina vs Benín | Español 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=dsports_eventos
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=dsports_eventos&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=dsports_eventos
-https://b2ZmaWNpYWw.fubo18.com:443/dsports_eventos/mono.m3u8?token=8a440c4dc9eab857477b884db753d18080cffe16-3e-1791338971-1791320971
+https://eWVz.fubo18.com:443/dsports_eventos/mono.m3u8?token=c10b90022950cdbe45bcd7ffdb2a7719c879ff2e-f6-1791352448-1791334448
 
 #EXTINF:-1 tvg-name="Argentina vs Benín | Español 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Argentina vs Benín | Español 2 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=tycsports
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=tycsports&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=tycsports
-https://YXdlc29tZQ.fubo18.com:443/tycsports/mono.m3u8?token=67ea1fbf61534e89d74ff132e84dc74a4921a370-e7-1791338971-1791320971
+https://b2ZmaWNpYWw.fubo18.com:443/tycsports/mono.m3u8?token=ee1ad0b0e6f0dcfd6548cea1403682cde1b5fe78-30-1791352449-1791334449
+
+#EXTINF:-1 tvg-name="Argentina vs Benín | Español 3 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Argentina vs Benín | Español 3 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=telefe
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=telefe&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=telefe
+https://eWVz.fubo18.com:443/telefe/mono.m3u8?token=abff3550785be607592315246ae0fec7dab4a298-79-1791352449-1791334449
 
 #EXTINF:-1 tvg-name="Argentina vs Benín | Español 4 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Argentina vs Benín | Español 4 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=sportv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=sportv&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=sportv
-https://am91cm5leQ.fubo18.com:443/sportv/mono.m3u8?token=87600f7470a0c5f62a1d838cbff649f43c00b43d-65-1791338972-1791320972
+https://dglvz29s.fubo18.com:443/sportv/mono.m3u8?token=af7739bbbdfb1a2fbe830ca64dc4872908abe96c-35-1791352449-1791334449
 
 #EXTINF:-1 tvg-name="Argentina vs Benín | Español 5 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Argentina vs Benín | Español 5 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=tudn
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=tudn&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=tudn
-https://dglvz29s.fubo18.com:443/tudn/mono.m3u8?token=73a1c4f5577d74e31a9dfa7bd161c7dc18674e86-23-1791338972-1791320972
+https://YXdlc29tZQ.fubo18.com:443/tudn/mono.m3u8?token=370a7cd2528ef7143fdb7c7b75e8731f6527a408-f8-1791352449-1791334449
 
-#EXTINF:-1 tvg-name="Inglaterra vs República Checa | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones UEFA",Inglaterra vs República Checa | Español 1 [PLIBRE]
+#EXTINF:-1 tvg-name="Antigua y Barbuda vs Aruba | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones CONCACAF",Antigua y Barbuda vs Aruba | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsoccerplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsoccerplus
+https://b2ZmaWNpYWw.fubo18.com:443/foxsoccerplus/mono.m3u8?token=bb46dae0a80eefe16106e1d666bf9fd24892c764-2-1791352449-1791334449
+
+#EXTINF:-1 tvg-name="Estados Unidos vs Canadá | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Estados Unidos vs Canadá | Español 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espn2&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espn2
-https://bgvnzw5k.fubo18.com:443/espn2/mono.m3u8?token=cab6b80af5b04f38795333ba916f6078ad223fb5-9-1791338972-1791320972
+https://Ym9yZQ.fubo18.com:443/espn2/mono.m3u8?token=3681378e5bdd1a3b2b3f7e430fd2523c66abc23b-ae-1791352449-1791334449
 
-#EXTINF:-1 tvg-name="Inglaterra vs República Checa | Español 3 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones UEFA",Inglaterra vs República Checa | Español 3 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=sportv
+#EXTINF:-1 tvg-name="Estados Unidos vs Canadá | Español 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Estados Unidos vs Canadá | Español 2 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=disney14
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=sportv&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=sportv
-https://c2f2zq.fubo18.com:443/sportv/mono.m3u8?token=aea859d8f84fd8961f54471c8101bde13f102a0f-8-1791338972-1791320972
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=disney14&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=disney14
+https://a2lja3m.fubo18.com:443/disney14/mono.m3u8?token=880eae0582db1ec4d3ce0bab06684a18dd0abbca-2d-1791352450-1791334450
 
-#EXTINF:-1 tvg-name="Inglaterra vs República Checa | Español 4 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones UEFA",Inglaterra vs República Checa | Español 4 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-https://bmf0aw9u.fubo18.com:443/foxsports2_usa/mono.m3u8?token=ddeeae7ac0b9b6e488d0261ed4acb826da7cdbe4-d1-1791338973-1791320973
-
-#EXTINF:-1 tvg-name="Estonia vs Islandia | Español 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones UEFA",Estonia vs Islandia | Español 2 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=sportv3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=sportv3&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=sportv3
-https://Ym9yZQ.fubo18.com:443/sportv3/mono.m3u8?token=5a2c702c05d769bbbb63b12087f41b9c43607159-94-1791338973-1791320973
-
-#EXTINF:-1 tvg-name="Suiza vs FYR Macedonia | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones UEFA",Suiza vs FYR Macedonia | Español 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espn3&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espn3
-https://y2fzdgxl.fubo18.com:443/espn3/mono.m3u8?token=ad346742a91653401a0e5709dab199ba4e5627ba-b7-1791338973-1791320973
-
-#EXTINF:-1 tvg-name="Suiza vs FYR Macedonia | Español 3 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones UEFA",Suiza vs FYR Macedonia | Español 3 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=sportv2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=sportv2&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=sportv2
-https://b2ZmaWNpYWw.fubo18.com:443/sportv2/mono.m3u8?token=ffee1bb75d5acc18f07d67abd3b1dbc31c67648d-5b-1791338973-1791320973
-
-#EXTINF:-1 tvg-name="Angola vs Malaui | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/76.png" tvg-id="Soccer.Dummy.us" group-title="Clasificación para la Copa Africana de Naciones",Angola vs Malaui | Español 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=beinsportes
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=beinsportes&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=beinsportes
-https://eWVz.fubo18.com:443/beinsportes/mono.m3u8?token=5176f708ce92b916833dfcab5be3282f6105bc2c-43-1791338974-1791320974
-
-#EXTINF:-1 tvg-name="Croacia vs España | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones UEFA",Croacia vs España | Español 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espn&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espn
-https://Ym9yZQ.fubo18.com:443/espn/mono.m3u8?token=3446546f1ea88d549a0d7c1ccedca271d4c4b4f5-7d-1791338974-1791320974
-
-#EXTINF:-1 tvg-name="Estados Unidos vs Canadá | Español 3 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Estados Unidos vs Canadá | Español 3 [PLIBRE]
+#EXTINF:-1 tvg-name="Estados Unidos vs Canadá | Español 4 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Estados Unidos vs Canadá | Español 4 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn2mx
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espn2mx&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espn2mx
-https://y2fzdgxl.fubo18.com:443/espn2mx/mono.m3u8?token=76d36b57e0b44ade16a5592b05adb231a05cc7e4-c9-1791338974-1791320974
+https://dglvz29s.fubo18.com:443/espn2mx/mono.m3u8?token=45500e6b8b898755d3873d8ada16017f12c6d913-44-1791352450-1791334450
+
+#EXTINF:-1 tvg-name="Colombia vs Perú | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Colombia vs Perú | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=americatv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=americatv&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=americatv
+https://am91cm5leQ.fubo18.com:443/americatv/mono.m3u8?token=bc758ecb2d43364ccfb544903a12129bef25856e-87-1791352450-1791334450
+
+#EXTINF:-1 tvg-name="Colombia vs Perú | Español 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Colombia vs Perú | Español 2 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=caracol
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=caracol&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=caracol
+https://am91cm5leQ.fubo18.com:443/caracol/mono.m3u8?token=3248d96fa0d2ac5ad18deb1af61bf22ad8aa0647-d8-1791352450-1791334450
+
+#EXTINF:-1 tvg-name="Colombia vs Perú | Español 3 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Colombia vs Perú | Español 3 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=eventos
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=eventos&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=eventos
+https://b2ZmaWNpYWw.fubo18.com:443/eventos/mono.m3u8?token=1ae471de9bd5acb0c9b1f0b711e047789cb56350-46-1791352450-1791334450
+
+#EXTINF:-1 tvg-name="Colombia vs Perú | Español 4 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Colombia vs Perú | Español 4 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsportspremium
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsportspremium&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsportspremium
+https://y2fzdgxl.fubo18.com:443/foxsportspremium/mono.m3u8?token=5167f5a68528f38c34280a31b2765af2ca655378-a4-1791352450-1791334450
+
+#EXTINF:-1 tvg-name="Colombia vs Perú | Español 5 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",Colombia vs Perú | Español 5 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsportsmx
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsportsmx&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsportsmx
+https://eWVz.fubo18.com:443/foxsportsmx/mono.m3u8?token=693d10ff205810b685781d271b391a22a5a4c477-9d-1791352450-1791334450
 
 #EXTINF:-1 tvg-name="México vs Chile | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",México vs Chile | Español 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=tudn
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=tudn&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=tudn
-https://eWVz.fubo18.com:443/tudn/mono.m3u8?token=6830705d3800d69a147d1474e15e9223ae1148e1-17-1791338975-1791320975
+https://eWVz.fubo18.com:443/tudn/mono.m3u8?token=d84fa471e2e139f0abbe42d9514d0c0cfdc26a10-42-1791352450-1791334450
 
 #EXTINF:-1 tvg-name="México vs Chile | Español 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",México vs Chile | Español 2 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=univision
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=univision&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=univision
-https://a2lja3m.fubo18.com:443/univision/mono.m3u8?token=381892b89aa2aaf9862e0648f60b992f8de1a542-cb-1791338975-1791320975
+https://Ym9yZQ.fubo18.com:443/univision/mono.m3u8?token=9939f280b5cd69060e82adf9803a8440851b9a1b-22-1791352450-1791334450
 
 #EXTINF:-1 tvg-name="México vs Chile | Español 3 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",México vs Chile | Español 3 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=azteca7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=azteca7&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=azteca7
-https://Ym9yZQ.fubo18.com:443/azteca7/mono.m3u8?token=760e21bc2ab3684c5d0d01f98ad558a8ea50fb82-2e-1791338975-1791320975
+https://dglvz29s.fubo18.com:443/azteca7/mono.m3u8?token=40c7a59141b24ffce11c169ef91bdd7f69f76c62-a0-1791352451-1791334451
 
 #EXTINF:-1 tvg-name="México vs Chile | Español 4 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Amistoso Internacional",México vs Chile | Español 4 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=canal5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=canal5&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=canal5
-https://YXdlc29tZQ.fubo18.com:443/canal5/mono.m3u8?token=15aec9e3be92ce7ac5426d0b67271ab575a9659e-c1-1791338975-1791320975
+https://b2ZmaWNpYWw.fubo18.com:443/canal5/mono.m3u8?token=0d9bd2c3d9619281e2f4943a739bf16ad0e0a92c-27-1791352451-1791334451
 
 #EXTINF:-1 tvg-name="French Guyana vs Belice | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2406.png" tvg-id="Soccer.Dummy.us" group-title="Liga de Naciones CONCACAF",French Guyana vs Belice | Español 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxsports2_usa&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxsports2_usa
-https://Ym9yZQ.fubo18.com:443/foxsports2_usa/mono.m3u8?token=5b1db42dfa2c647d8a5a1b5b3bc2fc8a11bc0b71-3a-1791338975-1791320975
+https://eWVz.fubo18.com:443/foxsports2_usa/mono.m3u8?token=412e7ec6f88da17dbbf2daece634a443f56b9f49-82-1791352451-1791334451
 
 #EXTINF:-1 tvg-name="Colo-Colo vs D. Puerto Montt | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2331.png" tvg-id="Soccer.Dummy.us" group-title="Copa Chile",Colo-Colo vs D. Puerto Montt | Español 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=tntsportschile
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=tntsportschile&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=tntsportschile
-https://eWVz.fubo18.com:443/tntsportschile/mono.m3u8?token=4db9beacc929996a005dc3e6e376c22b2dc06a26-30-1791338975-1791320975
+https://am91cm5leQ.fubo18.com:443/tntsportschile/mono.m3u8?token=b299e065b5c99b817bd48658e4275765640c9e11-ba-1791352451-1791334451
+
+#EXTINF:-1 tvg-name="Benin vs Argentina | English | 06:00 | 07/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="FIFA FRIENDLY",Benin vs Argentina | English | 06:00 | 07/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401921408
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401921408&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401921408
+https://instreams.online/live3/tv401921408/index.m3u8?st=Rolf-CKqUY735hGDzZtNnQ&e=1791346149
+
+#EXTINF:-1 tvg-name="Peru vs Colombia | English | 06:45 | 07/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="FIFA FRIENDLY",Peru vs Colombia | English | 06:45 | 07/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401905332
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401905332&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401905332
+https://instreams.live/live3/tv401905332/index.m3u8?st=MRCFRbwPqC3EMOwBh3Qj_w&e=1791346150
+
+#EXTINF:-1 tvg-name="Canada vs United States | English | 07:00 | 07/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/40.png&w=500&h=500" tvg-id="Soccer.Dummy.us" group-title="FIFA FRIENDLY",Canada vs United States | English | 07:00 | 07/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401905188
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401905188&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401905188
+https://instreams.live/live3/tv401905188/index.m3u8?st=illrmX3bQ0pTAzEa3JKbxA&e=1791346151
+
+#EXTINF:-1 tvg-name="Vancouver Whitecaps vs Chicago Fire FC | English | 07:30 | 07/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="MLS",Vancouver Whitecaps vs Chicago Fire FC | English | 07:30 | 07/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv761660
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv761660&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv761660
+https://instreams.pro/live3/tv761660/index.m3u8?st=t4hIZ-Mk8CVmgLjh8tbLDQ&e=1791346152
+
+#EXTINF:-1 tvg-name="Argentina vs Benin [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="International Friendly Games",Argentina vs Benin [iSTRMEAST]
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57689?ad=111
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57689?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57689?ad=111
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57689%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57689%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-name="Chicago Fire vs Vancouver Whitecaps [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="MLS",Chicago Fire vs Vancouver Whitecaps [iSTRMEAST]
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57693?ad=111
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57693?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57693?ad=111
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57693%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57693%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-name="USA vs Canada [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="International Friendly Games",USA vs Canada [iSTRMEAST]
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57683?ad=111
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57683?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57683?ad=111
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57683%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57683%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-name="Troy vs Southern Miss [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Troy vs Southern Miss [iSTRMEAST]
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57692?ad=111
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57692?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57692?ad=111
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57692%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57692%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
 
 #EXTINF:-1 tvg-name="Kansas City Chiefs vs Las Vegas Raiders [OVO]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Football",Kansas City Chiefs vs Las Vegas Raiders [OVO]
 #EXTVLCOPT:http-referrer=https://otaghera.site/updatesnfl/kansas-city-chiefs-vs-las-vegas-raiders/
