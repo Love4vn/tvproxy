@@ -1,46 +1,71 @@
 #EXTM3U
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/p3glrw7hwylqdyj/image/small", ⚽ Al Ansar SC vs CS Sagesse | 01:45 | 09/10/2026 [HD 1]
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/l965mk4fjj2r1ge/image/small", ⚽ Connor Robb-Wilcox vs Lambert Ruland | 04:30 | 08/10/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel14.flv?wsSecret=a21c5cafd6875bbbf2ad5a405a76aa5e&wsABSTime=1791410520
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/competition/9dn1m1gh04moepl/image/small", ⚽ Nizhniy Novgorod (Y) vs FK Rostov (Y) | 17:00 | 09/10/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel51.flv?wsSecret=eb87ce14d45a9e0f9bf21cc050fd45c6&wsABSTime=1791438841
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/l965mk4fjj2r1ge/image/small", ⚽ Nicolas Calixto vs Neo Niedner | 04:30 | 08/10/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=851e6d75e8f13db56dabc7ecfb198e5b&wsABSTime=1791410540
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/e4wyrnjf0pzq86p/image/small", ⚽ Alina Charaeva vs Zheng Qinwen | 18:00 | 07/10/2026 [VIC]
+https://live1.quickscoreboardz.com/live/channel50.flv?wsSecret=323388da444b8f3b86db2cc406486daa&wsABSTime=1791438859
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/vjxm85f46jvm6od/image/small", ⚽ Bai Zhuoxuan vs Emerson Jones | 09:00 | 08/10/2026 [HD 1]
+#EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel50.flv?wsSecret=3cda0ed7772ed4cc4ee21aa4bba24f1f&wsABSTime=1791438876
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/vjxm85f46jvm6od/image/small", ⚽ Elvina Kalieva vs Tamara Korpatsch | 09:00 | 08/10/2026 [HD 1]
+#EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel51.flv?wsSecret=ca21aba8029f08b327c42c3f4e557cd5&wsABSTime=1791438892
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/vjxm85f46jvm6od/image/small", ⚽ Oleksandra Oliynykova vs Aliona Falei | 10:10 | 08/10/2026 [HD 1]
+#EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel55.flv?wsSecret=a3be7ccc8ad5da5c939a34f5d5e8afed&wsABSTime=1791438983
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/j1l4rjwfzogm7vx/image/small", ⚽ Kimmer Coppejans vs Stefanos Tsitsipas | 11:00 | 08/10/2026 [VIC]
 #EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel32.flv
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/e4wyrnjf0pzq86p/image/small", ⚽ Alina Charaeva vs Zheng Qinwen | 18:00 | 07/10/2026 [HD VIC]
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/j1l4rjwfzogm7vx/image/small", ⚽ Kimmer Coppejans vs Stefanos Tsitsipas | 11:00 | 08/10/2026 [HD VIC]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001791367509-0-0-f99f600efa00ed9cec55dd3a85d2d266
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/j1l4rjwfzogm7vx/image/small", ⚽ Arthur Fery vs Marin Cilic | 18:10 | 07/10/2026 [HD 1]
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001791395814-0-0-01e4e2665dce8e7f573f4c380c8277f5
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/j1l4rjwfzogm7vx/image/small", ⚽ Nuno Borges vs Facundo Diaz Acosta | 11:00 | 08/10/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel56.flv?wsSecret=d5b2fcfd3ebba14b760d651f935cf958&wsABSTime=1791410714
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/z318q6jf795ro9j/image/small", ⚽ Zdenek Kolar vs Michele Ribecai | 18:30 | 07/10/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel56.flv?wsSecret=f395868adf6d084f5b1211b82536e9ee&wsABSTime=1791439019
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/j1l4rjwfzogm7vx/image/small", ⚽ Camilo Ugo Carabelli vs Ilia Simakin | 11:00 | 08/10/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel57.flv?wsSecret=5327c9d20518d191d9936ce3b6e822cc&wsABSTime=1791410733
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/j1l4rjwf73km7vx/image/small", ⚽ Tiago Pereira vs Pol Martin Tiffon | 19:00 | 07/10/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel57.flv?wsSecret=d388ffda99ab374eb716f58633eb38c8&wsABSTime=1791439037
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/j1l4rjwfzogm7vx/image/small", ⚽ Jaume Munar vs Jenson Brooksby | 11:00 | 08/10/2026 [HD 1]
 #EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel58.flv?wsSecret=748b7864408ef8783e64328391fbe8f2&wsABSTime=1791410751
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/e4wyrnjf0pzq86p/image/small", ⚽ Li Ann vs Elina Svitolina | 19:10 | 07/10/2026 [HD LUCAS]
+https://live1.quickscoreboardz.com/live/channel58.flv?wsSecret=b55b221630b7972871ecb3552f95f2ff&wsABSTime=1791439054
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/j1l4rjwfzogm7vx/image/small", ⚽ Hubert Hurkacz vs James Duckworth | 12:10 | 08/10/2026 [VIC]
+#EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
+#EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live2.zundrixmediapipeline.com/live/channel32.flv
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/j1l4rjwfzogm7vx/image/small", ⚽ Hubert Hurkacz vs James Duckworth | 12:10 | 08/10/2026 [HD VIC]
 #EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001791367589-0-0-c962f7b127d2be95e0fa28783fc6f9ae
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/j1l4rjwf73km7vx/image/small", ⚽ Mackenzie McDonald vs Ryan Nijboer | 19:30 | 07/10/2026 [HD 1]
-#EXTVLCOPT:http-referrer=https://live1.quickscoreboardz.com/
-#EXTVLCOPT:http-origin=https://live1.quickscoreboardz.com/
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001791395908-0-0-ef81d49d31c7f5b7b03ec729d0283329
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/e4wyrnjf0pzq86p/image/small", ⚽ Karolina Muchova vs Nikola Bartunkova | 14:00 | 08/10/2026 [LUCAS]
+#EXTVLCOPT:http-referrer=https://live2.zundrixmediapipeline.com/
+#EXTVLCOPT:http-origin=https://live2.zundrixmediapipeline.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel59.flv?wsSecret=9b0a4fecefdb2c8b21cda6a2befc8c27&wsABSTime=1791410794
+https://live2.zundrixmediapipeline.com/live/channel31.flv
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/competition/e4wyrnjf0pzq86p/image/small", ⚽ Karolina Muchova vs Nikola Bartunkova | 14:00 | 08/10/2026 [HD LUCAS]
+#EXTVLCOPT:http-referrer=https://live2.domaincdn.cc/
+#EXTVLCOPT:http-origin=https://live2.domaincdn.cc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001791395923-0-0-10beea72dc7f11fb3568fd81865b4243
