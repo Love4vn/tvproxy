@@ -200,7 +200,7 @@ HARD_EXCLUDE_PATTERNS = [
     r"\byouth\b", r"\bjunior\b", r"\btre\b", r"\breserve\b",
     r"\bacademy\b", r"\bhoc\s*vien\b", r"\bdoi\s*b\b",
     r"\blegends?\b", r"\bhuyen\s*thoai\b", r"\bold\s*boys\b",
-
+    r"\(\s*y\s*\)",   # "(Y)" marker cho đội Youth
     # ĐỘI B
     r"\bcastilla\b", r"\bmestalla\b", r"\bpromesas\b",
     r"\bbilbao\s*athletic\b", r"\bsevilla\s*atletico\b",
@@ -444,6 +444,21 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bguyana\b", r"\bsuriname\b",
     r"\bsint\s*maarten\b", r"\bsaint\s*maarten\b",
     r"\banguilla\b", r"\bcayman\b", r"\bturks\b",
+    # ⭐ v18: Premier League giả của các quốc gia nhỏ
+    r"\blebanese\b", r"\blebanon\b",
+    r"\begyptian\b", r"\bsyrian\b", r"\bsyria\b",
+    r"\bjordan\b", r"\bjordanian\b",
+    r"\byemeni\b", r"\byemen\b",
+    r"\blibyan\b", r"\blibya\b",
+    r"\bpalestin\b", r"\bpakistan\b", r"\bbangladesh\b",
+    r"\bsudan\b", r"\bsudanese\b",
+    r"\bnepal\b", r"\bmyanmar\b",
+    r"\bcambodia\b", r"\blaos\b", r"\bbrunei\b",
+    r"\bsomali\b", r"\bdjibouti\b",
+    r"\bmauritania\b", r"\bmauritius\b",
+    r"\bcomoros\b", r"\bmaldives\b",
+    r"\bkazakh\b", r"\buzbek\b", r"\bkyrgyz\b",
+    r"\btajik\b", r"\bturkmen\b",
 ]
 
 # ==========================================
@@ -477,7 +492,7 @@ TOP_LEAGUE_PATTERNS = [
 # ⭐ v10.3: Mở rộng EURO_COUNTRIES
 EURO_COUNTRIES = {
     "anh", "england", "duc", "germany", "phap", "france",
-    "y", "italy", "tay ban nha", "spain", "bo dao nha", "portugal",
+    "italy", "italia", "tay ban nha", "spain", "bo dao nha", "portugal",
     "ha lan", "netherlands", "bi", "belgium", "thuy si", "switzerland",
     "ao", "austria", "dan mach", "denmark",
     "thuy dien", "sweden", "na uy", "norway",
