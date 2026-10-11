@@ -1,226 +1,474 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-11 02:26 UTC
-# streams  : 35
+# generated: 2026-10-11 20:10 UTC
+# streams  : 68
 
-#EXTINF:-1 tvg-name="São Paulo vs Vitória | LIVE | 11/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="Brazilian Série A",São Paulo vs Vitória | LIVE | 11/10/2026 [Wildgames]
-#EXTVLCOPT:http-referrer=https://matchora.to/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchora.to
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
-#EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fb.vsqqez.online%2Fhls%2F8086%2Findex.m3u8%3Ft%3DODA4NnwxNzkxNjg0MDMxfHx8fGE5NTMwMmIw.OVl4DM8v-sGCJ2vWsZlFd19OuqNIDxAprlg5NMFu7cg&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+#EXTINF:-1 tvg-name="Racing Santander vs Valencia | LIVE | 12/10/2026 [Tnt-usa]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Racing Santander vs Valencia | LIVE | 12/10/2026 [Tnt-usa]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=9aba7a810e47b32163183d4d9e92840f%2Findex.m3u8&e=1791748730&sig=AZ-w0OxLy6MLG47oldjYvuWQXQpzZAMbzxxEvrNhnRM&v=1791746930-9281
 
-#EXTINF:-1 tvg-name="LAFC vs Vancouver Whitecaps | 09:30 | 11/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",LAFC vs Vancouver Whitecaps | 09:30 | 11/10/2026 [Wildgames]
-#EXTVLCOPT:http-referrer=https://matchora.to/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchora.to
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
-#EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fb.vsqqez.online%2Fhls%2F177348%2Findex.m3u8%3Ft%3DMTc3MzQ4fDE3OTE2ODU5ODd8fHx8YTk1MzAyYjA.ZoNTWK4erTntKal-YKikRo3QPXkbndtjcoX_eu-1F08&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+#EXTINF:-1 tvg-name="Racing Santander vs Valencia | LIVE | 12/10/2026 [Ihdstreams]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Racing Santander vs Valencia | LIVE | 12/10/2026 [Ihdstreams]
+#EXTVLCOPT:http-referrer=https://streame.center/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://streame.center
+#EXTVLCOPT:http-cookie=cf_clearance=cJ0c3PdgrAsK8Mei5N_wnZV2XT660mvAQqEErUgwzvo-1791746942-1.2.1.1-YZpms.Aem7RTGRtHCQsM7Dl6tVj4yH1exqlHFAYhV3JKGbaIvSAEPYiTltnbiKpFVmXhz.AUT4LlP9diD7tT1owQ0IYj_mgHUydSkEDUXdlaffsUqKs24lG_oDhkYuQDWKS7H5Z401EvngSkIjYLOTrXqKxQZl4_6KdBtW2AhTBHYv3qpMxyjHIB38K2TNwI80Rlq4HADSh.UfwS8gip5yxUE2CFqx64e11VVLTfe_q5Ga75vpuxLNaK1xhIb2D9Rpf39WtWNKcJG5GvG69W96rie0UEePjrXDeUcsXzhzFLeBT77l_rSToLynKc9o6uGfirfO1w9NrajsS7_nmILUp8niPYY8fpfVe0UinXcQM
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://streame.center&Cookie=cf_clearance=cJ0c3PdgrAsK8Mei5N_wnZV2XT660mvAQqEErUgwzvo-1791746942-1.2.1.1-YZpms.Aem7RTGRtHCQsM7Dl6tVj4yH1exqlHFAYhV3JKGbaIvSAEPYiTltnbiKpFVmXhz.AUT4LlP9diD7tT1owQ0IYj_mgHUydSkEDUXdlaffsUqKs24lG_oDhkYuQDWKS7H5Z401EvngSkIjYLOTrXqKxQZl4_6KdBtW2AhTBHYv3qpMxyjHIB38K2TNwI80Rlq4HADSh.UfwS8gip5yxUE2CFqx64e11VVLTfe_q5Ga75vpuxLNaK1xhIb2D9Rpf39WtWNKcJG5GvG69W96rie0UEePjrXDeUcsXzhzFLeBT77l_rSToLynKc9o6uGfirfO1w9NrajsS7_nmILUp8niPYY8fpfVe0UinXcQM
+#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center|Cookie: cf_clearance=cJ0c3PdgrAsK8Mei5N_wnZV2XT660mvAQqEErUgwzvo-1791746942-1.2.1.1-YZpms.Aem7RTGRtHCQsM7Dl6tVj4yH1exqlHFAYhV3JKGbaIvSAEPYiTltnbiKpFVmXhz.AUT4LlP9diD7tT1owQ0IYj_mgHUydSkEDUXdlaffsUqKs24lG_oDhkYuQDWKS7H5Z401EvngSkIjYLOTrXqKxQZl4_6KdBtW2AhTBHYv3qpMxyjHIB38K2TNwI80Rlq4HADSh.UfwS8gip5yxUE2CFqx64e11VVLTfe_q5Ga75vpuxLNaK1xhIb2D9Rpf39WtWNKcJG5GvG69W96rie0UEePjrXDeUcsXzhzFLeBT77l_rSToLynKc9o6uGfirfO1w9NrajsS7_nmILUp8niPYY8fpfVe0UinXcQM
+https://edgestream4.pro/hls/377qj1h2727.m3u8?st=i2yhmez-eHB8is0AihZsoAL4e_0L6f0AIaVEEwNFgwg&e=1791757751
 
-#EXTINF:-1 tvg-name="São Paulo vs Vitória | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/85.png" tvg-id="Soccer.Dummy.us" group-title="Brasileirão",São Paulo vs Vitória | Español 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=premiere1
+#EXTINF:-1 tvg-name="Racing Santander vs Valencia | LIVE | 12/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Racing Santander vs Valencia | LIVE | 12/10/2026 [Topsurge]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=9aba7a810e47b32163183d4d9e92840f%2Findex.m3u8&e=1791748765&sig=y28cePEYyGJh8f-1I40dl_aoztwIEX2xiY112qsiGvs&v=1791746965-1746
+
+#EXTINF:-1 tvg-name="Racing Santander vs Valencia | LIVE | 12/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Racing Santander vs Valencia | LIVE | 12/10/2026 [Buff-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=9aba7a810e47b32163183d4d9e92840f%2Findex.m3u8&e=1791749014&sig=SAIgzO6WYkVX50-8KrGQdyhVkvnjlZE5pPYxucmFAUI&v=1791747214-6952
+
+#EXTINF:-1 tvg-name="Racing Santander vs Valencia | LIVE | 12/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Racing Santander vs Valencia | LIVE | 12/10/2026 [Powerstream]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=9aba7a810e47b32163183d4d9e92840f%2Findex.m3u8&e=1791749026&sig=6jB0-ehKs5VyTMPAnqomjtNzZRbHPQ4qwZEwnUIRA9w&v=1791747226-9324
+
+#EXTINF:-1 tvg-name="Cagliari vs Juventus | LIVE | 12/10/2026 [Tnt-usa]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Cagliari vs Juventus | LIVE | 12/10/2026 [Tnt-usa]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=9ae3de4b40a6ecfdd03fc90be82c4535%2Findex.m3u8&e=1791749159&sig=q376TtyrjMK01ElO8YGUyNcyZansTlhVMYp4U4nFbLs&v=1791747359-4742
+
+#EXTINF:-1 tvg-name="Cagliari vs Juventus | LIVE | 12/10/2026 [Ihdstreams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Cagliari vs Juventus | LIVE | 12/10/2026 [Ihdstreams]
+#EXTVLCOPT:http-referrer=https://streame.center/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://streame.center
+#EXTVLCOPT:http-cookie=cf_clearance=vLYIK8Vw01fA_Cg2gQNxTT7cy3wkjmJjB5lPlM0qstU-1791747370-1.2.1.1-ioqLrimJMTApOqagZr4vSTsTn2qIU3MVa3FyJtv5p0qUCNQFPhGUApJ06RUV4cID.W_cpTQ6GKsR3XKl063TYcGiG.ibi2zqAfHUb5ckrBw8ypkHYxp0qWVidMdNTNuxHr9ocED1Esn6U4UdzbyLMAFcjB.YCbRZ.c58d8jSTisK5K1hE2F.YBMzXYHUBfe8nt19bM0GAgtmazdJFcxJm99aO.EjpmL9BOchu24GF1hMbHct4zDUxCgXorzyu64.IFqv7X4whESpqgLQj6XywJ58D3sQcheH1sWOUqcoKIxM47xaz9uTrYqDDVC9QQ2M3o2JSatB5PFIvL34VWJQgsQQe0DR3gWEySrBSxNp370
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://streame.center&Cookie=cf_clearance=vLYIK8Vw01fA_Cg2gQNxTT7cy3wkjmJjB5lPlM0qstU-1791747370-1.2.1.1-ioqLrimJMTApOqagZr4vSTsTn2qIU3MVa3FyJtv5p0qUCNQFPhGUApJ06RUV4cID.W_cpTQ6GKsR3XKl063TYcGiG.ibi2zqAfHUb5ckrBw8ypkHYxp0qWVidMdNTNuxHr9ocED1Esn6U4UdzbyLMAFcjB.YCbRZ.c58d8jSTisK5K1hE2F.YBMzXYHUBfe8nt19bM0GAgtmazdJFcxJm99aO.EjpmL9BOchu24GF1hMbHct4zDUxCgXorzyu64.IFqv7X4whESpqgLQj6XywJ58D3sQcheH1sWOUqcoKIxM47xaz9uTrYqDDVC9QQ2M3o2JSatB5PFIvL34VWJQgsQQe0DR3gWEySrBSxNp370
+#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center|Cookie: cf_clearance=vLYIK8Vw01fA_Cg2gQNxTT7cy3wkjmJjB5lPlM0qstU-1791747370-1.2.1.1-ioqLrimJMTApOqagZr4vSTsTn2qIU3MVa3FyJtv5p0qUCNQFPhGUApJ06RUV4cID.W_cpTQ6GKsR3XKl063TYcGiG.ibi2zqAfHUb5ckrBw8ypkHYxp0qWVidMdNTNuxHr9ocED1Esn6U4UdzbyLMAFcjB.YCbRZ.c58d8jSTisK5K1hE2F.YBMzXYHUBfe8nt19bM0GAgtmazdJFcxJm99aO.EjpmL9BOchu24GF1hMbHct4zDUxCgXorzyu64.IFqv7X4whESpqgLQj6XywJ58D3sQcheH1sWOUqcoKIxM47xaz9uTrYqDDVC9QQ2M3o2JSatB5PFIvL34VWJQgsQQe0DR3gWEySrBSxNp370
+https://edgestream7.pro/hls/syaLqucEne4k.m3u8?st=PBwGRVoFKxGlDTE7DZ0VmBKzeZqEjw0PJCocpCAEaOA&e=1791758180
+
+#EXTINF:-1 tvg-name="Cagliari vs Juventus | LIVE | 12/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Cagliari vs Juventus | LIVE | 12/10/2026 [Buff-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=d7bb70bbe1dafb9cbec7469b899bee63%2Findex.m3u8&e=1791749431&sig=LXBx3EfqAGLkQTkqQLp4pber_tpIh8r_HDtMhM_afZ0&v=1791747631-5430
+
+#EXTINF:-1 tvg-name="Cagliari vs Juventus | LIVE | 12/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Cagliari vs Juventus | LIVE | 12/10/2026 [Powerstream]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=d7bb70bbe1dafb9cbec7469b899bee63%2Findex.m3u8&e=1791749442&sig=1w6xuVP3RVoiwHAO7NuTyhor79EbmiZkz4Stg8uZ8cI&v=1791747642-8118
+
+#EXTINF:-1 tvg-name="Cagliari vs Juventus | LIVE | 12/10/2026 [Bally-sports]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Cagliari vs Juventus | LIVE | 12/10/2026 [Bally-sports]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=9ae3de4b40a6ecfdd03fc90be82c4535%2Findex.m3u8&e=1791749521&sig=1U4O6bbvcwJ1JmmDPOJauXje_G7WMPOQmx5IdUTo0UU&v=1791747721-4135
+
+#EXTINF:-1 tvg-name="Troyes vs Marseille | LIVE | 12/10/2026 [Tnt-usa]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Troyes vs Marseille | LIVE | 12/10/2026 [Tnt-usa]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=c31eab77556044c97292125cfbfa2364%2Findex.m3u8&e=1791749536&sig=L9zGUT4TEznBpNXaDZPuOEgRURKWWAtA5p_ANCsu-iE&v=1791747736-8620
+
+#EXTINF:-1 tvg-name="Troyes vs Marseille | LIVE | 12/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Troyes vs Marseille | LIVE | 12/10/2026 [Buff-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=c31eab77556044c97292125cfbfa2364%2Findex.m3u8&e=1791749750&sig=zs0tv4Ep9Cn4xxCup5cPIloy90BaHTvSoyiw_wkK-Nw&v=1791747950-1031
+
+#EXTINF:-1 tvg-name="Troyes vs Marseille | LIVE | 12/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Troyes vs Marseille | LIVE | 12/10/2026 [Powerstream]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=c31eab77556044c97292125cfbfa2364%2Findex.m3u8&e=1791749761&sig=PV6vCFAEJgsC6e9g-MZpLgwXMb44fTCRrsZFwkjYAnI&v=1791747961-4906
+
+#EXTINF:-1 tvg-name="Troyes vs Marseille | LIVE | 12/10/2026 [Bally-sports]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Troyes vs Marseille | LIVE | 12/10/2026 [Bally-sports]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=c31eab77556044c97292125cfbfa2364%2Findex.m3u8&e=1791749844&sig=KBtDLFS7vx7krSl12czWFcNb4jYdLL4H_B6qu-p8dVg&v=1791748044-1513
+
+#EXTINF:-1 tvg-name="Arouca vs Estrela | 02:30 | 12/10/2026 [Tnt-usa]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Arouca vs Estrela | 02:30 | 12/10/2026 [Tnt-usa]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=452e62197617eee2172de9c2a1c7e936%2Findex.m3u8&e=1791750020&sig=M2Z8doZqxexUbdXDSXi_Ffn_OqFUMd9dJedZYzMh-74&v=1791748220-3598
+
+#EXTINF:-1 tvg-name="Arouca vs Estrela | 02:30 | 12/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Arouca vs Estrela | 02:30 | 12/10/2026 [Powerstream]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=452e62197617eee2172de9c2a1c7e936%2Findex.m3u8&e=1791750140&sig=FjaI9I2SxCanCU0bK4LcjjzDg22VqStKEctZ9bsNJCU&v=1791748340-4998
+
+#EXTINF:-1 tvg-name="Arouca vs Estrela | 02:30 | 12/10/2026 [Bally-sports]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Arouca vs Estrela | 02:30 | 12/10/2026 [Bally-sports]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.hockey.do/secure_hls.php?path=452e62197617eee2172de9c2a1c7e936%2Findex.m3u8&e=1791750187&sig=O4ypc5PEwbi3JVLRSsGLU4x4FvP4vjb9l2Db0-603rs&v=1791748387-9615
+
+#EXTINF:-1 tvg-name="Benfica vs Vitória Guimarães | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Primeira Liga",Benfica vs Vitória Guimarães | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=dsports2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=premiere1&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=premiere1
-https://Ym9yZQ.fubo18.com:443/premiere1/mono.m3u8?token=391e8c8982a28898c963c27bd512157fbff00a0f-f0-1791702655-1791684655
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=dsports2&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=dsports2
+https://a2lja3m.fubo18.com:443/dsports2/mono.m3u8?token=b4699175f363cda23f7cecab58ae1c1c53554a87-b9-1791766444-1791748444
 
-#EXTINF:-1 tvg-name="Universitario vs Melgar | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1813.png" tvg-id="Soccer.Dummy.us" group-title="Liga 1",Universitario vs Melgar | Español 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=liga1max
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=liga1max&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=liga1max
-https://bgvnzw5k.fubo18.com:443/liga1max/mono.m3u8?token=e0c5dfd75f32596c45d2dd1cb1898e6b3117aeae-71-1791702655-1791684655
-
-#EXTINF:-1 tvg-name="River Plate vs Estudiantes de Rio Cuarto | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1944.png" tvg-id="Soccer.Dummy.us" group-title="Liga Profesional Argentina",River Plate vs Estudiantes de Rio Cuarto | Español 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espn3&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espn3
-https://b2ZmaWNpYWw.fubo18.com:443/espn3/mono.m3u8?token=f183269ef6ef2d37d3239f8b7de23206aec58e33-9f-1791702655-1791684655
-
-#EXTINF:-1 tvg-name="River Plate vs Estudiantes de Rio Cuarto | Español 3 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1944.png" tvg-id="Soccer.Dummy.us" group-title="Liga Profesional Argentina",River Plate vs Estudiantes de Rio Cuarto | Español 3 [PLIBRE]
+#EXTINF:-1 tvg-name="San Lorenzo vs Deportivo Riestra | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1944.png" tvg-id="Soccer.Dummy.us" group-title="Liga Profesional Argentina",San Lorenzo vs Deportivo Riestra | Español 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espnpremium
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espnpremium&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espnpremium
-https://dglvz29s.fubo18.com:443/espnpremium/mono.m3u8?token=2a7328116cd54b938ea63eb156922935c35a13fb-fa-1791702656-1791684656
+https://bmf0aw9u.fubo18.com:443/espnpremium/mono.m3u8?token=2e113f340c02b96f3fb2bfc05274f5ed8c7d081a-c-1791766445-1791748445
 
-#EXTINF:-1 tvg-name="Atlas vs Chivas | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga MX",Atlas vs Chivas | Español 1 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=tudn
+#EXTINF:-1 tvg-name="Coquimbo Unido vs Colo-Colo | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" tvg-id="Soccer.Dummy.us" group-title="Primera División de Chile",Coquimbo Unido vs Colo-Colo | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=tntsportschile
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=tudn&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=tudn
-https://YXdlc29tZQ.fubo18.com:443/tudn/mono.m3u8?token=f8852f289dc0e8dc87a8c71ab0ab6e74d8d1d0f0-e6-1791702656-1791684656
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=tntsportschile&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=tntsportschile
+https://b2ZmaWNpYWw.fubo18.com:443/tntsportschile/mono.m3u8?token=d6352ef85b4817cae8de0fec269960d9c54c2fac-1e-1791766445-1791748445
 
-#EXTINF:-1 tvg-name="Atlas vs Chivas | Español 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga MX",Atlas vs Chivas | Español 2 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=univision
+#EXTINF:-1 tvg-name="UTC vs Sporting Cristal | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1813.png" tvg-id="Soccer.Dummy.us" group-title="Liga 1",UTC vs Sporting Cristal | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=liga1max
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=univision&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=univision
-https://bmf0aw9u.fubo18.com:443/univision/mono.m3u8?token=f905b6511234ccc11adfaf9a92339207fdfb0d8c-b1-1791702656-1791684656
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=liga1max&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=liga1max
+https://bmf0aw9u.fubo18.com:443/liga1max/mono.m3u8?token=b4d132976303436108ea6a945fb1c967d99ce934-f0-1791766445-1791748445
 
-#EXTINF:-1 tvg-name="Atlas vs Chivas | Español 3 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga MX",Atlas vs Chivas | Español 3 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=canal5
+#EXTINF:-1 tvg-name="Cerro Largo vs Albion FC | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" tvg-id="Soccer.Dummy.us" group-title="Primera División de Uruguay",Cerro Largo vs Albion FC | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=disney7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=canal5&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=canal5
-https://c2f2zq.fubo18.com:443/canal5/mono.m3u8?token=5f4f688af015927fcf69f3fd2776856d2a435ac4-20-1791702656-1791684656
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=disney7&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=disney7
+https://a2lja3m.fubo18.com:443/disney7/mono.m3u8?token=207cfa7000d0c0a356ca45099bff8c78cf5a532c-b7-1791766445-1791748445
 
-#EXTINF:-1 tvg-name="Atlético Nacional vs Deportivo Pasto | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga BetPlay",Atlético Nacional vs Deportivo Pasto | Español 1 [PLIBRE]
+#EXTINF:-1 tvg-name="Estac Troyes vs Marseille | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Ligue 1",Estac Troyes vs Marseille | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=disney6
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=disney6&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=disney6
+https://eWVz.fubo18.com:443/disney6/mono.m3u8?token=eb84e83d7addbf393a4a81567f8cf580776cd76e-3-1791766445-1791748445
+
+#EXTINF:-1 tvg-name="Cagliari vs Juventus | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Serie A",Cagliari vs Juventus | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espn&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espn
+https://y2fzdgxl.fubo18.com:443/espn/mono.m3u8?token=58fddeda0fbf31357fcc2daaf26501260170a9be-7a-1791766445-1791748445
+
+#EXTINF:-1 tvg-name="Cagliari vs Juventus | Español 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Serie A",Cagliari vs Juventus | Español 2 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=disney7
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=disney7&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=disney7
+https://am91cm5leQ.fubo18.com:443/disney7/mono.m3u8?token=0caca57a6feecf5142160896f0e8a9fe9f581159-de-1791766446-1791748446
+
+#EXTINF:-1 tvg-name="Atlético Mineiro vs Santos | Portugués 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/85.png" tvg-id="Soccer.Dummy.us" group-title="Brasileirão",Atlético Mineiro vs Santos | Portugués 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=premiere5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=premiere5&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=premiere5
+https://y2fzdgxl.fubo18.com:443/premiere5/mono.m3u8?token=0a1f65cc46cc5eb4c7e9bbef7bbc2f2b6b3eee9d-77-1791766446-1791748446
+
+#EXTINF:-1 tvg-name="Atlético Mineiro vs Santos | Portugués 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/85.png" tvg-id="Soccer.Dummy.us" group-title="Brasileirão",Atlético Mineiro vs Santos | Portugués 2 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=sportv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=sportv&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=sportv
+https://Ym9yZQ.fubo18.com:443/sportv/mono.m3u8?token=e1fc7105bd77498b46ab2744ac0d1d9ff2832011-8e-1791766446-1791748446
+
+#EXTINF:-1 tvg-name="Independiente Santa Fe vs Fortaleza CEIF | Español 1 [PLIBRE]" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/77/Copa_Betplay_Dimayor_Colombia.png" tvg-id="Soccer.Dummy.us" group-title="Copa Colombia",Independiente Santa Fe vs Fortaleza CEIF | Español 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=winplus
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=winplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=winplus
-https://bmf0aw9u.fubo18.com:443/winplus/mono.m3u8?token=4a2cac6ef38f0e864f7706edf218274d5c5d49e2-78-1791702656-1791684656
+https://bgvnzw5k.fubo18.com:443/winplus/mono.m3u8?token=18fcd2a0c8c91353b111bebcc7136bfa7a17b8f9-b7-1791766446-1791748446
 
-#EXTINF:-1 tvg-name="América vs Monterrey | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga MX",América vs Monterrey | Español 1 [PLIBRE]
+#EXTINF:-1 tvg-name="Racing Santander vs Valencia | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" tvg-id="Soccer.Dummy.us" group-title="LaLiga",Racing Santander vs Valencia | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espn2&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espn2
+https://YXdlc29tZQ.fubo18.com:443/espn2/mono.m3u8?token=a4ce04332cb4e07c1d84173f9f959858b1dcb2e3-d1-1791766446-1791748446
+
+#EXTINF:-1 tvg-name="Racing Santander vs Valencia | Español 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" tvg-id="Soccer.Dummy.us" group-title="LaLiga",Racing Santander vs Valencia | Español 2 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=disney9
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=disney9&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=disney9
+https://eWVz.fubo18.com:443/disney9/mono.m3u8?token=c5d652781caaddc0765d9373e3530f2feb3387a8-11-1791766446-1791748446
+
+#EXTINF:-1 tvg-name="Racing Santander vs Valencia | Español 3 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" tvg-id="Soccer.Dummy.us" group-title="LaLiga",Racing Santander vs Valencia | Español 3 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espndeportes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espndeportes&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espndeportes
+https://eWVz.fubo18.com:443/espndeportes/mono.m3u8?token=720692352df16548c80030b19fba6d4b8dc884b7-a6-1791766446-1791748446
+
+#EXTINF:-1 tvg-name="Cadiz vs Sporting Gijon | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/107.png" tvg-id="Soccer.Dummy.us" group-title="Segunda División",Cadiz vs Sporting Gijon | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=hypermotion1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=hypermotion1&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=hypermotion1
+https://YXdlc29tZQ.fubo18.com:443/hypermotion1/mono.m3u8?token=3774e3ef70beeace042fe6c297ee3c28ab21a229-d5-1791766447-1791748447
+
+#EXTINF:-1 tvg-name="La Luz vs Plaza Colonia | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/107.png" tvg-id="Soccer.Dummy.us" group-title="Segunda División",La Luz vs Plaza Colonia | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=disney8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=disney8&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=disney8
+https://bmf0aw9u.fubo18.com:443/disney8/mono.m3u8?token=7ba0adc1829d36a1522e580e29f5f00714871cb9-93-1791766447-1791748447
+
+#EXTINF:-1 tvg-name="Platense vs Argentinos Juniors | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1944.png" tvg-id="Soccer.Dummy.us" group-title="Liga Profesional Argentina",Platense vs Argentinos Juniors | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espnpremium
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espnpremium&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espnpremium
+https://b2ZmaWNpYWw.fubo18.com:443/espnpremium/mono.m3u8?token=a6ed008d7782930256e8c106e7f1ba1f6819e10c-14-1791766447-1791748447
+
+#EXTINF:-1 tvg-name="Rosario Central vs Independiente Rivadavia | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1944.png" tvg-id="Soccer.Dummy.us" group-title="Liga Profesional Argentina",Rosario Central vs Independiente Rivadavia | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=tntsports
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=tntsports&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=tntsports
+https://am91cm5leQ.fubo18.com:443/tntsports/mono.m3u8?token=73c805575561aa207caf9594dc0418081e681e55-36-1791766447-1791748447
+
+#EXTINF:-1 tvg-name="Comerciantes vs Deportiva Agropecuaria | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga 2",Comerciantes vs Deportiva Agropecuaria | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=bicolortv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=bicolortv&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=bicolortv
+https://eWVz.fubo18.com:443/bicolortv/mono.m3u8?token=d18fdeae48ee1de88a9a92d59532f7f67385f921-d2-1791766448-1791748448
+
+#EXTINF:-1 tvg-name="Flamengo vs Fluminense | Portugués 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/85.png" tvg-id="Soccer.Dummy.us" group-title="Brasileirão",Flamengo vs Fluminense | Portugués 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=premiere2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=premiere2&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=premiere2
+https://b2ZmaWNpYWw.fubo18.com:443/premiere2/mono.m3u8?token=a6e3a65a606194df29130a73a67819b0423d8df8-fe-1791766448-1791748448
+
+#EXTINF:-1 tvg-name="Grêmio vs Internacional | Portugués 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/85.png" tvg-id="Soccer.Dummy.us" group-title="Brasileirão",Grêmio vs Internacional | Portugués 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=premiere1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=premiere1&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=premiere1
+https://eWVz.fubo18.com:443/premiere1/mono.m3u8?token=e03b35d3c6626eea54c776f9768f58481bda71e1-20-1791766448-1791748448
+
+#EXTINF:-1 tvg-name="Palmeiras vs Corinthians | Portugués 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/85.png" tvg-id="Soccer.Dummy.us" group-title="Brasileirão",Palmeiras vs Corinthians | Portugués 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=premiere3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=premiere3&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=premiere3
+https://b2ZmaWNpYWw.fubo18.com:443/premiere3/mono.m3u8?token=08af3f240f236d42bd312920fb901ad449c3e394-d4-1791766448-1791748448
+
+#EXTINF:-1 tvg-name="Palmeiras vs Corinthians | Portugués 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/85.png" tvg-id="Soccer.Dummy.us" group-title="Brasileirão",Palmeiras vs Corinthians | Portugués 2 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=premiere4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=premiere4&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=premiere4
+https://a2lja3m.fubo18.com:443/premiere4/mono.m3u8?token=a155bac70aef095b022d8cf7ee092232e6cda7d1-c8-1791766449-1791748449
+
+#EXTINF:-1 tvg-name="Concepción vs Union La Calera | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" tvg-id="Soccer.Dummy.us" group-title="Primera División de Chile",Concepción vs Union La Calera | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=tntsportschile
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=tntsportschile&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=tntsportschile
+https://y2fzdgxl.fubo18.com:443/tntsportschile/mono.m3u8?token=df665bbe4fd8b7caa0f670805bcdac4b7bd12196-4e-1791766449-1791748449
+
+#EXTINF:-1 tvg-name="Sport Boys vs Alianza Atlético | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1813.png" tvg-id="Soccer.Dummy.us" group-title="Liga 1",Sport Boys vs Alianza Atlético | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=liga1max
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=liga1max&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=liga1max
+https://eWVz.fubo18.com:443/liga1max/mono.m3u8?token=d7fa5e9eeacbc8ae847f525083a5dda32036e8a7-f4-1791766449-1791748449
+
+#EXTINF:-1 tvg-name="Jaguares de Córdoba vs Deportes Tolima | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga BetPlay",Jaguares de Córdoba vs Deportes Tolima | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=winsports
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=winsports&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=winsports
+https://b2ZmaWNpYWw.fubo18.com:443/winsports/mono.m3u8?token=1b0985aab668bf2e49c68c0686243326589d955d-cb-1791766449-1791748449
+
+#EXTINF:-1 tvg-name="Jaguares de Córdoba vs Deportes Tolima | Español 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga BetPlay",Jaguares de Córdoba vs Deportes Tolima | Español 2 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=winplus
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=winplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=winplus
+https://am91cm5leQ.fubo18.com:443/winplus/mono.m3u8?token=9585973c565db2b1bf3d81d27d8aa52e98d31e3c-ca-1791766449-1791748449
+
+#EXTINF:-1 tvg-name="Racing Club vs Belgrano | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1944.png" tvg-id="Soccer.Dummy.us" group-title="Liga Profesional Argentina",Racing Club vs Belgrano | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espnpremium
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espnpremium&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espnpremium
+https://a2lja3m.fubo18.com:443/espnpremium/mono.m3u8?token=20cebe4999dce9450a2e8a93584f63a45afbf992-8c-1791766450-1791748450
+
+#EXTINF:-1 tvg-name="Bahia vs Mirassol | Portugués 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/85.png" tvg-id="Soccer.Dummy.us" group-title="Brasileirão",Bahia vs Mirassol | Portugués 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=premiere5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=premiere5&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=premiere5
+https://YXdlc29tZQ.fubo18.com:443/premiere5/mono.m3u8?token=214d67981333b9718536193a3b16eb233c63a772-c4-1791766450-1791748450
+
+#EXTINF:-1 tvg-name="Deportes Limache vs Palestino | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" tvg-id="Soccer.Dummy.us" group-title="Primera División de Chile",Deportes Limache vs Palestino | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=tntsportschile
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=tntsportschile&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=tntsportschile
+https://bgvnzw5k.fubo18.com:443/tntsportschile/mono.m3u8?token=57ea6336834bae32b15498030e3a3893680798f9-ba-1791766450-1791748450
+
+#EXTINF:-1 tvg-name="Escorpiones Belén vs Deportivo Saprissa | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" tvg-id="Soccer.Dummy.us" group-title="Primera División",Escorpiones Belén vs Deportivo Saprissa | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=futv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=futv&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=futv
+https://YXdlc29tZQ.fubo18.com:443/futv/mono.m3u8?token=9e882f0c1b6f37186cab9887b5b91c99e5619ac0-13-1791766451-1791748451
+
+#EXTINF:-1 tvg-name="Atlético San Luis vs Santos Laguna | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga MX",Atlético San Luis vs Santos Laguna | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=espn2mx
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=espn2mx&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=espn2mx
+https://YXdlc29tZQ.fubo18.com:443/espn2mx/mono.m3u8?token=8379dfa82e986bf877e7c509c3b0b93af07c8e86-cf-1791766451-1791748451
+
+#EXTINF:-1 tvg-name="Boyacá Chicó vs Cucuta | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga BetPlay",Boyacá Chicó vs Cucuta | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=winplus
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=winplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=winplus
+https://am91cm5leQ.fubo18.com:443/winplus/mono.m3u8?token=1354dbebe3c34e302a791d86aee23d5413d22cd8-ed-1791766451-1791748451
+
+#EXTINF:-1 tvg-name="Pachuca vs Necaxa | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga MX",Pachuca vs Necaxa | Español 1 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=tudn
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=tudn&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=tudn
-https://Ym9yZQ.fubo18.com:443/tudn/mono.m3u8?token=14aadef7e88c91d1f4a0c686e99357aa2661f2b1-1f-1791702656-1791684656
+https://eWVz.fubo18.com:443/tudn/mono.m3u8?token=13d2822800f04c13578047174c66de2c4556ea1d-f8-1791766451-1791748451
 
-#EXTINF:-1 tvg-name="América vs Monterrey | Español 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga MX",América vs Monterrey | Español 2 [PLIBRE]
-#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=univision
+#EXTINF:-1 tvg-name="Pachuca vs Necaxa | Español 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga MX",Pachuca vs Necaxa | Español 2 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=foxone1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=univision&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=univision
-https://a2lja3m.fubo18.com:443/univision/mono.m3u8?token=ea07f2f2c05d8c8243bde30a17208a02ea30c6eb-a9-1791702656-1791684656
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=foxone1&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=foxone1
+https://a2lja3m.fubo18.com:443/foxone1/mono.m3u8?token=aba3173638c0f792df137b6dd3207792a7e9e421-8c-1791766451-1791748451
 
-#EXTINF:-1 tvg-name="América vs Monterrey | Español 3 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga MX",América vs Monterrey | Español 3 [PLIBRE]
+#EXTINF:-1 tvg-name="Cusco FC vs Alianza Lima | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1813.png" tvg-id="Soccer.Dummy.us" group-title="Liga 1",Cusco FC vs Alianza Lima | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=liga1max
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=liga1max&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=liga1max
+https://y2fzdgxl.fubo18.com:443/liga1max/mono.m3u8?token=18926ad8d96fc1db848613b7f9dbdf606b18900b-6a-1791766452-1791748452
+
+#EXTINF:-1 tvg-name="Talleres de Córdoba vs Independiente | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1944.png" tvg-id="Soccer.Dummy.us" group-title="Liga Profesional Argentina",Talleres de Córdoba vs Independiente | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=tntsports
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=tntsports&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=tntsports
+https://dglvz29s.fubo18.com:443/tntsports/mono.m3u8?token=ad50b7aa3d3822e27f10f2c3c0f2b4cbf33ab8b7-b5-1791766452-1791748452
+
+#EXTINF:-1 tvg-name="América de Cali vs Independiente Medellín | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga BetPlay",América de Cali vs Independiente Medellín | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=winplus
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=winplus&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=winplus
+https://bmf0aw9u.fubo18.com:443/winplus/mono.m3u8?token=a16fe6b2f1a9fecf0d7ee94738ff857a0203baf4-37-1791766453-1791748453
+
+#EXTINF:-1 tvg-name="Pumas UNAM vs Cruz Azul | Español 1 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga MX",Pumas UNAM vs Cruz Azul | Español 1 [PLIBRE]
+#EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=tudn
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=tudn&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=tudn
+https://am91cm5leQ.fubo18.com:443/tudn/mono.m3u8?token=d8d1ee8088865f76bcc7c34a7e57282fff215f98-d-1791766453-1791748453
+
+#EXTINF:-1 tvg-name="Pumas UNAM vs Cruz Azul | Español 2 [PLIBRE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Liga MX",Pumas UNAM vs Cruz Azul | Español 2 [PLIBRE]
 #EXTVLCOPT:http-referrer=https://la18hd.su/vivo/canales.php?stream=canal5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://la18hd.su/vivo/canales.php?stream=canal5&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://la18hd.su/vivo/canales.php?stream=canal5
-https://y2fzdgxl.fubo18.com:443/canal5/mono.m3u8?token=a179c02716310680b2a5a5e90e323c3f8e1f209b-6b-1791702656-1791684656
+https://am91cm5leQ.fubo18.com:443/canal5/mono.m3u8?token=0f955d0c18a105cdba8b1029675da8911080ddff-f7-1791766453-1791748453
 
-#EXTINF:-1 tvg-name="D.C. United vs Inter Miami CF | English | 06:30 | 11/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="MLS",D.C. United vs Inter Miami CF | English | 06:30 | 11/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv761847
+#EXTINF:-1 tvg-name="Juventus vs Cagliari | 01:45 | 12/10/2026 [STRMFREE]" tvg-logo="https://streamfree.top/thumbnails/soccer_juventus-vs-cagliari_Juventus_vs_Cagliari" tvg-id="Soccer.Dummy.us" group-title="Serie A",Juventus vs Cagliari | 01:45 | 12/10/2026 [STRMFREE]
+#EXTVLCOPT:http-referrer=https://streamfree.top
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv761847&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv761847
-https://instreams.xyz/live3/tv761847/index.m3u8?st=mTPKUDBLH-yHsY6lFBccdA&e=1791696358
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streamfree.top&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://streamfree.top
+https://streamfree.top/live-cdn/juventus-vs-cagliari1080p3/index.m3u8?_e=1791778146&_n=a94e7591538aece2&_t=teG_Bmloy68BQLnmgwQ2Wg
 
-#EXTINF:-1 tvg-name="LAFC vs. Vancouver Whitecaps | 09:30 | 11/10/2026 [DAMITV]" tvg-logo="https://static.ppvservices.st/assets/thumb/fdf3af51891cdc922e52c4cd20dd4a5e-thumbnail.jpg" tvg-id="Soccer.Dummy.us" group-title="MLS",LAFC vs. Vancouver Whitecaps | 09:30 | 11/10/2026 [DAMITV]
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=mls/2026-10-10/lafc-van
+#EXTINF:-1 tvg-name="Marseille vs Troyes | 01:45 | 12/10/2026 [STRMFREE]" tvg-logo="https://streamfree.top/thumbnails/soccer_marseille-vs-troyes_Marseille_vs_Troyes" tvg-id="Soccer.Dummy.us" group-title="Ligue 1",Marseille vs Troyes | 01:45 | 12/10/2026 [STRMFREE]
+#EXTVLCOPT:http-referrer=https://streamfree.top
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://ondemand.st/embed/?id=mls/2026-10-10/lafc-van&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://ondemand.st/embed/?id=mls/2026-10-10/lafc-van
-https://messi.damitv.st/live-hls/channel/mls/2026-10-10/lafc-van/playlist.m3u8?tk=L9PMtxwZZIGOI7dxrdOBHg&e=1791728756
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streamfree.top&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://streamfree.top
+https://streamfree.top/live-cdn/marseille-vs-troyes1080p3/index.m3u8?_e=1791778146&_n=1908cd5740c46562&_t=XCPqslXGJ8j47wixtw0hHA
 
-#EXTINF:-1 tvg-name="Tennis Channel | 09:25 | 11/10/2026 [DAMITV]" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuBEBDXsQZgdgwwRgBOYAU0hDpqxQFZh5Tg0wmJgATMNTTAWkVqNri0LIinbQ61OvHS5CISiCggGIRPzWq0hNTTV5s2AMb6NNFif4h+VFxux5bFLXnk3aASx2PV0+LRRNR0hAtjYUBHZQYkk2JjBHEFsaOxytGFZYSWt5YFIVGOVgeTYOMl5AiCA.webp" tvg-id="Soccer.Dummy.us" group-title="Tennis",Tennis Channel | 09:25 | 11/10/2026 [DAMITV]
+#EXTINF:-1 tvg-name="Valencia vs Racing Santander | 02:00 | 12/10/2026 [STRMFREE]" tvg-logo="https://streamfree.top/thumbnails/soccer_valencia-vs-racing-santander_Valencia_vs_Racing_Santander" tvg-id="Soccer.Dummy.us" group-title="La Liga",Valencia vs Racing Santander | 02:00 | 12/10/2026 [STRMFREE]
+#EXTVLCOPT:http-referrer=https://streamfree.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streamfree.top&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://streamfree.top
+https://streamfree.top/live-cdn/valencia-vs-racing-santander1080p3/index.m3u8?_e=1791778147&_n=b2613578efa5d29e&_t=pHeI9JkVcUFlUU6zBVmKAA
+
+#EXTINF:-1 tvg-name="Juventus vs Cagliari | English | 01:45 | 12/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Serie A",Juventus vs Cagliari | English | 01:45 | 12/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401874764
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401874764&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401874764
+https://instreams.pro/live3/tv401874764/index.m3u8?st=Tbmh5kh-GAFZTYDEtrLIdw&e=1791760150
+
+#EXTINF:-1 tvg-name="Marseille vs Troyes | English | 01:45 | 12/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Ligue 1",Marseille vs Troyes | English | 01:45 | 12/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401876440
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401876440&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401876440
+https://instreams.pro/live3/tv401876440/index.m3u8?st=Q2ygIKj0rnzplRzjFDrAmg&e=1791760157
+
+#EXTINF:-1 tvg-name="Valencia vs Racing Santander | English | 02:00 | 12/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" tvg-id="Soccer.Dummy.us" group-title="La Liga",Valencia vs Racing Santander | English | 02:00 | 12/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401882850
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401882850&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401882850
+https://instreams.live/live3/tv401882850/index.m3u8?st=39r9sJygtrEARLrhuiZCJA&e=1791760159
+
+#EXTINF:-1 tvg-name="Tennis Channel | 03:08 | 12/10/2026 [DAMITV]" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuBEBDXsQZgdgwwRgBOYAU0hDpqxQFZh5Tg0wmJgATMNTTAWkVqNri0LIinbQ61OvHS5CISiCggGIRPzWq0hNTTV5s2AMb6NNFif4h+VFxux5bFLXnk3aASx2PV0+LRRNR0hAtjYUBHZQYkk2JjBHEFsaOxytGFZYSWt5YFIVGOVgeTYOMl5AiCA.webp" tvg-id="Soccer.Dummy.us" group-title="Tennis",Tennis Channel | 03:08 | 12/10/2026 [DAMITV]
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~admin-tennis-channel
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://ondemand.st/embed/?id=sd-admin~admin-tennis-channel&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://ondemand.st/embed/?id=sd-admin~admin-tennis-channel
-https://messi.damitv.st/live-sd/streamed/admin/admin-tennis-channel/playlist.m3u8?tk=L9PMtxwZZIGOI7dxrdOBHg&e=1791728756
-
-#EXTINF:-1 tvg-name="Alabama vs Georgia Bulldogs [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Alabama vs Georgia Bulldogs [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57894?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57894?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57894?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57894%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57894%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="Colorado Rapids vs San Jose Earthquakes [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="MLS",Colorado Rapids vs San Jose Earthquakes [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57904?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57904?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57904?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57904%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57904%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="Sporting Kansas City vs Portland Timbers [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="MLS",Sporting Kansas City vs Portland Timbers [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57900?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57900?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57900?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57900%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57900%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="Minnesota United vs Houston Dynamo [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="MLS",Minnesota United vs Houston Dynamo [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57898?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57898?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57898?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57898%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57898%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="Austin FC vs Nashville SC [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="MLS",Austin FC vs Nashville SC [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57899?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57899?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57899?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57899%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57899%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="Georgia Southern vs James Madison [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Georgia Southern vs James Madison [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57878?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57878?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57878?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57878%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57878%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="Utah vs Kansas [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Utah vs Kansas [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57888?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57888?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57888?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57888%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57888%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="Purdue vs Minnesota [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Purdue vs Minnesota [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57889?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57889?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57889?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57889%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57889%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="Virginia vs Syracuse [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Virginia vs Syracuse [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57881?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57881?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57881?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57881%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57881%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="Louisiana Tech vs Lafayette [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Louisiana Tech vs Lafayette [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57882?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57882?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57882?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57882%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57882%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="Penn State vs USC [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Penn State vs USC [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57886?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57886?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57886?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57886%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57886%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="Memphis vs UAB [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Memphis vs UAB [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57864?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57864?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57864?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57864%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57864%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="UNLV vs North Dakota State Bison [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",UNLV vs North Dakota State Bison [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57865?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57865?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57865?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57865%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57865%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="UTEP vs Nevada [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",UTEP vs Nevada [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57873?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57873?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57873?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57873%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57873%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="Kentucky vs LSU Tigers [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Kentucky vs LSU Tigers [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/57871?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/57871?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/57871?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F57871%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F57871%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+https://messi.damitv.st/live-sd/streamed/admin/admin-tennis-channel/playlist.m3u8?tk=Vsg7_iVwoRSUw3UUYIX3Yw&e=1791792545
 
 #EXTINF:-1 tvg-name="Singapore Airlines Singapore GP [OVO]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Sports",Singapore Airlines Singapore GP [OVO]
 #EXTVLCOPT:http-referrer=https://otaghera.site/updates/singapore-airlines-singapore-gp/
