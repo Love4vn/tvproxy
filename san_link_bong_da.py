@@ -1,10 +1,10 @@
 """
-🎯 SĂN LINK XOILAC - Final v20
-✅ Dynamic Referer — tự thích ứng domain Xoilac đổi liên tục
-✅ Auto-detect domain hiện tại từ redirect
-✅ Fallback referer chain — nếu CDN đặc biệt thì dùng referer riêng
-✅ Đọc referer từ stream URL param (origin/src/referer)
-✅ Full headers: User-Agent + Referer + Origin + Accept
+🎯 SĂN LINK XOILAC - v21 (cập nhật theo HTML mới 2026)
+✅ Selector mới cho trang chủ xoilaczzz.pro
+✅ Lấy trực tiếp link /link/N → giảm thời gian quét
+✅ Timeout ngắn hơn, không chạy 30p nữa
+✅ Fallback vào phòng click server nếu cần
+✅ Dynamic Referer theo domain redirect
 """
 import re
 import time
@@ -22,12 +22,13 @@ PROXY = {
     "password": "hieu123",
 }
 
-MAX_RETRIES = 3
-DOMAIN_TIMEOUT = 25000
-STREAM_WAIT_TRIES = 40
+MAX_RETRIES = 2
+DOMAIN_TIMEOUT = 10000       # ⬇️ giảm từ 25s -> 10s
+ROOM_TIMEOUT = 6000          # ⬇️ giảm từ 15s -> 6s
+STREAM_WAIT_TRIES = 20       # chờ stream tối đa ~5s
 STREAM_WAIT_STEP_MS = 250
 HOURS_AHEAD = 24
-MAX_XEM_THEM_CLICKS = 15
+MAX_XEM_THEM_CLICKS = 8      # ⬇️ giảm số lần click xem thêm
 
 DEBUG_SHOW_REJECTED = True
 DEBUG_REJECTED_LIMIT = 15
@@ -40,6 +41,7 @@ TAT_CA_SERVER = [
 
 XOILAC_DOMAINS = [
     "https://xoilacz.io",
+    "https://xoilaczzz.pro",
     "https://xoilaczzh.io",
     "https://xoilaczzf.cc",
     "https://xoilaczzb.cc",
@@ -48,35 +50,20 @@ XOILAC_DOMAINS = [
     "https://xoilaczzh.cc",
     "https://xoilacxxi.cc",
     "https://xoilacxxe.cc",
-    "https://xoilacxbm.tv",
-    "https://xoilacxth.tv",
-    "https://xoilacxbi.tv",
-    "https://xoilac7tv.tv",
-    "https://xoilacvvr.tv",
-    "https://xoilacxbr.tv",
-    "https://xoilaczbh.tv",
-    "https://xoilaczzz.pro",
 ]
 
 # ==========================================
-# ⭐ v20: DYNAMIC REFERER
+# DYNAMIC REFERER
 # ==========================================
-# Biến global — được set khi redirect thành công
 CURRENT_XOILAC_DOMAIN = None
 CURRENT_XOILAC_REFERER = None
+FALLBACK_REFERER = "https://xoilaczzz.pro/"
 
-# Referer fallback nếu chưa detect được domain
-FALLBACK_REFERER = "https://xoilacz.io/"
-
-# Cache CDN cần referer riêng (domain không thuộc Xoilac)
 CDN_SPECIAL_REFERER = {
-    # Nếu CDN yêu cầu referer chính domain của nó
-    "edgenextcdn.net": None,  # None = dùng chính domain của CDN
+    "edgenextcdn.net": None,
     "api-score.com": "https://animation.api-score.com/",
 }
 
-# Danh sách domain ecosystem của Xoilac (không cần referer riêng)
-# Với các domain này → dùng CURRENT_XOILAC_REFERER
 XOILAC_ECOSYSTEM = [
     "quickscoreboardz.com",
     "zundrixmediapipeline.com",
@@ -90,7 +77,6 @@ DEFAULT_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
 
 
 def set_current_domain(url):
-    """⭐ v20: Lưu domain hiện tại sau khi redirect."""
     global CURRENT_XOILAC_DOMAIN, CURRENT_XOILAC_REFERER
     if not url:
         return
@@ -101,17 +87,8 @@ def set_current_domain(url):
 
 
 def get_smart_referer(stream_url):
-    """
-    ⭐ v20: Chọn referer thông minh theo thứ tự ưu tiên:
-    1. Param `origin`/`referer`/`src` trong URL stream
-    2. CDN có referer đặc biệt (CDN_SPECIAL_REFERER)
-    3. CDN thuộc ecosystem Xoilac → dùng CURRENT_XOILAC_REFERER
-    4. Fallback
-    """
     if not stream_url:
         return FALLBACK_REFERER
-
-    # --- 1. Đọc từ URL param ---
     try:
         parsed = urlparse(stream_url)
         qs = parse_qs(parsed.query)
@@ -124,31 +101,20 @@ def get_smart_referer(stream_url):
                     return f"https:{val}"
     except Exception:
         pass
-
-    # --- 2. CDN đặc biệt ---
     domain = urlparse(stream_url).netloc.lower()
     for key, ref in CDN_SPECIAL_REFERER.items():
         if key in domain:
             return ref if ref else f"https://{domain}/"
-
-    # --- 3. Ecosystem Xoilac → dùng domain hiện tại ---
     for eco in XOILAC_ECOSYSTEM:
         if eco in domain:
             return CURRENT_XOILAC_REFERER or FALLBACK_REFERER
-
-    # --- 4. Fallback ---
     return CURRENT_XOILAC_REFERER or FALLBACK_REFERER
 
 
 def build_extvlc_headers(stream_url: str) -> str:
-    """
-    ⭐ v20: Build header đầy đủ cho M3U dựa theo smart referer.
-    """
     if not stream_url:
         return ""
-
     referer = get_smart_referer(stream_url)
-
     headers = [
         f"#EXTVLCOPT:http-user-agent={DEFAULT_UA}",
         f"#EXTVLCOPT:http-referrer={referer}",
@@ -183,7 +149,7 @@ def format_match_name(name):
 
 
 # ==========================================
-# ⭐ WHITELIST CLB TOP 5
+# WHITELIST CLB
 # ==========================================
 TOP_TEAMS = [
     "arsenal", "aston villa", "bournemouth", "brentford", "brighton",
@@ -246,9 +212,6 @@ JP_KR_NATIONAL = [
     "kr national",
 ]
 
-# ==========================================
-# 🎾 TENNIS
-# ==========================================
 TENNIS_KEYWORDS = [
     "tennis", "quan vot", "atp", "wta",
     "grand slam", "wimbledon", "roland garros",
@@ -256,9 +219,6 @@ TENNIS_KEYWORDS = [
     "davis cup", "billie jean king cup", "fed cup",
 ]
 
-# ==========================================
-# 🚫 OTHER SPORTS
-# ==========================================
 OTHER_SPORT_KEYWORDS = [
     r"\bbasketball\b", r"\bbong\s*ro\b", r"\bnba\b", r"\beuroleague\b",
     r"\beuro\s*league\b", r"\bbbl\b", r"\bnbb\b", r"\bacb\b",
@@ -276,20 +236,14 @@ OTHER_SPORT_KEYWORDS = [
     r"\bsnooker\b", r"\bdart\b", r"\bformula\s*1\b", r"\bf1\b",
 ]
 
-# ==========================================
-# 🚫 HARD EXCLUDE
-# ==========================================
 HARD_EXCLUDE_PATTERNS = [
-    # Nữ / Trẻ / Dự bị / Huyền thoại
     r"\bnu\b", r"\bwomen\b", r"\bfemale\b", r"\bladies\b",
     r"\bdamen\b", r"\bfeminine\b", r"\bfemenil\b", r"\bfeminino\b",
     r"\bu\d{2}\b", r"\bu-\d{2}\b", r"\bunder\s*\d{2}\b",
     r"\byouth\b", r"\bjunior\b", r"\btre\b", r"\breserve\b",
     r"\bacademy\b", r"\bhoc\s*vien\b", r"\bdoi\s*b\b",
     r"\blegends?\b", r"\bhuyen\s*thoai\b", r"\bold\s*boys\b",
-    r"\(\s*y\s*\)",   # (Y) marker cho Youth
-
-    # ĐỘI B
+    r"\(\s*y\s*\)",
     r"\bcastilla\b", r"\bmestalla\b", r"\bpromesas\b",
     r"\bbilbao\s*athletic\b", r"\bsevilla\s*atletico\b",
     r"\bbarca\s*b\b", r"\bbarcelona\s*b\b",
@@ -298,8 +252,6 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bvillarreal\s*b\b", r"\bcelta\s*b\b",
     r"\breal\s*sociedad\s*b\b",
     r"\bathletic\s*bilbao\s*b\b",
-
-    # CLB nước ngoài đã lọt
     r"\balianza\b", r"\bsport\s*boys\b",
     r"\blippstadt\b", r"\bsant\s*andreu\b",
     r"\btembetary\b", r"\biteno\b", r"\bsportivo\b",
@@ -309,8 +261,6 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bbombay\b", r"\bmumbai\b", r"\bnavanagar\b",
     r"\bgymkhana\b", r"\bifa\s*shield\b",
     r"\bsuper\s*division\b", r"\bindia\s*super\b",
-
-    # Ấn Độ mở rộng
     r"\bsreenidi\b", r"\bdeccan\b",
     r"\bnortheast\s*united\b", r"\bnortheast\b",
     r"\bkerala\b", r"\bbengaluru\b", r"\bchennaiyin\b",
@@ -321,31 +271,19 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bdempo\b", r"\bsalgaocar\b", r"\bsporting\s*goa\b",
     r"\bshree\b", r"\bminerva\b", r"\baizawl\b", r"\bneroca\b",
     r"\brajasthan\b",
-
-    # Áo
     r"\baustria\b", r"\bbundesliga\s*ao\b", r"\bbundesliga\s*austria\b",
     r"\boesterreich\b", r"\bosterreich\b",
     r"\bhartberg\b", r"\bkapfenberg\b", r"\bsturm\s*graz\b",
     r"\brapid\s*wien\b", r"\baustria\s*wien\b", r"\bred\s*bull\s*salzburg\b",
     r"\bsalzburg\b", r"\blask\b", r"\bwolfsberger\b", r"\baltach\b",
     r"\bried\b", r"\bklagenfurt\b", r"\bblau\s*weiss\b", r"\bwattens\b",
-
-    # Amateur prefix
-    r"\basc\s*\d{1,3}\b",
-    r"\btsv\s*\d{1,3}\b",
-    r"\bfsv\s*\d{1,3}\b",
-    r"\bspvgg\s*\d{1,3}\b",
-    r"\bsc\s*\d{1,3}\b",
-    r"\bfc\s*\d{1,3}\b",
-
-    # Hạng 3-9
+    r"\basc\s*\d{1,3}\b", r"\btsv\s*\d{1,3}\b", r"\bfsv\s*\d{1,3}\b",
+    r"\bspvgg\s*\d{1,3}\b", r"\bsc\s*\d{1,3}\b", r"\bfc\s*\d{1,3}\b",
     r"\bhang\s*[3-9]\b",
     r"\bhang\s*(ba|bon|tu|nam|sau|bay|tam|chin)\b",
     r"\bprimera\s*federacion\b", r"\bsegunda\s*federacion\b",
     r"\btercera\s*federacion\b",
     r"\bprimera\s*rfef\b", r"\bsegunda\s*rfef\b", r"\btercera\s*rfef\b",
-
-    # Hạng 2 top 5
     r"hang\s*(2|hai|nhi)\s*[^\w]*(duc|bundesliga|germany)",
     r"hang\s*(2|hai|nhi)\s*[^\w]*(anh|england)",
     r"hang\s*(2|hai|nhi)\s*[^\w]*(y\b|italia|italy)",
@@ -359,19 +297,13 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bleague\s*one\b", r"\bleague\s*two\b",
     r"\bregionalliga\b", r"\b3\.?\s*liga\b",
     r"\bchallenger\s*pro\b", r"\bk\s*league\s*2\b",
-
-    # ⭐ v17: EFL Trophy + cup hạng thấp Anh
-    r"\bleague\s*trophy\b",
-    r"\befl\s*trophy\b",
+    r"\bleague\s*trophy\b", r"\befl\s*trophy\b",
     r"\bcupl?\s*league\s*trophy\b",
     r"\bbristol\s*street\s*motors\b",
     r"\bpapa\s*john'?s\b",
     r"\bjohnstone'?s\s*paint\b",
     r"\bcheckatrade\s*trophy\b",
-    r"\bldv\s*vans\b",
-    r"\bvertu\s*trophy\b",
-
-    # Hạng 3+ Đức
+    r"\bldv\s*vans\b", r"\bvertu\s*trophy\b",
     r"\bd\s*[1-9]\b[\s\S]{0,80}(duc|germany|bundesliga|oberliga|westfalen)",
     r"\bd\s*[1-9]\s*(duc|germany|hang)",
     r"\boberliga\b", r"\bverbandsliga\b", r"\bkreisliga\b",
@@ -383,28 +315,17 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bgermany\s*bundesliga\s*[2-9]\b",
     r"\bhohenwestedt\b", r"\beckernforder\b", r"\beckernfoerder\b",
     r"\bschleswig[-\s]?holstein\b",
-    r"\bkreisklasse\b",
-    r"\bbezirksliga\b", r"\blandesklasse\b",
-    r"\bwestfalenliga\b",
-    r"\bniedersachsenliga\b", r"\bniedersachsen\b",
-    r"\bbaden[-\s]?wurttemberg\b",
-    r"\bnordrhein\b", r"\brheinland\b",
-    r"\bsaarlandliga\b", r"\bsaarland\b",
-    r"\bbremen[-\s]?liga\b",
-    r"\bhamburg[-\s]?liga\b",
-    r"\bberlin[-\s]?liga\b",
-    r"\bthuringen\b", r"\bsachsen\b", r"\banhalt\b",
-    r"\bmittelrhein\b",
-
-    # Anh hạng thấp
+    r"\bkreisklasse\b", r"\bbezirksliga\b", r"\blandesklasse\b",
+    r"\bwestfalenliga\b", r"\bniedersachsenliga\b", r"\bniedersachsen\b",
+    r"\bbaden[-\s]?wurttemberg\b", r"\bnordrhein\b", r"\brheinland\b",
+    r"\bsaarlandliga\b", r"\bsaarland\b", r"\bbremen[-\s]?liga\b",
+    r"\bhamburg[-\s]?liga\b", r"\bberlin[-\s]?liga\b",
+    r"\bthuringen\b", r"\bsachsen\b", r"\banhalt\b", r"\bmittelrhein\b",
     r"\bnorthern\s*premier\b", r"\bnorthern\s*league\b",
     r"\bsouthern\s*premier\b", r"\bsouthern\s*league\b",
     r"\bisthmian\b", r"\bnpl\b", r"\bspl\b",
-    r"\bpremier\s*division\b",
-    r"\bcounty\s*league\b", r"\bnon[-\s]?league\b",
+    r"\bpremier\s*division\b", r"\bcounty\s*league\b", r"\bnon[-\s]?league\b",
     r"\bcombinations?\b",
-
-    # Trung Quốc
     r"\bchinese\b", r"\bcmcl\b", r"\bchina\s*championship\b",
     r"\bchina\s*league\b", r"\bchina\s*cup\b",
     r"\bliaoning\b", r"\bxinjiang\b", r"\bguangdong\b",
@@ -415,45 +336,25 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bhebei\b", r"\bshandong\b", r"\bzhejiang\b",
     r"\bhenan\b", r"\byunnan\b", r"\bxi'?an\b",
     r"\bcfa\s*member\b",
-
-    # Ấn Độ cơ bản
     r"\bshillong\b", r"\bindian\b", r"\bindia\b", r"\bisl\b",
     r"\bi[-\s]?league\b", r"\bsantosh\b",
-
-    # Nam Mỹ
-    r"\bperu\b", r"\bperuvian\b",
-    r"\bparaguay\b", r"\bparaguayan\b",
+    r"\bperu\b", r"\bperuvian\b", r"\bparaguay\b", r"\bparaguayan\b",
     r"\bclausura\b", r"\bapertura\b",
-    r"\bcopa\s*sudamericana\b",
-    r"\bcopa\s*de\s*la\s*liga\b",
+    r"\bcopa\s*sudamericana\b", r"\bcopa\s*de\s*la\s*liga\b",
     r"\bcopa\s*paraguay\b",
     r"\bprimera\s*division\s*(peru|paraguay|chile|colombia|ecuador|uruguay|bolivia|venezuela)",
     r"\bliga\s*1\s*(peru|chile|paraguay|colombia|ecuador|uruguay|bolivia|mexico)",
     r"\bdivision\s*profesional\b",
     r"\bcup\s*quoc\s*gia\s*(paraguay|peru|chile|colombia|ecuador|uruguay|bolivia|venezuela|brazil|argentina|mexico|nhat|han|trung)",
-
-    # ⭐ v18: Premier League giả
-    r"\blebanese\b", r"\blebanon\b",
-    r"\begyptian\b", r"\bsyrian\b", r"\bsyria\b",
-    r"\bjordan\b", r"\bjordanian\b",
-    r"\byemeni\b", r"\byemen\b",
-    r"\blibyan\b", r"\blibya\b",
-    r"\bpalestin\b",
-    r"\bsudanese\b",
-    r"\bsomali\b", r"\bdjibouti\b",
-    r"\bmauritania\b", r"\bmauritius\b",
-    r"\bcomoros\b", r"\bmaldives\b",
-    r"\bkazakh\b", r"\buzbek\b", r"\bkyrgyz\b",
+    r"\blebanese\b", r"\blebanon\b", r"\begyptian\b", r"\bsyrian\b", r"\bsyria\b",
+    r"\bjordan\b", r"\bjordanian\b", r"\byemeni\b", r"\byemen\b",
+    r"\blibyan\b", r"\blibya\b", r"\bpalestin\b", r"\bsudanese\b",
+    r"\bsomali\b", r"\bdjibouti\b", r"\bmauritania\b", r"\bmauritius\b",
+    r"\bcomoros\b", r"\bmaldives\b", r"\bkazakh\b", r"\buzbek\b", r"\bkyrgyz\b",
     r"\btajik\b", r"\bturkmen\b",
-
-    # Quốc gia nhỏ
-    r"\bsaint\s*kitts\b", r"\bnevis\b",
-    r"\bbhutan\b", r"\bsri\s*lanka\b",
-    r"\bgibraltar\b", r"\bfaroe\b",
-    r"\bzanzibar\b", r"\bethiopia\b", r"\beritrea\b",
+    r"\bsaint\s*kitts\b", r"\bnevis\b", r"\bbhutan\b", r"\bsri\s*lanka\b",
+    r"\bgibraltar\b", r"\bfaroe\b", r"\bzanzibar\b", r"\bethiopia\b", r"\beritrea\b",
     r"\bwelsh\b", r"\bscottish\b", r"\bnorthern\s*ireland\b",
-
-    # Châu Á
     r"\bthai\s*land\b", r"\bthai\s*league\b",
     r"\bmalaysia\b", r"\bindonesia\b", r"\bphilippines\b",
     r"\bsingapore\b", r"\bmyanmar\b", r"\bcambodia\b", r"\bcampuchia\b",
@@ -468,14 +369,10 @@ HARD_EXCLUDE_PATTERNS = [
     r"\buzbekistan\b", r"\bkazakhstan\b", r"\bkyrgyzstan\b", r"\btajikistan\b",
     r"\bviet\s*nam\b", r"\bv\.?\s*league\b", r"\bvleague\b",
     r"\bafc\s*champions\b", r"\bafc\s*cup\b",
-
-    # Bangladesh + Nam Á
     r"\bbangladesh\b", r"\bchattogram\b", r"\bdhaka\b",
     r"\bcomilla\b", r"\bsylhet\b", r"\brajshahi\b", r"\bkhulna\b",
     r"\bbashundhara\b", r"\bmohammedan\s*dhaka\b",
     r"\bafghanistan\b", r"\bnepal\b", r"\bpakistan\b",
-
-    # Châu Mỹ
     r"\bvenezuela\b", r"\bbrasil\b", r"\bbrazil\b", r"\bbrasileir[ao]\b",
     r"\bargentina\b", r"\bprimera\s*division\b",
     r"\bmexico\b", r"\bliga\s*mx\b", r"\bmls\b",
@@ -485,27 +382,20 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bconcacaf\b", r"\bcopa\s*america\b", r"\bcopa\s*libertadores\b",
     r"\bconcacaf\s*champions\b", r"\bleagues\s*cup\b", r"\bcanada\b",
     r"\bcanadian\s*premier\b",
-
-    # Châu Phi
     r"\begypt\b", r"\bai\s*cap\b", r"\bmaroc\b", r"\bmorocco\b",
     r"\btunisia\b", r"\balgeria\b", r"\bnam\s*phi\b", r"\bsouth\s*africa\b",
     r"\bnigeria\b", r"\bghana\b", r"\bcaf\b", r"\bafcon\b",
     r"\bcaf\s*champions\b", r"\bsudan\b", r"\btanzania\b",
     r"\bnambia\b", r"\bcongo\b", r"\bnamibia\b",
-
-    # Châu Đại Dương
     r"\baustralia\b", r"\ba[-\s]?league\b", r"\bnew\s*zealand\b",
     r"\btimor\s*leste\b", r"\btimor\b",
-
-    # Châu Âu không top 5
     r"\bczech\b", r"\bsec\b", r"\bfortuna\s*liga\b", r"\bchance\s*liga\b",
     r"\bthuy\s*si\b", r"\bswitzerland\b",
     r"\bbelgium\b", r"\bpro\s*league\s*bi\b", r"\bjupiler\b",
     r"\bholland\b", r"\bnetherlands\b", r"\beredivisie\b",
     r"\bportugal\b", r"\bbo\s*dao\s*nha\b", r"\bprimeira\s*liga\b",
     r"\bturkey\b", r"\btho\s*nhi\s*ky\b", r"\bsuper\s*lig\b",
-    r"\bscotland\b", r"\bwales\b",
-    r"\bireland\b",
+    r"\bscotland\b", r"\bwales\b", r"\bireland\b",
     r"\bcroatia\b", r"\bserbia\b",
     r"\bpoland\b", r"\bekstraklasa\b",
     r"\bukraine\b", r"\bnga\b", r"\brussia\b",
@@ -520,10 +410,8 @@ HARD_EXCLUDE_PATTERNS = [
     r"\bluxembourg\b", r"\bestonia\b", r"\blatvia\b", r"\blithuania\b",
     r"\bbelarus\b", r"\bmoldova\b", r"\bgeorgia\b", r"\barmenia\b",
     r"\bazerbaijan\b",
-    r"\brus\s*d[1-9]", r"\brus\s*[abc]\b",
-    r"\brussian\b",
-    r"\bfnl\b", r"\bfnl\s*2\b",
-    r"\bpremier\s*liga\b",
+    r"\brus\s*d[1-9]", r"\brus\s*[abc]\b", r"\brussian\b",
+    r"\bfnl\b", r"\bfnl\s*2\b", r"\bpremier\s*liga\b",
     r"\btula\b", r"\bmetallurg\b", r"\blipetsk\b",
     r"\bzenit\b", r"\bspartak\s*moscow\b", r"\bcska\s*moscow\b",
     r"\bdynamo\s*moscow\b", r"\blokomotiv\s*moscow\b",
@@ -543,9 +431,6 @@ HARD_EXCLUDE_PATTERNS = [
     r"\banguilla\b", r"\bcayman\b", r"\bturks\b",
 ]
 
-# ==========================================
-# ✅ WHITELIST GIẢI
-# ==========================================
 TOP_LEAGUE_PATTERNS = [
     r"\bpremier\s*league\b", r"\bngoai\s*hang\s*anh\b", r"\bepl\b",
     r"\bla\s*liga\b(?!\s*2)", r"\blaliga\b(?!\s*2)",
@@ -580,38 +465,20 @@ EURO_COUNTRIES = {
     "cong hoa sec", "czech", "slovakia", "slovenia",
     "hungary", "romania", "bulgaria",
     "hy lap", "greece", "tho nhi ky", "turkey",
-    "ukraine", "nga", "russia",
-    "israel",
-    "xu wales",
-    "liechtenstein",
-    "lithuania", "litva",
-    "latvia", "lativia",
-    "estonia",
-    "kosovo",
-    "montenegro",
-    "albania",
-    "macedonia", "bac macedonia",
-    "bosnia", "bosnia and herzegovina",
-    "iceland", "ai len",
-    "malta",
-    "luxembourg",
-    "cyprus", "dao sip",
-    "moldova",
-    "belarus",
-    "georgia",
-    "armenia",
-    "azerbaijan",
-    "andorra",
-    "san marino",
-    "faroe", "quan dao faroe",
-    "gibraltar",
+    "ukraine", "nga", "russia", "israel", "xu wales",
+    "liechtenstein", "lithuania", "litva", "latvia", "lativia",
+    "estonia", "kosovo", "montenegro", "albania",
+    "macedonia", "bac macedonia", "bosnia", "bosnia and herzegovina",
+    "iceland", "ai len", "malta", "luxembourg", "cyprus", "dao sip",
+    "moldova", "belarus", "georgia", "armenia", "azerbaijan",
+    "andorra", "san marino", "faroe", "quan dao faroe", "gibraltar",
 }
 
 FRIENDLY_KEYWORDS = ("giao huu", "friendly", "friendlies")
 
 
 # ==========================================
-# LOGIC (giữ nguyên từ v11)
+# LOGIC
 # ==========================================
 def is_other_sport(text):
     if not text:
@@ -660,8 +527,7 @@ def has_euro_country(text):
         return False
     t = normalize_vn(text)
     for c in EURO_COUNTRIES:
-        pattern = rf'\b{re.escape(c)}\b'
-        if re.search(pattern, t):
+        if re.search(rf'\b{re.escape(c)}\b', t):
             return True
     return False
 
@@ -721,16 +587,10 @@ def is_asean_team(text):
         return False
     t = normalize_vn(text)
     asean_teams = [
-        "viet nam", "vietnam",
-        "thai lan", "thailand",
-        "indonesia",
-        "malaysia",
-        "singapore",
-        "philippines", "phi luat tan",
-        "myanmar", "mi an ma",
-        "campuchia", "cambodia",
-        "lao", "laos",
-        "brunei",
+        "viet nam", "vietnam", "thai lan", "thailand",
+        "indonesia", "malaysia", "singapore",
+        "philippines", "phi luat tan", "myanmar", "mi an ma",
+        "campuchia", "cambodia", "lao", "laos", "brunei",
         "timor", "dong timor",
     ]
     return any(team in t for team in asean_teams)
@@ -826,9 +686,6 @@ def should_keep(name, sport_hint="", container_text=""):
     return False
 
 
-# ==========================================
-# TIME
-# ==========================================
 def parse_match_datetime(text):
     if not text:
         return None
@@ -859,11 +716,12 @@ def is_within_24h(text):
 def goto_with_redirect(page, url, timeout=DOMAIN_TIMEOUT):
     try:
         page.goto(url, timeout=timeout, wait_until="domcontentloaded")
-        for _ in range(32):
+        # Chờ redirect tối đa ~3s
+        for _ in range(12):
             page.wait_for_timeout(250)
             cur = page.url
             if cur and cur != url and cur != "about:blank":
-                page.wait_for_timeout(1000)
+                page.wait_for_timeout(500)
                 return page.url, True
         return page.url, True
     except Exception as e:
@@ -875,7 +733,7 @@ def goto_with_redirect(page, url, timeout=DOMAIN_TIMEOUT):
 # MAIN
 # ==========================================
 def san_full_server_qua_proxy():
-    print("🚀 BẮT ĐẦU QUÉT XOILAC v20", flush=True)
+    print("🚀 BẮT ĐẦU QUÉT XOILAC v21 (selectors mới)", flush=True)
 
     danh_sach_phat = []
     server_da_thanh_cong = set()
@@ -911,7 +769,7 @@ def san_full_server_qua_proxy():
                     locale="vi-VN",
                     ignore_https_errors=True,
                 )
-                context.set_default_timeout(15000)
+                context.set_default_timeout(8000)
                 context.set_default_navigation_timeout(DOMAIN_TIMEOUT)
 
                 context.add_init_script("""
@@ -922,13 +780,16 @@ def san_full_server_qua_proxy():
                         {get: () => ['vi-VN','vi','en-US','en']});
                 """)
 
+                # Chặn ảnh/font/media (không cần thiết, tiết kiệm băng thông)
                 def chan_tai_nguyen_thua(route):
-                    if route.request.resource_type == "image":
+                    rt = route.request.resource_type
+                    if rt in ("image", "font", "media"):
                         route.abort()
                     else:
                         route.continue_()
                 context.route("**/*", chan_tai_nguyen_thua)
 
+                # ---------- LỌC ----------
                 def _loc_trung(danh_sach_raw, url_goc):
                     result = {}
                     stats = {"total": 0, "other_sport": 0, "excluded": 0,
@@ -943,6 +804,7 @@ def san_full_server_qua_proxy():
                         ten = item.get('ten', '').strip()
                         sport = item.get('sport', '')
                         container_text = item.get('container', '')
+                        sub_links = item.get('sub_links', [])
 
                         if not url or url == url_goc or url == url_goc + "/":
                             continue
@@ -959,12 +821,11 @@ def san_full_server_qua_proxy():
                                     'thumb': item.get('thumb',
                                                       'https://img.icons8.com/color/512/tennis.png'),
                                     'sport': 'tennis',
+                                    'sub_links': sub_links,
                                 }
                                 if DEBUG_SHOW_KEPT and kept_shown < DEBUG_KEPT_LIMIT:
                                     kept_shown += 1
                                     print(f"     🎾 [TENNIS] {ten[:60]}", flush=True)
-                                    safe_container = container_text[:180].replace("\n", " ").replace("\r", " ")
-                                    print(f"        └─ container: {safe_container}", flush=True)
                             continue
 
                         if sport_detected == "other" or is_other_sport(combined):
@@ -988,11 +849,11 @@ def san_full_server_qua_proxy():
                                     'thumb': item.get('thumb',
                                                       'https://img.icons8.com/color/512/football2.png'),
                                     'sport': 'football',
+                                    'sub_links': sub_links,
                                 }
                                 if DEBUG_SHOW_KEPT and kept_shown < DEBUG_KEPT_LIMIT:
                                     kept_shown += 1
-                                    print(f"     ⚽ [KEPT] {ten[:60]}", flush=True)
-                                    print(f"        └─ container: {container_text[:180]}", flush=True)
+                                    print(f"     ⚽ [KEPT] {ten[:60]} | {len(sub_links)} link con", flush=True)
                         elif DEBUG_SHOW_REJECTED and rej_shown < DEBUG_REJECTED_LIMIT:
                             rej_shown += 1
                             print(f"     ❌ [{reason}] {ten[:55]} | {(container_text[:80]).replace(chr(10),' ')}", flush=True)
@@ -1004,96 +865,83 @@ def san_full_server_qua_proxy():
                           f"**giữ={stats['kept']}** (🎾 {stats['tennis']})", flush=True)
                     return result
 
+                # ---------- LẤY PHÒNG TỪ TRANG CHỦ ----------
                 def lay_phong_xoilac(page, url_goc, keyword_link):
-                    raw = page.evaluate(f"""
-                        (() => {{
+                    raw = page.evaluate(r"""
+                        (() => {
                             const results = [];
-                            const getLeagueContext = (item) => {{
-                                const parts = [];
-                                parts.push(item.innerText || '');
-                                parts.push(item.textContent || '');
-                                const leagueEl = item.querySelector(
-                                    '.grid-match__league, .grid-matches__league, ' +
-                                    '[class*="league-name"], [class*="League__"], ' +
-                                    '[class*="tournament"]');
-                                if (leagueEl && leagueEl.innerText) parts.push(leagueEl.innerText);
-                                let cur = item.parentElement;
-                                let depth = 0;
-                                while (cur && depth < 6) {{
-                                    const header = cur.querySelector(
-                                        '.grid-matches__header, .matches__header, ' +
-                                        '.matches-header, .matches__group-title, ' +
-                                        '.grid-matches__title, .grid-matches__group-title, ' +
-                                        '[class*="group-title"], [class*="league-header"], ' +
-                                        '[class*="LeagueHeader"], [class*="tournament-header"]'
-                                    );
-                                    if (header && header.innerText) {{
-                                        const t = header.innerText.trim();
-                                        if (t.length < 250) parts.push(t);
-                                    }}
-                                    const cls = (typeof cur.className === 'string') ? cur.className : '';
-                                    if (/group|league|tournament|section/i.test(cls)) {{
-                                        const t = cur.innerText || '';
-                                        if (t.length < 2500) parts.push(t);
-                                    }}
-                                    cur = cur.parentElement;
-                                    depth++;
-                                }}
-                                return parts.join(' | ');
-                            }};
-                            document.querySelectorAll('.grid-matches__item').forEach(item => {{
-                                const sport = item.getAttribute('data-sport') || 'football';
-                                const linkEl = item.querySelector('a[href*="{keyword_link}"]');
-                                if (!linkEl) return;
-                                const img = item.querySelector('img');
-                                results.push({{
+                            const items = document.querySelectorAll('.grid-matches__item');
+                            items.forEach(item => {
+                                const cls = (typeof item.className === 'string') ? item.className : '';
+                                const sportAttr = item.getAttribute('data-sport') || '';
+                                const isFootball = cls.indexOf('match-football-item') >= 0 || sportAttr === 'football';
+                                const isTennis = cls.indexOf('match-tennis-item') >= 0 || sportAttr === 'tennis';
+                                if (!isFootball && !isTennis) return;
+
+                                // Link phòng: a.redirectPopup hoặc a[href*="/truc-tiep/"]
+                                const linkEl = item.querySelector('a.redirectPopup') ||
+                                               item.querySelector('a[href*="/truc-tiep/"]');
+                                if (!linkEl || !linkEl.href) return;
+
+                                const homeEl  = item.querySelector('.grid-match__team--home-name');
+                                const awayEl  = item.querySelector('.grid-match__team--away-name');
+                                const leagueEl = item.querySelector('.grid-match__league .text-ellipsis') ||
+                                                 item.querySelector('.grid-match__league span');
+                                const dateEl  = item.querySelector('.grid-match__date');
+                                const imgEl   = item.querySelector('.team-logo-group-home-logo img') ||
+                                                item.querySelector('.team-logo-group img') ||
+                                                item.querySelector('img');
+
+                                const title = linkEl.getAttribute('title') || '';
+                                const homeName = homeEl ? homeEl.innerText.trim() : '';
+                                const awayName = awayEl ? awayEl.innerText.trim() : '';
+                                const leagueName = leagueEl ? leagueEl.innerText.trim() : '';
+                                const dateStr = dateEl ? dateEl.innerText.trim() : '';
+
+                                // Thu thập link /link/N (commentator shortcuts)
+                                const subLinks = [];
+                                item.querySelectorAll('.grid-match-item__footer-center a.commentator, .grid-match-item__footer-center a').forEach(a => {
+                                    const href = a.getAttribute('href') || '';
+                                    if (!href) return;
+                                    if (href.indexOf('/link/') < 0) return;
+                                    let absUrl = a.href;
+                                    const label = (a.innerText || '').trim().split('\n').pop().trim() || 'Server';
+                                    subLinks.push({ url: absUrl, label: label });
+                                });
+
+                                results.push({
                                     url: linkEl.href,
-                                    ten: linkEl.getAttribute('title') || linkEl.innerText.trim().replace(/\\n/g, ' - '),
-                                    thumb: img ? img.src : "",
-                                    sport: sport,
-                                    container: getLeagueContext(item)
-                                }});
-                            }});
-                            document.querySelectorAll('.match-horizontals-item[href*="{keyword_link}"]').forEach(a => {{
-                                if (results.some(r => r.url === a.href)) return;
-                                const img = a.querySelector('img');
-                                const selfText = [
-                                    a.innerText || '',
-                                    a.textContent || '',
-                                    a.getAttribute('title') || '',
-                                    a.getAttribute('data-title') || ''
-                                ].join(' | ');
-                                results.push({{
-                                    url: a.href,
-                                    ten: a.innerText.trim().replace(/\\n/g, ' - '),
-                                    thumb: img ? img.src : "",
-                                    sport: 'football',
-                                    container: selfText
-                                }});
-                            }});
+                                    ten: title || (homeName + ' vs ' + awayName),
+                                    thumb: imgEl ? imgEl.src : '',
+                                    sport: isTennis ? 'tennis' : 'football',
+                                    container: (leagueName + ' | ' + dateStr).trim(),
+                                    sub_links: subLinks
+                                });
+                            });
                             return results;
-                        }})()
+                        })()
                     """)
                     return _loc_trung(raw, url_goc)
 
+                # ---------- CLICK XEM THÊM ----------
                 def click_xem_them_loop(page, max_clicks=MAX_XEM_THEM_CLICKS):
                     clicked = 0
                     for i in range(max_clicks):
-                        count_before = page.evaluate(
-                            "document.querySelectorAll('.grid-matches__item, .match-horizontals-item').length")
-                        btn_found = page.evaluate("""
+                        try:
+                            count_before = page.evaluate(
+                                "document.querySelectorAll('.grid-matches__item').length")
+                        except Exception:
+                            break
+
+                        btn_found = page.evaluate(r"""
                             () => {
-                                const patterns = ['XEM THÊM', 'Xem thêm', 'Tải thêm'];
-                                const candidates = document.querySelectorAll(
-                                    'button, a, div[role="button"], span[role="button"], .btn, [class*="load-more"], [class*="loadmore"]');
-                                for (const el of candidates) {
-                                    const t = (el.innerText || '').trim();
-                                    if (patterns.includes(t) || /xem\\s*th[eê]m/i.test(t)) {
-                                        const rect = el.getBoundingClientRect();
-                                        if (rect.width > 0 && rect.height > 0) {
-                                            el.setAttribute('data-ext-xemthem', '1');
-                                            return true;
-                                        }
+                                const btns = document.querySelectorAll(
+                                    'a.btn-loadmore, button.btn-loadmore, .btn-loadmore, [class*="load-more"], [class*="loadmore"]');
+                                for (const el of btns) {
+                                    const rect = el.getBoundingClientRect();
+                                    if (rect.width > 0 && rect.height > 0) {
+                                        el.setAttribute('data-ext-xemthem', '1');
+                                        return true;
                                     }
                                 }
                                 return false;
@@ -1102,38 +950,34 @@ def san_full_server_qua_proxy():
                         if not btn_found:
                             break
                         try:
-                            page.click('[data-ext-xemthem="1"]', timeout=5000)
-                        except Exception:
-                            try:
-                                page.get_by_text("XEM THÊM", exact=False).first.click(timeout=5000)
-                            except Exception:
-                                break
-                        try:
-                            page.wait_for_function(
-                                f"document.querySelectorAll('.grid-matches__item, .match-horizontals-item').length > {count_before}",
-                                timeout=8000)
+                            page.click('[data-ext-xemthem="1"]', timeout=4000)
                         except Exception:
                             break
-                        count_after = page.evaluate(
-                            "document.querySelectorAll('.grid-matches__item, .match-horizontals-item').length")
+                        try:
+                            page.wait_for_function(
+                                f"document.querySelectorAll('.grid-matches__item').length > {count_before}",
+                                timeout=5000)
+                        except Exception:
+                            break
+                        try:
+                            count_after = page.evaluate(
+                                "document.querySelectorAll('.grid-matches__item').length")
+                        except Exception:
+                            break
                         clicked += 1
                         print(f"     🔽 Click #{clicked}: {count_before} → {count_after}", flush=True)
                         if count_after <= count_before:
                             break
-                        try:
-                            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                            page.wait_for_timeout(500)
-                        except Exception:
-                            pass
                     return clicked
 
+                # ---------- SERVER TRONG PHÒNG ----------
                 def detect_server_buttons(page):
-                    return page.evaluate("""
+                    return page.evaluate(r"""
                         () => {
                             const btns = [];
                             const seen = new Set();
                             document.querySelectorAll('#tv_links a.player-link').forEach(a => {
-                                const label = (a.innerText || '').trim().split('\\n').pop().trim();
+                                const label = (a.innerText || '').trim().split('\n').pop().trim();
                                 const key = 'tv-' + (a.getAttribute('data-link') || '');
                                 if (seen.has(key)) return;
                                 seen.add(key);
@@ -1147,38 +991,95 @@ def san_full_server_qua_proxy():
                         }
                     """)
 
-                def lay_tat_ca_server_con(page, link_phong):
+                # ---------- LẤY STREAM TỪ 1 URL ----------
+                def fetch_stream_from_url(page, target_url, referer_url=None):
+                    """Trả về url stream (m3u8/flv) nếu bắt được, hoặc None."""
+                    captured = [None]
+
+                    def handle(req):
+                        if captured[0]:
+                            return
+                        u = req.url.lower()
+                        if ".m3u8" in u or ".flv" in u:
+                            captured[0] = req.url
+
+                    page.on("request", handle)
+                    try:
+                        try:
+                            page.goto(target_url, timeout=ROOM_TIMEOUT,
+                                      wait_until="commit", referer=referer_url)
+                        except Exception:
+                            pass
+
+                        # chờ bắt stream tối đa ~5s
+                        for _ in range(STREAM_WAIT_TRIES):
+                            if captured[0]:
+                                break
+                            page.wait_for_timeout(STREAM_WAIT_STEP_MS)
+
+                        # thử click giữa trang (autoplay) nếu chưa có
+                        if not captured[0]:
+                            try:
+                                page.mouse.click(960, 400)
+                            except Exception:
+                                pass
+                            for _ in range(12):
+                                if captured[0]:
+                                    break
+                                page.wait_for_timeout(STREAM_WAIT_STEP_MS)
+                    finally:
+                        try:
+                            page.remove_listener("request", handle)
+                        except Exception:
+                            pass
+                    return captured[0]
+
+                def lay_streams_tu_phong(page, link_phong, sub_links, referer_url):
+                    """
+                    Ưu tiên: nếu có sub_links /link/N → thử từng link trước (nhanh hơn).
+                    Nếu không được → vào phòng click server (fallback).
+                    """
                     streams = []
                     seen_urls = set()
 
+                    # --- Cách 1: thử link /link/N trực tiếp ---
+                    for sl in sub_links or []:
+                        if sl['url'] in seen_urls:
+                            continue
+                        seen_urls.add(sl['url'])
+                        st = fetch_stream_from_url(page, sl['url'], referer_url=referer_url)
+                        if st:
+                            streams.append({"label": sl['label'], "url": st})
+                            print(f"        ✅ [{sl['label']}] {st[:75]}", flush=True)
+                        else:
+                            print(f"        ⛔ [{sl['label']}] no stream (link/N)", flush=True)
+
+                    if streams:
+                        return streams
+
+                    # --- Cách 2 (fallback): vào phòng, click từng server ---
                     try:
-                        page.goto(link_phong, timeout=15000, wait_until="commit")
+                        page.goto(link_phong, timeout=ROOM_TIMEOUT,
+                                  wait_until="commit", referer=referer_url)
                     except Exception as e:
                         print(f"     ⚠️ goto room fail: {str(e)[:60]}", flush=True)
                         return streams
 
-                    page.wait_for_timeout(2500)
+                    page.wait_for_timeout(1500)
                     try:
                         page.keyboard.press("Escape")
-                        page.wait_for_timeout(300)
-                        for sel in ['.close', '.closebtn', '[aria-label="Close"]',
-                                    '.modal-close', '.popup-close']:
-                            try:
-                                page.locator(sel).first.click(timeout=700)
-                            except Exception:
-                                pass
                     except Exception:
                         pass
 
                     try:
-                        page.wait_for_selector('#tv_links a.player-link', timeout=8000)
+                        page.wait_for_selector('#tv_links a.player-link', timeout=4000)
                     except Exception:
                         pass
-                    page.wait_for_timeout(2000)
 
                     buttons = detect_server_buttons(page)
                     if not buttons:
-                        buttons = [{'idx': '0', 'label': 'Server 1', 'selector': 'body'}]
+                        print("     ⚠️ Không thấy button server trong phòng", flush=True)
+                        return streams
                     print(f"     📺 {len(buttons)}: {[b['label'] for b in buttons]}", flush=True)
 
                     for btn in buttons:
@@ -1194,32 +1095,32 @@ def san_full_server_qua_proxy():
                         page.on("request", handle)
                         try:
                             try:
-                                page.click(btn['selector'], timeout=5000)
+                                page.click(btn['selector'], timeout=4000)
                             except Exception:
                                 try:
-                                    page.get_by_text(btn['label'], exact=False)\
-                                        .first.click(timeout=5000)
+                                    page.get_by_text(btn['label'], exact=False).first.click(timeout=4000)
                                 except Exception:
                                     pass
-
                             for _ in range(STREAM_WAIT_TRIES):
                                 if target_url[0]:
                                     break
                                 page.wait_for_timeout(STREAM_WAIT_STEP_MS)
-
                             if not target_url[0]:
                                 try:
                                     page.mouse.click(960, 500)
                                 except Exception:
                                     pass
-                                for _ in range(20):
+                                for _ in range(12):
                                     if target_url[0]:
                                         break
                                     page.wait_for_timeout(STREAM_WAIT_STEP_MS)
                         except Exception:
                             pass
                         finally:
-                            page.remove_listener("request", handle)
+                            try:
+                                page.remove_listener("request", handle)
+                            except Exception:
+                                pass
 
                         if target_url[0] and target_url[0] not in seen_urls:
                             seen_urls.add(target_url[0])
@@ -1230,6 +1131,7 @@ def san_full_server_qua_proxy():
 
                     return streams
 
+                # ---------- QUÉT TRANG ----------
                 def quet_trang(ten_nhom, url_trang_chu, keyword_link, kieu_quet=""):
                     nonlocal so_tram_loi_vong_nay, so_tram_ok_vong_nay
                     page = context.new_page()
@@ -1246,7 +1148,6 @@ def san_full_server_qua_proxy():
                             if final_url != domain:
                                 print(f"     🔄 Redirect → {final_url}", flush=True)
 
-                            # ⭐ v20: Lưu domain hiện tại để build referer
                             set_current_domain(final_url)
                             print(f"     🌐 Referer: {CURRENT_XOILAC_REFERER}", flush=True)
 
@@ -1257,8 +1158,8 @@ def san_full_server_qua_proxy():
 
                             try:
                                 page.wait_for_function(
-                                    f"document.querySelectorAll('a[href*=\"{keyword_link}\"]').length > 0",
-                                    timeout=15000)
+                                    "document.querySelectorAll('.grid-matches__item').length > 0",
+                                    timeout=8000)
                                 url_dung = final_url
                                 print(f"   ✅ Sống", flush=True)
                                 break
@@ -1268,7 +1169,7 @@ def san_full_server_qua_proxy():
                         if not url_dung:
                             raise Exception("Tất cả domain chết!")
 
-                        page.wait_for_timeout(2000)
+                        page.wait_for_timeout(1500)
                         print(f"   🔽 Click XEM THÊM...", flush=True)
                         n_clicks = click_xem_them_loop(page)
                         print(f"   ✅ Đã click {n_clicks} lần", flush=True)
@@ -1280,12 +1181,15 @@ def san_full_server_qua_proxy():
                             ten_tran = data_phong['ten']
                             anh_thumb = data_phong['thumb']
                             sport_key = data_phong.get('sport', '')
+                            sub_links = data_phong.get('sub_links', [])
                             mon_vn = "Tennis" if sport_key == "tennis" else "Bóng đá"
                             nhom_m3u = f"{ten_nhom} - {mon_vn}"
 
-                            print(f"\n   [{stt}/{len(danh_sach_phong)}] {ten_tran[:70]}", flush=True)
+                            print(f"\n   [{stt}/{len(danh_sach_phong)}] {ten_tran[:70]} ({len(sub_links)} link con)", flush=True)
 
-                            streams = lay_tat_ca_server_con(page, link_phong)
+                            streams = lay_streams_tu_phong(
+                                page, link_phong, sub_links,
+                                referer_url=CURRENT_XOILAC_REFERER)
                             for s in streams:
                                 ket_qua_tram.append({
                                     'nhom': nhom_m3u,
@@ -1310,7 +1214,10 @@ def san_full_server_qua_proxy():
                                 "ERR_TIMED_OUT", "ERR_TUNNEL_CONNECTION_FAILED")):
                             return "PROXY_DEAD"
                     finally:
-                        page.close()
+                        try:
+                            page.close()
+                        except Exception:
+                            pass
                     return "OK"
 
                 for ten_nhom, url_tc, keyword, kieu_quet in server_can_quet:
@@ -1327,10 +1234,10 @@ def san_full_server_qua_proxy():
         print(f"📊 Tích lũy: {len(danh_sach_phat)} luồng", flush=True)
 
         if so_tram_ok_vong_nay == 0 and so_tram_loi_vong_nay > 0 and lan_thu < MAX_RETRIES:
-            print("⚠️ Ngủ 30s...", flush=True); time.sleep(30); continue
+            print("⚠️ Ngủ 20s...", flush=True); time.sleep(20); continue
 
         if len(server_da_thanh_cong) < len(TAT_CA_SERVER) and lan_thu < MAX_RETRIES:
-            print(f"🔄 Ngủ 30s...", flush=True); time.sleep(30); continue
+            print(f"🔄 Ngủ 20s...", flush=True); time.sleep(20); continue
 
         break
 
