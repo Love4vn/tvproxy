@@ -1,10 +1,9 @@
 """
-🎯 SĂN LINK XOILAC - v21 (cập nhật theo HTML mới 2026)
-✅ Selector mới cho trang chủ xoilaczzz.pro
-✅ Lấy trực tiếp link /link/N → giảm thời gian quét
-✅ Timeout ngắn hơn, không chạy 30p nữa
-✅ Fallback vào phòng click server nếu cần
-✅ Dynamic Referer theo domain redirect
+🎯 SĂN LINK XOILAC - v22 (lấy ĐẦY ĐỦ tất cả server)
+✅ Luôn vào phòng để lấy full server buttons (không lấy thiếu)
+✅ Kết hợp sub_links từ trang chủ + server trong phòng, dedupe theo URL
+✅ Selector button linh hoạt: #tv_links a.player-link, a[data-link], ...
+✅ Click button đa cách: selector → text → index
 """
 import re
 import time
@@ -16,15 +15,15 @@ from playwright.sync_api import sync_playwright
 # ==========================================
 # CẤU HÌNH
 # ==========================================
-PROXY = None
+PROXY = None  # đổi thành dict nếu dùng proxy: {"server": "...", "username": "...", "password": "..."}
 
 MAX_RETRIES = 2
-DOMAIN_TIMEOUT = 10000       # ⬇️ giảm từ 25s -> 10s
-ROOM_TIMEOUT = 6000          # ⬇️ giảm từ 15s -> 6s
-STREAM_WAIT_TRIES = 20       # chờ stream tối đa ~5s
+DOMAIN_TIMEOUT = 10000
+ROOM_TIMEOUT = 8000        # tăng nhẹ vì cần đợi nhiều server
+STREAM_WAIT_TRIES = 20     # chờ stream mỗi server ~5s
 STREAM_WAIT_STEP_MS = 250
 HOURS_AHEAD = 24
-MAX_XEM_THEM_CLICKS = 8      # ⬇️ giảm số lần click xem thêm
+MAX_XEM_THEM_CLICKS = 8
 
 DEBUG_SHOW_REJECTED = True
 DEBUG_REJECTED_LIMIT = 15
@@ -37,7 +36,6 @@ TAT_CA_SERVER = [
 
 XOILAC_DOMAINS = [
     "https://xoilacz.io",
-    "https://xoilaczzz.pro",
     "https://xoilaczzh.io",
     "https://xoilaczzf.cc",
     "https://xoilaczzb.cc",
@@ -46,6 +44,15 @@ XOILAC_DOMAINS = [
     "https://xoilaczzh.cc",
     "https://xoilacxxi.cc",
     "https://xoilacxxe.cc",
+    "https://xoilacxbm.tv",
+    "https://xoilacxth.tv",
+    "https://xoilacxbi.tv",
+    "https://xoilac7tv.tv",
+    "https://xoilacvvr.tv",
+    "https://xoilacxbr.tv",
+    "https://xoilaczbh.tv",
+    "https://xoilaczzz.pro",
+    
 ]
 
 # ==========================================
@@ -65,6 +72,7 @@ XOILAC_ECOSYSTEM = [
     "zundrixmediapipeline.com",
     "domaincdn.cc",
     "domainkqt.cc",
+    "jorvakstreamcache.com",
 ]
 
 DEFAULT_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -145,7 +153,7 @@ def format_match_name(name):
 
 
 # ==========================================
-# WHITELIST CLB
+# WHITELIST (giữ nguyên từ v21)
 # ==========================================
 TOP_TEAMS = [
     "arsenal", "aston villa", "bournemouth", "brentford", "brighton",
@@ -153,59 +161,41 @@ TOP_TEAMS = [
     "hull city", "ipswich", "leicester", "liverpool",
     "man city", "manchester city",
     "man united", "man utd", "manchester united",
-    "newcastle", "nottingham forest", "southampton",
-    "tottenham",
+    "newcastle", "nottingham forest", "southampton", "tottenham",
     "augsburg", "bayer leverkusen", "leverkusen",
-    "bayern munich", "bayern munchen", "bayern",
-    "bochum",
+    "bayern munich", "bayern munchen", "bayern", "bochum",
     "borussia dortmund", "dortmund", "bvb",
     "borussia monchengladbach", "monchengladbach", "gladbach",
     "eintracht frankfurt", "frankfurt",
     "freiburg", "heidenheim", "hoffenheim",
-    "holstein kiel", "kiel",
-    "mainz",
-    "rb leipzig", "leipzig",
-    "st. pauli", "st pauli",
+    "holstein kiel", "kiel", "mainz",
+    "rb leipzig", "leipzig", "st. pauli", "st pauli",
     "stuttgart", "union berlin",
     "werder bremen", "werder", "wolfsburg",
     "alaves", "athletic bilbao", "athletic club",
-    "atletico madrid", "atletico",
-    "barcelona", "barca",
-    "celta vigo", "celta",
-    "espanyol", "getafe", "girona",
+    "atletico madrid", "atletico", "barcelona", "barca",
+    "celta vigo", "celta", "espanyol", "getafe", "girona",
     "las palmas", "leganes", "mallorca", "osasuna",
-    "rayo vallecano",
-    "real betis", "betis",
+    "rayo vallecano", "real betis", "betis",
     "real madrid", "real sociedad",
     "sevilla", "valencia", "valladolid", "villarreal",
     "atalanta", "bologna", "cagliari", "como", "empoli",
-    "fiorentina", "genoa", "hellas verona",
-    "inter milan",
-    "juventus", "juve",
-    "lazio", "lecce",
-    "ac milan",
-    "monza", "napoli", "parma",
-    "roma",
+    "fiorentina", "genoa", "hellas verona", "inter milan",
+    "juventus", "juve", "lazio", "lecce", "ac milan",
+    "monza", "napoli", "parma", "roma",
     "torino", "udinese", "venezia",
-    "angers", "auxerre", "brest", "le havre",
-    "rc lens",
+    "angers", "auxerre", "brest", "le havre", "rc lens",
     "lille", "lyon", "olympique lyonnais",
-    "marseille", "olympique marseille",
-    "as monaco",
-    "montpellier", "nantes",
-    "ogc nice",
+    "marseille", "olympique marseille", "as monaco",
+    "montpellier", "nantes", "ogc nice",
     "paris saint-germain", "paris sg", "psg",
     "reims", "rennes", "stade rennais",
-    "saint-etienne", "saint etienne",
-    "strasbourg", "toulouse",
+    "saint-etienne", "saint etienne", "strasbourg", "toulouse",
 ]
 
 JP_KR_NATIONAL = [
-    "nhat ban", "nhat",
-    "japan", "jp national", "japan national",
-    "han quoc", "han",
-    "korea republic", "south korea", "korea nat",
-    "kr national",
+    "nhat ban", "nhat", "japan", "jp national", "japan national",
+    "han quoc", "han", "korea republic", "south korea", "korea nat", "kr national",
 ]
 
 TENNIS_KEYWORDS = [
@@ -246,8 +236,7 @@ HARD_EXCLUDE_PATTERNS = [
     r"\breal\s*madrid\s*b\b", r"\breal\s*madrid\s*castilla\b",
     r"\batletico\s*madrid\s*b\b",
     r"\bvillarreal\s*b\b", r"\bcelta\s*b\b",
-    r"\breal\s*sociedad\s*b\b",
-    r"\bathletic\s*bilbao\s*b\b",
+    r"\breal\s*sociedad\s*b\b", r"\bathletic\s*bilbao\s*b\b",
     r"\balianza\b", r"\bsport\s*boys\b",
     r"\blippstadt\b", r"\bsant\s*andreu\b",
     r"\btembetary\b", r"\biteno\b", r"\bsportivo\b",
@@ -473,9 +462,6 @@ EURO_COUNTRIES = {
 FRIENDLY_KEYWORDS = ("giao huu", "friendly", "friendlies")
 
 
-# ==========================================
-# LOGIC
-# ==========================================
 def is_other_sport(text):
     if not text:
         return False
@@ -706,13 +692,9 @@ def is_within_24h(text):
     return dt <= datetime.now() + timedelta(hours=HOURS_AHEAD)
 
 
-# ==========================================
-# GOTO
-# ==========================================
 def goto_with_redirect(page, url, timeout=DOMAIN_TIMEOUT):
     try:
         page.goto(url, timeout=timeout, wait_until="domcontentloaded")
-        # Chờ redirect tối đa ~3s
         for _ in range(12):
             page.wait_for_timeout(250)
             cur = page.url
@@ -726,10 +708,256 @@ def goto_with_redirect(page, url, timeout=DOMAIN_TIMEOUT):
 
 
 # ==========================================
+# ⭐ HÀM BẮT STREAM TỪ 1 URL (dùng chung)
+# ==========================================
+def _capture_stream(page, target_url, referer_url):
+    """Vào target_url, bắt m3u8/flv đầu tiên. Trả về url hoặc None."""
+    captured = [None]
+
+    def handle(req):
+        if captured[0]:
+            return
+        u = req.url.lower()
+        if ".m3u8" in u or ".flv" in u:
+            captured[0] = req.url
+
+    page.on("request", handle)
+    try:
+        try:
+            page.goto(target_url, timeout=ROOM_TIMEOUT,
+                      wait_until="commit", referer=referer_url)
+        except Exception:
+            pass
+
+        for _ in range(STREAM_WAIT_TRIES):
+            if captured[0]:
+                break
+            page.wait_for_timeout(STREAM_WAIT_STEP_MS)
+
+        # Thử click giữa trang (autoplay)
+        if not captured[0]:
+            try:
+                page.mouse.click(960, 400)
+            except Exception:
+                pass
+            for _ in range(12):
+                if captured[0]:
+                    break
+                page.wait_for_timeout(STREAM_WAIT_STEP_MS)
+    finally:
+        try:
+            page.remove_listener("request", handle)
+        except Exception:
+            pass
+    return captured[0]
+
+
+# ==========================================
+# ⭐ DETECT BUTTON SERVER (đa selector)
+# ==========================================
+def detect_server_buttons(page):
+    return page.evaluate(r"""
+        () => {
+            const btns = [];
+            const seen = new Set();
+
+            // Thử nhiều selector theo thứ tự ưu tiên
+            const selectors = [
+                '#tv_links a.player-link',
+                '.tv_links a.player-link',
+                'a.player-link',
+                '#tv_links a[data-link]',
+                'a[data-link]',
+                '[class*="tv-link"] a',
+                '[class*="tv_link"] a',
+                '[class*="server-list"] a',
+                '[class*="list-server"] a',
+                '[class*="list__server"] a',
+                '[class*="servers"] a'
+            ];
+            let nodes = [];
+            for (const sel of selectors) {
+                const found = document.querySelectorAll(sel);
+                if (found.length > 0) {
+                    nodes = Array.from(found);
+                    break;
+                }
+            }
+
+            nodes.forEach((a, idx) => {
+                const dataLink = a.getAttribute('data-link');
+                // Label: ưu tiên dòng cuối của innerText (vì có thể có icon)
+                let raw = (a.innerText || '').trim();
+                let label = raw.split('\n').map(s => s.trim()).filter(Boolean).pop() || '';
+                if (!label) label = a.getAttribute('title') || ('Server ' + idx);
+                // Loại bỏ ký tự thừa
+                label = label.replace(/^[▶⏸\s]+/, '').trim();
+
+                const key = dataLink ? 'dl-' + dataLink : ('idx-' + idx + '-' + label);
+                if (seen.has(key)) return;
+                seen.add(key);
+
+                let selector = null;
+                if (dataLink) selector = '#tv_link_' + dataLink;
+                if (!selector && a.id) selector = '#' + a.id;
+
+                btns.push({
+                    idx: dataLink || String(idx),
+                    label: label,
+                    selector: selector,
+                    idx_pos: idx
+                });
+            });
+            return btns;
+        }
+    """)
+
+
+def _click_button(page, btn):
+    """Thử click button theo nhiều cách."""
+    # 1. Theo selector
+    if btn.get('selector'):
+        try:
+            page.click(btn['selector'], timeout=4000)
+            return True
+        except Exception:
+            pass
+    # 2. Theo text exact
+    try:
+        page.get_by_text(btn['label'], exact=True).first.click(timeout=3000)
+        return True
+    except Exception:
+        pass
+    # 3. Theo text non-exact
+    try:
+        page.get_by_text(btn['label'], exact=False).first.click(timeout=3000)
+        return True
+    except Exception:
+        pass
+    # 4. Theo index trong list a.player-link / a[data-link]
+    try:
+        idx = btn.get('idx_pos', 0)
+        page.locator('#tv_links a.player-link, a.player-link, a[data-link]').nth(idx).click(timeout=3000)
+        return True
+    except Exception:
+        pass
+    return False
+
+
+# ==========================================
+# ⭐ LẤY TẤT CẢ STREAM TỪ 1 PHÒNG
+# ==========================================
+def lay_streams_tu_phong(page, link_phong, sub_links, referer_url):
+    """
+    v22: LUÔN vào phòng để lấy ĐẦY ĐỦ server buttons.
+    Kết hợp cả 2 nguồn: sub_links từ trang chủ + server trong phòng.
+    Dedupe theo URL stream.
+    """
+    streams = []
+    seen_urls = set()   # URL stream đã bắt (m3u8/flv)
+    seen_sources = set()  # URL nguồn đã thử (link/N hoặc selector)
+
+    # --- BƯỚC 1: Thử sub_links /link/N trực tiếp (nhanh) ---
+    for sl in sub_links or []:
+        if sl['url'] in seen_sources:
+            continue
+        seen_sources.add(sl['url'])
+        st = _capture_stream(page, sl['url'], referer_url)
+        if st and st not in seen_urls:
+            seen_urls.add(st)
+            streams.append({"label": sl['label'], "url": st})
+            print(f"        ✅ [{sl['label']}] {st[:75]} (link/N)", flush=True)
+        else:
+            print(f"        ⛔ [{sl['label']}] no stream (link/N)", flush=True)
+
+    # --- BƯỚC 2: LUÔN vào phòng để lấy full server ---
+    try:
+        page.goto(link_phong, timeout=ROOM_TIMEOUT,
+                  wait_until="commit", referer=referer_url)
+    except Exception as e:
+        print(f"     ⚠️ goto room fail: {str(e)[:60]}", flush=True)
+        return streams
+
+    page.wait_for_timeout(2000)
+    try:
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(300)
+    except Exception:
+        pass
+
+    # Đóng popup nếu có
+    for sel in ['.close', '.closebtn', '[aria-label="Close"]',
+                '.modal-close', '.popup-close']:
+        try:
+            page.locator(sel).first.click(timeout=600)
+        except Exception:
+            pass
+
+    # Đợi buttons xuất hiện
+    try:
+        page.wait_for_selector(
+            '#tv_links a.player-link, a.player-link, a[data-link]',
+            timeout=6000)
+    except Exception:
+        pass
+
+    buttons = detect_server_buttons(page)
+    if not buttons:
+        print("     ⚠️ Không thấy button server trong phòng", flush=True)
+        return streams
+
+    print(f"     📺 {len(buttons)} servers trong phòng: {[b['label'] for b in buttons]}", flush=True)
+
+    # --- BƯỚC 3: Click từng server để bắt stream ---
+    for btn in buttons:
+        target_url = [None]
+
+        def handle(req):
+            if target_url[0]:
+                return
+            u = req.url.lower()
+            if ".m3u8" in u or ".flv" in u:
+                target_url[0] = req.url
+
+        page.on("request", handle)
+        try:
+            _click_button(page, btn)
+            for _ in range(STREAM_WAIT_TRIES):
+                if target_url[0]:
+                    break
+                page.wait_for_timeout(STREAM_WAIT_STEP_MS)
+            if not target_url[0]:
+                try:
+                    page.mouse.click(960, 500)
+                except Exception:
+                    pass
+                for _ in range(12):
+                    if target_url[0]:
+                        break
+                    page.wait_for_timeout(STREAM_WAIT_STEP_MS)
+        except Exception:
+            pass
+        finally:
+            try:
+                page.remove_listener("request", handle)
+            except Exception:
+                pass
+
+        if target_url[0] and target_url[0] not in seen_urls:
+            seen_urls.add(target_url[0])
+            streams.append({"label": btn["label"], "url": target_url[0]})
+            print(f"        ✅ [{btn['label']}] {target_url[0][:75]} (room)", flush=True)
+        else:
+            print(f"        ⛔ [{btn['label']}] no stream (room)", flush=True)
+
+    return streams
+
+
+# ==========================================
 # MAIN
 # ==========================================
 def san_full_server_qua_proxy():
-    print("🚀 BẮT ĐẦU QUÉT XOILAC v21 (selectors mới)", flush=True)
+    print("🚀 BẮT ĐẦU QUÉT XOILAC v22 (lấy ĐẦY ĐỦ server)", flush=True)
 
     danh_sach_phat = []
     server_da_thanh_cong = set()
@@ -749,9 +977,8 @@ def san_full_server_qua_proxy():
 
         try:
             with sync_playwright() as p:
-                browser = p.chromium.launch(
+                launch_kwargs = dict(
                     headless=True,
-                    proxy=PROXY,
                     args=[
                         "--disable-blink-features=AutomationControlled",
                         "--disable-dev-shm-usage",
@@ -759,6 +986,10 @@ def san_full_server_qua_proxy():
                         "--disable-setuid-sandbox",
                     ],
                 )
+                if PROXY:
+                    launch_kwargs["proxy"] = PROXY
+                browser = p.chromium.launch(**launch_kwargs)
+
                 context = browser.new_context(
                     viewport={"width": 1920, "height": 1080},
                     user_agent=DEFAULT_UA,
@@ -776,7 +1007,6 @@ def san_full_server_qua_proxy():
                         {get: () => ['vi-VN','vi','en-US','en']});
                 """)
 
-                # Chặn ảnh/font/media (không cần thiết, tiết kiệm băng thông)
                 def chan_tai_nguyen_thua(route):
                     rt = route.request.resource_type
                     if rt in ("image", "font", "media"):
@@ -785,7 +1015,6 @@ def san_full_server_qua_proxy():
                         route.continue_()
                 context.route("**/*", chan_tai_nguyen_thua)
 
-                # ---------- LỌC ----------
                 def _loc_trung(danh_sach_raw, url_goc):
                     result = {}
                     stats = {"total": 0, "other_sport": 0, "excluded": 0,
@@ -861,7 +1090,6 @@ def san_full_server_qua_proxy():
                           f"**giữ={stats['kept']}** (🎾 {stats['tennis']})", flush=True)
                     return result
 
-                # ---------- LẤY PHÒNG TỪ TRANG CHỦ ----------
                 def lay_phong_xoilac(page, url_goc, keyword_link):
                     raw = page.evaluate(r"""
                         (() => {
@@ -874,7 +1102,6 @@ def san_full_server_qua_proxy():
                                 const isTennis = cls.indexOf('match-tennis-item') >= 0 || sportAttr === 'tennis';
                                 if (!isFootball && !isTennis) return;
 
-                                // Link phòng: a.redirectPopup hoặc a[href*="/truc-tiep/"]
                                 const linkEl = item.querySelector('a.redirectPopup') ||
                                                item.querySelector('a[href*="/truc-tiep/"]');
                                 if (!linkEl || !linkEl.href) return;
@@ -894,7 +1121,6 @@ def san_full_server_qua_proxy():
                                 const leagueName = leagueEl ? leagueEl.innerText.trim() : '';
                                 const dateStr = dateEl ? dateEl.innerText.trim() : '';
 
-                                // Thu thập link /link/N (commentator shortcuts)
                                 const subLinks = [];
                                 item.querySelectorAll('.grid-match-item__footer-center a.commentator, .grid-match-item__footer-center a').forEach(a => {
                                     const href = a.getAttribute('href') || '';
@@ -919,7 +1145,6 @@ def san_full_server_qua_proxy():
                     """)
                     return _loc_trung(raw, url_goc)
 
-                # ---------- CLICK XEM THÊM ----------
                 def click_xem_them_loop(page, max_clicks=MAX_XEM_THEM_CLICKS):
                     clicked = 0
                     for i in range(max_clicks):
@@ -966,168 +1191,6 @@ def san_full_server_qua_proxy():
                             break
                     return clicked
 
-                # ---------- SERVER TRONG PHÒNG ----------
-                def detect_server_buttons(page):
-                    return page.evaluate(r"""
-                        () => {
-                            const btns = [];
-                            const seen = new Set();
-                            document.querySelectorAll('#tv_links a.player-link').forEach(a => {
-                                const label = (a.innerText || '').trim().split('\n').pop().trim();
-                                const key = 'tv-' + (a.getAttribute('data-link') || '');
-                                if (seen.has(key)) return;
-                                seen.add(key);
-                                btns.push({
-                                    idx: a.getAttribute('data-link') || '0',
-                                    label: label || ('Server ' + btns.length),
-                                    selector: '#tv_link_' + (a.getAttribute('data-link') || '0')
-                                });
-                            });
-                            return btns;
-                        }
-                    """)
-
-                # ---------- LẤY STREAM TỪ 1 URL ----------
-                def fetch_stream_from_url(page, target_url, referer_url=None):
-                    """Trả về url stream (m3u8/flv) nếu bắt được, hoặc None."""
-                    captured = [None]
-
-                    def handle(req):
-                        if captured[0]:
-                            return
-                        u = req.url.lower()
-                        if ".m3u8" in u or ".flv" in u:
-                            captured[0] = req.url
-
-                    page.on("request", handle)
-                    try:
-                        try:
-                            page.goto(target_url, timeout=ROOM_TIMEOUT,
-                                      wait_until="commit", referer=referer_url)
-                        except Exception:
-                            pass
-
-                        # chờ bắt stream tối đa ~5s
-                        for _ in range(STREAM_WAIT_TRIES):
-                            if captured[0]:
-                                break
-                            page.wait_for_timeout(STREAM_WAIT_STEP_MS)
-
-                        # thử click giữa trang (autoplay) nếu chưa có
-                        if not captured[0]:
-                            try:
-                                page.mouse.click(960, 400)
-                            except Exception:
-                                pass
-                            for _ in range(12):
-                                if captured[0]:
-                                    break
-                                page.wait_for_timeout(STREAM_WAIT_STEP_MS)
-                    finally:
-                        try:
-                            page.remove_listener("request", handle)
-                        except Exception:
-                            pass
-                    return captured[0]
-
-                def lay_streams_tu_phong(page, link_phong, sub_links, referer_url):
-                    """
-                    Ưu tiên: nếu có sub_links /link/N → thử từng link trước (nhanh hơn).
-                    Nếu không được → vào phòng click server (fallback).
-                    """
-                    streams = []
-                    seen_urls = set()
-
-                    # --- Cách 1: thử link /link/N trực tiếp ---
-                    for sl in sub_links or []:
-                        if sl['url'] in seen_urls:
-                            continue
-                        seen_urls.add(sl['url'])
-                        st = fetch_stream_from_url(page, sl['url'], referer_url=referer_url)
-                        if st:
-                            streams.append({"label": sl['label'], "url": st})
-                            print(f"        ✅ [{sl['label']}] {st[:75]}", flush=True)
-                        else:
-                            print(f"        ⛔ [{sl['label']}] no stream (link/N)", flush=True)
-
-                    if streams:
-                        return streams
-
-                    # --- Cách 2 (fallback): vào phòng, click từng server ---
-                    try:
-                        page.goto(link_phong, timeout=ROOM_TIMEOUT,
-                                  wait_until="commit", referer=referer_url)
-                    except Exception as e:
-                        print(f"     ⚠️ goto room fail: {str(e)[:60]}", flush=True)
-                        return streams
-
-                    page.wait_for_timeout(1500)
-                    try:
-                        page.keyboard.press("Escape")
-                    except Exception:
-                        pass
-
-                    try:
-                        page.wait_for_selector('#tv_links a.player-link', timeout=4000)
-                    except Exception:
-                        pass
-
-                    buttons = detect_server_buttons(page)
-                    if not buttons:
-                        print("     ⚠️ Không thấy button server trong phòng", flush=True)
-                        return streams
-                    print(f"     📺 {len(buttons)}: {[b['label'] for b in buttons]}", flush=True)
-
-                    for btn in buttons:
-                        target_url = [None]
-
-                        def handle(req):
-                            if target_url[0]:
-                                return
-                            u = req.url.lower()
-                            if ".m3u8" in u or ".flv" in u:
-                                target_url[0] = req.url
-
-                        page.on("request", handle)
-                        try:
-                            try:
-                                page.click(btn['selector'], timeout=4000)
-                            except Exception:
-                                try:
-                                    page.get_by_text(btn['label'], exact=False).first.click(timeout=4000)
-                                except Exception:
-                                    pass
-                            for _ in range(STREAM_WAIT_TRIES):
-                                if target_url[0]:
-                                    break
-                                page.wait_for_timeout(STREAM_WAIT_STEP_MS)
-                            if not target_url[0]:
-                                try:
-                                    page.mouse.click(960, 500)
-                                except Exception:
-                                    pass
-                                for _ in range(12):
-                                    if target_url[0]:
-                                        break
-                                    page.wait_for_timeout(STREAM_WAIT_STEP_MS)
-                        except Exception:
-                            pass
-                        finally:
-                            try:
-                                page.remove_listener("request", handle)
-                            except Exception:
-                                pass
-
-                        if target_url[0] and target_url[0] not in seen_urls:
-                            seen_urls.add(target_url[0])
-                            streams.append({"label": btn["label"], "url": target_url[0]})
-                            print(f"        ✅ [{btn['label']}] {target_url[0][:75]}", flush=True)
-                        else:
-                            print(f"        ⛔ [{btn['label']}] no stream", flush=True)
-
-                    return streams
-
-                # ---------- QUÉT TRANG ----------
                 def quet_trang(ten_nhom, url_trang_chu, keyword_link, kieu_quet=""):
                     nonlocal so_tram_loi_vong_nay, so_tram_ok_vong_nay
                     page = context.new_page()
