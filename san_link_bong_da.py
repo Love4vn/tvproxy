@@ -16,11 +16,7 @@ from playwright.sync_api import sync_playwright
 # ==========================================
 # CẤU HÌNH
 # ==========================================
-PROXY = {
-    "server": "http://14.241.72.139:10906",
-    "username": "hieumx",
-    "password": "hieu123",
-}
+PROXY = None
 
 MAX_RETRIES = 2
 DOMAIN_TIMEOUT = 10000       # ⬇️ giảm từ 25s -> 10s
