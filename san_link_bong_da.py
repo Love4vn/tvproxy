@@ -52,7 +52,8 @@ XOILAC_DOMAINS = [
     "https://xoilacxbr.tv",
     "https://xoilaczbh.tv",
     "https://xoilaczzz.pro",
-    
+    "https://vebozbr.cc",
+    "https://90phutzzu.tv",
 ]
 
 # ==========================================
