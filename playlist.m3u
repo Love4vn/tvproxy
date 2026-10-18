@@ -1,122 +1,32 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-18 19:00 UTC
-# streams  : 16
+# generated: 2026-10-18 21:16 UTC
+# streams  : 4
 
-#EXTINF:-1 tvg-name="FC Twente vs FC Utrecht | LIVE | 19/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Eredivisie",FC Twente vs FC Utrecht | LIVE | 19/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=4e77585a1a85d3f671fc2827c372b77d%2Findex.m3u8&e=1792349162&sig=ltYpEk_D6_2-voGZ9Qz7l2FfbUCJhrqn7GOPTWIrDak&v=1792347362-6758
-
-#EXTINF:-1 tvg-name="NEC Nijmegen vs Fortuna Sittard | LIVE | 19/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Eredivisie",NEC Nijmegen vs Fortuna Sittard | LIVE | 19/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=a08663a4fc28ff247dda5e18cd4c7d89%2Findex.m3u8&e=1792349260&sig=lFo1HzclUSv1AAlJ4ydTYmCy3-kXBRtKyGiq5nzcdIM&v=1792347460-3583
-
-#EXTINF:-1 tvg-name="Málaga vs Real Sociedad | LIVE | 19/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Málaga vs Real Sociedad | LIVE | 19/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=9aba7a810e47b32163183d4d9e92840f%2Findex.m3u8&e=1792349534&sig=qmNqd-f0NxJs42_xWRoZMmdQgsODP6qsUM-3V5MYo50&v=1792347734-9298
-
-#EXTINF:-1 tvg-name="Málaga vs Real Sociedad | LIVE | 19/10/2026 [Fast-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Málaga vs Real Sociedad | LIVE | 19/10/2026 [Fast-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=9aba7a810e47b32163183d4d9e92840f%2Findex.m3u8&e=1792349546&sig=5KD8aOHrE6nqKLr-dbP4nqrCQAMImZ8ZTmrYNZTga7U
-
-#EXTINF:-1 tvg-name="Juventus vs Lazio | 01:45 | 19/10/2026 [Fast-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Juventus vs Lazio | 01:45 | 19/10/2026 [Fast-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=d7bb70bbe1dafb9cbec7469b899bee63%2Findex.m3u8&e=1792349919&sig=71HfVUKfgJKH_DJzJcYz8nW9Bu_JLAOSJINVQ82vXiw
-
-#EXTINF:-1 tvg-name="Juventus vs Lazio | 01:45 | 19/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Juventus vs Lazio | 01:45 | 19/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=d7bb70bbe1dafb9cbec7469b899bee63%2Findex.m3u8&e=1792349963&sig=BSgjkEqIZFJRtcrkta53GfwOSEl6qBRy4hkJLe6FXzM&v=1792348163-8655
-
-#EXTINF:-1 tvg-name="Lyon vs Nice | 01:45 | 19/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Lyon vs Nice | 01:45 | 19/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=c31eab77556044c97292125cfbfa2364%2Findex.m3u8&e=1792350319&sig=GSO3z6-G0Ykax5teZOWlVEMLEgfiS0Id8Bm7nYL5XZM&v=1792348519-5055
-
-#EXTINF:-1 tvg-name="Real Madrid vs Sevilla | 02:00 | 19/10/2026 [Ihdstreams]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Real Madrid vs Sevilla | 02:00 | 19/10/2026 [Ihdstreams]
+#EXTINF:-1 tvg-name="Real Madrid vs Sevilla | LIVE | 19/10/2026 [Ihdstreams]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Real Madrid vs Sevilla | LIVE | 19/10/2026 [Ihdstreams]
 #EXTVLCOPT:http-referrer=https://streame.center/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
 #EXTVLCOPT:http-origin=https://streame.center
-#EXTVLCOPT:http-cookie=cf_clearance=LEQrWlQRoxUexTPUdRvhM7F_waHR9JGaZV3.k824H4s-1792348769-1.2.1.1-xf4TneKrENcscbdoKoZ1xuCS5s6rkbuiUzDC9SpeU0xKt0uXqEwQD1bU_szflK6tpIqRqz_22puUkUbOFeAyhnC2szOAJG6e0asgN8AqVj5zjJFnVZT9q8SRHD5ph.XpIdtN0cvDM15ANNQEx2r1tIj4PZHlVYFyAZzkvPECTIX.yCaTIiepF.CwljpplonKSedFKOKMh6Nq4pfQB2Vwascwf76xASSy1G96htgZcelMZ7kE.u5HnK6BQhUb6FrUpHzfQZVVXnItmudmr6Bj8VsVqGCi90jWSvFJWC1ULK4Cb8zN8KoONBnm_r08J6M8m0nDUxfYUqPAtJzNQXVWEq4vLR8uChfkEXRhmW_y9NA
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://streame.center&Cookie=cf_clearance=LEQrWlQRoxUexTPUdRvhM7F_waHR9JGaZV3.k824H4s-1792348769-1.2.1.1-xf4TneKrENcscbdoKoZ1xuCS5s6rkbuiUzDC9SpeU0xKt0uXqEwQD1bU_szflK6tpIqRqz_22puUkUbOFeAyhnC2szOAJG6e0asgN8AqVj5zjJFnVZT9q8SRHD5ph.XpIdtN0cvDM15ANNQEx2r1tIj4PZHlVYFyAZzkvPECTIX.yCaTIiepF.CwljpplonKSedFKOKMh6Nq4pfQB2Vwascwf76xASSy1G96htgZcelMZ7kE.u5HnK6BQhUb6FrUpHzfQZVVXnItmudmr6Bj8VsVqGCi90jWSvFJWC1ULK4Cb8zN8KoONBnm_r08J6M8m0nDUxfYUqPAtJzNQXVWEq4vLR8uChfkEXRhmW_y9NA
-#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center|Cookie: cf_clearance=LEQrWlQRoxUexTPUdRvhM7F_waHR9JGaZV3.k824H4s-1792348769-1.2.1.1-xf4TneKrENcscbdoKoZ1xuCS5s6rkbuiUzDC9SpeU0xKt0uXqEwQD1bU_szflK6tpIqRqz_22puUkUbOFeAyhnC2szOAJG6e0asgN8AqVj5zjJFnVZT9q8SRHD5ph.XpIdtN0cvDM15ANNQEx2r1tIj4PZHlVYFyAZzkvPECTIX.yCaTIiepF.CwljpplonKSedFKOKMh6Nq4pfQB2Vwascwf76xASSy1G96htgZcelMZ7kE.u5HnK6BQhUb6FrUpHzfQZVVXnItmudmr6Bj8VsVqGCi90jWSvFJWC1ULK4Cb8zN8KoONBnm_r08J6M8m0nDUxfYUqPAtJzNQXVWEq4vLR8uChfkEXRhmW_y9NA
-https://edgestream3.pro/hls/377qj1h2727.m3u8?st=Bq56oi37clGZRYpZ-W0E_-ZGeMY8Ur_qtaYMOL0HnT8&e=1792359579
+#EXTVLCOPT:http-cookie=cf_clearance=w.yPoQE.Cy6xqnFytJQ44SIaXV7IYyoIFXKpQ.gz5Z4-1792357096-1.2.1.1-4fTt0N2cFKriwMdIhDua649nM37p24qoK4QJnvrEmxZ87iqImYiQjNGLyUmz.227o3.ncZCLqRcngcNF3bF8HnbTpmFZVKhGv.QlMMz9qz44JNJnVaIg6gULBGW6D6dhSD1BDhr4vNsJWnO553ydSOaPjhCQk4pyhYbZXoWU0YmprPIGXsMiJGMUY.TPBf14SteniI73VBSqCHQ9f6qB6Z6Z0XQB66l6xqEN4xMOhsjaKJDXY2lF9zQMe6xLfZp9B1RBwxdf_5DfDwFN0DixgHIcyltJsvnXzyoGG2C52B9otIyig8PqBZK5FoH2nmFVO9PogTuUE1wKB1UMzj2MDp_7iTTmzmM4UkxUSjBtzGc
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://streame.center&Cookie=cf_clearance=w.yPoQE.Cy6xqnFytJQ44SIaXV7IYyoIFXKpQ.gz5Z4-1792357096-1.2.1.1-4fTt0N2cFKriwMdIhDua649nM37p24qoK4QJnvrEmxZ87iqImYiQjNGLyUmz.227o3.ncZCLqRcngcNF3bF8HnbTpmFZVKhGv.QlMMz9qz44JNJnVaIg6gULBGW6D6dhSD1BDhr4vNsJWnO553ydSOaPjhCQk4pyhYbZXoWU0YmprPIGXsMiJGMUY.TPBf14SteniI73VBSqCHQ9f6qB6Z6Z0XQB66l6xqEN4xMOhsjaKJDXY2lF9zQMe6xLfZp9B1RBwxdf_5DfDwFN0DixgHIcyltJsvnXzyoGG2C52B9otIyig8PqBZK5FoH2nmFVO9PogTuUE1wKB1UMzj2MDp_7iTTmzmM4UkxUSjBtzGc
+#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center|Cookie: cf_clearance=w.yPoQE.Cy6xqnFytJQ44SIaXV7IYyoIFXKpQ.gz5Z4-1792357096-1.2.1.1-4fTt0N2cFKriwMdIhDua649nM37p24qoK4QJnvrEmxZ87iqImYiQjNGLyUmz.227o3.ncZCLqRcngcNF3bF8HnbTpmFZVKhGv.QlMMz9qz44JNJnVaIg6gULBGW6D6dhSD1BDhr4vNsJWnO553ydSOaPjhCQk4pyhYbZXoWU0YmprPIGXsMiJGMUY.TPBf14SteniI73VBSqCHQ9f6qB6Z6Z0XQB66l6xqEN4xMOhsjaKJDXY2lF9zQMe6xLfZp9B1RBwxdf_5DfDwFN0DixgHIcyltJsvnXzyoGG2C52B9otIyig8PqBZK5FoH2nmFVO9PogTuUE1wKB1UMzj2MDp_7iTTmzmM4UkxUSjBtzGc
+https://edgestream7.pro/hls/377qj1h2727.m3u8?st=OvCJ2LWVBm53kTkk5gJAkrPADWxaLXpOv6hkcdpiz-A&e=1792367906
 
-#EXTINF:-1 tvg-name="Real Madrid vs Sevilla | 02:00 | 19/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Real Madrid vs Sevilla | 02:00 | 19/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTINF:-1 tvg-name="Real Madrid vs Sevilla | LIVE | 19/10/2026 [Bally-sports]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Real Madrid vs Sevilla | LIVE | 19/10/2026 [Bally-sports]
+#EXTVLCOPT:http-referrer=https://streame.center/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=9aba7a810e47b32163183d4d9e92840f%2Findex.m3u8&e=1792350839&sig=UOaxKVo1MivWBI50gGILkdfTw0jIyOJOHLXS2g8r4Zo&v=1792349039-3277
+#EXTVLCOPT:http-origin=https://streame.center
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://streame.center
+#EXTHTTP:Referer: https://streame.center/|Origin: https://streame.center
+https://edgestream3.pro/hls/377qj1h2727.m3u8?st=fgvPISaHWxamv_FPWB8sPN1YvXl6R5F17RbHjsNPuf0&e=1792368158
 
-#EXTINF:-1 tvg-name="Real Sociedad vs Málaga | English | 23:30 | 18/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" tvg-id="Soccer.Dummy.us" group-title="La Liga",Real Sociedad vs Málaga | English | 23:30 | 18/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401882841
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401882841&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401882841
-https://instreams.xyz/live3/tv401882841/index.m3u8?st=bx6yjhWbltUfS4JBtW1ueA&e=1792360749
-
-#EXTINF:-1 tvg-name="Real Sociedad vs Málaga | ES | 23:30 | 18/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" tvg-id="Soccer.Dummy.us" group-title="La Liga",Real Sociedad vs Málaga | ES | 23:30 | 18/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401882841_es
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401882841_es&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401882841_es
-https://instreams.live/live3/tv401882841_es/index.m3u8?st=gBH7mN75yEwuMr4VIBD7_g&e=1792360750
-
-#EXTINF:-1 tvg-name="FC Andorra vs Girona | English | 23:30 | 18/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="ESP 2",FC Andorra vs Girona | English | 23:30 | 18/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401883177
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401883177&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401883177
-https://instreams.xyz/live3/tv401883177/index.m3u8?st=0RQ8rivcRqX7bkqsWuh9UQ&e=1792360750
-
-#EXTINF:-1 tvg-name="Lazio vs Juventus | English | 01:45 | 19/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Serie A",Lazio vs Juventus | English | 01:45 | 19/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401874765
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401874765&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401874765
-https://instreams.xyz/live3/tv401874765/index.m3u8?st=gBgmVQ1LRvx3_PL6KE9S8g&e=1792360754
-
-#EXTINF:-1 tvg-name="Lyon vs. Nice | English [STRMCNTR]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Football",Lyon vs. Nice | English [STRMCNTR]
-#EXTVLCOPT:http-referrer=https://streame.center
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://streame.center
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fedgestream2.pro%2Fhls%2Fdza5z8f69.m3u8&ref=https%3A%2F%2Fstreame.center&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="Juventus vs. Lazio | English [STRMCNTR]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Football",Juventus vs. Lazio | English [STRMCNTR]
-#EXTVLCOPT:http-referrer=https://streame.center
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streame.center&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://streame.center
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fedgestream2.pro%2Fhls%2FsyaLqucEne4k.m3u8&ref=https%3A%2F%2Fstreame.center&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-name="FC Cincinnati vs Columbus Crew | 04:00 | 19/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",FC Cincinnati vs Columbus Crew | 04:00 | 19/10/2026 [Wildgames]
+#EXTVLCOPT:http-referrer=https://matchora.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchora.to
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
+#EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fb.kugunor.cyou%2Fhls%2F1862332%2Findex.m3u8%3Ft%3DMTg2MjMzMnwxNzkyMzU4MjUwfHx8fGQ2OWMxOTdi.0c7WANPSsYurrgZq3yaX5R0E0KKg9eOyqapVVKcOwJM&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
 
 #EXTINF:-1 tvg-name="Real Madrid vs. Sevilla | Spanish [STRMCNTR]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Football",Real Madrid vs. Sevilla | Spanish [STRMCNTR]
 #EXTVLCOPT:http-referrer=https://streame.center
