@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/1l4rjnhxl3nm7vx/image/small", ⚽ Mara Sugar FC vs Mombasa Elite | 18:00 | 19/10/2026 [HD 1]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://us-stemcell.com/
-#EXTVLCOPT:http-origin=https://us-stemcell.com/
-#EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=73f84c1d7387dd636ec4d05c375297df&wsABSTime=1792447270
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehn42er510/image/small", ⚽ Monza vs Cagliari | 23:30 | 19/10/2026 [ROY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
@@ -16,25 +10,25 @@ https://live2.jorvakstreamcache.com/live/channel1.flv
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001792404081-0-0-dc3b680de476b425824af5c372aef6e8
+https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001792430931-0-0-50dafc00edf560d3c7f1c9c05603116c
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehn42er510/image/small", ⚽ Monza vs Cagliari | 23:30 | 19/10/2026 [NEMO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001792404090-0-0-49df97040e378ac366c7e6b4ff1cf66e
+https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001792430945-0-0-ad9b1c96502b905335cb9082e6dc9477
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehn42er510/image/small", ⚽ Monza vs Cagliari | 23:30 | 19/10/2026 [NEMO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=3435147e0eb7dc32ec29773293a1d6c9&wsABSTime=1792447290
+https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=f4003e8fd41f4ad8856f038d27486726&wsABSTime=1792474145
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehn42er510/image/small", ⚽ Monza vs Cagliari | 23:30 | 19/10/2026 [FULL HD ROY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001792404090-0-0-f243b246897a0a5e1968e41578b37c9f
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001792430946-0-0-bf91ba37ce9a4c3b84a2eb5b2c6f7f91
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jhkvzqwzv/image/small", ⚽ Parma vs Torino | 01:45 | 20/10/2026 [MAX]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
@@ -46,91 +40,49 @@ https://live2.jorvakstreamcache.com/live/channel6.flv
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001792404095-0-0-291bf0d8598c91382e90e9ef7157c85a
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001792430949-0-0-7dd09f99599e103c072624c8fe93360b
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jhkvzqwzv/image/small", ⚽ Parma vs Torino | 01:45 | 20/10/2026 [FELIX]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001792404108-0-0-5c831279bd0f3d838091e97472521ac4
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001792430963-0-0-19f8ee2b0ffe535107eb007135c7fa4a
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jhkvzqwzv/image/small", ⚽ Parma vs Torino | 01:45 | 20/10/2026 [FELIX]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel24.flv?wsSecret=3bb06ebaa475cf55aefca772d6e09377&wsABSTime=1792447308
+https://live1.quickscoreboardz.com/live/channel24.flv?wsSecret=efb14983b7ae1605d52c6e4fdd4c46b4&wsABSTime=1792474163
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jhkvzqwzv/image/small", ⚽ Parma vs Torino | 01:45 | 20/10/2026 [FULL HD MAX]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001792404108-0-0-eb534be39296aac6c1fb7eddfcc270aa
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyh90gr1ge/image/small", ⚽ Tottenham vs Coventry City | 02:00 | 20/10/2026 [ROY]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://us-stemcell.com/
-#EXTVLCOPT:http-origin=https://us-stemcell.com/
-#EXTVLCOPT:http-header=Accept:*/*
-https://live2.jorvakstreamcache.com/live/channel1.flv
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyh90gr1ge/image/small", ⚽ Tottenham vs Coventry City | 02:00 | 20/10/2026 [FABIO]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://us-stemcell.com/
-#EXTVLCOPT:http-origin=https://us-stemcell.com/
-#EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=cb34960c7027dd3ed2eb21787f18cfa1&wsABSTime=1792447313
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyh90gr1ge/image/small", ⚽ Tottenham vs Coventry City | 02:00 | 20/10/2026 [ASTRA]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://us-stemcell.com/
-#EXTVLCOPT:http-origin=https://us-stemcell.com/
-#EXTVLCOPT:http-header=Accept:*/*
-https://live2.jorvakstreamcache.com/live/channel11.flv
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyh90gr1ge/image/small", ⚽ Tottenham vs Coventry City | 02:00 | 20/10/2026 [HD ROY]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://us-stemcell.com/
-#EXTVLCOPT:http-origin=https://us-stemcell.com/
-#EXTVLCOPT:http-header=Accept:*/*
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001792404123-0-0-16ba40af21f38f1d6b17b85db9db24ee
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyh90gr1ge/image/small", ⚽ Tottenham vs Coventry City | 02:00 | 20/10/2026 [FABIO]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://us-stemcell.com/
-#EXTVLCOPT:http-origin=https://us-stemcell.com/
-#EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=98be6b7cd56fa66ccf98f21fb1179f90&wsABSTime=1792447323
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyh90gr1ge/image/small", ⚽ Tottenham vs Coventry City | 02:00 | 20/10/2026 [HD FABIO]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://us-stemcell.com/
-#EXTVLCOPT:http-origin=https://us-stemcell.com/
-#EXTVLCOPT:http-header=Accept:*/*
-https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001792404123-0-0-dca3d1636de33bfe400016a11b17ac66
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyh90gr1ge/image/small", ⚽ Tottenham vs Coventry City | 02:00 | 20/10/2026 [HD ASTRA]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://us-stemcell.com/
-#EXTVLCOPT:http-origin=https://us-stemcell.com/
-#EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=ff2ff72a710582955ba5beba1403e2cb&wsABSTime=1792447324
+https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001792430964-0-0-76177bcb3e6f4fb37ddc9db43e39820e
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehz33r510/image/small", ⚽ Getafe vs Rayo Vallecano | 02:00 | 20/10/2026 [BRADY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=0e19ce49ec6454dbb8bbac92ff0d205b&wsABSTime=1792447327
+https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=57139293780b2a0b34efd55d13c7e735&wsABSTime=1792474165
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehz33r510/image/small", ⚽ Getafe vs Rayo Vallecano | 02:00 | 20/10/2026 [RIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001792404129-0-0-8e3e3c64eb44e6d623bd45a8e02f21b5
+https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001792430966-0-0-16a0c49163ed639f56265673906516b2
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehz33r510/image/small", ⚽ Getafe vs Rayo Vallecano | 02:00 | 20/10/2026 [BRADY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=91bcb3a4fde3a3a8ec3e450f042a5d01&wsABSTime=1792447330
+https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=5894402af44749d15d30210ae36d32ff&wsABSTime=1792474167
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehz33r510/image/small", ⚽ Getafe vs Rayo Vallecano | 02:00 | 20/10/2026 [RIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001792404135-0-0-b62ce08be4f8ef7566ffc0f89860f077
+https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001792430974-0-0-5ebe56fef8e7b7150c15f2f9f4674e47
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehz33r510/image/small", ⚽ Getafe vs Rayo Vallecano | 02:00 | 20/10/2026 [RIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
@@ -142,124 +94,472 @@ https://live2.jorvakstreamcache.com/live/channel16.flv
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001792404136-0-0-324516063336094085c97c8911df735b
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/l7oqdwfl354r510/image/small", ⚽ Ingrid Neel/Giuliana Olmos vs Cho I-Hsuan/Cho Yi Tsen | 11:50 | 19/10/2026 [HD 1]
+https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001792430975-0-0-867a8280971e6be66e2d0a1cc77fe73c
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyh90gr1ge/image/small", ⚽ Tottenham vs Coventry City | 02:00 | 20/10/2026 [ROY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel60.flv?wsSecret=1758cabd14ec616ae60a5003a0d6d337&wsABSTime=1792447337
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/vjxm85fjl0wm6od/image/small", ⚽ Katie Boulter vs Himeno Sakatsume | 13:25 | 19/10/2026 [HD 1]
+https://live2.jorvakstreamcache.com/live/channel1.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyh90gr1ge/image/small", ⚽ Tottenham vs Coventry City | 02:00 | 20/10/2026 [FABIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel67.flv?wsSecret=2f6e3a2b4c2e0a58e658b8c9f91f34a0&wsABSTime=1792447343
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/6ypq3pf5w9krd7o/image/small", ⚽ Adrian Mannarino vs Aleksandar Vukic | 14:40 | 19/10/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=69f5683bd19b8a5d25059646515f59f4&wsABSTime=1792474179
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyh90gr1ge/image/small", ⚽ Tottenham vs Coventry City | 02:00 | 20/10/2026 [ASTRA]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel68.flv?wsSecret=166519c383dd653207f41c027c595def&wsABSTime=1792447350
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/6ypq3pf4ve4rd7o/image/small", ⚽ Filip Misolic vs Daniel Siniakov | 15:00 | 19/10/2026 [HD 1]
+https://live2.jorvakstreamcache.com/live/channel11.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyh90gr1ge/image/small", ⚽ Tottenham vs Coventry City | 02:00 | 20/10/2026 [HD ROY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel51.flv?wsSecret=adb07b48b34293da56386dc821bdef65&wsABSTime=1792447358
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/2y8m4vfzxjgml07/image/small", ⚽ Daria Kasatkina vs Aliaksandra Sasnovich | 15:00 | 19/10/2026 [HD 1]
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001792430995-0-0-2c10a2795a8f22439fd4b970518c1266
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyh90gr1ge/image/small", ⚽ Tottenham vs Coventry City | 02:00 | 20/10/2026 [FABIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel50.flv?wsSecret=be152c349555400969fb3fb6f9734781&wsABSTime=1792447365
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/l7oqdwflppyr510/image/small", ⚽ Guo Hanyu/Kristina Mladenovic vs Shuko Aoyama/Liang En-shuo | 13:25 | 19/10/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=8d6d2b95e2f01a3c2e9e566c09377e1e&wsABSTime=1792474195
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyh90gr1ge/image/small", ⚽ Tottenham vs Coventry City | 02:00 | 20/10/2026 [HD FABIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel66.flv?wsSecret=8d52c5776dc22dd30842e6e8733a5e9b&wsABSTime=1792447373
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/ednm9ef9v60ryox/image/small", ⚽ Marin Cilic vs Nikoloz Basilashvili | 15:50 | 19/10/2026 [HD 1]
+https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001792430995-0-0-729233270181e02261c35d4e8a4bc465
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyh90gr1ge/image/small", ⚽ Tottenham vs Coventry City | 02:00 | 20/10/2026 [HD ASTRA]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel52.flv?wsSecret=dd66143f2c7b967505b713a40c79b4bb&wsABSTime=1792447380
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/4jwq2pf0wn7m0ve/image/small", ⚽ Kamilla Rakhimova vs Marie Bouzkova | 16:10 | 19/10/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=c937a68cbfca497647dd21f17d0dfbe2&wsABSTime=1792474196
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nhdpymd7o/image/small", ⚽ Fenerbahce vs SK Slavia Praha | 23:45 | 20/10/2026 [NICK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel53.flv?wsSecret=a4da889f8164eca3e14ab1d890b16d3e&wsABSTime=1792447387
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/1l4rjwf3z15m7vx/image/small", ⚽ Clement Tabur vs Nicolai Budkov Kjaer | 18:10 | 19/10/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=f8cc56ab2e9f24828b39b4789e662b60&wsABSTime=1792474199
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nhdpymd7o/image/small", ⚽ Fenerbahce vs SK Slavia Praha | 23:45 | 20/10/2026 [ZANE]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel54.flv?wsSecret=e043af6d4aa5c47a3365d25d90f08814&wsABSTime=1792447395
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/dj2ry1fg7zxr1zp/image/small", ⚽ Alexandra Eala vs Diane Parry | 18:30 | 19/10/2026 [HD 1]
+https://live2.domaincdn.cc/livecdn/channel-22.flv?auth_key=3000001792431001-0-0-69d57f49086cbd8c909e7b262bfbcc4c
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nhdpymd7o/image/small", ⚽ Fenerbahce vs SK Slavia Praha | 23:45 | 20/10/2026 [NICK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel55.flv?wsSecret=be6bd0b133b5056498f21447cca72601&wsABSTime=1792447402
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/y39mpyfjv75mojx/image/small", ⚽ Thiago Monteiro vs Alejandro Moro Canas | 19:00 | 19/10/2026 [HD 1]
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=9f5d157123aa39108bde40c9167ec7e8&wsABSTime=1792474203
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nhdpymd7o/image/small", ⚽ Fenerbahce vs SK Slavia Praha | 23:45 | 20/10/2026 [ZANE]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel56.flv?wsSecret=5667bb3c43f6c15a4fa989b5bd446968&wsABSTime=1792447410
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/4jwq2pf14w7m0ve/image/small", ⚽ Max Alcala Gurri vs Andres Andrade | 19:30 | 19/10/2026 [HD 1]
+https://live2.domaincdn.cc/livecdn/channel-22.flv?auth_key=3000001792431007-0-0-b8c89b5c6e178917d893bb74c484c5de
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nhdpymd7o/image/small", ⚽ Fenerbahce vs SK Slavia Praha | 23:45 | 20/10/2026 [ZANE]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel57.flv?wsSecret=f8678a230a8a8af795e00ca6ce1ba10f&wsABSTime=1792447417
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/4jwq2pfk83zm0ve/image/small", ⚽ Marco Cecchinato vs Vilius Gaubas | 20:10 | 19/10/2026 [HD 1]
+https://live2.jorvakstreamcache.com/live/channel22.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nhdpymd7o/image/small", ⚽ Fenerbahce vs SK Slavia Praha | 23:45 | 20/10/2026 [FULL HD NICK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel58.flv?wsSecret=f6637ca0f67a144140a770971bfbfc03&wsABSTime=1792447424
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/dn1m12f1x6lqoep/image/small", ⚽ Andrea Guerrieri vs Alex Michelsen | 20:30 | 19/10/2026 [HD 1]
+https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001792431009-0-0-f63aa317822301aa6354e0b58c95e623
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkhddk0qg8n/image/small", ⚽ Sabah FK vs Dortmund | 23:45 | 20/10/2026 [ROY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel59.flv?wsSecret=cc198a354de447d78ed728c4da945d2f&wsABSTime=1792447432
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/y0or5of0678mwzv/image/small", ⚽ Matteo Arnaldi vs Lorenzo Musetti | 21:10 | 19/10/2026 [HD 1]
+https://live2.jorvakstreamcache.com/live/channel1.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkhddk0qg8n/image/small", ⚽ Sabah FK vs Dortmund | 23:45 | 20/10/2026 [RIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel60.flv?wsSecret=70f6af3aa8ddf0371c1e48440a14a6f3&wsABSTime=1792447439
+https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001792431013-0-0-38cc955f82cf347c73fc49ce687455e6
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkhddk0qg8n/image/small", ⚽ Sabah FK vs Dortmund | 23:45 | 20/10/2026 [RIO]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001792431027-0-0-fa20f2dbd7bf293bb20a2ad6ac34493a
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkhddk0qg8n/image/small", ⚽ Sabah FK vs Dortmund | 23:45 | 20/10/2026 [RIO]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel16.flv?wsSecret=f3688768adb55278e19df101be56912a&wsABSTime=1792474228
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkhddk0qg8n/image/small", ⚽ Sabah FK vs Dortmund | 23:45 | 20/10/2026 [FULL HD ROY]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001792431028-0-0-9c930ae6f72cb007f8f72d9a73124c14
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p4jwq2ghd57m0ve/image/small", ⚽ Manchester City vs AEK Athens | 02:00 | 21/10/2026 [BRADY]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=6894a0532b8bdd6062ff874254af2c59&wsABSTime=1792474231
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p4jwq2ghd57m0ve/image/small", ⚽ Manchester City vs AEK Athens | 02:00 | 21/10/2026 [TONI]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.jorvakstreamcache.com/live/channel9.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p4jwq2ghd57m0ve/image/small", ⚽ Manchester City vs AEK Athens | 02:00 | 21/10/2026 [RIO]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel16.flv?wsSecret=77e2cae74bff280ec8b0846fb4de7610&wsABSTime=1792474235
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p4jwq2ghd57m0ve/image/small", ⚽ Manchester City vs AEK Athens | 02:00 | 21/10/2026 [BRADY]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=2877aeab15301c0ac02d41c180c549fa&wsABSTime=1792474235
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p4jwq2ghd57m0ve/image/small", ⚽ Manchester City vs AEK Athens | 02:00 | 21/10/2026 [HD BRADY]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001792431043-0-0-a73c69f6ecf9503c5f5ee59e572ef6ea
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p4jwq2ghd57m0ve/image/small", ⚽ Manchester City vs AEK Athens | 02:00 | 21/10/2026 [HD TONI]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001792431043-0-0-8e475e015989adf335ef69fb0a4df0fc
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p4jwq2ghd57m0ve/image/small", ⚽ Manchester City vs AEK Athens | 02:00 | 21/10/2026 [RIO]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel16.flv?wsSecret=a8daea1ce788eb4b362376ba391098f3&wsABSTime=1792474244
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p4jwq2ghd57m0ve/image/small", ⚽ Manchester City vs AEK Athens | 02:00 | 21/10/2026 [HD RIO]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001792431044-0-0-c73994054fc37e2c1006eaf2b55d94ca
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phel7m2wd/image/small", ⚽ AS Roma vs Slovan Bratislava | 02:00 | 21/10/2026 [FELIX]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel24.flv?wsSecret=6ddf6ffd398ed4ebe9b574710e1a37fa&wsABSTime=1792474247
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phel7m2wd/image/small", ⚽ AS Roma vs Slovan Bratislava | 02:00 | 21/10/2026 [BEE]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-8.flv?auth_key=3000001792431049-0-0-08d23d6b7ba13292a0781b9010ea44af
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phel7m2wd/image/small", ⚽ AS Roma vs Slovan Bratislava | 02:00 | 21/10/2026 [FELIX]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel24.flv?wsSecret=941b13434b710381690be9eed9b26af9&wsABSTime=1792474250
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phel7m2wd/image/small", ⚽ AS Roma vs Slovan Bratislava | 02:00 | 21/10/2026 [BEE]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-8.flv?auth_key=3000001792431055-0-0-178f18fe6e8b1b6e4e573b80b1a81fc0
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phel7m2wd/image/small", ⚽ AS Roma vs Slovan Bratislava | 02:00 | 21/10/2026 [BEE]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.jorvakstreamcache.com/live/channel8.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phel7m2wd/image/small", ⚽ AS Roma vs Slovan Bratislava | 02:00 | 21/10/2026 [FULL HD FELIX]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001792431056-0-0-ad2adc7b99e09de291d9c68f3c8b8fec
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4zp5rzghvdoq82w/image/small", ⚽ Napoli vs FK Bodo Glimt | 02:00 | 21/10/2026 [JOHAN]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.jorvakstreamcache.com/live/channel12.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4zp5rzghvdoq82w/image/small", ⚽ Napoli vs FK Bodo Glimt | 02:00 | 21/10/2026 [HD JOHAN]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001792431074-0-0-24449c9c4c4c57c72ffa59b4571fcd95
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv44rz84/image/small", ⚽ PSG vs Barcelona | 02:00 | 21/10/2026 [ROY]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.jorvakstreamcache.com/live/channel1.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv44rz84/image/small", ⚽ PSG vs Barcelona | 02:00 | 21/10/2026 [NICK]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=fc4450bae85878824f5b99384b87154d&wsABSTime=1792474280
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv44rz84/image/small", ⚽ PSG vs Barcelona | 02:00 | 21/10/2026 [FABIO]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.jorvakstreamcache.com/live/channel2.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv44rz84/image/small", ⚽ PSG vs Barcelona | 02:00 | 21/10/2026 [HD ROY]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001792431097-0-0-3b5ea2497ef6b0e67974778a8e6055a0
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv44rz84/image/small", ⚽ PSG vs Barcelona | 02:00 | 21/10/2026 [NICK]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=0f077303b3548a64ce803c0dc2207764&wsABSTime=1792474297
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv44rz84/image/small", ⚽ PSG vs Barcelona | 02:00 | 21/10/2026 [HD NICK]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001792431098-0-0-89c8c57ada4584d1a879afa149c310ad
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv44rz84/image/small", ⚽ PSG vs Barcelona | 02:00 | 21/10/2026 [TOM]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.jorvakstreamcache.com/live/channel4.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv44rz84/image/small", ⚽ PSG vs Barcelona | 02:00 | 21/10/2026 [HD TOM]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001792431098-0-0-b5c66667d9d507f90fbe5cfb634b451d
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv44rz84/image/small", ⚽ PSG vs Barcelona | 02:00 | 21/10/2026 [XMEN]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel13.flv?wsSecret=27e27fdbb08672ff69225c39bf1a6b38&wsABSTime=1792474298
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv44rz84/image/small", ⚽ PSG vs Barcelona | 02:00 | 21/10/2026 [HD XMEN]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-13.flv?auth_key=3000001792431099-0-0-47b2ac77eff0a19a2cc38b2e8bc55541
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv44rz84/image/small", ⚽ PSG vs Barcelona | 02:00 | 21/10/2026 [HD FABIO]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=b9c48310a0802edcc25a298c5318382c&wsABSTime=1792474299
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhwl4ryk0/image/small", ⚽ FC Porto vs PSV Eindhoven | 02:00 | 21/10/2026 [KEN]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel18.flv?wsSecret=2cd67ce946122bbcb5d68db13451adad&wsABSTime=1792474302
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhwl4ryk0/image/small", ⚽ FC Porto vs PSV Eindhoven | 02:00 | 21/10/2026 [LOGAN]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-23.flv?auth_key=3000001792431104-0-0-6c25e545ac8c5b4eaa46939728f2aaf1
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhwl4ryk0/image/small", ⚽ FC Porto vs PSV Eindhoven | 02:00 | 21/10/2026 [KEN]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel18.flv?wsSecret=a46ac072f58dce6326fc21d2c128f31e&wsABSTime=1792474306
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhwl4ryk0/image/small", ⚽ FC Porto vs PSV Eindhoven | 02:00 | 21/10/2026 [LOGAN]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-23.flv?auth_key=3000001792431111-0-0-3c6783291c1642c674070d96af438df9
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhwl4ryk0/image/small", ⚽ FC Porto vs PSV Eindhoven | 02:00 | 21/10/2026 [LOGAN]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.jorvakstreamcache.com/live/channel23.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhwl4ryk0/image/small", ⚽ FC Porto vs PSV Eindhoven | 02:00 | 21/10/2026 [FULL HD KEN]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-18.flv?auth_key=3000001792431112-0-0-272e936b7719fb5052cc80d367532a4a
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhw8gryk0/image/small", ⚽ Liverpool vs Villarreal | 02:00 | 21/10/2026 [MAX]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.jorvakstreamcache.com/live/channel6.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhw8gryk0/image/small", ⚽ Liverpool vs Villarreal | 02:00 | 21/10/2026 [NEMO]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=250db2821625ffe227c750b44dd51937&wsABSTime=1792474321
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhw8gryk0/image/small", ⚽ Liverpool vs Villarreal | 02:00 | 21/10/2026 [FILIP]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.jorvakstreamcache.com/live/channel19.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhw8gryk0/image/small", ⚽ Liverpool vs Villarreal | 02:00 | 21/10/2026 [HD MAX]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001792431138-0-0-8eb5765288c22b2a0b8bfdd8e084b3cf
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhw8gryk0/image/small", ⚽ Liverpool vs Villarreal | 02:00 | 21/10/2026 [NEMO]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=6cf5d7feaca8233b51fd25a553952a51&wsABSTime=1792474338
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhw8gryk0/image/small", ⚽ Liverpool vs Villarreal | 02:00 | 21/10/2026 [HD NEMO]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001792431139-0-0-b93ba6374dea85d3b9295e2775d3696d
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhw8gryk0/image/small", ⚽ Liverpool vs Villarreal | 02:00 | 21/10/2026 [HD FILIP]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001792431139-0-0-5dd6dbe7ab63cbb44bb9f747cee6d0f1
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phd7em2wd/image/small", ⚽ VfB Stuttgart vs Atletico Madrid | 02:00 | 21/10/2026 [ASTRA]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.jorvakstreamcache.com/live/channel11.flv
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phd7em2wd/image/small", ⚽ VfB Stuttgart vs Atletico Madrid | 02:00 | 21/10/2026 [RAVEN]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001792431144-0-0-976aa0626915f20d5b87ac0153e22fed
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phd7em2wd/image/small", ⚽ VfB Stuttgart vs Atletico Madrid | 02:00 | 21/10/2026 [RAVEN]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001792431158-0-0-b5e4b36ede1cd863c06d6a9584d7cc1f
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phd7em2wd/image/small", ⚽ VfB Stuttgart vs Atletico Madrid | 02:00 | 21/10/2026 [RAVEN]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel21.flv?wsSecret=b6b5499bf403ed624472b32d3538d9d4&wsABSTime=1792474358
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phd7em2wd/image/small", ⚽ VfB Stuttgart vs Atletico Madrid | 02:00 | 21/10/2026 [FULL HD ASTRA]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001792431159-0-0-85647774c2a61ed40a04dfb570e7f0d3
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/6ypq3pfwvvjrd7o/image/small", ⚽ Alex Rybakov vs Bor Artnak | 23:00 | 19/10/2026 [HD 1]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel58.flv?wsSecret=959dd69cbf40250816388ca8a0a31336&wsABSTime=1792474359
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/2y8m4vfzw0pml07/image/small", ⚽ Daniel Milavsky vs Govind Nanda | 02:00 | 20/10/2026 [HD 1]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel50.flv?wsSecret=298e7f10a6bebada4e4b89d201185e77&wsABSTime=1792447447
+https://live1.quickscoreboardz.com/live/channel50.flv?wsSecret=c1243c5a84af92af1f307a2b8b57be40&wsABSTime=1792474367
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/vjxm85f256em6od/image/small", ⚽ Max Hans Rehberg vs Mees Rottgering | 03:10 | 20/10/2026 [HD 1]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel51.flv?wsSecret=cd26eb5765e67af82ef37525adbdfd7b&wsABSTime=1792447454
+https://live1.quickscoreboardz.com/live/channel51.flv?wsSecret=0777ceab77f6a30feb4075b1233ba436&wsABSTime=1792474375
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/jw2r0jf1gedmz84/image/small", ⚽ Jenson Brooksby vs Mitchell Krueger | 03:10 | 20/10/2026 [HD 1]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel52.flv?wsSecret=b68c5b8b862af6a596d2927103958fd3&wsABSTime=1792447463
+https://live1.quickscoreboardz.com/live/channel52.flv?wsSecret=a875e5a755315f490b5203424b5192f1&wsABSTime=1792474382
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/318q6jf478gro9j/image/small", ⚽ Daniel Elahi Galan vs Juan Pablo Varillas | 04:30 | 20/10/2026 [HD 1]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel53.flv?wsSecret=14743599fc09adbf676f8d51e88f4318&wsABSTime=1792447468
+https://live1.quickscoreboardz.com/live/channel53.flv?wsSecret=a44314c46b7ecf24bb18413d99f16963&wsABSTime=1792474390
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/n54ql4f8dj4rvy9/image/small", ⚽ Nicolás Jarry vs Marcelo Tomas Barrios Vera | 06:00 | 20/10/2026 [HD 1]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://us-stemcell.com/
 #EXTVLCOPT:http-origin=https://us-stemcell.com/
 #EXTVLCOPT:http-header=Accept:*/*
-https://live1.quickscoreboardz.com/live/channel54.flv?wsSecret=4fc4ac7deaa2b72ff99bcce234351ede&wsABSTime=1792447476
+https://live1.quickscoreboardz.com/live/channel54.flv?wsSecret=ee8b5b476ffcb37ffb5eb76b01cd9af6&wsABSTime=1792474397
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/y0or5ofgn13mwzv/image/small", ⚽ Kayla Day vs Kimberly Birrell | 09:30 | 20/10/2026 [HD 1]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel59.flv?wsSecret=8f2cb064a7e5ebf85fb4c3caf872edae&wsABSTime=1792474405
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/965mk4f8l7kr1ge/image/small", ⚽ Maya Joint vs Zeynep Sonmez | 09:30 | 20/10/2026 [HD 1]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel60.flv?wsSecret=f5b90a7dfec5201f1d57754a5c24c5c1&wsABSTime=1792474413
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/ednm9efv7x9ryox/image/small", ⚽ Cristina Bucsa vs Polina Kudermetova | 09:00 | 20/10/2026 [HD 1]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel55.flv?wsSecret=5a9039b007dd1d2d5bb2c2749cce7a5e&wsABSTime=1792474420
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/n54ql4fxwynrvy9/image/small", ⚽ Jasmine Paolini vs Anhelina Kalinina | 09:00 | 20/10/2026 [HD 1]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel58.flv?wsSecret=86c1e46dbf6752c42d0e610793a755b7&wsABSTime=1792474428
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/l7oqdwfloy2r510/image/small", ⚽ Terence Atmane vs Rinky Hijikata | 13:30 | 20/10/2026 [VIC]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.jorvakstreamcache.com/live/channel32.flv
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/l7oqdwfloy2r510/image/small", ⚽ Terence Atmane vs Rinky Hijikata | 13:30 | 20/10/2026 [HD VIC]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001792431250-0-0-4029b5ca8eef1a28f3f409711daba5e7
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/vjxm85fgzw2m6od/image/small", ⚽ Katarzyna Kawa vs Daria Snigur | 09:00 | 20/10/2026 [HD 1]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live1.quickscoreboardz.com/live/channel56.flv?wsSecret=557d6fca2f8c08d0ff52581b9fcb9eb9&wsABSTime=1792474451
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/x7lm7nfpzn2q2wd/image/small", ⚽ Ugo Humbert vs Corentin Moutet | 19:00 | 20/10/2026 [VIC]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.jorvakstreamcache.com/live/channel32.flv
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/x7lm7nfpzn2q2wd/image/small", ⚽ Ugo Humbert vs Corentin Moutet | 19:00 | 20/10/2026 [HD VIC]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://us-stemcell.com/
+#EXTVLCOPT:http-origin=https://us-stemcell.com/
+#EXTVLCOPT:http-header=Accept:*/*
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001792431272-0-0-e002ce25b8878f2250ad87b13572c03f
