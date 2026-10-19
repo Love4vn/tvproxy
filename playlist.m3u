@@ -1,19 +1,19 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-19 00:52 UTC
+# generated: 2026-10-19 05:56 UTC
 # streams  : 2
 
-#EXTINF:-1 tvg-name="Monterrey vs Pachuca | 08:00 | 19/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Liga MX",Monterrey vs Pachuca | 08:00 | 19/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTINF:-1 tvg-name="Trabzonspor vs Besiktas | 00:00 | 20/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="Turkish Süper Lig",Trabzonspor vs Besiktas | 00:00 | 20/10/2026 [Wildgames]
+#EXTVLCOPT:http-referrer=https://matchora.to/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=f7f64d8fee34a109d4926c9fedc01dec%2Findex.m3u8&e=1792372807&sig=h8Ka0qcFZaTC0EBEVO2Y7Z7_lna4FlB79j391NkiAmw&v=1792371007-6600
+#EXTVLCOPT:http-origin=https://matchora.to
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
+#EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fb.kugunor.cyou%2Fhls%2F1127391%2Findex.m3u8%3Ft%3DMTEyNzM5MXwxNzkyMzg5MjkyfHx8fGU4N2M0ZjM1.K3Zrur_58jycJY6KMVYE3M6IjdgrpKHppFf8xqjdlrM&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
 
-#EXTINF:-1 tvg-name="Tennis Channel | 07:51 | 19/10/2026 [DAMITV]" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuBEBDXsQZgdgwwRgBOYAU0hDpqxQFZh5Tg0wmJgATMNTTAWkVqNri0LIinbQ61OvHS5CISiCggGIRPzWq0hNTTV5s2AMb6NNFif4h+VFxux5bFLXnk3aASx2PV0+LRRNR0hAtjYUBHZQYkk2JjBHEFsaOxytGFZYSWt5YFIVGOVgeTYOMl5AiCA.webp" tvg-id="Soccer.Dummy.us" group-title="Tennis",Tennis Channel | 07:51 | 19/10/2026 [DAMITV]
+#EXTINF:-1 tvg-name="Tennis Channel | 12:56 | 19/10/2026 [DAMITV]" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuBEBDXsQZgdgwwRgBOYAU0hDpqxQFZh5Tg0wmJgATMNTTAWkVqNri0LIinbQ61OvHS5CISiCggGIRPzWq0hNTTV5s2AMb6NNFif4h+VFxux5bFLXnk3aASx2PV0+LRRNR0hAtjYUBHZQYkk2JjBHEFsaOxytGFZYSWt5YFIVGOVgeTYOMl5AiCA.webp" tvg-id="Soccer.Dummy.us" group-title="Tennis",Tennis Channel | 12:56 | 19/10/2026 [DAMITV]
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~admin-tennis-channel
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://ondemand.st/embed/?id=sd-admin~admin-tennis-channel&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 #EXTHTTP:Referer: https://ondemand.st/embed/?id=sd-admin~admin-tennis-channel
-https://messi.damitv.st/live-sd/streamed/admin/admin-tennis-channel/playlist.m3u8?tk=ygmMAsUhfVvxMkCh6LhcIw&e=1792414338
+https://messi.damitv.st/live-sd/streamed/admin/admin-tennis-channel/playlist.m3u8?tk=CZnKdVOp6bnjpzAT8H2T_A&e=1792432570
