@@ -1,4 +1,29 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-21 23:17 UTC
-# streams  : 0
+# generated: 2026-10-22 01:40 UTC
+# streams  : 3
+
+#EXTINF:-1 tvg-name="Atlas vs América | LIVE | 22/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Liga MX",Atlas vs América | LIVE | 22/10/2026 [Powerstream]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#EXTVLCOPT:http-cookie=GL_UI4=eJw9jUFOhDAUQMsABXUg%2BQkHmCMgOjizdOMNXJNf%2BjtWSztpC463t3Hh7r3kJY8xtusayDa%2Bh3zFIxxmpc4onvE0jKgUoRzPp6dBif5F9gMOEu50mCIKQ7GAOizo4xS3Akrh0coGysVJMg1UwrvvQL7LobC4EFRv2pNyt1Tgp%2FOQPx7HxNomznrYudDlbQ38Xaw2ru09Z%2B2eM3i4GozK%2BWXSMml58SgJsleoZ4x0cf4HKknhK7orgDNy%2Bu%2F%2FrqXRdr0Bl7TpOamLH%2BR%2FAQqWRHk%3D
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st&Cookie=GL_UI4=eJw9jUFOhDAUQMsABXUg%2BQkHmCMgOjizdOMNXJNf%2BjtWSztpC463t3Hh7r3kJY8xtusayDa%2Bh3zFIxxmpc4onvE0jKgUoRzPp6dBif5F9gMOEu50mCIKQ7GAOizo4xS3Akrh0coGysVJMg1UwrvvQL7LobC4EFRv2pNyt1Tgp%2FOQPx7HxNomznrYudDlbQ38Xaw2ru09Z%2B2eM3i4GozK%2BWXSMml58SgJsleoZ4x0cf4HKknhK7orgDNy%2Bu%2F%2FrqXRdr0Bl7TpOamLH%2BR%2FAQqWRHk%3D
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st|Cookie: GL_UI4=eJw9jUFOhDAUQMsABXUg%2BQkHmCMgOjizdOMNXJNf%2BjtWSztpC463t3Hh7r3kJY8xtusayDa%2Bh3zFIxxmpc4onvE0jKgUoRzPp6dBif5F9gMOEu50mCIKQ7GAOizo4xS3Akrh0coGysVJMg1UwrvvQL7LobC4EFRv2pNyt1Tgp%2FOQPx7HxNomznrYudDlbQ38Xaw2ru09Z%2B2eM3i4GozK%2BWXSMml58SgJsleoZ4x0cf4HKknhK7orgDNy%2Bu%2F%2FrqXRdr0Bl7TpOamLH%2BR%2FAQqWRHk%3D
+https://hls.lshls.st/secure_hls.php?path=f7f64d8fee34a109d4926c9fedc01dec%2Findex.m3u8&e=1792634292&sig=xEJUP1pi_--kAtzzOutj8as_-E-PWWKAIGJZU8cf4i8&v=1792632492-1824
+
+#EXTINF:-1 tvg-name="Santos vs Pumas UNAM | 10:10 | 22/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Liga MX",Santos vs Pumas UNAM | 10:10 | 22/10/2026 [Powerstream]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#EXTVLCOPT:http-cookie=GL_UI4=eJw9jUFOhDAUQMsABXUg%2BQkHmCMgOjizdOMNXJNf%2BjtWSztpC463t3Hh7r3kJY8xtusayDa%2Bh3zFIxxmpc4onvE0jKgUoRzPp6dBif5F9gMOEu50mCIKQ7GAOizo4xS3Akrh0coGysVJMg1UwrvvQL7LobC4EFRv2pNyt1Tgp%2FOQPx7HxNomznrYudDlbQ38Xaw2ru09Z%2B2eM3i4GozK%2BWXSMml58SgJsleoZ4x0cf4HKknhK7orgDNy%2Bu%2F%2FrqXRdr0Bl7TpOamLH%2BR%2FAQqWRHk%3D
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st&Cookie=GL_UI4=eJw9jUFOhDAUQMsABXUg%2BQkHmCMgOjizdOMNXJNf%2BjtWSztpC463t3Hh7r3kJY8xtusayDa%2Bh3zFIxxmpc4onvE0jKgUoRzPp6dBif5F9gMOEu50mCIKQ7GAOizo4xS3Akrh0coGysVJMg1UwrvvQL7LobC4EFRv2pNyt1Tgp%2FOQPx7HxNomznrYudDlbQ38Xaw2ru09Z%2B2eM3i4GozK%2BWXSMml58SgJsleoZ4x0cf4HKknhK7orgDNy%2Bu%2F%2FrqXRdr0Bl7TpOamLH%2BR%2FAQqWRHk%3D
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st|Cookie: GL_UI4=eJw9jUFOhDAUQMsABXUg%2BQkHmCMgOjizdOMNXJNf%2BjtWSztpC463t3Hh7r3kJY8xtusayDa%2Bh3zFIxxmpc4onvE0jKgUoRzPp6dBif5F9gMOEu50mCIKQ7GAOizo4xS3Akrh0coGysVJMg1UwrvvQL7LobC4EFRv2pNyt1Tgp%2FOQPx7HxNomznrYudDlbQ38Xaw2ru09Z%2B2eM3i4GozK%2BWXSMml58SgJsleoZ4x0cf4HKknhK7orgDNy%2Bu%2F%2FrqXRdr0Bl7TpOamLH%2BR%2FAQqWRHk%3D
+https://hls.lshls.st/secure_hls.php?path=f7f64d8fee34a109d4926c9fedc01dec%2Findex.m3u8&e=1792634954&sig=64nk5_Xjqfm6de32L3JOq9mNRMiqSedsSSrCPo2uvyg&v=1792633154-9413
+
+#EXTINF:-1 tvg-name="Sam Houston State vs New Mexico St. [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Sam Houston State vs New Mexico St. [iSTRMEAST]
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58383?ad=111
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58383?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58383?ad=111
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58383%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58383%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
