@@ -44,6 +44,7 @@ XOILAC_DOMAINS = [
     "https://xoilaczzh.cc",
     "https://xoilacxxi.cc",
     "https://xoilacxxe.cc",
+    "https://xoilaczzzj.cc",
     "https://xoilacxbm.tv",
     "https://xoilacxth.tv",
     "https://xoilacxbi.tv",
@@ -54,6 +55,7 @@ XOILAC_DOMAINS = [
     "https://xoilaczzz.pro",
     "https://vebozbr.cc",
     "https://90phutzzu.tv",
+    "https://xoilacxcd.tv",
 ]
 
 # ==========================================
