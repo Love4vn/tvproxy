@@ -1,184 +1,27 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-25 20:30 UTC
-# streams  : 22
+# generated: 2026-10-25 22:30 UTC
+# streams  : 3
 
-#EXTINF:-1 tvg-name="Udinese vs AC Milan | LIVE | 26/10/2026 [Ihdstreams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Udinese vs AC Milan | LIVE | 26/10/2026 [Ihdstreams]
-#EXTVLCOPT:http-referrer=https://embedcenter.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://embedcenter.st
-#EXTVLCOPT:http-cookie=__ddg1_=25R8bvG1OY3NjqT0aXCs; __ddg8_=GTmKzu1ytPqM2tkE; __ddg10_=1792957928; __ddg9_=172.190.102.147; __cf_bm=eVd82f72WCwPDlVFMx5EGXm.N.bM2GRntErI6qdQh3c-1792957915.2570908-1.0.1.1-3aLsIP5fntM0SrMm7Ey_8Qe3cBnwNDkbJj98YpCsCkKiVoButcqhflYkLWAIpx3O8cxa81GDkHqnQcfdzhcYkO9G3v4toTc88s42zGip0tGpsFdt2TaBYbke6s1JNTz_; cf_clearance=wQY6ZgaBOwHyKC7R38BPgnSu2cqLYVFntA2eDYOLH_s-1792957915-1.2.1.1-keDCBHDajx9jS1DSS8jkJB4IY8WnVsQWoDCgmfo6FLNUp5JD.qpNWmKo7v05YDUxqsYnPZUP.X3Bq1ZIeOx6xlzJmT8QOJG6K1a2mZ.IOn7WNYuHk0CXKio7rTJ0ZXaJ0e2UnUmUEVZafNCf.zusxnfMAtvHKxggSvEDxG5RbbwvA1z1IFS2yGiIDwuzaTP3er0w.usvTYRoUF.bBfw8k1sfkKMJdmqsqhSPQb3oc81u0sKFibAMh5VoLxK.t0gdWE5CBEve9MmHOdYqfWQxSQfLbg38gUUu.Vt84pjc_a8vIuo3Vm5gRkAptaFegutWTDfSrABtZsGfzZREWm2UaSk6A1FZ1owWZL4qzG6PIl8
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embedcenter.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://embedcenter.st&Cookie=__ddg1_=25R8bvG1OY3NjqT0aXCs; __ddg8_=GTmKzu1ytPqM2tkE; __ddg10_=1792957928; __ddg9_=172.190.102.147; __cf_bm=eVd82f72WCwPDlVFMx5EGXm.N.bM2GRntErI6qdQh3c-1792957915.2570908-1.0.1.1-3aLsIP5fntM0SrMm7Ey_8Qe3cBnwNDkbJj98YpCsCkKiVoButcqhflYkLWAIpx3O8cxa81GDkHqnQcfdzhcYkO9G3v4toTc88s42zGip0tGpsFdt2TaBYbke6s1JNTz_; cf_clearance=wQY6ZgaBOwHyKC7R38BPgnSu2cqLYVFntA2eDYOLH_s-1792957915-1.2.1.1-keDCBHDajx9jS1DSS8jkJB4IY8WnVsQWoDCgmfo6FLNUp5JD.qpNWmKo7v05YDUxqsYnPZUP.X3Bq1ZIeOx6xlzJmT8QOJG6K1a2mZ.IOn7WNYuHk0CXKio7rTJ0ZXaJ0e2UnUmUEVZafNCf.zusxnfMAtvHKxggSvEDxG5RbbwvA1z1IFS2yGiIDwuzaTP3er0w.usvTYRoUF.bBfw8k1sfkKMJdmqsqhSPQb3oc81u0sKFibAMh5VoLxK.t0gdWE5CBEve9MmHOdYqfWQxSQfLbg38gUUu.Vt84pjc_a8vIuo3Vm5gRkAptaFegutWTDfSrABtZsGfzZREWm2UaSk6A1FZ1owWZL4qzG6PIl8
-#EXTHTTP:Referer: https://embedcenter.st/|Origin: https://embedcenter.st|Cookie: __ddg1_=25R8bvG1OY3NjqT0aXCs; __ddg8_=GTmKzu1ytPqM2tkE; __ddg10_=1792957928; __ddg9_=172.190.102.147; __cf_bm=eVd82f72WCwPDlVFMx5EGXm.N.bM2GRntErI6qdQh3c-1792957915.2570908-1.0.1.1-3aLsIP5fntM0SrMm7Ey_8Qe3cBnwNDkbJj98YpCsCkKiVoButcqhflYkLWAIpx3O8cxa81GDkHqnQcfdzhcYkO9G3v4toTc88s42zGip0tGpsFdt2TaBYbke6s1JNTz_; cf_clearance=wQY6ZgaBOwHyKC7R38BPgnSu2cqLYVFntA2eDYOLH_s-1792957915-1.2.1.1-keDCBHDajx9jS1DSS8jkJB4IY8WnVsQWoDCgmfo6FLNUp5JD.qpNWmKo7v05YDUxqsYnPZUP.X3Bq1ZIeOx6xlzJmT8QOJG6K1a2mZ.IOn7WNYuHk0CXKio7rTJ0ZXaJ0e2UnUmUEVZafNCf.zusxnfMAtvHKxggSvEDxG5RbbwvA1z1IFS2yGiIDwuzaTP3er0w.usvTYRoUF.bBfw8k1sfkKMJdmqsqhSPQb3oc81u0sKFibAMh5VoLxK.t0gdWE5CBEve9MmHOdYqfWQxSQfLbg38gUUu.Vt84pjc_a8vIuo3Vm5gRkAptaFegutWTDfSrABtZsGfzZREWm2UaSk6A1FZ1owWZL4qzG6PIl8
-https://edgestream2.pro/hls/syaLqucEne4k.m3u8?st=Yc0p8DbMk0vzjwGQJE9JSSNIMiVssBPAX946sd0dXaw&e=1792968729
-
-#EXTINF:-1 tvg-name="Udinese vs AC Milan | LIVE | 26/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Udinese vs AC Milan | LIVE | 26/10/2026 [Topsurge]
+#EXTINF:-1 tvg-name="Sporting CP vs Académico de Viseu | LIVE | 26/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Sporting CP vs Académico de Viseu | LIVE | 26/10/2026 [Powerstream]
 #EXTVLCOPT:http-referrer=https://matchli.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
 #EXTVLCOPT:http-origin=https://matchli.st
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
 #EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=550c2debe1b5d60f7c00801422ff9c2e%2Findex.m3u8&e=1792959741&sig=dYdXGmMls9h3hM1hOi_HfpiZy_ugOfHQY-6oHZ94zB8
+https://hls.lshls.st/secure_hls.php?path=452e62197617eee2172de9c2a1c7e936%2Findex.m3u8&e=1792968602&sig=TXSHg66_SOV4p6JpWlAhGvH-sFgoZxVNilKc9s-b1EE
 
-#EXTINF:-1 tvg-name="Udinese vs AC Milan | LIVE | 26/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Udinese vs AC Milan | LIVE | 26/10/2026 [Powerstream]
+#EXTINF:-1 tvg-name="Sporting CP vs Académico de Viseu | LIVE | 26/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Sporting CP vs Académico de Viseu | LIVE | 26/10/2026 [Buff-streams]
 #EXTVLCOPT:http-referrer=https://matchli.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
 #EXTVLCOPT:http-origin=https://matchli.st
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
 #EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=d7bb70bbe1dafb9cbec7469b899bee63%2Findex.m3u8&e=1792959893&sig=3cEwxLrxd82LFZX969mLF1yMHZI7-PweylFD-YJtH50&v=1792958093-8127
+https://hls.lshls.st/secure_hls.php?path=452e62197617eee2172de9c2a1c7e936%2Findex.m3u8&e=1792968613&sig=1mDBiYtoJAi93Y7dB0kHXt88ly0Sd-LJ_sixuajzeeU
 
-#EXTINF:-1 tvg-name="Udinese vs AC Milan | LIVE | 26/10/2026 [Fast-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Udinese vs AC Milan | LIVE | 26/10/2026 [Fast-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=d7bb70bbe1dafb9cbec7469b899bee63%2Findex.m3u8&e=1792959909&sig=WvmaBgDWhJOwkELIUcOd5rjrcO42cfB1kz3Oabt90m8
-
-#EXTINF:-1 tvg-name="AZ Alkmaar vs FC Twente | LIVE | 26/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="Eredivisie",AZ Alkmaar vs FC Twente | LIVE | 26/10/2026 [Topsurge]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=a08663a4fc28ff247dda5e18cd4c7d89%2Findex.m3u8&e=1792960080&sig=RHdPpQGcd0bLvhPK1EtfcjFWBP68PMUvbMUTPN7YiXc
-
-#EXTINF:-1 tvg-name="AZ Alkmaar vs FC Twente | LIVE | 26/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="Eredivisie",AZ Alkmaar vs FC Twente | LIVE | 26/10/2026 [Wildgames]
-#EXTVLCOPT:http-referrer=https://wideiptv.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://wideiptv.top
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://wideiptv.top/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://wideiptv.top
-#EXTHTTP:Referer: https://wideiptv.top/|Origin: https://wideiptv.top
-https://ds169.bluetier.top/ESPN1NL/index.m3u8?token=RVNQTjFOTHxub19jaGVja19pcHwxNzkyOTU4NjAx.40095381cd70ab1c89364592a5a7a760d021bb798238675fd60133df399e9708
-
-#EXTINF:-1 tvg-name="Union St.-Gilloise vs Cercle Brugge KSV | LIVE | 26/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="Belgian Pro League",Union St.-Gilloise vs Cercle Brugge KSV | LIVE | 26/10/2026 [Topsurge]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=131aad542969f2e906086706986d6698%2Findex.m3u8&e=1792960189&sig=5YUliIDBRSOjGKsst5QjcBfTpL6_mVUNWPcWZx9PN0U
-
-#EXTINF:-1 tvg-name="Union St.-Gilloise vs Cercle Brugge KSV | LIVE | 26/10/2026 [Fast-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Belgian Pro League",Union St.-Gilloise vs Cercle Brugge KSV | LIVE | 26/10/2026 [Fast-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=131aad542969f2e906086706986d6698%2Findex.m3u8&e=1792960212&sig=mYJwCEdE8iF_3mxoe702w0q6wpJ0OuTKXwGZPyLzbJI
-
-#EXTINF:-1 tvg-name="Union St.-Gilloise vs Cercle Brugge KSV | LIVE | 26/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Belgian Pro League",Union St.-Gilloise vs Cercle Brugge KSV | LIVE | 26/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=131aad542969f2e906086706986d6698%2Findex.m3u8&e=1792960223&sig=octVV2D-a8pnrs9nNO13Kn_w4dGrhlZvK6BZcWE1g6E&v=1792958423-7368
-
-#EXTINF:-1 tvg-name="Rio Ave vs FC Famalicao | LIVE | 26/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Rio Ave vs FC Famalicao | LIVE | 26/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=452e62197617eee2172de9c2a1c7e936%2Findex.m3u8&e=1792960514&sig=ecUQGdJh9ZYINPpcq19vBRePFV-Lrbc1RwXk-XnTOWc&v=1792958714-4243
-
-#EXTINF:-1 tvg-name="Rio Ave vs FC Famalicao | LIVE | 26/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Rio Ave vs FC Famalicao | LIVE | 26/10/2026 [Wildgames]
-#EXTVLCOPT:http-referrer=https://wideiptv.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://wideiptv.top
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://wideiptv.top/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://wideiptv.top
-#EXTHTTP:Referer: https://wideiptv.top/|Origin: https://wideiptv.top
-https://ds169.bluetier.top/SPT1/index.m3u8?token=U1BUMXxub19jaGVja19pcHwxNzkyOTU5MDU2.d0640c07e6a592fea6dfde6c17cd34294be8ebaa3015e0cbe5cb20f98efd4203
-
-#EXTINF:-1 tvg-name="Barcelona vs Real Madrid | 03:00 | 26/10/2026 [Ihdstreams]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Barcelona vs Real Madrid | 03:00 | 26/10/2026 [Ihdstreams]
-#EXTVLCOPT:http-referrer=https://embedcenter.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://embedcenter.st
-#EXTVLCOPT:http-cookie=cf_clearance=inyREMSsssg7dWEkvo2.GL.Gji8MmoI5drGe6z7H130-1792958851-1.2.1.1-7O97GmPPnSwgauzGFAikZ3XPOkRNlxrqimoptQLFMR9h9G0vnDmWLpuS6nPd16nOPkGD_iQDTMnyk6J3qD1HOUiDPdQ_PqiR.G90tCE1abnKPOMqhQtOjjCM6fv_2iLTZaIjC1UBFnbZo5jfdPi20jgQtu_y6NbNVmBHtxhz2hYAbx8jKS1HC7_W.hXsK.s_.17PhPllNQsv9EsS9jipvwKn1n_LaP_HQcY6Kkd2gZ_BGKzTnWPOanImHyDANLoCRNpKvRiE7PatECROTupUFnwSHiF7DvqFwGPnX0HKLLBdu3xsoscGi2.k4lkFuYj4IYfhH1N1EsEPiJYAfZcHUX8VB6NR2mBV5BoFMcGmf80; __ddg1_=zpd0OK5ZTSksFh9GkQWf; __ddg8_=gI60SrZdNk4kwq5L; __ddg10_=1792958861; __ddg9_=172.190.102.147
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embedcenter.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://embedcenter.st&Cookie=cf_clearance=inyREMSsssg7dWEkvo2.GL.Gji8MmoI5drGe6z7H130-1792958851-1.2.1.1-7O97GmPPnSwgauzGFAikZ3XPOkRNlxrqimoptQLFMR9h9G0vnDmWLpuS6nPd16nOPkGD_iQDTMnyk6J3qD1HOUiDPdQ_PqiR.G90tCE1abnKPOMqhQtOjjCM6fv_2iLTZaIjC1UBFnbZo5jfdPi20jgQtu_y6NbNVmBHtxhz2hYAbx8jKS1HC7_W.hXsK.s_.17PhPllNQsv9EsS9jipvwKn1n_LaP_HQcY6Kkd2gZ_BGKzTnWPOanImHyDANLoCRNpKvRiE7PatECROTupUFnwSHiF7DvqFwGPnX0HKLLBdu3xsoscGi2.k4lkFuYj4IYfhH1N1EsEPiJYAfZcHUX8VB6NR2mBV5BoFMcGmf80; __ddg1_=zpd0OK5ZTSksFh9GkQWf; __ddg8_=gI60SrZdNk4kwq5L; __ddg10_=1792958861; __ddg9_=172.190.102.147
-#EXTHTTP:Referer: https://embedcenter.st/|Origin: https://embedcenter.st|Cookie: cf_clearance=inyREMSsssg7dWEkvo2.GL.Gji8MmoI5drGe6z7H130-1792958851-1.2.1.1-7O97GmPPnSwgauzGFAikZ3XPOkRNlxrqimoptQLFMR9h9G0vnDmWLpuS6nPd16nOPkGD_iQDTMnyk6J3qD1HOUiDPdQ_PqiR.G90tCE1abnKPOMqhQtOjjCM6fv_2iLTZaIjC1UBFnbZo5jfdPi20jgQtu_y6NbNVmBHtxhz2hYAbx8jKS1HC7_W.hXsK.s_.17PhPllNQsv9EsS9jipvwKn1n_LaP_HQcY6Kkd2gZ_BGKzTnWPOanImHyDANLoCRNpKvRiE7PatECROTupUFnwSHiF7DvqFwGPnX0HKLLBdu3xsoscGi2.k4lkFuYj4IYfhH1N1EsEPiJYAfZcHUX8VB6NR2mBV5BoFMcGmf80; __ddg1_=zpd0OK5ZTSksFh9GkQWf; __ddg8_=gI60SrZdNk4kwq5L; __ddg10_=1792958861; __ddg9_=172.190.102.147
-https://edgestream4.pro/hls/377qj1h2727.m3u8?st=RnG9XxYvgXWJJeQNG-DhEcNpIbZa6VdD1PDMXNxKIkQ&e=1792969662
-
-#EXTINF:-1 tvg-name="Barcelona vs Real Madrid | 03:00 | 26/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Barcelona vs Real Madrid | 03:00 | 26/10/2026 [Topsurge]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=9ae3de4b40a6ecfdd03fc90be82c4535%2Findex.m3u8&e=1792960674&sig=hNYpn-5J8YmoVw2p1ldSrZNIhdJQcbQ1xsMWtdo38V8
-
-#EXTINF:-1 tvg-name="Barcelona vs Real Madrid | 03:00 | 26/10/2026 [Sportsframe]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Barcelona vs Real Madrid | 03:00 | 26/10/2026 [Sportsframe]
-#EXTVLCOPT:http-referrer=https://embedcenter.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://embedcenter.st
-#EXTVLCOPT:http-cookie=__ddg1_=SsqjnBx5uoXXSPFYbbij; __ddg8_=NHCpDRCt73H1JJpo; __ddg10_=1792958979; __ddg9_=172.190.102.147; XSRF-TOKEN=eyJpdiI6InlzQlJlSWxnL0tsR0liSDg4eHRuNUE9PSIsInZhbHVlIjoiMFZ4RDVTcUQ2cWZtOVUrczFhV3lVZXZmeGF1YTZDRzhsVXRwdUFBWUN6VVZJUG9xWXh0U1ZiYThpcmNtZllPbEhjSUJPM0cxSERXZThxR2hLWlRrMEY3RmtZRit4d0M3N2JvQ0xEVTh4UHQvTDg3VGdrR2wxUDRSYStzWUJoeDQiLCJtYWMiOiJhMWE0MmI5NTViYmU4NzhmZTVjMjlkNWRlNzdiMTMxMzQxY2FiZTY2NTIxYTZhNjk2ZmI0N2QwNzllZTU5OTFiIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImFrMG9tVm9peXg4YngrZ2hqZGZHWVE9PSIsInZhbHVlIjoiYmhZemZ2OU1hVHRNL05HQXczVjh5Vi9iMzhUSlVIRkhNYkNXNis5U2VGK3JvL1p2UWljWWNmbWdvMGk2alhzTFB4dkZ0dWREdllwaVhIS251dkh2cW51WDdxekZoVllpbnhkZGF4Y2VSUFBhek5zZHZFVzhXaXFLb1Urejh3ZHoiLCJtYWMiOiI4YmZlNmFmYmM4ODY1MTk4MWQ0NjY3MDdkNGY5YTI0MTE2NGY5NzFkN2ZkYTEyMjY2ODNlODE5NTM5MGM3ZmVhIiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embedcenter.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://embedcenter.st&Cookie=__ddg1_=SsqjnBx5uoXXSPFYbbij; __ddg8_=NHCpDRCt73H1JJpo; __ddg10_=1792958979; __ddg9_=172.190.102.147; XSRF-TOKEN=eyJpdiI6InlzQlJlSWxnL0tsR0liSDg4eHRuNUE9PSIsInZhbHVlIjoiMFZ4RDVTcUQ2cWZtOVUrczFhV3lVZXZmeGF1YTZDRzhsVXRwdUFBWUN6VVZJUG9xWXh0U1ZiYThpcmNtZllPbEhjSUJPM0cxSERXZThxR2hLWlRrMEY3RmtZRit4d0M3N2JvQ0xEVTh4UHQvTDg3VGdrR2wxUDRSYStzWUJoeDQiLCJtYWMiOiJhMWE0MmI5NTViYmU4NzhmZTVjMjlkNWRlNzdiMTMxMzQxY2FiZTY2NTIxYTZhNjk2ZmI0N2QwNzllZTU5OTFiIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImFrMG9tVm9peXg4YngrZ2hqZGZHWVE9PSIsInZhbHVlIjoiYmhZemZ2OU1hVHRNL05HQXczVjh5Vi9iMzhUSlVIRkhNYkNXNis5U2VGK3JvL1p2UWljWWNmbWdvMGk2alhzTFB4dkZ0dWREdllwaVhIS251dkh2cW51WDdxekZoVllpbnhkZGF4Y2VSUFBhek5zZHZFVzhXaXFLb1Urejh3ZHoiLCJtYWMiOiI4YmZlNmFmYmM4ODY1MTk4MWQ0NjY3MDdkNGY5YTI0MTE2NGY5NzFkN2ZkYTEyMjY2ODNlODE5NTM5MGM3ZmVhIiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://embedcenter.st/|Origin: https://embedcenter.st|Cookie: __ddg1_=SsqjnBx5uoXXSPFYbbij; __ddg8_=NHCpDRCt73H1JJpo; __ddg10_=1792958979; __ddg9_=172.190.102.147; XSRF-TOKEN=eyJpdiI6InlzQlJlSWxnL0tsR0liSDg4eHRuNUE9PSIsInZhbHVlIjoiMFZ4RDVTcUQ2cWZtOVUrczFhV3lVZXZmeGF1YTZDRzhsVXRwdUFBWUN6VVZJUG9xWXh0U1ZiYThpcmNtZllPbEhjSUJPM0cxSERXZThxR2hLWlRrMEY3RmtZRit4d0M3N2JvQ0xEVTh4UHQvTDg3VGdrR2wxUDRSYStzWUJoeDQiLCJtYWMiOiJhMWE0MmI5NTViYmU4NzhmZTVjMjlkNWRlNzdiMTMxMzQxY2FiZTY2NTIxYTZhNjk2ZmI0N2QwNzllZTU5OTFiIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImFrMG9tVm9peXg4YngrZ2hqZGZHWVE9PSIsInZhbHVlIjoiYmhZemZ2OU1hVHRNL05HQXczVjh5Vi9iMzhUSlVIRkhNYkNXNis5U2VGK3JvL1p2UWljWWNmbWdvMGk2alhzTFB4dkZ0dWREdllwaVhIS251dkh2cW51WDdxekZoVllpbnhkZGF4Y2VSUFBhek5zZHZFVzhXaXFLb1Urejh3ZHoiLCJtYWMiOiI4YmZlNmFmYmM4ODY1MTk4MWQ0NjY3MDdkNGY5YTI0MTE2NGY5NzFkN2ZkYTEyMjY2ODNlODE5NTM5MGM3ZmVhIiwidGFnIjoiIn0%3D
-https://edgestream5.pro/hls/377qj1h2727.m3u8?st=f_VR-c1Zru9qWsvk7LL9kpN0geGpFS7AkhY1HCO3m6A&e=1792969780
-
-#EXTINF:-1 tvg-name="Barcelona vs Real Madrid | 03:00 | 26/10/2026 [Sportsframe] #2" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Barcelona vs Real Madrid | 03:00 | 26/10/2026 [Sportsframe] #2
-#EXTVLCOPT:http-referrer=https://embedcenter.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://embedcenter.st
-#EXTVLCOPT:http-cookie=__ddg1_=SsqjnBx5uoXXSPFYbbij; __ddg8_=NHCpDRCt73H1JJpo; __ddg10_=1792958979; __ddg9_=172.190.102.147; XSRF-TOKEN=eyJpdiI6InlzQlJlSWxnL0tsR0liSDg4eHRuNUE9PSIsInZhbHVlIjoiMFZ4RDVTcUQ2cWZtOVUrczFhV3lVZXZmeGF1YTZDRzhsVXRwdUFBWUN6VVZJUG9xWXh0U1ZiYThpcmNtZllPbEhjSUJPM0cxSERXZThxR2hLWlRrMEY3RmtZRit4d0M3N2JvQ0xEVTh4UHQvTDg3VGdrR2wxUDRSYStzWUJoeDQiLCJtYWMiOiJhMWE0MmI5NTViYmU4NzhmZTVjMjlkNWRlNzdiMTMxMzQxY2FiZTY2NTIxYTZhNjk2ZmI0N2QwNzllZTU5OTFiIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImFrMG9tVm9peXg4YngrZ2hqZGZHWVE9PSIsInZhbHVlIjoiYmhZemZ2OU1hVHRNL05HQXczVjh5Vi9iMzhUSlVIRkhNYkNXNis5U2VGK3JvL1p2UWljWWNmbWdvMGk2alhzTFB4dkZ0dWREdllwaVhIS251dkh2cW51WDdxekZoVllpbnhkZGF4Y2VSUFBhek5zZHZFVzhXaXFLb1Urejh3ZHoiLCJtYWMiOiI4YmZlNmFmYmM4ODY1MTk4MWQ0NjY3MDdkNGY5YTI0MTE2NGY5NzFkN2ZkYTEyMjY2ODNlODE5NTM5MGM3ZmVhIiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embedcenter.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://embedcenter.st&Cookie=__ddg1_=SsqjnBx5uoXXSPFYbbij; __ddg8_=NHCpDRCt73H1JJpo; __ddg10_=1792958979; __ddg9_=172.190.102.147; XSRF-TOKEN=eyJpdiI6InlzQlJlSWxnL0tsR0liSDg4eHRuNUE9PSIsInZhbHVlIjoiMFZ4RDVTcUQ2cWZtOVUrczFhV3lVZXZmeGF1YTZDRzhsVXRwdUFBWUN6VVZJUG9xWXh0U1ZiYThpcmNtZllPbEhjSUJPM0cxSERXZThxR2hLWlRrMEY3RmtZRit4d0M3N2JvQ0xEVTh4UHQvTDg3VGdrR2wxUDRSYStzWUJoeDQiLCJtYWMiOiJhMWE0MmI5NTViYmU4NzhmZTVjMjlkNWRlNzdiMTMxMzQxY2FiZTY2NTIxYTZhNjk2ZmI0N2QwNzllZTU5OTFiIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImFrMG9tVm9peXg4YngrZ2hqZGZHWVE9PSIsInZhbHVlIjoiYmhZemZ2OU1hVHRNL05HQXczVjh5Vi9iMzhUSlVIRkhNYkNXNis5U2VGK3JvL1p2UWljWWNmbWdvMGk2alhzTFB4dkZ0dWREdllwaVhIS251dkh2cW51WDdxekZoVllpbnhkZGF4Y2VSUFBhek5zZHZFVzhXaXFLb1Urejh3ZHoiLCJtYWMiOiI4YmZlNmFmYmM4ODY1MTk4MWQ0NjY3MDdkNGY5YTI0MTE2NGY5NzFkN2ZkYTEyMjY2ODNlODE5NTM5MGM3ZmVhIiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://embedcenter.st/|Origin: https://embedcenter.st|Cookie: __ddg1_=SsqjnBx5uoXXSPFYbbij; __ddg8_=NHCpDRCt73H1JJpo; __ddg10_=1792958979; __ddg9_=172.190.102.147; XSRF-TOKEN=eyJpdiI6InlzQlJlSWxnL0tsR0liSDg4eHRuNUE9PSIsInZhbHVlIjoiMFZ4RDVTcUQ2cWZtOVUrczFhV3lVZXZmeGF1YTZDRzhsVXRwdUFBWUN6VVZJUG9xWXh0U1ZiYThpcmNtZllPbEhjSUJPM0cxSERXZThxR2hLWlRrMEY3RmtZRit4d0M3N2JvQ0xEVTh4UHQvTDg3VGdrR2wxUDRSYStzWUJoeDQiLCJtYWMiOiJhMWE0MmI5NTViYmU4NzhmZTVjMjlkNWRlNzdiMTMxMzQxY2FiZTY2NTIxYTZhNjk2ZmI0N2QwNzllZTU5OTFiIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImFrMG9tVm9peXg4YngrZ2hqZGZHWVE9PSIsInZhbHVlIjoiYmhZemZ2OU1hVHRNL05HQXczVjh5Vi9iMzhUSlVIRkhNYkNXNis5U2VGK3JvL1p2UWljWWNmbWdvMGk2alhzTFB4dkZ0dWREdllwaVhIS251dkh2cW51WDdxekZoVllpbnhkZGF4Y2VSUFBhek5zZHZFVzhXaXFLb1Urejh3ZHoiLCJtYWMiOiI4YmZlNmFmYmM4ODY1MTk4MWQ0NjY3MDdkNGY5YTI0MTE2NGY5NzFkN2ZkYTEyMjY2ODNlODE5NTM5MGM3ZmVhIiwidGFnIjoiIn0%3D
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fedgestream3.pro%2Fsh%2Fcdn%2Fhls%2F377qj1h2727.m3u8&ref=https%3A%2F%2Fembedcenter.st%2F&origin=https%3A%2F%2Fembedcenter.st&cookie=__ddg1_%3DSsqjnBx5uoXXSPFYbbij%3B%20__ddg8_%3DNHCpDRCt73H1JJpo%3B%20__ddg10_%3D1792958979%3B%20__ddg9_%3D172.190.102.147%3B%20XSRF-TOKEN%3DeyJpdiI6InlzQlJlSWxnL0tsR0liSDg4eHRuNUE9PSIsInZhbHVlIjoiMFZ4RDVTcUQ2cWZtOVUrczFhV3lVZXZmeGF1YTZDRzhsVXRwdUFBWUN6VVZJUG9xWXh0U1ZiYThpcmNtZllPbEhjSUJPM0cxSERXZThxR2hLWlRrMEY3RmtZRit4d0M3N2JvQ0xEVTh4UHQvTDg3VGdrR2wxUDRSYStzWUJoeDQiLCJtYWMiOiJhMWE0MmI5NTViYmU4NzhmZTVjMjlkNWRlNzdiMTMxMzQxY2FiZTY2NTIxYTZhNjk2ZmI0N2QwNzllZTU5OTFiIiwidGFnIjoiIn0%253D%3B%20laravel_session%3DeyJpdiI6ImFrMG9tVm9peXg4YngrZ2hqZGZHWVE9PSIsInZhbHVlIjoiYmhZemZ2OU1hVHRNL05HQXczVjh5Vi9iMzhUSlVIRkhNYkNXNis5U2VGK3JvL1p2UWljWWNmbWdvMGk2alhzTFB4dkZ0dWREdllwaVhIS251dkh2cW51WDdxekZoVllpbnhkZGF4Y2VSUFBhek5zZHZFVzhXaXFLb1Urejh3ZHoiLCJtYWMiOiI4YmZlNmFmYmM4ODY1MTk4MWQ0NjY3MDdkNGY5YTI0MTE2NGY5NzFkN2ZkYTEyMjY2ODNlODE5NTM5MGM3ZmVhIiwidGFnIjoiIn0%253D&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
-
-#EXTINF:-1 tvg-name="Barcelona vs Real Madrid | 03:00 | 26/10/2026 [Givemestreams]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Barcelona vs Real Madrid | 03:00 | 26/10/2026 [Givemestreams]
-#EXTVLCOPT:http-referrer=https://embedcenter.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://embedcenter.st
-#EXTVLCOPT:http-cookie=__ddg1_=Umt9vpDkSx3MXXehZikC; __ddg8_=jOzUC77ZUlNiKHoi; __ddg10_=1792958991; __ddg9_=172.190.102.147; XSRF-TOKEN=eyJpdiI6Ik1TZ1Z0WGpudVFnc3dzY281cm5JWmc9PSIsInZhbHVlIjoiMHpON0FrNUgrekVlLzAzeFpxTUdFT0VhUGhWbmdOaHZqWlJWam5oMnRHajFLem5aaFQ4K3FVaElBWVFKRjVBVzQ1Z1RaOCtxL2M0TGhjYmZRYTJOdTI3RWxHRkFWQm82TG1EbFRQZnVJY1hlWG5jMnlieHB2aktZK1BlTFNDeHEiLCJtYWMiOiI5MGJmOGFhOWYwNGEwZjlkZWNiZjczNmM0MTg2MGFlNDg5Yjk2MTE5ZTI2YTI4N2IwY2YxYmZmNTEwZjU3MjQ5IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImdhQlF4cG5CeUc3bk1kc2xqZ1laNmc9PSIsInZhbHVlIjoidXZSUUhaeVJ5UjZ0d2haZDhXNWhRUTlUNEkwMUVpZVhUWXoxbkQ0ZmxzaWdzR3VoWktyMzdMN29ZMVVwd3BKQmxSMk1HRTAzYkF0Y0dhdzVLRk94OGhCM3JGMVozbXFtN1c1ekJoQnFjcmF1aVpXNURiN0FxVUNocGtwQ0FZUmIiLCJtYWMiOiJiZDA5OWEyYTcxODkzNjE1YzE5NmM5NmQxZjNiNmM1ZTAzMzMxMThkNzMxMDgyZGFkMDZlOGRiOGNhODY4Y2FjIiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embedcenter.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://embedcenter.st&Cookie=__ddg1_=Umt9vpDkSx3MXXehZikC; __ddg8_=jOzUC77ZUlNiKHoi; __ddg10_=1792958991; __ddg9_=172.190.102.147; XSRF-TOKEN=eyJpdiI6Ik1TZ1Z0WGpudVFnc3dzY281cm5JWmc9PSIsInZhbHVlIjoiMHpON0FrNUgrekVlLzAzeFpxTUdFT0VhUGhWbmdOaHZqWlJWam5oMnRHajFLem5aaFQ4K3FVaElBWVFKRjVBVzQ1Z1RaOCtxL2M0TGhjYmZRYTJOdTI3RWxHRkFWQm82TG1EbFRQZnVJY1hlWG5jMnlieHB2aktZK1BlTFNDeHEiLCJtYWMiOiI5MGJmOGFhOWYwNGEwZjlkZWNiZjczNmM0MTg2MGFlNDg5Yjk2MTE5ZTI2YTI4N2IwY2YxYmZmNTEwZjU3MjQ5IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImdhQlF4cG5CeUc3bk1kc2xqZ1laNmc9PSIsInZhbHVlIjoidXZSUUhaeVJ5UjZ0d2haZDhXNWhRUTlUNEkwMUVpZVhUWXoxbkQ0ZmxzaWdzR3VoWktyMzdMN29ZMVVwd3BKQmxSMk1HRTAzYkF0Y0dhdzVLRk94OGhCM3JGMVozbXFtN1c1ekJoQnFjcmF1aVpXNURiN0FxVUNocGtwQ0FZUmIiLCJtYWMiOiJiZDA5OWEyYTcxODkzNjE1YzE5NmM5NmQxZjNiNmM1ZTAzMzMxMThkNzMxMDgyZGFkMDZlOGRiOGNhODY4Y2FjIiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://embedcenter.st/|Origin: https://embedcenter.st|Cookie: __ddg1_=Umt9vpDkSx3MXXehZikC; __ddg8_=jOzUC77ZUlNiKHoi; __ddg10_=1792958991; __ddg9_=172.190.102.147; XSRF-TOKEN=eyJpdiI6Ik1TZ1Z0WGpudVFnc3dzY281cm5JWmc9PSIsInZhbHVlIjoiMHpON0FrNUgrekVlLzAzeFpxTUdFT0VhUGhWbmdOaHZqWlJWam5oMnRHajFLem5aaFQ4K3FVaElBWVFKRjVBVzQ1Z1RaOCtxL2M0TGhjYmZRYTJOdTI3RWxHRkFWQm82TG1EbFRQZnVJY1hlWG5jMnlieHB2aktZK1BlTFNDeHEiLCJtYWMiOiI5MGJmOGFhOWYwNGEwZjlkZWNiZjczNmM0MTg2MGFlNDg5Yjk2MTE5ZTI2YTI4N2IwY2YxYmZmNTEwZjU3MjQ5IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImdhQlF4cG5CeUc3bk1kc2xqZ1laNmc9PSIsInZhbHVlIjoidXZSUUhaeVJ5UjZ0d2haZDhXNWhRUTlUNEkwMUVpZVhUWXoxbkQ0ZmxzaWdzR3VoWktyMzdMN29ZMVVwd3BKQmxSMk1HRTAzYkF0Y0dhdzVLRk94OGhCM3JGMVozbXFtN1c1ekJoQnFjcmF1aVpXNURiN0FxVUNocGtwQ0FZUmIiLCJtYWMiOiJiZDA5OWEyYTcxODkzNjE1YzE5NmM5NmQxZjNiNmM1ZTAzMzMxMThkNzMxMDgyZGFkMDZlOGRiOGNhODY4Y2FjIiwidGFnIjoiIn0%3D
-https://edgestream5.pro/hls/377qj1h2727.m3u8?st=q8PKBxTKDVsuaVzCKHjnMKci7KMZe_XcoQbkuWi0gWI&e=1792969792
-
-#EXTINF:-1 tvg-name="Barcelona vs Real Madrid | 03:00 | 26/10/2026 [Resports]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Barcelona vs Real Madrid | 03:00 | 26/10/2026 [Resports]
-#EXTVLCOPT:http-referrer=https://embedcenter.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://embedcenter.st
-#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6IjBrWEh0bFh4MUV1a0VjRGlKeGwxT0E9PSIsInZhbHVlIjoiV04zMERXNkdYb0IxVDZHTUE5Sll3TS9IVzlKMHRJcnFWZm5XbW41c21xclVMalpRalA5QWJhYVpDZGEwMU55NVNFRlRoaXJSYkhlcUdLRUtoOXdDZFZnRVIxQjR5dVNTVWQwZEFGVCtEMHJIZWtJQ205RWhYc2ZEaWY0VmNHY2kiLCJtYWMiOiI0ZjcyYmNmMTY5ZDg3N2Q4ZDYwOGYxYTRmNGNjMWNkNmQ1MmRhZDE2NzVkYmQ0NGFiMjNmMTVmMGFjOWEwNDgzIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6Ii9nckpNVGM3UjJHOThzQzZuUFBWcUE9PSIsInZhbHVlIjoiSGVCQW4wUjlwRmFkVkhjNTczVy9xMmVDQlE1YkpsV1hYeGE5R1RRRnlKSlp5SVpZL3o1bXA5Z3VTUGVyejlxQXZCc1VLdFpFZmhMNHhJbzExdDFEbHUyVVVUQnhvRGNhaEFDVUNiQ3g4dzdSMGpJVmVNYmNSMUE2b0lZVWVsTksiLCJtYWMiOiI2NDIxNmRmMGMwZmYxN2Y5MWRjOTQ3YmEzMGNlZWI1ZDZlMDkzZTQ4MGUzMTM2ZjYzMzAyOWFhZGNhOWYzM2EwIiwidGFnIjoiIn0%3D; __ddg1_=TEPxaNtUyxQsJtrKK71L; __ddg8_=C2hGkhkbUFQv1Gr3; __ddg10_=1792959139; __ddg9_=172.190.102.147
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embedcenter.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://embedcenter.st&Cookie=XSRF-TOKEN=eyJpdiI6IjBrWEh0bFh4MUV1a0VjRGlKeGwxT0E9PSIsInZhbHVlIjoiV04zMERXNkdYb0IxVDZHTUE5Sll3TS9IVzlKMHRJcnFWZm5XbW41c21xclVMalpRalA5QWJhYVpDZGEwMU55NVNFRlRoaXJSYkhlcUdLRUtoOXdDZFZnRVIxQjR5dVNTVWQwZEFGVCtEMHJIZWtJQ205RWhYc2ZEaWY0VmNHY2kiLCJtYWMiOiI0ZjcyYmNmMTY5ZDg3N2Q4ZDYwOGYxYTRmNGNjMWNkNmQ1MmRhZDE2NzVkYmQ0NGFiMjNmMTVmMGFjOWEwNDgzIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6Ii9nckpNVGM3UjJHOThzQzZuUFBWcUE9PSIsInZhbHVlIjoiSGVCQW4wUjlwRmFkVkhjNTczVy9xMmVDQlE1YkpsV1hYeGE5R1RRRnlKSlp5SVpZL3o1bXA5Z3VTUGVyejlxQXZCc1VLdFpFZmhMNHhJbzExdDFEbHUyVVVUQnhvRGNhaEFDVUNiQ3g4dzdSMGpJVmVNYmNSMUE2b0lZVWVsTksiLCJtYWMiOiI2NDIxNmRmMGMwZmYxN2Y5MWRjOTQ3YmEzMGNlZWI1ZDZlMDkzZTQ4MGUzMTM2ZjYzMzAyOWFhZGNhOWYzM2EwIiwidGFnIjoiIn0%3D; __ddg1_=TEPxaNtUyxQsJtrKK71L; __ddg8_=C2hGkhkbUFQv1Gr3; __ddg10_=1792959139; __ddg9_=172.190.102.147
-#EXTHTTP:Referer: https://embedcenter.st/|Origin: https://embedcenter.st|Cookie: XSRF-TOKEN=eyJpdiI6IjBrWEh0bFh4MUV1a0VjRGlKeGwxT0E9PSIsInZhbHVlIjoiV04zMERXNkdYb0IxVDZHTUE5Sll3TS9IVzlKMHRJcnFWZm5XbW41c21xclVMalpRalA5QWJhYVpDZGEwMU55NVNFRlRoaXJSYkhlcUdLRUtoOXdDZFZnRVIxQjR5dVNTVWQwZEFGVCtEMHJIZWtJQ205RWhYc2ZEaWY0VmNHY2kiLCJtYWMiOiI0ZjcyYmNmMTY5ZDg3N2Q4ZDYwOGYxYTRmNGNjMWNkNmQ1MmRhZDE2NzVkYmQ0NGFiMjNmMTVmMGFjOWEwNDgzIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6Ii9nckpNVGM3UjJHOThzQzZuUFBWcUE9PSIsInZhbHVlIjoiSGVCQW4wUjlwRmFkVkhjNTczVy9xMmVDQlE1YkpsV1hYeGE5R1RRRnlKSlp5SVpZL3o1bXA5Z3VTUGVyejlxQXZCc1VLdFpFZmhMNHhJbzExdDFEbHUyVVVUQnhvRGNhaEFDVUNiQ3g4dzdSMGpJVmVNYmNSMUE2b0lZVWVsTksiLCJtYWMiOiI2NDIxNmRmMGMwZmYxN2Y5MWRjOTQ3YmEzMGNlZWI1ZDZlMDkzZTQ4MGUzMTM2ZjYzMzAyOWFhZGNhOWYzM2EwIiwidGFnIjoiIn0%3D; __ddg1_=TEPxaNtUyxQsJtrKK71L; __ddg8_=C2hGkhkbUFQv1Gr3; __ddg10_=1792959139; __ddg9_=172.190.102.147
-https://edgestream2.pro/hls/377qj1h2727.m3u8?st=Uux853Ape-boDv1BiwOlXdRUeT7K5liSvX2VUnFUCE4&e=1792969941
-
-#EXTINF:-1 tvg-name="Barcelona vs Real Madrid | 03:00 | 26/10/2026 [Fast-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Barcelona vs Real Madrid | 03:00 | 26/10/2026 [Fast-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=9aba7a810e47b32163183d4d9e92840f%2Findex.m3u8&e=1792960953&sig=--0KCOQ_0hk892CICddLJ2OJhflt7u9Jm_2vjzVynw8
-
-#EXTINF:-1 tvg-name="Sporting CP vs Académico de Viseu | 03:30 | 26/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Sporting CP vs Académico de Viseu | 03:30 | 26/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=452e62197617eee2172de9c2a1c7e936%2Findex.m3u8&e=1792961181&sig=FSZpaCeSVb6Srvt8GZm-jr_kfG6l03yYWwKeK6NB5Ag
-
-#EXTINF:-1 tvg-name="Sporting CP vs Académico de Viseu | 03:30 | 26/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Sporting CP vs Académico de Viseu | 03:30 | 26/10/2026 [Buff-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=452e62197617eee2172de9c2a1c7e936%2Findex.m3u8&e=1792961190&sig=jA4hPCyRqqVd4M9MbRggvd9S5_VBUnVMQOkuU7q_qiI
-
-#EXTINF:-1 tvg-name="FC Barcelona vs Real Madrid [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" tvg-id="Soccer.Dummy.us" group-title="LaLiga",FC Barcelona vs Real Madrid [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58669?ad=111
+#EXTINF:-1 tvg-name="Real Madrid vs Barcelona | English | 03:00 | 26/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" tvg-id="Soccer.Dummy.us" group-title="La Liga",Real Madrid vs Barcelona | English | 03:00 | 26/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401882832
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58669?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58669?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58669%2Fload-playlist-multi&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58669%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-name="Udinese vs AC Milan [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Serie A",Udinese vs AC Milan [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58666?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58666?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58666?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58666%2Fload-playlist-multi&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58666%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401882832&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401882832
+https://instreams.live/live3/tv401882832/index.m3u8?st=pkJu4wewHmd_8dpeFXBYdg&e=1792978202
