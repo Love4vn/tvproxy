@@ -1,27 +1,11 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-25 22:30 UTC
-# streams  : 3
+# generated: 2026-10-26 00:42 UTC
+# streams  : 1
 
-#EXTINF:-1 tvg-name="Sporting CP vs Académico de Viseu | LIVE | 26/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Sporting CP vs Académico de Viseu | LIVE | 26/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=452e62197617eee2172de9c2a1c7e936%2Findex.m3u8&e=1792968602&sig=TXSHg66_SOV4p6JpWlAhGvH-sFgoZxVNilKc9s-b1EE
-
-#EXTINF:-1 tvg-name="Sporting CP vs Académico de Viseu | LIVE | 26/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Sporting CP vs Académico de Viseu | LIVE | 26/10/2026 [Buff-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=452e62197617eee2172de9c2a1c7e936%2Findex.m3u8&e=1792968613&sig=1mDBiYtoJAi93Y7dB0kHXt88ly0Sd-LJ_sixuajzeeU
-
-#EXTINF:-1 tvg-name="Real Madrid vs Barcelona | English | 03:00 | 26/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" tvg-id="Soccer.Dummy.us" group-title="La Liga",Real Madrid vs Barcelona | English | 03:00 | 26/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401882832
+#EXTINF:-1 tvg-name="LA Galaxy vs LAFC | English | 08:00 | 26/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="MLS",LA Galaxy vs LAFC | English | 08:00 | 26/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv761904
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401882832&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401882832
-https://instreams.live/live3/tv401882832/index.m3u8?st=pkJu4wewHmd_8dpeFXBYdg&e=1792978202
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv761904&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv761904
+https://instreams.xyz/live3/tv761904/index.m3u8?st=pGf8qZVfYSpXRW6uH8dJWw&e=1792986130
