@@ -1,15 +1,100 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-26 12:27 UTC
-# streams  : 2
+# generated: 2026-10-26 19:16 UTC
+# streams  : 18
 
-#EXTINF:-1 tvg-name="Besiktas vs Istanbul Basaksehir | 23:00 | 26/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="Turkish Süper Lig",Besiktas vs Istanbul Basaksehir | 23:00 | 26/10/2026 [Wildgames]
+#EXTINF:-1 tvg-name="Santa Clara vs Benfica | LIVE | 27/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Santa Clara vs Benfica | LIVE | 27/10/2026 [Powerstream]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=452e62197617eee2172de9c2a1c7e936%2Findex.m3u8&e=1793042462&sig=BqlnUftKDxaNGzY1QyPLAmy2lrYwE3bjt1jIRiTiduc&v=1793040662-3289
+
+#EXTINF:-1 tvg-name="Santa Clara vs Benfica | LIVE | 27/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Santa Clara vs Benfica | LIVE | 27/10/2026 [Wildgames]
 #EXTVLCOPT:http-referrer=https://matchora.to/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
 #EXTVLCOPT:http-origin=https://matchora.to
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
 #EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F913455%2Findex.m3u8%3Ft%3DOTEzNDU1fDE3OTMwMTczODF8fHx8MGQ4MTUxZjE.Xwp8SNA3_3mxNBNsoyiC8vGDyvL1poe-R98fpIXKUE4&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fb.veziha.cyou%2Fhls%2F148671%2Findex.m3u8%3Ft%3DMTQ4NjcxfDE3OTMwNDEyNzN8fHx8MjJlMDQ2MDA.4aVwussUepjAo6q2I7Gp2T9vIwGnWU1PpOPFGBpYGN0&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+
+#EXTINF:-1 tvg-name="Santa Clara vs Benfica | LIVE | 27/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Santa Clara vs Benfica | LIVE | 27/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=2099107019681112
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=2099107019681112
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=2099107019681112
+https://instreams.pro/live3/streamhd27/index.m3u8?st=yjcjHpYfJPSRQUM4RiYN5Q&e=1793051510
+
+#EXTINF:-1 tvg-name="Santa Clara vs Benfica | LIVE | 27/10/2026 [Iohit]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Santa Clara vs Benfica | LIVE | 27/10/2026 [Iohit]
+#EXTVLCOPT:http-referrer=https://iohit.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://iohit.st
+#EXTVLCOPT:http-cookie=session_id=3783348107260947; laravel_session=eyJpdiI6InV0NStnaHFocjY5aU5Td2wxVzh0dnc9PSIsInZhbHVlIjoiWjNzVWRNZERvMnFNWkRjeEpjOFFUSCtNeUE2L3dZZlg2Nmo3bXVMT0d6bEM4bkRDR3ZwV3NLR2JQaGRGNzk4VHFxQi9Kc3YvUzVpMTVMcy94TEIxVlNWd3dXNmJtZmNWL3VoNUNKRnlSaVZzWmpRajZDdUVwTDFWZDJaeXFmZGwiLCJtYWMiOiJmMzlkYjJjMzQwNTU0ZjM0YWJkYmU1OGRmY2E2OWZmYjBkNzE5NjEyMGNkMzE0MGIxYjlhYjBmYjkyZWFhZjAwIiwidGFnIjoiIn0%3D
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://iohit.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://iohit.st&Cookie=session_id=3783348107260947; laravel_session=eyJpdiI6InV0NStnaHFocjY5aU5Td2wxVzh0dnc9PSIsInZhbHVlIjoiWjNzVWRNZERvMnFNWkRjeEpjOFFUSCtNeUE2L3dZZlg2Nmo3bXVMT0d6bEM4bkRDR3ZwV3NLR2JQaGRGNzk4VHFxQi9Kc3YvUzVpMTVMcy94TEIxVlNWd3dXNmJtZmNWL3VoNUNKRnlSaVZzWmpRajZDdUVwTDFWZDJaeXFmZGwiLCJtYWMiOiJmMzlkYjJjMzQwNTU0ZjM0YWJkYmU1OGRmY2E2OWZmYjBkNzE5NjEyMGNkMzE0MGIxYjlhYjBmYjkyZWFhZjAwIiwidGFnIjoiIn0%3D
+#EXTHTTP:Referer: https://iohit.st/|Origin: https://iohit.st|Cookie: session_id=3783348107260947; laravel_session=eyJpdiI6InV0NStnaHFocjY5aU5Td2wxVzh0dnc9PSIsInZhbHVlIjoiWjNzVWRNZERvMnFNWkRjeEpjOFFUSCtNeUE2L3dZZlg2Nmo3bXVMT0d6bEM4bkRDR3ZwV3NLR2JQaGRGNzk4VHFxQi9Kc3YvUzVpMTVMcy94TEIxVlNWd3dXNmJtZmNWL3VoNUNKRnlSaVZzWmpRajZDdUVwTDFWZDJaeXFmZGwiLCJtYWMiOiJmMzlkYjJjMzQwNTU0ZjM0YWJkYmU1OGRmY2E2OWZmYjBkNzE5NjEyMGNkMzE0MGIxYjlhYjBmYjkyZWFhZjAwIiwidGFnIjoiIn0%3D
+https://s1.toocdn.top/s/zvodl1rm7qIyV983WXKRhA/1793062322/sp1/index.m3u8
+
+#EXTINF:-1 tvg-name="Galatasaray vs Fenerbahce | LIVE | 27/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Turkish Süper Lig",Galatasaray vs Fenerbahce | LIVE | 27/10/2026 [Powerstream]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=c39a7e658e9c50b484d2e841aebb3181%2Findex.m3u8&e=1793042560&sig=vex56MJiYeNnb0Fr0v2nayDsI8rpUNN2iYsq4vmnf20&v=1793040760-6021
+
+#EXTINF:-1 tvg-name="Galatasaray vs Fenerbahce | LIVE | 27/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="Turkish Süper Lig",Galatasaray vs Fenerbahce | LIVE | 27/10/2026 [Wildgames]
+#EXTVLCOPT:http-referrer=https://matchora.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchora.to
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
+#EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F913446%2Findex.m3u8%3Ft%3DOTEzNDQ2fDE3OTMwNDEzNzF8fHx8MjJlMDQ2MDA.Um-s1bHxDh0Y1bS489PaQAtrjOGX8X0vJdpogQk_A5g&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+
+#EXTINF:-1 tvg-name="Galatasaray vs Fenerbahce | LIVE | 27/10/2026 [Iohit]" tvg-logo="" tvg-id="Live.Event.us" group-title="Turkish Süper Lig",Galatasaray vs Fenerbahce | LIVE | 27/10/2026 [Iohit]
+#EXTVLCOPT:http-referrer=https://iohit.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://iohit.st
+#EXTVLCOPT:http-cookie=laravel_session=eyJpdiI6ImRGd1VxbzlrMGdCVmxWcEVZTk9rY2c9PSIsInZhbHVlIjoiNlFLMnhJRjJXS2prZ1Y3VnB2UWwwSUYra3l3b2FHSnFyaWVpSitVaTd3MGQ2N1VvSCtHK2FucklSV3VPTnhlMVo4LzRZd0VEbU0zR2pjYU82bFpmOGIyd0NFTyt1NTJTeGVuQmVRbkxaT1pKRGcxaDI3YWh6NjE5bGphYURDTEsiLCJtYWMiOiI1MGE5MjVhODJmOTNmMDNmOTI3ZTVlNDFkYTdiOWFkYzAyZjA3NGFjZjVmMmI2NjAwMDE1ZTBhNDY2OGNhZjMwIiwidGFnIjoiIn0%3D; session_id=5337680134126346
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://iohit.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://iohit.st&Cookie=laravel_session=eyJpdiI6ImRGd1VxbzlrMGdCVmxWcEVZTk9rY2c9PSIsInZhbHVlIjoiNlFLMnhJRjJXS2prZ1Y3VnB2UWwwSUYra3l3b2FHSnFyaWVpSitVaTd3MGQ2N1VvSCtHK2FucklSV3VPTnhlMVo4LzRZd0VEbU0zR2pjYU82bFpmOGIyd0NFTyt1NTJTeGVuQmVRbkxaT1pKRGcxaDI3YWh6NjE5bGphYURDTEsiLCJtYWMiOiI1MGE5MjVhODJmOTNmMDNmOTI3ZTVlNDFkYTdiOWFkYzAyZjA3NGFjZjVmMmI2NjAwMDE1ZTBhNDY2OGNhZjMwIiwidGFnIjoiIn0%3D; session_id=5337680134126346
+#EXTHTTP:Referer: https://iohit.st/|Origin: https://iohit.st|Cookie: laravel_session=eyJpdiI6ImRGd1VxbzlrMGdCVmxWcEVZTk9rY2c9PSIsInZhbHVlIjoiNlFLMnhJRjJXS2prZ1Y3VnB2UWwwSUYra3l3b2FHSnFyaWVpSitVaTd3MGQ2N1VvSCtHK2FucklSV3VPTnhlMVo4LzRZd0VEbU0zR2pjYU82bFpmOGIyd0NFTyt1NTJTeGVuQmVRbkxaT1pKRGcxaDI3YWh6NjE5bGphYURDTEsiLCJtYWMiOiI1MGE5MjVhODJmOTNmMDNmOTI3ZTVlNDFkYTdiOWFkYzAyZjA3NGFjZjVmMmI2NjAwMDE1ZTBhNDY2OGNhZjMwIiwidGFnIjoiIn0%3D; session_id=5337680134126346
+https://s1.toocdn.top/s/G_cwxrLi5iKViQYhK1VNBA/1793062421/gal/index.m3u8
+
+#EXTINF:-1 tvg-name="Paris Saint-Germain vs Lyon | 02:30 | 27/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Paris Saint-Germain vs Lyon | 02:30 | 27/10/2026 [Powerstream]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=c31eab77556044c97292125cfbfa2364%2Findex.m3u8&e=1793042782&sig=SLZ9Fsx8kJXKgBF5xkbc-r7IIzHe7v0O7n8Pt_9Gxxs&v=1793040982-5366
+
+#EXTINF:-1 tvg-name="Paris Saint-Germain vs Lyon | 02:30 | 27/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Paris Saint-Germain vs Lyon | 02:30 | 27/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=5763232711782144
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=5763232711782144
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=5763232711782144
+https://instreams.live/live3/streamhd22/index.m3u8?st=h1G_eTS_zO6w9Nv4-u6gag&e=1793052012
+
+#EXTINF:-1 tvg-name="Sevilla vs Osasuna | 03:00 | 27/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Sevilla vs Osasuna | 03:00 | 27/10/2026 [Topsurge]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=9ae3de4b40a6ecfdd03fc90be82c4535%2Findex.m3u8&e=1793043038&sig=FHobPjDTAo_41Nz3JVNegPxVIueZ9_qSv0YdR7gqqVU
+
+#EXTINF:-1 tvg-name="Sevilla vs Osasuna | 03:00 | 27/10/2026 [Givemestreams]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Sevilla vs Osasuna | 03:00 | 27/10/2026 [Givemestreams]
+#EXTVLCOPT:http-referrer=https://embedcenter.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://embedcenter.st
+#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6Im9kNVU4blBKTmNwaUdvc3FFcThVQXc9PSIsInZhbHVlIjoiUmtqdjZJUnFncnJnY0ZuSGpHYzhsR0M5V1E1NmdjWVlLcFNmRVoxTjl2TmJnQncxUm1qSmNFOHhIb2dvL1Z5Mk1nM3F3V2lueGo4YjhzMWhEOTNsclZ3VG1lYVRkaFIrcHFhN0t6djZncS9adUI4Q05adVZKYXZxRVFBbS92a3giLCJtYWMiOiI5NjY4Y2UyODhmNTYxZWM2MGVkMWM4YTQ5M2FmZmFjNmJlNTcyMTM4N2M0NTAyZDBlZDc3Y2ZkMDgzZGRmYmE1IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IisrcThRT0YrK2syeVlySnV5dWdWemc9PSIsInZhbHVlIjoic2lEQXlUUTVIN0VIVUhWRHFqK2lCUEhOeVV1YTZzWHM1ZWFXOE9MUHMvam1iaGlaQmxwenNiNEVEampwaXlMWW14V05uQnJmK213b0lwTUNQOW9FS0ZueXFFd3grNDU3dXJnSThoSms4SDIwQkYwWlA4ZGZrRFlJTjdVeEZvdDYiLCJtYWMiOiJlZTJlMjcxMTIzMDM1MTdkNmVlOGIyZjM2N2JhZmE5ZDlmMDc0MGE3MDhlZGZlMTdmYTNkNDcxYjVmMDU1YTI1IiwidGFnIjoiIn0%3D; __ddg1_=YhDe0F2OFcjsMKlmrhlN; __ddg8_=6eljVDyq5XTWpiTw; __ddg10_=1793041270; __ddg9_=4.236.94.122; __ddg1_=HI1RbboFYwR4y2XAiyoG; __ddg8_=mtOBvdM9MYFuX1wl; __ddg10_=1793041260; __ddg9_=4.236.94.122
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embedcenter.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://embedcenter.st&Cookie=XSRF-TOKEN=eyJpdiI6Im9kNVU4blBKTmNwaUdvc3FFcThVQXc9PSIsInZhbHVlIjoiUmtqdjZJUnFncnJnY0ZuSGpHYzhsR0M5V1E1NmdjWVlLcFNmRVoxTjl2TmJnQncxUm1qSmNFOHhIb2dvL1Z5Mk1nM3F3V2lueGo4YjhzMWhEOTNsclZ3VG1lYVRkaFIrcHFhN0t6djZncS9adUI4Q05adVZKYXZxRVFBbS92a3giLCJtYWMiOiI5NjY4Y2UyODhmNTYxZWM2MGVkMWM4YTQ5M2FmZmFjNmJlNTcyMTM4N2M0NTAyZDBlZDc3Y2ZkMDgzZGRmYmE1IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IisrcThRT0YrK2syeVlySnV5dWdWemc9PSIsInZhbHVlIjoic2lEQXlUUTVIN0VIVUhWRHFqK2lCUEhOeVV1YTZzWHM1ZWFXOE9MUHMvam1iaGlaQmxwenNiNEVEampwaXlMWW14V05uQnJmK213b0lwTUNQOW9FS0ZueXFFd3grNDU3dXJnSThoSms4SDIwQkYwWlA4ZGZrRFlJTjdVeEZvdDYiLCJtYWMiOiJlZTJlMjcxMTIzMDM1MTdkNmVlOGIyZjM2N2JhZmE5ZDlmMDc0MGE3MDhlZGZlMTdmYTNkNDcxYjVmMDU1YTI1IiwidGFnIjoiIn0%3D; __ddg1_=YhDe0F2OFcjsMKlmrhlN; __ddg8_=6eljVDyq5XTWpiTw; __ddg10_=1793041270; __ddg9_=4.236.94.122; __ddg1_=HI1RbboFYwR4y2XAiyoG; __ddg8_=mtOBvdM9MYFuX1wl; __ddg10_=1793041260; __ddg9_=4.236.94.122
+#EXTHTTP:Referer: https://embedcenter.st/|Origin: https://embedcenter.st|Cookie: XSRF-TOKEN=eyJpdiI6Im9kNVU4blBKTmNwaUdvc3FFcThVQXc9PSIsInZhbHVlIjoiUmtqdjZJUnFncnJnY0ZuSGpHYzhsR0M5V1E1NmdjWVlLcFNmRVoxTjl2TmJnQncxUm1qSmNFOHhIb2dvL1Z5Mk1nM3F3V2lueGo4YjhzMWhEOTNsclZ3VG1lYVRkaFIrcHFhN0t6djZncS9adUI4Q05adVZKYXZxRVFBbS92a3giLCJtYWMiOiI5NjY4Y2UyODhmNTYxZWM2MGVkMWM4YTQ5M2FmZmFjNmJlNTcyMTM4N2M0NTAyZDBlZDc3Y2ZkMDgzZGRmYmE1IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IisrcThRT0YrK2syeVlySnV5dWdWemc9PSIsInZhbHVlIjoic2lEQXlUUTVIN0VIVUhWRHFqK2lCUEhOeVV1YTZzWHM1ZWFXOE9MUHMvam1iaGlaQmxwenNiNEVEampwaXlMWW14V05uQnJmK213b0lwTUNQOW9FS0ZueXFFd3grNDU3dXJnSThoSms4SDIwQkYwWlA4ZGZrRFlJTjdVeEZvdDYiLCJtYWMiOiJlZTJlMjcxMTIzMDM1MTdkNmVlOGIyZjM2N2JhZmE5ZDlmMDc0MGE3MDhlZGZlMTdmYTNkNDcxYjVmMDU1YTI1IiwidGFnIjoiIn0%3D; __ddg1_=YhDe0F2OFcjsMKlmrhlN; __ddg8_=6eljVDyq5XTWpiTw; __ddg10_=1793041270; __ddg9_=4.236.94.122; __ddg1_=HI1RbboFYwR4y2XAiyoG; __ddg8_=mtOBvdM9MYFuX1wl; __ddg10_=1793041260; __ddg9_=4.236.94.122
+https://edgestream1.pro/hls/377qj1h2727.m3u8?st=I4wnBqP_VE181Ab30NxmfSgo7eukM8CogqSyuPdIz6w&e=1793052082
 
 #EXTINF:-1 tvg-name="Sevilla vs Osasuna | 03:00 | 27/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Sevilla vs Osasuna | 03:00 | 27/10/2026 [Powerstream]
 #EXTVLCOPT:http-referrer=https://matchli.st/
@@ -17,4 +102,48 @@ https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2F
 #EXTVLCOPT:http-origin=https://matchli.st
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
 #EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=9aba7a810e47b32163183d4d9e92840f%2Findex.m3u8&e=1793018953&sig=pR8Y7J7p1d4djbhgQQX0ZQt5tQJ9dgAh3M93VpiqjuQ&v=1793017153-2850
+https://hls.lshls.st/secure_hls.php?path=9aba7a810e47b32163183d4d9e92840f%2Findex.m3u8&e=1793043228&sig=lAOvOIYk7-W-q0d35S5oDqw7IUAdZW5bDIhnybXQ-mI&v=1793041428-2441
+
+#EXTINF:-1 tvg-name="Sevilla vs Osasuna | 03:00 | 27/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Sevilla vs Osasuna | 03:00 | 27/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=4148773474722738
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=4148773474722738
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=4148773474722738
+https://gate4.st/live3/streamhd26/index.m3u8?st=xfbcwzljFy73qK-BngYoOQ&e=1793052431
+
+#EXTINF:-1 tvg-name="Fenerbahce vs Galatasaray | English | 01:30 | 27/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="TUR 1",Fenerbahce vs Galatasaray | English | 01:30 | 27/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401888265
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401888265&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401888265
+https://instreams.xyz/live3/tv401888265/index.m3u8?st=utKaO5zMIaFRiukfAdV3bg&e=1793053002
+
+#EXTINF:-1 tvg-name="Benfica vs Santa Clara | English | 01:45 | 27/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="POR 1",Benfica vs Santa Clara | English | 01:45 | 27/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401885414
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401885414&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401885414
+https://instreams.live/live3/tv401885414/index.m3u8?st=tSsDx1e-c_n9kWm1HuzURg&e=1793053004
+
+#EXTINF:-1 tvg-name="Lyon vs Paris Saint-Germain | English | 02:30 | 27/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Ligue 1",Lyon vs Paris Saint-Germain | English | 02:30 | 27/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401876422
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401876422&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401876422
+https://instreams.live/live3/tv401876422/index.m3u8?st=4PPwpyiTN9YBpqwvibN-kA&e=1793053008
+
+#EXTINF:-1 tvg-name="Stade de Reims vs Boulogne | English | 02:45 | 27/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="FRA 2",Stade de Reims vs Boulogne | English | 02:45 | 27/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401876718
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401876718&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401876718
+https://instreams.live/live3/tv401876718/index.m3u8?st=QcZhYr0dvSyYLlIoCxlZOw&e=1793053011
+
+#EXTINF:-1 tvg-name="Red Star FC 93 vs Montpellier | English | 02:45 | 27/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="FRA 2",Red Star FC 93 vs Montpellier | English | 02:45 | 27/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401876714
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401876714&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401876714
+https://instreams.xyz/live3/tv401876714/index.m3u8?st=nozuCS28aPoqX_I6qBJ51Q&e=1793053013
