@@ -1,4 +1,60 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-27 02:20 UTC
-# streams  : 0
+# generated: 2026-10-27 09:05 UTC
+# streams  : 7
+
+#EXTINF:-1 tvg-name="Rot-Weiss Essen vs RB Leipzig | 00:00 | 28/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",Rot-Weiss Essen vs RB Leipzig | 00:00 | 28/10/2026 [Wildgames]
+#EXTVLCOPT:http-referrer=https://matchora.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchora.to
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
+#EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1964140%2Findex.m3u8%3Ft%3DMTk2NDE0MHwxNzkzMDg5NTUxfHx8fDBhYTE5MjJk.oDNm2VJltdoNoTsm_Cr9I-XG4Lexq9Rgxoev8GozrYw&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+
+#EXTINF:-1 tvg-name="SG Sonnenhof Großaspach vs FC Augsburg | 00:00 | 28/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",SG Sonnenhof Großaspach vs FC Augsburg | 00:00 | 28/10/2026 [Wildgames]
+#EXTVLCOPT:http-referrer=https://matchora.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchora.to
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
+#EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1964137%2Findex.m3u8%3Ft%3DMTk2NDEzN3wxNzkzMDg5Njk1fHx8fDBhYTE5MjJk.SH3IWy99pOVP4Rur6TMLTKe1KMgisS52igtRvi5Ru78&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+
+#EXTINF:-1 tvg-name="VfL Bochum vs Mainz | 00:00 | 28/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",VfL Bochum vs Mainz | 00:00 | 28/10/2026 [Wildgames]
+#EXTVLCOPT:http-referrer=https://matchora.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchora.to
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
+#EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1917537%2Findex.m3u8%3Ft%3DMTkxNzUzN3wxNzkzMDg5ODQ4fHx8fDBhYTE5MjJk.lOMOcvYO2fHBLObhK4WSb03DX2edzoTsWzaTa732TYk&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+
+#EXTINF:-1 tvg-name="Borussia Dortmund vs Werder Bremen | 02:45 | 28/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",Borussia Dortmund vs Werder Bremen | 02:45 | 28/10/2026 [Wildgames]
+#EXTVLCOPT:http-referrer=https://matchora.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchora.to
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
+#EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1920843%2Findex.m3u8%3Ft%3DMTkyMDg0M3wxNzkzMDkxNDc1fHx8fDBhYTE5MjJk.xXJIGwbzvk-lWAC5ChKTinCc9q7fC7Fdfkgv9b2WSWU&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+
+#EXTINF:-1 tvg-name="Borussia Mönchengladbach vs Karlsruher SC | 02:45 | 28/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",Borussia Mönchengladbach vs Karlsruher SC | 02:45 | 28/10/2026 [Wildgames]
+#EXTVLCOPT:http-referrer=https://matchora.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchora.to
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
+#EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1917426%2Findex.m3u8%3Ft%3DMTkxNzQyNnwxNzkzMDkxNTk5fHx8fDBhYTE5MjJk.vF3YdKoDsqL50AekcCIY5ettdz2qiLM19s_A53GfeCs&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+
+#EXTINF:-1 tvg-name="FC Cologne vs 1. FC Union Berlin | 02:45 | 28/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",FC Cologne vs 1. FC Union Berlin | 02:45 | 28/10/2026 [Wildgames]
+#EXTVLCOPT:http-referrer=https://matchora.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchora.to
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
+#EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1964139%2Findex.m3u8%3Ft%3DMTk2NDEzOXwxNzkzMDkxNzg3fHx8fDBhYTE5MjJk.l6jiusFsiLCcqnbabxNGQZ8aYB-8ByxGWCsvXzSY14k&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+
+#EXTINF:-1 tvg-name="SV Elversberg vs SV Darmstadt 98 | 02:45 | 28/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",SV Elversberg vs SV Darmstadt 98 | 02:45 | 28/10/2026 [Wildgames]
+#EXTVLCOPT:http-referrer=https://matchora.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchora.to
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
+#EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1964137%2Findex.m3u8%3Ft%3DMTk2NDEzN3wxNzkzMDkxOTU0fHx8fDBhYTE5MjJk.Hc_SuOTXr6TW_p3i4AIYy_pCz4feAEiCTC3zhSWOYiM&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
