@@ -1,7 +1,7 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-27 09:05 UTC
-# streams  : 7
+# generated: 2026-10-27 15:43 UTC
+# streams  : 16
 
 #EXTINF:-1 tvg-name="Rot-Weiss Essen vs RB Leipzig | 00:00 | 28/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",Rot-Weiss Essen vs RB Leipzig | 00:00 | 28/10/2026 [Wildgames]
 #EXTVLCOPT:http-referrer=https://matchora.to/
@@ -9,7 +9,7 @@
 #EXTVLCOPT:http-origin=https://matchora.to
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
 #EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1964140%2Findex.m3u8%3Ft%3DMTk2NDE0MHwxNzkzMDg5NTUxfHx8fDBhYTE5MjJk.oDNm2VJltdoNoTsm_Cr9I-XG4Lexq9Rgxoev8GozrYw&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1964140%2Findex.m3u8%3Ft%3DMTk2NDE0MHwxNzkzMTEzMzc3fHx8fDIwY2FlYjhm.5xdt0YG60fcv12IzGs4PMITEgVBskSA7txWj_23HQWw&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
 
 #EXTINF:-1 tvg-name="SG Sonnenhof Großaspach vs FC Augsburg | 00:00 | 28/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",SG Sonnenhof Großaspach vs FC Augsburg | 00:00 | 28/10/2026 [Wildgames]
 #EXTVLCOPT:http-referrer=https://matchora.to/
@@ -17,7 +17,16 @@ https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2F
 #EXTVLCOPT:http-origin=https://matchora.to
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
 #EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1964137%2Findex.m3u8%3Ft%3DMTk2NDEzN3wxNzkzMDg5Njk1fHx8fDBhYTE5MjJk.SH3IWy99pOVP4Rur6TMLTKe1KMgisS52igtRvi5Ru78&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1964137%2Findex.m3u8%3Ft%3DMTk2NDEzN3wxNzkzMTEzNTI1fHx8fDIwY2FlYjhm.Z-0k0Xv3pqdkD-8Ns5Chzx0vOMkKHbCzCNJbt13N0I0&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+
+#EXTINF:-1 tvg-name="SG Sonnenhof Großaspach vs FC Augsburg | 00:00 | 28/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",SG Sonnenhof Großaspach vs FC Augsburg | 00:00 | 28/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=7911414351941848
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=7911414351941848
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=7911414351941848
+https://instreams.live/live3/streamhd30/index.m3u8?st=K4tINA9e4C42cft2TmKHVQ&e=1793123756
 
 #EXTINF:-1 tvg-name="VfL Bochum vs Mainz | 00:00 | 28/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",VfL Bochum vs Mainz | 00:00 | 28/10/2026 [Wildgames]
 #EXTVLCOPT:http-referrer=https://matchora.to/
@@ -25,7 +34,52 @@ https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2F
 #EXTVLCOPT:http-origin=https://matchora.to
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
 #EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1917537%2Findex.m3u8%3Ft%3DMTkxNzUzN3wxNzkzMDg5ODQ4fHx8fDBhYTE5MjJk.lOMOcvYO2fHBLObhK4WSb03DX2edzoTsWzaTa732TYk&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1917537%2Findex.m3u8%3Ft%3DMTkxNzUzN3wxNzkzMTEzNjc2fHx8fDIwY2FlYjhm.4stJwPFthehfnUthIH19XGWuxFikc92hdVkdP_jOmBo&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+
+#EXTINF:-1 tvg-name="VfL Bochum vs Mainz | 00:00 | 28/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",VfL Bochum vs Mainz | 00:00 | 28/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=4401804174025948
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=4401804174025948
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=4401804174025948
+https://instreams.pro/live3/streamhd29/index.m3u8?st=bjylh6Q5qr-XsPLp0oatKQ&e=1793123912
+
+#EXTINF:-1 tvg-name="Sassuolo vs Lazio | 00:30 | 28/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Sassuolo vs Lazio | 00:30 | 28/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=2155600488422983
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=2155600488422983
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=2155600488422983
+https://gate4.st/live3/streamhd21/index.m3u8?st=I_jAnxAG23CC-Snom8CiYg&e=1793124214
+
+#EXTINF:-1 tvg-name="AS Roma vs Cagliari | 02:45 | 28/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",AS Roma vs Cagliari | 02:45 | 28/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=1220805223081155
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=1220805223081155
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=1220805223081155
+https://instreams.xyz/live3/streamhd22/index.m3u8?st=74JHtZF3lc4QJVJBKAYAwQ&e=1793124894
+
+#EXTINF:-1 tvg-name="Torino vs Como | 02:45 | 28/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Torino vs Como | 02:45 | 28/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=5467028014406991
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=5467028014406991
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=5467028014406991
+https://instreams.xyz/live3/streamhd21/index.m3u8?st=gx7oZ5mZWejgSKwfaTw2Xw&e=1793125188
+
+#EXTINF:-1 tvg-name="Bradford City vs Peterborough United | 02:45 | 28/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="English Carabao Cup",Bradford City vs Peterborough United | 02:45 | 28/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=5525299130225689
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=5525299130225689
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=5525299130225689
+https://instreams.pro/live3/streamhd23/index.m3u8?st=snrkbfGkneBR5K5jwdzHwA&e=1793125400
 
 #EXTINF:-1 tvg-name="Borussia Dortmund vs Werder Bremen | 02:45 | 28/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",Borussia Dortmund vs Werder Bremen | 02:45 | 28/10/2026 [Wildgames]
 #EXTVLCOPT:http-referrer=https://matchora.to/
@@ -33,7 +87,7 @@ https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2F
 #EXTVLCOPT:http-origin=https://matchora.to
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
 #EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1920843%2Findex.m3u8%3Ft%3DMTkyMDg0M3wxNzkzMDkxNDc1fHx8fDBhYTE5MjJk.xXJIGwbzvk-lWAC5ChKTinCc9q7fC7Fdfkgv9b2WSWU&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1928001%2Findex.m3u8%3Ft%3DMTkyODAwMXwxNzkzMTE1MzQyfHx8fDIwY2FlYjhm.cDvOQt_c47AA-rJ2_-fc9d48jphniTEf7vgI1jsMXJQ&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
 
 #EXTINF:-1 tvg-name="Borussia Mönchengladbach vs Karlsruher SC | 02:45 | 28/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",Borussia Mönchengladbach vs Karlsruher SC | 02:45 | 28/10/2026 [Wildgames]
 #EXTVLCOPT:http-referrer=https://matchora.to/
@@ -41,7 +95,16 @@ https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2F
 #EXTVLCOPT:http-origin=https://matchora.to
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
 #EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1917426%2Findex.m3u8%3Ft%3DMTkxNzQyNnwxNzkzMDkxNTk5fHx8fDBhYTE5MjJk.vF3YdKoDsqL50AekcCIY5ettdz2qiLM19s_A53GfeCs&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1917426%2Findex.m3u8%3Ft%3DMTkxNzQyNnwxNzkzMTE1NTM3fHx8fDIwY2FlYjhm.NLbzoFhaMMtDoZ3JLh30GCyR9ZAGoUGA26m8gY2ptIU&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+
+#EXTINF:-1 tvg-name="Borussia Mönchengladbach vs Karlsruher SC | 02:45 | 28/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",Borussia Mönchengladbach vs Karlsruher SC | 02:45 | 28/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=1750548638431587
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=1750548638431587
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=1750548638431587
+https://instreams.pro/live3/streamhd29/index.m3u8?st=Kzyx6i9_d6De1fY441Qqrg&e=1793125819
 
 #EXTINF:-1 tvg-name="FC Cologne vs 1. FC Union Berlin | 02:45 | 28/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",FC Cologne vs 1. FC Union Berlin | 02:45 | 28/10/2026 [Wildgames]
 #EXTVLCOPT:http-referrer=https://matchora.to/
@@ -49,7 +112,7 @@ https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2F
 #EXTVLCOPT:http-origin=https://matchora.to
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
 #EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1964139%2Findex.m3u8%3Ft%3DMTk2NDEzOXwxNzkzMDkxNzg3fHx8fDBhYTE5MjJk.l6jiusFsiLCcqnbabxNGQZ8aYB-8ByxGWCsvXzSY14k&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1964139%2Findex.m3u8%3Ft%3DMTk2NDEzOXwxNzkzMTE1NzM0fHx8fDIwY2FlYjhm.G9M5J79sU9qJGTLlFW-P4GZgRzlVyJ8uHyzI_MADpdc&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
 
 #EXTINF:-1 tvg-name="SV Elversberg vs SV Darmstadt 98 | 02:45 | 28/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",SV Elversberg vs SV Darmstadt 98 | 02:45 | 28/10/2026 [Wildgames]
 #EXTVLCOPT:http-referrer=https://matchora.to/
@@ -57,4 +120,22 @@ https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2F
 #EXTVLCOPT:http-origin=https://matchora.to
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchora.to/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchora.to
 #EXTHTTP:Referer: https://matchora.to/|Origin: https://matchora.to
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1964137%2Findex.m3u8%3Ft%3DMTk2NDEzN3wxNzkzMDkxOTU0fHx8fDBhYTE5MjJk.Hc_SuOTXr6TW_p3i4AIYy_pCz4feAEiCTC3zhSWOYiM&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fe.veziha.cyou%2Fhls%2F1964137%2Findex.m3u8%3Ft%3DMTk2NDEzN3wxNzkzMTE1ODcxfHx8fDIwY2FlYjhm.XzutkEzJuAAUUflko97NjSAtUkcqo_sZz7ptaz9exBs&ref=https%3A%2F%2Fmatchora.to%2F&origin=https%3A%2F%2Fmatchora.to&ua=Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%3B%20rv%3A156.0%29%20Gecko%2F20100101%20Firefox%2F156.0
+
+#EXTINF:-1 tvg-name="SV Elversberg vs SV Darmstadt 98 | 02:45 | 28/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",SV Elversberg vs SV Darmstadt 98 | 02:45 | 28/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=5205551096935665
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=5205551096935665
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=5205551096935665
+https://instreams.pro/live3/streamhd30/index.m3u8?st=uXU4nzFOY9ilCuNcygJ0bw&e=1793126092
+
+#EXTINF:-1 tvg-name="Fleetwood Town vs Arsenal | 03:00 | 28/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="English Carabao Cup",Fleetwood Town vs Arsenal | 03:00 | 28/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=2956562110656379
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=2956562110656379
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=2956562110656379
+https://instreams.pro/live3/streamhd24/index.m3u8?st=DC2chEZkW2YhvNU1mYQ_0A&e=1793126338
