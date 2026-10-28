@@ -1,11 +1,103 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-28 02:31 UTC
-# streams  : 1
+# generated: 2026-10-28 10:14 UTC
+# streams  : 11
 
-#EXTINF:-1 tvg-name="Missouri State vs Sam Houston State [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Missouri State vs Sam Houston State [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58747?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58747?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58747?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58747%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58747%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-name="Manchester City vs Brighton & Hove Albion | 02:30 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="English Carabao Cup",Manchester City vs Brighton & Hove Albion | 02:30 | 29/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=8138237796723423
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=8138237796723423
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=8138237796723423
+https://gate4.st/live3/streamhd21/index.m3u8?st=i6zRKiFZZok2ysK4-2wuYQ&e=1793190745
+
+#EXTINF:-1 tvg-name="Genoa vs Juventus | 02:45 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Genoa vs Juventus | 02:45 | 29/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=6292555956615366
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=6292555956615366
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=6292555956615366
+https://instreams.xyz/live3/streamhd27/index.m3u8?st=yjZiDqghwqBIv8obQNcTaQ&e=1793190886
+
+#EXTINF:-1 tvg-name="Monza vs Napoli | 02:45 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Monza vs Napoli | 02:45 | 29/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=8875910049336798
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=8875910049336798
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=8875910049336798
+https://gate4.st/live3/streamhd26/index.m3u8?st=rXGQT5gIVtI-k_NVxBnG4g&e=1793190997
+
+#EXTINF:-1 tvg-name="AFC Bournemouth vs Aston Villa | 02:45 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="English Carabao Cup",AFC Bournemouth vs Aston Villa | 02:45 | 29/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=7745075705820485
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=7745075705820485
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=7745075705820485
+https://gate4.st/live3/streamhd29/index.m3u8?st=sO8yKyFojdsD8NG--_UCzw&e=1793191151
+
+#EXTINF:-1 tvg-name="Fulham vs Crystal Palace | 02:45 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="English Carabao Cup",Fulham vs Crystal Palace | 02:45 | 29/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=5500092434922936
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=5500092434922936
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=5500092434922936
+https://gate4.st/live3/streamhd24/index.m3u8?st=wZEw9YJjHLBl4ZAE8jKG2w&e=1793191302
+
+#EXTINF:-1 tvg-name="Sunderland vs Brentford | 02:45 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="English Carabao Cup",Sunderland vs Brentford | 02:45 | 29/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=5850835364341104
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=5850835364341104
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=5850835364341104
+https://gate4.st/live3/streamhd22/index.m3u8?st=LByjpAuuaNG_UGDGMdnusw&e=1793191464
+
+#EXTINF:-1 tvg-name="Bayer Leverkusen vs 1. FC Nürnberg | 02:45 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",Bayer Leverkusen vs 1. FC Nürnberg | 02:45 | 29/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=1335435498928639
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=1335435498928639
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=1335435498928639
+https://gate4.st/live3/streamhd28/index.m3u8?st=fSWv-cT1VbRnf7KtAcUQYQ&e=1793191539
+
+#EXTINF:-1 tvg-name="Bayern Munich vs 1. FC Magdeburg | 02:45 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",Bayern Munich vs 1. FC Magdeburg | 02:45 | 29/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=6660208733198079
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=6660208733198079
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=6660208733198079
+https://instreams.live/live3/streamhd30/index.m3u8?st=G1PzQX5D-leIB7maONrVPw&e=1793191613
+
+#EXTINF:-1 tvg-name="Inter Miami CF vs FC Cincinnati | 06:30 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Inter Miami CF vs FC Cincinnati | 06:30 | 29/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=1239424808679573
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=1239424808679573
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=1239424808679573
+https://instreams.xyz/live3/streamhd26/index.m3u8?st=lwmu9OCbabRerrfUZv4i3w&e=1793192321
+
+#EXTINF:-1 tvg-name="Toronto FC vs D.C. United | 06:30 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Toronto FC vs D.C. United | 06:30 | 29/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=5738447610790428
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=5738447610790428
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=5738447610790428
+https://instreams.xyz/live3/streamhd27/index.m3u8?st=ktzGelZPjml4ss2x-whBhA&e=1793192543
+
+#EXTINF:-1 tvg-name="Vancouver Whitecaps vs San Diego FC | 09:30 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Vancouver Whitecaps vs San Diego FC | 09:30 | 29/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=7340354073524193
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=7340354073524193
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=7340354073524193
+https://instreams.live/live3/streamhd27/index.m3u8?st=mMVEB7vqsq1y4cPWe5g4pQ&e=1793193234
