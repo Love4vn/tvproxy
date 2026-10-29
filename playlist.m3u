@@ -1,103 +1,224 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-28 10:14 UTC
-# streams  : 11
+# generated: 2026-10-29 01:46 UTC
+# streams  : 29
 
-#EXTINF:-1 tvg-name="Manchester City vs Brighton & Hove Albion | 02:30 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="English Carabao Cup",Manchester City vs Brighton & Hove Albion | 02:30 | 29/10/2026 [Shd247]
+#EXTINF:-1 tvg-name="Chicago Fire FC vs Orlando City SC | LIVE | 29/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Chicago Fire FC vs Orlando City SC | LIVE | 29/10/2026 [Buff-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=eed330e6c07b8be08b20dbccdba8d599%2Findex.m3u8&e=1793238204&sig=_uMLBg4e0X-EXx0amHuNSJlgwPq2xAwPodqdq9bTr3U&v=1793236404-7288
+
+#EXTINF:-1 tvg-name="FC Dallas vs Columbus Crew | LIVE | 29/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",FC Dallas vs Columbus Crew | LIVE | 29/10/2026 [Buff-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=d2cf4a545b7a79d529e7139a668540f7%2Findex.m3u8&e=1793238357&sig=BJxsPwjh6UuaZtuT-pl9NklssQUf0YjXZm-wUfoi9_4&v=1793236557-7966
+
+#EXTINF:-1 tvg-name="Minnesota United FC vs Sporting Kansas City | LIVE | 29/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Minnesota United FC vs Sporting Kansas City | LIVE | 29/10/2026 [Buff-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=5f58ccc896c81d5fefdf94d70070c622%2Findex.m3u8&e=1793238510&sig=0E79T95SfbxrSdCohkvAQ6N6Gg332eqz8J5pH2587aM&v=1793236710-3056
+
+#EXTINF:-1 tvg-name="Nashville SC vs Philadelphia Union | LIVE | 29/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Nashville SC vs Philadelphia Union | LIVE | 29/10/2026 [Buff-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=489eac40c009279a37f4adf6e28d8efb%2Findex.m3u8&e=1793238663&sig=Fjam5D-JdMsL7aB4U_MCLDD88VHLCT_d12XxoMAiG_k&v=1793236863-4219
+
+#EXTINF:-1 tvg-name="St. Louis City SC vs Portland Timbers | LIVE | 29/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",St. Louis City SC vs Portland Timbers | LIVE | 29/10/2026 [Buff-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=47ed0734107c4894ef1fbaf6de5554d8%2Findex.m3u8&e=1793238816&sig=CCi3ccgLfr922fVo90TG3rR35Bzc8phwFha_45y59QM&v=1793237016-3196
+
+#EXTINF:-1 tvg-name="Charlotte FC vs CF Montréal | LIVE | 29/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Charlotte FC vs CF Montréal | LIVE | 29/10/2026 [Buff-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=75711b4c58321ffe37e598d58e779e2b%2Findex.m3u8&e=1793238991&sig=4TDMQbyQ-IGdxvWfez2naBFSMOVP3Baj0DrLmOnIuNM&v=1793237191-6407
+
+#EXTINF:-1 tvg-name="Inter Miami CF vs FC Cincinnati | LIVE | 29/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Inter Miami CF vs FC Cincinnati | LIVE | 29/10/2026 [Powerstream]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=5825d9248e99dddf41b59f26c2e66424%2Findex.m3u8&e=1793239154&sig=nVwKOaI_mQhtKmuguS3OavQaqSAba4eeaF6zpEWjfXA&v=1793237354-4459
+
+#EXTINF:-1 tvg-name="Inter Miami CF vs FC Cincinnati | LIVE | 29/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Inter Miami CF vs FC Cincinnati | LIVE | 29/10/2026 [Buff-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=5825d9248e99dddf41b59f26c2e66424%2Findex.m3u8&e=1793239187&sig=TAuVW8iwu6HZaekQvepQE2IIngxpvf9dzVpFC7MTQxs&v=1793237387-8952
+
+#EXTINF:-1 tvg-name="Toronto FC vs D.C. United | LIVE | 29/10/2026 [Segatv] #2" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Toronto FC vs D.C. United | LIVE | 29/10/2026 [Segatv] #2
+#EXTVLCOPT:http-referrer=https://embed.sportspatrika.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://embed.sportspatrika.com
+#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6IlNib01BbUtoR1VTN21nb0FBVlRMdmc9PSIsInZhbHVlIjoiMDhpTHFlZGViTGNGbU95RTg1aW0vQ3FmTk5Yb1ZkNDFQT29PU3lwVllaTFB2NTRTTDQ4a21oSFhCR1puOWduU0R4UGlYNjRNTkNYbmNmUmg5cjZ3U09Lb3ozL1hjazNyY09JZjRpeHRxR21vbWozQUxHcnYzTndudG5DVU5sd1EiLCJtYWMiOiI0ZWFhN2I2ZWYxNDhlMDAxNmI5MWRiZTdkOTY5N2M4N2MwNGY0NTliMDRhZTM5ZDU3YzdkNGUxNWMyYTQ3ODg3IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InpRVFAvalZybzJhOE9veUdBUm1udGc9PSIsInZhbHVlIjoiRllGRm5zNEh0VVdFV09TT0N4VGlPRnlvSE96eitIT2FtVDZnSHFvcGsxUWVQTW9CbS8ydHp2ZDlHSStPOVpxVDRBNC94VjNidHJSSUFmRDI0d3lQU1kvNkdUMVBRNHJ4MU4xeXBuVzBuR1ozTzEzUHptZUwvVVNsNS9RWmRSOUUiLCJtYWMiOiI5YjcxMmI4OTFlYWVlNGM3YThmMjM2MmE3YjQxNDY1ODQxNjY4ZTIzMWYxZjMzNDIzYmIxYzk3MDFkYTFjOTc3IiwidGFnIjoiIn0%3D
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.sportspatrika.com/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://embed.sportspatrika.com&Cookie=XSRF-TOKEN=eyJpdiI6IlNib01BbUtoR1VTN21nb0FBVlRMdmc9PSIsInZhbHVlIjoiMDhpTHFlZGViTGNGbU95RTg1aW0vQ3FmTk5Yb1ZkNDFQT29PU3lwVllaTFB2NTRTTDQ4a21oSFhCR1puOWduU0R4UGlYNjRNTkNYbmNmUmg5cjZ3U09Lb3ozL1hjazNyY09JZjRpeHRxR21vbWozQUxHcnYzTndudG5DVU5sd1EiLCJtYWMiOiI0ZWFhN2I2ZWYxNDhlMDAxNmI5MWRiZTdkOTY5N2M4N2MwNGY0NTliMDRhZTM5ZDU3YzdkNGUxNWMyYTQ3ODg3IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InpRVFAvalZybzJhOE9veUdBUm1udGc9PSIsInZhbHVlIjoiRllGRm5zNEh0VVdFV09TT0N4VGlPRnlvSE96eitIT2FtVDZnSHFvcGsxUWVQTW9CbS8ydHp2ZDlHSStPOVpxVDRBNC94VjNidHJSSUFmRDI0d3lQU1kvNkdUMVBRNHJ4MU4xeXBuVzBuR1ozTzEzUHptZUwvVVNsNS9RWmRSOUUiLCJtYWMiOiI5YjcxMmI4OTFlYWVlNGM3YThmMjM2MmE3YjQxNDY1ODQxNjY4ZTIzMWYxZjMzNDIzYmIxYzk3MDFkYTFjOTc3IiwidGFnIjoiIn0%3D
+#EXTHTTP:Referer: https://embed.sportspatrika.com/|Origin: https://embed.sportspatrika.com|Cookie: XSRF-TOKEN=eyJpdiI6IlNib01BbUtoR1VTN21nb0FBVlRMdmc9PSIsInZhbHVlIjoiMDhpTHFlZGViTGNGbU95RTg1aW0vQ3FmTk5Yb1ZkNDFQT29PU3lwVllaTFB2NTRTTDQ4a21oSFhCR1puOWduU0R4UGlYNjRNTkNYbmNmUmg5cjZ3U09Lb3ozL1hjazNyY09JZjRpeHRxR21vbWozQUxHcnYzTndudG5DVU5sd1EiLCJtYWMiOiI0ZWFhN2I2ZWYxNDhlMDAxNmI5MWRiZTdkOTY5N2M4N2MwNGY0NTliMDRhZTM5ZDU3YzdkNGUxNWMyYTQ3ODg3IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InpRVFAvalZybzJhOE9veUdBUm1udGc9PSIsInZhbHVlIjoiRllGRm5zNEh0VVdFV09TT0N4VGlPRnlvSE96eitIT2FtVDZnSHFvcGsxUWVQTW9CbS8ydHp2ZDlHSStPOVpxVDRBNC94VjNidHJSSUFmRDI0d3lQU1kvNkdUMVBRNHJ4MU4xeXBuVzBuR1ozTzEzUHptZUwvVVNsNS9RWmRSOUUiLCJtYWMiOiI5YjcxMmI4OTFlYWVlNGM3YThmMjM2MmE3YjQxNDY1ODQxNjY4ZTIzMWYxZjMzNDIzYmIxYzk3MDFkYTFjOTc3IiwidGFnIjoiIn0%3D
+https://streamed.streamgate.link/q8SzkYVmsS/es5/index.m3u8
+
+#EXTINF:-1 tvg-name="Toronto FC vs D.C. United | LIVE | 29/10/2026 [Suksukstreams] #2" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Toronto FC vs D.C. United | LIVE | 29/10/2026 [Suksukstreams] #2
+#EXTVLCOPT:http-referrer=https://embed.sportspatrika.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://embed.sportspatrika.com
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.sportspatrika.com/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://embed.sportspatrika.com
+#EXTHTTP:Referer: https://embed.sportspatrika.com/|Origin: https://embed.sportspatrika.com
+https://streamed.streamgate.link/ERfJUGKj02/es5/index.m3u8
+
+#EXTINF:-1 tvg-name="Toronto FC vs D.C. United | LIVE | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Toronto FC vs D.C. United | LIVE | 29/10/2026 [Shd247]
 #EXTVLCOPT:http-referrer=https://xstream.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
 #EXTVLCOPT:http-origin=https://xstream.st
-#EXTVLCOPT:http-cookie=session_id=8138237796723423
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=8138237796723423
-#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=8138237796723423
-https://gate4.st/live3/streamhd21/index.m3u8?st=i6zRKiFZZok2ysK4-2wuYQ&e=1793190745
+#EXTVLCOPT:http-cookie=session_id=9426946993998300
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=9426946993998300
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=9426946993998300
+https://instreams.live/live3/streamhd27/index.m3u8?st=PJlm-vFLvfW5_c1SeCWPHQ&e=1793248563
 
-#EXTINF:-1 tvg-name="Genoa vs Juventus | 02:45 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Genoa vs Juventus | 02:45 | 29/10/2026 [Shd247]
-#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTINF:-1 tvg-name="Toronto FC vs D.C. United | LIVE | 29/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Toronto FC vs D.C. United | LIVE | 29/10/2026 [Buff-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://xstream.st
-#EXTVLCOPT:http-cookie=session_id=6292555956615366
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=6292555956615366
-#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=6292555956615366
-https://instreams.xyz/live3/streamhd27/index.m3u8?st=yjZiDqghwqBIv8obQNcTaQ&e=1793190886
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=f6a214cf886d35a5591087d6a8ca8d58%2Findex.m3u8&e=1793239589&sig=NVHZ7sydgr7r3M5AMPD2Er5ux2-CIMwGXw1sc3XZ7QQ&v=1793237789-5629
 
-#EXTINF:-1 tvg-name="Monza vs Napoli | 02:45 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Monza vs Napoli | 02:45 | 29/10/2026 [Shd247]
-#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTINF:-1 tvg-name="Toronto FC vs D.C. United | LIVE | 29/10/2026 [S2watch] #2" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Toronto FC vs D.C. United | LIVE | 29/10/2026 [S2watch] #2
+#EXTVLCOPT:http-referrer=https://embed.sportspatrika.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://xstream.st
-#EXTVLCOPT:http-cookie=session_id=8875910049336798
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=8875910049336798
-#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=8875910049336798
-https://gate4.st/live3/streamhd26/index.m3u8?st=rXGQT5gIVtI-k_NVxBnG4g&e=1793190997
-
-#EXTINF:-1 tvg-name="AFC Bournemouth vs Aston Villa | 02:45 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="English Carabao Cup",AFC Bournemouth vs Aston Villa | 02:45 | 29/10/2026 [Shd247]
-#EXTVLCOPT:http-referrer=https://xstream.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://xstream.st
-#EXTVLCOPT:http-cookie=session_id=7745075705820485
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=7745075705820485
-#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=7745075705820485
-https://gate4.st/live3/streamhd29/index.m3u8?st=sO8yKyFojdsD8NG--_UCzw&e=1793191151
-
-#EXTINF:-1 tvg-name="Fulham vs Crystal Palace | 02:45 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="English Carabao Cup",Fulham vs Crystal Palace | 02:45 | 29/10/2026 [Shd247]
-#EXTVLCOPT:http-referrer=https://xstream.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://xstream.st
-#EXTVLCOPT:http-cookie=session_id=5500092434922936
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=5500092434922936
-#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=5500092434922936
-https://gate4.st/live3/streamhd24/index.m3u8?st=wZEw9YJjHLBl4ZAE8jKG2w&e=1793191302
-
-#EXTINF:-1 tvg-name="Sunderland vs Brentford | 02:45 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="English Carabao Cup",Sunderland vs Brentford | 02:45 | 29/10/2026 [Shd247]
-#EXTVLCOPT:http-referrer=https://xstream.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://xstream.st
-#EXTVLCOPT:http-cookie=session_id=5850835364341104
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=5850835364341104
-#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=5850835364341104
-https://gate4.st/live3/streamhd22/index.m3u8?st=LByjpAuuaNG_UGDGMdnusw&e=1793191464
-
-#EXTINF:-1 tvg-name="Bayer Leverkusen vs 1. FC Nürnberg | 02:45 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",Bayer Leverkusen vs 1. FC Nürnberg | 02:45 | 29/10/2026 [Shd247]
-#EXTVLCOPT:http-referrer=https://xstream.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://xstream.st
-#EXTVLCOPT:http-cookie=session_id=1335435498928639
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=1335435498928639
-#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=1335435498928639
-https://gate4.st/live3/streamhd28/index.m3u8?st=fSWv-cT1VbRnf7KtAcUQYQ&e=1793191539
-
-#EXTINF:-1 tvg-name="Bayern Munich vs 1. FC Magdeburg | 02:45 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="DFB-Pokal",Bayern Munich vs 1. FC Magdeburg | 02:45 | 29/10/2026 [Shd247]
-#EXTVLCOPT:http-referrer=https://xstream.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://xstream.st
-#EXTVLCOPT:http-cookie=session_id=6660208733198079
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=6660208733198079
-#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=6660208733198079
-https://instreams.live/live3/streamhd30/index.m3u8?st=G1PzQX5D-leIB7maONrVPw&e=1793191613
-
-#EXTINF:-1 tvg-name="Inter Miami CF vs FC Cincinnati | 06:30 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Inter Miami CF vs FC Cincinnati | 06:30 | 29/10/2026 [Shd247]
-#EXTVLCOPT:http-referrer=https://xstream.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://xstream.st
-#EXTVLCOPT:http-cookie=session_id=1239424808679573
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=1239424808679573
-#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=1239424808679573
-https://instreams.xyz/live3/streamhd26/index.m3u8?st=lwmu9OCbabRerrfUZv4i3w&e=1793192321
-
-#EXTINF:-1 tvg-name="Toronto FC vs D.C. United | 06:30 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Toronto FC vs D.C. United | 06:30 | 29/10/2026 [Shd247]
-#EXTVLCOPT:http-referrer=https://xstream.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://xstream.st
-#EXTVLCOPT:http-cookie=session_id=5738447610790428
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=5738447610790428
-#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=5738447610790428
-https://instreams.xyz/live3/streamhd27/index.m3u8?st=ktzGelZPjml4ss2x-whBhA&e=1793192543
+#EXTVLCOPT:http-origin=https://embed.sportspatrika.com
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.sportspatrika.com/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://embed.sportspatrika.com
+#EXTHTTP:Referer: https://embed.sportspatrika.com/|Origin: https://embed.sportspatrika.com
+https://streamed.streamgate.link/uc4mCbawv6/es5/index.m3u8
 
 #EXTINF:-1 tvg-name="Vancouver Whitecaps vs San Diego FC | 09:30 | 29/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Vancouver Whitecaps vs San Diego FC | 09:30 | 29/10/2026 [Shd247]
 #EXTVLCOPT:http-referrer=https://xstream.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
 #EXTVLCOPT:http-origin=https://xstream.st
-#EXTVLCOPT:http-cookie=session_id=7340354073524193
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=7340354073524193
-#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=7340354073524193
-https://instreams.live/live3/streamhd27/index.m3u8?st=mMVEB7vqsq1y4cPWe5g4pQ&e=1793193234
+#EXTVLCOPT:http-cookie=session_id=5581894181688814
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=5581894181688814
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=5581894181688814
+https://instreams.pro/live3/streamhd27/index.m3u8?st=lrRTSQPBL2e0j5DjYutJ6A&e=1793249027
+
+#EXTINF:-1 tvg-name="Atlanta United FC vs New York City FC | 06:30 | 29/10/2026 [STRMFREE]" tvg-logo="https://streamfree.top/thumbnails/soccer_atlanta-united-fc-vs-new-york-city-fc_Atlanta_United_FC_vs_New_York_" tvg-id="Soccer.Dummy.us" group-title="MLS",Atlanta United FC vs New York City FC | 06:30 | 29/10/2026 [STRMFREE]
+#EXTVLCOPT:http-referrer=https://streamfree.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streamfree.top&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://streamfree.top
+https://streamfree.top/live-cdn/atlanta-united-fc-vs-new-york-city-fc1080p/index.m3u8?_e=1793267137&_n=9e94d08d0eb48887&_t=oY521wzPvQh8YURzF0350w
+
+#EXTINF:-1 tvg-name="Real Salt Lake vs Austin FC | 07:30 | 29/10/2026 [STRMFREE]" tvg-logo="https://streamfree.top/thumbnails/soccer_real-salt-lake-vs-austin-fc_Real_Salt_Lake_vs_Austin_FC" tvg-id="Soccer.Dummy.us" group-title="MLS",Real Salt Lake vs Austin FC | 07:30 | 29/10/2026 [STRMFREE]
+#EXTVLCOPT:http-referrer=https://streamfree.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streamfree.top&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://streamfree.top
+https://streamfree.top/live-cdn/real-salt-lake-vs-austin-fc1080p/index.m3u8?_e=1793267138&_n=9a907ded669c9407&_t=_vrQA63EJ7p5_YJPT1NqYw
+
+#EXTINF:-1 tvg-name="Orlando City SC vs Chicago Fire FC | 07:30 | 29/10/2026 [STRMFREE]" tvg-logo="https://streamfree.top/thumbnails/soccer_orlando-city-sc-vs-chicago-fire-fc_Orlando_City_SC_vs_Chicago_Fir" tvg-id="Soccer.Dummy.us" group-title="MLS",Orlando City SC vs Chicago Fire FC | 07:30 | 29/10/2026 [STRMFREE]
+#EXTVLCOPT:http-referrer=https://streamfree.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streamfree.top&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://streamfree.top
+https://streamfree.top/live-cdn/orlando-city-sc-vs-chicago-fire-fc1080p/index.m3u8?_e=1793267138&_n=9ae5dc963a0e39bb&_t=PtSxLh2o9lXlrgOlDXDMIA
+
+#EXTINF:-1 tvg-name="Columbus Crew vs FC Dallas | 07:30 | 29/10/2026 [STRMFREE]" tvg-logo="https://streamfree.top/thumbnails/soccer_columbus-crew-vs-fc-dallas_Columbus_Crew_vs_FC_Dallas" tvg-id="Soccer.Dummy.us" group-title="MLS",Columbus Crew vs FC Dallas | 07:30 | 29/10/2026 [STRMFREE]
+#EXTVLCOPT:http-referrer=https://streamfree.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streamfree.top&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://streamfree.top
+https://streamfree.top/live-cdn/columbus-crew-vs-fc-dallas1080p/index.m3u8?_e=1793267138&_n=90b8f18a126c27ee&_t=ZHfc1Y9VhoqQN80zFb4JHw
+
+#EXTINF:-1 tvg-name="Sporting Kansas City vs Minnesota United FC | 07:30 | 29/10/2026 [STRMFREE]" tvg-logo="https://streamfree.top/thumbnails/soccer_sporting-kansas-city-vs-minnesota-united-fc_Sporting_Kansas_City_vs_Minnes" tvg-id="Soccer.Dummy.us" group-title="MLS",Sporting Kansas City vs Minnesota United FC | 07:30 | 29/10/2026 [STRMFREE]
+#EXTVLCOPT:http-referrer=https://streamfree.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streamfree.top&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://streamfree.top
+https://streamfree.top/live-cdn/sporting-kansas-city-vs-minnesota-united-fc1080p/index.m3u8?_e=1793267139&_n=394c8a4b9f230e0c&_t=V6xuTbtqlPuep7BjocO4qA
+
+#EXTINF:-1 tvg-name="Philadelphia Union vs Nashville SC | 07:30 | 29/10/2026 [STRMFREE]" tvg-logo="https://streamfree.top/thumbnails/soccer_philadelphia-union-vs-nashville-sc_Philadelphia_Union_vs_Nashvill" tvg-id="Soccer.Dummy.us" group-title="MLS",Philadelphia Union vs Nashville SC | 07:30 | 29/10/2026 [STRMFREE]
+#EXTVLCOPT:http-referrer=https://streamfree.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streamfree.top&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://streamfree.top
+https://streamfree.top/live-origin/philadelphia-union-vs-nashville-sc1080p/index.m3u8?_e=1793267139&_n=25b80510ed759818&_t=dQWjndJq5CBGusPdUukVMQ
+
+#EXTINF:-1 tvg-name="Portland Timbers vs St. Louis CITY SC | 07:30 | 29/10/2026 [STRMFREE]" tvg-logo="https://streamfree.top/thumbnails/soccer_portland-timbers-vs-st-louis-city-sc_Portland_Timbers_vs_St_Louis_C" tvg-id="Soccer.Dummy.us" group-title="MLS",Portland Timbers vs St. Louis CITY SC | 07:30 | 29/10/2026 [STRMFREE]
+#EXTVLCOPT:http-referrer=https://streamfree.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streamfree.top&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://streamfree.top
+https://streamfree.top/live-cdn/portland-timbers-vs-st-louis-city-sc1080p/index.m3u8?_e=1793267139&_n=fdc1c2c0c2a5e496&_t=iHJIG2r7kwIk1rBHhbfWWA
+
+#EXTINF:-1 tvg-name="FC Dallas vs Columbus Crew [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="MLS",FC Dallas vs Columbus Crew [iSTRMEAST]
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58817?ad=111
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58817?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58817?ad=111
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58817%2Fload-playlist-multi&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58817%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-name="St.Louis City vs Portland Timbers [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="MLS",St.Louis City vs Portland Timbers [iSTRMEAST]
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58820?ad=111
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58820?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58820?ad=111
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58820%2Fload-playlist-multi&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58820%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-name="Nashville SC vs Philadelphia Union [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="MLS",Nashville SC vs Philadelphia Union [iSTRMEAST]
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58818?ad=111
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58818?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58818?ad=111
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58818%2Fload-playlist-multi&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58818%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-name="Minnesota United vs Sporting Kansas City [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="MLS",Minnesota United vs Sporting Kansas City [iSTRMEAST]
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58819?ad=111
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58819?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58819?ad=111
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58819%2Fload-playlist-multi&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58819%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-name="Chicago Fire vs Orlando City SC [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="MLS",Chicago Fire vs Orlando City SC [iSTRMEAST]
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58821?ad=111
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58821?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58821?ad=111
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58821%2Fload-playlist-multi&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58821%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-name="Austin FC vs Real Salt Lake [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="MLS",Austin FC vs Real Salt Lake [iSTRMEAST]
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58816?ad=111
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58816?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58816?ad=111
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58816%2Fload-playlist-multi&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58816%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-name="New Mexico St. vs Jacksonville State [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",New Mexico St. vs Jacksonville State [iSTRMEAST]
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58801?ad=111
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58801?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58801?ad=111
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58801%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58801%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-name="Middle Tennessee St. vs Kennesaw St. [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Middle Tennessee St. vs Kennesaw St. [iSTRMEAST]
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58789?ad=111
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58789?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58789?ad=111
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58789%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58789%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
