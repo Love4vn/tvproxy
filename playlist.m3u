@@ -1,58 +1,94 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-29 07:39 UTC
-# streams  : 6
+# generated: 2026-10-29 15:04 UTC
+# streams  : 10
+
+#EXTINF:-1 tvg-name="Frosinone vs Lecce | 00:30 | 30/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Frosinone vs Lecce | 00:30 | 30/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=7799772937950386
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=7799772937950386
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=7799772937950386
+https://instreams.live/live3/streamhd22/index.m3u8?st=FuwJ6tMQuakzgRO-RcOV4g&e=1793295700
 
 #EXTINF:-1 tvg-name="Al Nassr vs Al Kholood | 01:00 | 30/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="Saudi Pro League",Al Nassr vs Al Kholood | 01:00 | 30/10/2026 [Wildgames]
-#EXTVLCOPT:http-referrer=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/
+#EXTVLCOPT:http-referrer=https://24436dd5047c924c9cffde08c7561c3f.dynmeadow.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net
-#EXTVLCOPT:http-cookie=GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net&Cookie=GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
-#EXTHTTP:Referer: https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/|Origin: https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net|Cookie: GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
-https://58b33x.awqb0f40a9yo.net:8443/hls/cd88is8arjavh.m3u8?s=5nJG8THambuc9QsZuKZGgw&e=1793280580
+#EXTVLCOPT:http-origin=https://24436dd5047c924c9cffde08c7561c3f.dynmeadow.net
+#EXTVLCOPT:http-cookie=hf1=1; GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://24436dd5047c924c9cffde08c7561c3f.dynmeadow.net/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://24436dd5047c924c9cffde08c7561c3f.dynmeadow.net&Cookie=hf1=1; GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D
+#EXTHTTP:Referer: https://24436dd5047c924c9cffde08c7561c3f.dynmeadow.net/|Origin: https://24436dd5047c924c9cffde08c7561c3f.dynmeadow.net|Cookie: hf1=1; GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D
+https://j523s3.a737cozfwjmm.net:8443/hls/cd88is8arjavh.m3u8?s=39DgD9wRImFy0HEQWFVasQ&e=1793306522
+
+#EXTINF:-1 tvg-name="Al Nassr vs Al Kholood | 01:00 | 30/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="Saudi Pro League",Al Nassr vs Al Kholood | 01:00 | 30/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=2790359194633896
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=2790359194633896
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=2790359194633896
+https://instreams.xyz/live3/streamhd24/index.m3u8?st=L4GXmx806KrYZVWar-EKVw&e=1793295760
 
 #EXTINF:-1 tvg-name="UB Lebrijana vs Getafe | 01:00 | 30/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="Copa del Rey",UB Lebrijana vs Getafe | 01:00 | 30/10/2026 [Wildgames]
-#EXTVLCOPT:http-referrer=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/
+#EXTVLCOPT:http-referrer=https://24436dd5047c924c9cffde08c7561c3f.dynmeadow.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net
-#EXTVLCOPT:http-cookie=hf1=1; GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net&Cookie=hf1=1; GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D
-#EXTHTTP:Referer: https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/|Origin: https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net|Cookie: hf1=1; GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D
-https://58b33x.awqb0f40a9yo.net:8443/hls/z700mrpx530rp.m3u8?s=SJI5tYHEaRJSaMTOxGyecw&e=1793280664
+#EXTVLCOPT:http-origin=https://24436dd5047c924c9cffde08c7561c3f.dynmeadow.net
+#EXTVLCOPT:http-cookie=GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://24436dd5047c924c9cffde08c7561c3f.dynmeadow.net/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://24436dd5047c924c9cffde08c7561c3f.dynmeadow.net&Cookie=GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
+#EXTHTTP:Referer: https://24436dd5047c924c9cffde08c7561c3f.dynmeadow.net/|Origin: https://24436dd5047c924c9cffde08c7561c3f.dynmeadow.net|Cookie: GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
+https://j523s3.a737cozfwjmm.net:8443/hls/z700mrpx530rp.m3u8?s=DNrPVH6MwX-dhOrQgNugQQ&e=1793306702
+
+#EXTINF:-1 tvg-name="Fiorentina vs Atalanta | 02:45 | 30/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="Serie A",Fiorentina vs Atalanta | 02:45 | 30/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=2447867317227817
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=2447867317227817
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=2447867317227817
+https://instreams.pro/live3/streamhd22/index.m3u8?st=u4f9msEdosX74asRZ7uMzg&e=1793296342
+
+#EXTINF:-1 tvg-name="Everton vs Newcastle United | 02:45 | 30/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="English Carabao Cup",Everton vs Newcastle United | 02:45 | 30/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=6262081728426366
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=6262081728426366
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=6262081728426366
+https://instreams.xyz/live3/streamhd21/index.m3u8?st=6SpNY3m7rAoR2vPR8fJnyg&e=1793296692
 
 #EXTINF:-1 tvg-name="AE Prat vs Athletic Club | 03:00 | 30/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="Copa del Rey",AE Prat vs Athletic Club | 03:00 | 30/10/2026 [Wildgames]
-#EXTVLCOPT:http-referrer=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/
+#EXTVLCOPT:http-referrer=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net
-#EXTVLCOPT:http-cookie=GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net&Cookie=GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
-#EXTHTTP:Referer: https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/|Origin: https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net|Cookie: GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
-https://58b33x.awqb0f40a9yo.net:8443/hls/acgg75tlvrxeh.m3u8?s=x_9z9Cjp2dyYtn-uNdILHg&e=1793280994
+#EXTVLCOPT:http-origin=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net
+#EXTVLCOPT:http-cookie=hf1=1; GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net&Cookie=hf1=1; GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D
+#EXTHTTP:Referer: https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net/|Origin: https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net|Cookie: hf1=1; GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D
+https://j523s3.a737cozfwjmm.net:8443/hls/acgg75tlvrxeh.m3u8?s=hTeG6gJ-V-Wmr8SbPr51Xg&e=1793307525
 
 #EXTINF:-1 tvg-name="Auriense Cented Academy vs Deportivo | 03:00 | 30/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="Copa del Rey",Auriense Cented Academy vs Deportivo | 03:00 | 30/10/2026 [Wildgames]
-#EXTVLCOPT:http-referrer=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/
+#EXTVLCOPT:http-referrer=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net
-#EXTVLCOPT:http-cookie=hf1=1; GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net&Cookie=hf1=1; GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D
-#EXTHTTP:Referer: https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/|Origin: https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net|Cookie: hf1=1; GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D
-https://58b33x.awqb0f40a9yo.net:8443/hls/xzwwj6kynfkx5.m3u8?s=m6-rG8pb0zYcH9MSfRbLbg&e=1793281020
+#EXTVLCOPT:http-origin=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net
+#EXTVLCOPT:http-cookie=GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net&Cookie=GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
+#EXTHTTP:Referer: https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net/|Origin: https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net|Cookie: GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
+https://j523s3.a737cozfwjmm.net:8443/hls/xzwwj6kynfkx5.m3u8?s=2QjfBpi_uVRkUScG7q5h9Q&e=1793307572
 
 #EXTINF:-1 tvg-name="Ribadesella vs Racing Santander | 03:00 | 30/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="Copa del Rey",Ribadesella vs Racing Santander | 03:00 | 30/10/2026 [Wildgames]
-#EXTVLCOPT:http-referrer=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/
+#EXTVLCOPT:http-referrer=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net
-#EXTVLCOPT:http-cookie=GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net&Cookie=GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
-#EXTHTTP:Referer: https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/|Origin: https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net|Cookie: GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
-https://58b33x.awqb0f40a9yo.net:8443/hls/z700mrpx530rp.m3u8?s=qasGOAPc6WU995Z4_ScgcQ&e=1793281046
+#EXTVLCOPT:http-origin=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net
+#EXTVLCOPT:http-cookie=hf1=1; GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net&Cookie=hf1=1; GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D
+#EXTHTTP:Referer: https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net/|Origin: https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net|Cookie: hf1=1; GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D
+https://j523s3.a737cozfwjmm.net:8443/hls/z700mrpx530rp.m3u8?s=Do4wLw3lCjl_GsP9b3jyrA&e=1793307613
 
 #EXTINF:-1 tvg-name="Sporting Hortaleza vs Sevilla | 03:00 | 30/10/2026 [Wildgames]" tvg-logo="" tvg-id="Live.Event.us" group-title="Copa del Rey",Sporting Hortaleza vs Sevilla | 03:00 | 30/10/2026 [Wildgames]
-#EXTVLCOPT:http-referrer=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/
+#EXTVLCOPT:http-referrer=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net
+#EXTVLCOPT:http-origin=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net
 #EXTVLCOPT:http-cookie=GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net&Cookie=GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
-#EXTHTTP:Referer: https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net/|Origin: https://b00d1410aaadbe48e78c93ffab282cd6.dynmeadow.net|Cookie: GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
-https://58b33x.awqb0f40a9yo.net:8443/hls/nessgjp115wr8.m3u8?s=Iu3UZdmnXUpRKHmMUbGdVg&e=1793281073
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net&Cookie=GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
+#EXTHTTP:Referer: https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net/|Origin: https://b0ab7f052fbbdafa8f96a40954616182.dynmeadow.net|Cookie: GL_UI4=eJw9jctOwzAQRZ3mySORRsoH8AkJ4DRdsmHFP0R2PSkGJ1ON3VD%2BHsOC3TnS0b1CiF1bQ7IVNaQXJeFhf9Dj%2FoCoH5%2BM6YYR9Wz6QXZjj1qO8hlurJ%2BC0g5DBpVfFIcpbBnkmtVqasgXMuhqKDXTl0duU8hWtSCUr5Zxpmss1AcxpL0cIts1ctLBjnybNhXkb3a9XJvbQjT3hYC7s1NhJl4ma6LmJ1YGIXmB6qgCnoi%2FoTToPwOdAciZ6b%2F%2FO83d7xoUBjd7jErhHfkHANxDKw%3D%3D; hf1=1
+https://j523s3.a737cozfwjmm.net:8443/hls/nessgjp115wr8.m3u8?s=QkTivvK-Fc5W_87Pr_DOcw&e=1793307655
