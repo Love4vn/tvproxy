@@ -1,348 +1,49 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-30 19:35 UTC
-# streams  : 44
+# generated: 2026-10-30 23:01 UTC
+# streams  : 6
 
-#EXTINF:-1 tvg-name="Le Havre AC vs Paris Saint-Germain | LIVE | 31/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Le Havre AC vs Paris Saint-Germain | LIVE | 31/10/2026 [Topsurge]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#EXTVLCOPT:http-cookie=co_a1a26edc8a14f0db652794288bf29b74_223=1; __cf_bm=z4uXNfKwtFS5FACZL76QrlFIYBMCycH1KOKdtEpB5Kk-1793385816.8583872-1.0.1.1-LCLuW_SvhEFBJA.cZ5nv0UKLOi.OW_VACDoyUGCcQfsR6afeEmhUKbFBmR1_EsT9o9x9SFtLuMp9AcTKP_kNvHX4CXo4vMKqnimeKt9wuKxEJzkYyEW66cOaChCH2Thq; co_2194c21a99d8ddf2a1c535daddd1a0bc_223=1; __cf_bm=e3QQX47LW9m6YrRNCqoTFFuaVEeHQJtesqukV6RtPQY-1793385816.8702075-1.0.1.1-e1iIhn9Y5lFOnVmZ_qAq9PIvn.EUItW3o90Oi5Wi4MSiiFvMnknG2tQd7Y_nXsEfKbpQYveRv2kJixf05TJMqUZDjbJYpZksB5s1K8uQzM1QG8sc_wOXz3C04xV9JKTD; co_ca9043dc3e036015b82d36d286571d4f_223=1
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st&Cookie=co_a1a26edc8a14f0db652794288bf29b74_223=1; __cf_bm=z4uXNfKwtFS5FACZL76QrlFIYBMCycH1KOKdtEpB5Kk-1793385816.8583872-1.0.1.1-LCLuW_SvhEFBJA.cZ5nv0UKLOi.OW_VACDoyUGCcQfsR6afeEmhUKbFBmR1_EsT9o9x9SFtLuMp9AcTKP_kNvHX4CXo4vMKqnimeKt9wuKxEJzkYyEW66cOaChCH2Thq; co_2194c21a99d8ddf2a1c535daddd1a0bc_223=1; __cf_bm=e3QQX47LW9m6YrRNCqoTFFuaVEeHQJtesqukV6RtPQY-1793385816.8702075-1.0.1.1-e1iIhn9Y5lFOnVmZ_qAq9PIvn.EUItW3o90Oi5Wi4MSiiFvMnknG2tQd7Y_nXsEfKbpQYveRv2kJixf05TJMqUZDjbJYpZksB5s1K8uQzM1QG8sc_wOXz3C04xV9JKTD; co_ca9043dc3e036015b82d36d286571d4f_223=1
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st|Cookie: co_a1a26edc8a14f0db652794288bf29b74_223=1; __cf_bm=z4uXNfKwtFS5FACZL76QrlFIYBMCycH1KOKdtEpB5Kk-1793385816.8583872-1.0.1.1-LCLuW_SvhEFBJA.cZ5nv0UKLOi.OW_VACDoyUGCcQfsR6afeEmhUKbFBmR1_EsT9o9x9SFtLuMp9AcTKP_kNvHX4CXo4vMKqnimeKt9wuKxEJzkYyEW66cOaChCH2Thq; co_2194c21a99d8ddf2a1c535daddd1a0bc_223=1; __cf_bm=e3QQX47LW9m6YrRNCqoTFFuaVEeHQJtesqukV6RtPQY-1793385816.8702075-1.0.1.1-e1iIhn9Y5lFOnVmZ_qAq9PIvn.EUItW3o90Oi5Wi4MSiiFvMnknG2tQd7Y_nXsEfKbpQYveRv2kJixf05TJMqUZDjbJYpZksB5s1K8uQzM1QG8sc_wOXz3C04xV9JKTD; co_ca9043dc3e036015b82d36d286571d4f_223=1
-https://hls.lshls.st/secure_hls.php?path=131aad542969f2e906086706986d6698%2Findex.m3u8&e=1793387620&sig=_QqiPgO1S_NcLKT_A4GKDrBwMY_XXkJt64IEnz8RLxY
-
-#EXTINF:-1 tvg-name="Le Havre AC vs Paris Saint-Germain | LIVE | 31/10/2026 [Bally-sports]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Le Havre AC vs Paris Saint-Germain | LIVE | 31/10/2026 [Bally-sports]
+#EXTINF:-1 tvg-name="Estudiantes de Río Cuarto vs Gimnasia La Plata | LIVE | 31/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Argentine Primera División",Estudiantes de Río Cuarto vs Gimnasia La Plata | LIVE | 31/10/2026 [Buff-streams]
 #EXTVLCOPT:http-referrer=https://matchli.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
 #EXTVLCOPT:http-origin=https://matchli.st
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
 #EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=131aad542969f2e906086706986d6698%2Findex.m3u8&e=1793387835&sig=cPFAXSlCzzHCsDMmSYfzXCyjauB2gIBDMZq3COKI83Q&v=1793386035-1842
+https://hls.lshls.st/secure_hls.php?path=92c2fffbaf6e3dffc3a5f96b2da55b53%2Findex.m3u8&e=1793402250&sig=m6GDFNramX3VrrcSCo-TCq5TmgO3odF39pVmHW33Xrc&v=1793400450-7485
 
-#EXTINF:-1 tvg-name="Le Havre AC vs Paris Saint-Germain | LIVE | 31/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Le Havre AC vs Paris Saint-Germain | LIVE | 31/10/2026 [Powerstream]
+#EXTINF:-1 tvg-name="Racing Club vs Aldosivi | 07:15 | 31/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Argentine Primera División",Racing Club vs Aldosivi | 07:15 | 31/10/2026 [Buff-streams]
 #EXTVLCOPT:http-referrer=https://matchli.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
 #EXTVLCOPT:http-origin=https://matchli.st
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
 #EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=131aad542969f2e906086706986d6698%2Findex.m3u8&e=1793387883&sig=ayOKFsBJSL9PgHWXssIc8hJSq9Q30Hgy3eIdQNAzKYE&v=1793386083-9638
+https://hls.lshls.st/secure_hls.php?path=1baba6a20bbc0edf3b190e935e8617c4%2Findex.m3u8&e=1793402474&sig=FSZZ9h13jDtj10zXO0JvlPWkuPEfrtgPwfFBH9s6xjM&v=1793400674-5487
 
-#EXTINF:-1 tvg-name="Le Havre AC vs Paris Saint-Germain | LIVE | 31/10/2026 [Fast-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Le Havre AC vs Paris Saint-Germain | LIVE | 31/10/2026 [Fast-streams]
+#EXTINF:-1 tvg-name="Sarmiento (Junín) vs Rosario Central | 07:15 | 31/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Argentine Primera División",Sarmiento (Junín) vs Rosario Central | 07:15 | 31/10/2026 [Buff-streams]
 #EXTVLCOPT:http-referrer=https://matchli.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
 #EXTVLCOPT:http-origin=https://matchli.st
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
 #EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=131aad542969f2e906086706986d6698%2Findex.m3u8&e=1793387895&sig=JeFOqERDCRQ8Xtc8afiA8unY-o1iKFN_60ZmMIZqYCE
+https://hls.lshls.st/secure_hls.php?path=92c2fffbaf6e3dffc3a5f96b2da55b53%2Findex.m3u8&e=1793402523&sig=ZGEzt4c7YOIEfthHBcKVFG5KzK9qylK1LxOhycH1i_g&v=1793400723-2461
 
-#EXTINF:-1 tvg-name="Nice vs Stade Rennais | LIVE | 31/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Nice vs Stade Rennais | LIVE | 31/10/2026 [Topsurge]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=c31eab77556044c97292125cfbfa2364%2Findex.m3u8&e=1793388010&sig=B7Cpv60B-gHDJ_XWB53ZQwkCl0jDhhGxRDcjpj_gLrc
-
-#EXTINF:-1 tvg-name="Nice vs Stade Rennais | LIVE | 31/10/2026 [Tophdstreams] #2" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Nice vs Stade Rennais | LIVE | 31/10/2026 [Tophdstreams] #2
-#EXTVLCOPT:http-referrer=https://embed.sportspatrika.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://embed.sportspatrika.com
-#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6InV0SkVVVENOMnN1dFZ1cTIwMFE4ZGc9PSIsInZhbHVlIjoiNmc3MkJtVmFEU2FrTmRRcWxlTmdHa3BaT1hqRFJmeWhpdmN4L1NUTXFWelc1ZzQyajhJT0w2U002WFdYbU5jMnNZSitSMkxZUlFLbm5tZnFTcnB2OWVvb2x4TDVCdFVNTittWE9Sc3FPSllQQXQvSmdTQXAzSStTZUY0eUs0OEciLCJtYWMiOiIyMmNmNGJjNWFlNDE4YTllN2JkMTk2NGFiOTRiYTY3MDZlNjc3MTgzMWY4NmQ2YmU4YzEwN2Q4ZmM3ODUxOTUyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImtJZFIxZDAyNGZ0cEFMZHg2ajlEenc9PSIsInZhbHVlIjoiOTVoelpTWFlneFhjNEVrUUFkVHlMZllRaTdBRUwrRnpCbzRRUHJjYk1yNXFJZ0Mzdy9iTnFUOGw3dmxZUjJ2K2cwZG01ME1ybSswR0NjZXUwWGpPVUlONFpXbnh0aHR3NU90YTViVEhZK0VPQ2VaQVovZENOb2VyekJEWk1weUMiLCJtYWMiOiJiMjFiOGEyNGQ1MTQyNzU2MDc3NDMzM2ZlNzhmOGJlNDcxMWQ3NzBiM2U5ODM5YjU1ZGM1OWZmZDE2NDgzY2FmIiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.sportspatrika.com/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://embed.sportspatrika.com&Cookie=XSRF-TOKEN=eyJpdiI6InV0SkVVVENOMnN1dFZ1cTIwMFE4ZGc9PSIsInZhbHVlIjoiNmc3MkJtVmFEU2FrTmRRcWxlTmdHa3BaT1hqRFJmeWhpdmN4L1NUTXFWelc1ZzQyajhJT0w2U002WFdYbU5jMnNZSitSMkxZUlFLbm5tZnFTcnB2OWVvb2x4TDVCdFVNTittWE9Sc3FPSllQQXQvSmdTQXAzSStTZUY0eUs0OEciLCJtYWMiOiIyMmNmNGJjNWFlNDE4YTllN2JkMTk2NGFiOTRiYTY3MDZlNjc3MTgzMWY4NmQ2YmU4YzEwN2Q4ZmM3ODUxOTUyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImtJZFIxZDAyNGZ0cEFMZHg2ajlEenc9PSIsInZhbHVlIjoiOTVoelpTWFlneFhjNEVrUUFkVHlMZllRaTdBRUwrRnpCbzRRUHJjYk1yNXFJZ0Mzdy9iTnFUOGw3dmxZUjJ2K2cwZG01ME1ybSswR0NjZXUwWGpPVUlONFpXbnh0aHR3NU90YTViVEhZK0VPQ2VaQVovZENOb2VyekJEWk1weUMiLCJtYWMiOiJiMjFiOGEyNGQ1MTQyNzU2MDc3NDMzM2ZlNzhmOGJlNDcxMWQ3NzBiM2U5ODM5YjU1ZGM1OWZmZDE2NDgzY2FmIiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://embed.sportspatrika.com/|Origin: https://embed.sportspatrika.com|Cookie: XSRF-TOKEN=eyJpdiI6InV0SkVVVENOMnN1dFZ1cTIwMFE4ZGc9PSIsInZhbHVlIjoiNmc3MkJtVmFEU2FrTmRRcWxlTmdHa3BaT1hqRFJmeWhpdmN4L1NUTXFWelc1ZzQyajhJT0w2U002WFdYbU5jMnNZSitSMkxZUlFLbm5tZnFTcnB2OWVvb2x4TDVCdFVNTittWE9Sc3FPSllQQXQvSmdTQXAzSStTZUY0eUs0OEciLCJtYWMiOiIyMmNmNGJjNWFlNDE4YTllN2JkMTk2NGFiOTRiYTY3MDZlNjc3MTgzMWY4NmQ2YmU4YzEwN2Q4ZmM3ODUxOTUyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImtJZFIxZDAyNGZ0cEFMZHg2ajlEenc9PSIsInZhbHVlIjoiOTVoelpTWFlneFhjNEVrUUFkVHlMZllRaTdBRUwrRnpCbzRRUHJjYk1yNXFJZ0Mzdy9iTnFUOGw3dmxZUjJ2K2cwZG01ME1ybSswR0NjZXUwWGpPVUlONFpXbnh0aHR3NU90YTViVEhZK0VPQ2VaQVovZENOb2VyekJEWk1weUMiLCJtYWMiOiJiMjFiOGEyNGQ1MTQyNzU2MDc3NDMzM2ZlNzhmOGJlNDcxMWQ3NzBiM2U5ODM5YjU1ZGM1OWZmZDE2NDgzY2FmIiwidGFnIjoiIn0%3D
-https://streamed.streamgate.link/tsC5yh0DLT/es15/index.m3u8
-
-#EXTINF:-1 tvg-name="Nice vs Stade Rennais | LIVE | 31/10/2026 [Segatv] #2" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Nice vs Stade Rennais | LIVE | 31/10/2026 [Segatv] #2
-#EXTVLCOPT:http-referrer=https://embed.sportspatrika.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://embed.sportspatrika.com
-#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6InYxcDJpMnNlVFNLTFFrYmFQeVNmQ2c9PSIsInZhbHVlIjoiSWJGbUIvN09BNmR3TFRmYUY3Y1o1bjlQcmExMUZkVStETE1HSE1Ma3NpdFRwUFBhMU5aQ3g2UnQyVTZnVFIxbUlWbGtXMTdzZFdXOVEvN2FjTlVRV045dGNUQjQvcFBCZ1pyT0hMRzF1RnRGSlVTMnYvWHl6anJNRVhpdXNUL1QiLCJtYWMiOiIyMDMwOGEzZjVkMWY5OGEwYWY3OTQxYTE1ZTg5NThmMGY4MWJmYjBmNzE5NTgwMWEzMGQ4MjUwMmIzMjU3MjQ4IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImdUNVVoazhHSEVjSHVrU1BkQ1Byanc9PSIsInZhbHVlIjoiaFlzR29IUDB3Sy9MYURpeExnVjFzdzZlOXpxVVNKMjNkT1ZtRWhxd1BSK1FhcmhIeHJVWmNWQUJhQ0pha1pIQXB4NE9EeVVpdXdmVnlrQjNLVlNTN3VvaFV3VHJsb3p2enhPbGx1bnlnN0tkdDkyV1k4Vk9uOS9sTWJkTlJmcUUiLCJtYWMiOiIyMjNiN2VjZDYwMWM5OGVjMGFiNzYzZWFkMGFlN2M3ZTUzODkzMGYzNmM2YzgzMzk5NDAyMzkxNjg5Yzg4ZmQ5IiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.sportspatrika.com/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://embed.sportspatrika.com&Cookie=XSRF-TOKEN=eyJpdiI6InYxcDJpMnNlVFNLTFFrYmFQeVNmQ2c9PSIsInZhbHVlIjoiSWJGbUIvN09BNmR3TFRmYUY3Y1o1bjlQcmExMUZkVStETE1HSE1Ma3NpdFRwUFBhMU5aQ3g2UnQyVTZnVFIxbUlWbGtXMTdzZFdXOVEvN2FjTlVRV045dGNUQjQvcFBCZ1pyT0hMRzF1RnRGSlVTMnYvWHl6anJNRVhpdXNUL1QiLCJtYWMiOiIyMDMwOGEzZjVkMWY5OGEwYWY3OTQxYTE1ZTg5NThmMGY4MWJmYjBmNzE5NTgwMWEzMGQ4MjUwMmIzMjU3MjQ4IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImdUNVVoazhHSEVjSHVrU1BkQ1Byanc9PSIsInZhbHVlIjoiaFlzR29IUDB3Sy9MYURpeExnVjFzdzZlOXpxVVNKMjNkT1ZtRWhxd1BSK1FhcmhIeHJVWmNWQUJhQ0pha1pIQXB4NE9EeVVpdXdmVnlrQjNLVlNTN3VvaFV3VHJsb3p2enhPbGx1bnlnN0tkdDkyV1k4Vk9uOS9sTWJkTlJmcUUiLCJtYWMiOiIyMjNiN2VjZDYwMWM5OGVjMGFiNzYzZWFkMGFlN2M3ZTUzODkzMGYzNmM2YzgzMzk5NDAyMzkxNjg5Yzg4ZmQ5IiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://embed.sportspatrika.com/|Origin: https://embed.sportspatrika.com|Cookie: XSRF-TOKEN=eyJpdiI6InYxcDJpMnNlVFNLTFFrYmFQeVNmQ2c9PSIsInZhbHVlIjoiSWJGbUIvN09BNmR3TFRmYUY3Y1o1bjlQcmExMUZkVStETE1HSE1Ma3NpdFRwUFBhMU5aQ3g2UnQyVTZnVFIxbUlWbGtXMTdzZFdXOVEvN2FjTlVRV045dGNUQjQvcFBCZ1pyT0hMRzF1RnRGSlVTMnYvWHl6anJNRVhpdXNUL1QiLCJtYWMiOiIyMDMwOGEzZjVkMWY5OGEwYWY3OTQxYTE1ZTg5NThmMGY4MWJmYjBmNzE5NTgwMWEzMGQ4MjUwMmIzMjU3MjQ4IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImdUNVVoazhHSEVjSHVrU1BkQ1Byanc9PSIsInZhbHVlIjoiaFlzR29IUDB3Sy9MYURpeExnVjFzdzZlOXpxVVNKMjNkT1ZtRWhxd1BSK1FhcmhIeHJVWmNWQUJhQ0pha1pIQXB4NE9EeVVpdXdmVnlrQjNLVlNTN3VvaFV3VHJsb3p2enhPbGx1bnlnN0tkdDkyV1k4Vk9uOS9sTWJkTlJmcUUiLCJtYWMiOiIyMjNiN2VjZDYwMWM5OGVjMGFiNzYzZWFkMGFlN2M3ZTUzODkzMGYzNmM2YzgzMzk5NDAyMzkxNjg5Yzg4ZmQ5IiwidGFnIjoiIn0%3D
-https://streamed.streamgate.link/QiyP7JXd8m/es15/index.m3u8
-
-#EXTINF:-1 tvg-name="Nice vs Stade Rennais | LIVE | 31/10/2026 [Bally-sports]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Nice vs Stade Rennais | LIVE | 31/10/2026 [Bally-sports]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=c31eab77556044c97292125cfbfa2364%2Findex.m3u8&e=1793388186&sig=xcvw5mTgczhyxw_hxEZq4KFleYFEDVUYhMDyY6tbQAE&v=1793386386-4618
-
-#EXTINF:-1 tvg-name="Nice vs Stade Rennais | LIVE | 31/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Nice vs Stade Rennais | LIVE | 31/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=c31eab77556044c97292125cfbfa2364%2Findex.m3u8&e=1793388232&sig=7KA1KvYopHl_joMtOLx54rH9aMYhKjWZ2kNZULUFNnE&v=1793386432-6672
-
-#EXTINF:-1 tvg-name="Nice vs Stade Rennais | LIVE | 31/10/2026 [Fast-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Nice vs Stade Rennais | LIVE | 31/10/2026 [Fast-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=c31eab77556044c97292125cfbfa2364%2Findex.m3u8&e=1793388244&sig=T_lTiu9oZJtXUVfP1ZfRllTgunqGnhWtUkVCbJbFsxc
-
-#EXTINF:-1 tvg-name="Nice vs Stade Rennais | LIVE | 31/10/2026 [Dellgames] #2" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Nice vs Stade Rennais | LIVE | 31/10/2026 [Dellgames] #2
-#EXTVLCOPT:http-referrer=https://embed.sportspatrika.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://embed.sportspatrika.com
-#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6IkdkcEs0b1lnSnkra00va2RiOHZ5ZUE9PSIsInZhbHVlIjoiR1hvZFBKZkVTQm1QejdWbm1qVkh5WjY1eUpqWmRQckt1SmV1L3M2Mjh4OWdzOUtmNVk4Z1VGUDJJNk1ydlVTTHdLWmRhQTZLdk9Tdy9xVE9ndXBaVyt3c0IvZ1BFOHNMeUhvaW5HUXZueWxPUFY3cUthVzc0SmUvdDRWNVZMUTQiLCJtYWMiOiI5YzFhZGRiM2JjZmMxMjUxOWZhNjhjZGU2NjI0MmY3YTg2NTgzYjc4NzNmNjAwYzU1OWE0OTBjMmU4MWIyNDcyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InVrL0FFVVRhbjFMUDY3RUI0Z0ZvdUE9PSIsInZhbHVlIjoiQ2Jmbi82OVV0SDhEU2VrZDZZUXJjeGJDOFdhVjllSVVZbFFWeVRwZkZoOTF0MzJtWC82MHhhdmRRamZHL01XTzcyeEo4SVliWTI1Rms5UUpHVDBvQXJCeEk0T09BMmliNjhOZDJRQVEyYityM2lSeEw0U1BpOGxVbVhIYXA4djkiLCJtYWMiOiI1NGM4YmI1NmE2MWMxNjhlMzliNTc3NTgzZGZhNGE0YTY4YTY4YmQ4ZDE3ZDhiMWUxM2FiYjA3ZDllNTRjOGE0IiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.sportspatrika.com/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://embed.sportspatrika.com&Cookie=XSRF-TOKEN=eyJpdiI6IkdkcEs0b1lnSnkra00va2RiOHZ5ZUE9PSIsInZhbHVlIjoiR1hvZFBKZkVTQm1QejdWbm1qVkh5WjY1eUpqWmRQckt1SmV1L3M2Mjh4OWdzOUtmNVk4Z1VGUDJJNk1ydlVTTHdLWmRhQTZLdk9Tdy9xVE9ndXBaVyt3c0IvZ1BFOHNMeUhvaW5HUXZueWxPUFY3cUthVzc0SmUvdDRWNVZMUTQiLCJtYWMiOiI5YzFhZGRiM2JjZmMxMjUxOWZhNjhjZGU2NjI0MmY3YTg2NTgzYjc4NzNmNjAwYzU1OWE0OTBjMmU4MWIyNDcyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InVrL0FFVVRhbjFMUDY3RUI0Z0ZvdUE9PSIsInZhbHVlIjoiQ2Jmbi82OVV0SDhEU2VrZDZZUXJjeGJDOFdhVjllSVVZbFFWeVRwZkZoOTF0MzJtWC82MHhhdmRRamZHL01XTzcyeEo4SVliWTI1Rms5UUpHVDBvQXJCeEk0T09BMmliNjhOZDJRQVEyYityM2lSeEw0U1BpOGxVbVhIYXA4djkiLCJtYWMiOiI1NGM4YmI1NmE2MWMxNjhlMzliNTc3NTgzZGZhNGE0YTY4YTY4YmQ4ZDE3ZDhiMWUxM2FiYjA3ZDllNTRjOGE0IiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://embed.sportspatrika.com/|Origin: https://embed.sportspatrika.com|Cookie: XSRF-TOKEN=eyJpdiI6IkdkcEs0b1lnSnkra00va2RiOHZ5ZUE9PSIsInZhbHVlIjoiR1hvZFBKZkVTQm1QejdWbm1qVkh5WjY1eUpqWmRQckt1SmV1L3M2Mjh4OWdzOUtmNVk4Z1VGUDJJNk1ydlVTTHdLWmRhQTZLdk9Tdy9xVE9ndXBaVyt3c0IvZ1BFOHNMeUhvaW5HUXZueWxPUFY3cUthVzc0SmUvdDRWNVZMUTQiLCJtYWMiOiI5YzFhZGRiM2JjZmMxMjUxOWZhNjhjZGU2NjI0MmY3YTg2NTgzYjc4NzNmNjAwYzU1OWE0OTBjMmU4MWIyNDcyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InVrL0FFVVRhbjFMUDY3RUI0Z0ZvdUE9PSIsInZhbHVlIjoiQ2Jmbi82OVV0SDhEU2VrZDZZUXJjeGJDOFdhVjllSVVZbFFWeVRwZkZoOTF0MzJtWC82MHhhdmRRamZHL01XTzcyeEo4SVliWTI1Rms5UUpHVDBvQXJCeEk0T09BMmliNjhOZDJRQVEyYityM2lSeEw0U1BpOGxVbVhIYXA4djkiLCJtYWMiOiI1NGM4YmI1NmE2MWMxNjhlMzliNTc3NTgzZGZhNGE0YTY4YTY4YmQ4ZDE3ZDhiMWUxM2FiYjA3ZDllNTRjOGE0IiwidGFnIjoiIn0%3D
-https://streamed.streamgate.link/VKLzIY3LRa/es15/index.m3u8
-
-#EXTINF:-1 tvg-name="Nice vs Stade Rennais | LIVE | 31/10/2026 [Watchsports] #2" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Nice vs Stade Rennais | LIVE | 31/10/2026 [Watchsports] #2
-#EXTVLCOPT:http-referrer=https://embed.sportspatrika.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://embed.sportspatrika.com
-#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6ImMvdUdxbndiOWE2OUVZb3dQYTRyVEE9PSIsInZhbHVlIjoiZFNCUkpmeFF0QzN5UVkzcWFBb1NwbGxvWWpwUTJoOVRjTDZYUzJBUS9wVjdTVExmMlJ2a1lyWHRSV3lHOFBsR2dIdW1CbGxMVVB1dlQ3SzZsNlhRZys1YjZKUG1aOU5OelZZNVN2VkJPVFprU3N2dnpTaGEzWjZLZFpUWm9JeHgiLCJtYWMiOiIxZTg1MmM2ZjAxMmQ1ZGNmMDFkNGQwMzk3ZDk5OTAwNTUzNzg3ZGQ4MDc0ZDI0OGIwZDhmMmY5YWIxMDhkNTUyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6Im5tZWFVT2VaY2dqUTljUGtram9oQ3c9PSIsInZhbHVlIjoiRU50eWpiUVVQUm0wbk1NMkptekZTKzRZQUczTVdtcHhKTUxCbG1USXZjbWxheFB2TnZPOWd0M3FNVEVYTEZGeXVkbUt4ZzU3K0pHckhQQ2FsczJtQmx6UTFWaEhpZDBFb0txVG9ET3BPeXh3enB2eXFMOGNwNVVuOSt5dkRydFMiLCJtYWMiOiIyOTNmYzM4NjA5Yjk0Y2I2YzBjOGU5MDJlY2MzZmYzMjg3MmRiMmFjZWNiMTU1MWE4ZGQzZDE2MjkzN2I5MzZiIiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.sportspatrika.com/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://embed.sportspatrika.com&Cookie=XSRF-TOKEN=eyJpdiI6ImMvdUdxbndiOWE2OUVZb3dQYTRyVEE9PSIsInZhbHVlIjoiZFNCUkpmeFF0QzN5UVkzcWFBb1NwbGxvWWpwUTJoOVRjTDZYUzJBUS9wVjdTVExmMlJ2a1lyWHRSV3lHOFBsR2dIdW1CbGxMVVB1dlQ3SzZsNlhRZys1YjZKUG1aOU5OelZZNVN2VkJPVFprU3N2dnpTaGEzWjZLZFpUWm9JeHgiLCJtYWMiOiIxZTg1MmM2ZjAxMmQ1ZGNmMDFkNGQwMzk3ZDk5OTAwNTUzNzg3ZGQ4MDc0ZDI0OGIwZDhmMmY5YWIxMDhkNTUyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6Im5tZWFVT2VaY2dqUTljUGtram9oQ3c9PSIsInZhbHVlIjoiRU50eWpiUVVQUm0wbk1NMkptekZTKzRZQUczTVdtcHhKTUxCbG1USXZjbWxheFB2TnZPOWd0M3FNVEVYTEZGeXVkbUt4ZzU3K0pHckhQQ2FsczJtQmx6UTFWaEhpZDBFb0txVG9ET3BPeXh3enB2eXFMOGNwNVVuOSt5dkRydFMiLCJtYWMiOiIyOTNmYzM4NjA5Yjk0Y2I2YzBjOGU5MDJlY2MzZmYzMjg3MmRiMmFjZWNiMTU1MWE4ZGQzZDE2MjkzN2I5MzZiIiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://embed.sportspatrika.com/|Origin: https://embed.sportspatrika.com|Cookie: XSRF-TOKEN=eyJpdiI6ImMvdUdxbndiOWE2OUVZb3dQYTRyVEE9PSIsInZhbHVlIjoiZFNCUkpmeFF0QzN5UVkzcWFBb1NwbGxvWWpwUTJoOVRjTDZYUzJBUS9wVjdTVExmMlJ2a1lyWHRSV3lHOFBsR2dIdW1CbGxMVVB1dlQ3SzZsNlhRZys1YjZKUG1aOU5OelZZNVN2VkJPVFprU3N2dnpTaGEzWjZLZFpUWm9JeHgiLCJtYWMiOiIxZTg1MmM2ZjAxMmQ1ZGNmMDFkNGQwMzk3ZDk5OTAwNTUzNzg3ZGQ4MDc0ZDI0OGIwZDhmMmY5YWIxMDhkNTUyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6Im5tZWFVT2VaY2dqUTljUGtram9oQ3c9PSIsInZhbHVlIjoiRU50eWpiUVVQUm0wbk1NMkptekZTKzRZQUczTVdtcHhKTUxCbG1USXZjbWxheFB2TnZPOWd0M3FNVEVYTEZGeXVkbUt4ZzU3K0pHckhQQ2FsczJtQmx6UTFWaEhpZDBFb0txVG9ET3BPeXh3enB2eXFMOGNwNVVuOSt5dkRydFMiLCJtYWMiOiIyOTNmYzM4NjA5Yjk0Y2I2YzBjOGU5MDJlY2MzZmYzMjg3MmRiMmFjZWNiMTU1MWE4ZGQzZDE2MjkzN2I5MzZiIiwidGFnIjoiIn0%3D
-https://streamed.streamgate.link/99QBcNerx2/es15/index.m3u8
-
-#EXTINF:-1 tvg-name="Al Shabab vs Al Ahli | LIVE | 31/10/2026 [Odyssney] #2" tvg-logo="" tvg-id="Live.Event.us" group-title="Saudi Pro League",Al Shabab vs Al Ahli | LIVE | 31/10/2026 [Odyssney] #2
-#EXTVLCOPT:http-referrer=https://embed.sportspatrika.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://embed.sportspatrika.com
-#EXTVLCOPT:http-cookie=XSRF-TOKEN=eyJpdiI6InFuMnAxNUhFK2RJU05JaFlTNVVJc2c9PSIsInZhbHVlIjoicElTekNnYlF2U3NmNkhOZG1vWUV2WU4wQ0Z5cXdJNHBvN2szUFFEWW5Eb2s4VDFZWlFabXh6MU54bzRrSDd6eURoVE53V3FnU3VZOGZid3Zxci9JbEZRLzV2SWFmdUdhdDUrUU01akNGRE5RRXRFbVpEZUw1aHdxRDFZU2NVdk8iLCJtYWMiOiIxYjRiM2Q0Nzk0YjgzMDhlMWYxNTMxNDNjNWExNTJlYjA3Mzc2ZjJmMDM3MzgxY2ZiZDc3MzRmYmYwOGQxN2JiIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlpFdE4wNzlqcVc1V0NPM1JBYlFiaEE9PSIsInZhbHVlIjoiSVFTNXVFUGdFT3VDazRJdGxZUFVXMXRaZVNsVG5kNlBnWXFwN1JxZE5oSk1xRFc0ZmF5cGhKRXVGYVZkc29NVVhYb1ZFUkVQYnNKYUNrYzVBMHhJR1FTSmg3eFJtbGRKVUJiL3ZISzJoRFc3dHpKWXRyQXhKRzd2b1RUNDdpMHYiLCJtYWMiOiI5N2I1M2NmZjU3ODE5YWE0MmQzNTg2YzEyODEyNmFiY2FkNjNkYWVkNzkwZDEyMTkyYzkzMGQwMGZhOGM3MDNmIiwidGFnIjoiIn0%3D
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.sportspatrika.com/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://embed.sportspatrika.com&Cookie=XSRF-TOKEN=eyJpdiI6InFuMnAxNUhFK2RJU05JaFlTNVVJc2c9PSIsInZhbHVlIjoicElTekNnYlF2U3NmNkhOZG1vWUV2WU4wQ0Z5cXdJNHBvN2szUFFEWW5Eb2s4VDFZWlFabXh6MU54bzRrSDd6eURoVE53V3FnU3VZOGZid3Zxci9JbEZRLzV2SWFmdUdhdDUrUU01akNGRE5RRXRFbVpEZUw1aHdxRDFZU2NVdk8iLCJtYWMiOiIxYjRiM2Q0Nzk0YjgzMDhlMWYxNTMxNDNjNWExNTJlYjA3Mzc2ZjJmMDM3MzgxY2ZiZDc3MzRmYmYwOGQxN2JiIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlpFdE4wNzlqcVc1V0NPM1JBYlFiaEE9PSIsInZhbHVlIjoiSVFTNXVFUGdFT3VDazRJdGxZUFVXMXRaZVNsVG5kNlBnWXFwN1JxZE5oSk1xRFc0ZmF5cGhKRXVGYVZkc29NVVhYb1ZFUkVQYnNKYUNrYzVBMHhJR1FTSmg3eFJtbGRKVUJiL3ZISzJoRFc3dHpKWXRyQXhKRzd2b1RUNDdpMHYiLCJtYWMiOiI5N2I1M2NmZjU3ODE5YWE0MmQzNTg2YzEyODEyNmFiY2FkNjNkYWVkNzkwZDEyMTkyYzkzMGQwMGZhOGM3MDNmIiwidGFnIjoiIn0%3D
-#EXTHTTP:Referer: https://embed.sportspatrika.com/|Origin: https://embed.sportspatrika.com|Cookie: XSRF-TOKEN=eyJpdiI6InFuMnAxNUhFK2RJU05JaFlTNVVJc2c9PSIsInZhbHVlIjoicElTekNnYlF2U3NmNkhOZG1vWUV2WU4wQ0Z5cXdJNHBvN2szUFFEWW5Eb2s4VDFZWlFabXh6MU54bzRrSDd6eURoVE53V3FnU3VZOGZid3Zxci9JbEZRLzV2SWFmdUdhdDUrUU01akNGRE5RRXRFbVpEZUw1aHdxRDFZU2NVdk8iLCJtYWMiOiIxYjRiM2Q0Nzk0YjgzMDhlMWYxNTMxNDNjNWExNTJlYjA3Mzc2ZjJmMDM3MzgxY2ZiZDc3MzRmYmYwOGQxN2JiIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlpFdE4wNzlqcVc1V0NPM1JBYlFiaEE9PSIsInZhbHVlIjoiSVFTNXVFUGdFT3VDazRJdGxZUFVXMXRaZVNsVG5kNlBnWXFwN1JxZE5oSk1xRFc0ZmF5cGhKRXVGYVZkc29NVVhYb1ZFUkVQYnNKYUNrYzVBMHhJR1FTSmg3eFJtbGRKVUJiL3ZISzJoRFc3dHpKWXRyQXhKRzd2b1RUNDdpMHYiLCJtYWMiOiI5N2I1M2NmZjU3ODE5YWE0MmQzNTg2YzEyODEyNmFiY2FkNjNkYWVkNzkwZDEyMTkyYzkzMGQwMGZhOGM3MDNmIiwidGFnIjoiIn0%3D
-https://streamed.streamgate.link/VyfAear2o0/es32/index.m3u8
-
-#EXTINF:-1 tvg-name="Konyaspor vs Galatasaray | LIVE | 31/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Turkish Süper Lig",Konyaspor vs Galatasaray | LIVE | 31/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=c39a7e658e9c50b484d2e841aebb3181%2Findex.m3u8&e=1793388356&sig=1JvF6kNuBNQQ-dwrkVeT0KM4BIfWq_solg9EpKr7rr0&v=1793386556-7025
-
-#EXTINF:-1 tvg-name="SV Elversberg vs Mainz | 02:30 | 31/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="Bundesliga",SV Elversberg vs Mainz | 02:30 | 31/10/2026 [Topsurge]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=7bb9c8db145ddbf8b75a8f98223221b4%2Findex.m3u8&e=1793388411&sig=cUdA1BzX7RTEGHutAK8MeOkwbeh2B89wBxToXX0-Wg8
-
-#EXTINF:-1 tvg-name="SV Elversberg vs Mainz | 02:30 | 31/10/2026 [Bally-sports]" tvg-logo="" tvg-id="Live.Event.us" group-title="Bundesliga",SV Elversberg vs Mainz | 02:30 | 31/10/2026 [Bally-sports]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=7bb9c8db145ddbf8b75a8f98223221b4%2Findex.m3u8&e=1793388626&sig=MjeU6473qC_BP5N-YNn5SonMUWWE1P8yiMCXrDsTpaI&v=1793386826-9508
-
-#EXTINF:-1 tvg-name="SV Elversberg vs Mainz | 02:30 | 31/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Bundesliga",SV Elversberg vs Mainz | 02:30 | 31/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=7bb9c8db145ddbf8b75a8f98223221b4%2Findex.m3u8&e=1793388637&sig=DNOlmt_VHWV6PtPuGkLo-h701-4NThUL5kFobkcoEqg&v=1793386837-5693
-
-#EXTINF:-1 tvg-name="SV Elversberg vs Mainz | 02:30 | 31/10/2026 [Fast-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Bundesliga",SV Elversberg vs Mainz | 02:30 | 31/10/2026 [Fast-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=7bb9c8db145ddbf8b75a8f98223221b4%2Findex.m3u8&e=1793388650&sig=S1SWuzsIhbx7vnuCyovf7f46lEC2mjJ1ctP8K08Px3U
-
-#EXTINF:-1 tvg-name="Zulte-Waregem vs Club Brugge | 02:45 | 31/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="Belgian Pro League",Zulte-Waregem vs Club Brugge | 02:45 | 31/10/2026 [Topsurge]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=c43f93e25cb602599a2ba9a5ed372394%2Findex.m3u8&e=1793388715&sig=hSKmnJyN46_I8Zx2kjl5mRZeZscJwT2_MjhAB0oJBYE
-
-#EXTINF:-1 tvg-name="Zulte-Waregem vs Club Brugge | 02:45 | 31/10/2026 [Fast-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Belgian Pro League",Zulte-Waregem vs Club Brugge | 02:45 | 31/10/2026 [Fast-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=c43f93e25cb602599a2ba9a5ed372394%2Findex.m3u8&e=1793388737&sig=Usg8CBHrQ7YjbuYR0oW386ZdhdKkD9IcvkJOUHmAaD8
-
-#EXTINF:-1 tvg-name="Zulte-Waregem vs Club Brugge | 02:45 | 31/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Belgian Pro League",Zulte-Waregem vs Club Brugge | 02:45 | 31/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=c43f93e25cb602599a2ba9a5ed372394%2Findex.m3u8&e=1793388748&sig=vFQIiteij8FiOtkHv_iU_deSEYbTdwabWt7AzR0FsuI&v=1793386948-9647
-
-#EXTINF:-1 tvg-name="Villarreal vs Espanyol | 03:00 | 31/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Villarreal vs Espanyol | 03:00 | 31/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=9aba7a810e47b32163183d4d9e92840f%2Findex.m3u8&e=1793389052&sig=D5sGv8EJPHmyr7H3oUP0OrrclbToaJDBwYtFWdSZPOw&v=1793387252-7459
-
-#EXTINF:-1 tvg-name="Villarreal vs Espanyol | 03:00 | 31/10/2026 [Fast-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Villarreal vs Espanyol | 03:00 | 31/10/2026 [Fast-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=9aba7a810e47b32163183d4d9e92840f%2Findex.m3u8&e=1793389064&sig=ynyCO0-p17R5hkCUfzVbGBtlCwzgthSZvKyzuFvAqrQ
-
-#EXTINF:-1 tvg-name="Villarreal vs Espanyol | 03:00 | 31/10/2026 [Bally-sports]" tvg-logo="" tvg-id="Live.Event.us" group-title="La Liga",Villarreal vs Espanyol | 03:00 | 31/10/2026 [Bally-sports]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=9aba7a810e47b32163183d4d9e92840f%2Findex.m3u8&e=1793389131&sig=IHSMm2jdhxnC08GDZ5hIDYTiHqDeA23CfobAW9E3PRM&v=1793387331-5059
-
-#EXTINF:-1 tvg-name="Lille vs Lens | 03:05 | 31/10/2026 [Topsurge]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Lille vs Lens | 03:05 | 31/10/2026 [Topsurge]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=131aad542969f2e906086706986d6698%2Findex.m3u8&e=1793389161&sig=vQt95_Fzdzw2h7ldePRurVY7cSvrf5eb23FnCp4r_7o
-
-#EXTINF:-1 tvg-name="Lille vs Lens | 03:05 | 31/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Lille vs Lens | 03:05 | 31/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=131aad542969f2e906086706986d6698%2Findex.m3u8&e=1793389412&sig=eC53HgxeA1mv1kKxU8aGzsZIc2Nih_A4Is4FX1zJ1xA&v=1793387612-9541
-
-#EXTINF:-1 tvg-name="Lille vs Lens | 03:05 | 31/10/2026 [Fast-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Ligue 1",Lille vs Lens | 03:05 | 31/10/2026 [Fast-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=131aad542969f2e906086706986d6698%2Findex.m3u8&e=1793389425&sig=Tl5pVmAhhq4NWYFjLO7ESHEbFN2LQBMKmRjW_EwaGiA
-
-#EXTINF:-1 tvg-name="Casa Pia vs Sporting CP | 03:15 | 31/10/2026 [Powerstream]" tvg-logo="" tvg-id="Live.Event.us" group-title="Primeira Liga",Casa Pia vs Sporting CP | 03:15 | 31/10/2026 [Powerstream]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=452e62197617eee2172de9c2a1c7e936%2Findex.m3u8&e=1793389696&sig=486bPbcnrTkAsc93Q4kQHfzeIjRZRp2iA7eqXvec814&v=1793387896-2536
-
-#EXTINF:-1 tvg-name="Racing Club vs Aldosivi | 07:15 | 31/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="Argentine Primera División",Racing Club vs Aldosivi | 07:15 | 31/10/2026 [Shd247]
-#EXTVLCOPT:http-referrer=https://xstream.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://xstream.st
-#EXTVLCOPT:http-cookie=session_id=1401690491239201
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=1401690491239201
-#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=1401690491239201
-https://instreams.xyz/live3/streamhd30/index.m3u8?st=ysr-ZImfadjEyFeDscoMYQ&e=1793399112
-
-#EXTINF:-1 tvg-name="Paris Saint-Germain vs Le Havre AC | 01:00 | 31/10/2026 [STRMFREE]" tvg-logo="https://streamfree.top/thumbnails/soccer_paris-saint-germain-vs-le-havre-ac_Paris_Saint-Germain_vs_Le_Havr" tvg-id="Soccer.Dummy.us" group-title="Ligue 1",Paris Saint-Germain vs Le Havre AC | 01:00 | 31/10/2026 [STRMFREE]
-#EXTVLCOPT:http-referrer=https://streamfree.top
+#EXTINF:-1 tvg-name="Lens vs Lille | English | 03:05 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Ligue 1",Lens vs Lille | English | 03:05 | 31/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401876420
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://streamfree.top&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://streamfree.top
-https://streamfree.top/live-cdn/paris-saint-germain-vs-le-havre-ac1080p/index.m3u8?_e=1793417683&_n=fd7eaa27b19f911f&_t=R_fJVuUC9WgZi_3Xzh74sA
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401876420&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401876420
+https://instreams.pro/live3/tv401876420/index.m3u8?st=TFxxbS4n-tH0iPzc36_tRw&e=1793412076
 
-#EXTINF:-1 tvg-name="Galatasaray vs Konyaspor | English | 00:00 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="TUR 1",Galatasaray vs Konyaspor | English | 00:00 | 31/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401888259
+#EXTINF:-1 tvg-name="Sporting CP vs Casa Pia | English | 03:15 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="POR 1",Sporting CP vs Casa Pia | English | 03:15 | 31/10/2026 [STRMGATE]
+#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401885408
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401888259&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401888259
-https://instreams.live/live3/tv401888259/index.m3u8?st=X32ye3Hq13UBkfaDaUZ3fQ&e=1793399686
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401885408&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401885408
+https://instreams.pro/live3/tv401885408/index.m3u8?st=3hcSuLfHyzjvql-4ndqEQQ&e=1793412077
 
-#EXTINF:-1 tvg-name="TSV Eintracht Braunschweig vs Arminia Bielefeld | English | 00:30 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="GER 2",TSV Eintracht Braunschweig vs Arminia Bielefeld | English | 00:30 | 31/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401885068
+#EXTINF:-1 tvg-name="Charlotte vs Tulane [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Charlotte vs Tulane [iSTRMEAST]
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58878?ad=111
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401885068&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401885068
-https://instreams.live/live3/tv401885068/index.m3u8?st=3aMZfGHXtRF5P3BT-1_uaQ&e=1793399686
-
-#EXTINF:-1 tvg-name="VfL Bochum vs Energie Cottbus | English | 00:30 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="GER 2",VfL Bochum vs Energie Cottbus | English | 00:30 | 31/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401885066
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401885066&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401885066
-https://instreams.xyz/live3/tv401885066/index.m3u8?st=zIKd7q7xtGaIBM7aumsyCQ&e=1793399687
-
-#EXTINF:-1 tvg-name="Paris Saint-Germain vs Le Havre AC | English | 01:00 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Ligue 1",Paris Saint-Germain vs Le Havre AC | English | 01:00 | 31/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401876421
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401876421&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401876421
-https://gate4.st/live3/tv401876421/index.m3u8?st=oZoqsIYrw1L7ZyQk3fsHVw&e=1793399687
-
-#EXTINF:-1 tvg-name="Stade Rennais vs Nice | English | 01:00 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Ligue 1",Stade Rennais vs Nice | English | 01:00 | 31/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401876416
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401876416&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401876416
-https://instreams.xyz/live3/tv401876416/index.m3u8?st=CHDg2Cr2UoRJ9l-Kk4X-rg&e=1793399688
-
-#EXTINF:-1 tvg-name="TSV Hartberg vs Grazer AK | English | 01:30 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="AUT 1",TSV Hartberg vs Grazer AK | English | 01:30 | 31/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401881757
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401881757&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401881757
-https://instreams.live/live3/tv401881757/index.m3u8?st=4d2gN3tFswAVC2EIXcsxqA&e=1793399689
-
-#EXTINF:-1 tvg-name="FC Eindhoven vs Helmond Sport | English | 02:00 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="NED 2",FC Eindhoven vs Helmond Sport | English | 02:00 | 31/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401875872
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401875872&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401875872
-https://instreams.live/live3/tv401875872/index.m3u8?st=0CJl87DtPJIRvFnuwq7WdA&e=1793399693
-
-#EXTINF:-1 tvg-name="Almere City vs RKC Waalwijk | English | 02:00 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="NED 2",Almere City vs RKC Waalwijk | English | 02:00 | 31/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401875870
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401875870&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401875870
-https://gate4.st/live3/tv401875870/index.m3u8?st=Iz_bVcuOMyesQGdd1Nkhrg&e=1793399693
-
-#EXTINF:-1 tvg-name="Jong AZ vs Roda JC Kerkrade | English | 02:00 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="NED 2",Jong AZ vs Roda JC Kerkrade | English | 02:00 | 31/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401875869
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401875869&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401875869
-https://instreams.xyz/live3/tv401875869/index.m3u8?st=78T7M4_JE5FvXGnYAX_7xg&e=1793399694
-
-#EXTINF:-1 tvg-name="Mainz vs SV Elversberg | DE | 02:30 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/10.png" tvg-id="Soccer.Dummy.us" group-title="Bundesliga",Mainz vs SV Elversberg | DE | 02:30 | 31/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401884746_de
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401884746_de&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401884746_de
-https://instreams.live/live3/tv401884746_de/index.m3u8?st=WWbtDI9eZZeTgxQIm1aHoQ&e=1793399695
-
-#EXTINF:-1 tvg-name="Chesterfield vs Newport County | English | 02:45 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="ENG 4",Chesterfield vs Newport County | English | 02:45 | 31/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401881283
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401881283&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401881283
-https://gate4.st/live3/tv401881283/index.m3u8?st=QBETo_j2IRkHfM9nM7oepw&e=1793399696
-
-#EXTINF:-1 tvg-name="Espanyol vs Villarreal | English | 03:00 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" tvg-id="Soccer.Dummy.us" group-title="La Liga",Espanyol vs Villarreal | English | 03:00 | 31/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401882817
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401882817&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401882817
-https://gate4.st/live3/tv401882817/index.m3u8?st=IwAkUFbSrr6-jTlMnKL8qQ&e=1793399697
-
-#EXTINF:-1 tvg-name="Wrexham vs Sheffield United | English | 03:00 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="ENG 2",Wrexham vs Sheffield United | English | 03:00 | 31/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401880190
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401880190&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401880190
-https://instreams.live/live3/tv401880190/index.m3u8?st=cVaZReBoFZjSVBbRqgLj7A&e=1793399698
-
-#EXTINF:-1 tvg-name="ONE Friday Fights 176: Khunsuk vs YodUdon [iSTRMEAST]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="OFC",ONE Friday Fights 176: Khunsuk vs YodUdon [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58874?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58874?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58874?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58874%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58874%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58878?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58878?ad=111
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58878%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58878%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
