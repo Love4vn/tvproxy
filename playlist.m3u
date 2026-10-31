@@ -1,45 +1,31 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-30 23:01 UTC
-# streams  : 6
+# generated: 2026-10-31 02:10 UTC
+# streams  : 4
 
-#EXTINF:-1 tvg-name="Estudiantes de Río Cuarto vs Gimnasia La Plata | LIVE | 31/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Argentine Primera División",Estudiantes de Río Cuarto vs Gimnasia La Plata | LIVE | 31/10/2026 [Buff-streams]
+#EXTINF:-1 tvg-name="Racing Club vs Aldosivi | LIVE | 31/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="Argentine Primera División",Racing Club vs Aldosivi | LIVE | 31/10/2026 [Shd247]
+#EXTVLCOPT:http-referrer=https://xstream.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://xstream.st
+#EXTVLCOPT:http-cookie=session_id=6765127195936859
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=6765127195936859
+#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=6765127195936859
+https://instreams.pro/live3/streamhd30/index.m3u8?st=Q-Q5AoWZ6MgfoWyuTPIflg&e=1793423107
+
+#EXTINF:-1 tvg-name="Sarmiento (Junín) vs Rosario Central | LIVE | 31/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Argentine Primera División",Sarmiento (Junín) vs Rosario Central | LIVE | 31/10/2026 [Buff-streams]
 #EXTVLCOPT:http-referrer=https://matchli.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
 #EXTVLCOPT:http-origin=https://matchli.st
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
 #EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=92c2fffbaf6e3dffc3a5f96b2da55b53%2Findex.m3u8&e=1793402250&sig=m6GDFNramX3VrrcSCo-TCq5TmgO3odF39pVmHW33Xrc&v=1793400450-7485
+https://hls.lshls.st/secure_hls.php?path=92c2fffbaf6e3dffc3a5f96b2da55b53%2Findex.m3u8&e=1793414145&sig=a-hmBYiyZLSNFMzXpY6SuRD7YRkVx7-2zYxs-ub4zXc&v=1793412345-2223
 
-#EXTINF:-1 tvg-name="Racing Club vs Aldosivi | 07:15 | 31/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Argentine Primera División",Racing Club vs Aldosivi | 07:15 | 31/10/2026 [Buff-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=1baba6a20bbc0edf3b190e935e8617c4%2Findex.m3u8&e=1793402474&sig=FSZZ9h13jDtj10zXO0JvlPWkuPEfrtgPwfFBH9s6xjM&v=1793400674-5487
-
-#EXTINF:-1 tvg-name="Sarmiento (Junín) vs Rosario Central | 07:15 | 31/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Argentine Primera División",Sarmiento (Junín) vs Rosario Central | 07:15 | 31/10/2026 [Buff-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=92c2fffbaf6e3dffc3a5f96b2da55b53%2Findex.m3u8&e=1793402523&sig=ZGEzt4c7YOIEfthHBcKVFG5KzK9qylK1LxOhycH1i_g&v=1793400723-2461
-
-#EXTINF:-1 tvg-name="Lens vs Lille | English | 03:05 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="Ligue 1",Lens vs Lille | English | 03:05 | 31/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401876420
+#EXTINF:-1 tvg-name="UCF vs Baylor [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",UCF vs Baylor [iSTRMEAST]
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58886?ad=111
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401876420&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401876420
-https://instreams.pro/live3/tv401876420/index.m3u8?st=TFxxbS4n-tH0iPzc36_tRw&e=1793412076
-
-#EXTINF:-1 tvg-name="Sporting CP vs Casa Pia | English | 03:15 | 31/10/2026 [STRMGATE]" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" tvg-id="Soccer.Dummy.us" group-title="POR 1",Sporting CP vs Casa Pia | English | 03:15 | 31/10/2026 [STRMGATE]
-#EXTVLCOPT:http-referrer=https://xstream.st/livetv.php?stream=tv401885408
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/livetv.php?stream=tv401885408&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://xstream.st/livetv.php?stream=tv401885408
-https://instreams.pro/live3/tv401885408/index.m3u8?st=3hcSuLfHyzjvql-4ndqEQQ&e=1793412077
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58886?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58886?ad=111
+https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58886%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58886%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
 
 #EXTINF:-1 tvg-name="Charlotte vs Tulane [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Charlotte vs Tulane [iSTRMEAST]
 #EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58878?ad=111
