@@ -1,35 +1,28 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-31 02:10 UTC
-# streams  : 4
+# generated: 2026-10-31 22:57 UTC
+# streams  : 3
 
-#EXTINF:-1 tvg-name="Racing Club vs Aldosivi | LIVE | 31/10/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="Argentine Primera División",Racing Club vs Aldosivi | LIVE | 31/10/2026 [Shd247]
-#EXTVLCOPT:http-referrer=https://xstream.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://xstream.st
-#EXTVLCOPT:http-cookie=session_id=6765127195936859
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://xstream.st&Cookie=session_id=6765127195936859
-#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: session_id=6765127195936859
-https://instreams.pro/live3/streamhd30/index.m3u8?st=Q-Q5AoWZ6MgfoWyuTPIflg&e=1793423107
-
-#EXTINF:-1 tvg-name="Sarmiento (Junín) vs Rosario Central | LIVE | 31/10/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="Argentine Primera División",Sarmiento (Junín) vs Rosario Central | LIVE | 31/10/2026 [Buff-streams]
+#EXTINF:-1 tvg-name="LA Galaxy vs Austin FC | LIVE | 01/11/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",LA Galaxy vs Austin FC | LIVE | 01/11/2026 [Buff-streams]
 #EXTVLCOPT:http-referrer=https://matchli.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
 #EXTVLCOPT:http-origin=https://matchli.st
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
 #EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=92c2fffbaf6e3dffc3a5f96b2da55b53%2Findex.m3u8&e=1793414145&sig=a-hmBYiyZLSNFMzXpY6SuRD7YRkVx7-2zYxs-ub4zXc&v=1793412345-2223
+https://hls.lshls.st/secure_hls.php?path=9ae3de4b40a6ecfdd03fc90be82c4535%2Findex.m3u8&e=1793488508&sig=5xsJWonf7QUvXkLvKrurVe1Y87sw4nxs9PuBPGA4HgU&v=1793486708-8455
 
-#EXTINF:-1 tvg-name="UCF vs Baylor [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",UCF vs Baylor [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58886?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58886?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58886?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58886%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58886%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-name="San Jose Earthquakes vs Real Salt Lake | LIVE | 01/11/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",San Jose Earthquakes vs Real Salt Lake | LIVE | 01/11/2026 [Buff-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=efcf0daf38c7d00d886c3002cea356e1%2Findex.m3u8&e=1793488726&sig=otQQQ1LT3y_Uv0U5Ux5en_JACnVtALGEkh_iN5NQnSM&v=1793486926-7030
 
-#EXTINF:-1 tvg-name="Charlotte vs Tulane [iSTRMEAST]" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" tvg-id="NCAA.Sports.Dummy.us" group-title="CFB",Charlotte vs Tulane [iSTRMEAST]
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net/new-stream-embed/58878?ad=111
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://gooz.aapmains.net/new-stream-embed/58878?ad=111&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTHTTP:Referer: https://gooz.aapmains.net/new-stream-embed/58878?ad=111
-https://sportsurge-proxy.love4vn.workers.dev/?url=https%3A%2F%2Fchatgpt.hereisman.net%2Fplaylist%2F58878%2Fload-playlist&ref=https%3A%2F%2Fgooz.aapmains.net%2Fnew-stream-embed%2F58878%3Fad%3D111&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-name="Colorado Rapids vs Chicago Fire FC | 08:30 | 01/11/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Colorado Rapids vs Chicago Fire FC | 08:30 | 01/11/2026 [Buff-streams]
+#EXTVLCOPT:http-referrer=https://matchli.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
+https://hls.lshls.st/secure_hls.php?path=efcf0daf38c7d00d886c3002cea356e1%2Findex.m3u8&e=1793489166&sig=ZtbpEzNu9kBS8sGl6M06eV10J9_AdnL0HX_oLbWUXpM&v=1793487366-6545
