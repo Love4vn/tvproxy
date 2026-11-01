@@ -6,10 +6,28 @@ from playwright.sync_api import sync_playwright
 # Danh sách domain Xoilac để thử
 XOILAC_DOMAINS = [
     "https://xoilacz.io",
-    "https://xoilacvbp.tv",
-    "https://xoilaczzz.pro",
     "https://xoilaczzh.io",
-    "https://xoilaczzf.cc"
+    "https://xoilaczzf.cc",
+    "https://xoilaczzb.cc",
+    "https://xoilaczzc.cc",
+    "https://xoilaczzd.cc",
+    "https://xoilaczzh.cc",
+    "https://xoilacxxi.cc",
+    "https://xoilacxxe.cc",
+    "https://xoilaczzzj.cc",
+    "https://xoilacxbm.tv",
+    "https://xoilacxth.tv",
+    "https://xoilacxbi.tv",
+    "https://xoilac7tv.tv",
+    "https://xoilacvvr.tv",
+    "https://xoilacxbr.tv",
+    "https://xoilaczbh.tv",
+    "https://xoilaczzz.pro",
+    "https://vebozbr.cc",
+    "https://90phutzzu.tv",
+    "https://xoilacxcd.tv",
+    "https://xoilaczck.tv",
+    "https://xoilacvbp.tv"
 ]
 
 def get_latest_headers():
