@@ -1,7 +1,9 @@
 """
-🎯 SĂN LINK XOILAC - v23 (tự động cắt query ?wsSecret/?auth_key)
-✅ Giữ nguyên logic v22 (lấy đủ server trong phòng)
-✅ Tự động normalize link stream về dạng ...flv / ...m3u8 (bỏ query)
+🎯 SĂN LINK XOILAC - v22 (lấy ĐẦY ĐỦ tất cả server)
+✅ Luôn vào phòng để lấy full server buttons (không lấy thiếu)
+✅ Kết hợp sub_links từ trang chủ + server trong phòng, dedupe theo URL
+✅ Selector button linh hoạt: #tv_links a.player-link, a[data-link], ...
+✅ Click button đa cách: selector → text → index
 """
 import re
 import time
@@ -13,18 +15,15 @@ from playwright.sync_api import sync_playwright
 # ==========================================
 # CẤU HÌNH
 # ==========================================
-PROXY = None
+PROXY = None  # đổi thành dict nếu dùng proxy: {"server": "...", "username": "...", "password": "..."}
 
 MAX_RETRIES = 2
 DOMAIN_TIMEOUT = 10000
-ROOM_TIMEOUT = 8000
-STREAM_WAIT_TRIES = 20
+ROOM_TIMEOUT = 8000        # tăng nhẹ vì cần đợi nhiều server
+STREAM_WAIT_TRIES = 20     # chờ stream mỗi server ~5s
 STREAM_WAIT_STEP_MS = 250
 HOURS_AHEAD = 24
 MAX_XEM_THEM_CLICKS = 8
-
-# ⭐ v23: Cắt query (?wsSecret, ?auth_key, ...) để lấy link .flv/.m3u8 sạch
-STRIP_STREAM_QUERY = True
 
 DEBUG_SHOW_REJECTED = True
 DEBUG_REJECTED_LIMIT = 15
@@ -84,19 +83,6 @@ DEFAULT_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
               "AppleWebKit/537.36 (KHTML, like Gecko) "
               "Chrome/131.0.0.0 Safari/537.36")
 
-# ==========================================
-# ⭐ v23: CẮT QUERY STREAM
-# ==========================================
-def normalize_stream_url(url):
-    if not url or not STRIP_STREAM_QUERY:
-        return url
-    # Tìm đuôi .flv hoặc .m3u8 và cắt đến hết đuôi đó
-    for ext in ('.flv', '.m3u8'):
-        idx = url.lower().find(ext)
-        if idx != -1:
-            return url[:idx + len(ext)]
-    return url
-
 
 def set_current_domain(url):
     global CURRENT_XOILAC_DOMAIN, CURRENT_XOILAC_REFERER
@@ -145,6 +131,7 @@ def build_extvlc_headers(stream_url: str) -> str:
     ]
     return "\n".join(headers)
 
+
 # ==========================================
 # HELPERS
 # ==========================================
@@ -168,31 +155,46 @@ def format_match_name(name):
         return f"{m.group(1).strip()} | {m.group(2)} | {m.group(3)}"
     return name
 
+
 # ==========================================
-# WHITELIST / BLACKLIST / LOGIC (giữ nguyên)
+# WHITELIST (giữ nguyên từ v21)
 # ==========================================
 TOP_TEAMS = [
     "arsenal", "aston villa", "bournemouth", "brentford", "brighton",
     "chelsea", "coventry", "crystal palace", "everton", "fulham",
     "hull city", "ipswich", "leicester", "liverpool",
-    "man city", "manchester city", "man united", "man utd", "manchester united",
+    "man city", "manchester city",
+    "man united", "man utd", "manchester united",
     "newcastle", "nottingham forest", "southampton", "tottenham",
-    "augsburg", "bayer leverkusen", "leverkusen", "bayern munich", "bayern munchen", "bayern",
-    "bochum", "borussia dortmund", "dortmund", "bvb",
+    "augsburg", "bayer leverkusen", "leverkusen",
+    "bayern munich", "bayern munchen", "bayern", "bochum",
+    "borussia dortmund", "dortmund", "bvb",
     "borussia monchengladbach", "monchengladbach", "gladbach",
-    "eintracht frankfurt", "frankfurt", "freiburg", "heidenheim", "hoffenheim",
-    "holstein kiel", "kiel", "mainz", "rb leipzig", "leipzig", "st. pauli", "st pauli",
-    "stuttgart", "union berlin", "werder bremen", "werder", "wolfsburg",
-    "alaves", "athletic bilbao", "athletic club", "atletico madrid", "atletico",
-    "barcelona", "barca", "celta vigo", "celta", "espanyol", "getafe", "girona",
-    "las palmas", "leganes", "mallorca", "osasuna", "rayo vallecano",
-    "real betis", "betis", "real madrid", "real sociedad", "sevilla", "valencia", "valladolid", "villarreal",
-    "atalanta", "bologna", "cagliari", "como", "empoli", "fiorentina", "genoa", "hellas verona",
-    "inter milan", "juventus", "juve", "lazio", "lecce", "ac milan", "monza", "napoli", "parma",
-    "roma", "torino", "udinese", "venezia", "angers", "auxerre", "brest", "le havre", "rc lens",
-    "lille", "lyon", "olympique lyonnais", "marseille", "olympique marseille", "as monaco",
-    "montpellier", "nantes", "ogc nice", "paris saint-germain", "paris sg", "psg",
-    "reims", "rennes", "stade rennais", "saint-etienne", "saint etienne", "strasbourg", "toulouse",
+    "eintracht frankfurt", "frankfurt",
+    "freiburg", "heidenheim", "hoffenheim",
+    "holstein kiel", "kiel", "mainz",
+    "rb leipzig", "leipzig", "st. pauli", "st pauli",
+    "stuttgart", "union berlin",
+    "werder bremen", "werder", "wolfsburg",
+    "alaves", "athletic bilbao", "athletic club",
+    "atletico madrid", "atletico", "barcelona", "barca",
+    "celta vigo", "celta", "espanyol", "getafe", "girona",
+    "las palmas", "leganes", "mallorca", "osasuna",
+    "rayo vallecano", "real betis", "betis",
+    "real madrid", "real sociedad",
+    "sevilla", "valencia", "valladolid", "villarreal",
+    "atalanta", "bologna", "cagliari", "como", "empoli",
+    "fiorentina", "genoa", "hellas verona", "inter milan",
+    "juventus", "juve", "lazio", "lecce", "ac milan",
+    "monza", "napoli", "parma", "roma",
+    "torino", "udinese", "venezia",
+    "angers", "auxerre", "brest", "le havre", "rc lens",
+    "lille", "lyon", "olympique lyonnais",
+    "marseille", "olympique marseille", "as monaco",
+    "montpellier", "nantes", "ogc nice",
+    "paris saint-germain", "paris sg", "psg",
+    "reims", "rennes", "stade rennais",
+    "saint-etienne", "saint etienne", "strasbourg", "toulouse",
 ]
 
 JP_KR_NATIONAL = [
@@ -201,8 +203,10 @@ JP_KR_NATIONAL = [
 ]
 
 TENNIS_KEYWORDS = [
-    "tennis", "quan vot", "atp", "wta", "grand slam", "wimbledon", "roland garros",
-    "us open", "australian open", "atp tour", "wta tour", "davis cup", "billie jean king cup", "fed cup",
+    "tennis", "quan vot", "atp", "wta",
+    "grand slam", "wimbledon", "roland garros",
+    "us open", "australian open", "atp tour", "wta tour",
+    "davis cup", "billie jean king cup", "fed cup",
 ]
 
 OTHER_SPORT_KEYWORDS = [
@@ -216,141 +220,203 @@ OTHER_SPORT_KEYWORDS = [
     r"\bdota\s*2?\b", r"\bcs\s*:?\s*go\b", r"\bcsgo\b",
     r"\bvalorant\b", r"\bpubg\b", r"\bmobile\s*legends\b",
     r"\bbaseball\b", r"\bbong\s*chay\b", r"\bmlb\b",
-    r"\bhandball\b", r"\bbong\s*nem\b", r"\bhockey\b", r"\bkhuc\s*con\s*cau\b", r"\bnhl\b",
+    r"\bhandball\b", r"\bbong\s*nem\b",
+    r"\bhockey\b", r"\bkhuc\s*con\s*cau\b", r"\bnhl\b",
     r"\brugby\b", r"\bcricket\b", r"\bgolf\b", r"\bbilliards\b",
     r"\bsnooker\b", r"\bdart\b", r"\bformula\s*1\b", r"\bf1\b",
 ]
 
 HARD_EXCLUDE_PATTERNS = [
-    r"\bnu\b", r"\bwomen\b", r"\bfemale\b", r"\bladies\b", r"\bdamen\b",
-    r"\bfeminine\b", r"\bfemenil\b", r"\bfeminino\b", r"\bu\d{2}\b", r"\bu-\d{2}\b",
-    r"\bunder\s*\d{2}\b", r"\byouth\b", r"\bjunior\b", r"\btre\b", r"\breserve\b",
-    r"\bacademy\b", r"\bhoc\s*vien\b", r"\bdoi\s*b\b", r"\blegends?\b",
-    r"\bhuyen\s*thoai\b", r"\bold\s*boys\b", r"\(\s*y\s*\)", r"\bcastilla\b",
-    r"\bmestalla\b", r"\bpromesas\b", r"\bbilbao\s*athletic\b", r"\bsevilla\s*atletico\b",
-    r"\bbarca\s*b\b", r"\bbarcelona\s*b\b", r"\breal\s*madrid\s*b\b",
-    r"\breal\s*madrid\s*castilla\b", r"\batletico\s*madrid\s*b\b",
-    r"\bvillarreal\s*b\b", r"\bcelta\s*b\b", r"\breal\s*sociedad\s*b\b",
-    r"\bathletic\s*bilbao\s*b\b", r"\balianza\b", r"\bsport\s*boys\b",
-    r"\blippstadt\b", r"\bsant\s*andreu\b", r"\btembetary\b", r"\biteno\b",
-    r"\bsportivo\b", r"\bsporting\s*cristal\b", r"\bcristal\b", r"\bad\s*tarma\b",
-    r"\btarma\b", r"\bmohammedan\b", r"\beast\s*bengal\b", r"\bbengal\b",
-    r"\bbombay\b", r"\bmumbai\b", r"\bnavanagar\b", r"\bgymkhana\b",
-    r"\bifa\s*shield\b", r"\bsuper\s*division\b", r"\bindia\s*super\b",
-    r"\bsreenidi\b", r"\bdeccan\b", r"\bnortheast\s*united\b", r"\bnortheast\b",
-    r"\bkerala\b", r"\bbengaluru\b", r"\bchennaiyin\b", r"\bgoa\b", r"\bhyderabad\b",
-    r"\bodisha\b", r"\bjamshedpur\b", r"\bmumbai\s*city\b", r"\bpunjab\s*fc\b",
-    r"\bsc\s*east\s*bengal\b", r"\batk\b", r"\bmohun\s*bagan\b", r"\bmohunbagan\b",
-    r"\bgokulam\b", r"\bchurchill\b", r"\bdempo\b", r"\bsalgaocar\b",
-    r"\bsporting\s*goa\b", r"\bshree\b", r"\bminerva\b", r"\baizawl\b",
-    r"\bneroca\b", r"\brajasthan\b", r"\baustria\b", r"\bbundesliga\s*ao\b",
-    r"\bbundesliga\s*austria\b", r"\boesterreich\b", r"\bosterreich\b", r"\bhartberg\b",
-    r"\bkapfenberg\b", r"\bsturm\s*graz\b", r"\brapid\s*wien\b", r"\baustria\s*wien\b",
-    r"\bred\s*bull\s*salzburg\b", r"\bsalzburg\b", r"\blask\b", r"\bwolfsberger\b",
-    r"\baltach\b", r"\bried\b", r"\bklagenfurt\b", r"\bblau\s*weiss\b", r"\bwattens\b",
-    r"\basc\s*\d{1,3}\b", r"\btsv\s*\d{1,3}\b", r"\bfsv\s*\d{1,3}\b", r"\bspvgg\s*\d{1,3}\b",
-    r"\bsc\s*\d{1,3}\b", r"\bfc\s*\d{1,3}\b", r"\bhang\s*[3-9]\b",
-    r"\bhang\s*(ba|bon|tu|nam|sau|bay|tam|chin)\b", r"\bprimera\s*federacion\b",
-    r"\bsegunda\s*federacion\b", r"\btercera\s*federacion\b", r"\bprimera\s*rfef\b",
-    r"\bsegunda\s*rfef\b", r"\btercera\s*rfef\b",
+    r"\bnu\b", r"\bwomen\b", r"\bfemale\b", r"\bladies\b",
+    r"\bdamen\b", r"\bfeminine\b", r"\bfemenil\b", r"\bfeminino\b",
+    r"\bu\d{2}\b", r"\bu-\d{2}\b", r"\bunder\s*\d{2}\b",
+    r"\byouth\b", r"\bjunior\b", r"\btre\b", r"\breserve\b",
+    r"\bacademy\b", r"\bhoc\s*vien\b", r"\bdoi\s*b\b",
+    r"\blegends?\b", r"\bhuyen\s*thoai\b", r"\bold\s*boys\b",
+    r"\(\s*y\s*\)",
+    r"\bcastilla\b", r"\bmestalla\b", r"\bpromesas\b",
+    r"\bbilbao\s*athletic\b", r"\bsevilla\s*atletico\b",
+    r"\bbarca\s*b\b", r"\bbarcelona\s*b\b",
+    r"\breal\s*madrid\s*b\b", r"\breal\s*madrid\s*castilla\b",
+    r"\batletico\s*madrid\s*b\b",
+    r"\bvillarreal\s*b\b", r"\bcelta\s*b\b",
+    r"\breal\s*sociedad\s*b\b", r"\bathletic\s*bilbao\s*b\b",
+    r"\balianza\b", r"\bsport\s*boys\b",
+    r"\blippstadt\b", r"\bsant\s*andreu\b",
+    r"\btembetary\b", r"\biteno\b", r"\bsportivo\b",
+    r"\bsporting\s*cristal\b", r"\bcristal\b",
+    r"\bad\s*tarma\b", r"\btarma\b",
+    r"\bmohammedan\b", r"\beast\s*bengal\b", r"\bbengal\b",
+    r"\bbombay\b", r"\bmumbai\b", r"\bnavanagar\b",
+    r"\bgymkhana\b", r"\bifa\s*shield\b",
+    r"\bsuper\s*division\b", r"\bindia\s*super\b",
+    r"\bsreenidi\b", r"\bdeccan\b",
+    r"\bnortheast\s*united\b", r"\bnortheast\b",
+    r"\bkerala\b", r"\bbengaluru\b", r"\bchennaiyin\b",
+    r"\bgoa\b", r"\bhyderabad\b", r"\bodisha\b",
+    r"\bjamshedpur\b", r"\bmumbai\s*city\b", r"\bpunjab\s*fc\b",
+    r"\bsc\s*east\s*bengal\b", r"\batk\b", r"\bmohun\s*bagan\b",
+    r"\bmohunbagan\b", r"\bgokulam\b", r"\bchurchill\b",
+    r"\bdempo\b", r"\bsalgaocar\b", r"\bsporting\s*goa\b",
+    r"\bshree\b", r"\bminerva\b", r"\baizawl\b", r"\bneroca\b",
+    r"\brajasthan\b",
+    r"\baustria\b", r"\bbundesliga\s*ao\b", r"\bbundesliga\s*austria\b",
+    r"\boesterreich\b", r"\bosterreich\b",
+    r"\bhartberg\b", r"\bkapfenberg\b", r"\bsturm\s*graz\b",
+    r"\brapid\s*wien\b", r"\baustria\s*wien\b", r"\bred\s*bull\s*salzburg\b",
+    r"\bsalzburg\b", r"\blask\b", r"\bwolfsberger\b", r"\baltach\b",
+    r"\bried\b", r"\bklagenfurt\b", r"\bblau\s*weiss\b", r"\bwattens\b",
+    r"\basc\s*\d{1,3}\b", r"\btsv\s*\d{1,3}\b", r"\bfsv\s*\d{1,3}\b",
+    r"\bspvgg\s*\d{1,3}\b", r"\bsc\s*\d{1,3}\b", r"\bfc\s*\d{1,3}\b",
+    r"\bhang\s*[3-9]\b",
+    r"\bhang\s*(ba|bon|tu|nam|sau|bay|tam|chin)\b",
+    r"\bprimera\s*federacion\b", r"\bsegunda\s*federacion\b",
+    r"\btercera\s*federacion\b",
+    r"\bprimera\s*rfef\b", r"\bsegunda\s*rfef\b", r"\btercera\s*rfef\b",
     r"hang\s*(2|hai|nhi)\s*[^\w]*(duc|bundesliga|germany)",
     r"hang\s*(2|hai|nhi)\s*[^\w]*(anh|england)",
     r"hang\s*(2|hai|nhi)\s*[^\w]*(y\b|italia|italy)",
     r"hang\s*(2|hai|nhi)\s*[^\w]*(phap|france)",
     r"hang\s*(2|hai|nhi)\s*[^\w]*(tbn|tay\s*ban\s*nha|spain)",
-    r"2\.?\s*bundesliga", r"bundesliga\s*2\b", r"bundesliga\s*zwei", r"\bserie\s*b\b",
-    r"\bligue\s*2\b", r"\bla\s*liga\s*2\b", r"\blaliga\s*2\b", r"\bsegunda\b",
-    r"\bsegunda\s*division\b", r"\befl\s*championship\b", r"\bchampionship\b",
-    r"\bleague\s*one\b", r"\bleague\s*two\b", r"\bregionalliga\b", r"\b3\.?\s*liga\b",
-    r"\bchallenger\s*pro\b", r"\bk\s*league\s*2\b", r"\bleague\s*trophy\b",
-    r"\befl\s*trophy\b", r"\bcupl?\s*league\s*trophy\b", r"\bbristol\s*street\s*motors\b",
-    r"\bpapa\s*john'?s\b", r"\bjohnstone'?s\s*paint\b", r"\bcheckatrade\s*trophy\b",
+    r"2\.?\s*bundesliga", r"bundesliga\s*2\b", r"bundesliga\s*zwei",
+    r"\bserie\s*b\b", r"\bligue\s*2\b",
+    r"\bla\s*liga\s*2\b", r"\blaliga\s*2\b",
+    r"\bsegunda\b", r"\bsegunda\s*division\b",
+    r"\befl\s*championship\b", r"\bchampionship\b",
+    r"\bleague\s*one\b", r"\bleague\s*two\b",
+    r"\bregionalliga\b", r"\b3\.?\s*liga\b",
+    r"\bchallenger\s*pro\b", r"\bk\s*league\s*2\b",
+    r"\bleague\s*trophy\b", r"\befl\s*trophy\b",
+    r"\bcupl?\s*league\s*trophy\b",
+    r"\bbristol\s*street\s*motors\b",
+    r"\bpapa\s*john'?s\b",
+    r"\bjohnstone'?s\s*paint\b",
+    r"\bcheckatrade\s*trophy\b",
     r"\bldv\s*vans\b", r"\bvertu\s*trophy\b",
     r"\bd\s*[1-9]\b[\s\S]{0,80}(duc|germany|bundesliga|oberliga|westfalen)",
-    r"\bd\s*[1-9]\s*(duc|germany|hang)", r"\boberliga\b", r"\bverbandsliga\b",
-    r"\bkreisliga\b", r"\blandesliga\b", r"\bwestfalen\b", r"\bniederrhein\b",
-    r"\bbayernliga\b", r"\bhessenliga\b", r"\bberlinliga\b", r"\bnordost\b",
-    r"\bsudwest\b", r"\bnordliga\b", r"\bsudliga\b", r"\bbundesliga\s*[3-9]\b",
-    r"\bgerman\s*bundesliga\s*[2-9]\b", r"\bgermany\s*bundesliga\s*[2-9]\b",
+    r"\bd\s*[1-9]\s*(duc|germany|hang)",
+    r"\boberliga\b", r"\bverbandsliga\b", r"\bkreisliga\b",
+    r"\blandesliga\b", r"\bwestfalen\b", r"\bniederrhein\b",
+    r"\bbayernliga\b", r"\bhessenliga\b", r"\bberlinliga\b",
+    r"\bnordost\b", r"\bsudwest\b", r"\bnordliga\b", r"\bsudliga\b",
+    r"\bbundesliga\s*[3-9]\b",
+    r"\bgerman\s*bundesliga\s*[2-9]\b",
+    r"\bgermany\s*bundesliga\s*[2-9]\b",
     r"\bhohenwestedt\b", r"\beckernforder\b", r"\beckernfoerder\b",
-    r"\bschleswig[-\s]?holstein\b", r"\bkreisklasse\b", r"\bbezirksliga\b",
-    r"\blandesklasse\b", r"\bwestfalenliga\b", r"\bniedersachsenliga\b",
-    r"\bniedersachsen\b", r"\bbaden[-\s]?wurttemberg\b", r"\bnordrhein\b",
-    r"\brheinland\b", r"\bsaarlandliga\b", r"\bsaarland\b", r"\bbremen[-\s]?liga\b",
-    r"\bhamburg[-\s]?liga\b", r"\bberlin[-\s]?liga\b", r"\bthuringen\b",
-    r"\bsachsen\b", r"\banhalt\b", r"\bmittelrhein\b", r"\bnorthern\s*premier\b",
-    r"\bnorthern\s*league\b", r"\bsouthern\s*premier\b", r"\bsouthern\s*league\b",
-    r"\bisthmian\b", r"\bnpl\b", r"\bspl\b", r"\bpremier\s*division\b",
-    r"\bcounty\s*league\b", r"\bnon[-\s]?league\b", r"\bcombinations?\b",
-    r"\bchinese\b", r"\bcmcl\b", r"\bchina\s*championship\b", r"\bchina\s*league\b",
-    r"\bchina\s*cup\b", r"\bliaoning\b", r"\bxinjiang\b", r"\bguangdong\b",
-    r"\bsichuan\b", r"\bshaanxi\b", r"\bqingdao\b", r"\bwuhan\b", r"\bchongqing\b",
-    r"\bjiangsu\b", r"\bshenzhen\b", r"\bdalian\b", r"\bguangzhou\b", r"\bshanghai\b",
-    r"\bbeijing\b", r"\btianjin\b", r"\bhebei\b", r"\bshandong\b", r"\bzhejiang\b",
-    r"\bhenan\b", r"\byunnan\b", r"\bxi'?an\b", r"\bcfa\s*member\b", r"\bshillong\b",
-    r"\bindian\b", r"\bindia\b", r"\bisl\b", r"\bi[-\s]?league\b", r"\bsantosh\b",
-    r"\bperu\b", r"\bperuvian\b", r"\bparaguay\b", r"\bparaguayan\b", r"\bclausura\b",
-    r"\bapertura\b", r"\bcopa\s*sudamericana\b", r"\bcopa\s*de\s*la\s*liga\b",
+    r"\bschleswig[-\s]?holstein\b",
+    r"\bkreisklasse\b", r"\bbezirksliga\b", r"\blandesklasse\b",
+    r"\bwestfalenliga\b", r"\bniedersachsenliga\b", r"\bniedersachsen\b",
+    r"\bbaden[-\s]?wurttemberg\b", r"\bnordrhein\b", r"\brheinland\b",
+    r"\bsaarlandliga\b", r"\bsaarland\b", r"\bbremen[-\s]?liga\b",
+    r"\bhamburg[-\s]?liga\b", r"\bberlin[-\s]?liga\b",
+    r"\bthuringen\b", r"\bsachsen\b", r"\banhalt\b", r"\bmittelrhein\b",
+    r"\bnorthern\s*premier\b", r"\bnorthern\s*league\b",
+    r"\bsouthern\s*premier\b", r"\bsouthern\s*league\b",
+    r"\bisthmian\b", r"\bnpl\b", r"\bspl\b",
+    r"\bpremier\s*division\b", r"\bcounty\s*league\b", r"\bnon[-\s]?league\b",
+    r"\bcombinations?\b",
+    r"\bchinese\b", r"\bcmcl\b", r"\bchina\s*championship\b",
+    r"\bchina\s*league\b", r"\bchina\s*cup\b",
+    r"\bliaoning\b", r"\bxinjiang\b", r"\bguangdong\b",
+    r"\bsichuan\b", r"\bshaanxi\b", r"\bqingdao\b",
+    r"\bwuhan\b", r"\bchongqing\b", r"\bjiangsu\b",
+    r"\bshenzhen\b", r"\bdalian\b", r"\bguangzhou\b",
+    r"\bshanghai\b", r"\bbeijing\b", r"\btianjin\b",
+    r"\bhebei\b", r"\bshandong\b", r"\bzhejiang\b",
+    r"\bhenan\b", r"\byunnan\b", r"\bxi'?an\b",
+    r"\bcfa\s*member\b",
+    r"\bshillong\b", r"\bindian\b", r"\bindia\b", r"\bisl\b",
+    r"\bi[-\s]?league\b", r"\bsantosh\b",
+    r"\bperu\b", r"\bperuvian\b", r"\bparaguay\b", r"\bparaguayan\b",
+    r"\bclausura\b", r"\bapertura\b",
+    r"\bcopa\s*sudamericana\b", r"\bcopa\s*de\s*la\s*liga\b",
     r"\bcopa\s*paraguay\b",
     r"\bprimera\s*division\s*(peru|paraguay|chile|colombia|ecuador|uruguay|bolivia|venezuela)",
     r"\bliga\s*1\s*(peru|chile|paraguay|colombia|ecuador|uruguay|bolivia|mexico)",
     r"\bdivision\s*profesional\b",
     r"\bcup\s*quoc\s*gia\s*(paraguay|peru|chile|colombia|ecuador|uruguay|bolivia|venezuela|brazil|argentina|mexico|nhat|han|trung)",
     r"\blebanese\b", r"\blebanon\b", r"\begyptian\b", r"\bsyrian\b", r"\bsyria\b",
-    r"\bjordan\b", r"\bjordanian\b", r"\byemeni\b", r"\byemen\b", r"\blibyan\b",
-    r"\blibya\b", r"\bpalestin\b", r"\bsudanese\b", r"\bsomali\b", r"\bdjibouti\b",
-    r"\bmauritania\b", r"\bmauritius\b", r"\bcomoros\b", r"\bmaldives\b", r"\bkazakh\b",
-    r"\buzbek\b", r"\bkyrgyz\b", r"\btajik\b", r"\bturkmen\b", r"\bsaint\s*kitts\b",
-    r"\bnevis\b", r"\bbhutan\b", r"\bsri\s*lanka\b", r"\bgibraltar\b", r"\bfaroe\b",
-    r"\bzanzibar\b", r"\bethiopia\b", r"\beritrea\b", r"\bwelsh\b", r"\bscottish\b",
-    r"\bnorthern\s*ireland\b", r"\bthai\s*land\b", r"\bthai\s*league\b", r"\bmalaysia\b",
-    r"\bindonesia\b", r"\bphilippines\b", r"\bsingapore\b", r"\bmyanmar\b", r"\bcambodia\b",
-    r"\bcampuchia\b", r"\btrung\s*quoc\b", r"\bnhat\b", r"\bjapan\b", r"\bj\s*league\b",
-    r"\bj1\b", r"\bj2\b", r"\bhan\s*quoc\b", r"\bkorea\b", r"\bk\s*league\b",
-    r"\bkashima\b", r"\burawa\b", r"\byokohama\b", r"\bkawasaki\b", r"\bulsan\b",
-    r"\bjeonbuk\b", r"\bpohang\b", r"\bseoul\b", r"\ban\s*do\b", r"\biran\b",
-    r"\biraq\b", r"\bsaudi\b", r"\barab\b", r"\ba\s*rap\b", r"\buae\b", r"\bqatar\b",
-    r"\bkuwait\b", r"\bbahrain\b", r"\boman\b", r"\buzbekistan\b", r"\bkazakhstan\b",
-    r"\bkyrgyzstan\b", r"\btajikistan\b", r"\bviet\s*nam\b", r"\bv\.?\s*league\b",
-    r"\bvleague\b", r"\bafc\s*champions\b", r"\bafc\s*cup\b", r"\bbangladesh\b",
-    r"\bchattogram\b", r"\bdhaka\b", r"\bcomilla\b", r"\bsylhet\b", r"\brajshahi\b",
-    r"\bkhulna\b", r"\bbashundhara\b", r"\bmohammedan\s*dhaka\b", r"\bafghanistan\b",
-    r"\bnepal\b", r"\bpakistan\b", r"\bvenezuela\b", r"\bbrasil\b", r"\bbrazil\b",
-    r"\bbrasileir[ao]\b", r"\bargentina\b", r"\bprimera\s*division\b", r"\bmexico\b",
-    r"\bliga\s*mx\b", r"\bmls\b", r"\bchile\b", r"\bcolombia\b", r"\becuador\b",
-    r"\buruguay\b", r"\bbolivia\b", r"\bcosta\s*rica\b", r"\bhonduras\b",
-    r"\bguatemala\b", r"\bpanama\b", r"\bconcacaf\b", r"\bcopa\s*america\b",
-    r"\bcopa\s*libertadores\b", r"\bconcacaf\s*champions\b", r"\bleagues\s*cup\b",
-    r"\bcanada\b", r"\bcanadian\s*premier\b", r"\begypt\b", r"\bai\s*cap\b",
-    r"\bmaroc\b", r"\bmorocco\b", r"\btunisia\b", r"\balgeria\b", r"\bnam\s*phi\b",
-    r"\bsouth\s*africa\b", r"\bnigeria\b", r"\bghana\b", r"\bcaf\b", r"\bafcon\b",
-    r"\bcaf\s*champions\b", r"\bsudan\b", r"\btanzania\b", r"\bnambia\b", r"\bcongo\b",
-    r"\bnamibia\b", r"\baustralia\b", r"\ba[-\s]?league\b", r"\bnew\s*zealand\b",
-    r"\btimor\s*leste\b", r"\btimor\b", r"\bczech\b", r"\bsec\b", r"\bfortuna\s*liga\b",
-    r"\bchance\s*liga\b", r"\bthuy\s*si\b", r"\bswitzerland\b", r"\bbelgium\b",
-    r"\bpro\s*league\s*bi\b", r"\bjupiler\b", r"\bholland\b", r"\bnetherlands\b",
-    r"\beredivisie\b", r"\bportugal\b", r"\bbo\s*dao\s*nha\b", r"\bprimeira\s*liga\b",
-    r"\bturkey\b", r"\btho\s*nhi\s*ky\b", r"\bsuper\s*lig\b", r"\bscotland\b",
-    r"\bwales\b", r"\bireland\b", r"\bcroatia\b", r"\bserbia\b", r"\bpoland\b",
-    r"\bekstraklasa\b", r"\bukraine\b", r"\bnga\b", r"\brussia\b", r"\bdenmark\b",
-    r"\bdan\s*mach\b", r"\bsuperliga\b", r"\bsweden\b", r"\bthuy\s*dien\b",
-    r"\ballsvenskan\b", r"\bnorway\b", r"\bna\s*uy\b", r"\beliteserien\b",
-    r"\bfinland\b", r"\bphan\s*lan\b", r"\bveikkausliiga\b", r"\bromania\b",
-    r"\bbulgaria\b", r"\bhungary\b", r"\bslovenia\b", r"\bslovakia\b", r"\bbosnia\b",
-    r"\balbania\b", r"\bmacedonia\b", r"\biceland\b", r"\bcyprus\b", r"\bmalta\b",
-    r"\bluxembourg\b", r"\bestonia\b", r"\blatvia\b", r"\blithuania\b", r"\bbelarus\b",
-    r"\bmoldova\b", r"\bgeorgia\b", r"\barmenia\b", r"\bazerbaijan\b",
-    r"\brus\s*d[1-9]", r"\brus\s*[abc]\b", r"\brussian\b", r"\bfnl\b", r"\bfnl\s*2\b",
-    r"\bpremier\s*liga\b", r"\btula\b", r"\bmetallurg\b", r"\blipetsk\b", r"\bzenit\b",
-    r"\bspartak\s*moscow\b", r"\bcska\s*moscow\b", r"\bdynamo\s*moscow\b",
-    r"\blokomotiv\s*moscow\b", r"\brubin\s*kazan\b", r"\bkrasnodar\b", r"\brostov\b",
-    r"\bconcacaf\s*nations\b", r"\bconcacaf\s*gold\b", r"\bcaribbean\b", r"\bcaribe\b",
+    r"\bjordan\b", r"\bjordanian\b", r"\byemeni\b", r"\byemen\b",
+    r"\blibyan\b", r"\blibya\b", r"\bpalestin\b", r"\bsudanese\b",
+    r"\bsomali\b", r"\bdjibouti\b", r"\bmauritania\b", r"\bmauritius\b",
+    r"\bcomoros\b", r"\bmaldives\b", r"\bkazakh\b", r"\buzbek\b", r"\bkyrgyz\b",
+    r"\btajik\b", r"\bturkmen\b",
+    r"\bsaint\s*kitts\b", r"\bnevis\b", r"\bbhutan\b", r"\bsri\s*lanka\b",
+    r"\bgibraltar\b", r"\bfaroe\b", r"\bzanzibar\b", r"\bethiopia\b", r"\beritrea\b",
+    r"\bwelsh\b", r"\bscottish\b", r"\bnorthern\s*ireland\b",
+    r"\bthai\s*land\b", r"\bthai\s*league\b",
+    r"\bmalaysia\b", r"\bindonesia\b", r"\bphilippines\b",
+    r"\bsingapore\b", r"\bmyanmar\b", r"\bcambodia\b", r"\bcampuchia\b",
+    r"\btrung\s*quoc\b",
+    r"\bnhat\b", r"\bjapan\b", r"\bj\s*league\b", r"\bj1\b", r"\bj2\b",
+    r"\bhan\s*quoc\b", r"\bkorea\b", r"\bk\s*league\b",
+    r"\bkashima\b", r"\burawa\b", r"\byokohama\b", r"\bkawasaki\b",
+    r"\bulsan\b", r"\bjeonbuk\b", r"\bpohang\b", r"\bseoul\b",
+    r"\ban\s*do\b",
+    r"\biran\b", r"\biraq\b", r"\bsaudi\b", r"\barab\b", r"\ba\s*rap\b",
+    r"\buae\b", r"\bqatar\b", r"\bkuwait\b", r"\bbahrain\b", r"\boman\b",
+    r"\buzbekistan\b", r"\bkazakhstan\b", r"\bkyrgyzstan\b", r"\btajikistan\b",
+    r"\bviet\s*nam\b", r"\bv\.?\s*league\b", r"\bvleague\b",
+    r"\bafc\s*champions\b", r"\bafc\s*cup\b",
+    r"\bbangladesh\b", r"\bchattogram\b", r"\bdhaka\b",
+    r"\bcomilla\b", r"\bsylhet\b", r"\brajshahi\b", r"\bkhulna\b",
+    r"\bbashundhara\b", r"\bmohammedan\s*dhaka\b",
+    r"\bafghanistan\b", r"\bnepal\b", r"\bpakistan\b",
+    r"\bvenezuela\b", r"\bbrasil\b", r"\bbrazil\b", r"\bbrasileir[ao]\b",
+    r"\bargentina\b", r"\bprimera\s*division\b",
+    r"\bmexico\b", r"\bliga\s*mx\b", r"\bmls\b",
+    r"\bchile\b", r"\bcolombia\b", r"\becuador\b",
+    r"\buruguay\b", r"\bbolivia\b",
+    r"\bcosta\s*rica\b", r"\bhonduras\b", r"\bguatemala\b", r"\bpanama\b",
+    r"\bconcacaf\b", r"\bcopa\s*america\b", r"\bcopa\s*libertadores\b",
+    r"\bconcacaf\s*champions\b", r"\bleagues\s*cup\b", r"\bcanada\b",
+    r"\bcanadian\s*premier\b",
+    r"\begypt\b", r"\bai\s*cap\b", r"\bmaroc\b", r"\bmorocco\b",
+    r"\btunisia\b", r"\balgeria\b", r"\bnam\s*phi\b", r"\bsouth\s*africa\b",
+    r"\bnigeria\b", r"\bghana\b", r"\bcaf\b", r"\bafcon\b",
+    r"\bcaf\s*champions\b", r"\bsudan\b", r"\btanzania\b",
+    r"\bnambia\b", r"\bcongo\b", r"\bnamibia\b",
+    r"\baustralia\b", r"\ba[-\s]?league\b", r"\bnew\s*zealand\b",
+    r"\btimor\s*leste\b", r"\btimor\b",
+    r"\bczech\b", r"\bsec\b", r"\bfortuna\s*liga\b", r"\bchance\s*liga\b",
+    r"\bthuy\s*si\b", r"\bswitzerland\b",
+    r"\bbelgium\b", r"\bpro\s*league\s*bi\b", r"\bjupiler\b",
+    r"\bholland\b", r"\bnetherlands\b", r"\beredivisie\b",
+    r"\bportugal\b", r"\bbo\s*dao\s*nha\b", r"\bprimeira\s*liga\b",
+    r"\bturkey\b", r"\btho\s*nhi\s*ky\b", r"\bsuper\s*lig\b",
+    r"\bscotland\b", r"\bwales\b", r"\bireland\b",
+    r"\bcroatia\b", r"\bserbia\b",
+    r"\bpoland\b", r"\bekstraklasa\b",
+    r"\bukraine\b", r"\bnga\b", r"\brussia\b",
+    r"\bdenmark\b", r"\bdan\s*mach\b", r"\bsuperliga\b",
+    r"\bsweden\b", r"\bthuy\s*dien\b", r"\ballsvenskan\b",
+    r"\bnorway\b", r"\bna\s*uy\b", r"\beliteserien\b",
+    r"\bfinland\b", r"\bphan\s*lan\b", r"\bveikkausliiga\b",
+    r"\bromania\b", r"\bbulgaria\b", r"\bhungary\b",
+    r"\bslovenia\b", r"\bslovakia\b",
+    r"\bbosnia\b", r"\balbania\b", r"\bmacedonia\b",
+    r"\biceland\b", r"\bcyprus\b", r"\bmalta\b",
+    r"\bluxembourg\b", r"\bestonia\b", r"\blatvia\b", r"\blithuania\b",
+    r"\bbelarus\b", r"\bmoldova\b", r"\bgeorgia\b", r"\barmenia\b",
+    r"\bazerbaijan\b",
+    r"\brus\s*d[1-9]", r"\brus\s*[abc]\b", r"\brussian\b",
+    r"\bfnl\b", r"\bfnl\s*2\b", r"\bpremier\s*liga\b",
+    r"\btula\b", r"\bmetallurg\b", r"\blipetsk\b",
+    r"\bzenit\b", r"\bspartak\s*moscow\b", r"\bcska\s*moscow\b",
+    r"\bdynamo\s*moscow\b", r"\blokomotiv\s*moscow\b",
+    r"\brubin\s*kazan\b", r"\bkrasnodar\b", r"\brostov\b",
+    r"\bconcacaf\s*nations\b", r"\bconcacaf\s*gold\b",
+    r"\bcaribbean\b", r"\bcaribe\b",
     r"\bmontserrat\b", r"\bbritish\s*virgin\b", r"\bus\s*virgin\b",
-    r"\bvirgin\s*islands?\b", r"\btrinidad\b", r"\btobago\b", r"\bbarbados\b",
-    r"\bjamaica\b", r"\bhaiti\b", r"\bcuba\b", r"\bdominican\b", r"\bdominica\b",
-    r"\bantigua\b", r"\bbarbuda\b", r"\bgrenada\b", r"\bsaint\s*lucia\b",
-    r"\bst\.?\s*vincent\b", r"\bbahamas\b", r"\bbelize\b", r"\bbermuda\b",
-    r"\bguyana\b", r"\bsuriname\b", r"\bsint\s*maarten\b", r"\bsaint\s*maarten\b",
+    r"\bvirgin\s*islands?\b",
+    r"\btrinidad\b", r"\btobago\b", r"\bbarbados\b",
+    r"\bjamaica\b", r"\bhaiti\b", r"\bcuba\b",
+    r"\bdominican\b", r"\bdominica\b",
+    r"\bantigua\b", r"\bbarbuda\b",
+    r"\bgrenada\b", r"\bsaint\s*lucia\b", r"\bst\.?\s*vincent\b",
+    r"\bbahamas\b", r"\bbelize\b", r"\bbermuda\b",
+    r"\bguyana\b", r"\bsuriname\b",
+    r"\bsint\s*maarten\b", r"\bsaint\s*maarten\b",
     r"\banguilla\b", r"\bcayman\b", r"\bturks\b",
 ]
 
@@ -358,32 +424,43 @@ TOP_LEAGUE_PATTERNS = [
     r"\bpremier\s*league\b", r"\bngoai\s*hang\s*anh\b", r"\bepl\b",
     r"\bla\s*liga\b(?!\s*2)", r"\blaliga\b(?!\s*2)",
     r"\bbundesliga\b(?!\s*\d)(?!\s*zwei)(?!\s*ao)(?!\s*austria)(?!\s*oesterreich)(?!\s*german)",
-    r"\bserie\s*a\b(?!\s*b)", r"\bligue\s*1\b", r"\bchampions\s*league\b",
-    r"\buefa\s*champions\b", r"\bcup\s*c1\b", r"\bcup\s*1\b", r"\bucl\b",
-    r"\beuropa\s*league\b", r"\bcup\s*c2\b", r"\buel\b", r"\bconference\s*league\b",
-    r"\bcup\s*c3\b", r"\buecl\b", r"\bsieu\s*cup\s*chau\s*au\b",
-    r"\bsuper\s*cup\s*uefa\b", r"\buefa\s*super\s*cup\b", r"\bworld\s*cup\b",
-    r"\bfifa\s*world\s*cup\b", r"\bworldcup\b", r"\buefa\s*euro\b",
-    r"\beuro\s*20\d{2}\b", r"\beuro\s*championship\b", r"\beuro\s*cup\b",
-    r"\buefa\s*nations\s*league\b", r"\buefa\s*nations\b", r"\buefa\s*nl\b",
-    r"\basean\s*cup\b", r"\basean\s*championship\b", r"\baff\s*cup\b",
-    r"\baff\s*championship\b", r"\baff\s*suzuki\b", r"\bsuzuki\s*cup\b",
+    r"\bserie\s*a\b(?!\s*b)",
+    r"\bligue\s*1\b",
+    r"\bchampions\s*league\b", r"\buefa\s*champions\b",
+    r"\bcup\s*c1\b", r"\bcup\s*1\b", r"\bucl\b",
+    r"\beuropa\s*league\b", r"\bcup\s*c2\b", r"\buel\b",
+    r"\bconference\s*league\b", r"\bcup\s*c3\b", r"\buecl\b",
+    r"\bsieu\s*cup\s*chau\s*au\b", r"\bsuper\s*cup\s*uefa\b",
+    r"\buefa\s*super\s*cup\b",
+    r"\bworld\s*cup\b", r"\bfifa\s*world\s*cup\b", r"\bworldcup\b",
+    r"\buefa\s*euro\b", r"\beuro\s*20\d{2}\b",
+    r"\beuro\s*championship\b", r"\beuro\s*cup\b",
+    r"\buefa\s*nations\s*league\b",
+    r"\buefa\s*nations\b", r"\buefa\s*nl\b",
+    r"\basean\s*cup\b", r"\basean\s*championship\b",
+    r"\baff\s*cup\b", r"\baff\s*championship\b",
+    r"\baff\s*suzuki\b", r"\bsuzuki\s*cup\b",
     r"\bfifa\s*asean\b",
 ]
 
 EURO_COUNTRIES = {
-    "anh", "england", "duc", "germany", "phap", "france", "italy", "italia",
-    "tay ban nha", "spain", "bo dao nha", "portugal", "ha lan", "netherlands",
-    "bi", "belgium", "thuy si", "switzerland", "ao", "austria", "dan mach", "denmark",
-    "thuy dien", "sweden", "na uy", "norway", "phan lan", "finland", "ba lan", "poland",
-    "croatia", "serbia", "scotland", "wales", "ireland", "cong hoa sec", "czech",
-    "slovakia", "slovenia", "hungary", "romania", "bulgaria", "hy lap", "greece",
-    "tho nhi ky", "turkey", "ukraine", "nga", "russia", "israel", "xu wales",
-    "liechtenstein", "lithuania", "litva", "latvia", "lativia", "estonia", "kosovo",
-    "montenegro", "albania", "macedonia", "bac macedonia", "bosnia",
-    "bosnia and herzegovina", "iceland", "ai len", "malta", "luxembourg", "cyprus",
-    "dao sip", "moldova", "belarus", "georgia", "armenia", "azerbaijan", "andorra",
-    "san marino", "faroe", "quan dao faroe", "gibraltar",
+    "anh", "england", "duc", "germany", "phap", "france",
+    "italy", "italia", "tay ban nha", "spain", "bo dao nha", "portugal",
+    "ha lan", "netherlands", "bi", "belgium", "thuy si", "switzerland",
+    "ao", "austria", "dan mach", "denmark",
+    "thuy dien", "sweden", "na uy", "norway",
+    "phan lan", "finland", "ba lan", "poland",
+    "croatia", "serbia", "scotland", "wales", "ireland",
+    "cong hoa sec", "czech", "slovakia", "slovenia",
+    "hungary", "romania", "bulgaria",
+    "hy lap", "greece", "tho nhi ky", "turkey",
+    "ukraine", "nga", "russia", "israel", "xu wales",
+    "liechtenstein", "lithuania", "litva", "latvia", "lativia",
+    "estonia", "kosovo", "montenegro", "albania",
+    "macedonia", "bac macedonia", "bosnia", "bosnia and herzegovina",
+    "iceland", "ai len", "malta", "luxembourg", "cyprus", "dao sip",
+    "moldova", "belarus", "georgia", "armenia", "azerbaijan",
+    "andorra", "san marino", "faroe", "quan dao faroe", "gibraltar",
 }
 
 FRIENDLY_KEYWORDS = ("giao huu", "friendly", "friendlies")
@@ -460,14 +537,17 @@ def is_euro_international_container(text):
         return False
     t = normalize_vn(text)
     if any(re.search(p, t, re.IGNORECASE) for p in [
-        r"\bconcacaf\b", r"\bafc\b", r"\bcaf\b", r"\bconmebol\b", r"\bofc\b",
-        r"\bnorth\s*america\b", r"\bcentral\s*america\b", r"\bcaribbean\b", r"\bcaribe\b",
+        r"\bconcacaf\b", r"\bafc\b", r"\bcaf\b",
+        r"\bconmebol\b", r"\bofc\b",
+        r"\bnorth\s*america\b", r"\bcentral\s*america\b",
+        r"\bcaribbean\b", r"\bcaribe\b",
     ]):
         return False
     patterns = [
-        r"\buefa\s*nl\b", r"\buefa\s*nations\b", r"\buefa\s*euro\b",
-        r"\beuro\s*20\d{2}\b", r"\beuro\s*championship\b", r"\bworld\s*cup\b",
-        r"\bfifa\s*world\b", r"\bfriendly\b", r"\bgiao\s*huu\b", r"\bfriendlies\b",
+        r"\buefa\s*nl\b", r"\buefa\s*nations\b",
+        r"\buefa\s*euro\b", r"\beuro\s*20\d{2}\b", r"\beuro\s*championship\b",
+        r"\bworld\s*cup\b", r"\bfifa\s*world\b",
+        r"\bfriendly\b", r"\bgiao\s*huu\b", r"\bfriendlies\b",
         r"\bwc\s*qualif", r"\beuro\s*qualif",
     ]
     return any(re.search(p, t, re.IGNORECASE) for p in patterns)
@@ -478,9 +558,11 @@ def is_asean_cup_container(text):
         return False
     t = normalize_vn(text)
     patterns = [
-        r"\basean\s*cup\b", r"\basean\s*championship\b", r"\baff\s*cup\b",
-        r"\baff\s*championship\b", r"\baff\s*suzuki\b", r"\bsuzuki\s*cup\b",
-        r"\bfifa\s*asean\b", r"\baff\s*mitsubishi\b", r"\bmitsubishi\s*electric\s*cup\b",
+        r"\basean\s*cup\b", r"\basean\s*championship\b",
+        r"\baff\s*cup\b", r"\baff\s*championship\b",
+        r"\baff\s*suzuki\b", r"\bsuzuki\s*cup\b",
+        r"\bfifa\s*asean\b",
+        r"\baff\s*mitsubishi\b", r"\bmitsubishi\s*electric\s*cup\b",
         r"\bgiai\s*asean\b", r"\bgiai\s*bong\s*da\s*dong\s*nam\s*a\b",
     ]
     return any(re.search(p, t, re.IGNORECASE) for p in patterns)
@@ -491,9 +573,11 @@ def is_asean_team(text):
         return False
     t = normalize_vn(text)
     asean_teams = [
-        "viet nam", "vietnam", "thai lan", "thailand", "indonesia", "malaysia",
-        "singapore", "philippines", "phi luat tan", "myanmar", "mi an ma",
-        "campuchia", "cambodia", "lao", "laos", "brunei", "timor", "dong timor",
+        "viet nam", "vietnam", "thai lan", "thailand",
+        "indonesia", "malaysia", "singapore",
+        "philippines", "phi luat tan", "myanmar", "mi an ma",
+        "campuchia", "cambodia", "lao", "laos", "brunei",
+        "timor", "dong timor",
     ]
     return any(team in t for team in asean_teams)
 
@@ -626,10 +710,12 @@ def goto_with_redirect(page, url, timeout=DOMAIN_TIMEOUT):
         print(f"     ⚠️ goto fail: {str(e)[:80]}", flush=True)
         return None, False
 
+
 # ==========================================
-# ⭐ v23: CAPTURE & NORMALIZE
+# ⭐ HÀM BẮT STREAM TỪ 1 URL (dùng chung)
 # ==========================================
 def _capture_stream(page, target_url, referer_url):
+    """Vào target_url, bắt m3u8/flv đầu tiên. Trả về url hoặc None."""
     captured = [None]
 
     def handle(req):
@@ -652,6 +738,7 @@ def _capture_stream(page, target_url, referer_url):
                 break
             page.wait_for_timeout(STREAM_WAIT_STEP_MS)
 
+        # Thử click giữa trang (autoplay)
         if not captured[0]:
             try:
                 page.mouse.click(960, 400)
@@ -666,22 +753,31 @@ def _capture_stream(page, target_url, referer_url):
             page.remove_listener("request", handle)
         except Exception:
             pass
-
-    # Cắt query params để lấy link .flv/.m3u8 sạch
-    return normalize_stream_url(captured[0])
+    return captured[0]
 
 
+# ==========================================
+# ⭐ DETECT BUTTON SERVER (đa selector)
+# ==========================================
 def detect_server_buttons(page):
     return page.evaluate(r"""
         () => {
             const btns = [];
             const seen = new Set();
+
+            // Thử nhiều selector theo thứ tự ưu tiên
             const selectors = [
-                '#tv_links a.player-link', '.tv_links a.player-link',
-                'a.player-link', '#tv_links a[data-link]', 'a[data-link]',
-                '[class*="tv-link"] a', '[class*="tv_link"] a',
-                '[class*="server-list"] a', '[class*="list-server"] a',
-                '[class*="list__server"] a', '[class*="servers"] a'
+                '#tv_links a.player-link',
+                '.tv_links a.player-link',
+                'a.player-link',
+                '#tv_links a[data-link]',
+                'a[data-link]',
+                '[class*="tv-link"] a',
+                '[class*="tv_link"] a',
+                '[class*="server-list"] a',
+                '[class*="list-server"] a',
+                '[class*="list__server"] a',
+                '[class*="servers"] a'
             ];
             let nodes = [];
             for (const sel of selectors) {
@@ -691,19 +787,30 @@ def detect_server_buttons(page):
                     break;
                 }
             }
+
             nodes.forEach((a, idx) => {
                 const dataLink = a.getAttribute('data-link');
+                // Label: ưu tiên dòng cuối của innerText (vì có thể có icon)
                 let raw = (a.innerText || '').trim();
                 let label = raw.split('\n').map(s => s.trim()).filter(Boolean).pop() || '';
                 if (!label) label = a.getAttribute('title') || ('Server ' + idx);
+                // Loại bỏ ký tự thừa
                 label = label.replace(/^[▶⏸\s]+/, '').trim();
+
                 const key = dataLink ? 'dl-' + dataLink : ('idx-' + idx + '-' + label);
                 if (seen.has(key)) return;
                 seen.add(key);
+
                 let selector = null;
                 if (dataLink) selector = '#tv_link_' + dataLink;
                 if (!selector && a.id) selector = '#' + a.id;
-                btns.push({ idx: dataLink || String(idx), label: label, selector: selector, idx_pos: idx });
+
+                btns.push({
+                    idx: dataLink || String(idx),
+                    label: label,
+                    selector: selector,
+                    idx_pos: idx
+                });
             });
             return btns;
         }
@@ -711,22 +818,27 @@ def detect_server_buttons(page):
 
 
 def _click_button(page, btn):
+    """Thử click button theo nhiều cách."""
+    # 1. Theo selector
     if btn.get('selector'):
         try:
             page.click(btn['selector'], timeout=4000)
             return True
         except Exception:
             pass
+    # 2. Theo text exact
     try:
         page.get_by_text(btn['label'], exact=True).first.click(timeout=3000)
         return True
     except Exception:
         pass
+    # 3. Theo text non-exact
     try:
         page.get_by_text(btn['label'], exact=False).first.click(timeout=3000)
         return True
     except Exception:
         pass
+    # 4. Theo index trong list a.player-link / a[data-link]
     try:
         idx = btn.get('idx_pos', 0)
         page.locator('#tv_links a.player-link, a.player-link, a[data-link]').nth(idx).click(timeout=3000)
@@ -736,11 +848,20 @@ def _click_button(page, btn):
     return False
 
 
+# ==========================================
+# ⭐ LẤY TẤT CẢ STREAM TỪ 1 PHÒNG
+# ==========================================
 def lay_streams_tu_phong(page, link_phong, sub_links, referer_url):
+    """
+    v22: LUÔN vào phòng để lấy ĐẦY ĐỦ server buttons.
+    Kết hợp cả 2 nguồn: sub_links từ trang chủ + server trong phòng.
+    Dedupe theo URL stream.
+    """
     streams = []
-    seen_urls = set()
-    seen_sources = set()
+    seen_urls = set()   # URL stream đã bắt (m3u8/flv)
+    seen_sources = set()  # URL nguồn đã thử (link/N hoặc selector)
 
+    # --- BƯỚC 1: Thử sub_links /link/N trực tiếp (nhanh) ---
     for sl in sub_links or []:
         if sl['url'] in seen_sources:
             continue
@@ -753,8 +874,10 @@ def lay_streams_tu_phong(page, link_phong, sub_links, referer_url):
         else:
             print(f"        ⛔ [{sl['label']}] no stream (link/N)", flush=True)
 
+    # --- BƯỚC 2: LUÔN vào phòng để lấy full server ---
     try:
-        page.goto(link_phong, timeout=ROOM_TIMEOUT, wait_until="commit", referer=referer_url)
+        page.goto(link_phong, timeout=ROOM_TIMEOUT,
+                  wait_until="commit", referer=referer_url)
     except Exception as e:
         print(f"     ⚠️ goto room fail: {str(e)[:60]}", flush=True)
         return streams
@@ -766,14 +889,19 @@ def lay_streams_tu_phong(page, link_phong, sub_links, referer_url):
     except Exception:
         pass
 
-    for sel in ['.close', '.closebtn', '[aria-label="Close"]', '.modal-close', '.popup-close']:
+    # Đóng popup nếu có
+    for sel in ['.close', '.closebtn', '[aria-label="Close"]',
+                '.modal-close', '.popup-close']:
         try:
             page.locator(sel).first.click(timeout=600)
         except Exception:
             pass
 
+    # Đợi buttons xuất hiện
     try:
-        page.wait_for_selector('#tv_links a.player-link, a.player-link, a[data-link]', timeout=6000)
+        page.wait_for_selector(
+            '#tv_links a.player-link, a.player-link, a[data-link]',
+            timeout=6000)
     except Exception:
         pass
 
@@ -784,6 +912,7 @@ def lay_streams_tu_phong(page, link_phong, sub_links, referer_url):
 
     print(f"     📺 {len(buttons)} servers trong phòng: {[b['label'] for b in buttons]}", flush=True)
 
+    # --- BƯỚC 3: Click từng server để bắt stream ---
     for btn in buttons:
         target_url = [None]
 
@@ -818,14 +947,10 @@ def lay_streams_tu_phong(page, link_phong, sub_links, referer_url):
             except Exception:
                 pass
 
-        if target_url[0]:
-            normalized = normalize_stream_url(target_url[0])
-            if normalized not in seen_urls:
-                seen_urls.add(normalized)
-                streams.append({"label": btn["label"], "url": normalized})
-                print(f"        ✅ [{btn['label']}] {normalized[:75]} (room)", flush=True)
-            else:
-                print(f"        ⛔ [{btn['label']}] duplicate stream", flush=True)
+        if target_url[0] and target_url[0] not in seen_urls:
+            seen_urls.add(target_url[0])
+            streams.append({"label": btn["label"], "url": target_url[0]})
+            print(f"        ✅ [{btn['label']}] {target_url[0][:75]} (room)", flush=True)
         else:
             print(f"        ⛔ [{btn['label']}] no stream (room)", flush=True)
 
@@ -836,7 +961,7 @@ def lay_streams_tu_phong(page, link_phong, sub_links, referer_url):
 # MAIN
 # ==========================================
 def san_full_server_qua_proxy():
-    print("🚀 BẮT ĐẦU QUÉT XOILAC v23 (tự động cắt query ?wsSecret/?auth_key)", flush=True)
+    print("🚀 BẮT ĐẦU QUÉT XOILAC v22 (lấy ĐẦY ĐỦ server)", flush=True)
 
     danh_sach_phat = []
     server_da_thanh_cong = set()
