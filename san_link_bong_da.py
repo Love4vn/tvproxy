@@ -16,11 +16,7 @@ from playwright.sync_api import sync_playwright
 # ==========================================
 # CẤU HÌNH
 # ==========================================
-PROXY = {
-    "server": "http://14.241.72.139:10906",
-    "username": "hieumx",
-    "password": "hieu123",
-}
+PROXY = None  # đổi thành dict nếu dùng proxy: {"server": "...", "username": "...", "password": "..."}
 
 MAX_RETRIES = 3
 DOMAIN_TIMEOUT = 25000
