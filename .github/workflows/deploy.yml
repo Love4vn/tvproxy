@@ -38,4 +38,5 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          wranglerVersion: 'latest' # <-- THÊM DÒNG NÀY ĐỂ DÙNG BẢN MỚI NHẤT
           command: deploy worker.js --name hls-proxy --compatibility-date 2024-03-20
