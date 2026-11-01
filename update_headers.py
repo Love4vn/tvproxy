@@ -56,7 +56,7 @@ def get_latest_headers():
                     print("     ⚠️ Không tìm thấy trận đấu nào.")
                     continue
                 
-                match_url = match_links[0].get_attribute('href')
+                match_url = match_links[0].evaluate("node => node.href")
                 print(f"     -> Vào trận: {match_url}")
                 page.goto(match_url, timeout=15000, wait_until="domcontentloaded")
                 
