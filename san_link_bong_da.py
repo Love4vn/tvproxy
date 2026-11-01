@@ -1431,6 +1431,42 @@ def san_full_server_qua_proxy():
         danh_sach_sach = alive
         print(f"🔍 Còn {len(danh_sach_sach)} link sống", flush=True)
 
+    # ==========================================
+    # XUẤT FILE M3U QUA CLOUDFLARE WORKER PROXY (Cho SSIPTV / Stremio)
+    # ==========================================
+    CF_WORKER_URL = "https://hls-proxy.love4vn.workers.dev"
+    
+    from urllib.parse import quote
+    
+    if danh_sach_sach:
+        proxy_entries = []
+        for luong in danh_sach_sach:
+            referer = luong.get('referer') or get_smart_referer(luong['link'])
+            origin = luong.get('origin') or referer.rstrip('/')
+            ua = luong.get('user_agent') or DEFAULT_UA
+            
+            # Tạo URL proxy
+            proxy_link = (f"{CF_WORKER_URL}/?url={quote(luong['link'], safe='')}"
+                          f"&ref={quote(referer, safe='')}"
+                          f"&origin={quote(origin, safe='')}"
+                          f"&ua={quote(ua, safe='')}")
+            
+            proxy_entries.append({
+                'nhom': luong['nhom'],
+                'ten': luong['ten'],
+                'thumb': luong['thumb'],
+                'link': proxy_link,
+            })
+
+        if proxy_entries:
+            proxy_file = "tong_hop_bong_da_proxy.m3u"
+            with open(proxy_file, "w", encoding="utf-8") as f:
+                f.write("#EXTM3U\n")
+                for e in proxy_entries:
+                    f.write(f'#EXTINF:-1 group-title="{e["nhom"]}" tvg-logo="{e["thumb"]}", {e["ten"]}\n')
+                    f.write(f'{e["link"]}\n')
+            print(f"\n☁️  Đã xuất file cho SSIPTV/Stremio: {proxy_file} ({len(proxy_entries)} kênh)")
+            
     if danh_sach_sach:
         with open("tong_hop_bong_da.m3u", "w", encoding="utf-8") as file:
             file.write("#EXTM3U\n")
