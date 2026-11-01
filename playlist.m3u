@@ -1,28 +1,12 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-10-31 22:57 UTC
-# streams  : 3
+# generated: 2026-11-01 01:55 UTC
+# streams  : 1
 
-#EXTINF:-1 tvg-name="LA Galaxy vs Austin FC | LIVE | 01/11/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",LA Galaxy vs Austin FC | LIVE | 01/11/2026 [Buff-streams]
+#EXTINF:-1 tvg-name="Colorado Rapids vs Chicago Fire FC | LIVE | 01/11/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Colorado Rapids vs Chicago Fire FC | LIVE | 01/11/2026 [Buff-streams]
 #EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
 #EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
 #EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=9ae3de4b40a6ecfdd03fc90be82c4535%2Findex.m3u8&e=1793488508&sig=5xsJWonf7QUvXkLvKrurVe1Y87sw4nxs9PuBPGA4HgU&v=1793486708-8455
-
-#EXTINF:-1 tvg-name="San Jose Earthquakes vs Real Salt Lake | LIVE | 01/11/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",San Jose Earthquakes vs Real Salt Lake | LIVE | 01/11/2026 [Buff-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=efcf0daf38c7d00d886c3002cea356e1%2Findex.m3u8&e=1793488726&sig=otQQQ1LT3y_Uv0U5Ux5en_JACnVtALGEkh_iN5NQnSM&v=1793486926-7030
-
-#EXTINF:-1 tvg-name="Colorado Rapids vs Chicago Fire FC | 08:30 | 01/11/2026 [Buff-streams]" tvg-logo="" tvg-id="Live.Event.us" group-title="MLS",Colorado Rapids vs Chicago Fire FC | 08:30 | 01/11/2026 [Buff-streams]
-#EXTVLCOPT:http-referrer=https://matchli.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0
-#EXTVLCOPT:http-origin=https://matchli.st
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://matchli.st/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0&Origin=https://matchli.st
-#EXTHTTP:Referer: https://matchli.st/|Origin: https://matchli.st
-https://hls.lshls.st/secure_hls.php?path=efcf0daf38c7d00d886c3002cea356e1%2Findex.m3u8&e=1793489166&sig=ZtbpEzNu9kBS8sGl6M06eV10J9_AdnL0HX_oLbWUXpM&v=1793487366-6545
+https://hls.lshls.st/secure_hls.php?path=efcf0daf38c7d00d886c3002cea356e1%2Findex.m3u8&e=1793499731&sig=ME48NkWoORJOjyOj2RS1GQInViCHkpoJ6oPmIyC4kck&v=1793497931-8652
