@@ -8,7 +8,7 @@
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001793613699-0-0-be484024f583fffb20a3ed9c033848bb
+https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001793622158-0-0-3a58256967bb0ffa2b586bdd44efec92
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh49xpr6od/image/small", ⚽ Sassuolo vs Fiorentina | 00:30 | 03/11/2026 [TOM]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-4/off-tvc?is_off_add=false
@@ -18,7 +18,7 @@ https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001793613699-0-0-b
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001793613714-0-0-7b3f1d0ce97d945408c9637ddbfaf8cd
+https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001793622173-0-0-c68c3c06620f49158d97f66c5779a74c
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh49xpr6od/image/small", ⚽ Sassuolo vs Fiorentina | 00:30 | 03/11/2026 [FULL HD MAX]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-6/off-tvc?is_off_add=false
@@ -28,7 +28,7 @@ https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001793613714-0-0-7
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001793613723-0-0-d1e681351b874c59fd8ae5b9d4f65aaf
+https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001793622182-0-0-e36d34d1edb34f50b4fd96a39dfa4e79
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/d23xmvkh5vvqg8n/image/small", ⚽ Lorient vs Brest | 02:45 | 03/11/2026 [HD ASTRA]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-11/off-tvc?is_off_add=false
@@ -38,7 +38,17 @@ https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001793613723-0-0-d
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001793613775-0-0-70f21d53581d6fb67e22b9f6d0d89ffb
+https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001793622235-0-0-09e9390e96d2641eba8e0e0393834b2f
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phyw6m2wd/image/small", ⚽ Atalanta vs Parma | 02:45 | 03/11/2026 [FABIO]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel2/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel2/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.jorvakstreamcache.com/live/channel2.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phyw6m2wd/image/small", ⚽ Atalanta vs Parma | 02:45 | 03/11/2026 [HD FABIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-2/off-tvc?is_off_add=false
@@ -48,7 +58,7 @@ https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001793613775-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001793613799-0-0-d114150b12dba682cc286e46d6e60c7e
+https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001793622252-0-0-7c5c58bdf89053be2a1c0e3e67d43b5f
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h8dpmojx/image/small", ⚽ Newcastle United vs Everton | 03:00 | 03/11/2026 [FELIX]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-24/off-tvc?is_off_add=false
@@ -58,7 +68,7 @@ https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001793613799-0-0-d
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001793613812-0-0-8f3200cf9fb33d1719da91caaf22cec8
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001793622264-0-0-eea594603cbb784d373e1cf1a16d6c5f
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h8dpmojx/image/small", ⚽ Newcastle United vs Everton | 03:00 | 03/11/2026 [FELIX]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-24/off-tvc?is_off_add=false
@@ -68,7 +78,7 @@ https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001793613812-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001793613827-0-0-06c9660bfe30de03d4232561d9bf6d6a
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001793622279-0-0-69553a208199b12c3f63fcc6c2aea0d0
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h8dpmojx/image/small", ⚽ Newcastle United vs Everton | 03:00 | 03/11/2026 [FULL HD ROY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
@@ -78,7 +88,7 @@ https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001793613827-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001793613836-0-0-823d1a8f0a980379e1abd29b6595bf4e
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001793622289-0-0-ae7816a8677c933a3190471d8ba95abf
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hddyrz84/image/small", ⚽ Dep. La Coruna vs Osasuna | 03:00 | 03/11/2026 [FILIP]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-19/off-tvc?is_off_add=false
@@ -88,7 +98,7 @@ https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001793613836-0-0-8
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001793613848-0-0-b937a420a51d88255b3d82cf8e720b08
+https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001793622300-0-0-e257235f421fb35bcf1d5a3cc4d3fb00
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hddyrz84/image/small", ⚽ Dep. La Coruna vs Osasuna | 03:00 | 03/11/2026 [FILIP]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-19/off-tvc?is_off_add=false
@@ -98,7 +108,17 @@ https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001793613848-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001793613863-0-0-1bf49665b28be98b85d04081c6fd7356
+https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001793622315-0-0-5a539bbd2811eeb9a8cb20d1f4da9546
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hddyrz84/image/small", ⚽ Dep. La Coruna vs Osasuna | 03:00 | 03/11/2026 [FILIP]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel19/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel19/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.jorvakstreamcache.com/live/channel19.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hddyrz84/image/small", ⚽ Dep. La Coruna vs Osasuna | 03:00 | 03/11/2026 [FULL HD BRADY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-15/off-tvc?is_off_add=false
@@ -108,7 +128,17 @@ https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001793613863-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001793613873-0-0-fc4bdc3cab06c7ea35900312e2263542
+https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001793622316-0-0-a7696a1eec5af61ee0a194e30d150bc3
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/4wyrnjf4ylwq86p/image/small", ⚽ Alejandro Tabilo vs Rafael Jodar | 18:10 | 02/11/2026 [LUCAS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel31/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel31/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.jorvakstreamcache.com/live/channel31.flv
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/4wyrnjf4ylwq86p/image/small", ⚽ Alejandro Tabilo vs Rafael Jodar | 18:10 | 02/11/2026 [HD LUCAS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-31/off-tvc?is_off_add=false
@@ -118,7 +148,17 @@ https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001793613873-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001793613936-0-0-8a61a8d9725a6c06d466dde39ad9de68
+https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001793622333-0-0-5b612ed1f201d8e20bf27e563bc5cc91
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/vjxm85fpv09m6od/image/small", ⚽ Casper Ruud vs Juan Manuel Cerundolo | 19:20 | 02/11/2026 [LUCAS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel31/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel31/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.jorvakstreamcache.com/live/channel31.flv
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/vjxm85fpv09m6od/image/small", ⚽ Casper Ruud vs Juan Manuel Cerundolo | 19:20 | 02/11/2026 [HD LUCAS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-31/off-tvc?is_off_add=false
@@ -128,7 +168,17 @@ https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001793613936-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001793613973-0-0-f01c905ea52ac91b8175082f10f18662
+https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001793622380-0-0-0471fb377ef5af70f68b337d560e67f7
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/4jwq2pfx9x6m0ve/image/small", ⚽ Cameron Norrie vs Matteo Arnaldi | 19:20 | 02/11/2026 [VIC]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel32/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel32/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.jorvakstreamcache.com/live/channel32.flv
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/4jwq2pfx9x6m0ve/image/small", ⚽ Cameron Norrie vs Matteo Arnaldi | 19:20 | 02/11/2026 [HD VIC]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-32/off-tvc?is_off_add=false
@@ -138,7 +188,17 @@ https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001793613973-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001793613996-0-0-42a24142208a8c09b40dfd3fbbde80d4
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001793622396-0-0-2850b77b9e8c927c2b99d6a7cda70a27
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/jw2r0jfwlx0mz84/image/small", ⚽ Kyrian Jacquet vs Tomas Machac | 21:30 | 02/11/2026 [VIC]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel32/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel32/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.jorvakstreamcache.com/live/channel32.flv
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/jw2r0jfwlx0mz84/image/small", ⚽ Kyrian Jacquet vs Tomas Machac | 21:30 | 02/11/2026 [HD VIC]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-32/off-tvc?is_off_add=false
@@ -148,7 +208,17 @@ https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001793613996-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001793614046-0-0-d75eccef4e6f308f450b07a21262c9fc
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001793622457-0-0-846832c7169dc617d4d98cd067a37ea7
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/dj2ry1fg8zkr1zp/image/small", ⚽ Denis Shapovalov vs Karen Khachanov | 01:00 | 03/11/2026 [LUCAS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel31/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel31/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.jorvakstreamcache.com/live/channel31.flv
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/dj2ry1fg8zkr1zp/image/small", ⚽ Denis Shapovalov vs Karen Khachanov | 01:00 | 03/11/2026 [HD LUCAS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-31/off-tvc?is_off_add=false
@@ -158,4 +228,4 @@ https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001793614046-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001793614084-0-0-a6be1b0892f3bb48e8b11aed6e5ebfdc
+https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001793622489-0-0-49ae56a1e61705f1dbdc34d7259cc5a8
