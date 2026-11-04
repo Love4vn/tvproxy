@@ -1,12 +1,4 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-11-04 00:00 UTC
-# streams  : 1
-
-#EXTINF:-1 tvg-name="Chapecoense vs Mirassol | LIVE | 04/11/2026 [Paini] #2" tvg-logo="" tvg-id="Live.Event.us" group-title="Brazilian Série A",Chapecoense vs Mirassol | LIVE | 04/11/2026 [Paini] #2
-#EXTVLCOPT:http-referrer=https://embed.sportspatrika.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:158.0) Gecko/20100101 Firefox/158.0
-#EXTVLCOPT:http-origin=https://embed.sportspatrika.com
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://embed.sportspatrika.com/&User-Agent=Mozilla/5.0 (X11; Linux x86_64; rv:158.0) Gecko/20100101 Firefox/158.0&Origin=https://embed.sportspatrika.com
-#EXTHTTP:Referer: https://embed.sportspatrika.com/|Origin: https://embed.sportspatrika.com
-https://streamed.streamgate.link/iLQV2maxQk/es1/index.m3u8
+# generated: 2026-11-04 05:29 UTC
+# streams  : 0
