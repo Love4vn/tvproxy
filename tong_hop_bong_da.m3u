@@ -1,44 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhl8j8qwzv/image/small", ⚽ CF Trival Valderas vs Leganes | 02:00 | 11/11/2026 [POLO]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel10/off-tvc?is_off_add=false
-#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel10/off-tvc?is_off_add=false
-#EXTVLCOPT:http-header=Accept:*/*
-#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
-#EXTVLCOPT:network-caching=1500
-https://live2.jorvakstreamcache.com/live/channel10.flv
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhl8j8qwzv/image/small", ⚽ CF Trival Valderas vs Leganes | 02:00 | 11/11/2026 [HD POLO]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-10/off-tvc?is_off_add=false
-#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-10/off-tvc?is_off_add=false
-#EXTVLCOPT:http-header=Accept:*/*
-#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
-#EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-10.flv?auth_key=3000001794342488-0-0-89c3a9ac5de5e9e24c4af2542365c887
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyhe3g5r1ge/image/small", ⚽ UE Tavernes vs Valencia CF | 03:00 | 11/11/2026 [MAX]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel6/off-tvc?is_off_add=false
-#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel6/off-tvc?is_off_add=false
-#EXTVLCOPT:http-header=Accept:*/*
-#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
-#EXTVLCOPT:network-caching=1500
-https://live2.jorvakstreamcache.com/live/channel6.flv
-#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyhe3g5r1ge/image/small", ⚽ UE Tavernes vs Valencia CF | 03:00 | 11/11/2026 [HD MAX]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-6/off-tvc?is_off_add=false
-#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-6/off-tvc?is_off_add=false
-#EXTVLCOPT:http-header=Accept:*/*
-#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
-#EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001794342504-0-0-236723bf3d46c8306e32e646b0d7061e
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/d23xmvkhjweqg8n/image/small", ⚽ Uzbekistan vs Nga | 22:00 | 12/11/2026 [HD 1]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
@@ -48,7 +8,7 @@ https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001794342504-0-0-2
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794342505-0-0-291dc9dd088b9d9ab0b8e3eb4f78377f
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794391304-0-0-11f8bbf4eb999f83091cce8e6ecbef5d
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllhvxyqvy9/image/small", ⚽ Thổ Nhĩ Kỳ vs Bỉ | 00:00 | 13/11/2026 [HD 1]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
@@ -58,7 +18,7 @@ https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794342505-0-0-2
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794342513-0-0-ff3b1a5e1c915fb3e7c9e6ffe023421b
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794391310-0-0-01694e28599434df69d92bb976e7529b
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/9vjxm8gh167r6od/image/small", ⚽ Armenia vs Đảo Síp | 00:00 | 13/11/2026 [HD 1]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
@@ -68,18 +28,88 @@ https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794342513-0-0-f
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794342519-0-0-e6e9dc4dd3d0231fc13ca4eb32167663
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/3glrw2f1ojjrdyj/image/small", ⚽ Marta Kostyuk vs Jessica Pegula | 03:00 | 11/11/2026 [LUCAS]
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794391317-0-0-1400f5438ab15c61ee03ca4aa9ad3e4f
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nh290md7o/image/small", ⚽ Italy vs Pháp | 02:45 | 13/11/2026 [HD 1]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel31/off-tvc?is_off_add=false
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
 #EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
 #EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel31/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.jorvakstreamcache.com/live/channel31.flv
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/3glrw2f1ojjrdyj/image/small", ⚽ Marta Kostyuk vs Jessica Pegula | 03:00 | 11/11/2026 [HD LUCAS]
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794391352-0-0-6e274b341cea81ec9f79110856d29d69
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66h5kyqo9j/image/small", ⚽ San Marino vs Belarus | 02:45 | 13/11/2026 [HD 1]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794391358-0-0-c5787ead0af31534f1e4188b4a976987
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z8yomo4hl08q0j6/image/small", ⚽ Anh vs Croatia | 02:45 | 13/11/2026 [HD 1]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794391365-0-0-054fb7516dc90fd438ce605d07c8ef93
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nhy07md7o/image/small", ⚽ CH Séc vs Tây Ban Nha | 02:45 | 13/11/2026 [HD 1]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794391373-0-0-304789e461dd908622431dad1daec085
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4zp5rzgh9j9q82w/image/small", ⚽ Albania vs Phần Lan | 02:45 | 13/11/2026 [HD 1]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794391380-0-0-dc6d7f8cbc1a259a26f763c573b7a8af
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1h30zdmojx/image/small", ⚽ Montenegro vs Latvia | 02:45 | 13/11/2026 [HD 1]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794391388-0-0-84a16f287b3f281c576ee4f56c38f790
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/23xmvvfklogmg8n/image/small", ⚽ Lorenzo Sonego vs Alejandro Tabilo | 19:00 | 11/11/2026 [HD VIC]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-32/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-32/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001794391457-0-0-1d3a48d87ca2926976a98ef009beffed
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/3glrw2fzpv6rdyj/image/small", ⚽ Taylor Fritz vs Cameron Norrie | 20:30 | 11/11/2026 [HD VIC]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-32/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-32/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001794391507-0-0-edc7372850722a9f103e71a103ed033c
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/pxwrxjf99k6myk0/image/small", ⚽ Elina Svitolina vs Karolina Muchova | 03:00 | 12/11/2026 [HD LUCAS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-31/off-tvc?is_off_add=false
 #EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
@@ -88,18 +118,8 @@ https://live2.jorvakstreamcache.com/live/channel31.flv
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001794342582-0-0-baaa9d2328f68ada5aa499e519656376
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/n54ql4f8go0rvy9/image/small", ⚽ Coco Gauff vs Linda Noskova | 04:10 | 11/11/2026 [LUCAS]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel31/off-tvc?is_off_add=false
-#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel31/off-tvc?is_off_add=false
-#EXTVLCOPT:http-header=Accept:*/*
-#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
-#EXTVLCOPT:network-caching=1500
-https://live2.jorvakstreamcache.com/live/channel31.flv
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/n54ql4f8go0rvy9/image/small", ⚽ Coco Gauff vs Linda Noskova | 04:10 | 11/11/2026 [HD LUCAS]
+https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001794391597-0-0-dbf9db5d75b7445ca0aec87d73ce231d
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/8yomojf0njgq0j6/image/small", ⚽ Aryna Sabalenka vs Mirra Andreeva | 04:10 | 12/11/2026 [HD LUCAS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-31/off-tvc?is_off_add=false
 #EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
@@ -108,18 +128,8 @@ https://live2.jorvakstreamcache.com/live/channel31.flv
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001794342611-0-0-06d78930bcff57b7a02ad27ae759a140
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/4jwq2pfvjjom0ve/image/small", ⚽ Katerina Siniakova/Taylor Townsend vs Ellen Perez/Demi Schuurs | 05:20 | 11/11/2026 [LUCAS]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel31/off-tvc?is_off_add=false
-#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel31/off-tvc?is_off_add=false
-#EXTVLCOPT:http-header=Accept:*/*
-#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
-#EXTVLCOPT:network-caching=1500
-https://live2.jorvakstreamcache.com/live/channel31.flv
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/4jwq2pfvjjom0ve/image/small", ⚽ Katerina Siniakova/Taylor Townsend vs Ellen Perez/Demi Schuurs | 05:20 | 11/11/2026 [HD LUCAS]
+https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001794391620-0-0-1cf590126c4d1aaa0f76ebc00aefb70a
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/23xmvvfoepemg8n/image/small", ⚽ Gabriela Dabrowski/Luisa Stefani vs Guo Hanyu/Kristina Mladenovic | 05:20 | 12/11/2026 [HD LUCAS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-31/off-tvc?is_off_add=false
 #EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
@@ -128,4 +138,4 @@ https://live2.jorvakstreamcache.com/live/channel31.flv
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001794342640-0-0-77c3aaed6b6b33c30aa30fdcd585a73a
+https://live2.domaincdn.cc/livecdn/channel-31.flv?auth_key=3000001794391642-0-0-f1b3847cb7467f12ad2be0899dddb07c
