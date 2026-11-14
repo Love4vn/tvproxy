@@ -1,13 +1,4 @@
 #EXTM3U
 # playlist : soccersurge + multi-source (verified, soccer + tennis)
-# generated: 2026-11-13 23:31 UTC
-# streams  : 1
-
-#EXTINF:-1 tvg-name="Ecuador vs Costa Rica | 07:00 | 14/11/2026 [Shd247]" tvg-logo="" tvg-id="Live.Event.us" group-title="International Friendly",Ecuador vs Costa Rica | 07:00 | 14/11/2026 [Shd247]
-#EXTVLCOPT:http-referrer=https://xstream.st/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:158.0) Gecko/20100101 Firefox/158.0
-#EXTVLCOPT:http-origin=https://xstream.st
-#EXTVLCOPT:http-cookie=__cf_bm=MhuNsgQQLWUkyf1pZ9rWbT4SM7l_C4vg99MHDTiSTZw-1794612583.9998076-1.0.1.1-DI57o3vj0et4KPbgfSei__VlT9GUhERdc3kr.fMSJsFOZaB2FldunJJoC6TpMP4yiNgeJHksAZtLN0lhTAfi8IDDqUfz4e9OMFpkUj9aVL07VYwRSEgd6glLRxOa0Jub; co_9550628a735673579133e6612a3c4ab7_223=1; co_f87e1bd365913f351915dc8db7c5d6f5_223=1; session_id=3900855900679192; __cf_bm=BRgFBj0RI9qGI3Q.SbR.p4TnQn2QeLVvRp1ogG2GmiQ-1794612583.6710927-1.0.1.1-VRNXb8.xPUH2KtXYJ1f_O2kZroFCNFvWJJB0EunCVHb2S2eTePvzc9FU3Z4xd6hAMcGJv3YosC3Zyo5jmP7AIiSfYXU.0fKRcy1by3qqYPeLerdpwpAKHXBwek7CEhvr; co_a88998c22491bbbd8fb84cd66c408d81_223=1
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://xstream.st/&User-Agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:158.0) Gecko/20100101 Firefox/158.0&Origin=https://xstream.st&Cookie=__cf_bm=MhuNsgQQLWUkyf1pZ9rWbT4SM7l_C4vg99MHDTiSTZw-1794612583.9998076-1.0.1.1-DI57o3vj0et4KPbgfSei__VlT9GUhERdc3kr.fMSJsFOZaB2FldunJJoC6TpMP4yiNgeJHksAZtLN0lhTAfi8IDDqUfz4e9OMFpkUj9aVL07VYwRSEgd6glLRxOa0Jub; co_9550628a735673579133e6612a3c4ab7_223=1; co_f87e1bd365913f351915dc8db7c5d6f5_223=1; session_id=3900855900679192; __cf_bm=BRgFBj0RI9qGI3Q.SbR.p4TnQn2QeLVvRp1ogG2GmiQ-1794612583.6710927-1.0.1.1-VRNXb8.xPUH2KtXYJ1f_O2kZroFCNFvWJJB0EunCVHb2S2eTePvzc9FU3Z4xd6hAMcGJv3YosC3Zyo5jmP7AIiSfYXU.0fKRcy1by3qqYPeLerdpwpAKHXBwek7CEhvr; co_a88998c22491bbbd8fb84cd66c408d81_223=1
-#EXTHTTP:Referer: https://xstream.st/|Origin: https://xstream.st|Cookie: __cf_bm=MhuNsgQQLWUkyf1pZ9rWbT4SM7l_C4vg99MHDTiSTZw-1794612583.9998076-1.0.1.1-DI57o3vj0et4KPbgfSei__VlT9GUhERdc3kr.fMSJsFOZaB2FldunJJoC6TpMP4yiNgeJHksAZtLN0lhTAfi8IDDqUfz4e9OMFpkUj9aVL07VYwRSEgd6glLRxOa0Jub; co_9550628a735673579133e6612a3c4ab7_223=1; co_f87e1bd365913f351915dc8db7c5d6f5_223=1; session_id=3900855900679192; __cf_bm=BRgFBj0RI9qGI3Q.SbR.p4TnQn2QeLVvRp1ogG2GmiQ-1794612583.6710927-1.0.1.1-VRNXb8.xPUH2KtXYJ1f_O2kZroFCNFvWJJB0EunCVHb2S2eTePvzc9FU3Z4xd6hAMcGJv3YosC3Zyo5jmP7AIiSfYXU.0fKRcy1by3qqYPeLerdpwpAKHXBwek7CEhvr; co_a88998c22491bbbd8fb84cd66c408d81_223=1
-https://edge.candyshop.st/live3/streamhd6/index.m3u8?st=Nt3QxpUDAx97SGmuoes8lw&e=1794623385
+# generated: 2026-11-14 03:28 UTC
+# streams  : 0
