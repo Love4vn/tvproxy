@@ -8,7 +8,17 @@
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001794869607-0-0-e29f2b534831930ef00e88e8b89b9bdd
+https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001794909689-0-0-b5c06f3ed0c83621ab62af3e490bff74
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/d23xmvkh1y9qg8n/image/small", ⚽ Qatar vs Hàn Quốc | 21:00 | 17/11/2026 [FILIP]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel19/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel19/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.jorvakstreamcache.com/live/channel19.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/d23xmvkh1y9qg8n/image/small", ⚽ Qatar vs Hàn Quốc | 21:00 | 17/11/2026 [HD FILIP]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-19/off-tvc?is_off_add=false
@@ -18,7 +28,7 @@ https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001794869607-0-0-e
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001794869630-0-0-c3ae5b98d5470bf688ca872d5956d534
+https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001794909706-0-0-4799d07955281f294d532f4539f7c710
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jh7ewqwzv/image/small", ⚽ Nga vs Venezuela | 23:00 | 17/11/2026 [HD RAVEN]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-21/off-tvc?is_off_add=false
@@ -28,7 +38,7 @@ https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001794869630-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001794869654-0-0-5b7233f03f503bb9d1f636fc7a257d11
+https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001794909730-0-0-43bde709fd7720e61d3ddc47e3fd47a1
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whk0w2ryox/image/small", ⚽ Xứ Wales vs Bồ Đào Nha | 02:45 | 18/11/2026 [HD ROY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
@@ -38,7 +48,7 @@ https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001794869654-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794869695-0-0-e28d84791098d807abdfa7d306492ac7
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794909771-0-0-93d9aaea4f1eccb6b85eec7f7137fce4
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whk0w2ryox/image/small", ⚽ Xứ Wales vs Bồ Đào Nha | 02:45 | 18/11/2026 [HD FABIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-2/off-tvc?is_off_add=false
@@ -48,7 +58,7 @@ https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001794869695-0-0-e
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001794869704-0-0-3d6a48ff3a3ec599fcb2b12cbe0677ba
+https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001794909779-0-0-00266295bece7fdd0580939cd50cb792
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whk0w2ryox/image/small", ⚽ Xứ Wales vs Bồ Đào Nha | 02:45 | 18/11/2026 [HD TOM]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-4/off-tvc?is_off_add=false
@@ -58,7 +68,7 @@ https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001794869704-0-0-3
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001794869713-0-0-c369b865bc8a31d61795203de8748d22
+https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001794909789-0-0-5dc0fee8f26f63c408a6e74366e71709
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/9dn1m1ghzz5moep/image/small", ⚽ Ireland vs Kosovo | 02:45 | 18/11/2026 [HD FELIX]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-24/off-tvc?is_off_add=false
@@ -68,7 +78,17 @@ https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001794869713-0-0-c
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001794869736-0-0-48cec260f7b4249b27a19cae922bd6f3
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001794909812-0-0-fe11fa8cba964a9fd84f790d0e3d7e89
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehk7er510/image/small", ⚽ Hungary vs Bắc Ireland | 02:45 | 18/11/2026 [FILIP]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel19/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel19/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.jorvakstreamcache.com/live/channel19.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehk7er510/image/small", ⚽ Hungary vs Bắc Ireland | 02:45 | 18/11/2026 [HD FILIP]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-19/off-tvc?is_off_add=false
@@ -78,7 +98,7 @@ https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001794869736-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001794869760-0-0-27d6d5368b9d7c9f1f0ae56d6f18c530
+https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001794909829-0-0-74c3a3aaa65da2eb869809a7a8b31c08
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9whj29ryox/image/small", ⚽ Ukraine vs Georgia | 02:45 | 18/11/2026 [HD KEN]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-18/off-tvc?is_off_add=false
@@ -88,7 +108,7 @@ https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001794869760-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-18.flv?auth_key=3000001794869783-0-0-73bc406250fd79e38fce4b6e782dcea4
+https://live2.domaincdn.cc/livecdn/channel-18.flv?auth_key=3000001794909853-0-0-acd0410302dac5e5925a28639a272510
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1hnlgmojx/image/small", ⚽ Đan Mạch vs Na Uy | 02:45 | 18/11/2026 [RIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-16/off-tvc?is_off_add=false
@@ -98,7 +118,7 @@ https://live2.domaincdn.cc/livecdn/channel-18.flv?auth_key=3000001794869783-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001794869793-0-0-ef2c9c0a3a46ff50939fc608aedf8cd0
+https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001794909864-0-0-57e5749c524bc4a0ac6caf4b4cc65e2b
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1hnlgmojx/image/small", ⚽ Đan Mạch vs Na Uy | 02:45 | 18/11/2026 [RIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-16/off-tvc?is_off_add=false
@@ -108,7 +128,17 @@ https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001794869793-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001794869808-0-0-010941c8b07060c9c6427a64a7b37db4
+https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001794909880-0-0-70d1e6e21a662531c8cb98a7ca6153d9
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1hnlgmojx/image/small", ⚽ Đan Mạch vs Na Uy | 02:45 | 18/11/2026 [RIO]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel16/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel16/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.jorvakstreamcache.com/live/channel16.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1hnlgmojx/image/small", ⚽ Đan Mạch vs Na Uy | 02:45 | 18/11/2026 [FULL HD NICK]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-5/off-tvc?is_off_add=false
@@ -118,7 +148,7 @@ https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001794869808-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001794869817-0-0-3a6f44a560e2f5748c1dfe298dae1737
+https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001794909883-0-0-4b7d01aeed6a2fb41fb88902e719bd65
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/v2y8m4zh2ylql07/image/small", ⚽ Israel vs Áo | 02:45 | 18/11/2026 [NEMO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-17/off-tvc?is_off_add=false
@@ -128,7 +158,7 @@ https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001794869817-0-0-3
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001794869827-0-0-090ddabc02018eca2d4884ab3f577f75
+https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001794909894-0-0-a7400b6af2b61368c9420b79738eceb9
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/v2y8m4zh2ylql07/image/small", ⚽ Israel vs Áo | 02:45 | 18/11/2026 [NEMO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-17/off-tvc?is_off_add=false
@@ -138,7 +168,7 @@ https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001794869827-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001794869842-0-0-7a0d36b535c731bba50a0265ab6fdd34
+https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001794909908-0-0-fad9c50beee3f08455801e83ddf071cd
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/v2y8m4zh2ylql07/image/small", ⚽ Israel vs Áo | 02:45 | 18/11/2026 [FULL HD MAX]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-6/off-tvc?is_off_add=false
@@ -148,7 +178,17 @@ https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001794869842-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001794869851-0-0-ab4bf25fd08c306d8d3d919555bdb845
+https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001794909917-0-0-b0d8f42a83eaeadb159dc05937d8c6d6
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phewxm2wd/image/small", ⚽ Bosnia-Herzegovina vs Romania | 02:45 | 18/11/2026 [ASTRA]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel11/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel11/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.jorvakstreamcache.com/live/channel11.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phewxm2wd/image/small", ⚽ Bosnia-Herzegovina vs Romania | 02:45 | 18/11/2026 [TONI]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-9/off-tvc?is_off_add=false
@@ -158,7 +198,7 @@ https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001794869851-0-0-a
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001794869861-0-0-04bce037e435edf0a4b34d98ae65fa11
+https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001794909920-0-0-4c6bc067422980ee130e045b42ef48a0
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phewxm2wd/image/small", ⚽ Bosnia-Herzegovina vs Romania | 02:45 | 18/11/2026 [TONI]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-9/off-tvc?is_off_add=false
@@ -168,7 +208,7 @@ https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001794869861-0-0-0
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001794869876-0-0-417364004b952f2d4d0689dd64d9691b
+https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001794909936-0-0-a7a6edf5ffb357d73d25f06ff9751300
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phewxm2wd/image/small", ⚽ Bosnia-Herzegovina vs Romania | 02:45 | 18/11/2026 [FULL HD ASTRA]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-11/off-tvc?is_off_add=false
@@ -178,7 +218,17 @@ https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001794869876-0-0-4
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001794869885-0-0-04ad7bc033f3b280385c968b016f331f
+https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001794909947-0-0-2cdd4f807e7bacfef4fa7123e554909d
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/e4wyrn4hnngq86p/image/small", ⚽ Ba Lan vs Thụy Điển | 02:45 | 18/11/2026 [BRADY]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel15/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel15/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.jorvakstreamcache.com/live/channel15.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/e4wyrn4hnngq86p/image/small", ⚽ Ba Lan vs Thụy Điển | 02:45 | 18/11/2026 [JOHAN]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-12/off-tvc?is_off_add=false
@@ -188,7 +238,7 @@ https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001794869885-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001794869896-0-0-9d0a0b07e9fc668e17771b4c35a4f10d
+https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001794909951-0-0-78a4fc4ce30eaa131438117cb96dcd9a
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/e4wyrn4hnngq86p/image/small", ⚽ Ba Lan vs Thụy Điển | 02:45 | 18/11/2026 [JOHAN]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-12/off-tvc?is_off_add=false
@@ -198,7 +248,7 @@ https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001794869896-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001794869911-0-0-33bdefa3df70604aa14c787aaaf4feb1
+https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001794909968-0-0-48c2d4ad49d11333916790c3de8150ea
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/e4wyrn4hnngq86p/image/small", ⚽ Ba Lan vs Thụy Điển | 02:45 | 18/11/2026 [FULL HD BRADY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-15/off-tvc?is_off_add=false
@@ -208,17 +258,17 @@ https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001794869911-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001794869919-0-0-570282b67ff925ab536a890b2f99b330
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/n54ql4fxoe6rvy9/image/small", ⚽ Zhang Zhizhen vs Luca Staeheli | 09:00 | 17/11/2026 [HD VIC]
+https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001794909977-0-0-6aed6c5cae0effb9ceb75bf9af0a57aa
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/3glrw2f1jx9rdyj/image/small", ⚽ Harri Heliovaara/Henry Patten vs Marcelo Arevalo/Mate Pavic | 17:30 | 17/11/2026 [VIC]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-32/off-tvc?is_off_add=false
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel32/off-tvc?is_off_add=false
 #EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
 #EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-32/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel32/off-tvc?is_off_add=false
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001794870037-0-0-b2fd47d2bc67b6a49bac2b23e84ee70b
+https://live2.jorvakstreamcache.com/live/channel32.flv
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/3glrw2f1jx9rdyj/image/small", ⚽ Harri Heliovaara/Henry Patten vs Marcelo Arevalo/Mate Pavic | 17:30 | 17/11/2026 [HD VIC]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-32/off-tvc?is_off_add=false
@@ -228,7 +278,17 @@ https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001794870037-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001794870128-0-0-cc3ed7ef8235572b6175519b173de221
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001794910007-0-0-1268dcc5443d35aa41f141771c44d862
+#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/23xmvvf4zxomg8n/image/small", ⚽ Arthur Fils vs Rafael Jodar | 20:00 | 17/11/2026 [VIC]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel32/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel32/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live2.jorvakstreamcache.com/live/channel32.flv
 #EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/23xmvvf4zxomg8n/image/small", ⚽ Arthur Fils vs Rafael Jodar | 20:00 | 17/11/2026 [HD VIC]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-32/off-tvc?is_off_add=false
@@ -238,4 +298,4 @@ https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001794870128-0-0-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001794870151-0-0-538a75acbfe5830a47d3f37a28cd42d5
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001794910023-0-0-194f86171e498cffe427efe709d61bdc
