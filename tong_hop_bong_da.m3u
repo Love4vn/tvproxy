@@ -18,7 +18,17 @@ https://live3979.zundrixmediapipeline.com/live/channel15.flv
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.streamhaulcdn.com/livecdn/channel-15.flv?auth_key=3000001795773687-0-0-9bfa13b341c1900e84245d174092d968
+https://live2.streamhaulcdn.com/livecdn/channel-15.flv?auth_key=3000001795787454-0-0-1093f90d9d17615439cfe026aee8b486
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nhjjymd7o/image/small", ⚽ Venezia vs Bologna | 02:45 | 28/11/2026 [MAX]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel6/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel6/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live3979.zundrixmediapipeline.com/live/channel6.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nhjjymd7o/image/small", ⚽ Venezia vs Bologna | 02:45 | 28/11/2026 [HD MAX]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-6/off-tvc?is_off_add=false
@@ -28,7 +38,7 @@ https://live2.streamhaulcdn.com/livecdn/channel-15.flv?auth_key=3000001795773687
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.streamhaulcdn.com/livecdn/channel-6.flv?auth_key=3000001795773711-0-0-985f02f199fd5593a90b0cdc32d442e1
+https://live2.streamhaulcdn.com/livecdn/channel-6.flv?auth_key=3000001795787472-0-0-0d9bad55e22489d0543413839f4394db
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p4jwq2ghdn7m0ve/image/small", ⚽ Brest vs Paris FC | 02:45 | 28/11/2026 [HD RIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-16/off-tvc?is_off_add=false
@@ -38,7 +48,17 @@ https://live2.streamhaulcdn.com/livecdn/channel-6.flv?auth_key=3000001795773711-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.streamhaulcdn.com/livecdn/channel-16.flv?auth_key=3000001795773734-0-0-a9befcfd55d5aa7c5beb6b7af612495a
+https://live2.streamhaulcdn.com/livecdn/channel-16.flv?auth_key=3000001795787495-0-0-fee2a92706e32d076e441c94e098f916
+#EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/v2y8m4zhdx6ql07/image/small", ⚽ Nottingham Forest vs Chelsea | 03:00 | 28/11/2026 [TOM]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel4/off-tvc?is_off_add=false
+#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
+#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel4/off-tvc?is_off_add=false
+#EXTVLCOPT:http-header=Accept:*/*
+#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
+#EXTVLCOPT:network-caching=1500
+https://live3979.zundrixmediapipeline.com/live/channel4.flv
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/v2y8m4zhdx6ql07/image/small", ⚽ Nottingham Forest vs Chelsea | 03:00 | 28/11/2026 [HD ROY]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-1/off-tvc?is_off_add=false
@@ -48,7 +68,7 @@ https://live2.streamhaulcdn.com/livecdn/channel-16.flv?auth_key=3000001795773734
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.streamhaulcdn.com/livecdn/channel-1.flv?auth_key=3000001795773775-0-0-558c8e496f61cb1eb4b7558e7adda764
+https://live2.streamhaulcdn.com/livecdn/channel-1.flv?auth_key=3000001795787529-0-0-d74ac25c1918314780253ffcf4c97efd
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/v2y8m4zhdx6ql07/image/small", ⚽ Nottingham Forest vs Chelsea | 03:00 | 28/11/2026 [HD FABIO]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-2/off-tvc?is_off_add=false
@@ -58,7 +78,7 @@ https://live2.streamhaulcdn.com/livecdn/channel-1.flv?auth_key=3000001795773775-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.streamhaulcdn.com/livecdn/channel-2.flv?auth_key=3000001795773784-0-0-8733035c7a5d22344d03e952c331d581
+https://live2.streamhaulcdn.com/livecdn/channel-2.flv?auth_key=3000001795787538-0-0-43f7b76c99d2ad7963c6ab48e1cd8d29
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4zp5rzgh9z9q82w/image/small", ⚽ Levante vs Racing Santander | 03:00 | 28/11/2026 [FELIX]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-24/off-tvc?is_off_add=false
@@ -68,7 +88,7 @@ https://live2.streamhaulcdn.com/livecdn/channel-2.flv?auth_key=3000001795773784-
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.streamhaulcdn.com/livecdn/channel-24.flv?auth_key=3000001795773811-0-0-ebe6beeb9bf709f4587c030939a6a83e
+https://live2.streamhaulcdn.com/livecdn/channel-24.flv?auth_key=3000001795787558-0-0-e01600cbeb0797ecce0a62437a492b9b
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4zp5rzgh9z9q82w/image/small", ⚽ Levante vs Racing Santander | 03:00 | 28/11/2026 [FELIX]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-24/off-tvc?is_off_add=false
@@ -78,7 +98,7 @@ https://live2.streamhaulcdn.com/livecdn/channel-24.flv?auth_key=3000001795773811
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.streamhaulcdn.com/livecdn/channel-24.flv?auth_key=3000001795773826-0-0-290dabedb49ddcca927e51432ebf128f
+https://live2.streamhaulcdn.com/livecdn/channel-24.flv?auth_key=3000001795787573-0-0-28a9db25691c3abd9f6ba3ae903f9739
 #EXTINF:-1 group-title="Xoilac - Bóng đá" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4zp5rzgh9z9q82w/image/small", ⚽ Levante vs Racing Santander | 03:00 | 28/11/2026 [FULL HD ASTRA]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-11/off-tvc?is_off_add=false
@@ -88,24 +108,4 @@ https://live2.streamhaulcdn.com/livecdn/channel-24.flv?auth_key=3000001795773826
 #EXTVLCOPT:http-header=Accept:*/*
 #EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
 #EXTVLCOPT:network-caching=1500
-https://live2.streamhaulcdn.com/livecdn/channel-11.flv?auth_key=3000001795773836-0-0-c829965e28150eda98fa0f379b9a9559
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/dn1m12fn16oqoep/image/small", ⚽ Kimmer Coppejans vs Dali Blanch | 17:00 | 27/11/2026 [VIC]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel32/off-tvc?is_off_add=false
-#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/8/link/channel32/off-tvc?is_off_add=false
-#EXTVLCOPT:http-header=Accept:*/*
-#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
-#EXTVLCOPT:network-caching=1500
-https://live3979.zundrixmediapipeline.com/live/channel32.flv
-#EXTINF:-1 group-title="Xoilac - Tennis" tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/dn1m12fn16oqoep/image/small", ⚽ Kimmer Coppejans vs Dali Blanch | 17:00 | 27/11/2026 [HD VIC]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-32/off-tvc?is_off_add=false
-#EXTVLCOPT:http-origin=https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Origin:https://xlz.domainkqt.cc
-#EXTVLCOPT:http-header=Referer:https://xlz.domainkqt.cc/ajax/chanel/type/5/link/channel-32/off-tvc?is_off_add=false
-#EXTVLCOPT:http-header=Accept:*/*
-#EXTVLCOPT:http-header=Accept-Language:vi-VN,vi;q=0.9,en;q=0.8
-#EXTVLCOPT:network-caching=1500
-https://live2.streamhaulcdn.com/livecdn/channel-32.flv?auth_key=3000001795773879-0-0-b6ce15c66338c0eccb51656ddd97631b
+https://live2.streamhaulcdn.com/livecdn/channel-11.flv?auth_key=3000001795787583-0-0-094b9fb159c336f5ec394db53f263811
